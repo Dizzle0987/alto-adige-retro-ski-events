@@ -68,6 +68,7 @@ main { background: var(--paper); }
 .section-heading { display: flex; justify-content: space-between; align-items: end; gap: 2rem; margin-bottom: 3rem; }
 h2 { max-width: 860px; font-family: "Archivo Black", sans-serif; font-size: clamp(2.5rem, 5vw, 5.3rem); line-height: .95; letter-spacing: -.05em; }
 .updated { margin: 0; font-family: "DM Mono", monospace; font-size: .73rem; line-height: 1.6; text-align: right; text-transform: uppercase; }
+.updated small { display: inline-block; margin-top: .35rem; padding: .2rem .4rem; background: var(--acid); border: 1px solid var(--ink); font: inherit; }
 .filters { display: flex; flex-wrap: wrap; gap: .65rem; margin-bottom: 1.5rem; }
 .filter { cursor: pointer; border: var(--line); border-radius: 99px; background: transparent; padding: .65rem .9rem; font: 500 .72rem "DM Mono", monospace; text-transform: uppercase; }
 .filter span { display: inline-grid; place-items: center; min-width: 20px; height: 20px; margin-left: .35rem; border-radius: 50%; background: var(--ink); color: white; }
@@ -88,6 +89,7 @@ h2 { max-width: 860px; font-family: "Archivo Black", sans-serif; font-size: clam
 .featured { position: relative; }
 .featured::after { content: "★"; position: absolute; right: 1rem; top: .75rem; font-size: 1.4rem; }
 .empty-state { padding: 3rem; text-align: center; font-family: "DM Mono", monospace; }
+.loading-state { width: 100%; margin: 0; padding: 3rem 0; text-align: center; font: 500 .8rem "DM Mono", monospace; text-transform: uppercase; }
 
 .social-section { display: grid; grid-template-columns: 1fr 1fr; gap: 8vw; background: var(--pink); border-block: var(--line); }
 .social-section p:not(.kicker) { max-width: 600px; font-size: 1.05rem; line-height: 1.6; }

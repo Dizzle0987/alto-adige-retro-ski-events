@@ -23,6 +23,10 @@ La versione pubblica è disponibile su [GitHub Pages](https://dizzle0987.github.
 
 Il sito è buildless. Il branch `gh-pages` contiene il contenuto pubblicabile di `dist/`.
 
+## Aggiornamenti automatici
+
+Un'automazione Codex controlla ogni lunedì mattina le fonti ufficiali e i canali social pubblici. Quando trova cambiamenti verificabili, aggiorna l'agenda, esegue i controlli, pubblica `main` e rigenera il branch `gh-pages`.
+
 ## Verifica dati
 
 Ultimo controllo delle fonti: 30 ottobre 2026. Date e programmi possono cambiare: consultare sempre i link ufficiali prima di partire.
