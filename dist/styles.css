@@ -30,11 +30,15 @@ a { color: inherit; }
 .brand { display: flex; gap: .7rem; align-items: center; text-decoration: none; font-family: "DM Mono", monospace; font-size: .77rem; text-transform: uppercase; letter-spacing: .05em; }
 .brand-mark { display: grid; place-items: center; width: 40px; height: 40px; background: var(--ink); color: white; border-radius: 50%; font-weight: 700; }
 .mini-link { font-family: "DM Mono", monospace; font-size: .77rem; text-transform: uppercase; text-underline-offset: 4px; }
+.top-actions { display: flex; align-items: center; gap: 1.25rem; }
+.language-switcher { display: flex; gap: .25rem; padding: .2rem; border: 1px solid var(--ink); border-radius: 99px; background: rgba(255,255,255,.35); }
+.language-button { min-width: 34px; min-height: 30px; padding: .25rem .45rem; cursor: pointer; border: 0; border-radius: 99px; background: transparent; color: var(--ink); font: 500 .68rem "DM Mono", monospace; }
+.language-button:hover, .language-button.is-active { background: var(--ink); color: white; }
 
 .hero-grid { min-height: 670px; padding: 5vw; display: grid; grid-template-columns: 1.35fr .65fr; gap: 5vw; align-items: center; }
 .eyebrow, .kicker { font-family: "DM Mono", monospace; text-transform: uppercase; letter-spacing: .12em; font-size: .72rem; font-weight: 500; }
 .eyebrow { display: flex; align-items: center; gap: .6rem; }
-.eyebrow span { display: block; width: 34px; height: 8px; background: var(--pink); border: 1px solid var(--ink); }
+.eyebrow > span:first-child { display: block; flex: 0 0 auto; width: 34px; height: 8px; background: var(--pink); border: 1px solid var(--ink); }
 h1, h2, h3 { margin: 0; }
 h1 { max-width: 900px; font-family: "Archivo Black", sans-serif; font-size: clamp(4.2rem, 9vw, 9rem); line-height: .82; letter-spacing: -.075em; text-transform: uppercase; }
 h1 em { color: var(--pink); font-style: normal; -webkit-text-stroke: 2px var(--ink); text-shadow: 6px 6px 0 var(--ink); }
@@ -71,7 +75,7 @@ h2 { max-width: 860px; font-family: "Archivo Black", sans-serif; font-size: clam
 .updated small { display: inline-block; margin-top: .35rem; padding: .2rem .4rem; background: var(--acid); border: 1px solid var(--ink); font: inherit; }
 .filters { display: flex; flex-wrap: wrap; gap: .65rem; margin-bottom: 1.5rem; }
 .filter { cursor: pointer; border: var(--line); border-radius: 99px; background: transparent; padding: .65rem .9rem; font: 500 .72rem "DM Mono", monospace; text-transform: uppercase; }
-.filter span { display: inline-grid; place-items: center; min-width: 20px; height: 20px; margin-left: .35rem; border-radius: 50%; background: var(--ink); color: white; }
+.filter-count { display: inline-grid; place-items: center; min-width: 20px; height: 20px; margin-left: .35rem; border-radius: 50%; background: var(--ink); color: white; }
 .filter.is-active { background: var(--pink); }
 .event-list { border-top: var(--line); }
 .event-card { display: grid; grid-template-columns: 155px 1fr minmax(180px, 250px); gap: 2rem; align-items: center; padding: 2rem 0; border-bottom: var(--line); transition: background-color .18s; }
@@ -97,6 +101,7 @@ h2 { max-width: 860px; font-family: "Archivo Black", sans-serif; font-size: clam
 .social-links a { display: flex; gap: 1rem; align-items: center; padding: 1.3rem 0; border-bottom: var(--line); text-decoration: none; font: 500 clamp(.9rem, 2vw, 1.15rem) "DM Mono", monospace; }
 .social-links a:hover { padding-left: .8rem; background: white; }
 .social-links span { display: grid; place-items: center; width: 34px; height: 34px; border: var(--line); border-radius: 50%; background: var(--yellow); }
+.social-links .social-empty { padding: 1.3rem 0; border-bottom: var(--line); font-family: "DM Mono", monospace; }
 .method-section { background: var(--blue); color: white; }
 .method-grid { display: grid; grid-template-columns: .85fr 1.15fr; gap: 8vw; align-items: start; }
 .method-grid p { max-width: 700px; font-size: 1.1rem; line-height: 1.7; }.fine-print { padding-top: 1.4rem; border-top: 1px solid rgba(255,255,255,.6); font-family: "DM Mono", monospace; font-size: .78rem !important; }
@@ -112,6 +117,8 @@ footer p { margin: 0; }
 }
 @media (max-width: 600px) {
   .topbar { padding-inline: 1rem; }.mini-link { display: none; }
+  .top-actions { gap: .5rem; }
+  .language-button { min-width: 31px; }
   .hero-grid, .events-section, .social-section, .method-section { padding-left: 1rem; padding-right: 1rem; }
   h1 { font-size: clamp(3.5rem, 19vw, 5.2rem); } h1 em { text-shadow: 4px 4px 0 var(--ink); }
   .poster { width: 92%; }.section-heading { align-items: start; flex-direction: column; }.updated { text-align: left; }

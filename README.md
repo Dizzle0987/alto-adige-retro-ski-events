@@ -1,12 +1,13 @@
 # Retro Ski & Après — Alto Adige
 
-Piccola agenda statica di feste retro, vintage ski e après-ski in Alto Adige per la stagione 2026/27.
+Radar in continuo aggiornamento per feste retro, vintage ski e après-ski in Alto Adige nella stagione 2026/27.
 
 ## Contenuti
 
 - 6 eventi con data, luogo e fonte ufficiale
-- link ai canali social pubblici verificati
+- radar social generato dinamicamente dagli eventi correnti
 - filtri per atmosfera: retro, après-ski e dress code
+- interfaccia in italiano, tedesco e inglese, con rilevamento della lingua del browser e scelta manuale persistente
 - design responsive e accessibile
 
 ## Avvio locale
