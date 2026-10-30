@@ -1,0 +1,151 @@
+{
+  "lastChecked": "2026-10-30",
+  "events": [
+    {
+      "id": "3-zinnen-schlager",
+      "title": "3 Zinnen Schlager & Ski Partywoche",
+      "start": "2027-03-14",
+      "end": "2027-03-21",
+      "dateLabel": "14–21",
+      "monthLabel": "MAR",
+      "year": "2027",
+      "categories": [
+        "apres",
+        "costume"
+      ],
+      "tags": [
+        "Après-ski",
+        "Dress code"
+      ],
+      "summary": "Una settimana di Schlager, party in baita e serate a tema: “Ganz in Weiß”, tirolese e LED.",
+      "place": "Dobbiaco / Toblach · area 3 Cime",
+      "source": "https://3zinnenschlager.it/",
+      "social": "https://www.instagram.com/3zinnendolomites/",
+      "map": "https://www.google.com/maps/search/?api=1&query=Toblach+Dobbiaco+South+Tyrol",
+      "accent": "#5b5df0",
+      "featured": false
+    },
+    {
+      "id": "lockenfest-funes",
+      "title": "Lockenfest con Retro Party",
+      "start": "2027-03-20",
+      "end": "2027-03-20",
+      "dateLabel": "20",
+      "monthLabel": "MAR",
+      "year": "2027",
+      "categories": [
+        "retro",
+        "costume",
+        "apres"
+      ],
+      "tags": [
+        "Retro",
+        "Anything slides"
+      ],
+      "summary": "Sci, slitte, snowboard e look vintage sul ghiaccio; poi aftershow party nella caserma dei pompieri.",
+      "place": "Skilift Filler · S. Maddalena, Val di Funes",
+      "source": "https://www.suedtirol.info/en/en/experiences-and-events/events-south-tyrol/pdp-event.ECB0DDBA3F4B4567AD1BE9BB32A59DAD.locken-festival-with-retro-party-by-villnoesser-teifl.villnoess-funes",
+      "social": null,
+      "map": "https://www.google.com/maps/search/?api=1&query=Filler+Ski+Lift+St+Magdalena+Villnoss",
+      "accent": "#ff4fa3",
+      "featured": false
+    },
+    {
+      "id": "rock-meets-beats",
+      "title": "Rock Meets Beats",
+      "start": "2027-03-27",
+      "end": "2027-03-27",
+      "dateLabel": "27",
+      "monthLabel": "MAR",
+      "year": "2027",
+      "categories": [
+        "apres"
+      ],
+      "tags": [
+        "Live + DJ",
+        "Free entry"
+      ],
+      "summary": "Chitarre, hit e DJ set per un après-ski gratuito ai piedi delle Dolomiti, dalle 16:00 alle 23:00.",
+      "place": "Str. Mëisules 145 · Selva di Val Gardena",
+      "source": "https://www.dolomitisuperski.com/it/esperienze/eventi/Val-Gardena/2027/ROCK-MEETS-BEATS-Apres-Ski-Party",
+      "social": "https://www.instagram.com/dolomitesvalgardena/",
+      "map": "https://www.google.com/maps/search/?api=1&query=Strada+Meisules+145+Selva+Val+Gardena",
+      "accent": "#ff7439",
+      "featured": false
+    },
+    {
+      "id": "val-gardena-winter-finals",
+      "title": "Val Gardena Winter Finals",
+      "start": "2027-03-27",
+      "end": "2027-04-03",
+      "dateLabel": "27–03",
+      "monthLabel": "MAR/APR",
+      "year": "2027",
+      "categories": [
+        "apres"
+      ],
+      "tags": [
+        "8 giorni",
+        "Electronic"
+      ],
+      "summary": "Opening party, sei rifugi in sei giorni e gran finale open-air alla cabinovia Ciampinoi.",
+      "place": "Selva di Val Gardena · rifugi e centro paese",
+      "source": "https://www.valgardena.it/it/dettaglio/base/events/val-gardena-winter-finals/A099778FF6984F6AB28456B49E0C6B16/",
+      "social": "https://www.instagram.com/dolomitesvalgardena/",
+      "map": "https://www.google.com/maps/search/?api=1&query=Ciampinoi+Selva+Val+Gardena",
+      "accent": "#b0ef43",
+      "featured": false
+    },
+    {
+      "id": "oldschool-skiday-solda",
+      "title": "Oldschool Skiday Solda",
+      "start": "2027-04-03",
+      "end": "2027-04-03",
+      "dateLabel": "03",
+      "monthLabel": "APR",
+      "year": "2027",
+      "categories": [
+        "retro",
+        "costume",
+        "apres"
+      ],
+      "tags": [
+        "Old school",
+        "Tute anni ’80"
+      ],
+      "summary": "Sci classico, legni della nonna, fasce fluo e après-ski retrò. Dalle 09:00 fino a notte.",
+      "place": "Funivia di Solda · Stelvio",
+      "source": "https://www.suedtirol.info/it/it/esperienze-eventi/eventi-alto-adige/pdp-evento.4032F038518A412A9881065CFB8866A5.oldschool-skiday-solda-.stelvio",
+      "social": null,
+      "map": "https://www.google.com/maps/search/?api=1&query=Funivia+di+Solda+Sulden",
+      "accent": "#00bfa6",
+      "featured": false
+    },
+    {
+      "id": "ski-carousel-vintage-party",
+      "title": "Ski Carousel Vintage Party",
+      "start": "2027-04-03",
+      "end": "2027-04-04",
+      "dateLabel": "03–04",
+      "monthLabel": "APR",
+      "year": "2027",
+      "categories": [
+        "retro",
+        "costume",
+        "apres"
+      ],
+      "tags": [
+        "Vintage",
+        "No carving",
+        "Top pick"
+      ],
+      "summary": "Due giorni tra rifugi, Vintage Village a La Villa, gara con sci d’epoca e after party a Corvara.",
+      "place": "Alta Badia · La Villa, La Para e Corvara",
+      "source": "https://www.altabadia.org/en/alta-badia-events/detail/event/the-ski-carousel-vintage-party",
+      "social": "https://www.instagram.com/alta_badia_official/",
+      "map": "https://www.google.com/maps/search/?api=1&query=La+Villa+Alta+Badia",
+      "accent": "#f5ec35",
+      "featured": true
+    }
+  ]
+}
