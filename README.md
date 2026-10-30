@@ -26,7 +26,7 @@ Il sito è buildless. Il branch `gh-pages` contiene il contenuto pubblicabile di
 
 ## Aggiornamenti automatici
 
-Un workflow GitHub Actions controlla ogni lunedì mattina le fonti ufficiali configurate. Quando trova cambiamenti verificabili, aggiorna l'agenda, pubblica `main` e rigenera il branch `gh-pages`. Le fonti non raggiungibili vengono conservate senza sovrascrivere dati già verificati.
+Un workflow GitHub Actions controlla le fonti ufficiali ogni lunedì, mercoledì e giovedì alle 08:00 (Europe/Rome). Quando trova cambiamenti verificabili, aggiorna l'agenda, pubblica `main` e rigenera il branch `gh-pages`. Le fonti non raggiungibili vengono conservate senza sovrascrivere dati già verificati.
 
 ## Verifica dati
 
