@@ -25,7 +25,7 @@ Il sito è buildless. Il branch `gh-pages` contiene il contenuto pubblicabile di
 
 ## Aggiornamenti automatici
 
-Un'automazione Codex controlla ogni lunedì mattina le fonti ufficiali e i canali social pubblici. Quando trova cambiamenti verificabili, aggiorna l'agenda, esegue i controlli, pubblica `main` e rigenera il branch `gh-pages`.
+Un workflow GitHub Actions controlla ogni lunedì mattina le fonti ufficiali configurate. Quando trova cambiamenti verificabili, aggiorna l'agenda, pubblica `main` e rigenera il branch `gh-pages`. Le fonti non raggiungibili vengono conservate senza sovrascrivere dati già verificati.
 
 ## Verifica dati
 
