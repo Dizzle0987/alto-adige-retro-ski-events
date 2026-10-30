@@ -17,9 +17,11 @@ python3 -m http.server 8000 --directory dist
 
 Poi apri `http://localhost:8000`.
 
-## Pubblicazione su GitHub Pages
+## Sito pubblicato
 
-Il sito è buildless: imposta GitHub Pages sulla cartella `/dist` oppure pubblica il contenuto di `dist/` su un branch dedicato.
+La versione pubblica è disponibile su [GitHub Pages](https://dizzle0987.github.io/alto-adige-retro-ski-events/).
+
+Il sito è buildless. Il branch `gh-pages` contiene il contenuto pubblicabile di `dist/`.
 
 ## Verifica dati
 
