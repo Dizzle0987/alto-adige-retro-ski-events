@@ -63,7 +63,8 @@ h1 em { color: var(--pink); font-style: normal; -webkit-text-stroke: 2px var(--i
 .poster-stamp { position: absolute; left: 1rem; top: 1rem; padding: .6rem; font: 500 .72rem/1.2 "DM Mono", monospace; background: white; border: var(--line); transform: rotate(-7deg); }
 .poster-year { position: absolute; right: 1rem; bottom: 1rem; writing-mode: vertical-rl; font: 500 .8rem "DM Mono", monospace; letter-spacing: .2em; }
 .ticker { overflow: hidden; border-top: var(--line); background: var(--ink); color: white; white-space: nowrap; }
-.ticker div { width: max-content; padding: .7rem 0; font: 500 .72rem "DM Mono", monospace; letter-spacing: .1em; animation: ticker 22s linear infinite; }
+.ticker-track { display: flex; width: max-content; padding: .7rem 0; font: 500 .72rem "DM Mono", monospace; letter-spacing: .1em; animation: ticker 22s linear infinite; }
+.ticker-copy { flex: 0 0 auto; min-width: 100vw; white-space: pre; }
 @keyframes ticker { to { transform: translateX(-50%); } }
 
 main { background: var(--paper); }
@@ -80,6 +81,14 @@ h2 { max-width: 860px; font-family: "Archivo Black", sans-serif; font-size: clam
 .valley-filter { display: flex; flex: 0 0 auto; align-items: center; gap: .6rem; font: 500 .72rem "DM Mono", monospace; text-transform: uppercase; }
 .valley-filter select { min-height: 44px; max-width: 250px; padding: .6rem 2.2rem .6rem .75rem; border: var(--line); border-radius: 0; background: white; color: var(--ink); font: 500 .72rem "DM Mono", monospace; text-transform: uppercase; }
 .event-list { border-top: var(--line); }
+.period-tabs { display: flex; flex-wrap: wrap; gap: .6rem; margin-bottom: 1.5rem; }
+.period-button { cursor: pointer; min-height: 44px; padding: .7rem 1rem; border: var(--line); background: white; color: var(--ink); font: 500 .75rem "DM Mono", monospace; }
+.period-button.is-active { background: var(--ink); color: white; }
+.archive-note { font: 500 .8rem "DM Mono", monospace; margin-bottom: 1.5rem; }
+.event-group-heading { font: 400 1.3rem "Archivo Black", sans-serif; margin: 0; padding: 1.5rem 0; }
+.ongoing-events { background: var(--acid); padding: 0 1.5rem; border: var(--line); margin: 1rem 0 2rem; box-shadow: 5px 5px 0 var(--ink); }
+.ongoing-events .event-card:last-child { border-bottom: 0; }
+.tags .ongoing-badge { background: white; color: var(--ink); border: 1px solid var(--ink); }
 .event-card { display: grid; grid-template-columns: 155px 1fr minmax(180px, 250px); gap: 2rem; align-items: center; padding: 2rem 0; border-bottom: var(--line); transition: background-color .18s; }
 .event-card:hover { background: color-mix(in srgb, var(--accent) 16%, transparent); }
 .event-card[hidden] { display: none; }
@@ -126,4 +135,4 @@ footer p { margin: 0; }
   .date-block { width: 135px; }.event-links { grid-column: 1; }
   footer { gap: 1rem; align-items: flex-start; }
 }
-@media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } .ticker div { animation: none; } * { transition: none !important; } }
+@media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } .ticker-track { animation: none; } * { transition: none !important; } }

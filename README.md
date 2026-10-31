@@ -1,12 +1,14 @@
 # Retro Ski & Après — Alto Adige
 
-Radar in continuo aggiornamento per feste retro, vintage ski e après-ski in Alto Adige nella stagione 2026/27.
+Radar in continuo aggiornamento per feste retro, vintage ski e après-ski in Alto Adige. La stagione segue la data locale di Roma: da maggio viene mostrata la prossima stagione invernale, fino ad aprile quella in corso.
 
 ## Contenuti
 
 - eventi con data, luogo e fonte ufficiale, aggiornati automaticamente
 - radar social generato dinamicamente dagli eventi correnti
 - filtri per atmosfera: retro, après-ski e dress code
+- vista degli eventi in corso e futuri, con riquadro in evidenza per tutti gli appuntamenti in corso
+- storico degli ultimi 12 mesi, con filtri per atmosfera e valle e ordinamento dal più recente
 - interfaccia in italiano, tedesco e inglese, con rilevamento della lingua del browser e scelta manuale persistente
 - icona dedicata e manifest per il salvataggio sulla schermata Home di iPhone e Android
 - design responsive e accessibile
@@ -28,6 +30,8 @@ Il sito è buildless. Il branch `gh-pages` contiene il contenuto pubblicabile di
 ## Aggiornamenti automatici
 
 Un workflow GitHub Actions controlla le fonti ufficiali ogni lunedì, mercoledì e giovedì alle 08:00 (Europe/Rome). Quando trova cambiamenti verificabili, aggiorna l'agenda, pubblica `main` e rigenera il branch `gh-pages`. Le fonti non raggiungibili vengono conservate senza sovrascrivere dati già verificati.
+
+Gli eventi terminati vengono conservati per 12 mesi e non vengono più aggiornati dalle pagine degli organizzatori, che potrebbero già descrivere l’edizione successiva. Il passaggio tra evento futuro, in corso e passato avviene ogni giorno secondo il calendario di Roma, inclusa l’intera data finale. La pagina aperta ricontrolla la data ogni minuto. Lo storico si popola con gli eventi conservati da questo aggiornamento in poi.
 
 Oltre alle pagine dei singoli eventi, il radar controlla un registro di portali turistici, comprensori e Skihütten in `data/discovery-sources.json`. Tra le fonti ci sono Winklparade/myTix, Skiworld Ahrntal/Speikboden, Ganischger Alm, Obereggen, Kronplatz e Club Moritzino. Il portale ufficiale Alto Adige viene scandito su più pagine: un nuovo evento entra automaticamente nell'agenda solo quando titolo, data, luogo e pagina ufficiale sono tutti disponibili. Il rapporto completo resta in `data/event-candidates.json`.
 

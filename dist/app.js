@@ -1,3 +1,5 @@
+import { calendarState, eventPeriod } from "./calendar.mjs";
+
 const eventList = document.querySelector(".event-list");
 const socialList = document.querySelector(".social-links");
 const filters = [...document.querySelectorAll(".filter")];
@@ -5,17 +7,23 @@ const valleySelect = document.querySelector("#valley-select");
 const languageButtons = [...document.querySelectorAll(".language-button")];
 const emptyState = document.querySelector(".empty-state");
 const supportedLanguages = ["it", "de", "en"];
+const periodButtons = [...document.querySelectorAll("[data-period]")];
+let currentPeriod = "current";
+let calendar = calendarState();
 
 const copy = {
   it: {
     pageTitle: "Retro Ski & Après — Alto Adige",
     description: "Radar aggiornato di feste retro, vintage ski e après-ski in Alto Adige, con date, luoghi e fonti ufficiali.",
     skipLink: "Vai agli eventi", mainNavLabel: "Navigazione principale", brandLabel: "Retro Ski, torna all'inizio",
-    languageLabel: "Lingua", posterLabel: "Poster decorativo con sciatore stilizzato", season: "stagione 2026/27",
+    languageLabel: "Lingua", posterLabel: "Poster decorativo con sciatore stilizzato", season: "stagione {season}",
+    periodLabel: "Periodo degli eventi", currentEvents: "In corso e prossimi", pastEvents: "Eventi passati",
+    archiveNote: "Storico degli ultimi 12 mesi.", ongoingTitle: "Succede adesso", upcomingTitle: "I prossimi appuntamenti",
+    ongoingBadge: "In corso", emptyPast: "Nessun evento passato negli ultimi 12 mesi con questi filtri.",
     heroLine1: "BRUTTI SCI.", heroLine2: "BELLE FESTE.",
     heroLede: "Un radar in continuo aggiornamento per feste retro, vintage ski e après-ski in Alto Adige. Date, luoghi e fonti ufficiali, senza caccia al flyer.",
     eventsCta: "Vedi gli eventi", socialCta: "Radar social", eventsKicker: "Radar eventi live",
-    eventsTitle: "Cosa succede sulla neve, adesso.", lastUpdated: "Ultimo aggiornamento",
+    eventsTitle: "La tua agenda retro ski & après-ski.", lastUpdated: "Ultimo aggiornamento",
     autoUpdateBadge: "Automatico · lun, mer, gio · 08:00", filterLabel: "Filtra per atmosfera",
     filterAll: "Tutto", filterRetro: "Retro", filterApres: "Après-ski", filterCostume: "Dress code",
     valleyLabel: "Valle", valleyFilterLabel: "Filtra per valle", allValleys: "Tutte le valli",
@@ -35,11 +43,14 @@ const copy = {
     pageTitle: "Retro Ski & Après — Südtirol",
     description: "Laufend aktualisierter Radar für Retro-Ski- und Après-Ski-Partys in Südtirol – mit Daten, Orten und offiziellen Quellen.",
     skipLink: "Zu den Events", mainNavLabel: "Hauptnavigation", brandLabel: "Retro Ski, zurück zum Anfang",
-    languageLabel: "Sprache", posterLabel: "Dekoratives Poster mit stilisiertem Skifahrer", season: "Saison 2026/27",
+    languageLabel: "Sprache", posterLabel: "Dekoratives Poster mit stilisiertem Skifahrer", season: "Saison {season}",
+    periodLabel: "Event-Zeitraum", currentEvents: "Aktuell & demnächst", pastEvents: "Vergangene Events",
+    archiveNote: "Rückblick auf die letzten 12 Monate.", ongoingTitle: "Jetzt los", upcomingTitle: "Die nächsten Termine",
+    ongoingBadge: "Findet gerade statt", emptyPast: "Keine vergangenen Events der letzten 12 Monate für diese Filter.",
     heroLine1: "SCHRÄGE SKI.", heroLine2: "GUTE PARTYS.",
     heroLede: "Ein laufend aktualisierter Radar für Retro-Ski-, Vintage- und Après-Ski-Partys in Südtirol. Daten, Orte und offizielle Quellen – ohne Flyer-Suche.",
     eventsCta: "Events ansehen", socialCta: "Social-Radar", eventsKicker: "Live-Event-Radar",
-    eventsTitle: "Was jetzt im Schnee passiert.", lastUpdated: "Zuletzt aktualisiert",
+    eventsTitle: "Dein Kalender für Retro-Ski & Après-Ski.", lastUpdated: "Zuletzt aktualisiert",
     autoUpdateBadge: "Automatisch · Mo, Mi, Do · 08:00", filterLabel: "Nach Stimmung filtern",
     filterAll: "Alle", filterRetro: "Retro", filterApres: "Après-Ski", filterCostume: "Dresscode",
     valleyLabel: "Tal", valleyFilterLabel: "Nach Tal filtern", allValleys: "Alle Täler",
@@ -59,11 +70,14 @@ const copy = {
     pageTitle: "Retro Ski & Après — South Tyrol",
     description: "A continuously updated radar for retro ski and après-ski parties in South Tyrol, with dates, places and official sources.",
     skipLink: "Skip to events", mainNavLabel: "Main navigation", brandLabel: "Retro Ski, back to top",
-    languageLabel: "Language", posterLabel: "Decorative poster with a stylised skier", season: "2026/27 season",
+    languageLabel: "Language", posterLabel: "Decorative poster with a stylised skier", season: "{season} season",
+    periodLabel: "Event period", currentEvents: "Now & upcoming", pastEvents: "Past events",
+    archiveNote: "An archive of the last 12 months.", ongoingTitle: "Happening now", upcomingTitle: "Coming up next",
+    ongoingBadge: "Happening now", emptyPast: "No past events in the last 12 months match these filters.",
     heroLine1: "BAD SKIS.", heroLine2: "GREAT PARTIES.",
     heroLede: "A continuously updated radar for retro ski, vintage and après-ski parties in South Tyrol. Dates, places and official sources — no flyer hunting required.",
     eventsCta: "See the events", socialCta: "Social radar", eventsKicker: "Live event radar",
-    eventsTitle: "What’s happening on the snow now.", lastUpdated: "Last updated",
+    eventsTitle: "Your retro ski & après-ski calendar.", lastUpdated: "Last updated",
     autoUpdateBadge: "Automatic · Mon, Wed, Thu · 08:00", filterLabel: "Filter by mood",
     filterAll: "All", filterRetro: "Retro", filterApres: "Après-ski", filterCostume: "Dress code",
     valleyLabel: "Valley", valleyFilterLabel: "Filter by valley", allValleys: "All valleys",
@@ -198,6 +212,7 @@ let currentLanguage = "it";
 let currentFilter = "all";
 let currentValley = "all";
 let cachedEvents = [];
+let eventsLoaded = false;
 let lastChecked = "";
 
 const element = (tag, className, text) => {
@@ -281,6 +296,10 @@ const renderEvent = (rawEvent) => {
   date.append(element("span", "", formattedDate.days), element("strong", "", formattedDate.months), element("small", "", formattedDate.year));
   const main = element("div", "event-main");
   const tags = element("div", "tags");
+  if (eventPeriod(event, calendar.today) === "ongoing") {
+    article.classList.add("is-ongoing");
+    tags.append(element("span", "ongoing-badge", copy[currentLanguage].ongoingBadge));
+  }
   event.tags.forEach((tag) => tags.append(element("span", "", tag)));
   main.append(tags, element("h3", "", event.title), element("p", "", event.summary), element("p", "place", event.place));
   const links = element("div", "event-links");
@@ -296,8 +315,8 @@ const socialHandle = (url) => {
   catch { return url; }
 };
 
-const renderSocialRadar = () => {
-  const urls = [...new Set(cachedEvents.map((event) => event.social).filter(Boolean))];
+const renderSocialRadar = (events) => {
+  const urls = [...new Set(events.map((event) => event.social).filter(Boolean))];
   if (!urls.length) {
     socialList.replaceChildren(element("p", "social-empty", copy[currentLanguage].noSocial));
     return;
@@ -312,19 +331,19 @@ const renderSocialRadar = () => {
 const updateCounts = () => {
   filters.forEach((button) => {
     const category = button.dataset.filter;
-    const eventsInValley = cachedEvents.filter((event) => currentValley === "all" || valleyKeyFor(event) === currentValley);
+    const eventsInValley = periodEvents().filter((event) => currentValley === "all" || valleyKeyFor(event) === currentValley);
     const count = category === "all" ? eventsInValley.length : eventsInValley.filter((event) => event.categories.includes(category)).length;
     button.querySelector(".filter-count").textContent = count;
   });
 };
 
 const renderValleyOptions = () => {
-  const keys = [...new Set(cachedEvents.map(valleyKeyFor))]
+  const keys = [...new Set(periodEvents().map(valleyKeyFor))]
     .sort((a, b) => valleyLabels[a][currentLanguage].localeCompare(valleyLabels[b][currentLanguage]));
   const allOption = element("option", "", copy[currentLanguage].allValleys);
   allOption.value = "all";
   const options = keys.map((key) => {
-    const count = cachedEvents.filter((event) => valleyKeyFor(event) === key).length;
+    const count = periodEvents().filter((event) => valleyKeyFor(event) === key).length;
     const option = element("option", "", `${valleyLabels[key][currentLanguage]} · ${count}`);
     option.value = key;
     return option;
@@ -336,21 +355,17 @@ const renderValleyOptions = () => {
 
 const applyFilter = (selected) => {
   currentFilter = selected;
-  let visible = 0;
   filters.forEach((button) => {
     const active = button.dataset.filter === selected;
     button.classList.toggle("is-active", active);
     button.setAttribute("aria-pressed", String(active));
   });
-  document.querySelectorAll(".event-card").forEach((card) => {
-    const matchesMood = selected === "all" || card.dataset.categories.split(" ").includes(selected);
-    const matchesValley = currentValley === "all" || card.dataset.valley === currentValley;
-    const show = matchesMood && matchesValley;
-    card.hidden = !show;
-    if (show) visible += 1;
-  });
-  emptyState.hidden = visible !== 0;
+  renderEvents();
 };
+
+const periodEvents = () => cachedEvents.filter((event) => currentPeriod === "past"
+  ? event.end < calendar.today && event.end >= calendar.archiveCutoff
+  : event.end >= calendar.today);
 
 const formatCheckedDate = (isoDate) => {
   if (!isoDate) return "—";
@@ -359,11 +374,37 @@ const formatCheckedDate = (isoDate) => {
 };
 
 const renderEvents = () => {
-  eventList.replaceChildren(...cachedEvents.map(renderEvent));
   renderValleyOptions();
   updateCounts();
-  applyFilter(currentFilter);
-  renderSocialRadar();
+  const events = periodEvents().filter((event) =>
+    (currentFilter === "all" || event.categories.includes(currentFilter)) &&
+    (currentValley === "all" || valleyKeyFor(event) === currentValley));
+  eventList.replaceChildren();
+  if (currentPeriod === "past") {
+    eventList.append(...events.sort((a, b) => b.end.localeCompare(a.end)).map(renderEvent));
+  } else {
+    const ongoing = events.filter((event) => eventPeriod(event, calendar.today) === "ongoing");
+    const upcoming = events.filter((event) => eventPeriod(event, calendar.today) === "upcoming");
+    if (ongoing.length) {
+      const focus = element("section", "ongoing-events");
+      focus.setAttribute("aria-labelledby", "ongoing-heading");
+      const heading = element("h3", "event-group-heading", copy[currentLanguage].ongoingTitle);
+      heading.id = "ongoing-heading";
+      focus.append(heading, ...ongoing.map(renderEvent));
+      eventList.append(focus);
+      if (upcoming.length) eventList.append(element("h3", "event-group-heading", copy[currentLanguage].upcomingTitle));
+    }
+    eventList.append(...upcoming.map(renderEvent));
+  }
+  periodButtons.forEach((button) => {
+    const active = button.dataset.period === currentPeriod;
+    button.classList.toggle("is-active", active);
+    button.setAttribute("aria-pressed", String(active));
+  });
+  document.querySelector(".archive-note").hidden = currentPeriod !== "past";
+  emptyState.textContent = copy[currentLanguage][currentPeriod === "past" ? "emptyPast" : "emptyEvents"];
+  emptyState.hidden = events.length !== 0;
+  renderSocialRadar(events);
 };
 
 const translatePage = () => {
@@ -373,7 +414,7 @@ const translatePage = () => {
   document.querySelector('meta[name="description"]').content = dictionary.description;
   document.querySelectorAll("[data-i18n]").forEach((node) => {
     const value = dictionary[node.dataset.i18n];
-    if (value) node.textContent = value;
+    if (value) node.textContent = value.replace("{season}", calendar.season);
   });
   document.querySelectorAll("[data-i18n-aria-label]").forEach((node) => {
     const value = dictionary[node.dataset.i18nAriaLabel];
@@ -385,13 +426,14 @@ const translatePage = () => {
     button.setAttribute("aria-pressed", String(active));
   });
   document.querySelector("[data-last-checked]").textContent = formatCheckedDate(lastChecked);
+  document.querySelector("[data-season-year]").textContent = calendar.seasonEnd;
 };
 
 const setLanguage = (language, persist = false) => {
   currentLanguage = supportedLanguages.includes(language) ? language : "en";
   if (persist) localStorage.setItem("retro-ski-language", currentLanguage);
   translatePage();
-  if (cachedEvents.length) renderEvents();
+  if (eventsLoaded) renderEvents();
 };
 
 const preferredLanguage = () => {
@@ -407,6 +449,7 @@ const loadEvents = async () => {
     if (!response.ok) throw new Error(`HTTP ${response.status}`);
     const data = await response.json();
     cachedEvents = [...data.events].sort((a, b) => a.start.localeCompare(b.start));
+    eventsLoaded = true;
     lastChecked = data.lastChecked;
     translatePage();
     renderEvents();
@@ -422,6 +465,18 @@ valleySelect.addEventListener("change", () => {
   updateCounts();
   applyFilter(currentFilter);
 });
+periodButtons.forEach((button) => button.addEventListener("click", () => {
+  currentPeriod = button.dataset.period;
+  renderEvents();
+}));
+setInterval(() => {
+  const next = calendarState();
+  if (next.today !== calendar.today) {
+    calendar = next;
+    translatePage();
+    renderEvents();
+  }
+}, 60000);
 languageButtons.forEach((button) => button.addEventListener("click", () => setLanguage(button.dataset.language, true)));
 setLanguage(preferredLanguage());
 loadEvents();

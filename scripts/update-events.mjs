@@ -2,6 +2,7 @@ import { readFile, writeFile } from "node:fs/promises";
 import { fileURLToPath } from "node:url";
 import path from "node:path";
 import { fetchLocalizedTitles } from "./localized-titles.mjs";
+import { calendarState } from "../dist/calendar.mjs";
 
 const repositoryRoot = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const eventsPath = path.join(repositoryRoot, "dist", "events.json");
@@ -139,13 +140,18 @@ const sourceUpdate = async (event, today) => {
 
 const data = JSON.parse(await readFile(eventsPath, "utf8"));
 const today = todayInRome();
+const { archiveCutoff } = calendarState();
 let verified = 0;
 let changed = 0;
 let unavailable = 0;
 const refreshedEvents = [];
 
 for (const event of data.events) {
-  if (event.end < today) continue;
+  if (event.end < archiveCutoff) continue;
+  if (event.end < today) {
+    refreshedEvents.push(event);
+    continue;
+  }
   if (offline) {
     refreshedEvents.push(event);
     continue;
