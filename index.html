@@ -22,7 +22,7 @@
       href="https://fonts.googleapis.com/css2?family=Archivo+Black&amp;family=DM+Mono:wght@400;500&amp;family=Manrope:wght@400;600;700&amp;display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="styles.css?v=4" />
+    <link rel="stylesheet" href="styles.css?v=5" />
   </head>
   <body>
     <a class="skip-link" href="#eventi" data-i18n="skipLink">Vai agli eventi</a>
@@ -87,11 +87,17 @@
           </p>
         </div>
 
-        <div class="filters" role="group" aria-label="Filtra per atmosfera" data-i18n-aria-label="filterLabel">
-          <button class="filter is-active" type="button" data-filter="all" aria-pressed="true"><span class="filter-label" data-i18n="filterAll">Tutto</span><span class="filter-count">–</span></button>
-          <button class="filter" type="button" data-filter="retro" aria-pressed="false"><span class="filter-label" data-i18n="filterRetro">Retro</span><span class="filter-count">–</span></button>
-          <button class="filter" type="button" data-filter="apres" aria-pressed="false"><span class="filter-label" data-i18n="filterApres">Après-ski</span><span class="filter-count">–</span></button>
-          <button class="filter" type="button" data-filter="costume" aria-pressed="false"><span class="filter-label" data-i18n="filterCostume">Dress code</span><span class="filter-count">–</span></button>
+        <div class="filter-bar">
+          <div class="filters" role="group" aria-label="Filtra per atmosfera" data-i18n-aria-label="filterLabel">
+            <button class="filter is-active" type="button" data-filter="all" aria-pressed="true"><span class="filter-label" data-i18n="filterAll">Tutto</span><span class="filter-count">–</span></button>
+            <button class="filter" type="button" data-filter="retro" aria-pressed="false"><span class="filter-label" data-i18n="filterRetro">Retro</span><span class="filter-count">–</span></button>
+            <button class="filter" type="button" data-filter="apres" aria-pressed="false"><span class="filter-label" data-i18n="filterApres">Après-ski</span><span class="filter-count">–</span></button>
+            <button class="filter" type="button" data-filter="costume" aria-pressed="false"><span class="filter-label" data-i18n="filterCostume">Dress code</span><span class="filter-count">–</span></button>
+          </div>
+          <label class="valley-filter" for="valley-select">
+            <span data-i18n="valleyLabel">Valle</span>
+            <select id="valley-select" data-i18n-aria-label="valleyFilterLabel" aria-label="Filtra per valle"></select>
+          </label>
         </div>
 
         <div class="event-list" aria-live="polite">
@@ -118,6 +124,6 @@
       <a href="#top"><span data-i18n="backToTop">Torna su</span> ↑</a>
     </footer>
 
-    <script src="app.js?v=7"></script>
+    <script src="app.js?v=8"></script>
   </body>
 </html>
