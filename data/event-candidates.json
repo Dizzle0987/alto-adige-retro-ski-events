@@ -993,12 +993,25 @@
         "author": "clubmoritzino",
         "ownerId": "2860294204",
         "publishedAt": "2026-09-26T06:38:15.000Z",
-        "caption": "Salutiamo l’estate come piace a noi: insieme, a 2100 metri ☀️\n\nDomenica 27 settembre, dalle 14:00, vi aspettiamo al Club Moritzino per il Closing Summer Season Party.\n\nIn console DJ @andrew.italy , per un ultimo pomeriggio di musica e brindisi nella cornice delle Dolomiti 🎶\n\nChiudiamo questa stagione in bellezza, prima di ritrovarci per un inverno davvero speciale: quello del nostro 60° anniversario 🩵"
+        "caption": "Salutiamo l’estate come piace a noi: insieme, a 2100 metri ☀️\n\nDomenica 27 settembre, dalle 14:00, vi aspettiamo al Club Moritzino per il Closing Summer Season Party.\n\nIn console DJ @andrew.italy , per un ultimo pomeriggio di musica e brindisi nella cornice delle Dolomiti 🎶\n\nChiudiamo questa stagione in bellezza, prima di ritrovarci per un inverno davvero speciale: quello del nostro 60° anniversario 🩵",
+        "flyer": {
+          "method": "instagram-image-ocr",
+          "text": ": DOMENICA 27 SETTEMBRE | DALLE..14:00\nIA u è | r „\n1 À | A , FR EN\n| È U Wu er a\nx Pa “2 \"RR\n~~ SUMMER SEASON\n= a = di 7\nSé ia ART S05\nSRS MR Sr Luni LE SLI ) > LE x\nER UT RESI ve IE pe A CIG RI ii A re i VAL PX >\n< avi dr AN, dae\nEM LOR i na\npara PGB no o, > 7 SS - 24° J\nx £ È an Na SA em ds (da È è, > 7 sf\nN > +5; ae ie 7 Da\nNE ZA SL Mai\nlità al è Wwf i\nPARA 3 Na ES Ag\nwa SIE o DI ANDREW\nIS 0 ;\nED illy OD En 25 ca onto e 2 Rx SE SMITH 2-9, em SÙ onen BH ee",
+          "dateText": ": DOMENICA 27 SETTEMBRE | DALLE..14:00\nIA u è | r „\n1 À | A , FR EN\n| È U Wu er a\nx Pa “2 \"RR\n~~ SUMMER SEASON\n= a = di 7\nSé ia ART S05\nSRS MR Sr Luni LE SLI ) > LE x\nER UT RESI ve IE pe A CIG RI ii A re i VAL PX >\n< avi dr AN, dae\nEM LOR i na\npara PGB no o, > 7 SS - 24° J\nx £ È an Na SA em ds (da È è, > 7 sf\nN > +5; ae ie 7 Da\nNE ZA SL Mai\nlità al è Wwf i\nPARA 3 Na ES Ag\nwa SIE o DI ANDREW\nIS 0 ;\nED illy OD En 25 ca onto e 2 Rx SE SMITH 2-9, em SÙ onen BH ee",
+          "dateEvidence": {
+            "status": "confirmed",
+            "start": "2026-09-27",
+            "end": "2026-09-27",
+            "evidence": "27 settembre",
+            "inferredYear": true
+          },
+          "sha256": "2d62450caf7018f9ed88527c71ddbea91d0290daba5bdb207d352352bc0313d7"
+        }
       },
       "url": "https://www.instagram.com/p/DdvaEOBOluK/",
       "kind": "instagram",
       "status": "review",
-      "reason": "flyer-uncertain-year",
+      "reason": "flyer-low-confidence",
       "date": {
         "status": "confirmed",
         "start": "2026-09-27",
@@ -1009,7 +1022,7 @@
       "media": [
         {
           "status": "review",
-          "reason": "flyer-uncertain-year"
+          "reason": "flyer-low-confidence"
         }
       ],
       "published": false
@@ -1026,12 +1039,25 @@
         "author": "giggeralm_official",
         "ownerId": "9152184548",
         "publishedAt": "2026-10-12T19:25:37.000Z",
-        "caption": "🎃 HALLOWEEN OPENING🎃\n\nDie Nacht der Nächte steht bevor - düster, laut und gnadenlos wild! 🔥💀\n\n🕗 Start: 20:00 Uhr\n📍 Giggeralm Reischach\n🎟️ Eintritt frei\n🔞 Eintritt ab 16 Jahren\n\n🎧on the turns: Zufällig & Dj Rodario\n\n🧛‍♂️ Verkleidung erwünscht!\nEgal ob Zombie, Hexe oder komplett verrückt – an Halloween darf’s ruhig ein bisschen mehr sein!\n\n🖤 See you on Halloween!"
+        "caption": "🎃 HALLOWEEN OPENING🎃\n\nDie Nacht der Nächte steht bevor - düster, laut und gnadenlos wild! 🔥💀\n\n🕗 Start: 20:00 Uhr\n📍 Giggeralm Reischach\n🎟️ Eintritt frei\n🔞 Eintritt ab 16 Jahren\n\n🎧on the turns: Zufällig & Dj Rodario\n\n🧛‍♂️ Verkleidung erwünscht!\nEgal ob Zombie, Hexe oder komplett verrückt – an Halloween darf’s ruhig ein bisschen mehr sein!\n\n🖤 See you on Halloween!",
+        "flyer": {
+          "method": "instagram-image-ocr",
+          "text": "\"Rei (DA | |\nwu n 7\nU ef\n: LE aN Ì\n: 4 7 Vine <\no ig Ti Ei | | i ti o\nN, Pee ARE ie È\nu m o@ \\% a\n7\" Barchi\nè RC\nON THE MIX:\nuo SAMSTAG 31.10.2026\nDJ u u\nRODARIO FREE ENTRY | DOORS OPEN 20:00 | ENTRY 16+",
+          "dateText": "\"Rei (DA | |\nwu n 7\nU ef\n: LE aN Ì\n: 4 7 Vine <\no ig Ti Ei | | i ti o\nN, Pee ARE ie È\nu m o@ \\% a\n7\" Barchi\nè RC\nON THE MIX:\nuo SAMSTAG 31.10.2026\nDJ u u\nRODARIO FREE ENTRY | DOORS OPEN 20:00 | ENTRY 16+",
+          "dateEvidence": {
+            "status": "confirmed",
+            "start": "2026-10-31",
+            "end": "2026-10-31",
+            "evidence": "31.10.2026",
+            "inferredYear": false
+          },
+          "sha256": "c9a799e995b90d3de27dea9da686294416b61df0d4f4343eefe3dfff720bd284"
+        }
       },
       "url": "https://www.instagram.com/p/DeZ-OMcRLN3/",
       "kind": "instagram",
       "status": "review",
-      "reason": "flyer-uncertain-year",
+      "reason": "flyer-low-confidence",
       "dateEvidence": {
         "status": "review",
         "reason": "missing-date"
@@ -1039,7 +1065,7 @@
       "media": [
         {
           "status": "review",
-          "reason": "flyer-uncertain-year"
+          "reason": "flyer-low-confidence"
         }
       ],
       "published": false
@@ -1129,7 +1155,17 @@
         "author": "3zinnendolomites",
         "ownerId": "3268204371",
         "publishedAt": "2026-10-22T08:43:13.000Z",
-        "caption": "❄️Winter is making its first appearance at 3 Zinnen Dolomites! 🏔️🤍\nThe first snow has arrived, covering the mountains in a beautiful white blanket and bringing a little taste of winter. ✨\nCurious to see the current conditions for yourself? 👀\n📹 Check out the live webcams on our website and enjoy the view!\n.\n#winteriscoming #3zinnendolomites #freshsnow #dolomites #winter"
+        "caption": "❄️Winter is making its first appearance at 3 Zinnen Dolomites! 🏔️🤍\nThe first snow has arrived, covering the mountains in a beautiful white blanket and bringing a little taste of winter. ✨\nCurious to see the current conditions for yourself? 👀\n📹 Check out the live webcams on our website and enjoy the view!\n.\n#winteriscoming #3zinnendolomites #freshsnow #dolomites #winter",
+        "flyer": {
+          "method": "instagram-image-ocr",
+          "text": "af\nVi\nDI\nBp\niz\ndi\nDi\nAa\nes\nSS\noe\nae\nee\nDI\nES\net\n[2]\n=\nm.\nMi\nla\n=\nA\n=\nFan\nie:\nBa\nZu\ndet\nES\nAtt\nSN\noe\n4\ndi\na\na\ndr\nES\nRS\nda\nER\nEr\n2}\nej\nhs\nN,\nDAS\no,\n4\nae",
+          "dateText": "af\nVi\nDI\nBp\niz\ndi\nDi\nAa\nes\nSS\noe\nae\nee\nDI\nES\net\n[2]\n=\nm.\nMi\nla\n=\nA\n=\nFan\nie:\nBa\nZu\ndet\nES\nAtt\nSN\noe\n4\ndi\na\na\ndr\nES\nRS\nda\nER\nEr\n2}\nej\nhs\nN,\nDAS\no,\n4\nae",
+          "dateEvidence": {
+            "status": "review",
+            "reason": "missing-date"
+          },
+          "sha256": "a16eacd9e16f08d124b3d9a9418620f171a2dcb174aee8f365aa4c99b50612dd"
+        }
       },
       "url": "https://www.instagram.com/p/DeylJ85ESGl/",
       "kind": "instagram",
@@ -1275,7 +1311,17 @@
         "author": "ganischgeralm_voliera",
         "ownerId": "68123628214",
         "publishedAt": "2026-10-24T19:25:02.000Z",
-        "caption": "What is your favourite season to party? Team Winter or Summer? ❄️☀️\n\n#ganischgeralm #voliera #mountainparty #pampeago #latemardolomites \n\n📸 @live_style_agency"
+        "caption": "What is your favourite season to party? Team Winter or Summer? ❄️☀️\n\n#ganischgeralm #voliera #mountainparty #pampeago #latemardolomites \n\n📸 @live_style_agency",
+        "flyer": {
+          "method": "instagram-image-ocr",
+          "text": "WHAT\nPARTY\nY\nARE YOU?",
+          "dateText": "WHAT\nPARTY\nY\nARE YOU?",
+          "dateEvidence": {
+            "status": "review",
+            "reason": "missing-date"
+          },
+          "sha256": "66b09ee0785d3c3f4cc25e127511bb859ba44ef52d3d1f26e3b3550c820f7bee"
+        }
       },
       "url": "https://www.instagram.com/p/De44POkDVvO/",
       "kind": "instagram",
@@ -1432,7 +1478,17 @@
         "author": "ganischgeralm_voliera",
         "ownerId": "68123628214",
         "publishedAt": "2026-10-30T19:19:00.000Z",
-        "caption": "Bereit für die erste große Winter Party? 🎊⛷️Verschickt den Flyer an alle, die das Season Opening nicht verpassen dürfen! 🍻\n.\n.\nPronti per la prima grande festa d'inverno? 🎊⛷️Inviate il flyer a tutti quelli che non devono assolutamente perdersi il Season Opening!🍻\n\n#ganischgeralm #voliera #latemardolomites #pampeago #obereggen"
+        "caption": "Bereit für die erste große Winter Party? 🎊⛷️Verschickt den Flyer an alle, die das Season Opening nicht verpassen dürfen! 🍻\n.\n.\nPronti per la prima grande festa d'inverno? 🎊⛷️Inviate il flyer a tutti quelli che non devono assolutamente perdersi il Season Opening!🍻\n\n#ganischgeralm #voliera #latemardolomites #pampeago #obereggen",
+        "flyer": {
+          "method": "instagram-image-ocr",
+          "text": "as\na\nI“\ni\ndt\nBy\na:\n4,\nE\nÈ\nei\nN\ner\n#%,\n=\nfa\n«ui\nRs\n7\nN\nì\n=\n|\nr\nBi\n\\\nHN\nAg\n|\nI\nI)\nfl\n(f N\n>\nsl\n|\n\\\nve\nap\nJ\nOX\nu\nOM,\n/ one\n#",
+          "dateText": "as\na\nI“\ni\ndt\nBy\na:\n4,\nE\nÈ\nei\nN\ner\n#%,\n=\nfa\n«ui\nRs\n7\nN\nì\n=\n|\nr\nBi\n\\\nHN\nAg\n|\nI\nI)\nfl\n(f N\n>\nsl\n|\n\\\nve\nap\nJ\nOX\nu\nOM,\n/ one\n#",
+          "dateEvidence": {
+            "status": "review",
+            "reason": "missing-date"
+          },
+          "sha256": "18c3bfe4cc8ec20349081815336fc5f305ce70103b0589a38124d24692698635"
+        }
       },
       "url": "https://www.instagram.com/p/DfISumxtSKI/",
       "kind": "instagram",
