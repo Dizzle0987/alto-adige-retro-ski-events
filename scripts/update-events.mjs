@@ -1,6 +1,7 @@
 import { readFile, writeFile } from "node:fs/promises";
 import { fileURLToPath } from "node:url";
 import path from "node:path";
+import { fetchLocalizedTitles } from "./localized-titles.mjs";
 
 const repositoryRoot = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const eventsPath = path.join(repositoryRoot, "dist", "events.json");
@@ -87,8 +88,8 @@ const labelsFor = (startIso, endIso) => {
   };
 };
 
-const sourceUpdate = async (event, today) => {
-  const response = await fetch(event.source, {
+const fetchPage = async (url) => {
+  const response = await fetch(url, {
     headers: {
       "user-agent": "RetroSkiEventsBot/1.0 (+https://github.com/Dizzle0987/alto-adige-retro-ski-events)",
       "accept-language": "it-IT,it;q=0.9,de;q=0.8,en;q=0.7"
@@ -97,7 +98,20 @@ const sourceUpdate = async (event, today) => {
     signal: AbortSignal.timeout(20000)
   });
   if (!response.ok) throw new Error(`HTTP ${response.status}`);
-  const html = await response.text();
+  return { html: await response.text(), url: response.url };
+};
+
+const sourceUpdate = async (event, today) => {
+  const page = await fetchPage(event.source);
+  const html = page.html;
+  const localizedTitles = await fetchLocalizedTitles({
+    html,
+    pageUrl: page.url,
+    fetchHtml: async (url) => (await fetchPage(url)).html
+  });
+  const titles = { ...(event.titles || {}), ...localizedTitles };
+  const titlesChanged = JSON.stringify(titles) !== JSON.stringify(event.titles || {});
+  const eventWithTitles = Object.keys(titles).length ? { ...event, titles } : event;
   const candidates = parseJsonLdEvents(html)
     .map((candidate) => ({
       candidate,
@@ -108,10 +122,10 @@ const sourceUpdate = async (event, today) => {
     .filter((item) => item.start && item.end && item.end >= today && item.score >= 0.34)
     .sort((a, b) => b.score - a.score || a.start.localeCompare(b.start));
 
-  if (!candidates.length) return { event, verified: true, changed: false };
+  if (!candidates.length) return { event: eventWithTitles, verified: true, changed: titlesChanged };
   const best = candidates[0];
   const updated = {
-    ...event,
+    ...eventWithTitles,
     start: best.start,
     end: best.end,
     ...labelsFor(best.start, best.end)
@@ -119,7 +133,7 @@ const sourceUpdate = async (event, today) => {
   return {
     event: updated,
     verified: true,
-    changed: updated.start !== event.start || updated.end !== event.end
+    changed: titlesChanged || updated.start !== event.start || updated.end !== event.end
   };
 };
 
@@ -151,4 +165,4 @@ for (const event of data.events) {
 data.lastChecked = today;
 data.events = refreshedEvents.sort((a, b) => a.start.localeCompare(b.start));
 await writeFile(eventsPath, `${JSON.stringify(data, null, 2)}\n`);
-console.log(`Checked ${data.events.length} events: verified=${verified}, date_changes=${changed}, unavailable=${unavailable}, last_checked=${today}`);
+console.log(`Checked ${data.events.length} events: verified=${verified}, changes=${changed}, unavailable=${unavailable}, last_checked=${today}`);

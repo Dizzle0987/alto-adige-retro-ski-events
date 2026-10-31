@@ -236,7 +236,8 @@ const automaticSummary = (event) => {
 const localizedEvent = (event) => {
   const translation = eventTranslations[currentLanguage]?.[event.id] || {};
   const place = translation.place || localizedPlace(event.place, currentLanguage);
-  const localized = { ...event, ...translation, place };
+  const title = event.titles?.[currentLanguage] || translation.title || event.title;
+  const localized = { ...event, ...translation, title, place };
   if (currentLanguage !== "it" && event.id.startsWith("auto-") && !translation.summary) {
     localized.summary = automaticSummary(event);
   }

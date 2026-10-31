@@ -1,6 +1,7 @@
 import { readFile, writeFile } from "node:fs/promises";
 import { fileURLToPath } from "node:url";
 import path from "node:path";
+import { fetchLocalizedTitles } from "./localized-titles.mjs";
 
 const repositoryRoot = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const sourcesPath = path.join(repositoryRoot, "data", "discovery-sources.json");
@@ -206,6 +207,9 @@ const scanWebSource = async (source, today, knownEvents) => {
   if (source.type === "lts-event") return scanLtsEvent(source, today, knownEvents);
   const html = await fetchHtml(source.url);
   const structuredEvents = parseJsonLdEvents(html);
+  const titles = structuredEvents.length === 1
+    ? await fetchLocalizedTitles({ html, pageUrl: source.url, fetchHtml })
+    : {};
   const candidates = structuredEvents
     .map((event) => {
       const start = isoDate(event.startDate);
@@ -222,6 +226,7 @@ const scanWebSource = async (source, today, knownEvents) => {
         url: absoluteUrl(event.url || event.mainEntityOfPage, source.url),
         sourceId: source.id,
         sourceName: source.name,
+        titles,
         excerpt: typeof event.description === "string" ? event.description.replace(/<[^>]+>/g, " ").replace(/\s+/g, " ").trim().slice(0, 500) : null
       };
     })
@@ -237,6 +242,7 @@ const scanWebSource = async (source, today, knownEvents) => {
 
 const scanLtsEvent = async (source, today, knownEvents) => {
   const html = await fetchHtml(source.url);
+  const titles = await fetchLocalizedTitles({ html, pageUrl: source.url, fetchHtml });
   const title = stripHtml(html.match(/<h1[^>]*>([\s\S]*?)<\/h1>/i)?.[1] || "");
   const dates = [...html.matchAll(/data-days=["']([^"']+)["']/gi)]
     .flatMap((match) => match[1].match(/\d{4}-\d{2}-\d{2}/g) || [])
@@ -261,6 +267,7 @@ const scanLtsEvent = async (source, today, knownEvents) => {
         url: source.url,
         sourceId: source.id,
         sourceName: source.name,
+        titles,
         excerpt: description
       }]
     : [];
@@ -283,6 +290,7 @@ const scanSouthTyrolListing = async (source, today, knownEvents) => {
   const candidates = (await Promise.all(cards.map(async (card) => {
     try {
       const detailHtml = await fetchHtml(card.url);
+      const titles = await fetchLocalizedTitles({ html: detailHtml, pageUrl: card.url, fetchHtml });
       const detailEvents = parseJsonLdEvents(detailHtml)
         .map((event) => ({ event, score: titleScore(card.title, event.name || "") }))
         .sort((a, b) => b.score - a.score);
@@ -300,6 +308,7 @@ const scanSouthTyrolListing = async (source, today, knownEvents) => {
         url: absoluteUrl(detail?.url || detail?.mainEntityOfPage, card.url),
         sourceId: source.id,
         sourceName: source.name,
+        titles,
         excerpt: typeof detail?.description === "string" ? stripHtml(detail.description).slice(0, 500) : null
       };
     } catch {
@@ -373,6 +382,7 @@ const siteEventFromCandidate = (candidate, index) => {
   return {
     id: `auto-${candidate.start}-${slug(candidate.title)}`,
     title: candidate.title,
+    ...(candidate.titles && Object.keys(candidate.titles).length ? { titles: candidate.titles } : {}),
     start: candidate.start,
     end: candidate.end,
     ...labelsFor(candidate.start, candidate.end),

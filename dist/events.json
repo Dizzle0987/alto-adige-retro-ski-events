@@ -22,7 +22,12 @@
       "social": "https://www.instagram.com/kronplatz_group/",
       "map": "https://www.google.com/maps/search/?api=1&query=San%20Vigilio%2C%20Regione%20dolomitica%20Plan%20de%20Corones",
       "accent": "#ff4fa3",
-      "featured": false
+      "featured": false,
+      "titles": {
+        "it": "Bruning Krampus - the after-show Party",
+        "de": "Bruning Krampus - the after-show Party",
+        "en": "Bruning Krampus - the after-show Party"
+      }
     },
     {
       "id": "auto-2027-01-02-back-to-1976-giornata-di-sci-old-school-con-simon-mac-live",
@@ -48,7 +53,12 @@
       "social": null,
       "map": "https://www.google.com/maps/search/?api=1&query=Ultimo%2C%20Merano%20e%20dintorni",
       "accent": "#ff7439",
-      "featured": false
+      "featured": false,
+      "titles": {
+        "it": "Back to 1976 - Giornata di sci old school con Simon & Mac LIVE",
+        "de": "Back to 1976 - Vintage Skitag mit Simon & Mac LIVE",
+        "en": "Back to 1976 - Vintage skiday with Simon & Mac LIVE"
+      }
     },
     {
       "id": "auto-2027-01-09-dj-armino-live",
@@ -72,7 +82,12 @@
       "social": null,
       "map": "https://www.google.com/maps/search/?api=1&query=Ultimo%2C%20Merano%20e%20dintorni",
       "accent": "#b0ef43",
-      "featured": false
+      "featured": false,
+      "titles": {
+        "it": "DJ Armino LIVE",
+        "de": "DJ Armino LIVE",
+        "en": "DJ Armino LIVE"
+      }
     },
     {
       "id": "auto-2027-02-24-kronplatz-ski-music-festival-dj-edition",
@@ -95,7 +110,12 @@
       "social": "https://www.instagram.com/kronplatz_group/",
       "map": "https://www.google.com/maps/search/?api=1&query=San%20Vigilio%2C%20Regione%20dolomitica%20Plan%20de%20Corones",
       "accent": "#ff4fa3",
-      "featured": false
+      "featured": false,
+      "titles": {
+        "it": "Kronplatz Ski & Music Festival DJ Edition",
+        "en": "Kronplatz Ski & Music Festival DJ Edition",
+        "de": "Kronplatz Ski & Music Festival DJ Edition"
+      }
     },
     {
       "id": "auto-2027-02-27-gare-di-sci-alla-vecchia-maniera",
@@ -118,7 +138,12 @@
       "social": null,
       "map": "https://www.google.com/maps/search/?api=1&query=Ultimo%2C%20Merano%20e%20dintorni",
       "accent": "#ff7439",
-      "featured": false
+      "featured": false,
+      "titles": {
+        "it": "Gare di sci alla vecchia maniera",
+        "en": "Oldschool ski race",
+        "de": "Legenden-Skirennen"
+      }
     },
     {
       "id": "auto-2027-03-06-invito-alla-gara-internazionale-all-insegna-di-divertimento-e-nostalgi",
@@ -142,7 +167,12 @@
       "social": null,
       "map": "https://www.google.com/maps/search/?api=1&query=Fi%C3%A8%20allo%20Sciliar%2C%20Regione%20dolomitica%20Alpe%20di%20Siusi",
       "accent": "#b0ef43",
-      "featured": false
+      "featured": false,
+      "titles": {
+        "it": "Invito alla gara internazionale all’insegna di divertimento e nostalgia",
+        "de": "Nostalgie-Gaudi-Rennen",
+        "en": "Nostalgia Jamboree race"
+      }
     },
     {
       "id": "auto-2027-03-07-dolomites-dirndl-ski-day",
@@ -164,7 +194,12 @@
       "social": "https://www.instagram.com/dolomitesvalgardena/",
       "map": "https://www.google.com/maps/search/?api=1&query=Ortisei%2C%20Regione%20dolomitica%20Val%20Gardena",
       "accent": "#ff4fa3",
-      "featured": false
+      "featured": false,
+      "titles": {
+        "it": "Dolomites Dirndl Ski Day",
+        "en": "Dolomites Dirndl Ski Day",
+        "de": "Dolomites Dirndl Ski Day"
+      }
     },
     {
       "id": "3-zinnen-schlager",
@@ -210,7 +245,12 @@
       "social": "https://www.instagram.com/dolomitesvalgardena/",
       "map": "https://www.google.com/maps/search/?api=1&query=Selva%2FS%C3%ABlva%2C%20Selva%20di%20Val%20Gardena%2C%20Regione%20dolomitica%20Val%20Gardena",
       "accent": "#ff7439",
-      "featured": false
+      "featured": false,
+      "titles": {
+        "it": "Rock the Dolomites - Winter Music Festival",
+        "en": "Rock the Dolomites - Winter Music Festival",
+        "de": "Rock the Dolomites - Winter Music Festival"
+      }
     },
     {
       "id": "lockenfest-funes",
@@ -235,7 +275,12 @@
       "social": null,
       "map": "https://www.google.com/maps/search/?api=1&query=Filler+Ski+Lift+St+Magdalena+Villnoss",
       "accent": "#ff4fa3",
-      "featured": false
+      "featured": false,
+      "titles": {
+        "en": "Locken Festival with Retro Party by Villnösser Teifl",
+        "it": "Lockenfest con Retro Party by Villnösser Teifl",
+        "de": "Lockenfest mit Retro Party"
+      }
     },
     {
       "id": "auto-2027-03-20-spring-race-party-ortisei",
@@ -257,7 +302,12 @@
       "social": "https://www.instagram.com/dolomitesvalgardena/",
       "map": "https://www.google.com/maps/search/?api=1&query=Ortisei%20%C2%B7%20Str.%20Rezia%201",
       "accent": "#00bfa6",
-      "featured": false
+      "featured": false,
+      "titles": {
+        "it": "Spring Race Party Ortisei",
+        "de": "Spring Race Party Ortisei",
+        "en": "Spring Race Party Ortisei"
+      }
     },
     {
       "id": "auto-2027-03-20-gara-della-nostalgia",
@@ -281,7 +331,12 @@
       "social": null,
       "map": "https://www.google.com/maps/search/?api=1&query=Area%20sciistica%20di%20Watles",
       "accent": "#f5ec35",
-      "featured": false
+      "featured": false,
+      "titles": {
+        "it": "Gara della nostalgia",
+        "de": "Nostalgierennen am Watles",
+        "en": "Nostalgia race at Watles"
+      }
     },
     {
       "id": "rock-meets-beats",
@@ -349,7 +404,12 @@
       "social": null,
       "map": "https://www.google.com/maps/search/?api=1&query=Ultimo%2C%20Merano%20e%20dintorni",
       "accent": "#b0ef43",
-      "featured": false
+      "featured": false,
+      "titles": {
+        "it": "Schwemmalm Open Air",
+        "de": "Das letzte Schwemmalm Open Air - 50 Jahre Schwemmalm!",
+        "en": "Schwemmalm Open Air"
+      }
     },
     {
       "id": "oldschool-skiday-solda",
@@ -374,7 +434,12 @@
       "social": null,
       "map": "https://www.google.com/maps/search/?api=1&query=Funivia+di+Solda+Sulden",
       "accent": "#00bfa6",
-      "featured": false
+      "featured": false,
+      "titles": {
+        "it": "Oldschool Skiday Solda 2027",
+        "de": "Oldschool Skiday Sulden 2027",
+        "en": "Oldschool Skiday Solda 2027"
+      }
     },
     {
       "id": "ski-carousel-vintage-party",
