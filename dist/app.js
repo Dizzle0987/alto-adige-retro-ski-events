@@ -1,4 +1,4 @@
-import { calendarState, eventPeriod } from "./calendar.mjs?v=3";
+import { calendarState, eventPeriod } from "./calendar.mjs?v=4";
 import { officialEventTitle } from "./event-titles.mjs";
 
 const eventList = document.querySelector(".event-list");

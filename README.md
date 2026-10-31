@@ -4,7 +4,7 @@ Radar in continuo aggiornamento per feste retro, vintage ski e après-ski in Alt
 
 Il periodo invernale di riferimento, ottobre–aprile, è mostrato con gli anni in cima alla pagina. È solo un'indicazione: la raccolta e la pubblicazione degli eventi pertinenti funzionano tutto l'anno, senza escludere altri mesi.
 
-Le schede distinguono «Oggi» da «In corso»: quest'ultimo stato richiede orari di inizio e fine confermati, confrontati con l'ora di Roma. Gli eventi notturni restano visibili fino alla fine indicata anche dopo mezzanotte. Senza orari sufficienti non si presume che l'evento sia in corso. La pagina aggiorna lo stato ogni minuto.
+Le schede distinguono «Oggi» da «In corso»: basta un orario di inizio confermato, confrontato con l'ora di Roma. Se la fine è nota viene rispettata, anche dopo mezzanotte. Senza fine indicata, gli eventi con inizio dalle 18:00 restano in evidenza fino alle 06:00 successive all’ultima giornata; quelli diurni fino a mezzanotte. Sono limiti interni di visualizzazione, mai pubblicati come orari reali. Senza un inizio confermato resta «Oggi». La pagina aggiorna lo stato ogni minuto, senza chiamate esterne.
 
 ## Contenuti
 

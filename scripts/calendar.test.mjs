@@ -13,10 +13,29 @@ for (const [instant, expected] of [
   ["2026-11-01T03:00:00+01:00", "past"],
 ]) test(`K1 ${instant}: ${expected}`, () => assert.equal(eventPeriod(party, calendarState(new Date(instant))), expected));
 
-test("unknown hours or end time never claim the event is happening now", () => {
+test("unknown start never claims an event is happening now; a start alone is sufficient", () => {
   const calendar = calendarState(new Date("2026-10-31T20:00:00+01:00"));
   assert.equal(eventPeriod({ start: party.start, end: party.end }, calendar), "today");
-  assert.equal(eventPeriod({ start: party.start, end: party.end, hours: { start: "18:00" } }, calendar), "today");
+  assert.equal(eventPeriod({ start: party.start, end: party.end, hours: { start: "18:00" } }, calendar), "ongoing");
+});
+
+const giggeralm = { start: "2026-10-31", end: "2026-10-31", hours: { start: "20:00" } };
+for (const [instant, expected] of [
+  ["2026-10-30T21:00:00+01:00", "upcoming"],
+  ["2026-10-31T19:59:00+01:00", "today"],
+  ["2026-10-31T20:00:00+01:00", "ongoing"],
+  ["2026-11-01T00:01:00+01:00", "ongoing"],
+  ["2026-11-01T05:59:00+01:00", "ongoing"],
+  ["2026-11-01T06:00:00+01:00", "past"],
+]) test(`start-only evening ${instant}: ${expected}`, () => {
+  assert.equal(eventPeriod(giggeralm, calendarState(new Date(instant))), expected);
+  assert.deepEqual(giggeralm.hours, { start: "20:00" });
+});
+
+test("daytime event without finish uses midnight rather than an invented public end", () => {
+  const event = { start: party.start, end: party.end, hours: { start: "10:00" } };
+  assert.equal(eventPeriod(event, calendarState(new Date("2026-10-31T10:00:00+01:00"))), "ongoing");
+  assert.equal(eventPeriod(event, calendarState(new Date("2026-11-01T00:00:00+01:00"))), "past");
 });
 test("same-day event moves to archive at its confirmed finish", () => {
   const event = { start: party.start, end: party.end, hours: { start: "10:00", end: "12:00" } };

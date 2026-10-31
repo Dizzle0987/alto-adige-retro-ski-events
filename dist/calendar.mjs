@@ -30,9 +30,17 @@ export const eventPeriod = (event, calendar) => {
     date.setUTCDate(date.getUTCDate() + 1);
     endDate = date.toISOString().slice(0, 10);
   }
-  if (endDate < today || (now && endTime && now >= `${endDate}T${endTime}`)) return "past";
+  // A published start is sufficient. Unknown finishes use a display-only cutoff:
+  // midnight for daytime events, 06:00 the next morning for evening events.
+  let cutoff = endTime ? `${endDate}T${endTime}` : null;
+  if (!endTime && startTime) {
+    const evening = startTime >= "18:00";
+    const boundary = new Date(`${endDate}T12:00:00Z`);
+    if (!event.endsAtDate) boundary.setUTCDate(boundary.getUTCDate() + 1);
+    cutoff = `${boundary.toISOString().slice(0, 10)}T${evening ? "06:00" : "00:00"}`;
+  }
+  if (cutoff ? (now ? now >= cutoff : today > cutoff.slice(0, 10)) : endDate < today) return "past";
   if (event.start > today) return "upcoming";
-  // Only claim "ongoing" with a confirmed start and end, using the venue's timezone.
-  if (now && startTime && endTime && now >= `${event.start}T${startTime}` && now < `${endDate}T${endTime}`) return "ongoing";
+  if (now && startTime && now >= `${event.start}T${startTime}`) return "ongoing";
   return "today";
 };
