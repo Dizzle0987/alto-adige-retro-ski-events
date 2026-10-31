@@ -162,6 +162,8 @@ const eventTranslations = {
 const placeTranslations = {
   de: {
     "K1 · Riscone / Reischach, Brunico / Bruneck": "K1 · Reischach, Bruneck",
+    "Giggeralm · Riscone / Reischach, Brunico / Bruneck": "Giggeralm · Reischach, Bruneck",
+    "Hexenkessel · Cadipietra / Steinhaus, Valle Aurina / Ahrntal": "Hexenkessel · Steinhaus, Ahrntal",
     "Cadipietra": "Steinhaus",
     "Musikpavillon · Campo Tures / Sand in Taufers, Valle Aurina / Ahrntal": "Musikpavillon · Sand in Taufers, Ahrntal",
     "San Vigilio, Regione dolomitica Plan de Corones": "St. Vigil, Dolomitenregion Kronplatz",
@@ -174,6 +176,8 @@ const placeTranslations = {
   },
   en: {
     "Cadipietra": "Steinhaus / Cadipietra",
+    "Giggeralm · Riscone / Reischach, Brunico / Bruneck": "Giggeralm · Riscone / Reischach, Brunico / Bruneck",
+    "Hexenkessel · Cadipietra / Steinhaus, Valle Aurina / Ahrntal": "Hexenkessel · Steinhaus / Cadipietra, Ahrntal",
     "Musikpavillon · Campo Tures / Sand in Taufers, Valle Aurina / Ahrntal": "Music pavilion · Sand in Taufers / Campo Tures, Ahrntal",
     "San Vigilio, Regione dolomitica Plan de Corones": "San Vigilio, Kronplatz Dolomites Region",
     "Ultimo, Merano e dintorni": "Ultimo, Merano and environs",

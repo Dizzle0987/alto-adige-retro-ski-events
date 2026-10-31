@@ -1518,6 +1518,39 @@
       "featured": false
     },
     {
+      "id": "giggeralm-halloween-opening-2026",
+      "title": "Halloween Opening",
+      "start": "2026-10-31",
+      "end": "2026-10-31",
+      "dateLabel": "31",
+      "monthLabel": "OTT",
+      "year": "2026",
+      "categories": ["apres", "costume"],
+      "tags": ["Halloween", "16+"],
+      "venue": "Giggeralm",
+      "summary": "Opening di Halloween alla Giggeralm: ingresso gratuito, accesso dai 16 anni e apertura alle 20:00.",
+      "summaries": {
+        "it": "Opening di Halloween alla Giggeralm: ingresso gratuito, accesso dai 16 anni e apertura alle 20:00.",
+        "de": "Halloween-Opening in der Giggeralm: freier Eintritt, Einlass ab 16 Jahren und ab 20:00 Uhr.",
+        "en": "Halloween opening at Giggeralm: free entry, ages 16+, with doors opening at 20:00."
+      },
+      "place": "Giggeralm · Riscone / Reischach, Brunico / Bruneck",
+      "hours": { "start": "20:00" },
+      "source": "https://www.instagram.com/giggeralm_official/p/DeZ-OMcRLN3/",
+      "social": "https://www.instagram.com/giggeralm_official/",
+      "map": "https://www.google.com/maps/search/?api=1&query=Giggeralm+Reischach+Kronplatz",
+      "accent": "#ff7439",
+      "featured": false,
+      "provenance": [{
+        "method": "manual-public-flyer",
+        "url": "https://www.instagram.com/giggeralm_official/p/DeZ-OMcRLN3/",
+        "author": "giggeralm_official",
+        "checkedAt": "2026-10-31",
+        "dateEvidence": "SAMSTAG 31.10.2026",
+        "detailsEvidence": "FREE ENTRY | DOORS OPEN 20:00 | ENTRY 16+"
+      }]
+    },
+    {
       "id": "k1-halloween-open-air-2026",
       "title": "K1 Halloween Open Air",
       "start": "2026-10-31",
@@ -1558,6 +1591,41 @@
           "caption": "ℍ𝔸𝕃𝕃𝕆𝕎𝔼𝔼ℕ 𝕆ℙ𝔼ℕ 𝔸𝕀ℝ 👻🦇🔥\n\nNoch 4 Tage bis zum Big K1 Halloween Open Air 😈 Hier nochmal alle wichtigsten Infos:\n\n🗓 𝐒𝐚𝐦𝐬𝐭𝐚𝐠, 𝟑𝟏.𝟏𝟎.𝟐𝟎𝟐𝟔\n☀️ 𝐎𝐔𝐓𝐃𝐎𝐎𝐑 von 18.00 bis 00.00 Uhr\n🕘 𝐈𝐍𝐃𝐎𝐎𝐑 von 18.00 bis 03.00 Uhr\n🎧 DJ Juli, DJ Double Dee, DJ Ivan Fillini & DJ Hufe\n\n Dresscode: je gruseliger, desto besser.... Markiert eure Horror-Crew und kommt rechtzeitig, wir sehen uns auf der dark side! 🖤🧟‍♂️🧛‍♀️\n\n🔞 18+ | Free Entrance | Party In- & Outdoor 🎉\n\n#k1 #k1_reischach #halloween #halloweenparty #halloween2026"
         }
       ]
+    },
+    {
+      "id": "hexenkessel-soft-opening-2026",
+      "title": "Soft Opening",
+      "start": "2026-11-13",
+      "end": "2026-11-14",
+      "dateLabel": "13–14",
+      "monthLabel": "NOV",
+      "year": "2026",
+      "categories": ["apres"],
+      "tags": ["Opening", "Après-ski"],
+      "venue": "Hexenkessel",
+      "summary": "Due serate per il soft opening dell’Hexenkessel prima dell’avvio della stagione invernale. Programma e orari da annunciare.",
+      "summaries": {
+        "it": "Due serate per il soft opening dell’Hexenkessel prima dell’avvio della stagione invernale. Programma e orari da annunciare.",
+        "de": "Zwei Abende zum Soft Opening im Hexenkessel vor dem Winterstart. Programm und Uhrzeiten folgen.",
+        "en": "Two evenings for Hexenkessel’s soft opening ahead of the winter season. Programme and times to be announced."
+      },
+      "place": "Hexenkessel · Cadipietra / Steinhaus, Valle Aurina / Ahrntal",
+      "source": "https://www.instagram.com/hexenkessel_klausberg/",
+      "social": "https://www.instagram.com/hexenkessel_klausberg/",
+      "map": "https://www.google.com/maps/search/?api=1&query=Hexenkessel+Klausberg+Steinhaus",
+      "accent": "#5b5df0",
+      "featured": false,
+      "provenance": [{
+        "method": "manual-public-bio",
+        "url": "https://www.instagram.com/hexenkessel_klausberg/",
+        "author": "hexenkessel_klausberg",
+        "checkedAt": "2026-10-31",
+        "dateEvidence": "Soft Opening 👉 13.-14. November",
+        "inferredYear": true,
+        "year": 2026,
+        "yearApprovedByUser": true,
+        "notes": "L’anno non compare nella bio. Il 2026 è stato confermato dall’utente per questo specifico annuncio."
+      }]
     },
     {
       "id": "auto-2026-11-20-k1-season-opening",
@@ -1623,6 +1691,40 @@
       "map": "https://www.google.com/maps/search/?api=1&query=Cadipietra",
       "accent": "#ff4fa3",
       "featured": false
+    },
+    {
+      "id": "hexenkessel-klausberg-winter-opening-2026",
+      "title": "KLAUSBERG WINTER OPENING 2026/27",
+      "start": "2026-12-04",
+      "end": "2026-12-05",
+      "endsAtDate": "2026-12-06",
+      "dateLabel": "04–05",
+      "monthLabel": "DIC",
+      "year": "2026",
+      "categories": ["apres"],
+      "tags": ["Opening", "Live + DJ"],
+      "venue": "Hexenkessel",
+      "summary": "Opening invernale con BRENNHOLZ, PAZOO e DJ Willy. Inizio venerdì 4 dicembre alle 20:00, conclusione domenica 6 alle 02:00.",
+      "summaries": {
+        "it": "Opening invernale con BRENNHOLZ, PAZOO e DJ Willy. Inizio venerdì 4 dicembre alle 20:00, conclusione domenica 6 alle 02:00.",
+        "de": "Winter Opening mit BRENNHOLZ, PAZOO und DJ Willy. Beginn am Freitag, 4. Dezember, um 20:00 Uhr; Ende am Sonntag, 6. Dezember, um 02:00 Uhr.",
+        "en": "Winter opening with BRENNHOLZ, PAZOO and DJ Willy. Starts Friday 4 December at 20:00 and ends Sunday 6 December at 02:00."
+      },
+      "place": "Hexenkessel · Cadipietra / Steinhaus, Valle Aurina / Ahrntal",
+      "hours": { "start": "20:00" },
+      "source": "https://www.facebook.com/events/2505506236527436/",
+      "social": "https://www.instagram.com/hexenkessel_klausberg/",
+      "map": "https://www.google.com/maps/search/?api=1&query=Hexenkessel+Klausberg+Steinhaus",
+      "accent": "#00bfa6",
+      "featured": false,
+      "provenance": [{
+        "method": "manual-public-facebook-event",
+        "url": "https://www.facebook.com/events/2505506236527436/",
+        "author": "Hexenkessel Klausberg",
+        "checkedAt": "2026-10-31",
+        "dateEvidence": "KLAUSBERG WINTER OPENING 2026/27 — 4 dic alle ore 20:00 - 6 dic alle ore 02:00 CET",
+        "notes": "Serate del 4 e 5 dicembre, con conclusione nella notte del 6. Nessun orario quotidiano o continuità della festa presunti."
+      }]
     },
     {
       "id": "auto-2026-12-11-bruning-krampus-the-after-show-party",
