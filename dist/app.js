@@ -48,7 +48,7 @@ const copy = {
     languageLabel: "Sprache", posterLabel: "Dekoratives Poster mit stilisiertem Skifahrer", season: "Saison {season}",
     seasonPeriod: "Oktober {seasonStart} – April {seasonEnd}", seasonNote: "Winterlicher Bezugszeitraum · auch Events außerhalb der Saison.",
     periodLabel: "Event-Zeitraum", currentEvents: "Aktuell & demnächst", pastEvents: "Vergangene Events",
-    archiveNote: "Rückblick auf die letzten 12 Monate.", ongoingTitle: "Jetzt los", upcomingTitle: "Die nächsten Termine",
+    archiveNote: "Rückblick auf die letzten 12 Monate.", ongoingTitle: "Laufende Events", upcomingTitle: "Die nächsten Termine",
     ongoingBadge: "Findet gerade statt", emptyPast: "Keine vergangenen Events der letzten 12 Monate für diese Filter.",
     todayTitle: "Heute", todayBadge: "Heute",
     heroLine1: "SCHRÄGE SKI.", heroLine2: "GUTE PARTYS.",

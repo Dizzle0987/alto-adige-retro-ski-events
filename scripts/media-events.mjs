@@ -62,7 +62,10 @@ export const extractMediaLinks = (html, source) => {
     const raw = attr(tag, "href") || attr(tag, "data-src") || attr(tag, "src");
     const url = allowedMediaUrl(raw, source);
     const label = `${attr(tag, "alt")} ${attr(tag, "title")} ${raw}`;
-    if (!url || !/\.(ics|pdf|png|jpe?g|webp)(?:$|\?)/i.test(url.href) || !eventWords.test(label) || /logo|icon|placeholder|menu|speisekarte|datenschutz/i.test(label)) continue;
+    const documentHint = /flyer|programm|program|calendar|\bevents?\b/i.test(label)
+      || (/party|opening|festival/i.test(label) && /20\d{2}|\d{1,2}[._-]\d{1,2}/.test(label));
+    if (!url || !/\.(ics|pdf|png|jpe?g|webp)(?:$|\?)/i.test(url.href) || !documentHint || /logo|icon|placeholder|menu|speisekarte|datenschutz|video/i.test(label)) continue;
+    if (source.mediaDocumentVenueRequired && !label.toLowerCase().includes(source.venueName.toLowerCase())) continue;
     result.push({ url: url.href, label: websiteText(label).slice(0, 250), kind: /\.ics(?:$|\?)/i.test(url.href) ? "ics" : /\.pdf(?:$|\?)/i.test(url.href) ? "pdf" : "image" });
   }
   return [...new Map(result.map((item) => [item.url, item])).values()].slice(0, 3);
@@ -101,6 +104,23 @@ export const calendarAssessments = (text, source, evidence) => {
   });
 };
 
+export const corroborateMedia = (assessment, html, source) => {
+  const normalize = (text) => text.normalize("NFKD").toLowerCase().replace(/[^a-z0-9]+/g, " ").trim();
+  const page = websiteText(html);
+  const date = parseWebsiteDates(page);
+  const title = normalize(assessment.title);
+  const venue = normalize(source.venueName || "");
+  const contains = (text, phrase) => ` ${normalize(text)} `.includes(` ${phrase} `);
+  // OCR confidence alone is never proof: the official page must independently
+  // repeat the title, the venue, and exactly the same unambiguous full date.
+  if (!assessment.start || date.status !== "confirmed" || date.start !== assessment.start || date.end !== assessment.end
+    || title.length < 10 || !venue || !contains(page, title) || !contains(page, venue)
+    || !contains(assessment.excerpt || "", venue)) return null;
+  return { ...assessment, status: "confirmed", reason: "corroborated-official-page", kind: "web", sourceId: source.id,
+    sourceName: source.name, url: source.url, extraction: "corroborated-media", documentEvidence: assessment.evidence,
+    id: `${source.id}-media-${assessment.start}-${hash(title).slice(0, 12)}` };
+};
+
 export const readDocument = async (bytes, kind, run = exec) => {
   const directory = await mkdtemp(path.join(tmpdir(), "retro-document-"));
   const file = path.join(directory, kind === "pdf" ? "input.pdf" : "input.img");
@@ -112,7 +132,7 @@ export const readDocument = async (bytes, kind, run = exec) => {
     await writeFile(file, bytes);
     if (kind === "pdf") {
       const { stdout } = await boundedRun("pdftotext", ["-f", "1", "-l", "3", "-layout", file, "-"]);
-      if (stdout.trim().length >= 30) return { text: stdout, method: "pdf-text" };
+      if (stdout.replace(/[^\p{L}\p{N}]/gu, "").length >= 20) return { text: stdout, method: "pdf-text" };
       await boundedRun("pdftoppm", ["-f", "1", "-l", "3", "-scale-to", "2000", "-png", file, path.join(directory, "page")]);
       const pages = (await readdir(directory)).filter((name) => /^page-.*\.png$/.test(name)).sort().slice(0, 3);
       const texts = [];
@@ -173,7 +193,10 @@ export const createMediaScanner = ({ cache = {}, instagram = [], maxNew = 12, fe
       const key = hash(`${source.id}|${document.url}`);
       const old = entries[key];
       if (old && Date.now() - Date.parse(old.checkedAt) < 7 * 86400000) {
-        if (old.assessment) review.push(old.assessment);
+        if (old.assessment) {
+          const confirmed = corroborateMedia(old.assessment, html, source);
+          if (confirmed) candidates.push(confirmed); else review.push(old.assessment);
+        }
         reports.push({ kind: document.kind, status: "cached" }); continue;
       }
       if (remaining <= 0) { reports.push({ kind: document.kind, status: "run-limit" }); continue; }
@@ -194,7 +217,8 @@ export const createMediaScanner = ({ cache = {}, instagram = [], maxNew = 12, fe
         }
         const assessment = mediaAssessment(parsed.text, source, { url: document.url, page: source.url, sha256: signature, method: parsed.method });
         entries[key] = { checkedAt: new Date().toISOString(), assessment };
-        review.push(assessment);
+        const confirmed = corroborateMedia(assessment, html, source);
+        if (confirmed) candidates.push(confirmed); else review.push(assessment);
         reports.push({ kind: document.kind, status: "read-for-review", method: parsed.method });
       } catch (error) {
         const reason = error.code === "ENOENT" ? "ocr-tools-unavailable" : error.message.slice(0, 120);

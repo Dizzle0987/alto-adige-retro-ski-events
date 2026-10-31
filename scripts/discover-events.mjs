@@ -404,6 +404,7 @@ const siteEventFromCandidate = (candidate, index) => {
     id: candidate.kind === "instagram" ? `auto-${candidate.sourceId}-${candidate.start}-${slug(candidate.title)}` : `auto-${candidate.start}-${slug(candidate.title)}`,
     title: candidate.title,
     ...(candidate.extraction ? { websiteExtraction: candidate.extraction } : {}),
+    ...(candidate.documentEvidence ? { documentEvidence: candidate.documentEvidence } : {}),
     ...(candidate.titles && Object.keys(candidate.titles).length ? { titles: candidate.titles } : {}),
     start: candidate.start,
     end: candidate.end,

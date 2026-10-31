@@ -5,7 +5,7 @@ import { tmpdir } from "node:os";
 import path from "node:path";
 import { execFile } from "node:child_process";
 import { promisify } from "node:util";
-import { allowedMediaUrl, publicAddress, extractMediaLinks, extractEmbeddedPosts, mediaAssessment, calendarAssessments, createMediaScanner, readDocument } from "./media-events.mjs";
+import { allowedMediaUrl, publicAddress, extractMediaLinks, extractEmbeddedPosts, mediaAssessment, corroborateMedia, calendarAssessments, createMediaScanner, readDocument } from "./media-events.mjs";
 
 const source = { id: "venue", url: "https://official.example/events", venue: "K1 · Reischach", venueName: "K1" };
 test("only approved HTTPS media hosts, no IPs, credentials or private addresses", () => {
@@ -15,7 +15,7 @@ test("only approved HTTPS media hosts, no IPs, credentials or private addresses"
   assert.equal(publicAddress("8.8.8.8"), true);
 });
 test("only event media, not menus, logos, maps or foreign images", () => {
-  const html = `<img src="/logo-party.png"><img src="/party-2026.jpg"><a href="/event-program.pdf">Programme</a><a href="/calendar.ics">Calendar</a><img src="https://foreign.example/party.jpg"><img src="/menu-party.jpg">`;
+  const html = `<img src="/logo-party.png"><img src="/party-2026.jpg"><a href="/event-program.pdf">Programme</a><a href="/calendar.ics">Calendar</a><img src="https://foreign.example/party.jpg"><img src="/menu-party.jpg"><img src="/Pulverfass-Opening-4.jpg"><img src="/apres-ski-photo.jpg">`;
   assert.deepEqual(extractMediaLinks(html, source).map((item) => item.kind), ["image", "pdf", "ics"]);
 });
 test("embedded posts retain their real old publication year and apostrophes", () => {
@@ -43,7 +43,7 @@ test("global limit and weekly cache prevent repeated downloads and OCR", async (
   const fetcher = async () => { downloads++; return { bytes: Buffer.from("image") }; };
   const reader = async () => { reads++; return { text: "Retro Party\n20.11.2027\nK1", method: "image-ocr" }; };
   const scanner = createMediaScanner({ maxNew: 1, fetcher, reader });
-  const html = `<img src="/retro-party.png"><img src="/vintage-party.png">`;
+  const html = `<img src="/retro-party-2027.png"><img src="/vintage-party-2027.png">`;
   const first = await scanner.scan(html, source);
   assert.equal(reads, 1); assert.equal(downloads, 1);
   assert.ok(first.reports.some((entry) => entry.status === "run-limit"));
@@ -51,11 +51,20 @@ test("global limit and weekly cache prevent repeated downloads and OCR", async (
   await next.scan(html, source);
   assert.equal(reads, 1); assert.equal(downloads, 1);
 });
-test("changed bytes are re-read; identical bytes at another URL use the hash cache", async () => {
+test("identical bytes at another URL use the hash cache", async () => {
   let reads = 0;
   const scanner = createMediaScanner({ fetcher: async () => ({ bytes: Buffer.from("same-image") }), reader: async () => { reads++; return { text: "Retro Party\n20.11.2027", method: "image-ocr" }; } });
-  await scanner.scan('<img src="/retro-party1.png"><img src="/retro-party2.png">', source);
+  await scanner.scan('<img src="/retro-party-2027-1.png"><img src="/retro-party-2027-2.png">', source);
   assert.equal(reads, 1);
+});
+test("flyer publication requires independent title, full date and venue on the official page", () => {
+  const assessment = mediaAssessment("Retro Party Night\n20.11.2027\nK1", source, {});
+  const html = "<h1>K1</h1><h2>Retro Party Night</h2><p>20.11.2027</p>";
+  assert.equal(corroborateMedia(assessment, html, source).status, "confirmed");
+  assert.equal(corroborateMedia(assessment, html.replace("2027", "2026"), source), null);
+  assert.equal(corroborateMedia(assessment, html.replace("Retro Party Night", "Different Party"), source), null);
+  assert.equal(corroborateMedia(assessment, html.replace("K1", "Other club"), source), null);
+  assert.equal(corroborateMedia({ ...assessment, excerpt: assessment.excerpt.replace("K1", "K12") }, html, source), null);
 });
 test("public Curator posts require the official author, profile URL and pinned owner ID", async () => {
   const official = { id: "k1", name: "K1", url: "https://www.instagram.com/k1.kronplatz/", ownerId: "5849734189", autoPublish: true, venue: "K1 · Reischach", venueAliases: ["K1"] };

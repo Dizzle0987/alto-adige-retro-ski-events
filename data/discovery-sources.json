@@ -225,6 +225,7 @@
     },
     {
       "id": "vallis-speikboden",
+      "mediaDocumentVenueRequired": true,
       "name": "Vallis Restaurant / Schirmpub — Speikboden",
       "url": "https://www.ahrntal.com/de/alle-gastronoimebetriebe/rid-42F1C8F4E3CAD89691446C46B43937E8-g-vallis-restaurant-bar.html",
       "venueName": "Vallis",
