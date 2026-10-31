@@ -28,7 +28,7 @@ const copy = {
     autoSummaryRetro: "Sci d’epoca, look vintage e atmosfera nostalgica. Il programma completo è nella fonte ufficiale.",
     autoSummaryCostume: "Evento sulla neve con dress code e atmosfera a tema. Il programma completo è nella fonte ufficiale.",
     autoSummaryGeneric: "Evento sulla neve con programma e dettagli nella fonte ufficiale.",
-    footerNote: "CURATO NELLE DOLOMITI — AGGIORNAMENTO CONTINUO", backToTop: "Torna su",
+    footerNote: "Idee und Umsetzung von zwoa geile Typen", backToTop: "Torna su",
     officialSource: "Fonte ufficiale", map: "Mappa", instagram: "Instagram",
   },
   de: {
@@ -52,7 +52,7 @@ const copy = {
     autoSummaryRetro: "Historische Ski, Vintage-Looks und nostalgische Stimmung. Das vollständige Programm findest du in der offiziellen Quelle.",
     autoSummaryCostume: "Schnee-Event mit Dresscode und besonderem Motto. Das vollständige Programm findest du in der offiziellen Quelle.",
     autoSummaryGeneric: "Schnee-Event mit Programm und Details in der offiziellen Quelle.",
-    footerNote: "IN DEN DOLOMITEN KURATIERT — LAUFEND AKTUALISIERT", backToTop: "Nach oben",
+    footerNote: "Idee und Umsetzung von zwoa geile Typen", backToTop: "Nach oben",
     officialSource: "Offizielle Quelle", map: "Karte", instagram: "Instagram",
   },
   en: {
@@ -76,7 +76,7 @@ const copy = {
     autoSummaryRetro: "Vintage skis, retro looks and a nostalgic atmosphere. See the official source for the full programme.",
     autoSummaryCostume: "A themed snow event with a dress code. See the official source for the full programme.",
     autoSummaryGeneric: "A snow event with the full programme and details in the official source.",
-    footerNote: "CURATED IN THE DOLOMITES — CONTINUOUSLY UPDATED", backToTop: "Back to top",
+    footerNote: "Idee und Umsetzung von zwoa geile Typen", backToTop: "Back to top",
     officialSource: "Official source", map: "Map", instagram: "Instagram",
   },
 };
