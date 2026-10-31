@@ -1,11 +1,11 @@
 {
   "lastChecked": "2026-10-31",
   "summary": {
-    "webSources": 20,
+    "webSources": 21,
     "instagramSources": 11,
-    "instagramStatus": "replayed",
-    "candidates": 11,
-    "published": 0,
+    "instagramStatus": "awaiting-token",
+    "candidates": 13,
+    "published": 2,
     "updated": 0,
     "pruned": 0
   },
@@ -15,7 +15,7 @@
       "name": "Südtirol / Alto Adige Events",
       "kind": "web",
       "url": "https://www.suedtirol.info/it/it/esperienze-eventi/plp-eventi/o/sagre",
-      "status": "not-checked-replay",
+      "status": "checked",
       "found": 0
     },
     {
@@ -23,7 +23,7 @@
       "name": "Südtirol Winter Events",
       "kind": "web",
       "url": "https://www.suedtirol.info/en/en/experiences-and-events/plp-events/o/winter-event",
-      "status": "not-checked-replay",
+      "status": "checked",
       "found": 0
     },
     {
@@ -31,31 +31,49 @@
       "name": "Alta Badia Events",
       "kind": "web",
       "url": "https://www.altabadia.org/en/alta-badia-events",
-      "status": "not-checked-replay",
-      "found": 0
+      "status": "checked",
+      "found": 0,
+      "coverage": "no-readable-events",
+      "extraction": {
+        "structured": 0,
+        "html": 0,
+        "review": 0
+      }
     },
     {
       "id": "val-gardena-winter-events",
       "name": "Val Gardena Winter Events",
       "kind": "web",
       "url": "https://www.valgardena.it/en/winter-holidays-dolomites/events-highlights/",
-      "status": "not-checked-replay",
-      "found": 0
+      "status": "checked",
+      "found": 0,
+      "coverage": "no-readable-events",
+      "extraction": {
+        "structured": 0,
+        "html": 0,
+        "review": 0
+      }
     },
     {
       "id": "spring-race-party-ortisei",
       "name": "Spring Race Party Ortisei",
       "kind": "web",
       "url": "https://www.suedtirol.info/it/it/esperienze-eventi/eventi-alto-adige/pdp-evento.E8432689570C4CE79B96E32617DCC824.spring-race-party-ortisei.ortisei-urtijei",
-      "status": "not-checked-replay",
-      "found": 0
+      "status": "checked",
+      "found": 0,
+      "coverage": "readable-events",
+      "extraction": {
+        "structured": 1,
+        "html": 0,
+        "review": 0
+      }
     },
     {
       "id": "watles-nostalgia-day",
       "name": "Watles Day of Nostalgia",
       "kind": "web",
       "url": "https://www.watles.net/it/sci-e-montagna-d-avventura-watles/info-servizio/eventi/rid-B6EF3B88C11646D3B97FE55653629FDF-e-gara-della-nostalgia.html",
-      "status": "not-checked-replay",
+      "status": "checked",
       "found": 0
     },
     {
@@ -63,214 +81,313 @@
       "name": "Kronplatz Events",
       "kind": "web",
       "url": "https://www.kronplatz.com/en/event-lp",
-      "status": "not-checked-replay",
-      "found": 0
+      "status": "checked",
+      "found": 0,
+      "coverage": "no-readable-events",
+      "extraction": {
+        "structured": 0,
+        "html": 0,
+        "review": 0
+      }
     },
     {
       "id": "obereggen-events",
       "name": "Obereggen Experiences & Events",
       "kind": "web",
       "url": "https://obereggen.com/en/ropeways/summer/experiences_events",
-      "status": "not-checked-replay",
-      "found": 0
+      "status": "checked",
+      "found": 0,
+      "coverage": "no-readable-events",
+      "extraction": {
+        "structured": 0,
+        "html": 0,
+        "review": 0
+      }
     },
     {
       "id": "ahrntal-events",
       "name": "Ahrntal Events",
       "kind": "web",
       "url": "https://www.ahrntal.com/de/urlaub-im-ahrntal/veranstaltungen",
-      "status": "not-checked-replay",
-      "found": 0
+      "status": "checked",
+      "found": 0,
+      "coverage": "no-readable-events",
+      "extraction": {
+        "structured": 0,
+        "html": 0,
+        "review": 0
+      }
     },
     {
       "id": "skiworld-ahrntal",
       "name": "Skiworld Ahrntal",
       "kind": "web",
       "url": "https://www.skiworldahrntal.it/en/winter/",
-      "status": "not-checked-replay",
-      "found": 0
+      "status": "checked",
+      "found": 0,
+      "coverage": "no-readable-events",
+      "extraction": {
+        "structured": 0,
+        "html": 0,
+        "review": 0
+      }
     },
     {
       "id": "winklparade-mytix",
       "name": "Winklparade / myTix",
       "kind": "web",
       "url": "https://www.mytix.bz/winklparade",
-      "status": "not-checked-replay",
-      "found": 0
+      "status": "checked",
+      "found": 1,
+      "coverage": "readable-events",
+      "extraction": {
+        "structured": 0,
+        "html": 1,
+        "review": 0
+      }
     },
     {
       "id": "ganischger-alm",
       "name": "Ganischger Alm — The Mountain Party",
       "kind": "web",
       "url": "https://www.ganischger.com/ganischgeralm/alm/",
-      "status": "not-checked-replay",
-      "found": 0
+      "status": "checked",
+      "found": 0,
+      "coverage": "no-readable-events",
+      "extraction": {
+        "structured": 0,
+        "html": 0,
+        "review": 0
+      }
     },
     {
       "id": "club-moritzino-events",
       "name": "Club Moritzino Events",
       "kind": "web",
       "url": "https://clubmoritzino.it/en/events-in-alta-badia/",
-      "status": "not-checked-replay",
-      "found": 0
+      "status": "checked",
+      "found": 0,
+      "coverage": "readable-events",
+      "extraction": {
+        "structured": 0,
+        "html": 56,
+        "review": 0
+      }
     },
     {
       "id": "gassl-events",
       "name": "Gassl — Olang / Kronplatz",
       "kind": "web",
       "url": "https://www.gassl.bz/en/club/events",
-      "status": "not-checked-replay",
-      "found": 0
+      "status": "checked",
+      "found": 0,
+      "coverage": "no-readable-events",
+      "extraction": {
+        "structured": 0,
+        "html": 0,
+        "review": 0
+      }
     },
     {
       "id": "k1-kronplatz",
       "name": "K1 — Reischach / Kronplatz",
       "kind": "web",
       "url": "https://k-1.bz/en/",
-      "status": "not-checked-replay",
-      "found": 0
+      "status": "checked",
+      "found": 1,
+      "coverage": "readable-events",
+      "extraction": {
+        "structured": 0,
+        "html": 2,
+        "review": 0
+      }
     },
     {
       "id": "hexenkessel-klausberg",
       "name": "Hexenkessel — Klausberg / Ahrntal",
       "kind": "web",
       "url": "https://www.hexenkessel.bz/",
-      "status": "not-checked-replay",
-      "found": 0
+      "status": "checked",
+      "found": 0,
+      "coverage": "no-readable-events",
+      "extraction": {
+        "structured": 0,
+        "html": 0,
+        "review": 0
+      }
+    },
+    {
+      "id": "ahrntal-krampus-afterparty",
+      "name": "Comune Valle Aurina — Krampus & Hexenkessel",
+      "kind": "web",
+      "url": "https://www.comune.valleaurina.bz.it/it/Vivere_il_comune/Eventi/Sfilata_dei_Krampus",
+      "status": "checked",
+      "found": 0,
+      "coverage": "readable-events",
+      "extraction": {
+        "structured": 1,
+        "html": 0,
+        "review": 0
+      }
     },
     {
       "id": "luislkeller-gardena",
       "name": "Luislkeller — Wolkenstein / Val Gardena",
       "kind": "web",
       "url": "https://www.luislkeller.com/de/",
-      "status": "not-checked-replay",
-      "found": 0
+      "status": "checked",
+      "found": 0,
+      "coverage": "no-readable-events",
+      "extraction": {
+        "structured": 0,
+        "html": 0,
+        "review": 0
+      }
     },
     {
       "id": "bussl-schnalstal",
       "name": "Buss’l — Kurzras / Schnalstal",
       "kind": "web",
       "url": "https://www.bussl.it/Default.aspx",
-      "status": "not-checked-replay",
-      "found": 0
+      "status": "checked",
+      "found": 0,
+      "coverage": "no-readable-events",
+      "extraction": {
+        "structured": 0,
+        "html": 0,
+        "review": 0
+      }
     },
     {
       "id": "loox-obereggen",
       "name": "LOOX — Obereggen",
       "kind": "web",
       "url": "https://www.loox.bz.it/",
-      "status": "not-checked-replay",
-      "found": 0
+      "status": "checked",
+      "found": 0,
+      "coverage": "no-readable-events",
+      "extraction": {
+        "structured": 0,
+        "html": 0,
+        "review": 0
+      }
     },
     {
       "id": "obereggen-apres-ski",
       "name": "Obereggen — Ganischger Alm, Platzl & LOOX",
       "kind": "web",
       "url": "https://obereggen.com/en/ropeways/winter/apres-ski_alpine-club",
-      "status": "not-checked-replay",
-      "found": 0
+      "status": "checked",
+      "found": 0,
+      "coverage": "no-readable-events",
+      "extraction": {
+        "structured": 0,
+        "html": 0,
+        "review": 0
+      }
     },
     {
       "id": "gassl-instagram",
       "name": "Gassl Olang",
       "kind": "instagram",
       "url": "https://www.instagram.com/gassl.olang/",
-      "status": "no-author-data",
-      "found": 0,
-      "received": 0
+      "status": "awaiting-token"
     },
     {
       "id": "k1-instagram",
       "name": "K1 Kronplatz",
       "kind": "instagram",
       "url": "https://www.instagram.com/k1.kronplatz/",
-      "status": "checked",
-      "found": 6,
-      "received": 6
+      "status": "awaiting-token"
     },
     {
       "id": "hexenkessel-instagram",
       "name": "Hexenkessel Klausberg",
       "kind": "instagram",
       "url": "https://www.instagram.com/hexenkessel_klausberg/",
-      "status": "no-author-data",
-      "found": 0,
-      "received": 0
+      "status": "awaiting-token"
     },
     {
       "id": "luislkeller-instagram",
       "name": "Luislkeller",
       "kind": "instagram",
       "url": "https://www.instagram.com/luislkeller/",
-      "status": "no-author-data",
-      "found": 0,
-      "received": 0
+      "status": "awaiting-token"
     },
     {
       "id": "winklparade-instagram",
       "name": "Winklparade",
       "kind": "instagram",
       "url": "https://www.instagram.com/winklparade/",
-      "status": "no-author-data",
-      "found": 0,
-      "received": 0
+      "status": "awaiting-token"
     },
     {
       "id": "ganischger-instagram",
       "name": "Ganischger Obereggen",
       "kind": "instagram",
       "url": "https://www.instagram.com/ganischger.obereggen/",
-      "status": "no-author-data",
-      "found": 0,
-      "received": 0
+      "status": "awaiting-token"
     },
     {
       "id": "skiworld-ahrntal-instagram",
       "name": "Skiworld Ahrntal",
       "kind": "instagram",
       "url": "https://www.instagram.com/skiworldahrntal_official/",
-      "status": "checked",
-      "found": 1,
-      "received": 5
+      "status": "awaiting-token"
     },
     {
       "id": "kronplatz-instagram",
       "name": "Kronplatz",
       "kind": "instagram",
       "url": "https://www.instagram.com/kronplatz_group/",
-      "status": "checked",
-      "found": 1,
-      "received": 2
+      "status": "awaiting-token"
     },
     {
       "id": "alta-badia-instagram",
       "name": "Alta Badia",
       "kind": "instagram",
       "url": "https://www.instagram.com/alta_badia_official/",
-      "status": "checked",
-      "found": 1,
-      "received": 6
+      "status": "awaiting-token"
     },
     {
       "id": "val-gardena-instagram",
       "name": "Val Gardena",
       "kind": "instagram",
       "url": "https://www.instagram.com/dolomitesvalgardena/",
-      "status": "checked",
-      "found": 1,
-      "received": 6
+      "status": "awaiting-token"
     },
     {
       "id": "three-zinnen-instagram",
       "name": "3 Zinnen Dolomites",
       "kind": "instagram",
       "url": "https://www.instagram.com/3zinnendolomites/",
-      "status": "checked",
-      "found": 1,
-      "received": 4
+      "status": "awaiting-token"
     }
   ],
   "candidates": [
+    {
+      "title": "Winklparade Madness 2025",
+      "start": "2025-10-31",
+      "end": "2025-10-31",
+      "hours": {
+        "start": "18:00"
+      },
+      "summaries": {
+        "it": "Festival con musica dal vivo e party al padiglione musicale di Campo Tures.",
+        "de": "Festival mit Livemusik und Party am Musikpavillon in Sand in Taufers.",
+        "en": "Live music and party at the music pavilion in Sand in Taufers."
+      },
+      "url": "https://www.mytix.bz/winklparade",
+      "venue": "Musikpavillon",
+      "location": "Musikpavillon · Campo Tures / Sand in Taufers, Valle Aurina / Ahrntal",
+      "extraction": "winklparade-announcement",
+      "id": "winklparade-mytix-2025-10-31-winklparade-madness-2025",
+      "kind": "web",
+      "sourceId": "winklparade-mytix",
+      "sourceName": "Winklparade / myTix",
+      "eventId": "auto-2025-10-31-winklparade-madness-2025",
+      "published": true
+    },
     {
       "id": "skiworld-ahrntal-instagram-DerpaiRPr47",
       "title": "Annuncio da verificare",
@@ -525,6 +642,26 @@
       "status": "review",
       "reason": "repost-or-collaboration",
       "published": false
+    },
+    {
+      "title": "K1 Season Opening",
+      "start": "2026-11-20",
+      "end": "2026-11-21",
+      "summaries": {
+        "it": "Due giorni per festeggiare l’apertura della stagione al K1. Orari e programma in aggiornamento.",
+        "de": "Zwei Tage zum Saisonauftakt im K1. Uhrzeiten und Programm folgen.",
+        "en": "Two days celebrating the season opening at K1. Times and programme to follow."
+      },
+      "url": "https://k-1.bz/en/",
+      "venue": "K1",
+      "location": "K1 · Riscone / Reischach, Brunico / Bruneck",
+      "extraction": "k1-announcements",
+      "id": "k1-kronplatz-2026-11-20-k1-season-opening",
+      "kind": "web",
+      "sourceId": "k1-kronplatz",
+      "sourceName": "K1 — Reischach / Kronplatz",
+      "eventId": "auto-2026-11-20-k1-season-opening",
+      "published": true
     }
   ]
 }

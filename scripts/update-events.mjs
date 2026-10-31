@@ -103,6 +103,9 @@ const fetchPage = async (url) => {
 };
 
 const sourceUpdate = async (event, today) => {
+  // Listing/homepage titles belong to the website, not to its event announcements.
+  // These events are rediscovered by the HTML adapters instead.
+  if (event.websiteExtraction) return { event, verified: false, changed: false };
   const page = await fetchPage(event.source);
   const html = page.html;
   const localizedTitles = await fetchLocalizedTitles({

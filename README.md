@@ -39,7 +39,11 @@ Gli eventi terminati vengono conservati per 12 mesi e non vengono più aggiornat
 
 Oltre alle pagine dei singoli eventi, il radar controlla un registro di portali turistici, comprensori e Skihütten in `data/discovery-sources.json`. Tra le fonti ci sono Winklparade/myTix, Skiworld Ahrntal/Speikboden, Ganischger Alm, Obereggen, Kronplatz e Club Moritzino. Il portale ufficiale Alto Adige viene scandito su più pagine: un nuovo evento entra automaticamente nell'agenda solo quando titolo, data, luogo e pagina ufficiale sono tutti disponibili. Il rapporto completo resta in `data/event-candidates.json`.
 
-Il registro comprende anche Gassl (Olang), K1 (Reischach), Hexenkessel (Klausberg), Luislkeller (Wolkenstein), Buss’l (Kurzras) e LOOX (Obereggen). I profili Instagram collegati dai siti ufficiali di Gassl, K1, Hexenkessel e Luislkeller sono inclusi nel radar opzionale. Per Platzl/Tipi si controlla il canale attuale del comprensorio di Obereggen: i riferimenti storici al Tipi non attestano un programma attuale. Le pagine web vengono analizzate per eventi con metadati strutturati; flyer, calendari incorporati e programmi settimanali privi di date precise non vengono trasformati in appuntamenti.
+Il registro comprende anche Gassl (Olang), K1 (Reischach), Hexenkessel (Klausberg), Luislkeller (Wolkenstein), Buss’l (Kurzras) e LOOX (Obereggen). I profili Instagram collegati dai siti ufficiali di Gassl, K1, Hexenkessel e Luislkeller sono inclusi nel radar opzionale. Per Platzl/Tipi si controlla il canale attuale del comprensorio di Obereggen: i riferimenti storici al Tipi non attestano un programma attuale.
+
+Oltre ai metadati strutturati, `scripts/website-events.mjs` legge annunci testuali K1, schede calendario Moritzino e l'annuncio Winklparade/myTix. Gli anni devono essere espliciti nella data o nella stagione indicata dalla fonte: non si riciclano date di edizioni precedenti. Il fallback generico legge singoli `<article>` con titolo evento, data completa e sede configurata; date multiple o ambigue restano da verificare. Non è un lettore universale: flyer, iframe, programmi settimanali senza date e altri layout richiedono ulteriori adattatori. Il rapporto distingue `readable-events` da `no-readable-events`, conserva il numero di annunci HTML/strutturati e i casi da verificare.
+
+Per le fonti con `importArchive: true` vengono importati anche eventi verificati negli ultimi 12 mesi. Restano in «Eventi passati / Vergangene Events», con anno originale e link alla singola fonte. Il calendario Moritzino viene filtrato per non attribuire alla sede in Alta Badia gli eventi esterni. L'annuncio comunale di Valle Aurina copre Krampus e afterparty Hexenkessel; l'orario della sfilata non viene usato come orario dell'afterparty.
 
 I titoli in italiano, tedesco e inglese vengono recuperati dai collegamenti alle versioni linguistiche delle pagine ufficiali, quando disponibili.
 
@@ -58,8 +62,8 @@ Prima di ogni nuova scansione il radar legge piano e consumo mensile tramite l�
 - Gli eventi social entrano nell’agenda se attuali/futuri e pertinenti, in qualsiasi mese dell’anno, come gli altri eventi rilevati. Stesso titolo/data in locali diversi non significa stesso evento. Gli annunci dello stesso evento sono uniti e conservano la provenienza (autore, ID restituito, testo, data di pubblicazione e link).
 - Il testo dei flyer e Facebook non vengono ancora letti. Le vecchie segnalazioni prive di prova dell’autore restano da verificare.
 
-Per verificare senza avviare un Actor, il workflow manuale offre `instagram_mode: replay`: rilegge il dataset dell’ultima esecuzione Instagram già conclusa. Se il dataset non è disponibile, termina senza avviare una scansione alternativa. I test locali non richiedono token né connessioni: `node --test scripts/social-events.test.mjs scripts/social-pipeline.test.mjs`.
+Per verificare senza avviare un Actor, il workflow manuale offre `instagram_mode: replay`: rilegge il dataset dell’ultima esecuzione Instagram già conclusa. Se il dataset non è disponibile, termina senza avviare una scansione alternativa. I test locali non richiedono token né connessioni: `node --test scripts/*.test.mjs`. Per aggiornare soltanto i siti senza scansioni Apify: `APIFY_TOKEN='' node scripts/discover-events.mjs`.
 
 ## Verifica dati
 
-Ultimo controllo delle fonti: 30 ottobre 2026. Date e programmi possono cambiare: consultare sempre i link ufficiali prima di partire.
+La data dell'ultimo controllo è in `dist/events.json` e nel rapporto `data/event-candidates.json`. Date e programmi possono cambiare: consultare sempre i link ufficiali prima di partire.

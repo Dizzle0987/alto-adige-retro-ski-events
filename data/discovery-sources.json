@@ -57,46 +57,84 @@
     },
     {
       "id": "winklparade-mytix",
+      "socialUrl": "https://www.instagram.com/winklparade/",
+      "htmlAdapter": "winklparade-announcement",
+      "importArchive": true,
+      "venueName": "Musikpavillon",
+      "venue": "Musikpavillon · Campo Tures / Sand in Taufers, Valle Aurina / Ahrntal",
       "name": "Winklparade / myTix",
       "url": "https://www.mytix.bz/winklparade"
     },
     {
       "id": "ganischger-alm",
+      "venueName": "Ganischger Alm",
+      "venue": "Ganischger Alm · Obereggen, Val d’Ega / Eggental",
       "name": "Ganischger Alm — The Mountain Party",
       "url": "https://www.ganischger.com/ganischgeralm/alm/"
     },
     {
       "id": "club-moritzino-events",
+      "socialUrl": "https://www.instagram.com/clubmoritzino/",
+      "htmlAdapter": "moritzino-calendar",
+      "importArchive": true,
+      "venueName": "Club Moritzino",
+      "venue": "Club Moritzino · Piz La Ila, Alta Badia",
       "name": "Club Moritzino Events",
       "url": "https://clubmoritzino.it/en/events-in-alta-badia/"
     },
     {
       "id": "gassl-events",
+      "venueName": "Gassl",
+      "venue": "Gassl · Valdaora / Olang, Plan de Corones / Kronplatz",
       "name": "Gassl — Olang / Kronplatz",
       "url": "https://www.gassl.bz/en/club/events"
     },
     {
       "id": "k1-kronplatz",
+      "socialUrl": "https://www.instagram.com/k1.kronplatz/",
+      "htmlAdapter": "k1-announcements",
+      "venueName": "K1",
+      "venue": "K1 · Riscone / Reischach, Brunico / Bruneck",
       "name": "K1 — Reischach / Kronplatz",
       "url": "https://k-1.bz/en/"
     },
     {
       "id": "hexenkessel-klausberg",
+      "venueName": "Hexenkessel",
+      "venue": "Hexenkessel · Cadipietra / Steinhaus, Valle Aurina / Ahrntal",
       "name": "Hexenkessel — Klausberg / Ahrntal",
       "url": "https://www.hexenkessel.bz/"
     },
     {
+      "id": "ahrntal-krampus-afterparty",
+      "socialUrl": "https://www.instagram.com/hexenkessel_klausberg/",
+      "venueName": "Hexenkessel",
+      "eventSummaries": {
+        "it": "Sfilata dei Krampus a Cadipietra, seguita dall’afterparty all’Hexenkessel. Warm-up dalle 12:00; sfilata alle 19:30. Orario dell’afterparty non indicato.",
+        "de": "Krampuslauf in Steinhaus mit anschließender Afterparty im Hexenkessel. Warm-up ab 12:00 Uhr, Umzug um 19:30 Uhr. Beginn der Afterparty nicht angegeben.",
+        "en": "Krampus parade in Steinhaus followed by an afterparty at Hexenkessel. Warm-up from 12:00, parade at 19:30. Afterparty start time not specified."
+      },
+      "name": "Comune Valle Aurina — Krampus & Hexenkessel",
+      "url": "https://www.comune.valleaurina.bz.it/it/Vivere_il_comune/Eventi/Sfilata_dei_Krampus"
+    },
+    {
       "id": "luislkeller-gardena",
+      "venueName": "Luislkeller",
+      "venue": "Luislkeller · Selva di Val Gardena / Wolkenstein in Gröden",
       "name": "Luislkeller — Wolkenstein / Val Gardena",
       "url": "https://www.luislkeller.com/de/"
     },
     {
       "id": "bussl-schnalstal",
+      "venueName": "Buss’l",
+      "venue": "Buss’l · Maso Corto / Kurzras, Val Senales / Schnalstal",
       "name": "Buss’l — Kurzras / Schnalstal",
       "url": "https://www.bussl.it/Default.aspx"
     },
     {
       "id": "loox-obereggen",
+      "venueName": "LOOX",
+      "venue": "LOOX · Obereggen, Val d’Ega / Eggental",
       "name": "LOOX — Obereggen",
       "url": "https://www.loox.bz.it/"
     },

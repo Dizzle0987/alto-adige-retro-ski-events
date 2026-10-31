@@ -27,10 +27,11 @@ const romeDate = (timestamp) => {
   return `${parts.year}-${parts.month}-${parts.day}`;
 };
 
-export const parseSocialDates = (caption, publishedAt) => {
+export const parseSocialDates = (caption, publishedAt, { explicitOnly = false } = {}) => {
   const text = folded(caption);
   const publication = romeDate(publishedAt);
-  if (!publication) return { status: "review", reason: "missing-publication-date" };
+  if (!publication && !explicitOnly) return { status: "review", reason: "missing-publication-date" };
+  if (explicitOnly && /\b(today|tomorrow|heute|morgen|oggi|domani)\b/.test(text)) return { status: "review", reason: "relative-date-without-publication" };
   if (/\b\d{1,2}[./]\d{1,2}[./]\d{2}\b/.test(text)) return { status: "review", reason: "ambiguous-year" };
   if (/\b(throwback|ruckblick|ricordi|l['’]anno scorso|last year|letztes jahr|recap|was a blast)\b/.test(text)) {
     return { status: "review", reason: "retrospective" };
@@ -70,6 +71,7 @@ export const parseSocialDates = (caption, publishedAt) => {
     if (value.format === "slash" && value.day <= 12 && value.month <= 12 && value.day !== value.month) {
       return { status: "review", reason: "ambiguous-date", evidence: value.evidence };
     }
+    if (explicitOnly && !value.year) return { status: "review", reason: "missing-explicit-year" };
     let year = value.year || Number(publication.slice(0, 4));
     let start = iso(year, value.month, value.day);
     let end = iso(year, value.month, value.endDay);
@@ -82,7 +84,7 @@ export const parseSocialDates = (caption, publishedAt) => {
     if (!start || !end || (!value.year && start > addDays(publication, 180))) {
       return { status: "review", reason: "uncertain-year", evidence: value.evidence };
     }
-    if (end < publication) return { status: "review", reason: "past-at-publication", evidence: value.evidence };
+    if (publication && end < publication) return { status: "review", reason: "past-at-publication", evidence: value.evidence };
     const weekdays = ["sonntag|sunday|domenica", "montag|monday|lunedi", "dienstag|tuesday|martedi", "mittwoch|wednesday|mercoledi", "donnerstag|thursday|giovedi", "freitag|friday|venerdi", "samstag|saturday|sabato"];
     const preceding = text.slice(Math.max(0, value.index - 20), value.index);
     const weekday = weekdays.findIndex((names) => new RegExp(`(?:${names})[,\\s]*$`).test(preceding));
@@ -105,6 +107,8 @@ export const parseSocialDates = (caption, publishedAt) => {
   if (unique.length !== 1) return { status: "review", reason: unique.length ? "multiple-dates" : "missing-date" };
   return { status: "confirmed", ...unique[0] };
 };
+
+export const parseWebsiteDates = (text) => parseSocialDates(text, null, { explicitOnly: true });
 
 export const parseSocialTimes = (caption) => {
   const text = folded(caption);

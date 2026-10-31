@@ -4,6 +4,8 @@ import path from "node:path";
 import { fetchLocalizedTitles } from "./localized-titles.mjs";
 import { assessInstagramPost, sameSocialEvent, mergeSocialAnnouncement } from "./social-events.mjs";
 import { checkApifyFreeBudget } from "./apify-budget.mjs";
+import { extractWebsiteEvents } from "./website-events.mjs";
+import { calendarState } from "../dist/calendar.mjs";
 
 const repositoryRoot = process.env.DISCOVERY_DATA_ROOT || path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const sourcesPath = path.join(repositoryRoot, "data", "discovery-sources.json");
@@ -53,7 +55,7 @@ const relevanceTerms = [
 
 const isRelevant = (value) => {
   const text = cleanText(value);
-  return relevanceTerms.some((term) => text.includes(term));
+  return relevanceTerms.some((term) => text.includes(term) && (term !== "open air" || /\b(ski|sci|snow|neve|piste|rifugio|schwemmalm|kronplatz)\b/.test(text)));
 };
 
 const isEventType = (type) => {
@@ -206,6 +208,8 @@ const scanWebSource = async (source, today, knownEvents) => {
   if (source.type === "lts-event") return scanLtsEvent(source, today, knownEvents);
   const html = await fetchHtml(source.url);
   const structuredEvents = parseJsonLdEvents(html);
+  const fallback = extractWebsiteEvents(html, source);
+  const cutoff = source.importArchive ? calendarState().archiveCutoff : today;
   const titles = structuredEvents.length === 1
     ? await fetchLocalizedTitles({ html, pageUrl: source.url, fetchHtml })
     : {};
@@ -222,6 +226,8 @@ const scanWebSource = async (source, today, knownEvents) => {
         start,
         end,
         location,
+        ...(source.venueName ? { venue: source.venueName } : {}),
+        ...(source.eventSummaries ? { summaries: source.eventSummaries } : {}),
         url: absoluteUrl(event.url || event.mainEntityOfPage, source.url),
         sourceId: source.id,
         sourceName: source.name,
@@ -229,12 +235,18 @@ const scanWebSource = async (source, today, knownEvents) => {
         excerpt: typeof event.description === "string" ? event.description.replace(/<[^>]+>/g, " ").replace(/\s+/g, " ").trim().slice(0, 500) : null
       };
     })
-    .filter((candidate) => candidate.title && candidate.start && candidate.end >= today)
-    .filter((candidate) => isRelevant(`${candidate.title} ${candidate.excerpt || ""} ${candidate.location || ""}`))
+    .concat(fallback.events.map((event) => ({
+      ...event, id: `${source.id}-${event.start}-${slug(event.title)}`, kind: "web",
+      sourceId: source.id, sourceName: source.name,
+    })))
+    .filter((candidate) => candidate.title && candidate.start && candidate.end >= cutoff)
+    .filter((candidate) => candidate.extraction && source.htmlAdapter || isRelevant(`${candidate.title} ${candidate.excerpt || ""} ${candidate.location || ""}`))
     .filter((candidate) => !knownEvents.some((event) => titleScore(event.title, candidate.title) >= 0.65 && event.start === candidate.start));
 
   return {
-    report: { id: source.id, name: source.name, kind: "web", url: source.url, status: "checked", found: candidates.length },
+    report: { id: source.id, name: source.name, kind: "web", url: source.url, status: "checked", found: candidates.length,
+      coverage: structuredEvents.length || fallback.events.length ? "readable-events" : "no-readable-events",
+      extraction: { structured: structuredEvents.length, html: fallback.events.length, review: fallback.review.length }, needsReview: fallback.review },
     candidates
   };
 };
@@ -339,6 +351,8 @@ const instagramUsername = (url) => {
 const eventPalette = ["#ff4fa3", "#5b5df0", "#ff7439", "#00bfa6", "#b0ef43", "#f5ec35"];
 
 const socialForCandidate = (candidate) => {
+  const configured = sources.web.find((source) => source.id === candidate.sourceId)?.socialUrl;
+  if (configured) return configured;
   const value = cleanText(`${candidate.title} ${candidate.location || ""} ${candidate.sourceName || ""}`);
   if (value.includes("kronplatz") || value.includes("plan de corones") || value.includes("brunico")) return "https://www.instagram.com/kronplatz_group/";
   if (value.includes("val gardena") || value.includes("ortisei") || value.includes("selva")) return "https://www.instagram.com/dolomitesvalgardena/";
@@ -350,10 +364,10 @@ const socialForCandidate = (candidate) => {
 };
 
 const classificationsForCandidate = (candidate) => {
-  const value = cleanText(`${candidate.title} ${candidate.excerpt || ""}`);
+  const value = cleanText(`${candidate.title} ${candidate.excerpt || ""} ${candidate.summaries?.it || ""}`);
   const retro = ["retro", "vintage", "oldschool", "old school", "nostalg", "vecchia maniera", "anni 80", "80er"].some((term) => value.includes(cleanText(term)));
   const costume = retro || ["dirndl", "dress code", "ugly outfit", "bad taste", "costume", "carnevale"].some((term) => value.includes(cleanText(term)));
-  const apres = ["apres", "party", "music", "musica", "dj", "festival", "schlager", "tekkno", "live", "open air"].some((term) => value.includes(cleanText(term)));
+  const apres = ["apres", "party", "music", "musica", "dj", "festival", "schlager", "tekkno", "live", "open air", "season opening", "season closing"].some((term) => value.includes(cleanText(term)));
   const categories = [retro && "retro", costume && "costume", apres && "apres"].filter(Boolean);
   if (!categories.length) categories.push("retro");
   const tags = [
@@ -381,6 +395,7 @@ const siteEventFromCandidate = (candidate, index) => {
   return {
     id: candidate.kind === "instagram" ? `auto-${candidate.sourceId}-${candidate.start}-${slug(candidate.title)}` : `auto-${candidate.start}-${slug(candidate.title)}`,
     title: candidate.title,
+    ...(candidate.extraction ? { websiteExtraction: candidate.extraction } : {}),
     ...(candidate.titles && Object.keys(candidate.titles).length ? { titles: candidate.titles } : {}),
     start: candidate.start,
     end: candidate.end,
@@ -388,8 +403,10 @@ const siteEventFromCandidate = (candidate, index) => {
     categories: classifications.categories,
     tags: classifications.tags,
     summary: conciseSummary(candidate),
+    ...(candidate.summaries ? { summaries: candidate.summaries } : {}),
     place: candidate.location,
     ...(candidate.venue ? { venue: candidate.venue } : {}),
+    ...(candidate.hours ? { hours: candidate.hours } : {}),
     source: candidate.url,
     social: candidate.kind === "instagram" ? sources.instagram.find((source) => source.id === candidate.sourceId)?.url : socialForCandidate(candidate),
     ...(candidate.kind === "instagram" ? {
