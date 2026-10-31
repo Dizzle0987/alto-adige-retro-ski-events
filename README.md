@@ -29,7 +29,7 @@ Il sito è buildless. Il branch `gh-pages` contiene il contenuto pubblicabile di
 
 Un workflow GitHub Actions controlla le fonti ufficiali ogni lunedì, mercoledì e giovedì alle 08:00 (Europe/Rome). Quando trova cambiamenti verificabili, aggiorna l'agenda, pubblica `main` e rigenera il branch `gh-pages`. Le fonti non raggiungibili vengono conservate senza sovrascrivere dati già verificati.
 
-Oltre alle pagine dei singoli eventi, il radar controlla un registro di portali turistici, comprensori e Skihütten in `data/discovery-sources.json`. Tra le fonti ci sono Winklparade/myTix, Skiworld Ahrntal/Speikboden, Ganischger Alm, Obereggen, Kronplatz e Club Moritzino. I possibili nuovi eventi vengono salvati in `data/event-candidates.json` e non entrano automaticamente nell'agenda finché data e luogo non sono verificabili.
+Oltre alle pagine dei singoli eventi, il radar controlla un registro di portali turistici, comprensori e Skihütten in `data/discovery-sources.json`. Tra le fonti ci sono Winklparade/myTix, Skiworld Ahrntal/Speikboden, Ganischger Alm, Obereggen, Kronplatz e Club Moritzino. Il portale ufficiale Alto Adige viene scandito su più pagine: un nuovo evento entra automaticamente nell'agenda solo quando titolo, data, luogo e pagina ufficiale sono tutti disponibili. Il rapporto completo resta in `data/event-candidates.json`.
 
 ### Radar Instagram opzionale
 

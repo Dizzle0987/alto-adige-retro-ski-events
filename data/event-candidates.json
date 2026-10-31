@@ -1,17 +1,27 @@
 {
   "lastChecked": "2026-10-31",
   "summary": {
-    "webSources": 10,
+    "webSources": 13,
     "instagramSources": 7,
     "instagramStatus": "awaiting-token",
-    "candidates": 0
+    "candidates": 0,
+    "published": 0,
+    "pruned": 0
   },
   "sources": [
     {
       "id": "south-tyrol-events",
       "name": "Südtirol / Alto Adige Events",
       "kind": "web",
-      "url": "https://www.suedtirol.info/en/en/experiences-and-events/events-south-tyrol",
+      "url": "https://www.suedtirol.info/it/it/esperienze-eventi/plp-eventi/o/sagre",
+      "status": "checked",
+      "found": 0
+    },
+    {
+      "id": "south-tyrol-winter-events",
+      "name": "Südtirol Winter Events",
+      "kind": "web",
+      "url": "https://www.suedtirol.info/en/en/experiences-and-events/plp-events/o/winter-event",
       "status": "checked",
       "found": 0
     },
@@ -28,6 +38,22 @@
       "name": "Val Gardena Winter Events",
       "kind": "web",
       "url": "https://www.valgardena.it/en/winter-holidays-dolomites/events-highlights/",
+      "status": "checked",
+      "found": 0
+    },
+    {
+      "id": "spring-race-party-ortisei",
+      "name": "Spring Race Party Ortisei",
+      "kind": "web",
+      "url": "https://www.suedtirol.info/it/it/esperienze-eventi/eventi-alto-adige/pdp-evento.E8432689570C4CE79B96E32617DCC824.spring-race-party-ortisei.ortisei-urtijei",
+      "status": "checked",
+      "found": 0
+    },
+    {
+      "id": "watles-nostalgia-day",
+      "name": "Watles Day of Nostalgia",
+      "kind": "web",
+      "url": "https://www.watles.net/it/sci-e-montagna-d-avventura-watles/info-servizio/eventi/rid-B6EF3B88C11646D3B97FE55653629FDF-e-gara-della-nostalgia.html",
       "status": "checked",
       "found": 0
     },

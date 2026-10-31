@@ -8,6 +8,7 @@ const candidatesPath = path.join(repositoryRoot, "data", "event-candidates.json"
 const eventsPath = path.join(repositoryRoot, "dist", "events.json");
 const offline = process.env.AUTO_UPDATE_OFFLINE === "1";
 const apifyToken = process.env.APIFY_TOKEN?.trim();
+const monthLabels = ["GEN", "FEB", "MAR", "APR", "MAG", "GIU", "LUG", "AGO", "SET", "OTT", "NOV", "DIC"];
 
 const todayInRome = () => {
   const parts = new Intl.DateTimeFormat("en-CA", {
@@ -40,7 +41,9 @@ const relevanceTerms = [
   "80er", "90er", "anni 80", "anni 90", "tekknoalpin", "schlager",
   "apres ski", "ski party", "snow party", "mountain party", "hut party",
   "huttenparty", "party", "techno", "tekkno", "dj", "live music",
-  "music festival", "season opening", "season closing", "winter finals"
+  "music festival", "festival dj", "season opening", "season closing", "winter finals",
+  "nostalgia", "nostalgie", "nostalgisch", "vecchia maniera", "dirndl",
+  "spring race", "open air", "skifasching", "carnevale sugli sci"
 ].map(cleanText);
 
 const isRelevant = (value) => {
@@ -84,7 +87,24 @@ const isoDate = (value) => {
   return Number.isNaN(parsed.getTime()) ? null : parsed.toISOString().slice(0, 10);
 };
 
+const labelsFor = (startIso, endIso) => {
+  const start = new Date(`${startIso}T12:00:00Z`);
+  const end = new Date(`${endIso}T12:00:00Z`);
+  const startDay = String(start.getUTCDate()).padStart(2, "0");
+  const endDay = String(end.getUTCDate()).padStart(2, "0");
+  const startMonth = monthLabels[start.getUTCMonth()];
+  const endMonth = monthLabels[end.getUTCMonth()];
+  return {
+    dateLabel: startIso === endIso ? startDay : `${startDay}–${endDay}`,
+    monthLabel: start.getUTCMonth() === end.getUTCMonth() ? startMonth : `${startMonth}/${endMonth}`,
+    year: start.getUTCFullYear() === end.getUTCFullYear()
+      ? String(start.getUTCFullYear())
+      : `${start.getUTCFullYear()}/${String(end.getUTCFullYear()).slice(-2)}`
+  };
+};
+
 const locationName = (location) => {
+  if (Array.isArray(location)) return location.map(locationName).filter(Boolean).join(" · ") || null;
   if (typeof location === "string") return location;
   if (!location || typeof location !== "object") return null;
   const address = location.address;
@@ -106,6 +126,66 @@ const absoluteUrl = (value, base) => {
   }
 };
 
+const decodeHtml = (value = "") => value
+  .replace(/&#(\d+);/g, (_, code) => String.fromCodePoint(Number(code)))
+  .replace(/&#x([0-9a-f]+);/gi, (_, code) => String.fromCodePoint(Number.parseInt(code, 16)))
+  .replace(/&amp;/gi, "&")
+  .replace(/&quot;/gi, '"')
+  .replace(/&apos;|&#39;/gi, "'")
+  .replace(/&nbsp;/gi, " ")
+  .replace(/&auml;/gi, "ä")
+  .replace(/&ouml;/gi, "ö")
+  .replace(/&uuml;/gi, "ü")
+  .replace(/&szlig;/gi, "ß");
+
+const stripHtml = (value = "") => decodeHtml(value.replace(/<[^>]+>/g, " ")).replace(/\s+/g, " ").trim();
+
+const localizedMonths = new Map([
+  ["gennaio", "01"], ["febbraio", "02"], ["marzo", "03"], ["aprile", "04"],
+  ["maggio", "05"], ["giugno", "06"], ["luglio", "07"], ["agosto", "08"],
+  ["settembre", "09"], ["ottobre", "10"], ["novembre", "11"], ["dicembre", "12"],
+  ["january", "01"], ["february", "02"], ["march", "03"], ["april", "04"],
+  ["may", "05"], ["june", "06"], ["july", "07"], ["august", "08"],
+  ["september", "09"], ["october", "10"], ["november", "11"], ["december", "12"],
+  ["januar", "01"], ["februar", "02"], ["märz", "03"], ["mai", "05"],
+  ["juni", "06"], ["juli", "07"], ["oktober", "10"], ["dezember", "12"]
+]);
+
+const localizedDate = (value) => {
+  const match = stripHtml(value).toLowerCase().match(/(\d{1,2})\s+([a-zà-ÿ]+)\s+(\d{4})/i);
+  const month = match ? localizedMonths.get(match[2]) : null;
+  return match && month ? `${match[3]}-${month}-${match[1].padStart(2, "0")}` : null;
+};
+
+const isSkiSeasonDate = (value) => {
+  const month = Number(value?.slice(5, 7));
+  return month >= 11 || month <= 4;
+};
+
+const attr = (attributes, name) => {
+  const match = attributes.match(new RegExp(`${name}=["']([^"']+)["']`, "i"));
+  return match ? decodeHtml(match[1]) : null;
+};
+
+const parseSouthTyrolCards = (html, baseUrl) => {
+  const cards = [];
+  const articles = html.matchAll(/<article\b([^>]*)>([\s\S]*?)<\/article>/gi);
+  for (const article of articles) {
+    const attributes = article[1];
+    if (!/event-experience-card/i.test(attributes)) continue;
+    const body = article[2];
+    const title = attr(attributes, "aria-label") || stripHtml(body.match(/<h3[^>]*>([\s\S]*?)<\/h3>/i)?.[1] || "");
+    const url = absoluteUrl(attr(attributes, "data-href"), baseUrl);
+    const location = stripHtml(body.match(/<p[^>]*class=["'][^"']*location[^"']*["'][^>]*>([\s\S]*?)<\/p>/i)?.[1] || "") || null;
+    const dates = [...body.matchAll(/<p[^>]*class=["'][^"']*title\s+date[^"']*["'][^>]*>([\s\S]*?)<\/p>/gi)]
+      .map((match) => localizedDate(match[1]))
+      .filter(Boolean)
+      .sort();
+    if (title && url && dates.length) cards.push({ title, url, location, start: dates[0], end: dates.at(-1) });
+  }
+  return cards;
+};
+
 const slug = (value) => cleanText(value).replace(/ /g, "-").slice(0, 70) || "candidate";
 
 const fetchHtml = async (url) => {
@@ -122,6 +202,8 @@ const fetchHtml = async (url) => {
 };
 
 const scanWebSource = async (source, today, knownEvents) => {
+  if (source.type === "south-tyrol-listing") return scanSouthTyrolListing(source, today, knownEvents);
+  if (source.type === "lts-event") return scanLtsEvent(source, today, knownEvents);
   const html = await fetchHtml(source.url);
   const structuredEvents = parseJsonLdEvents(html);
   const candidates = structuredEvents
@@ -143,9 +225,94 @@ const scanWebSource = async (source, today, knownEvents) => {
         excerpt: typeof event.description === "string" ? event.description.replace(/<[^>]+>/g, " ").replace(/\s+/g, " ").trim().slice(0, 500) : null
       };
     })
-    .filter((candidate) => candidate.title && candidate.start && candidate.end >= today)
+    .filter((candidate) => candidate.title && candidate.start && candidate.end >= today && isSkiSeasonDate(candidate.start))
     .filter((candidate) => isRelevant(`${candidate.title} ${candidate.excerpt || ""} ${candidate.location || ""}`))
     .filter((candidate) => !knownEvents.some((event) => titleScore(event.title, candidate.title) >= 0.65 && event.start === candidate.start));
+
+  return {
+    report: { id: source.id, name: source.name, kind: "web", url: source.url, status: "checked", found: candidates.length },
+    candidates
+  };
+};
+
+const scanLtsEvent = async (source, today, knownEvents) => {
+  const html = await fetchHtml(source.url);
+  const title = stripHtml(html.match(/<h1[^>]*>([\s\S]*?)<\/h1>/i)?.[1] || "");
+  const dates = [...html.matchAll(/data-days=["']([^"']+)["']/gi)]
+    .flatMap((match) => match[1].match(/\d{4}-\d{2}-\d{2}/g) || [])
+    .sort();
+  const description = stripHtml(html.match(/<div class=["']base-slide__block["']>([\s\S]*?)<\/div>/i)?.[1] || "").slice(0, 500) || null;
+  const locationBlock = html.match(/<div class=["']sidebar-item__title["']>\s*Luogo\s*<\/div>([\s\S]*?)<\/div>\s*<\/div>/i)?.[1] || "";
+  const location = [...locationBlock.matchAll(/<div class=["']sidebar-item__row["'][^>]*>([\s\S]*?)<\/div>/gi)]
+    .map((match) => stripHtml(match[1]))
+    .filter(Boolean)
+    .join(" · ") || null;
+  const start = dates[0] || null;
+  const end = dates.at(-1) || start;
+  const known = knownEvents.some((event) => event.start === start && titleScore(event.title, title) >= 0.65);
+  const candidate = !known && title && start && end >= today && isSkiSeasonDate(start) && isRelevant(`${title} ${description || ""}`)
+    ? [{
+        id: `${source.id}-${start}-${slug(title)}`,
+        kind: "web",
+        title,
+        start,
+        end,
+        location,
+        url: source.url,
+        sourceId: source.id,
+        sourceName: source.name,
+        excerpt: description
+      }]
+    : [];
+  return {
+    report: { id: source.id, name: source.name, kind: "web", url: source.url, status: "checked", found: candidate.length },
+    candidates: candidate
+  };
+};
+
+const scanSouthTyrolListing = async (source, today, knownEvents) => {
+  const pageCount = Math.max(1, Math.min(Number(source.pages) || 1, 12));
+  const pageUrls = Array.from({ length: pageCount }, (_, index) => index === 0 ? source.url : `${source.url}.page${index + 1}`);
+  const pages = await Promise.all(pageUrls.map((url) => fetchHtml(url)));
+  const cards = [...new Map(pages
+    .flatMap((html, index) => parseSouthTyrolCards(html, pageUrls[index]))
+    .map((card) => [card.url, card])).values()]
+    .filter((card) => card.end >= today && isSkiSeasonDate(card.start) && isRelevant(`${card.title} ${card.location || ""}`))
+    .filter((card) => !knownEvents.some((event) => titleScore(event.title, card.title) >= 0.65 && event.start === card.start));
+
+  const candidates = (await Promise.all(cards.map(async (card) => {
+    try {
+      const detailHtml = await fetchHtml(card.url);
+      const detailEvents = parseJsonLdEvents(detailHtml)
+        .map((event) => ({ event, score: titleScore(card.title, event.name || "") }))
+        .sort((a, b) => b.score - a.score);
+      const detail = detailEvents[0]?.event;
+      const title = typeof detail?.name === "string" ? detail.name.trim() : card.title;
+      const start = isoDate(detail?.startDate) || card.start;
+      const end = isoDate(detail?.endDate || detail?.startDate) || card.end;
+      return {
+        id: `${source.id}-${start}-${slug(title)}`,
+        kind: "web",
+        title,
+        start,
+        end,
+        location: locationName(detail?.location) || card.location,
+        url: absoluteUrl(detail?.url || detail?.mainEntityOfPage, card.url),
+        sourceId: source.id,
+        sourceName: source.name,
+        excerpt: typeof detail?.description === "string" ? stripHtml(detail.description).slice(0, 500) : null
+      };
+    } catch {
+      return {
+        id: `${source.id}-${card.start}-${slug(card.title)}`,
+        kind: "web",
+        ...card,
+        sourceId: source.id,
+        sourceName: source.name,
+        excerpt: null
+      };
+    }
+  }))).filter((candidate) => candidate.title && candidate.start && candidate.end && candidate.location && candidate.url);
 
   return {
     report: { id: source.id, name: source.name, kind: "web", url: source.url, status: "checked", found: candidates.length },
@@ -159,6 +326,66 @@ const instagramUsername = (url) => {
   } catch {
     return "";
   }
+};
+
+const eventPalette = ["#ff4fa3", "#5b5df0", "#ff7439", "#00bfa6", "#b0ef43", "#f5ec35"];
+
+const socialForCandidate = (candidate) => {
+  const value = cleanText(`${candidate.title} ${candidate.location || ""} ${candidate.sourceName || ""}`);
+  if (value.includes("kronplatz") || value.includes("plan de corones") || value.includes("brunico")) return "https://www.instagram.com/kronplatz_group/";
+  if (value.includes("val gardena") || value.includes("ortisei") || value.includes("selva")) return "https://www.instagram.com/dolomitesvalgardena/";
+  if (value.includes("alta badia") || value.includes("corvara") || value.includes("la villa")) return "https://www.instagram.com/alta_badia_official/";
+  if (value.includes("3 zinnen") || value.includes("3 cime") || value.includes("dobbiaco") || value.includes("sesto")) return "https://www.instagram.com/3zinnendolomites/";
+  if (value.includes("ahrntal") || value.includes("speikboden") || value.includes("klausberg")) return "https://www.instagram.com/skiworldahrntal_official/";
+  if (value.includes("obereggen") || value.includes("ganischger")) return "https://www.instagram.com/ganischger.obereggen/";
+  return null;
+};
+
+const classificationsForCandidate = (candidate) => {
+  const value = cleanText(`${candidate.title} ${candidate.excerpt || ""}`);
+  const retro = ["retro", "vintage", "oldschool", "old school", "nostalg", "vecchia maniera", "anni 80", "80er"].some((term) => value.includes(cleanText(term)));
+  const costume = retro || ["dirndl", "dress code", "ugly outfit", "bad taste", "costume", "carnevale"].some((term) => value.includes(cleanText(term)));
+  const apres = ["apres", "party", "music", "musica", "dj", "festival", "schlager", "tekkno", "live", "open air"].some((term) => value.includes(cleanText(term)));
+  const categories = [retro && "retro", costume && "costume", apres && "apres"].filter(Boolean);
+  if (!categories.length) categories.push("retro");
+  const tags = [
+    retro && "Retro",
+    value.includes("vintage") && "Vintage",
+    value.includes("nostalg") && "Nostalgia",
+    value.includes("dirndl") && "Dress code",
+    value.includes("dj") && "DJ",
+    value.includes("live") && "Live music",
+    apres && "Après-ski"
+  ].filter(Boolean);
+  return { categories, tags: [...new Set(tags)].slice(0, 3).length ? [...new Set(tags)].slice(0, 3) : ["Ski event"] };
+};
+
+const conciseSummary = (candidate) => {
+  const fallback = `Evento sulla neve a ${candidate.location}, con programma e dettagli nella fonte ufficiale.`;
+  const text = (candidate.excerpt || fallback).replace(/\s+/g, " ").trim();
+  if (text.length <= 240) return text;
+  const shortened = text.slice(0, 237).replace(/\s+\S*$/, "");
+  return `${shortened}…`;
+};
+
+const siteEventFromCandidate = (candidate, index) => {
+  const classifications = classificationsForCandidate(candidate);
+  return {
+    id: `auto-${candidate.start}-${slug(candidate.title)}`,
+    title: candidate.title,
+    start: candidate.start,
+    end: candidate.end,
+    ...labelsFor(candidate.start, candidate.end),
+    categories: classifications.categories,
+    tags: classifications.tags,
+    summary: conciseSummary(candidate),
+    place: candidate.location,
+    source: candidate.url,
+    social: socialForCandidate(candidate),
+    map: `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(candidate.location)}`,
+    accent: eventPalette[index % eventPalette.length],
+    featured: false
+  };
 };
 
 const scanInstagram = async (sources, knownEvents) => {
@@ -285,15 +512,45 @@ if (!apifyToken) {
   }
 }
 
-const uniqueCandidates = [...new Map(candidates.map((candidate) => [candidate.id, candidate])).values()]
-  .sort((a, b) => (a.start || a.publishedAt || "9999").localeCompare(b.start || b.publishedAt || "9999"));
+const uniqueCandidates = [];
+for (const candidate of [...new Map(candidates.map((item) => [item.id, item])).values()]
+  .sort((a, b) => (a.start || a.publishedAt || "9999").localeCompare(b.start || b.publishedAt || "9999"))) {
+  const duplicate = uniqueCandidates.some((item) => item.start && item.start === candidate.start && titleScore(item.title, candidate.title) >= 0.7);
+  if (!duplicate) uniqueCandidates.push(candidate);
+}
+
+const publishable = uniqueCandidates.filter((candidate) => candidate.kind === "web"
+  && candidate.title && candidate.start && candidate.end && candidate.location && candidate.url);
+const beforePrune = eventsData.events.length;
+eventsData.events = eventsData.events.filter((event) => !event.id.startsWith("auto-") || isSkiSeasonDate(event.start));
+const pruned = beforePrune - eventsData.events.length;
+const published = [];
+for (const candidate of publishable) {
+  const duplicate = eventsData.events.some((event) => event.start === candidate.start && titleScore(event.title, candidate.title) >= 0.65);
+  if (duplicate) continue;
+  const siteEvent = siteEventFromCandidate(candidate, eventsData.events.length + published.length);
+  eventsData.events.push(siteEvent);
+  published.push(siteEvent.id);
+}
+if (published.length || pruned) {
+  eventsData.lastChecked = today;
+  eventsData.events.sort((a, b) => a.start.localeCompare(b.start));
+  await writeFile(eventsPath, `${JSON.stringify(eventsData, null, 2)}\n`);
+}
+
+uniqueCandidates.forEach((candidate) => {
+  candidate.published = published.includes(`auto-${candidate.start}-${slug(candidate.title)}`)
+    || eventsData.events.some((event) => event.start === candidate.start && titleScore(event.title, candidate.title) >= 0.65);
+});
 const output = {
   lastChecked: today,
   summary: {
     webSources: sources.web.length,
     instagramSources: sources.instagram.length,
     instagramStatus,
-    candidates: uniqueCandidates.length
+    candidates: uniqueCandidates.length,
+    published: published.length,
+    pruned
   },
   sources: reports,
   candidates: uniqueCandidates
@@ -301,4 +558,4 @@ const output = {
 
 await writeFile(candidatesPath, `${JSON.stringify(output, null, 2)}\n`);
 const unavailable = reports.filter((source) => source.status === "unavailable").length;
-console.log(`Discovery checked: web=${sources.web.length}, instagram=${instagramStatus}, candidates=${uniqueCandidates.length}, unavailable=${unavailable}`);
+console.log(`Discovery checked: web=${sources.web.length}, instagram=${instagramStatus}, candidates=${uniqueCandidates.length}, published=${published.length}, pruned=${pruned}, unavailable=${unavailable}`);

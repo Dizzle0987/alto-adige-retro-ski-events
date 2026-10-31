@@ -3,7 +3,16 @@
     {
       "id": "south-tyrol-events",
       "name": "Südtirol / Alto Adige Events",
-      "url": "https://www.suedtirol.info/en/en/experiences-and-events/events-south-tyrol"
+      "url": "https://www.suedtirol.info/it/it/esperienze-eventi/plp-eventi/o/sagre",
+      "type": "south-tyrol-listing",
+      "pages": 8
+    },
+    {
+      "id": "south-tyrol-winter-events",
+      "name": "Südtirol Winter Events",
+      "url": "https://www.suedtirol.info/en/en/experiences-and-events/plp-events/o/winter-event",
+      "type": "south-tyrol-listing",
+      "pages": 4
     },
     {
       "id": "alta-badia-events",
@@ -14,6 +23,17 @@
       "id": "val-gardena-winter-events",
       "name": "Val Gardena Winter Events",
       "url": "https://www.valgardena.it/en/winter-holidays-dolomites/events-highlights/"
+    },
+    {
+      "id": "spring-race-party-ortisei",
+      "name": "Spring Race Party Ortisei",
+      "url": "https://www.suedtirol.info/it/it/esperienze-eventi/eventi-alto-adige/pdp-evento.E8432689570C4CE79B96E32617DCC824.spring-race-party-ortisei.ortisei-urtijei"
+    },
+    {
+      "id": "watles-nostalgia-day",
+      "name": "Watles Day of Nostalgia",
+      "url": "https://www.watles.net/it/sci-e-montagna-d-avventura-watles/info-servizio/eventi/rid-B6EF3B88C11646D3B97FE55653629FDF-e-gara-della-nostalgia.html",
+      "type": "lts-event"
     },
     {
       "id": "kronplatz-events",
