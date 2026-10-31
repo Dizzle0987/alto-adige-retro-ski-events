@@ -39,9 +39,13 @@ const alternatePages = (html, pageUrl) => {
   return pages;
 };
 
-export const fetchLocalizedTitles = async ({ html, pageUrl, fetchHtml }) => {
+export const fetchLocalizedTitles = async ({ html, pageUrl, fetchHtml, titleSources = {} }) => {
   const foundTitles = new Map();
   const pages = alternatePages(html, pageUrl);
+  // Manually verified counterparts for sites without hreflang links.
+  for (const [language, url] of Object.entries(titleSources)) {
+    if (supportedLanguages.has(language) && /^https:\/\//.test(url)) pages.set(language, url);
+  }
   await Promise.all([...pages].map(async ([language, url]) => {
     try {
       const localizedHtml = url === pageUrl ? html : await fetchHtml(url);

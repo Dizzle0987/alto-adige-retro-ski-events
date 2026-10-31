@@ -111,6 +111,7 @@ const sourceUpdate = async (event, today) => {
   const localizedTitles = await fetchLocalizedTitles({
     html,
     pageUrl: page.url,
+    titleSources: event.titleSources,
     fetchHtml: async (url) => (await fetchPage(url)).html
   });
   const titles = { ...(event.titles || {}), ...localizedTitles };

@@ -1597,6 +1597,14 @@
         "en": "Krampus parade in Steinhaus followed by an afterparty at Hexenkessel. Warm-up from 12:00, parade at 19:30. Afterparty start time not specified."
       },
       "title": "Sfilata dei Krampus",
+      "titles": {
+        "it": "Sfilata dei Krampus",
+        "de": "Krampuslauf im Ahrntal"
+      },
+      "titleSources": {
+        "it": "https://www.comune.valleaurina.bz.it/it/Vivere_il_comune/Eventi/Sfilata_dei_Krampus",
+        "de": "https://www.gemeinde.ahrntal.bz.it/de/Dorfleben/Veranstaltungen/Krampuslauf_im_Ahrntal"
+      },
       "start": "2026-11-21",
       "end": "2026-11-21",
       "dateLabel": "21",
@@ -2086,7 +2094,10 @@
     {
       "id": "ski-carousel-vintage-party",
       "venue": "Vintage Village · La Para · Corvara",
-      "title": "Ski Carousel Vintage Party",
+      "title": "The Ski Carousel Vintage Party",
+      "titleSources": {
+        "en": "https://www.altabadia.org/en/ski/events/the-ski-carousel-vintage-party"
+      },
       "start": "2027-04-03",
       "end": "2027-04-04",
       "dateLabel": "03–04",
