@@ -37,7 +37,7 @@ I titoli in italiano, tedesco e inglese vengono recuperati dai collegamenti alle
 
 ### Radar Instagram opzionale
 
-Il workflow è predisposto per leggere gli ultimi post pubblici delle fonti social tramite l'actor ufficiale `apify/instagram-scraper`. Per abilitarlo, crea un account Apify e salva il token nel repository GitHub come secret Actions chiamato `APIFY_TOKEN`. Senza il secret, il controllo dei siti continua normalmente e la parte Instagram viene saltata in modo sicuro.
+Il workflow è predisposto per leggere gli ultimi post pubblici delle fonti social tramite l'actor ufficiale `apify/instagram-scraper`. Per abilitarlo, crea un account Apify e salva il token nel repository GitHub come secret Actions chiamato `APIFY_TOKEN` (è accettato anche `APIFY`). Senza il secret, il controllo dei siti continua normalmente e la parte Instagram viene saltata in modo sicuro.
 
 ## Verifica dati
 
