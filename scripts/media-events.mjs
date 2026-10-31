@@ -140,13 +140,33 @@ export const readDocument = async (bytes, kind, run = exec) => {
       return { text: texts.join("\n"), method: "pdf-ocr" };
     }
     if (kind === "instagram-image") {
-      const { stdout } = await boundedRun("tesseract", [file, "stdout", "-l", "deu+ita+eng", "--psm", "11", "tsv"]);
+      const recognize = async (input, psm) => {
+      const { stdout } = await boundedRun("tesseract", [input, "stdout", "-l", "deu+ita+eng", "--psm", psm, "tsv"]);
       const words = stdout.split("\n").slice(1).map((line) => line.split("\t"))
         .filter((columns) => columns[0] === "5" && columns[11]?.trim())
         .map((columns) => ({ text: columns.slice(11).join("\t").trim(), confidence: Number(columns[10]), line: columns.slice(1, 5).join("-") }));
       const lines = new Map();
       for (const word of words) lines.set(word.line, [...(lines.get(word.line) || []), word.text]);
       return { text: [...lines.values()].map((line) => line.join(" ")).join("\n"), words, method: "instagram-image-ocr" };
+      };
+      const original = await recognize(file, "11");
+      const variants = [original];
+      try {
+        const prepared = path.join(directory, "contrast.png");
+        await boundedRun("convert", ["-limit", "memory", "128MiB", "-limit", "map", "256MiB", file, "-resize", "2000x2000>", "-colorspace", "Gray", "-negate", "-contrast-stretch", "1%x1%", prepared]);
+        variants.push(await recognize(prepared, "6"));
+      } catch { /* Original OCR remains usable when optional preprocessing fails. */ }
+      try {
+        const regions = [];
+        for (const gravity of ["North", "South"]) {
+          const prepared = path.join(directory, `${gravity}.png`);
+          await boundedRun("convert", ["-limit", "memory", "128MiB", "-limit", "map", "256MiB", file, "-gravity", gravity, "-crop", "100%x45%+0+0", "+repage", "-resize", "2000x2000>", "-colorspace", "Gray", "-negate", "-contrast-stretch", "1%x1%", prepared]);
+          regions.push(await recognize(prepared, "6"));
+        }
+        const [top, bottom] = regions;
+        variants.push({ text: `${top.text}\n${bottom.text}`, words: [...top.words, ...bottom.words], dateText: bottom.text, dateWords: bottom.words, method: "instagram-image-ocr-regions" });
+      } catch { /* Full-image passes remain available. */ }
+      return { ...original, pipelineVersion: 3, variants };
     }
     const { stdout } = await boundedRun("tesseract", [file, "stdout", "-l", "deu+ita+eng", "--psm", "11"]);
     return { text: stdout, method: "image-ocr" };
