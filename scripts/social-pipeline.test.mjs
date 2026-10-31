@@ -53,3 +53,25 @@ test("offline pipeline: publish, merge hours, reject impostors, hold conflicts, 
   assert.equal(result.events.length, 2, "same title/day at different venues stays separate");
   assert.equal(new Set(result.events.map((event) => event.id)).size, 2);
 });
+
+test("events publish in all twelve months and existing off-season events are retained", async () => {
+  const root = await mkdtemp(path.join(tmpdir(), "retro-year-round-test-"));
+  await Promise.all([mkdir(path.join(root, "dist")), mkdir(path.join(root, "data"))]);
+  const source = { id: "official", name: "Fixture venue", url: "https://www.instagram.com/fixture.venue/", autoPublish: true, venue: "Fixture venue", venueAliases: ["Fixture"] };
+  await save(path.join(root, "data/discovery-sources.json"), { web: [], instagram: [source] });
+  const existing = { id: "auto-existing-may", title: "Existing summer event", start: "2026-05-10", end: "2026-05-10" };
+  await save(path.join(root, "dist/events.json"), { events: [existing] });
+  const nextYear = Number(calendarState().today.slice(0, 4)) + 1;
+  const items = Array.from({ length: 12 }, (_, month) => ({
+    ownerUsername: "fixture.venue", ownerId: "123", timestamp: new Date().toISOString(),
+    url: `https://www.instagram.com/p/Month${month + 1}/`, locationName: source.venue,
+    caption: `Retro Party\n${nextYear}-${String(month + 1).padStart(2, "0")}-20`,
+  }));
+  const replay = path.join(root, "posts.json");
+  await save(replay, items);
+  await exec(process.execPath, [script], { env: { ...process.env, APIFY_TOKEN: "", AUTO_UPDATE_OFFLINE: "0", DISCOVERY_DATA_ROOT: root, SOCIAL_REPLAY_PATH: replay, APIFY_REPLAY_LAST: "0" } });
+  const result = JSON.parse(await readFile(path.join(root, "dist/events.json"), "utf8"));
+  assert.equal(result.events.length, 13);
+  assert.ok(result.events.some((event) => event.id === existing.id));
+  assert.equal(new Set(result.events.filter((event) => event.socialSourceId).map((event) => event.start.slice(5, 7))).size, 12);
+});

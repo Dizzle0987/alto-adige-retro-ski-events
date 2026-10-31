@@ -162,11 +162,6 @@ const localizedDate = (value) => {
   return match && month ? `${match[3]}-${month}-${match[1].padStart(2, "0")}` : null;
 };
 
-const isSkiSeasonDate = (value) => {
-  const month = Number(value?.slice(5, 7));
-  return month >= 11 || month <= 4;
-};
-
 const attr = (attributes, name) => {
   const match = attributes.match(new RegExp(`${name}=["']([^"']+)["']`, "i"));
   return match ? decodeHtml(match[1]) : null;
@@ -234,7 +229,7 @@ const scanWebSource = async (source, today, knownEvents) => {
         excerpt: typeof event.description === "string" ? event.description.replace(/<[^>]+>/g, " ").replace(/\s+/g, " ").trim().slice(0, 500) : null
       };
     })
-    .filter((candidate) => candidate.title && candidate.start && candidate.end >= today && isSkiSeasonDate(candidate.start))
+    .filter((candidate) => candidate.title && candidate.start && candidate.end >= today)
     .filter((candidate) => isRelevant(`${candidate.title} ${candidate.excerpt || ""} ${candidate.location || ""}`))
     .filter((candidate) => !knownEvents.some((event) => titleScore(event.title, candidate.title) >= 0.65 && event.start === candidate.start));
 
@@ -260,7 +255,7 @@ const scanLtsEvent = async (source, today, knownEvents) => {
   const start = dates[0] || null;
   const end = dates.at(-1) || start;
   const known = knownEvents.some((event) => event.start === start && titleScore(event.title, title) >= 0.65);
-  const candidate = !known && title && start && end >= today && isSkiSeasonDate(start) && isRelevant(`${title} ${description || ""}`)
+  const candidate = !known && title && start && end >= today && isRelevant(`${title} ${description || ""}`)
     ? [{
         id: `${source.id}-${start}-${slug(title)}`,
         kind: "web",
@@ -288,7 +283,7 @@ const scanSouthTyrolListing = async (source, today, knownEvents) => {
   const cards = [...new Map(pages
     .flatMap((html, index) => parseSouthTyrolCards(html, pageUrls[index]))
     .map((card) => [card.url, card])).values()]
-    .filter((card) => card.end >= today && isSkiSeasonDate(card.start) && isRelevant(`${card.title} ${card.location || ""}`))
+    .filter((card) => card.end >= today && isRelevant(`${card.title} ${card.location || ""}`))
     .filter((card) => !knownEvents.some((event) => titleScore(event.title, card.title) >= 0.65 && event.start === card.start));
 
   const candidates = (await Promise.all(cards.map(async (card) => {
@@ -580,14 +575,11 @@ for (const candidate of [...new Map(candidates.map((item) => [item.id, item])).v
 
 const publishable = uniqueCandidates.filter((candidate) => (candidate.kind === "web" || (candidate.kind === "instagram" && candidate.status === "confirmed"))
   && candidate.title && candidate.start && candidate.end && candidate.location && candidate.url);
-const beforePrune = eventsData.events.length;
-eventsData.events = eventsData.events.filter((event) => !event.id.startsWith("auto-") || isSkiSeasonDate(event.start));
-const pruned = beforePrune - eventsData.events.length;
 const published = [];
 let updated = 0;
 for (const candidate of publishable) {
   if (candidate.kind === "instagram") {
-    if (candidate.end < today || !isSkiSeasonDate(candidate.start)) continue;
+    if (candidate.end < today) continue;
     const source = sources.instagram.find((entry) => entry.id === candidate.sourceId);
     if (!source || !source.autoPublish || candidate.evidence?.author?.toLowerCase() !== instagramUsername(source.url)) continue;
     const matches = eventsData.events.filter((event) => sameSocialEvent(event, candidate)
@@ -629,7 +621,7 @@ for (const candidate of publishable) {
   candidate.eventId = siteEvent.id;
   published.push(siteEvent.id);
 }
-if (published.length || pruned || updated) {
+if (published.length || updated) {
   eventsData.lastChecked = today;
   eventsData.events.sort((a, b) => a.start.localeCompare(b.start));
   await writeFile(eventsPath, `${JSON.stringify(eventsData, null, 2)}\n`);
@@ -649,7 +641,7 @@ const output = {
     candidates: uniqueCandidates.length,
     published: published.length,
     updated,
-    pruned
+    pruned: 0
   },
   sources: reports,
   candidates: uniqueCandidates
@@ -657,4 +649,4 @@ const output = {
 
 await writeFile(candidatesPath, `${JSON.stringify(output, null, 2)}\n`);
 const unavailable = reports.filter((source) => source.status === "unavailable").length;
-console.log(`Discovery checked: web=${sources.web.length}, instagram=${instagramStatus}, candidates=${uniqueCandidates.length}, published=${published.length}, pruned=${pruned}, unavailable=${unavailable}`);
+console.log(`Discovery checked: web=${sources.web.length}, instagram=${instagramStatus}, candidates=${uniqueCandidates.length}, published=${published.length}, unavailable=${unavailable}`);

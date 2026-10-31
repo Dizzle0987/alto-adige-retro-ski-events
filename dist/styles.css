@@ -37,6 +37,8 @@ a { color: inherit; }
 .hero-grid { min-height: 670px; padding: 5vw; display: grid; grid-template-columns: 1.35fr .65fr; gap: 5vw; align-items: center; }
 .eyebrow, .kicker { font-family: "DM Mono", monospace; text-transform: uppercase; letter-spacing: .12em; font-size: .72rem; font-weight: 500; }
 .eyebrow { display: flex; align-items: center; gap: .6rem; }
+.season-period { margin: -.2rem 0 1.5rem; font: 500 .76rem "DM Mono", monospace; line-height: 1.5; }
+.season-period small { display: block; margin-top: .2rem; font-size: .67rem; }
 .eyebrow > span:first-child { display: block; flex: 0 0 auto; width: 34px; height: 8px; background: var(--pink); border: 1px solid var(--ink); }
 h1, h2, h3 { margin: 0; }
 h1 { max-width: 900px; font-family: "Archivo Black", sans-serif; font-size: clamp(4.2rem, 9vw, 9rem); line-height: .82; letter-spacing: -.075em; text-transform: uppercase; }

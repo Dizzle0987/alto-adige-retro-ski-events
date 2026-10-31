@@ -2,6 +2,8 @@
 
 Radar in continuo aggiornamento per feste retro, vintage ski e après-ski in Alto Adige. La stagione segue la data locale di Roma: da maggio viene mostrata la prossima stagione invernale, fino ad aprile quella in corso.
 
+Il periodo invernale di riferimento, ottobre–aprile, è mostrato con gli anni in cima alla pagina. È solo un'indicazione: la raccolta e la pubblicazione degli eventi pertinenti funzionano tutto l'anno, senza escludere altri mesi.
+
 ## Contenuti
 
 - eventi con data, luogo e fonte ufficiale, aggiornati automaticamente

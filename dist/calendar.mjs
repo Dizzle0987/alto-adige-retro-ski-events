@@ -12,6 +12,7 @@ export const calendarState = (now = new Date()) => {
     today,
     archiveCutoff: cutoff.toISOString().slice(0, 10),
     season: `${seasonStart}/${String(seasonStart + 1).slice(-2)}`,
+    seasonStart,
     seasonEnd: seasonStart + 1,
   };
 };
