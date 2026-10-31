@@ -275,13 +275,25 @@
       "id": "skiworld-ahrntal-instagram-DerpaiRPr47",
       "title": "Annuncio da verificare",
       "publishedAt": "2026-10-19T16:05:06.000Z",
+      "excerpt": "Are you ready for skiing season? ❤️🖤\n\nSkiworld Ahrntal Opening: 04/12/2026 ❄️\n\n#skiworldahrntal #ahrntal #valleaurina #speikboden #klausberg",
       "sourceId": "skiworld-ahrntal-instagram",
       "sourceName": "Skiworld Ahrntal",
-      "evidence": "04/12/2026",
+      "evidence": {
+        "url": "https://www.instagram.com/p/DerpaiRPr47/",
+        "author": "skiworldahrntal_official",
+        "ownerId": "10586650301",
+        "publishedAt": "2026-10-19T16:05:06.000Z",
+        "caption": "Are you ready for skiing season? ❤️🖤\n\nSkiworld Ahrntal Opening: 04/12/2026 ❄️\n\n#skiworldahrntal #ahrntal #valleaurina #speikboden #klausberg"
+      },
       "url": "https://www.instagram.com/p/DerpaiRPr47/",
       "kind": "instagram",
       "status": "review",
       "reason": "ambiguous-date",
+      "dateEvidence": {
+        "status": "review",
+        "reason": "ambiguous-date",
+        "evidence": "04/12/2026"
+      },
       "published": false
     },
     {
@@ -302,6 +314,10 @@
       "kind": "instagram",
       "status": "review",
       "reason": "missing-date",
+      "dateEvidence": {
+        "status": "review",
+        "reason": "missing-date"
+      },
       "published": false
     },
     {
@@ -322,6 +338,10 @@
       "kind": "instagram",
       "status": "review",
       "reason": "missing-date",
+      "dateEvidence": {
+        "status": "review",
+        "reason": "missing-date"
+      },
       "published": false
     },
     {
@@ -342,6 +362,10 @@
       "kind": "instagram",
       "status": "review",
       "reason": "missing-date",
+      "dateEvidence": {
+        "status": "review",
+        "reason": "missing-date"
+      },
       "published": false
     },
     {
@@ -432,6 +456,33 @@
       "published": false
     },
     {
+      "id": "k1-instagram-DfFFZnBMGoK",
+      "title": "Annuncio da verificare",
+      "publishedAt": "2026-10-29T13:12:47.000Z",
+      "excerpt": "Wie viele Spinnweben sind zu viele? Asking for a friend... 🕸️\n-2 days until K1 Halloween Open Air!\n\nDie Deko ist schon ready und ziiemlich spooky… jetzt fehlt nur noch ihr und die richtige Mukke 👻\n\n🗓 𝐒𝐚𝐦𝐬𝐭𝐚𝐠, 𝟑𝟏.𝟏𝟎. | ab 18.00 Uhr ☀️ Outdoor bis 00.00 Uhr | Indoor bis 03.00 Uhr\n🎧 DJ Juli, DJ Double Dee, DJ Ivan Fillini & DJ Hufe\n🔞18+ 👀\n\n#k1 #k1_reischach #halloween #behindthescenes #bts",
+      "sourceId": "k1-instagram",
+      "sourceName": "K1 Kronplatz",
+      "evidence": {
+        "url": "https://www.instagram.com/p/DfFFZnBMGoK/",
+        "author": "k1.kronplatz",
+        "ownerId": "5849734189",
+        "publishedAt": "2026-10-29T13:12:47.000Z",
+        "caption": "Wie viele Spinnweben sind zu viele? Asking for a friend... 🕸️\n-2 days until K1 Halloween Open Air!\n\nDie Deko ist schon ready und ziiemlich spooky… jetzt fehlt nur noch ihr und die richtige Mukke 👻\n\n🗓 𝐒𝐚𝐦𝐬𝐭𝐚𝐠, 𝟑𝟏.𝟏𝟎. | ab 18.00 Uhr ☀️ Outdoor bis 00.00 Uhr | Indoor bis 03.00 Uhr\n🎧 DJ Juli, DJ Double Dee, DJ Ivan Fillini & DJ Hufe\n🔞18+ 👀\n\n#k1 #k1_reischach #halloween #behindthescenes #bts"
+      },
+      "url": "https://www.instagram.com/p/DfFFZnBMGoK/",
+      "kind": "instagram",
+      "status": "review",
+      "reason": "unclear-event-title",
+      "date": {
+        "status": "confirmed",
+        "start": "2026-10-31",
+        "end": "2026-10-31",
+        "evidence": "31.10",
+        "inferredYear": true
+      },
+      "published": false
+    },
+    {
       "id": "k1-instagram-DfHIbwKsIM5",
       "title": "Annuncio da verificare",
       "publishedAt": "2026-10-30T08:17:48.000Z",
@@ -449,6 +500,10 @@
       "kind": "instagram",
       "status": "review",
       "reason": "missing-date",
+      "dateEvidence": {
+        "status": "review",
+        "reason": "missing-date"
+      },
       "published": false
     },
     {
@@ -469,39 +524,6 @@
       "kind": "instagram",
       "status": "review",
       "reason": "repost-or-collaboration",
-      "published": false
-    },
-    {
-      "id": "k1-instagram-DfFFZnBMGoK",
-      "title": "DJ Juli, DJ Double Dee, DJ Ivan Fillini & DJ Hufe",
-      "publishedAt": "2026-10-29T13:12:47.000Z",
-      "excerpt": "Wie viele Spinnweben sind zu viele? Asking for a friend... 🕸️\n-2 days until K1 Halloween Open Air!\n\nDie Deko ist schon ready und ziiemlich spooky… jetzt fehlt nur noch ihr und die richtige Mukke 👻\n\n🗓 𝐒𝐚𝐦𝐬𝐭𝐚𝐠, 𝟑𝟏.𝟏𝟎. | ab 18.00 Uhr ☀️ Outdoor bis 00.00 Uhr | Indoor bis 03.00 Uhr\n🎧 DJ Juli, DJ Double Dee, DJ Ivan Fillini & DJ Hufe\n🔞18+ 👀\n\n#k1 #k1_reischach #halloween #behindthescenes #bts",
-      "sourceId": "k1-instagram",
-      "sourceName": "K1 Kronplatz",
-      "evidence": {
-        "url": "https://www.instagram.com/p/DfFFZnBMGoK/",
-        "author": "k1.kronplatz",
-        "ownerId": "5849734189",
-        "publishedAt": "2026-10-29T13:12:47.000Z",
-        "caption": "Wie viele Spinnweben sind zu viele? Asking for a friend... 🕸️\n-2 days until K1 Halloween Open Air!\n\nDie Deko ist schon ready und ziiemlich spooky… jetzt fehlt nur noch ihr und die richtige Mukke 👻\n\n🗓 𝐒𝐚𝐦𝐬𝐭𝐚𝐠, 𝟑𝟏.𝟏𝟎. | ab 18.00 Uhr ☀️ Outdoor bis 00.00 Uhr | Indoor bis 03.00 Uhr\n🎧 DJ Juli, DJ Double Dee, DJ Ivan Fillini & DJ Hufe\n🔞18+ 👀\n\n#k1 #k1_reischach #halloween #behindthescenes #bts"
-      },
-      "url": "https://www.instagram.com/p/DfFFZnBMGoK/",
-      "kind": "instagram",
-      "status": "confirmed",
-      "reason": "official-announcement",
-      "start": "2026-10-31",
-      "end": "2026-10-31",
-      "location": "K1 · Riscone / Reischach, Brunico / Bruneck",
-      "dateEvidence": {
-        "status": "confirmed",
-        "start": "2026-10-31",
-        "end": "2026-10-31",
-        "evidence": "31.10",
-        "inferredYear": true
-      },
-      "hours": {
-        "start": "18:00"
-      },
       "published": false
     }
   ]
