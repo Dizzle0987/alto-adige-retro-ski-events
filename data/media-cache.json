@@ -1,6 +1,40 @@
 {
   "version": 1,
   "entries": {
+    "e86ffb30ceabd59f46740562fba32ff8f149cca03be9aba8ecc736190ecd9fda": {
+      "checkedAt": "2026-10-31T21:08:44.187Z",
+      "assessment": {
+        "title": "Annuncio da verificare",
+        "status": "review",
+        "reason": "unclear-event-title",
+        "venue": "Pulverfass",
+        "location": "Pulverfass · Speikboden, Valle Aurina / Ahrntal",
+        "evidence": {
+          "url": "https://www.pulverfass.com/wp-content/uploads/2024/09/Pulverfass-Restaurant-ApresSki-Bar-Food-Pulverfass-Opening-5.jpg",
+          "page": "https://www.pulverfass.com/apres-ski-2/",
+          "sha256": "0b08d3494c2cef1aa21996ab1eb0b2f38077d6d2a78a31d9bac2fc947e49c168",
+          "method": "image-ocr"
+        },
+        "excerpt": "ri.\n\nann\n\nIIILizi,\n\n(SESSI\n\ntà\n\n~ >\n\nsa\n\nN\n\nes\n\nDh\n\nLf\n\nAI\n\nAr\n\n\\\n\nWS\n\nime\n\nè\n\na\n\nte\n\npi È\n\nEr |\n"
+      }
+    },
+    "b7e87dd937879afba4bf92a7eda51f101bd1bafea3163538dfe26c1e3875c736": {
+      "checkedAt": "2026-10-31T21:08:42.097Z",
+      "assessment": {
+        "title": "Annuncio da verificare",
+        "status": "review",
+        "reason": "unclear-event-title",
+        "venue": "Pulverfass",
+        "location": "Pulverfass · Speikboden, Valle Aurina / Ahrntal",
+        "evidence": {
+          "url": "https://www.pulverfass.com/wp-content/uploads/2024/09/Pulverfass-Restaurant-ApresSki-Bar-Food-Pulverfass-Opening-4-400x516.jpg",
+          "page": "https://www.pulverfass.com/apres-ski-2/",
+          "sha256": "6b543fb4f1c40a4c5c25d5db7d6efbd174de0f9e98fc6bc2afebaa793ead0e39",
+          "method": "image-ocr"
+        },
+        "excerpt": "a |\n\nSn\n\nu\n\n%,\n\nte\n\nKs\n\nWi\n"
+      }
+    },
     "f4dcab5eff8667172ae321849725e38a30ecce398734623bc78c87a7c626534f": {
       "checkedAt": "2026-10-31T15:09:37.124Z",
       "assessment": {
@@ -122,6 +156,16 @@
     }
   },
   "documents": {
+    "0b08d3494c2cef1aa21996ab1eb0b2f38077d6d2a78a31d9bac2fc947e49c168": {
+      "text": "ri.\n\nann\n\nIIILizi,\n\n(SESSI\n\ntà\n\n~ >\n\nsa\n\nN\n\nes\n\nDh\n\nLf\n\nAI\n\nAr\n\n\\\n\nWS\n\nime\n\nè\n\na\n\nte\n\npi È\n\nEr |\n",
+      "method": "image-ocr",
+      "checkedAt": "2026-10-31T21:08:44.187Z"
+    },
+    "6b543fb4f1c40a4c5c25d5db7d6efbd174de0f9e98fc6bc2afebaa793ead0e39": {
+      "text": "a |\n\nSn\n\nu\n\n%,\n\nte\n\nKs\n\nWi\n",
+      "method": "image-ocr",
+      "checkedAt": "2026-10-31T21:08:42.096Z"
+    },
     "1888c47f4cf2c6a654794b5bc8f794b6fbd132220a62ad9e33b0cc40d20b5ad3": {
       "text": "\\¢\n\nsa |\n\n»\n\n=\n\nu\n\n“ai\n\n(d\n\nVE)\n\nÈ\n\nN\n\nLD\n\nED. è.\n\nLg\n\ne\n\nif\n\nXY\n\neee\n",
       "method": "image-ocr",

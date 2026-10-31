@@ -6,7 +6,7 @@
     "instagramStatus": "disabled-web-mode",
     "candidates": 16,
     "published": 0,
-    "updated": 1,
+    "updated": 0,
     "pruned": 0
   },
   "sources": [
@@ -414,7 +414,7 @@
       "extraction": {
         "structured": 0,
         "html": 0,
-        "review": 2
+        "review": 1
       },
       "needsReview": [
         {
@@ -430,32 +430,12 @@
             "method": "image-ocr"
           },
           "excerpt": "WEDNESDAY, 6\"\n\nFRIDAY, 8\"\n\nDJ SIMON\n\nDJ SIMON\n\nLIVE EVENTS\n\nNew and classic charts\n\nNew and classic charts\n\nIN MARGH\n\nat4pm\n\nat4pm\n\nSUNDAY, 10\"\n\n& MONDAY, 11\"\n\nDJ MIKE\n\nSET at4pm\n\nSUNDAY, 17\"\n\nTUESDAY, 19\"\n\n& MONDAY, 18\"\n\nDJ MIKE at4 pm\n\nDJ MIKE\n\nVOLLGAS\n\nSETat4pm\n\nat9 pm\n\nSATURDAY, 23%\n\nSUNDAY, 24\"\n\n& MONDAY, 25\"\n\nDJ mine at 4 pm\n\nDOI\n\nMAS QUE NADA\n\nDJ MIKE\n\nIND\n\nIGGE!\n\nat9 pm\n\nSET at 4pm\n"
-        },
-        {
-          "title": "Annuncio da verificare",
-          "status": "review",
-          "reason": "unclear-event-title",
-          "venue": "La Stua",
-          "location": "La Stua · Selva di Val Gardena / Wolkenstein in Gröden",
-          "evidence": {
-            "url": "https://www.la-stua.com/images/la-stua-video-2019.png",
-            "page": "https://www.la-stua.com/apresski-alps/",
-            "sha256": "813c678b7d480a8e128b20847aa8dd865e402328b99f1c6d42b47b487bdf2fea",
-            "method": "image-ocr"
-          },
-          "excerpt": "nn\n\nye lu)\n"
         }
       ],
       "media": [
         {
           "kind": "image",
-          "status": "read-for-review",
-          "method": "image-ocr"
-        },
-        {
-          "kind": "image",
-          "status": "read-for-review",
-          "method": "image-ocr"
+          "status": "cached"
         }
       ],
       "facebook": {
@@ -535,8 +515,7 @@
       "media": [
         {
           "kind": "image",
-          "status": "read-for-review",
-          "method": "image-ocr"
+          "status": "cached"
         }
       ],
       "facebook": {
@@ -549,16 +528,8 @@
       "name": "Max Alm — Versciaco / Vierschach",
       "kind": "web",
       "url": "https://www.andermax.it/en/culinary-delights/partner-establishments/max-alm-apres-ski.html",
-      "status": "checked",
-      "found": 0,
-      "coverage": "no-readable-events",
-      "extraction": {
-        "structured": 0,
-        "html": 0,
-        "review": 0
-      },
-      "needsReview": [],
-      "media": []
+      "status": "unavailable",
+      "error": "The operation was aborted due to timeout"
     },
     {
       "id": "baerenhoehle-reinswald",
@@ -606,47 +577,46 @@
           "venue": "Pulverfass",
           "location": "Pulverfass · Speikboden, Valle Aurina / Ahrntal",
           "evidence": {
-            "url": "https://www.pulverfass.com/wp-content/uploads/2024/09/Pulverfass-Apres-Ski-Skifahren.jpg",
-            "page": "https://www.pulverfass.com/apres-ski-2/",
-            "sha256": "88295fa25bf3dfcd0038931c89581587e7622125a4b4e27d8e6dd4719feafb6c",
-            "method": "image-ocr"
-          },
-          "excerpt": "è,\n\nn\n\n“fe\n\n7\n\noe\n\nLada\n\nye\n\nVw RI\n\nwe\n\nRes\n\n™\n\nVET\n\nbl\n\nme\n\nfe\n\n7 Fü\n\nwt\n\nir\n\n2%\n\nww...\n\n4\n\n8.3\n\n\"di\n\ner\n\nota\n\nwih\n\nSl\n\n3\n"
-        },
-        {
-          "title": "Annuncio da verificare",
-          "status": "review",
-          "reason": "unclear-event-title",
-          "venue": "Pulverfass",
-          "location": "Pulverfass · Speikboden, Valle Aurina / Ahrntal",
-          "evidence": {
-            "url": "https://www.pulverfass.com/wp-content/uploads/2024/09/Pulverfass-Restaurant-ApresSki-Fass.png",
-            "page": "https://www.pulverfass.com/apres-ski-2/",
-            "sha256": "43ba44ff779543447a461fbe8555f3457e6459219ce7d0295bfa33cdcb7b2f0d",
-            "method": "image-ocr"
-          },
-          "excerpt": "NG\n\nFA\n"
-        },
-        {
-          "title": "Annuncio da verificare",
-          "status": "review",
-          "reason": "unclear-event-title",
-          "venue": "Pulverfass",
-          "location": "Pulverfass · Speikboden, Valle Aurina / Ahrntal",
-          "evidence": {
             "url": "https://www.pulverfass.com/wp-content/uploads/2024/09/Pulverfass-Restaurant-ApresSki-Bar-Food-Pulverfass-Opening-4.jpg",
             "page": "https://www.pulverfass.com/apres-ski-2/",
             "sha256": "1888c47f4cf2c6a654794b5bc8f794b6fbd132220a62ad9e33b0cc40d20b5ad3",
             "method": "image-ocr"
           },
           "excerpt": "\\¢\n\nsa |\n\n»\n\n=\n\nu\n\n“ai\n\n(d\n\nVE)\n\nÈ\n\nN\n\nLD\n\nED. è.\n\nLg\n\ne\n\nif\n\nXY\n\neee\n"
+        },
+        {
+          "title": "Annuncio da verificare",
+          "status": "review",
+          "reason": "unclear-event-title",
+          "venue": "Pulverfass",
+          "location": "Pulverfass · Speikboden, Valle Aurina / Ahrntal",
+          "evidence": {
+            "url": "https://www.pulverfass.com/wp-content/uploads/2024/09/Pulverfass-Restaurant-ApresSki-Bar-Food-Pulverfass-Opening-4-400x516.jpg",
+            "page": "https://www.pulverfass.com/apres-ski-2/",
+            "sha256": "6b543fb4f1c40a4c5c25d5db7d6efbd174de0f9e98fc6bc2afebaa793ead0e39",
+            "method": "image-ocr"
+          },
+          "excerpt": "a |\n\nSn\n\nu\n\n%,\n\nte\n\nKs\n\nWi\n"
+        },
+        {
+          "title": "Annuncio da verificare",
+          "status": "review",
+          "reason": "unclear-event-title",
+          "venue": "Pulverfass",
+          "location": "Pulverfass · Speikboden, Valle Aurina / Ahrntal",
+          "evidence": {
+            "url": "https://www.pulverfass.com/wp-content/uploads/2024/09/Pulverfass-Restaurant-ApresSki-Bar-Food-Pulverfass-Opening-5.jpg",
+            "page": "https://www.pulverfass.com/apres-ski-2/",
+            "sha256": "0b08d3494c2cef1aa21996ab1eb0b2f38077d6d2a78a31d9bac2fc947e49c168",
+            "method": "image-ocr"
+          },
+          "excerpt": "ri.\n\nann\n\nIIILizi,\n\n(SESSI\n\ntà\n\n~ >\n\nsa\n\nN\n\nes\n\nDh\n\nLf\n\nAI\n\nAr\n\n\\\n\nWS\n\nime\n\nè\n\na\n\nte\n\npi È\n\nEr |\n"
         }
       ],
       "media": [
         {
           "kind": "image",
-          "status": "read-for-review",
-          "method": "image-ocr"
+          "status": "cached"
         },
         {
           "kind": "image",
@@ -675,31 +645,10 @@
       "extraction": {
         "structured": 0,
         "html": 0,
-        "review": 1
+        "review": 0
       },
-      "needsReview": [
-        {
-          "title": "Annuncio da verificare",
-          "status": "review",
-          "reason": "unclear-event-title",
-          "venue": "Vallis",
-          "location": "Vallis · Speikboden, Campo Tures / Sand in Taufers, Valle Aurina / Ahrntal",
-          "evidence": {
-            "url": "https://www.ahrntal.com/media/18ea8047-ed7a-4f4c-9d1a-da6ea535f671/deu-27-12-25-04-01-2026-wochenprogramm-01.pdf",
-            "page": "https://www.ahrntal.com/de/alle-gastronoimebetriebe/rid-42F1C8F4E3CAD89691446C46B43937E8-g-vallis-restaurant-bar.html",
-            "sha256": "fed1526f18f12826281743d313f04a83e6e68b3d179efeb3a9b686ba89551666",
-            "method": "pdf-text"
-          },
-          "excerpt": "                                            \n\n\n\n\n   \n\n\n\n\n                         \n\n\n\n\n                                            \n\n\n\n\n                                            \n\n\n\n\n                                            \n\n\n\n\n                         \n\n\n\n\n                                    \n\n\n\n\n                                 \n\n\n\n\n   \n\n\n\n\n                  \n\n\n\n\n                         \n\f                            \n\n\n\n\n                  \n\n\n\n\n                                    \n\n\n\n\n                                    \n\n\n\n\n                                    \n\n\n\n\n                     \n\f            \n\f"
-        }
-      ],
-      "media": [
-        {
-          "kind": "pdf",
-          "status": "read-for-review",
-          "method": "pdf-text"
-        }
-      ]
+      "needsReview": [],
+      "media": []
     },
     {
       "id": "obereggen-apres-ski",
