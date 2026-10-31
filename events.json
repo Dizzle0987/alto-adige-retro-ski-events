@@ -1710,6 +1710,44 @@
       "featured": false
     },
     {
+      "id": "ganischgeralm-winter-opening-party-2026",
+      "title": "Winter Opening Party",
+      "start": "2026-11-29",
+      "end": "2026-11-29",
+      "dateLabel": "29",
+      "monthLabel": "NOV",
+      "year": "2026",
+      "categories": ["apres"],
+      "tags": ["Opening", "Après-ski"],
+      "venue": "Ganischgeralm",
+      "summary": "La prima grande festa d’inverno alla Ganischgeralm per inaugurare la stagione après-ski. Orario da confermare.",
+      "summaries": {
+        "it": "La prima grande festa d’inverno alla Ganischgeralm per inaugurare la stagione après-ski. Orario da confermare.",
+        "de": "Die erste große Winterparty auf der Ganischgeralm zum Auftakt der Après-Ski-Saison. Uhrzeit wird noch bekannt gegeben.",
+        "en": "The first big winter party at Ganischgeralm to kick off the après-ski season. Time to be confirmed."
+      },
+      "place": "Ganischgeralm · Obereggen, Val d’Ega / Eggental",
+      "source": "https://www.instagram.com/p/DfISumxtSKI/",
+      "social": "https://www.instagram.com/ganischgeralm_voliera/",
+      "socialSourceId": "ganischger-instagram",
+      "map": "https://www.google.com/maps/search/?api=1&query=Ganischgeralm+Obereggen",
+      "accent": "#ff7439",
+      "featured": false,
+      "provenance": [{
+        "method": "manual-public-flyer",
+        "url": "https://www.instagram.com/p/DfISumxtSKI/",
+        "author": "ganischgeralm_voliera",
+        "ownerId": "68123628214",
+        "publishedAt": "2026-10-30T19:19:00.000Z",
+        "checkedAt": "2026-10-31",
+        "dateEvidence": "SUNDAY 29.11",
+        "year": 2026,
+        "inferredYear": true,
+        "manuallyVerified": true,
+        "notes": "Data letta manualmente sul flyer e confermata dall’utente; domenica 29 novembre 2026. Orario non indicato."
+      }]
+    },
+    {
       "id": "hexenkessel-klausberg-winter-opening-2026",
       "title": "KLAUSBERG WINTER OPENING 2026/27",
       "start": "2026-12-04",

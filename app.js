@@ -164,6 +164,7 @@ const placeTranslations = {
     "K1 · Riscone / Reischach, Brunico / Bruneck": "K1 · Reischach, Bruneck",
     "Giggeralm · Riscone / Reischach, Brunico / Bruneck": "Giggeralm · Reischach, Bruneck",
     "Hexenkessel · Cadipietra / Steinhaus, Valle Aurina / Ahrntal": "Hexenkessel · Steinhaus, Ahrntal",
+    "Ganischgeralm · Obereggen, Val d’Ega / Eggental": "Ganischgeralm · Obereggen, Eggental",
     "Cadipietra": "Steinhaus",
     "Musikpavillon · Campo Tures / Sand in Taufers, Valle Aurina / Ahrntal": "Musikpavillon · Sand in Taufers, Ahrntal",
     "San Vigilio, Regione dolomitica Plan de Corones": "St. Vigil, Dolomitenregion Kronplatz",
@@ -178,6 +179,7 @@ const placeTranslations = {
     "Cadipietra": "Steinhaus / Cadipietra",
     "Giggeralm · Riscone / Reischach, Brunico / Bruneck": "Giggeralm · Riscone / Reischach, Brunico / Bruneck",
     "Hexenkessel · Cadipietra / Steinhaus, Valle Aurina / Ahrntal": "Hexenkessel · Steinhaus / Cadipietra, Ahrntal",
+    "Ganischgeralm · Obereggen, Val d’Ega / Eggental": "Ganischgeralm · Obereggen, Eggental Valley",
     "Musikpavillon · Campo Tures / Sand in Taufers, Valle Aurina / Ahrntal": "Music pavilion · Sand in Taufers / Campo Tures, Ahrntal",
     "San Vigilio, Regione dolomitica Plan de Corones": "San Vigilio, Kronplatz Dolomites Region",
     "Ultimo, Merano e dintorni": "Ultimo, Merano and environs",
@@ -216,6 +218,7 @@ const placeReplacements = {
 };
 
 const valleyLabels = {
+  eggental: { it: "Val d’Ega", de: "Eggental", en: "Eggental Valley" },
   kronplatz: { it: "Plan de Corones", de: "Kronplatz", en: "Kronplatz" },
   ultimo: { it: "Val d’Ultimo", de: "Ultental", en: "Ultimo Valley" },
   gardena: { it: "Val Gardena", de: "Gröden", en: "Val Gardena" },
@@ -285,6 +288,7 @@ const localizedEvent = (event) => {
 
 const valleyKeyFor = (event) => {
   const value = `${event.title} ${event.place} ${event.source}`.toLowerCase();
+  if (/obereggen|eggental|val d[’']ega|ganischgeralm/.test(value)) return "eggental";
   if (/ahrntal|valle aurina|cadipietra|steinhaus|campo tures|sand in taufers/.test(value)) return "ahrntal";
   if (/sarntal|sarentino|reinswald|sunnolm|bärenhöhle/.test(value)) return "sarntal";
   if (/plan de corones|kronplatz|san vigilio|brunico/.test(value)) return "kronplatz";
