@@ -41,7 +41,7 @@ jobs:
 
       - name: Verify social dates, source checks and free-credit guard
         if: steps.schedule.outputs.run == 'true'
-        run: node --test scripts/social-events.test.mjs scripts/social-pipeline.test.mjs
+        run: node --test scripts/*.test.mjs
 
       - name: Refresh dates from official sources
         if: steps.schedule.outputs.run == 'true' && inputs.instagram_mode != 'replay'

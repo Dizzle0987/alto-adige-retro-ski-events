@@ -1,4 +1,4 @@
-import { calendarState, eventPeriod } from "./calendar.mjs?v=2";
+import { calendarState, eventPeriod } from "./calendar.mjs?v=3";
 
 const eventList = document.querySelector(".event-list");
 const socialList = document.querySelector(".social-links");
@@ -21,6 +21,7 @@ const copy = {
     periodLabel: "Periodo degli eventi", currentEvents: "In corso e prossimi", pastEvents: "Eventi passati",
     archiveNote: "Storico degli ultimi 12 mesi.", ongoingTitle: "Succede adesso", upcomingTitle: "I prossimi appuntamenti",
     ongoingBadge: "In corso", emptyPast: "Nessun evento passato negli ultimi 12 mesi con questi filtri.",
+    todayTitle: "Oggi", todayBadge: "Oggi",
     heroLine1: "BRUTTI SCI.", heroLine2: "BELLE FESTE.",
     heroLede: "Un radar in continuo aggiornamento per feste retro, vintage ski e après-ski in Alto Adige. Date, luoghi e fonti ufficiali, senza caccia al flyer.",
     eventsCta: "Vedi gli eventi", socialCta: "Radar social", eventsKicker: "Radar eventi live",
@@ -49,6 +50,7 @@ const copy = {
     periodLabel: "Event-Zeitraum", currentEvents: "Aktuell & demnächst", pastEvents: "Vergangene Events",
     archiveNote: "Rückblick auf die letzten 12 Monate.", ongoingTitle: "Jetzt los", upcomingTitle: "Die nächsten Termine",
     ongoingBadge: "Findet gerade statt", emptyPast: "Keine vergangenen Events der letzten 12 Monate für diese Filter.",
+    todayTitle: "Heute", todayBadge: "Heute",
     heroLine1: "SCHRÄGE SKI.", heroLine2: "GUTE PARTYS.",
     heroLede: "Ein laufend aktualisierter Radar für Retro-Ski-, Vintage- und Après-Ski-Partys in Südtirol. Daten, Orte und offizielle Quellen – ohne Flyer-Suche.",
     eventsCta: "Events ansehen", socialCta: "Social-Radar", eventsKicker: "Live-Event-Radar",
@@ -77,6 +79,7 @@ const copy = {
     periodLabel: "Event period", currentEvents: "Now & upcoming", pastEvents: "Past events",
     archiveNote: "An archive of the last 12 months.", ongoingTitle: "Happening now", upcomingTitle: "Coming up next",
     ongoingBadge: "Happening now", emptyPast: "No past events in the last 12 months match these filters.",
+    todayTitle: "Today", todayBadge: "Today",
     heroLine1: "BAD SKIS.", heroLine2: "GREAT PARTIES.",
     heroLede: "A continuously updated radar for retro ski, vintage and après-ski parties in South Tyrol. Dates, places and official sources — no flyer hunting required.",
     eventsCta: "See the events", socialCta: "Social radar", eventsKicker: "Live event radar",
@@ -304,9 +307,10 @@ const renderEvent = (rawEvent) => {
   date.append(element("span", "", formattedDate.days), element("strong", "", formattedDate.months), element("small", "", formattedDate.year));
   const main = element("div", "event-main");
   const tags = element("div", "tags");
-  if (eventPeriod(event, calendar.today) === "ongoing") {
+  const status = eventPeriod(event, calendar);
+  if (status === "ongoing" || status === "today") {
     article.classList.add("is-ongoing");
-    tags.append(element("span", "ongoing-badge", copy[currentLanguage].ongoingBadge));
+    tags.append(element("span", "ongoing-badge", copy[currentLanguage][status === "today" ? "todayBadge" : "ongoingBadge"]));
   }
   event.tags.forEach((tag) => tags.append(element("span", "", tag)));
   main.append(tags);
@@ -382,8 +386,8 @@ const applyFilter = (selected) => {
 };
 
 const periodEvents = () => cachedEvents.filter((event) => currentPeriod === "past"
-  ? event.end < calendar.today && event.end >= calendar.archiveCutoff
-  : event.end >= calendar.today);
+  ? eventPeriod(event, calendar) === "past" && (event.endsAtDate || event.end) >= calendar.archiveCutoff
+  : eventPeriod(event, calendar) !== "past");
 
 const formatCheckedDate = (isoDate) => {
   if (!isoDate) return "—";
@@ -401,17 +405,19 @@ const renderEvents = () => {
   if (currentPeriod === "past") {
     eventList.append(...events.sort((a, b) => b.end.localeCompare(a.end)).map(renderEvent));
   } else {
-    const ongoing = events.filter((event) => eventPeriod(event, calendar.today) === "ongoing");
-    const upcoming = events.filter((event) => eventPeriod(event, calendar.today) === "upcoming");
-    if (ongoing.length) {
+    const ongoing = events.filter((event) => eventPeriod(event, calendar) === "ongoing");
+    const today = events.filter((event) => eventPeriod(event, calendar) === "today");
+    const upcoming = events.filter((event) => eventPeriod(event, calendar) === "upcoming");
+    for (const [group, key] of [[ongoing, "ongoing"], [today, "today"]]) {
+      if (!group.length) continue;
       const focus = element("section", "ongoing-events");
-      focus.setAttribute("aria-labelledby", "ongoing-heading");
-      const heading = element("h3", "event-group-heading", copy[currentLanguage].ongoingTitle);
-      heading.id = "ongoing-heading";
-      focus.append(heading, ...ongoing.map(renderEvent));
+      focus.setAttribute("aria-labelledby", `${key}-heading`);
+      const heading = element("h3", "event-group-heading", copy[currentLanguage][`${key}Title`]);
+      heading.id = `${key}-heading`;
+      focus.append(heading, ...group.map(renderEvent));
       eventList.append(focus);
-      if (upcoming.length) eventList.append(element("h3", "event-group-heading", copy[currentLanguage].upcomingTitle));
     }
+    if ((ongoing.length || today.length) && upcoming.length) eventList.append(element("h3", "event-group-heading", copy[currentLanguage].upcomingTitle));
     eventList.append(...upcoming.map(renderEvent));
   }
   periodButtons.forEach((button) => {
@@ -489,7 +495,7 @@ periodButtons.forEach((button) => button.addEventListener("click", () => {
 }));
 setInterval(() => {
   const next = calendarState();
-  if (next.today !== calendar.today) {
+  if (next.localMinute !== calendar.localMinute) {
     calendar = next;
     translatePage();
     renderEvents();
