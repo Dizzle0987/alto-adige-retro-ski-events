@@ -220,6 +220,7 @@ const valleyLabels = {
   venosta: { it: "Val Venosta", de: "Vinschgau", en: "Venosta Valley" },
   altaBadia: { it: "Alta Badia", de: "Alta Badia", en: "Alta Badia" },
   ahrntal: { it: "Valle Aurina", de: "Ahrntal", en: "Ahrntal" },
+  sarntal: { it: "Val Sarentino", de: "Sarntal", en: "Sarntal" },
   other: { it: "Altre zone", de: "Andere Gebiete", en: "Other areas" },
 };
 
@@ -280,6 +281,7 @@ const localizedEvent = (event) => {
 const valleyKeyFor = (event) => {
   const value = `${event.title} ${event.place} ${event.source}`.toLowerCase();
   if (/ahrntal|valle aurina|cadipietra|steinhaus|campo tures|sand in taufers/.test(value)) return "ahrntal";
+  if (/sarntal|sarentino|reinswald|sunnolm|bärenhöhle/.test(value)) return "sarntal";
   if (/plan de corones|kronplatz|san vigilio|brunico/.test(value)) return "kronplatz";
   if (/ultimo|ulten|schwemmalm/.test(value)) return "ultimo";
   if (/val gardena|selva|sëlva|ortisei|urtijëi|wolkenstein/.test(value)) return "gardena";
