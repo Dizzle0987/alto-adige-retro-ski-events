@@ -1,5 +1,161 @@
 {
   "version": 1,
-  "entries": {},
-  "documents": {}
+  "entries": {
+    "f4dcab5eff8667172ae321849725e38a30ecce398734623bc78c87a7c626534f": {
+      "checkedAt": "2026-10-31T15:09:37.124Z",
+      "assessment": {
+        "title": "Annuncio da verificare",
+        "status": "review",
+        "reason": "unclear-event-title",
+        "venue": "Pulverfass",
+        "location": "Pulverfass · Speikboden, Valle Aurina / Ahrntal",
+        "evidence": {
+          "url": "https://www.pulverfass.com/wp-content/uploads/2024/09/Pulverfass-Restaurant-ApresSki-Bar-Food-Pulverfass-Opening-4.jpg",
+          "page": "https://www.pulverfass.com/apres-ski-2/",
+          "sha256": "1888c47f4cf2c6a654794b5bc8f794b6fbd132220a62ad9e33b0cc40d20b5ad3",
+          "method": "image-ocr"
+        },
+        "excerpt": "\\¢\n\nsa |\n\n»\n\n=\n\nu\n\n“ai\n\n(d\n\nVE)\n\nÈ\n\nN\n\nLD\n\nED. è.\n\nLg\n\ne\n\nif\n\nXY\n\neee\n"
+      }
+    },
+    "a203fdfc395506e0da28d100f6a1d89ddef6d3981b5ec65b46e6c40eae410a41": {
+      "checkedAt": "2026-10-31T15:09:35.347Z",
+      "assessment": {
+        "title": "Annuncio da verificare",
+        "status": "review",
+        "reason": "unclear-event-title",
+        "venue": "Pulverfass",
+        "location": "Pulverfass · Speikboden, Valle Aurina / Ahrntal",
+        "evidence": {
+          "url": "https://www.pulverfass.com/wp-content/uploads/2024/09/Pulverfass-Restaurant-ApresSki-Fass.png",
+          "page": "https://www.pulverfass.com/apres-ski-2/",
+          "sha256": "43ba44ff779543447a461fbe8555f3457e6459219ce7d0295bfa33cdcb7b2f0d",
+          "method": "image-ocr"
+        },
+        "excerpt": "NG\n\nFA\n"
+      }
+    },
+    "b2f3209d1ccb12403ee44bcfc57c08cc81fc43232fb292ff778289e558f241e8": {
+      "checkedAt": "2026-10-31T15:09:34.473Z",
+      "assessment": {
+        "title": "Annuncio da verificare",
+        "status": "review",
+        "reason": "unclear-event-title",
+        "venue": "Vallis",
+        "location": "Vallis · Speikboden, Campo Tures / Sand in Taufers, Valle Aurina / Ahrntal",
+        "evidence": {
+          "url": "https://www.ahrntal.com/media/18ea8047-ed7a-4f4c-9d1a-da6ea535f671/deu-27-12-25-04-01-2026-wochenprogramm-01.pdf",
+          "page": "https://www.ahrntal.com/de/alle-gastronoimebetriebe/rid-42F1C8F4E3CAD89691446C46B43937E8-g-vallis-restaurant-bar.html",
+          "sha256": "fed1526f18f12826281743d313f04a83e6e68b3d179efeb3a9b686ba89551666",
+          "method": "pdf-text"
+        },
+        "excerpt": "                                            \n\n\n\n\n   \n\n\n\n\n                         \n\n\n\n\n                                            \n\n\n\n\n                                            \n\n\n\n\n                                            \n\n\n\n\n                         \n\n\n\n\n                                    \n\n\n\n\n                                 \n\n\n\n\n   \n\n\n\n\n                  \n\n\n\n\n                         \n\f                            \n\n\n\n\n                  \n\n\n\n\n                                    \n\n\n\n\n                                    \n\n\n\n\n                                    \n\n\n\n\n                     \n\f            \n\f"
+      }
+    },
+    "4f20dd849b61a10f36c53015dd6db92a51b33107491b5ebed856f94b0dca6114": {
+      "checkedAt": "2026-10-31T15:09:33.674Z",
+      "assessment": {
+        "title": "Annuncio da verificare",
+        "status": "review",
+        "reason": "unclear-event-title",
+        "venue": "Pulverfass",
+        "location": "Pulverfass · Speikboden, Valle Aurina / Ahrntal",
+        "evidence": {
+          "url": "https://www.pulverfass.com/wp-content/uploads/2024/09/Pulverfass-Apres-Ski-Skifahren.jpg",
+          "page": "https://www.pulverfass.com/apres-ski-2/",
+          "sha256": "88295fa25bf3dfcd0038931c89581587e7622125a4b4e27d8e6dd4719feafb6c",
+          "method": "image-ocr"
+        },
+        "excerpt": "è,\n\nn\n\n“fe\n\n7\n\noe\n\nLada\n\nye\n\nVw RI\n\nwe\n\nRes\n\n™\n\nVET\n\nbl\n\nme\n\nfe\n\n7 Fü\n\nwt\n\nir\n\n2%\n\nww...\n\n4\n\n8.3\n\n\"di\n\ner\n\nota\n\nwih\n\nSl\n\n3\n"
+      }
+    },
+    "7929b81d35e3a285adf058f9454a655dc115bc0a0ca0b418fd7e98040f308c53": {
+      "checkedAt": "2026-10-31T15:09:32.921Z",
+      "assessment": {
+        "title": "Annuncio da verificare",
+        "status": "review",
+        "reason": "unclear-event-title",
+        "venue": "La Stua",
+        "location": "La Stua · Selva di Val Gardena / Wolkenstein in Gröden",
+        "evidence": {
+          "url": "https://www.la-stua.com/images/la-stua-video-2019.png",
+          "page": "https://www.la-stua.com/apresski-alps/",
+          "sha256": "813c678b7d480a8e128b20847aa8dd865e402328b99f1c6d42b47b487bdf2fea",
+          "method": "image-ocr"
+        },
+        "excerpt": "nn\n\nye lu)\n"
+      }
+    },
+    "7cdace1e1c01047e868895a03c199066d10fe0bf5558502939c6526b7d011da9": {
+      "checkedAt": "2026-10-31T15:09:32.156Z",
+      "assessment": {
+        "title": "DJ SIMON",
+        "status": "review",
+        "reason": "missing-date",
+        "venue": "La Stua",
+        "location": "La Stua · Selva di Val Gardena / Wolkenstein in Gröden",
+        "evidence": {
+          "url": "https://www.la-stua.com/images/Events-La-Stua-March-2019.jpg",
+          "page": "https://www.la-stua.com/apresski-alps/",
+          "sha256": "237e85a1db01b64e023c1fb9539cdabbcb69559f4fa43df0e0d26dc4faf13d80",
+          "method": "image-ocr"
+        },
+        "excerpt": "WEDNESDAY, 6\"\n\nFRIDAY, 8\"\n\nDJ SIMON\n\nDJ SIMON\n\nLIVE EVENTS\n\nNew and classic charts\n\nNew and classic charts\n\nIN MARGH\n\nat4pm\n\nat4pm\n\nSUNDAY, 10\"\n\n& MONDAY, 11\"\n\nDJ MIKE\n\nSET at4pm\n\nSUNDAY, 17\"\n\nTUESDAY, 19\"\n\n& MONDAY, 18\"\n\nDJ MIKE at4 pm\n\nDJ MIKE\n\nVOLLGAS\n\nSETat4pm\n\nat9 pm\n\nSATURDAY, 23%\n\nSUNDAY, 24\"\n\n& MONDAY, 25\"\n\nDJ mine at 4 pm\n\nDOI\n\nMAS QUE NADA\n\nDJ MIKE\n\nIND\n\nIGGE!\n\nat9 pm\n\nSET at 4pm\n"
+      }
+    },
+    "eee7d347d12a90ee88c028baff071513968b6bb48f5a09bc1368b6889389b8b8": {
+      "checkedAt": "2026-10-31T15:09:31.444Z",
+      "assessment": {
+        "title": "Annuncio da verificare",
+        "status": "review",
+        "reason": "unclear-event-title",
+        "venue": "Corones Hütte",
+        "location": "Corones Hütte · Plan de Corones / Kronplatz",
+        "evidence": {
+          "url": "https://www.corones-kronplatz.com/wp-content/uploads/roland-trettl-coroneshuette.jpg",
+          "page": "https://www.corones-kronplatz.com/",
+          "sha256": "4cd2b421c25c6c59c1635ed2a51e3343c5b85496a706570e069fad199ad00829",
+          "method": "image-ocr"
+        },
+        "excerpt": "we\n\nVv Rian\n\nL\n"
+      }
+    }
+  },
+  "documents": {
+    "1888c47f4cf2c6a654794b5bc8f794b6fbd132220a62ad9e33b0cc40d20b5ad3": {
+      "text": "\\¢\n\nsa |\n\n»\n\n=\n\nu\n\n“ai\n\n(d\n\nVE)\n\nÈ\n\nN\n\nLD\n\nED. è.\n\nLg\n\ne\n\nif\n\nXY\n\neee\n",
+      "method": "image-ocr",
+      "checkedAt": "2026-10-31T15:09:37.123Z"
+    },
+    "43ba44ff779543447a461fbe8555f3457e6459219ce7d0295bfa33cdcb7b2f0d": {
+      "text": "NG\n\nFA\n",
+      "method": "image-ocr",
+      "checkedAt": "2026-10-31T15:09:35.347Z"
+    },
+    "fed1526f18f12826281743d313f04a83e6e68b3d179efeb3a9b686ba89551666": {
+      "text": "                                            \n\n\n\n\n   \n\n\n\n\n                         \n\n\n\n\n                                            \n\n\n\n\n                                            \n\n\n\n\n                                            \n\n\n\n\n                         \n\n\n\n\n                                    \n\n\n\n\n                                 \n\n\n\n\n   \n\n\n\n\n                  \n\n\n\n\n                         \n\f                            \n\n\n\n\n                  \n\n\n\n\n                                    \n\n\n\n\n                                    \n\n\n\n\n                                    \n\n\n\n\n                     \n\f            \n\f",
+      "method": "pdf-text",
+      "checkedAt": "2026-10-31T15:09:34.473Z"
+    },
+    "88295fa25bf3dfcd0038931c89581587e7622125a4b4e27d8e6dd4719feafb6c": {
+      "text": "è,\n\nn\n\n“fe\n\n7\n\noe\n\nLada\n\nye\n\nVw RI\n\nwe\n\nRes\n\n™\n\nVET\n\nbl\n\nme\n\nfe\n\n7 Fü\n\nwt\n\nir\n\n2%\n\nww...\n\n4\n\n8.3\n\n\"di\n\ner\n\nota\n\nwih\n\nSl\n\n3\n",
+      "method": "image-ocr",
+      "checkedAt": "2026-10-31T15:09:33.674Z"
+    },
+    "813c678b7d480a8e128b20847aa8dd865e402328b99f1c6d42b47b487bdf2fea": {
+      "text": "nn\n\nye lu)\n",
+      "method": "image-ocr",
+      "checkedAt": "2026-10-31T15:09:32.921Z"
+    },
+    "237e85a1db01b64e023c1fb9539cdabbcb69559f4fa43df0e0d26dc4faf13d80": {
+      "text": "WEDNESDAY, 6\"\n\nFRIDAY, 8\"\n\nDJ SIMON\n\nDJ SIMON\n\nLIVE EVENTS\n\nNew and classic charts\n\nNew and classic charts\n\nIN MARGH\n\nat4pm\n\nat4pm\n\nSUNDAY, 10\"\n\n& MONDAY, 11\"\n\nDJ MIKE\n\nSET at4pm\n\nSUNDAY, 17\"\n\nTUESDAY, 19\"\n\n& MONDAY, 18\"\n\nDJ MIKE at4 pm\n\nDJ MIKE\n\nVOLLGAS\n\nSETat4pm\n\nat9 pm\n\nSATURDAY, 23%\n\nSUNDAY, 24\"\n\n& MONDAY, 25\"\n\nDJ mine at 4 pm\n\nDOI\n\nMAS QUE NADA\n\nDJ MIKE\n\nIND\n\nIGGE!\n\nat9 pm\n\nSET at 4pm\n",
+      "method": "image-ocr",
+      "checkedAt": "2026-10-31T15:09:32.155Z"
+    },
+    "4cd2b421c25c6c59c1635ed2a51e3343c5b85496a706570e069fad199ad00829": {
+      "text": "we\n\nVv Rian\n\nL\n",
+      "method": "image-ocr",
+      "checkedAt": "2026-10-31T15:09:31.443Z"
+    }
+  }
 }

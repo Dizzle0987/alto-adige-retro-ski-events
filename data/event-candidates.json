@@ -1,12 +1,12 @@
 {
   "lastChecked": "2026-10-31",
   "summary": {
-    "webSources": 21,
-    "instagramSources": 11,
-    "instagramStatus": "awaiting-token",
-    "candidates": 13,
-    "published": 2,
-    "updated": 0,
+    "webSources": 30,
+    "instagramSources": 16,
+    "instagramStatus": "disabled-web-mode",
+    "candidates": 16,
+    "published": 0,
+    "updated": 1,
     "pruned": 0
   },
   "sources": [
@@ -38,7 +38,9 @@
         "structured": 0,
         "html": 0,
         "review": 0
-      }
+      },
+      "needsReview": [],
+      "media": []
     },
     {
       "id": "val-gardena-winter-events",
@@ -52,7 +54,9 @@
         "structured": 0,
         "html": 0,
         "review": 0
-      }
+      },
+      "needsReview": [],
+      "media": []
     },
     {
       "id": "spring-race-party-ortisei",
@@ -66,7 +70,9 @@
         "structured": 1,
         "html": 0,
         "review": 0
-      }
+      },
+      "needsReview": [],
+      "media": []
     },
     {
       "id": "watles-nostalgia-day",
@@ -88,7 +94,9 @@
         "structured": 0,
         "html": 0,
         "review": 0
-      }
+      },
+      "needsReview": [],
+      "media": []
     },
     {
       "id": "obereggen-events",
@@ -102,7 +110,9 @@
         "structured": 0,
         "html": 0,
         "review": 0
-      }
+      },
+      "needsReview": [],
+      "media": []
     },
     {
       "id": "ahrntal-events",
@@ -116,7 +126,9 @@
         "structured": 0,
         "html": 0,
         "review": 0
-      }
+      },
+      "needsReview": [],
+      "media": []
     },
     {
       "id": "skiworld-ahrntal",
@@ -130,7 +142,9 @@
         "structured": 0,
         "html": 0,
         "review": 0
-      }
+      },
+      "needsReview": [],
+      "media": []
     },
     {
       "id": "winklparade-mytix",
@@ -138,13 +152,15 @@
       "kind": "web",
       "url": "https://www.mytix.bz/winklparade",
       "status": "checked",
-      "found": 1,
+      "found": 0,
       "coverage": "readable-events",
       "extraction": {
         "structured": 0,
         "html": 1,
         "review": 0
-      }
+      },
+      "needsReview": [],
+      "media": []
     },
     {
       "id": "ganischger-alm",
@@ -158,7 +174,9 @@
         "structured": 0,
         "html": 0,
         "review": 0
-      }
+      },
+      "needsReview": [],
+      "media": []
     },
     {
       "id": "club-moritzino-events",
@@ -172,7 +190,9 @@
         "structured": 0,
         "html": 56,
         "review": 0
-      }
+      },
+      "needsReview": [],
+      "media": []
     },
     {
       "id": "gassl-events",
@@ -186,7 +206,9 @@
         "structured": 0,
         "html": 0,
         "review": 0
-      }
+      },
+      "needsReview": [],
+      "media": []
     },
     {
       "id": "k1-kronplatz",
@@ -194,12 +216,24 @@
       "kind": "web",
       "url": "https://k-1.bz/en/",
       "status": "checked",
-      "found": 1,
+      "found": 0,
       "coverage": "readable-events",
       "extraction": {
         "structured": 0,
         "html": 2,
         "review": 0
+      },
+      "needsReview": [],
+      "media": [
+        {
+          "kind": "curator",
+          "status": "checked",
+          "received": 6
+        }
+      ],
+      "facebook": {
+        "url": "https://www.facebook.com/K1.Reischach.Kronplatz",
+        "status": "reference-only-no-scraping"
       }
     },
     {
@@ -213,7 +247,92 @@
       "extraction": {
         "structured": 0,
         "html": 0,
-        "review": 0
+        "review": 6
+      },
+      "needsReview": [
+        {
+          "title": "Zugleich die nächsten zwei Eventhighlights:",
+          "status": "review",
+          "reason": "multiple-dates",
+          "venue": "Hexenkessel",
+          "location": "Hexenkessel · Cadipietra / Steinhaus, Valle Aurina / Ahrntal",
+          "evidence": {
+            "url": "https://www.instagram.com/p/DDConeDgfpH/",
+            "page": "https://www.hexenkessel.bz/",
+            "publishedAt": "2024-12-01T15:42:16.000Z"
+          },
+          "excerpt": "Noch gar nicht in die Saison gestartet und wieder ein mega Wochenende hinter uns 🤩\n\nAlle Fotos vom Wochenende sind online! 📸\n\nZugleich die nächsten zwei Eventhighlights:\n06.-07.12. 👉 Klausberg WINTER OPENING 🍾\n13.-14.12. 👉 25 Jahre Hexenkessel 🎂\n\nWir freuen uns auf viele bekannte Gesichter und ein paar heiße Partys 🍻"
+        },
+        {
+          "title": "Das war der Krampuslauf 2024 in Steinhaus 🤩",
+          "status": "review",
+          "reason": "past-at-publication",
+          "venue": "Hexenkessel",
+          "location": "Hexenkessel · Cadipietra / Steinhaus, Valle Aurina / Ahrntal",
+          "evidence": {
+            "url": "https://www.instagram.com/p/DC7VHfogiE1/",
+            "page": "https://www.hexenkessel.bz/",
+            "publishedAt": "2024-11-28T19:37:12.000Z"
+          },
+          "excerpt": "Das war der Krampuslauf 2024 in Steinhaus 🤩\n\nEin paar Tage sind vergangen… nun sind alle Fotos vom Krampuslauf online, auf den Facebook Seiten von @dieberglausa & @hexenkessel_klausberg 👹\n\nWas am 23. November alles passiert ist, kann man gar nicht in Worte oder Bilder fassen… deshalb wird in wenigen Monaten das Aftermovie veröffentlicht! Freut euch drauf! 🙈🍻\n\nDanke nochmal dafür die das möglich gemacht haben und für so eine mega Afterparty!!\n\nCheers, \ndie Berglausa und das Hexenkessel Team ✌️"
+        },
+        {
+          "title": "Freitag 👉 Game Night & Afterparty 🥳",
+          "status": "review",
+          "reason": "missing-date",
+          "venue": "Hexenkessel",
+          "location": "Hexenkessel · Cadipietra / Steinhaus, Valle Aurina / Ahrntal",
+          "evidence": {
+            "url": "https://www.instagram.com/p/DC4iQwKAd1i/",
+            "page": "https://www.hexenkessel.bz/",
+            "publishedAt": "2024-11-27T17:34:20.000Z"
+          },
+          "excerpt": "Ein mega Wochenende steht bevor… \n\nFreitag 👉 Game Night & Afterparty 🥳\nSamstag 👉 die ultimative 2€ Party 🍻\n\nUnser Shuttle fährt jeden Freitag & Samstag ab 20.00 Uhr ‼️\n\n#hexenkessel #gamenight #2€party #partytime"
+        },
+        {
+          "title": "Flashback 📸 #Krampuslauf #aftershowparty",
+          "status": "review",
+          "reason": "missing-date",
+          "venue": "Hexenkessel",
+          "location": "Hexenkessel · Cadipietra / Steinhaus, Valle Aurina / Ahrntal",
+          "evidence": {
+            "url": "https://www.instagram.com/reel/DC3b8k-Aj_a/",
+            "page": "https://www.hexenkessel.bz/",
+            "publishedAt": "2024-11-27T07:23:55.000Z"
+          },
+          "excerpt": "Flashback 📸 #Krampuslauf #aftershowparty\n\nWas für ein Lauf und eine Party 🤩 Danke an alle Krampusse, Helfer/innen und Mitwirkende!! Alles hat reibungslos geklappt und ging ohne Komplikationen über die Bühne! Wir freuen uns schon auf die Fotos! 😋\n\nAlle Fotos kommen die Tage auf den Seiten von @dieberglausa und @hexenkessel_klausberg online 🥳"
+        },
+        {
+          "title": "Die Berglausa und der Hexenkessel präsentieren das Krampus-Wochenende an der Talstation vom Klausberg 😈",
+          "status": "review",
+          "reason": "missing-date",
+          "venue": "Hexenkessel",
+          "location": "Hexenkessel · Cadipietra / Steinhaus, Valle Aurina / Ahrntal",
+          "evidence": {
+            "url": "https://www.instagram.com/p/DCkGnfDAO1a/",
+            "page": "https://www.hexenkessel.bz/",
+            "publishedAt": "2024-11-19T19:07:58.000Z"
+          },
+          "excerpt": "Die Berglausa und der Hexenkessel präsentieren das Krampus-Wochenende an der Talstation vom Klausberg 😈\n\nAm Freitag gehts los mit der Warm Up Party mit DJ Willy 🥳 und am Samstag das große Highlight: bereits am Nachmittag haben unsere 3 Glühweinstände sowie den Hexenkessel geöffnet!\n\nAb 20.00 Uhr ist SHOW START vom Krampuslauf! Knapp 20 Gruppen präsentieren einen spektakulären sowie traditionsträchtigen Krampuslauf ‼️\n\nAftershowparty im Hexenkessel bis spät mit DJ Zufällig und DJ Willy! Alle Bereiche sind geöffnet, dass auch jeder Platz hat zu feiern! 🍻\n\nAuch einen Foodtruck haben wir heuer wieder organisiert, damit niemand hungern muss! 😋\n\nWichtig 🏴‍☠️\nIm Hexenkessel ist krampusfreie Zone! Einlass ab 18 Jahren und nur ohne Masken oder Larfen!\n\nAb 19.00 Uhr fährt unser Shuttle und unser großer Bus für kleine und große Gruppen bis 05.00 Uhr morgens!"
+        },
+        {
+          "title": "Annuncio da verificare",
+          "status": "review",
+          "reason": "missing-date",
+          "venue": "Hexenkessel",
+          "location": "Hexenkessel · Cadipietra / Steinhaus, Valle Aurina / Ahrntal",
+          "evidence": {
+            "url": "https://www.instagram.com/p/DCakk7Bon_r/",
+            "page": "https://www.hexenkessel.bz/",
+            "publishedAt": "2024-11-16T02:17:21.000Z"
+          },
+          "excerpt": "Gratuliere an die Gewinner 🤩\n\nDanke an alle fürs mitspielen! Wir freuen uns schon aufs nexte Jahr ‼️"
+        }
+      ],
+      "media": [],
+      "facebook": {
+        "url": "https://www.facebook.com/hexenkessel.klausberg",
+        "status": "reference-only-no-scraping"
       }
     },
     {
@@ -228,7 +347,9 @@
         "structured": 1,
         "html": 0,
         "review": 0
-      }
+      },
+      "needsReview": [],
+      "media": []
     },
     {
       "id": "luislkeller-gardena",
@@ -242,6 +363,12 @@
         "structured": 0,
         "html": 0,
         "review": 0
+      },
+      "needsReview": [],
+      "media": [],
+      "facebook": {
+        "url": "https://www.facebook.com/luislkeller/",
+        "status": "reference-only-no-scraping"
       }
     },
     {
@@ -256,7 +383,9 @@
         "structured": 0,
         "html": 0,
         "review": 0
-      }
+      },
+      "needsReview": [],
+      "media": []
     },
     {
       "id": "loox-obereggen",
@@ -270,7 +399,307 @@
         "structured": 0,
         "html": 0,
         "review": 0
+      },
+      "needsReview": [],
+      "media": []
+    },
+    {
+      "id": "la-stua",
+      "name": "La Stua — Selva / Wolkenstein",
+      "kind": "web",
+      "url": "https://www.la-stua.com/apresski-alps/",
+      "status": "checked",
+      "found": 0,
+      "coverage": "no-readable-events",
+      "extraction": {
+        "structured": 0,
+        "html": 0,
+        "review": 2
+      },
+      "needsReview": [
+        {
+          "title": "DJ SIMON",
+          "status": "review",
+          "reason": "missing-date",
+          "venue": "La Stua",
+          "location": "La Stua · Selva di Val Gardena / Wolkenstein in Gröden",
+          "evidence": {
+            "url": "https://www.la-stua.com/images/Events-La-Stua-March-2019.jpg",
+            "page": "https://www.la-stua.com/apresski-alps/",
+            "sha256": "237e85a1db01b64e023c1fb9539cdabbcb69559f4fa43df0e0d26dc4faf13d80",
+            "method": "image-ocr"
+          },
+          "excerpt": "WEDNESDAY, 6\"\n\nFRIDAY, 8\"\n\nDJ SIMON\n\nDJ SIMON\n\nLIVE EVENTS\n\nNew and classic charts\n\nNew and classic charts\n\nIN MARGH\n\nat4pm\n\nat4pm\n\nSUNDAY, 10\"\n\n& MONDAY, 11\"\n\nDJ MIKE\n\nSET at4pm\n\nSUNDAY, 17\"\n\nTUESDAY, 19\"\n\n& MONDAY, 18\"\n\nDJ MIKE at4 pm\n\nDJ MIKE\n\nVOLLGAS\n\nSETat4pm\n\nat9 pm\n\nSATURDAY, 23%\n\nSUNDAY, 24\"\n\n& MONDAY, 25\"\n\nDJ mine at 4 pm\n\nDOI\n\nMAS QUE NADA\n\nDJ MIKE\n\nIND\n\nIGGE!\n\nat9 pm\n\nSET at 4pm\n"
+        },
+        {
+          "title": "Annuncio da verificare",
+          "status": "review",
+          "reason": "unclear-event-title",
+          "venue": "La Stua",
+          "location": "La Stua · Selva di Val Gardena / Wolkenstein in Gröden",
+          "evidence": {
+            "url": "https://www.la-stua.com/images/la-stua-video-2019.png",
+            "page": "https://www.la-stua.com/apresski-alps/",
+            "sha256": "813c678b7d480a8e128b20847aa8dd865e402328b99f1c6d42b47b487bdf2fea",
+            "method": "image-ocr"
+          },
+          "excerpt": "nn\n\nye lu)\n"
+        }
+      ],
+      "media": [
+        {
+          "kind": "image",
+          "status": "read-for-review",
+          "method": "image-ocr"
+        },
+        {
+          "kind": "image",
+          "status": "read-for-review",
+          "method": "image-ocr"
+        }
+      ],
+      "facebook": {
+        "url": "https://www.facebook.com/BarLaStuaApresSki",
+        "status": "reference-only-no-scraping"
       }
+    },
+    {
+      "id": "santners",
+      "name": "Santner’s — Siusi / Seis",
+      "kind": "web",
+      "url": "https://www.santners.it/de/deejay-program/",
+      "status": "checked",
+      "found": 0,
+      "coverage": "no-readable-events",
+      "extraction": {
+        "structured": 0,
+        "html": 0,
+        "review": 0
+      },
+      "needsReview": [],
+      "media": [],
+      "facebook": {
+        "url": "https://www.facebook.com/Santners.Seis/",
+        "status": "reference-only-no-scraping"
+      }
+    },
+    {
+      "id": "giggeralm",
+      "name": "Giggeralm — Riscone / Reischach",
+      "kind": "web",
+      "url": "https://www.giggeralm.com/",
+      "status": "checked",
+      "found": 0,
+      "coverage": "no-readable-events",
+      "extraction": {
+        "structured": 0,
+        "html": 0,
+        "review": 0
+      },
+      "needsReview": [],
+      "media": [],
+      "facebook": {
+        "url": "https://www.facebook.com/giggeralm/",
+        "status": "reference-only-no-scraping"
+      }
+    },
+    {
+      "id": "corones-huette",
+      "name": "Corones Hütte — Kronplatz",
+      "kind": "web",
+      "url": "https://www.corones-kronplatz.com/",
+      "status": "checked",
+      "found": 0,
+      "coverage": "no-readable-events",
+      "extraction": {
+        "structured": 0,
+        "html": 0,
+        "review": 1
+      },
+      "needsReview": [
+        {
+          "title": "Annuncio da verificare",
+          "status": "review",
+          "reason": "unclear-event-title",
+          "venue": "Corones Hütte",
+          "location": "Corones Hütte · Plan de Corones / Kronplatz",
+          "evidence": {
+            "url": "https://www.corones-kronplatz.com/wp-content/uploads/roland-trettl-coroneshuette.jpg",
+            "page": "https://www.corones-kronplatz.com/",
+            "sha256": "4cd2b421c25c6c59c1635ed2a51e3343c5b85496a706570e069fad199ad00829",
+            "method": "image-ocr"
+          },
+          "excerpt": "we\n\nVv Rian\n\nL\n"
+        }
+      ],
+      "media": [
+        {
+          "kind": "image",
+          "status": "read-for-review",
+          "method": "image-ocr"
+        }
+      ],
+      "facebook": {
+        "url": "https://www.facebook.com/rifugiocorones/",
+        "status": "reference-only-no-scraping"
+      }
+    },
+    {
+      "id": "max-alm",
+      "name": "Max Alm — Versciaco / Vierschach",
+      "kind": "web",
+      "url": "https://www.andermax.it/en/culinary-delights/partner-establishments/max-alm-apres-ski.html",
+      "status": "checked",
+      "found": 0,
+      "coverage": "no-readable-events",
+      "extraction": {
+        "structured": 0,
+        "html": 0,
+        "review": 0
+      },
+      "needsReview": [],
+      "media": []
+    },
+    {
+      "id": "baerenhoehle-reinswald",
+      "name": "Bärenhöhle / Bärenstube — Reinswald",
+      "kind": "web",
+      "url": "https://youthappsuedtirol.com/2022/05/03/pubs-bozen-umgebung/",
+      "status": "reference-needs-verification",
+      "found": 0,
+      "notes": "Locale di Reinswald confermato dall’utente; non associare l’omonimo di Solda. Profilo segnalato dalla directory, non ancora autenticato da un sito del gestore."
+    },
+    {
+      "id": "sunnolm",
+      "name": "Sunnolm — Reinswald / Sarntal",
+      "kind": "web",
+      "url": "https://www.reinswald.it/de/restaurant-d.php",
+      "status": "checked",
+      "found": 0,
+      "coverage": "no-readable-events",
+      "extraction": {
+        "structured": 0,
+        "html": 0,
+        "review": 0
+      },
+      "needsReview": [],
+      "media": []
+    },
+    {
+      "id": "pulverfass",
+      "name": "Pulverfass — Speikboden",
+      "kind": "web",
+      "url": "https://www.pulverfass.com/apres-ski-2/",
+      "status": "checked",
+      "found": 0,
+      "coverage": "no-readable-events",
+      "extraction": {
+        "structured": 0,
+        "html": 0,
+        "review": 3
+      },
+      "needsReview": [
+        {
+          "title": "Annuncio da verificare",
+          "status": "review",
+          "reason": "unclear-event-title",
+          "venue": "Pulverfass",
+          "location": "Pulverfass · Speikboden, Valle Aurina / Ahrntal",
+          "evidence": {
+            "url": "https://www.pulverfass.com/wp-content/uploads/2024/09/Pulverfass-Apres-Ski-Skifahren.jpg",
+            "page": "https://www.pulverfass.com/apres-ski-2/",
+            "sha256": "88295fa25bf3dfcd0038931c89581587e7622125a4b4e27d8e6dd4719feafb6c",
+            "method": "image-ocr"
+          },
+          "excerpt": "è,\n\nn\n\n“fe\n\n7\n\noe\n\nLada\n\nye\n\nVw RI\n\nwe\n\nRes\n\n™\n\nVET\n\nbl\n\nme\n\nfe\n\n7 Fü\n\nwt\n\nir\n\n2%\n\nww...\n\n4\n\n8.3\n\n\"di\n\ner\n\nota\n\nwih\n\nSl\n\n3\n"
+        },
+        {
+          "title": "Annuncio da verificare",
+          "status": "review",
+          "reason": "unclear-event-title",
+          "venue": "Pulverfass",
+          "location": "Pulverfass · Speikboden, Valle Aurina / Ahrntal",
+          "evidence": {
+            "url": "https://www.pulverfass.com/wp-content/uploads/2024/09/Pulverfass-Restaurant-ApresSki-Fass.png",
+            "page": "https://www.pulverfass.com/apres-ski-2/",
+            "sha256": "43ba44ff779543447a461fbe8555f3457e6459219ce7d0295bfa33cdcb7b2f0d",
+            "method": "image-ocr"
+          },
+          "excerpt": "NG\n\nFA\n"
+        },
+        {
+          "title": "Annuncio da verificare",
+          "status": "review",
+          "reason": "unclear-event-title",
+          "venue": "Pulverfass",
+          "location": "Pulverfass · Speikboden, Valle Aurina / Ahrntal",
+          "evidence": {
+            "url": "https://www.pulverfass.com/wp-content/uploads/2024/09/Pulverfass-Restaurant-ApresSki-Bar-Food-Pulverfass-Opening-4.jpg",
+            "page": "https://www.pulverfass.com/apres-ski-2/",
+            "sha256": "1888c47f4cf2c6a654794b5bc8f794b6fbd132220a62ad9e33b0cc40d20b5ad3",
+            "method": "image-ocr"
+          },
+          "excerpt": "\\¢\n\nsa |\n\n»\n\n=\n\nu\n\n“ai\n\n(d\n\nVE)\n\nÈ\n\nN\n\nLD\n\nED. è.\n\nLg\n\ne\n\nif\n\nXY\n\neee\n"
+        }
+      ],
+      "media": [
+        {
+          "kind": "image",
+          "status": "read-for-review",
+          "method": "image-ocr"
+        },
+        {
+          "kind": "image",
+          "status": "read-for-review",
+          "method": "image-ocr"
+        },
+        {
+          "kind": "image",
+          "status": "read-for-review",
+          "method": "image-ocr"
+        }
+      ],
+      "facebook": {
+        "url": "https://www.facebook.com/pulverfass.apres/events",
+        "status": "reference-only-no-scraping"
+      }
+    },
+    {
+      "id": "vallis-speikboden",
+      "name": "Vallis Restaurant / Schirmpub — Speikboden",
+      "kind": "web",
+      "url": "https://www.ahrntal.com/de/alle-gastronoimebetriebe/rid-42F1C8F4E3CAD89691446C46B43937E8-g-vallis-restaurant-bar.html",
+      "status": "checked",
+      "found": 0,
+      "coverage": "no-readable-events",
+      "extraction": {
+        "structured": 0,
+        "html": 0,
+        "review": 1
+      },
+      "needsReview": [
+        {
+          "title": "Annuncio da verificare",
+          "status": "review",
+          "reason": "unclear-event-title",
+          "venue": "Vallis",
+          "location": "Vallis · Speikboden, Campo Tures / Sand in Taufers, Valle Aurina / Ahrntal",
+          "evidence": {
+            "url": "https://www.ahrntal.com/media/18ea8047-ed7a-4f4c-9d1a-da6ea535f671/deu-27-12-25-04-01-2026-wochenprogramm-01.pdf",
+            "page": "https://www.ahrntal.com/de/alle-gastronoimebetriebe/rid-42F1C8F4E3CAD89691446C46B43937E8-g-vallis-restaurant-bar.html",
+            "sha256": "fed1526f18f12826281743d313f04a83e6e68b3d179efeb3a9b686ba89551666",
+            "method": "pdf-text"
+          },
+          "excerpt": "                                            \n\n\n\n\n   \n\n\n\n\n                         \n\n\n\n\n                                            \n\n\n\n\n                                            \n\n\n\n\n                                            \n\n\n\n\n                         \n\n\n\n\n                                    \n\n\n\n\n                                 \n\n\n\n\n   \n\n\n\n\n                  \n\n\n\n\n                         \n\f                            \n\n\n\n\n                  \n\n\n\n\n                                    \n\n\n\n\n                                    \n\n\n\n\n                                    \n\n\n\n\n                     \n\f            \n\f"
+        }
+      ],
+      "media": [
+        {
+          "kind": "pdf",
+          "status": "read-for-review",
+          "method": "pdf-text"
+        }
+      ]
     },
     {
       "id": "obereggen-apres-ski",
@@ -284,110 +713,124 @@
         "structured": 0,
         "html": 0,
         "review": 0
-      }
+      },
+      "needsReview": [],
+      "media": []
+    },
+    {
+      "id": "la-stua-instagram",
+      "name": "La Stua",
+      "kind": "instagram",
+      "url": "https://www.instagram.com/barlastua/",
+      "status": "disabled-web-mode"
+    },
+    {
+      "id": "giggeralm-instagram",
+      "name": "Giggeralm",
+      "kind": "instagram",
+      "url": "https://www.instagram.com/giggeralm_official/",
+      "status": "disabled-web-mode"
+    },
+    {
+      "id": "corones-instagram",
+      "name": "Corones Hütte",
+      "kind": "instagram",
+      "url": "https://www.instagram.com/corones_huette/",
+      "status": "disabled-web-mode"
+    },
+    {
+      "id": "pulverfass-instagram",
+      "name": "Pulverfass",
+      "kind": "instagram",
+      "url": "https://www.instagram.com/pulverfass_apresski/",
+      "status": "disabled-web-mode"
+    },
+    {
+      "id": "moritzino-instagram",
+      "name": "Club Moritzino",
+      "kind": "instagram",
+      "url": "https://www.instagram.com/clubmoritzino/",
+      "status": "disabled-web-mode"
     },
     {
       "id": "gassl-instagram",
       "name": "Gassl Olang",
       "kind": "instagram",
       "url": "https://www.instagram.com/gassl.olang/",
-      "status": "awaiting-token"
+      "status": "disabled-web-mode"
     },
     {
       "id": "k1-instagram",
       "name": "K1 Kronplatz",
       "kind": "instagram",
       "url": "https://www.instagram.com/k1.kronplatz/",
-      "status": "awaiting-token"
+      "status": "disabled-web-mode"
     },
     {
       "id": "hexenkessel-instagram",
       "name": "Hexenkessel Klausberg",
       "kind": "instagram",
       "url": "https://www.instagram.com/hexenkessel_klausberg/",
-      "status": "awaiting-token"
+      "status": "disabled-web-mode"
     },
     {
       "id": "luislkeller-instagram",
       "name": "Luislkeller",
       "kind": "instagram",
       "url": "https://www.instagram.com/luislkeller/",
-      "status": "awaiting-token"
+      "status": "disabled-web-mode"
     },
     {
       "id": "winklparade-instagram",
       "name": "Winklparade",
       "kind": "instagram",
       "url": "https://www.instagram.com/winklparade/",
-      "status": "awaiting-token"
+      "status": "disabled-web-mode"
     },
     {
       "id": "ganischger-instagram",
       "name": "Ganischger Obereggen",
       "kind": "instagram",
       "url": "https://www.instagram.com/ganischger.obereggen/",
-      "status": "awaiting-token"
+      "status": "disabled-web-mode"
     },
     {
       "id": "skiworld-ahrntal-instagram",
       "name": "Skiworld Ahrntal",
       "kind": "instagram",
       "url": "https://www.instagram.com/skiworldahrntal_official/",
-      "status": "awaiting-token"
+      "status": "disabled-web-mode"
     },
     {
       "id": "kronplatz-instagram",
       "name": "Kronplatz",
       "kind": "instagram",
       "url": "https://www.instagram.com/kronplatz_group/",
-      "status": "awaiting-token"
+      "status": "disabled-web-mode"
     },
     {
       "id": "alta-badia-instagram",
       "name": "Alta Badia",
       "kind": "instagram",
       "url": "https://www.instagram.com/alta_badia_official/",
-      "status": "awaiting-token"
+      "status": "disabled-web-mode"
     },
     {
       "id": "val-gardena-instagram",
       "name": "Val Gardena",
       "kind": "instagram",
       "url": "https://www.instagram.com/dolomitesvalgardena/",
-      "status": "awaiting-token"
+      "status": "disabled-web-mode"
     },
     {
       "id": "three-zinnen-instagram",
       "name": "3 Zinnen Dolomites",
       "kind": "instagram",
       "url": "https://www.instagram.com/3zinnendolomites/",
-      "status": "awaiting-token"
+      "status": "disabled-web-mode"
     }
   ],
   "candidates": [
-    {
-      "title": "Winklparade Madness 2025",
-      "start": "2025-10-31",
-      "end": "2025-10-31",
-      "hours": {
-        "start": "18:00"
-      },
-      "summaries": {
-        "it": "Festival con musica dal vivo e party al padiglione musicale di Campo Tures.",
-        "de": "Festival mit Livemusik und Party am Musikpavillon in Sand in Taufers.",
-        "en": "Live music and party at the music pavilion in Sand in Taufers."
-      },
-      "url": "https://www.mytix.bz/winklparade",
-      "venue": "Musikpavillon",
-      "location": "Musikpavillon · Campo Tures / Sand in Taufers, Valle Aurina / Ahrntal",
-      "extraction": "winklparade-announcement",
-      "id": "winklparade-mytix-2025-10-31-winklparade-madness-2025",
-      "kind": "web",
-      "sourceId": "winklparade-mytix",
-      "sourceName": "Winklparade / myTix",
-      "eventId": "auto-2025-10-31-winklparade-madness-2025",
-      "published": true
-    },
     {
       "id": "skiworld-ahrntal-instagram-DerpaiRPr47",
       "title": "Annuncio da verificare",
@@ -411,6 +854,29 @@
         "reason": "ambiguous-date",
         "evidence": "04/12/2026"
       },
+      "published": false
+    },
+    {
+      "sourceId": "k1-instagram",
+      "sourceName": "K1 Kronplatz",
+      "evidence": {
+        "url": "https://www.instagram.com/reel/Det2B15s1cA/",
+        "author": "k1.kronplatz",
+        "ownerId": "5849734189",
+        "publishedAt": "2026-10-20T12:35:45.000000Z",
+        "caption": "If your person doesn’t dance with you to this song, they’re not your person. Just saying. 💁‍♀️☀️\n #k1reischach #yourperson #dayparty #apresski #kronplatz"
+      },
+      "url": "https://www.instagram.com/reel/Det2B15s1cA/",
+      "kind": "instagram",
+      "status": "review",
+      "reason": "missing-date",
+      "dateEvidence": {
+        "status": "review",
+        "reason": "missing-date"
+      },
+      "id": "k1-instagram-widget-395443014",
+      "publishedAt": "2026-10-20T12:35:45.000000Z",
+      "excerpt": "If your person doesn’t dance with you to this song, they’re not your person. Just saying. 💁‍♀️☀️\n #k1reischach #yourperson #dayparty #apresski #kronplatz",
       "published": false
     },
     {
@@ -462,6 +928,29 @@
       "published": false
     },
     {
+      "sourceId": "k1-instagram",
+      "sourceName": "K1 Kronplatz",
+      "evidence": {
+        "url": "https://www.instagram.com/reel/Deyw3E_sSTW/",
+        "author": "k1.kronplatz",
+        "ownerId": "5849734189",
+        "publishedAt": "2026-10-22T10:26:09.000000Z",
+        "caption": "Sorry, can’t hear you, @nicjohnston is playing my song 🕺🤷‍♂️🤷‍♀️ \n#k1reischach #apresski #partytok #flirtfail #kronplatz"
+      },
+      "url": "https://www.instagram.com/reel/Deyw3E_sSTW/",
+      "kind": "instagram",
+      "status": "review",
+      "reason": "missing-date",
+      "dateEvidence": {
+        "status": "review",
+        "reason": "missing-date"
+      },
+      "id": "k1-instagram-widget-395515112",
+      "publishedAt": "2026-10-22T10:26:09.000000Z",
+      "excerpt": "Sorry, can’t hear you, @nicjohnston is playing my song 🕺🤷‍♂️🤷‍♀️ \n#k1reischach #apresski #partytok #flirtfail #kronplatz",
+      "published": false
+    },
+    {
       "id": "k1-instagram-Deyw3E_sSTW",
       "title": "Annuncio da verificare",
       "publishedAt": "2026-10-22T10:26:09.000Z",
@@ -503,6 +992,30 @@
       "kind": "instagram",
       "status": "review",
       "reason": "repost-or-collaboration",
+      "published": false
+    },
+    {
+      "sourceId": "k1-instagram",
+      "sourceName": "K1 Kronplatz",
+      "evidence": {
+        "url": "https://www.instagram.com/reel/De1Hx-Tsf12/",
+        "author": "k1.kronplatz",
+        "ownerId": "5849734189",
+        "publishedAt": "2026-10-23T08:26:31.000000Z",
+        "caption": "Winter plans? Sorted. ❄️\n\nWe’re back at K1, all winter long! It all starts with our big Halloween Open Air on November 31st, then big Opening on November 20th and 21st, and after that, there’s something going on every single weekend. 🎉\n\nTag the friends you’re bringing along 👇\n\n#K1 #WinterSeason #OpenAir #Opening #Party WeekendVibes SouthTyrol"
+      },
+      "url": "https://www.instagram.com/reel/De1Hx-Tsf12/",
+      "kind": "instagram",
+      "status": "review",
+      "reason": "invalid-date",
+      "dateEvidence": {
+        "status": "review",
+        "reason": "invalid-date",
+        "evidence": "november 31"
+      },
+      "id": "k1-instagram-widget-395551190",
+      "publishedAt": "2026-10-23T08:26:31.000000Z",
+      "excerpt": "Winter plans? Sorted. ❄️\n\nWe’re back at K1, all winter long! It all starts with our big Halloween Open Air on November 31st, then big Opening on November 20th and 21st, and after that, there’s something going on every single weekend. 🎉\n\nTag the friends you’re bringing along 👇\n\n#K1 #WinterSeason #OpenAir #Opening #Party WeekendVibes SouthTyrol",
       "published": false
     },
     {
@@ -600,6 +1113,29 @@
       "published": false
     },
     {
+      "sourceId": "k1-instagram",
+      "sourceName": "K1 Kronplatz",
+      "evidence": {
+        "url": "https://www.instagram.com/reel/DfHIbwKsIM5/",
+        "author": "k1.kronplatz",
+        "ownerId": "5849734189",
+        "publishedAt": "2026-10-30T08:17:48.000000Z",
+        "caption": "-1 day 👻👻👻🎃\nWell, he’s already here. Has been for days. Nobody knows how he got in. 👻 Now he wants to DJ too… 🎧😳 Gotta admit though: the music’s actually pretty good 🤪😜😎😂\n\nSee ya tomoroooooow!! 🫠🫠🫠🥹\n\n#k1 #k1_reischach #halloween #k1halloween #dancing"
+      },
+      "url": "https://www.instagram.com/reel/DfHIbwKsIM5/",
+      "kind": "instagram",
+      "status": "review",
+      "reason": "missing-date",
+      "dateEvidence": {
+        "status": "review",
+        "reason": "missing-date"
+      },
+      "id": "k1-instagram-widget-395807496",
+      "publishedAt": "2026-10-30T08:17:48.000000Z",
+      "excerpt": "-1 day 👻👻👻🎃\nWell, he’s already here. Has been for days. Nobody knows how he got in. 👻 Now he wants to DJ too… 🎧😳 Gotta admit though: the music’s actually pretty good 🤪😜😎😂\n\nSee ya tomoroooooow!! 🫠🫠🫠🥹\n\n#k1 #k1_reischach #halloween #k1halloween #dancing",
+      "published": false
+    },
+    {
       "id": "k1-instagram-DfHIbwKsIM5",
       "title": "Annuncio da verificare",
       "publishedAt": "2026-10-30T08:17:48.000Z",
@@ -644,23 +1180,36 @@
       "published": false
     },
     {
-      "title": "K1 Season Opening",
-      "start": "2026-11-20",
-      "end": "2026-11-21",
-      "summaries": {
-        "it": "Due giorni per festeggiare l’apertura della stagione al K1. Orari e programma in aggiornamento.",
-        "de": "Zwei Tage zum Saisonauftakt im K1. Uhrzeiten und Programm folgen.",
-        "en": "Two days celebrating the season opening at K1. Times and programme to follow."
+      "sourceId": "k1-instagram",
+      "sourceName": "K1 Kronplatz",
+      "evidence": {
+        "url": "https://www.instagram.com/reel/De_mIcpsLrA/",
+        "author": "k1.kronplatz",
+        "ownerId": "5849734189",
+        "publishedAt": "2026-10-27T10:03:43.000000Z",
+        "caption": "ℍ𝔸𝕃𝕃𝕆𝕎𝔼𝔼ℕ 𝕆ℙ𝔼ℕ 𝔸𝕀ℝ 👻🦇🔥\n\nNoch 4 Tage bis zum Big K1 Halloween Open Air 😈 Hier nochmal alle wichtigsten Infos:\n\n🗓 𝐒𝐚𝐦𝐬𝐭𝐚𝐠, 𝟑𝟏.𝟏𝟎.𝟐𝟎𝟐𝟔\n☀️ 𝐎𝐔𝐓𝐃𝐎𝐎𝐑 von 18.00 bis 00.00 Uhr\n🕘 𝐈𝐍𝐃𝐎𝐎𝐑 von 18.00 bis 03.00 Uhr\n🎧 DJ Juli, DJ Double Dee, DJ Ivan Fillini & DJ Hufe\n\n Dresscode: je gruseliger, desto besser.... Markiert eure Horror-Crew und kommt rechtzeitig, wir sehen uns auf der dark side! 🖤🧟‍♂️🧛‍♀️\n\n🔞 18+ | Free Entrance | Party In- & Outdoor 🎉\n\n#k1 #k1_reischach #halloween #halloweenparty #halloween2026"
       },
-      "url": "https://k-1.bz/en/",
-      "venue": "K1",
+      "url": "https://www.instagram.com/reel/De_mIcpsLrA/",
+      "kind": "instagram",
+      "status": "confirmed",
+      "reason": "official-announcement",
+      "title": "HALLOWEEN OPEN AIR 👻🦇🔥",
+      "start": "2026-10-31",
+      "end": "2026-10-31",
       "location": "K1 · Riscone / Reischach, Brunico / Bruneck",
-      "extraction": "k1-announcements",
-      "id": "k1-kronplatz-2026-11-20-k1-season-opening",
-      "kind": "web",
-      "sourceId": "k1-kronplatz",
-      "sourceName": "K1 — Reischach / Kronplatz",
-      "eventId": "auto-2026-11-20-k1-season-opening",
+      "venue": "K1",
+      "dateEvidence": {
+        "status": "confirmed",
+        "start": "2026-10-31",
+        "end": "2026-10-31",
+        "evidence": "31.10.2026",
+        "inferredYear": false
+      },
+      "hours": null,
+      "excerpt": "ℍ𝔸𝕃𝕃𝕆𝕎𝔼𝔼ℕ 𝕆ℙ𝔼ℕ 𝔸𝕀ℝ 👻🦇🔥\n\nNoch 4 Tage bis zum Big K1 Halloween Open Air 😈 Hier nochmal alle wichtigsten Infos:\n\n🗓 𝐒𝐚𝐦𝐬𝐭𝐚𝐠, 𝟑𝟏.𝟏𝟎.𝟐𝟎𝟐𝟔\n☀️ 𝐎𝐔𝐓𝐃𝐎𝐎𝐑 von 18.00 bis 00.00 Uhr\n🕘 𝐈𝐍𝐃𝐎𝐎𝐑 von 18.00 bis 03.00 Uhr\n🎧 DJ Juli, DJ Double Dee, DJ Ivan Fillini & DJ Hufe\n\n Dresscode: je gruseliger, desto besser.... Markiert eure Horror-Crew und kommt rechtzeitig, wir sehen uns auf der dark side! 🖤🧟‍♂️🧛‍♀️\n\n🔞 18+ | Free Entrance | Party In- & Outdoor 🎉\n\n#k1 #k1_reischach #halloween #halloweenparty #halloween2026",
+      "publishedAt": "2026-10-27T10:03:43.000000Z",
+      "id": "k1-instagram-widget-395694192",
+      "eventId": "k1-halloween-open-air-2026",
       "published": true
     }
   ]
