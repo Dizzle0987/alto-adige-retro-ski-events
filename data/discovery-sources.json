@@ -118,6 +118,7 @@
     {
       "id": "k1-instagram",
       "name": "K1 Kronplatz",
+      "ownerId": "5849734189",
       "url": "https://www.instagram.com/k1.kronplatz/",
       "autoPublish": true,
       "venue": "K1 · Riscone / Reischach, Brunico / Bruneck",
@@ -157,21 +158,25 @@
     {
       "id": "kronplatz-instagram",
       "name": "Kronplatz",
+      "ownerId": "72568919639",
       "url": "https://www.instagram.com/kronplatz_group/"
     },
     {
       "id": "alta-badia-instagram",
       "name": "Alta Badia",
+      "ownerId": "887739667",
       "url": "https://www.instagram.com/alta_badia_official/"
     },
     {
       "id": "val-gardena-instagram",
       "name": "Val Gardena",
+      "ownerId": "528064148",
       "url": "https://www.instagram.com/dolomitesvalgardena/"
     },
     {
       "id": "three-zinnen-instagram",
       "name": "3 Zinnen Dolomites",
+      "ownerId": "3268204371",
       "url": "https://www.instagram.com/3zinnendolomites/"
     }
   ]

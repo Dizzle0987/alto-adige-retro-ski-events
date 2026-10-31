@@ -40,6 +40,11 @@ test("official account promoting another venue is held", () => assert.equal(asse
 test("account identity alone cannot establish the venue", () => assert.equal(assessInstagramPost({ ...item, locationName: undefined }, sources).reason, "missing-venue-evidence"));
 test("regional tourism profile cannot assume an event venue", () => assert.equal(assessInstagramPost(item, [{ ...sources[0], autoPublish: false }]).reason, "venue-not-verified"));
 test("promotional post without date stays out", () => assert.equal(assessInstagramPost({ ...item, caption: "Best après ski party vibes!" }, sources).status, "review"));
+test("date uncertainty preserves author evidence", () => {
+  const result = assessInstagramPost({ ...item, caption: "Retro Party\nNovember 31st" }, sources);
+  assert.equal(result.reason, "invalid-date"); assert.equal(result.evidence.author, "k1.kronplatz");
+});
+test("DJ lineup is not an event name", () => assert.equal(assessInstagramPost({ ...item, caption: "Wie viele Spinnweben sind zu viele?\n-2 days until K1 Halloween Open Air!\n31.10.2026\nDJ Juli, DJ Double Dee, DJ Ivan Fillini & DJ Hufe" }, sources).reason, "unclear-event-title"));
 test("duplicate announcement adds hours without duplicating evidence", () => {
   const candidate = assessInstagramPost({ ...item, caption: "Retro Party\n20.11.2026 ab 18:00 Uhr" }, sources);
   const event = { title: "Retro Party", start: candidate.start, end: candidate.end, socialSourceId: "venue", provenance: [candidate.evidence] };

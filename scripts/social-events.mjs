@@ -135,9 +135,14 @@ const eventTitle = (caption, date) => {
     .replace(/^[^\p{L}\p{N}]+/u, "").replace(/#[\p{L}\p{N}_]+/gu, "")
     .replace(new RegExp(date.evidence.replace(/[.*+?^${}()|[\]\\]/g, "\\$&"), "i"), "")
     .replace(/\b(?:ab|dalle|ore|from)\s+\d{1,2}(?::\d{2})?\s*(?:uhr|am|pm)?\b.*$/i, "")
+    .replace(/\b(?:noch \d+ tage|all the details|hier nochmal).*$/i, "")
     .replace(/[\s:|–—-]+$/g, "").trim());
-  return lines.find((line) => line.length >= 5 && line.length <= 110 && eventWords.test(folded(line))
-    && !/\b(noch|days? until|tage bis|see you|tomorrow|morgen|domani|winter plans|every weekend|jedes wochenende)\b/i.test(line)) || null;
+  const usable = (line) => line.length >= 5 && line.length <= 110
+    && !/\b(noch|days? until|tage bis|see you|tomorrow|morgen|domani|winter plans|every weekend|jedes wochenende)\b/i.test(line);
+  const strongTitle = lines.find((line) => usable(line) && /\b(party|festival|open air|opening|closing|ski ?day|skitag|rennen|race|gara|retro|vintage|schlager|dirndl|bad taste|ugly ski)\b/i.test(folded(line)));
+  // A DJ lineup later in the caption is not the event name.
+  const first = lines[0];
+  return strongTitle || (first && usable(first) && eventWords.test(folded(first)) && !/[,;&].*\bdj\b/i.test(first) ? first : null);
 };
 
 export const officialInstagramSource = (item, sources) => {
@@ -176,7 +181,7 @@ export const assessInstagramPost = (item, sources) => {
     return { ...base, status: "review", reason: "repost-or-collaboration" };
   }
   const date = parseSocialDates(caption, item.timestamp);
-  if (date.status !== "confirmed") return { ...base, ...date };
+  if (date.status !== "confirmed") return { ...base, status: date.status, reason: date.reason, dateEvidence: date };
   const title = eventTitle(caption, date);
   if (!title) return { ...base, status: "review", reason: "unclear-event-title", date };
   if (!source.venue || !source.autoPublish) return { ...base, status: "review", reason: "venue-not-verified", title, date };

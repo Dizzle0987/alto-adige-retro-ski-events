@@ -523,6 +523,10 @@ if (replayPath || replayLast) {
 
 let instagramStatus = "awaiting-token";
 if (replayPath || replayLast) {
+  if (apifyToken && replayLast) {
+    const budget = await checkApifyFreeBudget(apifyToken);
+    console.log(`Apify free-credit check (read-only): ${budget.allowed ? "allowed" : "blocked"}, reason=${budget.reason}`);
+  }
   const items = replayPath ? JSON.parse(await readFile(replayPath, "utf8")) : await replayLastInstagramRun();
   const replay = analyzeInstagramItems(items, sources.instagram);
   instagramStatus = "replayed";
