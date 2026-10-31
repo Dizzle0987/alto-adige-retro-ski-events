@@ -1,6 +1,7 @@
 const eventList = document.querySelector(".event-list");
 const socialList = document.querySelector(".social-links");
 const filters = [...document.querySelectorAll(".filter")];
+const valleySelect = document.querySelector("#valley-select");
 const languageButtons = [...document.querySelectorAll(".language-button")];
 const emptyState = document.querySelector(".empty-state");
 const supportedLanguages = ["it", "de", "en"];
@@ -17,6 +18,7 @@ const copy = {
     eventsTitle: "Cosa succede sulla neve, adesso.", lastUpdated: "Ultimo aggiornamento",
     autoUpdateBadge: "Automatico · lun, mer, gio · 08:00", filterLabel: "Filtra per atmosfera",
     filterAll: "Tutto", filterRetro: "Retro", filterApres: "Après-ski", filterCostume: "Dress code",
+    valleyLabel: "Valle", valleyFilterLabel: "Filtra per valle", allValleys: "Tutte le valli",
     loadingEvents: "Aggiorno il radar eventi…", emptyEvents: "Nessun evento in questa categoria.",
     loadError: "Radar temporaneamente non disponibile. Riprova tra poco.", socialKicker: "Radar social dinamico",
     socialTitle: "I canali che stanno parlando della neve.",
@@ -37,6 +39,7 @@ const copy = {
     eventsTitle: "Was jetzt im Schnee passiert.", lastUpdated: "Zuletzt aktualisiert",
     autoUpdateBadge: "Automatisch · Mo, Mi, Do · 08:00", filterLabel: "Nach Stimmung filtern",
     filterAll: "Alle", filterRetro: "Retro", filterApres: "Après-Ski", filterCostume: "Dresscode",
+    valleyLabel: "Tal", valleyFilterLabel: "Nach Tal filtern", allValleys: "Alle Täler",
     loadingEvents: "Event-Radar wird aktualisiert…", emptyEvents: "Keine Events in dieser Kategorie.",
     loadError: "Der Radar ist vorübergehend nicht verfügbar. Bitte später erneut versuchen.", socialKicker: "Dynamischer Social-Radar",
     socialTitle: "Die Kanäle, die gerade vom Schnee erzählen.",
@@ -57,6 +60,7 @@ const copy = {
     eventsTitle: "What’s happening on the snow now.", lastUpdated: "Last updated",
     autoUpdateBadge: "Automatic · Mon, Wed, Thu · 08:00", filterLabel: "Filter by mood",
     filterAll: "All", filterRetro: "Retro", filterApres: "Après-ski", filterCostume: "Dress code",
+    valleyLabel: "Valley", valleyFilterLabel: "Filter by valley", allValleys: "All valleys",
     loadingEvents: "Updating the event radar…", emptyEvents: "No events in this category.",
     loadError: "The radar is temporarily unavailable. Please try again shortly.", socialKicker: "Dynamic social radar",
     socialTitle: "The channels talking about the snow right now.",
@@ -88,8 +92,21 @@ const eventTranslations = {
   },
 };
 
+const valleyLabels = {
+  kronplatz: { it: "Plan de Corones", de: "Kronplatz", en: "Kronplatz" },
+  ultimo: { it: "Val d’Ultimo", de: "Ultental", en: "Ultimo Valley" },
+  gardena: { it: "Val Gardena", de: "Gröden", en: "Val Gardena" },
+  threeZinnen: { it: "3 Cime", de: "3 Zinnen", en: "3 Zinnen" },
+  funes: { it: "Val di Funes", de: "Villnößtal", en: "Funes Valley" },
+  siusi: { it: "Alpe di Siusi", de: "Seiser Alm", en: "Alpe di Siusi" },
+  venosta: { it: "Val Venosta", de: "Vinschgau", en: "Venosta Valley" },
+  altaBadia: { it: "Alta Badia", de: "Alta Badia", en: "Alta Badia" },
+  other: { it: "Altre zone", de: "Andere Gebiete", en: "Other areas" },
+};
+
 let currentLanguage = "it";
 let currentFilter = "all";
+let currentValley = "all";
 let cachedEvents = [];
 let lastChecked = "";
 
@@ -117,6 +134,19 @@ const localizedEvent = (event) => {
   return { ...event };
 };
 
+const valleyKeyFor = (event) => {
+  const value = `${event.title} ${event.place} ${event.source}`.toLowerCase();
+  if (/plan de corones|kronplatz|san vigilio|brunico/.test(value)) return "kronplatz";
+  if (/ultimo|ulten|schwemmalm/.test(value)) return "ultimo";
+  if (/val gardena|selva|sëlva|ortisei|urtijëi|wolkenstein/.test(value)) return "gardena";
+  if (/3 cime|3 zinnen|dobbiaco|toblach|sesto|sexten/.test(value)) return "threeZinnen";
+  if (/funes|villnöss|villnoess/.test(value)) return "funes";
+  if (/fiè|fie allo sciliar|alpe di siusi|seiser alm/.test(value)) return "siusi";
+  if (/watles|solda|sulden|stelvio|stilfs|venosta|vinschgau|malles/.test(value)) return "venosta";
+  if (/alta badia|la villa|corvara|badia/.test(value)) return "altaBadia";
+  return "other";
+};
+
 const dateParts = (event) => {
   const start = new Date(`${event.start}T12:00:00`);
   const end = new Date(`${event.end}T12:00:00`);
@@ -135,6 +165,7 @@ const renderEvent = (rawEvent) => {
   const formattedDate = dateParts(event);
   const article = element("article", `event-card${event.featured ? " featured" : ""}`);
   article.dataset.categories = event.categories.join(" ");
+  article.dataset.valley = valleyKeyFor(rawEvent);
   article.style.setProperty("--accent", event.accent);
   const date = element("div", "date-block");
   date.append(element("span", "", formattedDate.days), element("strong", "", formattedDate.months), element("small", "", formattedDate.year));
@@ -171,9 +202,26 @@ const renderSocialRadar = () => {
 const updateCounts = () => {
   filters.forEach((button) => {
     const category = button.dataset.filter;
-    const count = category === "all" ? cachedEvents.length : cachedEvents.filter((event) => event.categories.includes(category)).length;
+    const eventsInValley = cachedEvents.filter((event) => currentValley === "all" || valleyKeyFor(event) === currentValley);
+    const count = category === "all" ? eventsInValley.length : eventsInValley.filter((event) => event.categories.includes(category)).length;
     button.querySelector(".filter-count").textContent = count;
   });
+};
+
+const renderValleyOptions = () => {
+  const keys = [...new Set(cachedEvents.map(valleyKeyFor))]
+    .sort((a, b) => valleyLabels[a][currentLanguage].localeCompare(valleyLabels[b][currentLanguage]));
+  const allOption = element("option", "", copy[currentLanguage].allValleys);
+  allOption.value = "all";
+  const options = keys.map((key) => {
+    const count = cachedEvents.filter((event) => valleyKeyFor(event) === key).length;
+    const option = element("option", "", `${valleyLabels[key][currentLanguage]} · ${count}`);
+    option.value = key;
+    return option;
+  });
+  valleySelect.replaceChildren(allOption, ...options);
+  if (!keys.includes(currentValley)) currentValley = "all";
+  valleySelect.value = currentValley;
 };
 
 const applyFilter = (selected) => {
@@ -185,7 +233,9 @@ const applyFilter = (selected) => {
     button.setAttribute("aria-pressed", String(active));
   });
   document.querySelectorAll(".event-card").forEach((card) => {
-    const show = selected === "all" || card.dataset.categories.split(" ").includes(selected);
+    const matchesMood = selected === "all" || card.dataset.categories.split(" ").includes(selected);
+    const matchesValley = currentValley === "all" || card.dataset.valley === currentValley;
+    const show = matchesMood && matchesValley;
     card.hidden = !show;
     if (show) visible += 1;
   });
@@ -200,6 +250,7 @@ const formatCheckedDate = (isoDate) => {
 
 const renderEvents = () => {
   eventList.replaceChildren(...cachedEvents.map(renderEvent));
+  renderValleyOptions();
   updateCounts();
   applyFilter(currentFilter);
   renderSocialRadar();
@@ -256,6 +307,11 @@ const loadEvents = async () => {
 };
 
 filters.forEach((button) => button.addEventListener("click", () => applyFilter(button.dataset.filter)));
+valleySelect.addEventListener("change", () => {
+  currentValley = valleySelect.value;
+  updateCounts();
+  applyFilter(currentFilter);
+});
 languageButtons.forEach((button) => button.addEventListener("click", () => setLanguage(button.dataset.language, true)));
 setLanguage(preferredLanguage());
 loadEvents();
