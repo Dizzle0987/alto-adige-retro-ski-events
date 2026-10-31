@@ -70,7 +70,9 @@
       "venueName": "Ganischger Alm",
       "venue": "Ganischger Alm · Obereggen, Val d’Ega / Eggental",
       "name": "Ganischger Alm — The Mountain Party",
-      "url": "https://www.ganischger.com/ganischgeralm/alm/"
+      "url": "https://www.ganis.it/ganisworld/ganischgeralm-apresski-obereggen-suedtirol-dolomiten/",
+      "socialUrl": "https://www.instagram.com/ganis_resort_dolomites/",
+      "facebookUrl": "https://www.facebook.com/GanisResortDolomites"
     },
     {
       "id": "club-moritzino-events",
@@ -299,8 +301,11 @@
     },
     {
       "id": "ganischger-instagram",
-      "name": "Ganischger Obereggen",
-      "url": "https://www.instagram.com/ganischger.obereggen/"
+      "name": "Ganis Resort / Ganischgeralm",
+      "url": "https://www.instagram.com/ganis_resort_dolomites/",
+      "autoPublish": false,
+      "verifiedFrom": "https://www.ganis.it/ganisworld/ganischgeralm-apresski-obereggen-suedtirol-dolomiten/",
+      "notes": "Canale del gruppo collegato dal sito ufficiale Ganischgeralm. Sostituisce ganischger.obereggen, non disponibile; verificare la pertinenza alla malga prima della pubblicazione."
     },
     {
       "id": "skiworld-ahrntal-instagram",
