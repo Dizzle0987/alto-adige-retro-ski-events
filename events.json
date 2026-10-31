@@ -2,6 +2,1522 @@
   "lastChecked": "2026-10-31",
   "events": [
     {
+      "id": "auto-2025-10-31-winklparade-madness-2025",
+      "title": "Winklparade Madness 2025",
+      "websiteExtraction": "winklparade-announcement",
+      "start": "2025-10-31",
+      "end": "2025-10-31",
+      "dateLabel": "31",
+      "monthLabel": "OTT",
+      "year": "2025",
+      "categories": [
+        "apres"
+      ],
+      "tags": [
+        "Après-ski"
+      ],
+      "summary": "Evento sulla neve a Musikpavillon · Campo Tures / Sand in Taufers, Valle Aurina / Ahrntal, con programma e dettagli nella fonte ufficiale.",
+      "summaries": {
+        "it": "Festival con musica dal vivo e party al padiglione musicale di Campo Tures.",
+        "de": "Festival mit Livemusik und Party am Musikpavillon in Sand in Taufers.",
+        "en": "Live music and party at the music pavilion in Sand in Taufers."
+      },
+      "place": "Musikpavillon · Campo Tures / Sand in Taufers, Valle Aurina / Ahrntal",
+      "venue": "Musikpavillon",
+      "hours": {
+        "start": "18:00"
+      },
+      "source": "https://www.mytix.bz/winklparade",
+      "social": "https://www.instagram.com/winklparade/",
+      "map": "https://www.google.com/maps/search/?api=1&query=Musikpavillon%20%C2%B7%20Campo%20Tures%20%2F%20Sand%20in%20Taufers%2C%20Valle%20Aurina%20%2F%20Ahrntal",
+      "accent": "#b0ef43",
+      "featured": false
+    },
+    {
+      "id": "auto-2025-12-04-season-opening",
+      "title": "SEASON OPENING",
+      "websiteExtraction": "moritzino-calendar",
+      "start": "2025-12-04",
+      "end": "2025-12-04",
+      "dateLabel": "04",
+      "monthLabel": "DIC",
+      "year": "2025",
+      "categories": [
+        "apres"
+      ],
+      "tags": [
+        "Après-ski"
+      ],
+      "summary": "Evento sulla neve a Club Moritzino · Piz La Ila, Alta Badia, con programma e dettagli nella fonte ufficiale.",
+      "summaries": {
+        "it": "Appuntamento musicale e après-ski al Club Moritzino, in quota al Piz La Ila.",
+        "de": "Musik und Après-Ski im Club Moritzino am Piz La Ila.",
+        "en": "Music and après-ski at Club Moritzino on Piz La Ila."
+      },
+      "place": "Club Moritzino · Piz La Ila, Alta Badia",
+      "venue": "Club Moritzino",
+      "source": "https://clubmoritzino.it/en/event/season-opening/",
+      "social": "https://www.instagram.com/clubmoritzino/",
+      "map": "https://www.google.com/maps/search/?api=1&query=Club%20Moritzino%20%C2%B7%20Piz%20La%20Ila%2C%20Alta%20Badia",
+      "accent": "#ff4fa3",
+      "featured": false
+    },
+    {
+      "id": "auto-2026-01-01-apres-ski-club-moritzino",
+      "title": "Après Ski @ Club Moritzino",
+      "websiteExtraction": "moritzino-calendar",
+      "start": "2026-01-01",
+      "end": "2026-01-01",
+      "dateLabel": "01",
+      "monthLabel": "GEN",
+      "year": "2026",
+      "categories": [
+        "apres"
+      ],
+      "tags": [
+        "Après-ski"
+      ],
+      "summary": "Evento sulla neve a Club Moritzino · Piz La Ila, Alta Badia, con programma e dettagli nella fonte ufficiale.",
+      "summaries": {
+        "it": "Appuntamento musicale e après-ski al Club Moritzino, in quota al Piz La Ila.",
+        "de": "Musik und Après-Ski im Club Moritzino am Piz La Ila.",
+        "en": "Music and après-ski at Club Moritzino on Piz La Ila."
+      },
+      "place": "Club Moritzino · Piz La Ila, Alta Badia",
+      "venue": "Club Moritzino",
+      "source": "https://clubmoritzino.it/en/event/apres-ski-club-moritzino/",
+      "social": "https://www.instagram.com/clubmoritzino/",
+      "map": "https://www.google.com/maps/search/?api=1&query=Club%20Moritzino%20%C2%B7%20Piz%20La%20Ila%2C%20Alta%20Badia",
+      "accent": "#ff7439",
+      "featured": false
+    },
+    {
+      "id": "auto-2026-01-02-apres-ski-club-moritzino",
+      "title": "Après Ski @ Club Moritzino",
+      "websiteExtraction": "moritzino-calendar",
+      "start": "2026-01-02",
+      "end": "2026-01-02",
+      "dateLabel": "02",
+      "monthLabel": "GEN",
+      "year": "2026",
+      "categories": [
+        "apres"
+      ],
+      "tags": [
+        "Après-ski"
+      ],
+      "summary": "Evento sulla neve a Club Moritzino · Piz La Ila, Alta Badia, con programma e dettagli nella fonte ufficiale.",
+      "summaries": {
+        "it": "Appuntamento musicale e après-ski al Club Moritzino, in quota al Piz La Ila.",
+        "de": "Musik und Après-Ski im Club Moritzino am Piz La Ila.",
+        "en": "Music and après-ski at Club Moritzino on Piz La Ila."
+      },
+      "place": "Club Moritzino · Piz La Ila, Alta Badia",
+      "venue": "Club Moritzino",
+      "source": "https://clubmoritzino.it/en/event/apres-ski-club-moritzino-2/",
+      "social": "https://www.instagram.com/clubmoritzino/",
+      "map": "https://www.google.com/maps/search/?api=1&query=Club%20Moritzino%20%C2%B7%20Piz%20La%20Ila%2C%20Alta%20Badia",
+      "accent": "#b0ef43",
+      "featured": false
+    },
+    {
+      "id": "auto-2026-01-03-apres-ski-club-moritzino",
+      "title": "Après Ski @ Club Moritzino",
+      "websiteExtraction": "moritzino-calendar",
+      "start": "2026-01-03",
+      "end": "2026-01-03",
+      "dateLabel": "03",
+      "monthLabel": "GEN",
+      "year": "2026",
+      "categories": [
+        "apres"
+      ],
+      "tags": [
+        "Après-ski"
+      ],
+      "summary": "Evento sulla neve a Club Moritzino · Piz La Ila, Alta Badia, con programma e dettagli nella fonte ufficiale.",
+      "summaries": {
+        "it": "Appuntamento musicale e après-ski al Club Moritzino, in quota al Piz La Ila.",
+        "de": "Musik und Après-Ski im Club Moritzino am Piz La Ila.",
+        "en": "Music and après-ski at Club Moritzino on Piz La Ila."
+      },
+      "place": "Club Moritzino · Piz La Ila, Alta Badia",
+      "venue": "Club Moritzino",
+      "source": "https://clubmoritzino.it/en/event/apres-ski-club-moritzino-3/",
+      "social": "https://www.instagram.com/clubmoritzino/",
+      "map": "https://www.google.com/maps/search/?api=1&query=Club%20Moritzino%20%C2%B7%20Piz%20La%20Ila%2C%20Alta%20Badia",
+      "accent": "#ff4fa3",
+      "featured": false
+    },
+    {
+      "id": "auto-2026-01-04-apres-ski-club-moritzino",
+      "title": "Après Ski @ Club Moritzino",
+      "websiteExtraction": "moritzino-calendar",
+      "start": "2026-01-04",
+      "end": "2026-01-04",
+      "dateLabel": "04",
+      "monthLabel": "GEN",
+      "year": "2026",
+      "categories": [
+        "apres"
+      ],
+      "tags": [
+        "Après-ski"
+      ],
+      "summary": "Evento sulla neve a Club Moritzino · Piz La Ila, Alta Badia, con programma e dettagli nella fonte ufficiale.",
+      "summaries": {
+        "it": "Appuntamento musicale e après-ski al Club Moritzino, in quota al Piz La Ila.",
+        "de": "Musik und Après-Ski im Club Moritzino am Piz La Ila.",
+        "en": "Music and après-ski at Club Moritzino on Piz La Ila."
+      },
+      "place": "Club Moritzino · Piz La Ila, Alta Badia",
+      "venue": "Club Moritzino",
+      "source": "https://clubmoritzino.it/en/event/apres-ski-club-moritzino-4/",
+      "social": "https://www.instagram.com/clubmoritzino/",
+      "map": "https://www.google.com/maps/search/?api=1&query=Club%20Moritzino%20%C2%B7%20Piz%20La%20Ila%2C%20Alta%20Badia",
+      "accent": "#ff7439",
+      "featured": false
+    },
+    {
+      "id": "auto-2026-01-05-apres-ski-club-moritzino",
+      "title": "Après Ski @ Club Moritzino",
+      "websiteExtraction": "moritzino-calendar",
+      "start": "2026-01-05",
+      "end": "2026-01-05",
+      "dateLabel": "05",
+      "monthLabel": "GEN",
+      "year": "2026",
+      "categories": [
+        "apres"
+      ],
+      "tags": [
+        "Après-ski"
+      ],
+      "summary": "Evento sulla neve a Club Moritzino · Piz La Ila, Alta Badia, con programma e dettagli nella fonte ufficiale.",
+      "summaries": {
+        "it": "Appuntamento musicale e après-ski al Club Moritzino, in quota al Piz La Ila.",
+        "de": "Musik und Après-Ski im Club Moritzino am Piz La Ila.",
+        "en": "Music and après-ski at Club Moritzino on Piz La Ila."
+      },
+      "place": "Club Moritzino · Piz La Ila, Alta Badia",
+      "venue": "Club Moritzino",
+      "source": "https://clubmoritzino.it/en/event/apres-ski-club-moritzino-5/",
+      "social": "https://www.instagram.com/clubmoritzino/",
+      "map": "https://www.google.com/maps/search/?api=1&query=Club%20Moritzino%20%C2%B7%20Piz%20La%20Ila%2C%20Alta%20Badia",
+      "accent": "#b0ef43",
+      "featured": false
+    },
+    {
+      "id": "auto-2026-01-06-apres-ski-club-moritzino",
+      "title": "Après Ski @ Club Moritzino",
+      "websiteExtraction": "moritzino-calendar",
+      "start": "2026-01-06",
+      "end": "2026-01-06",
+      "dateLabel": "06",
+      "monthLabel": "GEN",
+      "year": "2026",
+      "categories": [
+        "apres"
+      ],
+      "tags": [
+        "Après-ski"
+      ],
+      "summary": "Evento sulla neve a Club Moritzino · Piz La Ila, Alta Badia, con programma e dettagli nella fonte ufficiale.",
+      "summaries": {
+        "it": "Appuntamento musicale e après-ski al Club Moritzino, in quota al Piz La Ila.",
+        "de": "Musik und Après-Ski im Club Moritzino am Piz La Ila.",
+        "en": "Music and après-ski at Club Moritzino on Piz La Ila."
+      },
+      "place": "Club Moritzino · Piz La Ila, Alta Badia",
+      "venue": "Club Moritzino",
+      "source": "https://clubmoritzino.it/en/event/apres-ski-club-moritzino-6/",
+      "social": "https://www.instagram.com/clubmoritzino/",
+      "map": "https://www.google.com/maps/search/?api=1&query=Club%20Moritzino%20%C2%B7%20Piz%20La%20Ila%2C%20Alta%20Badia",
+      "accent": "#ff4fa3",
+      "featured": false
+    },
+    {
+      "id": "auto-2026-01-07-apres-ski-club-moritzino",
+      "title": "Après Ski @ Club Moritzino",
+      "websiteExtraction": "moritzino-calendar",
+      "start": "2026-01-07",
+      "end": "2026-01-07",
+      "dateLabel": "07",
+      "monthLabel": "GEN",
+      "year": "2026",
+      "categories": [
+        "apres"
+      ],
+      "tags": [
+        "Après-ski"
+      ],
+      "summary": "Evento sulla neve a Club Moritzino · Piz La Ila, Alta Badia, con programma e dettagli nella fonte ufficiale.",
+      "summaries": {
+        "it": "Appuntamento musicale e après-ski al Club Moritzino, in quota al Piz La Ila.",
+        "de": "Musik und Après-Ski im Club Moritzino am Piz La Ila.",
+        "en": "Music and après-ski at Club Moritzino on Piz La Ila."
+      },
+      "place": "Club Moritzino · Piz La Ila, Alta Badia",
+      "venue": "Club Moritzino",
+      "source": "https://clubmoritzino.it/en/event/apres-ski-club-moritzino-7/",
+      "social": "https://www.instagram.com/clubmoritzino/",
+      "map": "https://www.google.com/maps/search/?api=1&query=Club%20Moritzino%20%C2%B7%20Piz%20La%20Ila%2C%20Alta%20Badia",
+      "accent": "#ff7439",
+      "featured": false
+    },
+    {
+      "id": "auto-2026-01-08-apres-ski-club-moritzino",
+      "title": "Après Ski @ Club Moritzino",
+      "websiteExtraction": "moritzino-calendar",
+      "start": "2026-01-08",
+      "end": "2026-01-08",
+      "dateLabel": "08",
+      "monthLabel": "GEN",
+      "year": "2026",
+      "categories": [
+        "apres"
+      ],
+      "tags": [
+        "Après-ski"
+      ],
+      "summary": "Evento sulla neve a Club Moritzino · Piz La Ila, Alta Badia, con programma e dettagli nella fonte ufficiale.",
+      "summaries": {
+        "it": "Appuntamento musicale e après-ski al Club Moritzino, in quota al Piz La Ila.",
+        "de": "Musik und Après-Ski im Club Moritzino am Piz La Ila.",
+        "en": "Music and après-ski at Club Moritzino on Piz La Ila."
+      },
+      "place": "Club Moritzino · Piz La Ila, Alta Badia",
+      "venue": "Club Moritzino",
+      "source": "https://clubmoritzino.it/en/event/apres-ski-club-moritzino-8/",
+      "social": "https://www.instagram.com/clubmoritzino/",
+      "map": "https://www.google.com/maps/search/?api=1&query=Club%20Moritzino%20%C2%B7%20Piz%20La%20Ila%2C%20Alta%20Badia",
+      "accent": "#b0ef43",
+      "featured": false
+    },
+    {
+      "id": "auto-2026-01-09-apres-ski-club-moritzino",
+      "title": "Après Ski @ Club Moritzino",
+      "websiteExtraction": "moritzino-calendar",
+      "start": "2026-01-09",
+      "end": "2026-01-09",
+      "dateLabel": "09",
+      "monthLabel": "GEN",
+      "year": "2026",
+      "categories": [
+        "apres"
+      ],
+      "tags": [
+        "Après-ski"
+      ],
+      "summary": "Evento sulla neve a Club Moritzino · Piz La Ila, Alta Badia, con programma e dettagli nella fonte ufficiale.",
+      "summaries": {
+        "it": "Appuntamento musicale e après-ski al Club Moritzino, in quota al Piz La Ila.",
+        "de": "Musik und Après-Ski im Club Moritzino am Piz La Ila.",
+        "en": "Music and après-ski at Club Moritzino on Piz La Ila."
+      },
+      "place": "Club Moritzino · Piz La Ila, Alta Badia",
+      "venue": "Club Moritzino",
+      "source": "https://clubmoritzino.it/en/event/apres-ski-club-moritzino-9/",
+      "social": "https://www.instagram.com/clubmoritzino/",
+      "map": "https://www.google.com/maps/search/?api=1&query=Club%20Moritzino%20%C2%B7%20Piz%20La%20Ila%2C%20Alta%20Badia",
+      "accent": "#ff4fa3",
+      "featured": false
+    },
+    {
+      "id": "auto-2026-01-10-apres-ski-club-moritzino",
+      "title": "Après Ski @ Club Moritzino",
+      "websiteExtraction": "moritzino-calendar",
+      "start": "2026-01-10",
+      "end": "2026-01-10",
+      "dateLabel": "10",
+      "monthLabel": "GEN",
+      "year": "2026",
+      "categories": [
+        "apres"
+      ],
+      "tags": [
+        "Après-ski"
+      ],
+      "summary": "Evento sulla neve a Club Moritzino · Piz La Ila, Alta Badia, con programma e dettagli nella fonte ufficiale.",
+      "summaries": {
+        "it": "Appuntamento musicale e après-ski al Club Moritzino, in quota al Piz La Ila.",
+        "de": "Musik und Après-Ski im Club Moritzino am Piz La Ila.",
+        "en": "Music and après-ski at Club Moritzino on Piz La Ila."
+      },
+      "place": "Club Moritzino · Piz La Ila, Alta Badia",
+      "venue": "Club Moritzino",
+      "source": "https://clubmoritzino.it/en/event/apres-ski-club-moritzino-10/",
+      "social": "https://www.instagram.com/clubmoritzino/",
+      "map": "https://www.google.com/maps/search/?api=1&query=Club%20Moritzino%20%C2%B7%20Piz%20La%20Ila%2C%20Alta%20Badia",
+      "accent": "#ff7439",
+      "featured": false
+    },
+    {
+      "id": "auto-2026-01-31-apres-ski-club-moritzino",
+      "title": "Après Ski @ Club Moritzino",
+      "websiteExtraction": "moritzino-calendar",
+      "start": "2026-01-31",
+      "end": "2026-01-31",
+      "dateLabel": "31",
+      "monthLabel": "GEN",
+      "year": "2026",
+      "categories": [
+        "apres"
+      ],
+      "tags": [
+        "Après-ski"
+      ],
+      "summary": "Evento sulla neve a Club Moritzino · Piz La Ila, Alta Badia, con programma e dettagli nella fonte ufficiale.",
+      "summaries": {
+        "it": "Appuntamento musicale e après-ski al Club Moritzino, in quota al Piz La Ila.",
+        "de": "Musik und Après-Ski im Club Moritzino am Piz La Ila.",
+        "en": "Music and après-ski at Club Moritzino on Piz La Ila."
+      },
+      "place": "Club Moritzino · Piz La Ila, Alta Badia",
+      "venue": "Club Moritzino",
+      "source": "https://clubmoritzino.it/en/event/apres-ski-club-moritzino-11/",
+      "social": "https://www.instagram.com/clubmoritzino/",
+      "map": "https://www.google.com/maps/search/?api=1&query=Club%20Moritzino%20%C2%B7%20Piz%20La%20Ila%2C%20Alta%20Badia",
+      "accent": "#b0ef43",
+      "featured": false
+    },
+    {
+      "id": "auto-2026-02-01-apres-ski-club-moritzino",
+      "title": "Après Ski @ Club Moritzino",
+      "websiteExtraction": "moritzino-calendar",
+      "start": "2026-02-01",
+      "end": "2026-02-01",
+      "dateLabel": "01",
+      "monthLabel": "FEB",
+      "year": "2026",
+      "categories": [
+        "apres"
+      ],
+      "tags": [
+        "Après-ski"
+      ],
+      "summary": "Evento sulla neve a Club Moritzino · Piz La Ila, Alta Badia, con programma e dettagli nella fonte ufficiale.",
+      "summaries": {
+        "it": "Appuntamento musicale e après-ski al Club Moritzino, in quota al Piz La Ila.",
+        "de": "Musik und Après-Ski im Club Moritzino am Piz La Ila.",
+        "en": "Music and après-ski at Club Moritzino on Piz La Ila."
+      },
+      "place": "Club Moritzino · Piz La Ila, Alta Badia",
+      "venue": "Club Moritzino",
+      "source": "https://clubmoritzino.it/en/event/apres-ski-club-moritzino-12/",
+      "social": "https://www.instagram.com/clubmoritzino/",
+      "map": "https://www.google.com/maps/search/?api=1&query=Club%20Moritzino%20%C2%B7%20Piz%20La%20Ila%2C%20Alta%20Badia",
+      "accent": "#ff4fa3",
+      "featured": false
+    },
+    {
+      "id": "auto-2026-02-02-apres-ski-club-moritzino",
+      "title": "Après Ski @ Club Moritzino",
+      "websiteExtraction": "moritzino-calendar",
+      "start": "2026-02-02",
+      "end": "2026-02-02",
+      "dateLabel": "02",
+      "monthLabel": "FEB",
+      "year": "2026",
+      "categories": [
+        "apres"
+      ],
+      "tags": [
+        "Après-ski"
+      ],
+      "summary": "Evento sulla neve a Club Moritzino · Piz La Ila, Alta Badia, con programma e dettagli nella fonte ufficiale.",
+      "summaries": {
+        "it": "Appuntamento musicale e après-ski al Club Moritzino, in quota al Piz La Ila.",
+        "de": "Musik und Après-Ski im Club Moritzino am Piz La Ila.",
+        "en": "Music and après-ski at Club Moritzino on Piz La Ila."
+      },
+      "place": "Club Moritzino · Piz La Ila, Alta Badia",
+      "venue": "Club Moritzino",
+      "source": "https://clubmoritzino.it/en/event/apres-ski-club-moritzino-13/",
+      "social": "https://www.instagram.com/clubmoritzino/",
+      "map": "https://www.google.com/maps/search/?api=1&query=Club%20Moritzino%20%C2%B7%20Piz%20La%20Ila%2C%20Alta%20Badia",
+      "accent": "#ff7439",
+      "featured": false
+    },
+    {
+      "id": "auto-2026-02-03-apres-ski-club-moritzino",
+      "title": "Après Ski @ Club Moritzino",
+      "websiteExtraction": "moritzino-calendar",
+      "start": "2026-02-03",
+      "end": "2026-02-03",
+      "dateLabel": "03",
+      "monthLabel": "FEB",
+      "year": "2026",
+      "categories": [
+        "apres"
+      ],
+      "tags": [
+        "Après-ski"
+      ],
+      "summary": "Evento sulla neve a Club Moritzino · Piz La Ila, Alta Badia, con programma e dettagli nella fonte ufficiale.",
+      "summaries": {
+        "it": "Appuntamento musicale e après-ski al Club Moritzino, in quota al Piz La Ila.",
+        "de": "Musik und Après-Ski im Club Moritzino am Piz La Ila.",
+        "en": "Music and après-ski at Club Moritzino on Piz La Ila."
+      },
+      "place": "Club Moritzino · Piz La Ila, Alta Badia",
+      "venue": "Club Moritzino",
+      "source": "https://clubmoritzino.it/en/event/apres-ski-club-moritzino-14/",
+      "social": "https://www.instagram.com/clubmoritzino/",
+      "map": "https://www.google.com/maps/search/?api=1&query=Club%20Moritzino%20%C2%B7%20Piz%20La%20Ila%2C%20Alta%20Badia",
+      "accent": "#b0ef43",
+      "featured": false
+    },
+    {
+      "id": "auto-2026-02-04-apres-ski-club-moritzino",
+      "title": "Après Ski @ Club Moritzino",
+      "websiteExtraction": "moritzino-calendar",
+      "start": "2026-02-04",
+      "end": "2026-02-04",
+      "dateLabel": "04",
+      "monthLabel": "FEB",
+      "year": "2026",
+      "categories": [
+        "apres"
+      ],
+      "tags": [
+        "Après-ski"
+      ],
+      "summary": "Evento sulla neve a Club Moritzino · Piz La Ila, Alta Badia, con programma e dettagli nella fonte ufficiale.",
+      "summaries": {
+        "it": "Appuntamento musicale e après-ski al Club Moritzino, in quota al Piz La Ila.",
+        "de": "Musik und Après-Ski im Club Moritzino am Piz La Ila.",
+        "en": "Music and après-ski at Club Moritzino on Piz La Ila."
+      },
+      "place": "Club Moritzino · Piz La Ila, Alta Badia",
+      "venue": "Club Moritzino",
+      "source": "https://clubmoritzino.it/en/event/apres-ski-club-moritzino-15/",
+      "social": "https://www.instagram.com/clubmoritzino/",
+      "map": "https://www.google.com/maps/search/?api=1&query=Club%20Moritzino%20%C2%B7%20Piz%20La%20Ila%2C%20Alta%20Badia",
+      "accent": "#ff4fa3",
+      "featured": false
+    },
+    {
+      "id": "auto-2026-02-05-apres-ski-club-moritzino",
+      "title": "Après Ski @ Club Moritzino",
+      "websiteExtraction": "moritzino-calendar",
+      "start": "2026-02-05",
+      "end": "2026-02-05",
+      "dateLabel": "05",
+      "monthLabel": "FEB",
+      "year": "2026",
+      "categories": [
+        "apres"
+      ],
+      "tags": [
+        "Après-ski"
+      ],
+      "summary": "Evento sulla neve a Club Moritzino · Piz La Ila, Alta Badia, con programma e dettagli nella fonte ufficiale.",
+      "summaries": {
+        "it": "Appuntamento musicale e après-ski al Club Moritzino, in quota al Piz La Ila.",
+        "de": "Musik und Après-Ski im Club Moritzino am Piz La Ila.",
+        "en": "Music and après-ski at Club Moritzino on Piz La Ila."
+      },
+      "place": "Club Moritzino · Piz La Ila, Alta Badia",
+      "venue": "Club Moritzino",
+      "source": "https://clubmoritzino.it/en/event/apres-ski-club-moritzino-16/",
+      "social": "https://www.instagram.com/clubmoritzino/",
+      "map": "https://www.google.com/maps/search/?api=1&query=Club%20Moritzino%20%C2%B7%20Piz%20La%20Ila%2C%20Alta%20Badia",
+      "accent": "#ff7439",
+      "featured": false
+    },
+    {
+      "id": "auto-2026-02-06-apres-ski-club-moritzino",
+      "title": "Après Ski @ Club Moritzino",
+      "websiteExtraction": "moritzino-calendar",
+      "start": "2026-02-06",
+      "end": "2026-02-06",
+      "dateLabel": "06",
+      "monthLabel": "FEB",
+      "year": "2026",
+      "categories": [
+        "apres"
+      ],
+      "tags": [
+        "Après-ski"
+      ],
+      "summary": "Evento sulla neve a Club Moritzino · Piz La Ila, Alta Badia, con programma e dettagli nella fonte ufficiale.",
+      "summaries": {
+        "it": "Appuntamento musicale e après-ski al Club Moritzino, in quota al Piz La Ila.",
+        "de": "Musik und Après-Ski im Club Moritzino am Piz La Ila.",
+        "en": "Music and après-ski at Club Moritzino on Piz La Ila."
+      },
+      "place": "Club Moritzino · Piz La Ila, Alta Badia",
+      "venue": "Club Moritzino",
+      "source": "https://clubmoritzino.it/en/event/apres-ski-club-moritzino-17/",
+      "social": "https://www.instagram.com/clubmoritzino/",
+      "map": "https://www.google.com/maps/search/?api=1&query=Club%20Moritzino%20%C2%B7%20Piz%20La%20Ila%2C%20Alta%20Badia",
+      "accent": "#b0ef43",
+      "featured": false
+    },
+    {
+      "id": "auto-2026-02-07-apres-ski-club-moritzino",
+      "title": "Après Ski @ Club Moritzino",
+      "websiteExtraction": "moritzino-calendar",
+      "start": "2026-02-07",
+      "end": "2026-02-07",
+      "dateLabel": "07",
+      "monthLabel": "FEB",
+      "year": "2026",
+      "categories": [
+        "apres"
+      ],
+      "tags": [
+        "Après-ski"
+      ],
+      "summary": "Evento sulla neve a Club Moritzino · Piz La Ila, Alta Badia, con programma e dettagli nella fonte ufficiale.",
+      "summaries": {
+        "it": "Appuntamento musicale e après-ski al Club Moritzino, in quota al Piz La Ila.",
+        "de": "Musik und Après-Ski im Club Moritzino am Piz La Ila.",
+        "en": "Music and après-ski at Club Moritzino on Piz La Ila."
+      },
+      "place": "Club Moritzino · Piz La Ila, Alta Badia",
+      "venue": "Club Moritzino",
+      "source": "https://clubmoritzino.it/en/event/apres-ski-club-moritzino-18/",
+      "social": "https://www.instagram.com/clubmoritzino/",
+      "map": "https://www.google.com/maps/search/?api=1&query=Club%20Moritzino%20%C2%B7%20Piz%20La%20Ila%2C%20Alta%20Badia",
+      "accent": "#ff4fa3",
+      "featured": false
+    },
+    {
+      "id": "auto-2026-02-08-apres-ski-club-moritzino",
+      "title": "Après Ski @ Club Moritzino",
+      "websiteExtraction": "moritzino-calendar",
+      "start": "2026-02-08",
+      "end": "2026-02-08",
+      "dateLabel": "08",
+      "monthLabel": "FEB",
+      "year": "2026",
+      "categories": [
+        "apres"
+      ],
+      "tags": [
+        "Après-ski"
+      ],
+      "summary": "Evento sulla neve a Club Moritzino · Piz La Ila, Alta Badia, con programma e dettagli nella fonte ufficiale.",
+      "summaries": {
+        "it": "Appuntamento musicale e après-ski al Club Moritzino, in quota al Piz La Ila.",
+        "de": "Musik und Après-Ski im Club Moritzino am Piz La Ila.",
+        "en": "Music and après-ski at Club Moritzino on Piz La Ila."
+      },
+      "place": "Club Moritzino · Piz La Ila, Alta Badia",
+      "venue": "Club Moritzino",
+      "source": "https://clubmoritzino.it/en/event/apres-ski-club-moritzino-19/",
+      "social": "https://www.instagram.com/clubmoritzino/",
+      "map": "https://www.google.com/maps/search/?api=1&query=Club%20Moritzino%20%C2%B7%20Piz%20La%20Ila%2C%20Alta%20Badia",
+      "accent": "#ff7439",
+      "featured": false
+    },
+    {
+      "id": "auto-2026-02-09-apres-ski-club-moritzino",
+      "title": "Après Ski @ Club Moritzino",
+      "websiteExtraction": "moritzino-calendar",
+      "start": "2026-02-09",
+      "end": "2026-02-09",
+      "dateLabel": "09",
+      "monthLabel": "FEB",
+      "year": "2026",
+      "categories": [
+        "apres"
+      ],
+      "tags": [
+        "Après-ski"
+      ],
+      "summary": "Evento sulla neve a Club Moritzino · Piz La Ila, Alta Badia, con programma e dettagli nella fonte ufficiale.",
+      "summaries": {
+        "it": "Appuntamento musicale e après-ski al Club Moritzino, in quota al Piz La Ila.",
+        "de": "Musik und Après-Ski im Club Moritzino am Piz La Ila.",
+        "en": "Music and après-ski at Club Moritzino on Piz La Ila."
+      },
+      "place": "Club Moritzino · Piz La Ila, Alta Badia",
+      "venue": "Club Moritzino",
+      "source": "https://clubmoritzino.it/en/event/apres-ski-club-moritzino-20/",
+      "social": "https://www.instagram.com/clubmoritzino/",
+      "map": "https://www.google.com/maps/search/?api=1&query=Club%20Moritzino%20%C2%B7%20Piz%20La%20Ila%2C%20Alta%20Badia",
+      "accent": "#b0ef43",
+      "featured": false
+    },
+    {
+      "id": "auto-2026-02-10-apres-ski-club-moritzino",
+      "title": "Après Ski @ Club Moritzino",
+      "websiteExtraction": "moritzino-calendar",
+      "start": "2026-02-10",
+      "end": "2026-02-10",
+      "dateLabel": "10",
+      "monthLabel": "FEB",
+      "year": "2026",
+      "categories": [
+        "apres"
+      ],
+      "tags": [
+        "Après-ski"
+      ],
+      "summary": "Evento sulla neve a Club Moritzino · Piz La Ila, Alta Badia, con programma e dettagli nella fonte ufficiale.",
+      "summaries": {
+        "it": "Appuntamento musicale e après-ski al Club Moritzino, in quota al Piz La Ila.",
+        "de": "Musik und Après-Ski im Club Moritzino am Piz La Ila.",
+        "en": "Music and après-ski at Club Moritzino on Piz La Ila."
+      },
+      "place": "Club Moritzino · Piz La Ila, Alta Badia",
+      "venue": "Club Moritzino",
+      "source": "https://clubmoritzino.it/en/event/apres-ski-club-moritzino-21/",
+      "social": "https://www.instagram.com/clubmoritzino/",
+      "map": "https://www.google.com/maps/search/?api=1&query=Club%20Moritzino%20%C2%B7%20Piz%20La%20Ila%2C%20Alta%20Badia",
+      "accent": "#ff4fa3",
+      "featured": false
+    },
+    {
+      "id": "auto-2026-02-11-apres-ski-club-moritzino",
+      "title": "Après Ski @ Club Moritzino",
+      "websiteExtraction": "moritzino-calendar",
+      "start": "2026-02-11",
+      "end": "2026-02-11",
+      "dateLabel": "11",
+      "monthLabel": "FEB",
+      "year": "2026",
+      "categories": [
+        "apres"
+      ],
+      "tags": [
+        "Après-ski"
+      ],
+      "summary": "Evento sulla neve a Club Moritzino · Piz La Ila, Alta Badia, con programma e dettagli nella fonte ufficiale.",
+      "summaries": {
+        "it": "Appuntamento musicale e après-ski al Club Moritzino, in quota al Piz La Ila.",
+        "de": "Musik und Après-Ski im Club Moritzino am Piz La Ila.",
+        "en": "Music and après-ski at Club Moritzino on Piz La Ila."
+      },
+      "place": "Club Moritzino · Piz La Ila, Alta Badia",
+      "venue": "Club Moritzino",
+      "source": "https://clubmoritzino.it/en/event/apres-ski-club-moritzino-22/",
+      "social": "https://www.instagram.com/clubmoritzino/",
+      "map": "https://www.google.com/maps/search/?api=1&query=Club%20Moritzino%20%C2%B7%20Piz%20La%20Ila%2C%20Alta%20Badia",
+      "accent": "#ff7439",
+      "featured": false
+    },
+    {
+      "id": "auto-2026-02-12-apres-ski-club-moritzino",
+      "title": "Après Ski @ Club Moritzino",
+      "websiteExtraction": "moritzino-calendar",
+      "start": "2026-02-12",
+      "end": "2026-02-12",
+      "dateLabel": "12",
+      "monthLabel": "FEB",
+      "year": "2026",
+      "categories": [
+        "apres"
+      ],
+      "tags": [
+        "Après-ski"
+      ],
+      "summary": "Evento sulla neve a Club Moritzino · Piz La Ila, Alta Badia, con programma e dettagli nella fonte ufficiale.",
+      "summaries": {
+        "it": "Appuntamento musicale e après-ski al Club Moritzino, in quota al Piz La Ila.",
+        "de": "Musik und Après-Ski im Club Moritzino am Piz La Ila.",
+        "en": "Music and après-ski at Club Moritzino on Piz La Ila."
+      },
+      "place": "Club Moritzino · Piz La Ila, Alta Badia",
+      "venue": "Club Moritzino",
+      "source": "https://clubmoritzino.it/en/event/apres-ski-club-moritzino-23/",
+      "social": "https://www.instagram.com/clubmoritzino/",
+      "map": "https://www.google.com/maps/search/?api=1&query=Club%20Moritzino%20%C2%B7%20Piz%20La%20Ila%2C%20Alta%20Badia",
+      "accent": "#b0ef43",
+      "featured": false
+    },
+    {
+      "id": "auto-2026-02-13-apres-ski-club-moritzino",
+      "title": "Après Ski @ Club Moritzino",
+      "websiteExtraction": "moritzino-calendar",
+      "start": "2026-02-13",
+      "end": "2026-02-13",
+      "dateLabel": "13",
+      "monthLabel": "FEB",
+      "year": "2026",
+      "categories": [
+        "apres"
+      ],
+      "tags": [
+        "Après-ski"
+      ],
+      "summary": "Evento sulla neve a Club Moritzino · Piz La Ila, Alta Badia, con programma e dettagli nella fonte ufficiale.",
+      "summaries": {
+        "it": "Appuntamento musicale e après-ski al Club Moritzino, in quota al Piz La Ila.",
+        "de": "Musik und Après-Ski im Club Moritzino am Piz La Ila.",
+        "en": "Music and après-ski at Club Moritzino on Piz La Ila."
+      },
+      "place": "Club Moritzino · Piz La Ila, Alta Badia",
+      "venue": "Club Moritzino",
+      "source": "https://clubmoritzino.it/en/event/apres-ski-club-moritzino-24/",
+      "social": "https://www.instagram.com/clubmoritzino/",
+      "map": "https://www.google.com/maps/search/?api=1&query=Club%20Moritzino%20%C2%B7%20Piz%20La%20Ila%2C%20Alta%20Badia",
+      "accent": "#ff4fa3",
+      "featured": false
+    },
+    {
+      "id": "auto-2026-02-14-apres-ski-club-moritzino",
+      "title": "Après Ski @ Club Moritzino",
+      "websiteExtraction": "moritzino-calendar",
+      "start": "2026-02-14",
+      "end": "2026-02-14",
+      "dateLabel": "14",
+      "monthLabel": "FEB",
+      "year": "2026",
+      "categories": [
+        "apres"
+      ],
+      "tags": [
+        "Après-ski"
+      ],
+      "summary": "Evento sulla neve a Club Moritzino · Piz La Ila, Alta Badia, con programma e dettagli nella fonte ufficiale.",
+      "summaries": {
+        "it": "Appuntamento musicale e après-ski al Club Moritzino, in quota al Piz La Ila.",
+        "de": "Musik und Après-Ski im Club Moritzino am Piz La Ila.",
+        "en": "Music and après-ski at Club Moritzino on Piz La Ila."
+      },
+      "place": "Club Moritzino · Piz La Ila, Alta Badia",
+      "venue": "Club Moritzino",
+      "source": "https://clubmoritzino.it/en/event/apres-ski-club-moritzino-25/",
+      "social": "https://www.instagram.com/clubmoritzino/",
+      "map": "https://www.google.com/maps/search/?api=1&query=Club%20Moritzino%20%C2%B7%20Piz%20La%20Ila%2C%20Alta%20Badia",
+      "accent": "#ff7439",
+      "featured": false
+    },
+    {
+      "id": "auto-2026-02-15-apres-ski-club-moritzino",
+      "title": "Après Ski @ Club Moritzino",
+      "websiteExtraction": "moritzino-calendar",
+      "start": "2026-02-15",
+      "end": "2026-02-15",
+      "dateLabel": "15",
+      "monthLabel": "FEB",
+      "year": "2026",
+      "categories": [
+        "apres"
+      ],
+      "tags": [
+        "Après-ski"
+      ],
+      "summary": "Evento sulla neve a Club Moritzino · Piz La Ila, Alta Badia, con programma e dettagli nella fonte ufficiale.",
+      "summaries": {
+        "it": "Appuntamento musicale e après-ski al Club Moritzino, in quota al Piz La Ila.",
+        "de": "Musik und Après-Ski im Club Moritzino am Piz La Ila.",
+        "en": "Music and après-ski at Club Moritzino on Piz La Ila."
+      },
+      "place": "Club Moritzino · Piz La Ila, Alta Badia",
+      "venue": "Club Moritzino",
+      "source": "https://clubmoritzino.it/en/event/apres-ski-club-moritzino-26/",
+      "social": "https://www.instagram.com/clubmoritzino/",
+      "map": "https://www.google.com/maps/search/?api=1&query=Club%20Moritzino%20%C2%B7%20Piz%20La%20Ila%2C%20Alta%20Badia",
+      "accent": "#b0ef43",
+      "featured": false
+    },
+    {
+      "id": "auto-2026-02-16-apres-ski-club-moritzino",
+      "title": "Après Ski @ Club Moritzino",
+      "websiteExtraction": "moritzino-calendar",
+      "start": "2026-02-16",
+      "end": "2026-02-16",
+      "dateLabel": "16",
+      "monthLabel": "FEB",
+      "year": "2026",
+      "categories": [
+        "apres"
+      ],
+      "tags": [
+        "Après-ski"
+      ],
+      "summary": "Evento sulla neve a Club Moritzino · Piz La Ila, Alta Badia, con programma e dettagli nella fonte ufficiale.",
+      "summaries": {
+        "it": "Appuntamento musicale e après-ski al Club Moritzino, in quota al Piz La Ila.",
+        "de": "Musik und Après-Ski im Club Moritzino am Piz La Ila.",
+        "en": "Music and après-ski at Club Moritzino on Piz La Ila."
+      },
+      "place": "Club Moritzino · Piz La Ila, Alta Badia",
+      "venue": "Club Moritzino",
+      "source": "https://clubmoritzino.it/en/event/apres-ski-club-moritzino-27/",
+      "social": "https://www.instagram.com/clubmoritzino/",
+      "map": "https://www.google.com/maps/search/?api=1&query=Club%20Moritzino%20%C2%B7%20Piz%20La%20Ila%2C%20Alta%20Badia",
+      "accent": "#ff4fa3",
+      "featured": false
+    },
+    {
+      "id": "auto-2026-02-17-apres-ski-club-moritzino",
+      "title": "Après Ski @ Club Moritzino",
+      "websiteExtraction": "moritzino-calendar",
+      "start": "2026-02-17",
+      "end": "2026-02-17",
+      "dateLabel": "17",
+      "monthLabel": "FEB",
+      "year": "2026",
+      "categories": [
+        "apres"
+      ],
+      "tags": [
+        "Après-ski"
+      ],
+      "summary": "Evento sulla neve a Club Moritzino · Piz La Ila, Alta Badia, con programma e dettagli nella fonte ufficiale.",
+      "summaries": {
+        "it": "Appuntamento musicale e après-ski al Club Moritzino, in quota al Piz La Ila.",
+        "de": "Musik und Après-Ski im Club Moritzino am Piz La Ila.",
+        "en": "Music and après-ski at Club Moritzino on Piz La Ila."
+      },
+      "place": "Club Moritzino · Piz La Ila, Alta Badia",
+      "venue": "Club Moritzino",
+      "source": "https://clubmoritzino.it/en/event/apres-ski-club-moritzino-28/",
+      "social": "https://www.instagram.com/clubmoritzino/",
+      "map": "https://www.google.com/maps/search/?api=1&query=Club%20Moritzino%20%C2%B7%20Piz%20La%20Ila%2C%20Alta%20Badia",
+      "accent": "#ff7439",
+      "featured": false
+    },
+    {
+      "id": "auto-2026-02-18-apres-ski-club-moritzino",
+      "title": "Après Ski @ Club Moritzino",
+      "websiteExtraction": "moritzino-calendar",
+      "start": "2026-02-18",
+      "end": "2026-02-18",
+      "dateLabel": "18",
+      "monthLabel": "FEB",
+      "year": "2026",
+      "categories": [
+        "apres"
+      ],
+      "tags": [
+        "Après-ski"
+      ],
+      "summary": "Evento sulla neve a Club Moritzino · Piz La Ila, Alta Badia, con programma e dettagli nella fonte ufficiale.",
+      "summaries": {
+        "it": "Appuntamento musicale e après-ski al Club Moritzino, in quota al Piz La Ila.",
+        "de": "Musik und Après-Ski im Club Moritzino am Piz La Ila.",
+        "en": "Music and après-ski at Club Moritzino on Piz La Ila."
+      },
+      "place": "Club Moritzino · Piz La Ila, Alta Badia",
+      "venue": "Club Moritzino",
+      "source": "https://clubmoritzino.it/en/event/apres-ski-club-moritzino-29/",
+      "social": "https://www.instagram.com/clubmoritzino/",
+      "map": "https://www.google.com/maps/search/?api=1&query=Club%20Moritzino%20%C2%B7%20Piz%20La%20Ila%2C%20Alta%20Badia",
+      "accent": "#b0ef43",
+      "featured": false
+    },
+    {
+      "id": "auto-2026-02-19-apres-ski-club-moritzino",
+      "title": "Après Ski @ Club Moritzino",
+      "websiteExtraction": "moritzino-calendar",
+      "start": "2026-02-19",
+      "end": "2026-02-19",
+      "dateLabel": "19",
+      "monthLabel": "FEB",
+      "year": "2026",
+      "categories": [
+        "apres"
+      ],
+      "tags": [
+        "Après-ski"
+      ],
+      "summary": "Evento sulla neve a Club Moritzino · Piz La Ila, Alta Badia, con programma e dettagli nella fonte ufficiale.",
+      "summaries": {
+        "it": "Appuntamento musicale e après-ski al Club Moritzino, in quota al Piz La Ila.",
+        "de": "Musik und Après-Ski im Club Moritzino am Piz La Ila.",
+        "en": "Music and après-ski at Club Moritzino on Piz La Ila."
+      },
+      "place": "Club Moritzino · Piz La Ila, Alta Badia",
+      "venue": "Club Moritzino",
+      "source": "https://clubmoritzino.it/en/event/apres-ski-club-moritzino-30/",
+      "social": "https://www.instagram.com/clubmoritzino/",
+      "map": "https://www.google.com/maps/search/?api=1&query=Club%20Moritzino%20%C2%B7%20Piz%20La%20Ila%2C%20Alta%20Badia",
+      "accent": "#ff4fa3",
+      "featured": false
+    },
+    {
+      "id": "auto-2026-02-25-apres-ski-club-moritzino",
+      "title": "Après Ski @ Club Moritzino",
+      "websiteExtraction": "moritzino-calendar",
+      "start": "2026-02-25",
+      "end": "2026-02-25",
+      "dateLabel": "25",
+      "monthLabel": "FEB",
+      "year": "2026",
+      "categories": [
+        "apres"
+      ],
+      "tags": [
+        "Après-ski"
+      ],
+      "summary": "Evento sulla neve a Club Moritzino · Piz La Ila, Alta Badia, con programma e dettagli nella fonte ufficiale.",
+      "summaries": {
+        "it": "Appuntamento musicale e après-ski al Club Moritzino, in quota al Piz La Ila.",
+        "de": "Musik und Après-Ski im Club Moritzino am Piz La Ila.",
+        "en": "Music and après-ski at Club Moritzino on Piz La Ila."
+      },
+      "place": "Club Moritzino · Piz La Ila, Alta Badia",
+      "venue": "Club Moritzino",
+      "source": "https://clubmoritzino.it/en/event/apres-ski-club-moritzino-31/",
+      "social": "https://www.instagram.com/clubmoritzino/",
+      "map": "https://www.google.com/maps/search/?api=1&query=Club%20Moritzino%20%C2%B7%20Piz%20La%20Ila%2C%20Alta%20Badia",
+      "accent": "#ff7439",
+      "featured": false
+    },
+    {
+      "id": "auto-2026-02-26-apres-ski-club-moritzino",
+      "title": "Après Ski @ Club Moritzino",
+      "websiteExtraction": "moritzino-calendar",
+      "start": "2026-02-26",
+      "end": "2026-02-26",
+      "dateLabel": "26",
+      "monthLabel": "FEB",
+      "year": "2026",
+      "categories": [
+        "apres"
+      ],
+      "tags": [
+        "Après-ski"
+      ],
+      "summary": "Evento sulla neve a Club Moritzino · Piz La Ila, Alta Badia, con programma e dettagli nella fonte ufficiale.",
+      "summaries": {
+        "it": "Appuntamento musicale e après-ski al Club Moritzino, in quota al Piz La Ila.",
+        "de": "Musik und Après-Ski im Club Moritzino am Piz La Ila.",
+        "en": "Music and après-ski at Club Moritzino on Piz La Ila."
+      },
+      "place": "Club Moritzino · Piz La Ila, Alta Badia",
+      "venue": "Club Moritzino",
+      "source": "https://clubmoritzino.it/en/event/apres-ski-club-moritzino-32/",
+      "social": "https://www.instagram.com/clubmoritzino/",
+      "map": "https://www.google.com/maps/search/?api=1&query=Club%20Moritzino%20%C2%B7%20Piz%20La%20Ila%2C%20Alta%20Badia",
+      "accent": "#b0ef43",
+      "featured": false
+    },
+    {
+      "id": "auto-2026-02-27-apres-ski-club-moritzino",
+      "title": "Après Ski @ Club Moritzino",
+      "websiteExtraction": "moritzino-calendar",
+      "start": "2026-02-27",
+      "end": "2026-02-27",
+      "dateLabel": "27",
+      "monthLabel": "FEB",
+      "year": "2026",
+      "categories": [
+        "apres"
+      ],
+      "tags": [
+        "Après-ski"
+      ],
+      "summary": "Evento sulla neve a Club Moritzino · Piz La Ila, Alta Badia, con programma e dettagli nella fonte ufficiale.",
+      "summaries": {
+        "it": "Appuntamento musicale e après-ski al Club Moritzino, in quota al Piz La Ila.",
+        "de": "Musik und Après-Ski im Club Moritzino am Piz La Ila.",
+        "en": "Music and après-ski at Club Moritzino on Piz La Ila."
+      },
+      "place": "Club Moritzino · Piz La Ila, Alta Badia",
+      "venue": "Club Moritzino",
+      "source": "https://clubmoritzino.it/en/event/apres-ski-club-moritzino-33/",
+      "social": "https://www.instagram.com/clubmoritzino/",
+      "map": "https://www.google.com/maps/search/?api=1&query=Club%20Moritzino%20%C2%B7%20Piz%20La%20Ila%2C%20Alta%20Badia",
+      "accent": "#ff4fa3",
+      "featured": false
+    },
+    {
+      "id": "auto-2026-02-28-apres-ski-club-moritzino",
+      "title": "Après Ski @ Club Moritzino",
+      "websiteExtraction": "moritzino-calendar",
+      "start": "2026-02-28",
+      "end": "2026-02-28",
+      "dateLabel": "28",
+      "monthLabel": "FEB",
+      "year": "2026",
+      "categories": [
+        "apres"
+      ],
+      "tags": [
+        "Après-ski"
+      ],
+      "summary": "Evento sulla neve a Club Moritzino · Piz La Ila, Alta Badia, con programma e dettagli nella fonte ufficiale.",
+      "summaries": {
+        "it": "Appuntamento musicale e après-ski al Club Moritzino, in quota al Piz La Ila.",
+        "de": "Musik und Après-Ski im Club Moritzino am Piz La Ila.",
+        "en": "Music and après-ski at Club Moritzino on Piz La Ila."
+      },
+      "place": "Club Moritzino · Piz La Ila, Alta Badia",
+      "venue": "Club Moritzino",
+      "source": "https://clubmoritzino.it/en/event/apres-ski-club-moritzino-34/",
+      "social": "https://www.instagram.com/clubmoritzino/",
+      "map": "https://www.google.com/maps/search/?api=1&query=Club%20Moritzino%20%C2%B7%20Piz%20La%20Ila%2C%20Alta%20Badia",
+      "accent": "#ff7439",
+      "featured": false
+    },
+    {
+      "id": "auto-2026-03-01-apres-ski-club-moritzino",
+      "title": "Après Ski @ Club Moritzino",
+      "websiteExtraction": "moritzino-calendar",
+      "start": "2026-03-01",
+      "end": "2026-03-01",
+      "dateLabel": "01",
+      "monthLabel": "MAR",
+      "year": "2026",
+      "categories": [
+        "apres"
+      ],
+      "tags": [
+        "Après-ski"
+      ],
+      "summary": "Evento sulla neve a Club Moritzino · Piz La Ila, Alta Badia, con programma e dettagli nella fonte ufficiale.",
+      "summaries": {
+        "it": "Appuntamento musicale e après-ski al Club Moritzino, in quota al Piz La Ila.",
+        "de": "Musik und Après-Ski im Club Moritzino am Piz La Ila.",
+        "en": "Music and après-ski at Club Moritzino on Piz La Ila."
+      },
+      "place": "Club Moritzino · Piz La Ila, Alta Badia",
+      "venue": "Club Moritzino",
+      "source": "https://clubmoritzino.it/en/event/apres-ski-club-moritzino-35/",
+      "social": "https://www.instagram.com/clubmoritzino/",
+      "map": "https://www.google.com/maps/search/?api=1&query=Club%20Moritzino%20%C2%B7%20Piz%20La%20Ila%2C%20Alta%20Badia",
+      "accent": "#b0ef43",
+      "featured": false
+    },
+    {
+      "id": "auto-2026-03-21-apres-ski-club-moritzino",
+      "title": "Après Ski @ Club Moritzino",
+      "websiteExtraction": "moritzino-calendar",
+      "start": "2026-03-21",
+      "end": "2026-03-21",
+      "dateLabel": "21",
+      "monthLabel": "MAR",
+      "year": "2026",
+      "categories": [
+        "apres"
+      ],
+      "tags": [
+        "Après-ski"
+      ],
+      "summary": "Evento sulla neve a Club Moritzino · Piz La Ila, Alta Badia, con programma e dettagli nella fonte ufficiale.",
+      "summaries": {
+        "it": "Appuntamento musicale e après-ski al Club Moritzino, in quota al Piz La Ila.",
+        "de": "Musik und Après-Ski im Club Moritzino am Piz La Ila.",
+        "en": "Music and après-ski at Club Moritzino on Piz La Ila."
+      },
+      "place": "Club Moritzino · Piz La Ila, Alta Badia",
+      "venue": "Club Moritzino",
+      "source": "https://clubmoritzino.it/en/event/apres-ski-club-moritzino-41/",
+      "social": "https://www.instagram.com/clubmoritzino/",
+      "map": "https://www.google.com/maps/search/?api=1&query=Club%20Moritzino%20%C2%B7%20Piz%20La%20Ila%2C%20Alta%20Badia",
+      "accent": "#ff4fa3",
+      "featured": false
+    },
+    {
+      "id": "auto-2026-03-22-apres-ski-club-moritzino",
+      "title": "Après Ski @ Club Moritzino",
+      "websiteExtraction": "moritzino-calendar",
+      "start": "2026-03-22",
+      "end": "2026-03-22",
+      "dateLabel": "22",
+      "monthLabel": "MAR",
+      "year": "2026",
+      "categories": [
+        "apres"
+      ],
+      "tags": [
+        "Après-ski"
+      ],
+      "summary": "Evento sulla neve a Club Moritzino · Piz La Ila, Alta Badia, con programma e dettagli nella fonte ufficiale.",
+      "summaries": {
+        "it": "Appuntamento musicale e après-ski al Club Moritzino, in quota al Piz La Ila.",
+        "de": "Musik und Après-Ski im Club Moritzino am Piz La Ila.",
+        "en": "Music and après-ski at Club Moritzino on Piz La Ila."
+      },
+      "place": "Club Moritzino · Piz La Ila, Alta Badia",
+      "venue": "Club Moritzino",
+      "source": "https://clubmoritzino.it/en/event/apres-ski-club-moritzino-42/",
+      "social": "https://www.instagram.com/clubmoritzino/",
+      "map": "https://www.google.com/maps/search/?api=1&query=Club%20Moritzino%20%C2%B7%20Piz%20La%20Ila%2C%20Alta%20Badia",
+      "accent": "#ff7439",
+      "featured": false
+    },
+    {
+      "id": "auto-2026-03-27-apres-ski-club-moritzino",
+      "title": "Après Ski @ Club Moritzino",
+      "websiteExtraction": "moritzino-calendar",
+      "start": "2026-03-27",
+      "end": "2026-03-27",
+      "dateLabel": "27",
+      "monthLabel": "MAR",
+      "year": "2026",
+      "categories": [
+        "apres"
+      ],
+      "tags": [
+        "Après-ski"
+      ],
+      "summary": "Evento sulla neve a Club Moritzino · Piz La Ila, Alta Badia, con programma e dettagli nella fonte ufficiale.",
+      "summaries": {
+        "it": "Appuntamento musicale e après-ski al Club Moritzino, in quota al Piz La Ila.",
+        "de": "Musik und Après-Ski im Club Moritzino am Piz La Ila.",
+        "en": "Music and après-ski at Club Moritzino on Piz La Ila."
+      },
+      "place": "Club Moritzino · Piz La Ila, Alta Badia",
+      "venue": "Club Moritzino",
+      "source": "https://clubmoritzino.it/en/event/apres-ski-club-moritzino-43/",
+      "social": "https://www.instagram.com/clubmoritzino/",
+      "map": "https://www.google.com/maps/search/?api=1&query=Club%20Moritzino%20%C2%B7%20Piz%20La%20Ila%2C%20Alta%20Badia",
+      "accent": "#b0ef43",
+      "featured": false
+    },
+    {
+      "id": "auto-2026-04-03-apres-ski-club-moritzino",
+      "title": "Après Ski @ Club Moritzino",
+      "websiteExtraction": "moritzino-calendar",
+      "start": "2026-04-03",
+      "end": "2026-04-03",
+      "dateLabel": "03",
+      "monthLabel": "APR",
+      "year": "2026",
+      "categories": [
+        "apres"
+      ],
+      "tags": [
+        "Après-ski"
+      ],
+      "summary": "Evento sulla neve a Club Moritzino · Piz La Ila, Alta Badia, con programma e dettagli nella fonte ufficiale.",
+      "summaries": {
+        "it": "Appuntamento musicale e après-ski al Club Moritzino, in quota al Piz La Ila.",
+        "de": "Musik und Après-Ski im Club Moritzino am Piz La Ila.",
+        "en": "Music and après-ski at Club Moritzino on Piz La Ila."
+      },
+      "place": "Club Moritzino · Piz La Ila, Alta Badia",
+      "venue": "Club Moritzino",
+      "source": "https://clubmoritzino.it/en/event/apres-ski-club-moritzino-46/",
+      "social": "https://www.instagram.com/clubmoritzino/",
+      "map": "https://www.google.com/maps/search/?api=1&query=Club%20Moritzino%20%C2%B7%20Piz%20La%20Ila%2C%20Alta%20Badia",
+      "accent": "#ff4fa3",
+      "featured": false
+    },
+    {
+      "id": "auto-2026-04-04-apres-ski-club-moritzino",
+      "title": "Après Ski @ Club Moritzino",
+      "websiteExtraction": "moritzino-calendar",
+      "start": "2026-04-04",
+      "end": "2026-04-04",
+      "dateLabel": "04",
+      "monthLabel": "APR",
+      "year": "2026",
+      "categories": [
+        "apres"
+      ],
+      "tags": [
+        "Après-ski"
+      ],
+      "summary": "Evento sulla neve a Club Moritzino · Piz La Ila, Alta Badia, con programma e dettagli nella fonte ufficiale.",
+      "summaries": {
+        "it": "Appuntamento musicale e après-ski al Club Moritzino, in quota al Piz La Ila.",
+        "de": "Musik und Après-Ski im Club Moritzino am Piz La Ila.",
+        "en": "Music and après-ski at Club Moritzino on Piz La Ila."
+      },
+      "place": "Club Moritzino · Piz La Ila, Alta Badia",
+      "venue": "Club Moritzino",
+      "source": "https://clubmoritzino.it/en/event/apres-ski-club-moritzino-47/",
+      "social": "https://www.instagram.com/clubmoritzino/",
+      "map": "https://www.google.com/maps/search/?api=1&query=Club%20Moritzino%20%C2%B7%20Piz%20La%20Ila%2C%20Alta%20Badia",
+      "accent": "#ff7439",
+      "featured": false
+    },
+    {
+      "id": "auto-2026-04-04-atcg-violin-dj-set-andrea-casta",
+      "title": "ATCG | Violin Dj set Andrea Casta",
+      "websiteExtraction": "moritzino-calendar",
+      "start": "2026-04-04",
+      "end": "2026-04-04",
+      "dateLabel": "04",
+      "monthLabel": "APR",
+      "year": "2026",
+      "categories": [
+        "apres"
+      ],
+      "tags": [
+        "DJ",
+        "Après-ski"
+      ],
+      "summary": "Evento sulla neve a Club Moritzino · Piz La Ila, Alta Badia, con programma e dettagli nella fonte ufficiale.",
+      "summaries": {
+        "it": "Appuntamento musicale e après-ski al Club Moritzino, in quota al Piz La Ila.",
+        "de": "Musik und Après-Ski im Club Moritzino am Piz La Ila.",
+        "en": "Music and après-ski at Club Moritzino on Piz La Ila."
+      },
+      "place": "Club Moritzino · Piz La Ila, Alta Badia",
+      "venue": "Club Moritzino",
+      "source": "https://clubmoritzino.it/en/event/atcg-violin-dj-set-andrea-casta/",
+      "social": "https://www.instagram.com/clubmoritzino/",
+      "map": "https://www.google.com/maps/search/?api=1&query=Club%20Moritzino%20%C2%B7%20Piz%20La%20Ila%2C%20Alta%20Badia",
+      "accent": "#b0ef43",
+      "featured": false
+    },
+    {
+      "id": "auto-2026-04-05-apres-ski-club-moritzino",
+      "title": "Après Ski @ Club Moritzino",
+      "websiteExtraction": "moritzino-calendar",
+      "start": "2026-04-05",
+      "end": "2026-04-05",
+      "dateLabel": "05",
+      "monthLabel": "APR",
+      "year": "2026",
+      "categories": [
+        "apres"
+      ],
+      "tags": [
+        "Après-ski"
+      ],
+      "summary": "Evento sulla neve a Club Moritzino · Piz La Ila, Alta Badia, con programma e dettagli nella fonte ufficiale.",
+      "summaries": {
+        "it": "Appuntamento musicale e après-ski al Club Moritzino, in quota al Piz La Ila.",
+        "de": "Musik und Après-Ski im Club Moritzino am Piz La Ila.",
+        "en": "Music and après-ski at Club Moritzino on Piz La Ila."
+      },
+      "place": "Club Moritzino · Piz La Ila, Alta Badia",
+      "venue": "Club Moritzino",
+      "source": "https://clubmoritzino.it/en/event/apres-ski-club-moritzino-48/",
+      "social": "https://www.instagram.com/clubmoritzino/",
+      "map": "https://www.google.com/maps/search/?api=1&query=Club%20Moritzino%20%C2%B7%20Piz%20La%20Ila%2C%20Alta%20Badia",
+      "accent": "#ff4fa3",
+      "featured": false
+    },
+    {
+      "id": "auto-2026-04-06-apres-ski-club-moritzino",
+      "title": "Après Ski @ Club Moritzino",
+      "websiteExtraction": "moritzino-calendar",
+      "start": "2026-04-06",
+      "end": "2026-04-06",
+      "dateLabel": "06",
+      "monthLabel": "APR",
+      "year": "2026",
+      "categories": [
+        "apres"
+      ],
+      "tags": [
+        "Après-ski"
+      ],
+      "summary": "Evento sulla neve a Club Moritzino · Piz La Ila, Alta Badia, con programma e dettagli nella fonte ufficiale.",
+      "summaries": {
+        "it": "Appuntamento musicale e après-ski al Club Moritzino, in quota al Piz La Ila.",
+        "de": "Musik und Après-Ski im Club Moritzino am Piz La Ila.",
+        "en": "Music and après-ski at Club Moritzino on Piz La Ila."
+      },
+      "place": "Club Moritzino · Piz La Ila, Alta Badia",
+      "venue": "Club Moritzino",
+      "source": "https://clubmoritzino.it/en/event/apres-ski-club-moritzino-49/",
+      "social": "https://www.instagram.com/clubmoritzino/",
+      "map": "https://www.google.com/maps/search/?api=1&query=Club%20Moritzino%20%C2%B7%20Piz%20La%20Ila%2C%20Alta%20Badia",
+      "accent": "#ff7439",
+      "featured": false
+    },
+    {
+      "id": "auto-2026-04-06-the-sky-carousel-vintage-party-season-closing",
+      "title": "The Sky Carousel Vintage Party Season Closing",
+      "websiteExtraction": "moritzino-calendar",
+      "start": "2026-04-06",
+      "end": "2026-04-06",
+      "dateLabel": "06",
+      "monthLabel": "APR",
+      "year": "2026",
+      "categories": [
+        "retro",
+        "costume",
+        "apres"
+      ],
+      "tags": [
+        "Retro",
+        "Vintage",
+        "Après-ski"
+      ],
+      "summary": "Evento sulla neve a Club Moritzino · Piz La Ila, Alta Badia, con programma e dettagli nella fonte ufficiale.",
+      "summaries": {
+        "it": "Party vintage di chiusura stagione al Club Moritzino.",
+        "de": "Vintage-Party zum Saisonabschluss im Club Moritzino.",
+        "en": "Vintage season-closing party at Club Moritzino."
+      },
+      "place": "Club Moritzino · Piz La Ila, Alta Badia",
+      "venue": "Club Moritzino",
+      "source": "https://clubmoritzino.it/en/event/the-sky-carousel-vintage-party-season-closing/",
+      "social": "https://www.instagram.com/clubmoritzino/",
+      "map": "https://www.google.com/maps/search/?api=1&query=Club%20Moritzino%20%C2%B7%20Piz%20La%20Ila%2C%20Alta%20Badia",
+      "accent": "#b0ef43",
+      "featured": false
+    },
+    {
+      "id": "auto-2026-04-10-apres-ski-club-moritzino",
+      "title": "Après Ski @ Club Moritzino",
+      "websiteExtraction": "moritzino-calendar",
+      "start": "2026-04-10",
+      "end": "2026-04-10",
+      "dateLabel": "10",
+      "monthLabel": "APR",
+      "year": "2026",
+      "categories": [
+        "apres"
+      ],
+      "tags": [
+        "Après-ski"
+      ],
+      "summary": "Evento sulla neve a Club Moritzino · Piz La Ila, Alta Badia, con programma e dettagli nella fonte ufficiale.",
+      "summaries": {
+        "it": "Appuntamento musicale e après-ski al Club Moritzino, in quota al Piz La Ila.",
+        "de": "Musik und Après-Ski im Club Moritzino am Piz La Ila.",
+        "en": "Music and après-ski at Club Moritzino on Piz La Ila."
+      },
+      "place": "Club Moritzino · Piz La Ila, Alta Badia",
+      "venue": "Club Moritzino",
+      "source": "https://clubmoritzino.it/en/event/apres-ski-club-moritzino-50/",
+      "social": "https://www.instagram.com/clubmoritzino/",
+      "map": "https://www.google.com/maps/search/?api=1&query=Club%20Moritzino%20%C2%B7%20Piz%20La%20Ila%2C%20Alta%20Badia",
+      "accent": "#ff4fa3",
+      "featured": false
+    },
+    {
+      "id": "auto-2026-04-11-apres-ski-club-moritzino",
+      "title": "Après Ski @ Club Moritzino",
+      "websiteExtraction": "moritzino-calendar",
+      "start": "2026-04-11",
+      "end": "2026-04-11",
+      "dateLabel": "11",
+      "monthLabel": "APR",
+      "year": "2026",
+      "categories": [
+        "apres"
+      ],
+      "tags": [
+        "Après-ski"
+      ],
+      "summary": "Evento sulla neve a Club Moritzino · Piz La Ila, Alta Badia, con programma e dettagli nella fonte ufficiale.",
+      "summaries": {
+        "it": "Appuntamento musicale e après-ski al Club Moritzino, in quota al Piz La Ila.",
+        "de": "Musik und Après-Ski im Club Moritzino am Piz La Ila.",
+        "en": "Music and après-ski at Club Moritzino on Piz La Ila."
+      },
+      "place": "Club Moritzino · Piz La Ila, Alta Badia",
+      "venue": "Club Moritzino",
+      "source": "https://clubmoritzino.it/en/event/apres-ski-club-moritzino-51/",
+      "social": "https://www.instagram.com/clubmoritzino/",
+      "map": "https://www.google.com/maps/search/?api=1&query=Club%20Moritzino%20%C2%B7%20Piz%20La%20Ila%2C%20Alta%20Badia",
+      "accent": "#ff7439",
+      "featured": false
+    },
+    {
+      "id": "auto-2026-04-17-apres-ski-club-moritzino",
+      "title": "Après Ski @ Club Moritzino",
+      "websiteExtraction": "moritzino-calendar",
+      "start": "2026-04-17",
+      "end": "2026-04-17",
+      "dateLabel": "17",
+      "monthLabel": "APR",
+      "year": "2026",
+      "categories": [
+        "apres"
+      ],
+      "tags": [
+        "Après-ski"
+      ],
+      "summary": "Evento sulla neve a Club Moritzino · Piz La Ila, Alta Badia, con programma e dettagli nella fonte ufficiale.",
+      "summaries": {
+        "it": "Appuntamento musicale e après-ski al Club Moritzino, in quota al Piz La Ila.",
+        "de": "Musik und Après-Ski im Club Moritzino am Piz La Ila.",
+        "en": "Music and après-ski at Club Moritzino on Piz La Ila."
+      },
+      "place": "Club Moritzino · Piz La Ila, Alta Badia",
+      "venue": "Club Moritzino",
+      "source": "https://clubmoritzino.it/en/event/apres-ski-club-moritzino-52/",
+      "social": "https://www.instagram.com/clubmoritzino/",
+      "map": "https://www.google.com/maps/search/?api=1&query=Club%20Moritzino%20%C2%B7%20Piz%20La%20Ila%2C%20Alta%20Badia",
+      "accent": "#b0ef43",
+      "featured": false
+    },
+    {
+      "id": "auto-2026-04-18-apres-ski-club-moritzino",
+      "title": "Après Ski @ Club Moritzino",
+      "websiteExtraction": "moritzino-calendar",
+      "start": "2026-04-18",
+      "end": "2026-04-18",
+      "dateLabel": "18",
+      "monthLabel": "APR",
+      "year": "2026",
+      "categories": [
+        "apres"
+      ],
+      "tags": [
+        "Après-ski"
+      ],
+      "summary": "Evento sulla neve a Club Moritzino · Piz La Ila, Alta Badia, con programma e dettagli nella fonte ufficiale.",
+      "summaries": {
+        "it": "Appuntamento musicale e après-ski al Club Moritzino, in quota al Piz La Ila.",
+        "de": "Musik und Après-Ski im Club Moritzino am Piz La Ila.",
+        "en": "Music and après-ski at Club Moritzino on Piz La Ila."
+      },
+      "place": "Club Moritzino · Piz La Ila, Alta Badia",
+      "venue": "Club Moritzino",
+      "source": "https://clubmoritzino.it/en/event/apres-ski-club-moritzino-53/",
+      "social": "https://www.instagram.com/clubmoritzino/",
+      "map": "https://www.google.com/maps/search/?api=1&query=Club%20Moritzino%20%C2%B7%20Piz%20La%20Ila%2C%20Alta%20Badia",
+      "accent": "#ff4fa3",
+      "featured": false
+    },
+    {
+      "id": "auto-2026-04-19-apres-ski-club-moritzino",
+      "title": "Après Ski @ Club Moritzino",
+      "websiteExtraction": "moritzino-calendar",
+      "start": "2026-04-19",
+      "end": "2026-04-19",
+      "dateLabel": "19",
+      "monthLabel": "APR",
+      "year": "2026",
+      "categories": [
+        "apres"
+      ],
+      "tags": [
+        "Après-ski"
+      ],
+      "summary": "Evento sulla neve a Club Moritzino · Piz La Ila, Alta Badia, con programma e dettagli nella fonte ufficiale.",
+      "summaries": {
+        "it": "Appuntamento musicale e après-ski al Club Moritzino, in quota al Piz La Ila.",
+        "de": "Musik und Après-Ski im Club Moritzino am Piz La Ila.",
+        "en": "Music and après-ski at Club Moritzino on Piz La Ila."
+      },
+      "place": "Club Moritzino · Piz La Ila, Alta Badia",
+      "venue": "Club Moritzino",
+      "source": "https://clubmoritzino.it/en/event/apres-ski-club-moritzino-54/",
+      "social": "https://www.instagram.com/clubmoritzino/",
+      "map": "https://www.google.com/maps/search/?api=1&query=Club%20Moritzino%20%C2%B7%20Piz%20La%20Ila%2C%20Alta%20Badia",
+      "accent": "#ff7439",
+      "featured": false
+    },
+    {
+      "id": "auto-2026-04-25-apres-ski-club-moritzino",
+      "title": "Après Ski @ Club Moritzino",
+      "websiteExtraction": "moritzino-calendar",
+      "start": "2026-04-25",
+      "end": "2026-04-25",
+      "dateLabel": "25",
+      "monthLabel": "APR",
+      "year": "2026",
+      "categories": [
+        "apres"
+      ],
+      "tags": [
+        "Après-ski"
+      ],
+      "summary": "Evento sulla neve a Club Moritzino · Piz La Ila, Alta Badia, con programma e dettagli nella fonte ufficiale.",
+      "summaries": {
+        "it": "Appuntamento musicale e après-ski al Club Moritzino, in quota al Piz La Ila.",
+        "de": "Musik und Après-Ski im Club Moritzino am Piz La Ila.",
+        "en": "Music and après-ski at Club Moritzino on Piz La Ila."
+      },
+      "place": "Club Moritzino · Piz La Ila, Alta Badia",
+      "venue": "Club Moritzino",
+      "source": "https://clubmoritzino.it/en/event/apres-ski-club-moritzino-55/",
+      "social": "https://www.instagram.com/clubmoritzino/",
+      "map": "https://www.google.com/maps/search/?api=1&query=Club%20Moritzino%20%C2%B7%20Piz%20La%20Ila%2C%20Alta%20Badia",
+      "accent": "#b0ef43",
+      "featured": false
+    },
+    {
       "id": "k1-halloween-open-air-2026",
       "title": "K1 Halloween Open Air",
       "start": "2026-10-31",
@@ -10,22 +1526,94 @@
       "dateLabel": "31",
       "monthLabel": "OTT",
       "year": "2026",
-      "categories": ["apres", "costume"],
-      "tags": ["Halloween", "DJ", "18+"],
+      "categories": [
+        "apres",
+        "costume"
+      ],
+      "tags": [
+        "Halloween",
+        "DJ",
+        "18+"
+      ],
       "venue": "K1",
       "summary": "Halloween con DJ Juli, Double Dee, Ivan Fillini e Hufe. Ingresso gratuito, dress code horror e accesso dai 18 anni. Outdoor 18:00–00:00; indoor 18:00–03:00 del giorno successivo.",
       "place": "K1 · Riscone / Reischach, Brunico / Bruneck",
       "source": "https://www.instagram.com/p/De_mIcpsLrA/",
       "social": "https://www.instagram.com/k1.kronplatz/",
       "socialSourceId": "k1-instagram",
-      "hours": { "start": "18:00", "end": "03:00", "overnight": true },
+      "hours": {
+        "start": "18:00",
+        "end": "03:00",
+        "overnight": true
+      },
       "map": "https://www.google.com/maps/search/?api=1&query=K1+Reischach+Kronplatz",
       "accent": "#b0ef43",
       "featured": false
     },
     {
+      "id": "auto-2026-11-20-k1-season-opening",
+      "title": "K1 Season Opening",
+      "websiteExtraction": "k1-announcements",
+      "start": "2026-11-20",
+      "end": "2026-11-21",
+      "dateLabel": "20–21",
+      "monthLabel": "NOV",
+      "year": "2026",
+      "categories": [
+        "apres"
+      ],
+      "tags": [
+        "Après-ski"
+      ],
+      "summary": "Evento sulla neve a K1 · Riscone / Reischach, Brunico / Bruneck, con programma e dettagli nella fonte ufficiale.",
+      "summaries": {
+        "it": "Due giorni per festeggiare l’apertura della stagione al K1. Orari e programma in aggiornamento.",
+        "de": "Zwei Tage zum Saisonauftakt im K1. Uhrzeiten und Programm folgen.",
+        "en": "Two days celebrating the season opening at K1. Times and programme to follow."
+      },
+      "place": "K1 · Riscone / Reischach, Brunico / Bruneck",
+      "venue": "K1",
+      "source": "https://k-1.bz/en/",
+      "social": "https://www.instagram.com/k1.kronplatz/",
+      "map": "https://www.google.com/maps/search/?api=1&query=K1%20%C2%B7%20Riscone%20%2F%20Reischach%2C%20Brunico%20%2F%20Bruneck",
+      "accent": "#ff4fa3",
+      "featured": false
+    },
+    {
+      "id": "auto-2026-11-21-sfilata-dei-krampus",
+      "venue": "Hexenkessel",
+      "summaries": {
+        "it": "Sfilata dei Krampus a Cadipietra, seguita dall’afterparty all’Hexenkessel. Warm-up dalle 12:00; sfilata alle 19:30. Orario dell’afterparty non indicato.",
+        "de": "Krampuslauf in Steinhaus mit anschließender Afterparty im Hexenkessel. Warm-up ab 12:00 Uhr, Umzug um 19:30 Uhr. Beginn der Afterparty nicht angegeben.",
+        "en": "Krampus parade in Steinhaus followed by an afterparty at Hexenkessel. Warm-up from 12:00, parade at 19:30. Afterparty start time not specified."
+      },
+      "title": "Sfilata dei Krampus",
+      "start": "2026-11-21",
+      "end": "2026-11-21",
+      "dateLabel": "21",
+      "monthLabel": "NOV",
+      "year": "2026",
+      "categories": [
+        "apres"
+      ],
+      "tags": [
+        "Après-ski"
+      ],
+      "summary": "Quest'anno i Krampus si esibiscono per la quarta volta in Valle Aurina. Lo spettacolo inizia alle 19.30! A seguire, una grande festa dopo lo spettacolo nella Hexenkessel! Warm up party dalle ore 12. Inizio spettacolo: ore 19.30 Ingresso…",
+      "place": "Cadipietra",
+      "source": "https://www.comune.valleaurina.bz.it/it/Vivere_il_comune/Eventi/Sfilata_dei_Krampus",
+      "social": "https://www.instagram.com/hexenkessel_klausberg/",
+      "map": "https://www.google.com/maps/search/?api=1&query=Cadipietra",
+      "accent": "#ff4fa3",
+      "featured": false
+    },
+    {
       "id": "auto-2026-12-11-bruning-krampus-the-after-show-party",
-      "venue": { "it": "Sala manifestazioni", "de": "Veranstaltungssaal", "en": "Event hall" },
+      "venue": {
+        "it": "Sala manifestazioni",
+        "de": "Veranstaltungssaal",
+        "en": "Event hall"
+      },
       "title": "Bruning Krampus - the after-show Party",
       "start": "2026-12-11",
       "end": "2026-12-11",
@@ -54,7 +1642,11 @@
     },
     {
       "id": "auto-2027-01-02-back-to-1976-giornata-di-sci-old-school-con-simon-mac-live",
-      "venue": { "it": "Stazione a monte Schwemmalm", "de": "Bergstation Schwemmalm", "en": "Schwemmalm mountain station" },
+      "venue": {
+        "it": "Stazione a monte Schwemmalm",
+        "de": "Bergstation Schwemmalm",
+        "en": "Schwemmalm mountain station"
+      },
       "title": "Back to 1976 - Giornata di sci old school con Simon & Mac LIVE",
       "start": "2027-01-02",
       "end": "2027-01-02",
@@ -144,7 +1736,11 @@
     },
     {
       "id": "auto-2027-02-27-gare-di-sci-alla-vecchia-maniera",
-      "venue": { "it": "Centro scuola sci Breiteben", "de": "Skischulzentrum Breiteben", "en": "Breiteben ski school centre" },
+      "venue": {
+        "it": "Centro scuola sci Breiteben",
+        "de": "Skischulzentrum Breiteben",
+        "en": "Breiteben ski school centre"
+      },
       "title": "Gare di sci alla vecchia maniera",
       "start": "2027-02-27",
       "end": "2027-02-27",
@@ -413,7 +2009,11 @@
     },
     {
       "id": "auto-2027-03-29-schwemmalm-open-air",
-      "venue": { "it": "Stazione a monte Schwemmalm", "de": "Bergstation Schwemmalm", "en": "Schwemmalm mountain station" },
+      "venue": {
+        "it": "Stazione a monte Schwemmalm",
+        "de": "Bergstation Schwemmalm",
+        "en": "Schwemmalm mountain station"
+      },
       "title": "Schwemmalm Open Air",
       "start": "2027-03-29",
       "end": "2027-03-29",
@@ -441,7 +2041,11 @@
     },
     {
       "id": "oldschool-skiday-solda",
-      "venue": { "it": "Funivia di Solda", "de": "Seilbahn Sulden", "en": "Sulden cable car" },
+      "venue": {
+        "it": "Funivia di Solda",
+        "de": "Seilbahn Sulden",
+        "en": "Sulden cable car"
+      },
       "title": "Oldschool Skiday Solda",
       "start": "2027-04-03",
       "end": "2027-04-03",

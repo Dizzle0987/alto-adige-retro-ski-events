@@ -160,6 +160,9 @@ const eventTranslations = {
 
 const placeTranslations = {
   de: {
+    "K1 · Riscone / Reischach, Brunico / Bruneck": "K1 · Reischach, Bruneck",
+    "Cadipietra": "Steinhaus",
+    "Musikpavillon · Campo Tures / Sand in Taufers, Valle Aurina / Ahrntal": "Musikpavillon · Sand in Taufers, Ahrntal",
     "San Vigilio, Regione dolomitica Plan de Corones": "St. Vigil, Dolomitenregion Kronplatz",
     "Ultimo, Merano e dintorni": "Ulten, Meran und Umgebung",
     "Fiè allo Sciliar, Regione dolomitica Alpe di Siusi": "Völs am Schlern, Dolomitenregion Seiser Alm",
@@ -169,6 +172,8 @@ const placeTranslations = {
     "Area sciistica di Watles": "Skigebiet Watles",
   },
   en: {
+    "Cadipietra": "Steinhaus / Cadipietra",
+    "Musikpavillon · Campo Tures / Sand in Taufers, Valle Aurina / Ahrntal": "Music pavilion · Sand in Taufers / Campo Tures, Ahrntal",
     "San Vigilio, Regione dolomitica Plan de Corones": "San Vigilio, Kronplatz Dolomites Region",
     "Ultimo, Merano e dintorni": "Ultimo, Merano and environs",
     "Fiè allo Sciliar, Regione dolomitica Alpe di Siusi": "Fiè allo Sciliar, Alpe di Siusi Dolomites Region",
@@ -214,6 +219,7 @@ const valleyLabels = {
   siusi: { it: "Alpe di Siusi", de: "Seiser Alm", en: "Alpe di Siusi" },
   venosta: { it: "Val Venosta", de: "Vinschgau", en: "Venosta Valley" },
   altaBadia: { it: "Alta Badia", de: "Alta Badia", en: "Alta Badia" },
+  ahrntal: { it: "Valle Aurina", de: "Ahrntal", en: "Ahrntal" },
   other: { it: "Altre zone", de: "Andere Gebiete", en: "Other areas" },
 };
 
@@ -267,11 +273,13 @@ const localizedEvent = (event) => {
     localized.summary = automaticSummary(event);
   }
   if (event.socialSourceId && !translation.summary) localized.summary = automaticSummary(event);
+  if (event.summaries?.[currentLanguage]) localized.summary = event.summaries[currentLanguage];
   return localized;
 };
 
 const valleyKeyFor = (event) => {
   const value = `${event.title} ${event.place} ${event.source}`.toLowerCase();
+  if (/ahrntal|valle aurina|cadipietra|steinhaus|campo tures|sand in taufers/.test(value)) return "ahrntal";
   if (/plan de corones|kronplatz|san vigilio|brunico/.test(value)) return "kronplatz";
   if (/ultimo|ulten|schwemmalm/.test(value)) return "ultimo";
   if (/val gardena|selva|sëlva|ortisei|urtijëi|wolkenstein/.test(value)) return "gardena";
@@ -316,7 +324,7 @@ const renderEvent = (rawEvent) => {
   main.append(tags);
   if (event.venue) main.append(element("div", "venue-label", event.venue));
   main.append(element("h3", "", event.title), element("p", "", event.summary), element("p", "place", event.place));
-  if (event.socialSourceId) {
+  if (event.socialSourceId || event.hours) {
     const words = copy[currentLanguage];
     const hours = event.hours;
     const label = hours?.start
