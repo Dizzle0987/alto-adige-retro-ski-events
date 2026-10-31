@@ -1,4 +1,5 @@
 import { calendarState, eventPeriod } from "./calendar.mjs?v=3";
+import { officialEventTitle } from "./event-titles.mjs";
 
 const eventList = document.querySelector(".event-list");
 const socialList = document.querySelector(".social-links");
@@ -267,7 +268,7 @@ const automaticSummary = (event) => {
 const localizedEvent = (event) => {
   const translation = eventTranslations[currentLanguage]?.[event.id] || {};
   const place = translation.place || localizedPlace(event.place, currentLanguage);
-  const title = event.titles?.[currentLanguage] || translation.title || event.title;
+  const title = officialEventTitle(event, currentLanguage);
   const venue = typeof event.venue === "object" ? event.venue[currentLanguage] || event.venue.de || event.venue.it : event.venue;
   const localized = { ...event, ...translation, title, place, venue };
   if (currentLanguage !== "it" && event.id.startsWith("auto-") && !translation.summary) {
