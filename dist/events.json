@@ -391,8 +391,7 @@
       ],
       "tags": [
         "Vintage",
-        "No carving",
-        "Top pick"
+        "No carving"
       ],
       "summary": "Due giorni tra rifugi, Vintage Village a La Villa, gara con sci d’epoca e after party a Corvara.",
       "place": "Alta Badia · La Villa, La Para e Corvara",
@@ -400,7 +399,7 @@
       "social": "https://www.instagram.com/alta_badia_official/",
       "map": "https://www.google.com/maps/search/?api=1&query=La+Villa+Alta+Badia",
       "accent": "#f5ec35",
-      "featured": true
+      "featured": false
     }
   ]
 }

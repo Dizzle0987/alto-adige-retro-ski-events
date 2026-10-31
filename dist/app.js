@@ -80,7 +80,7 @@ const eventTranslations = {
     "rock-meets-beats": { summary: "Gitarren, Hits und DJ-Sets beim kostenlosen Après-Ski am Fuße der Dolomiten, von 16:00 bis 23:00 Uhr.", place: "Str. Mëisules 145 · Wolkenstein in Gröden", tags: ["Live + DJ", "Eintritt frei"] },
     "val-gardena-winter-finals": { summary: "Opening-Party, sechs Hütten an sechs Tagen und ein großes Open-Air-Finale an der Ciampinoi-Bahn.", place: "Wolkenstein in Gröden · Hütten und Dorfzentrum", tags: ["8 Tage", "Electronic"] },
     "oldschool-skiday-solda": { summary: "Klassische Ski, Omas Holzlatten, Neon-Stirnbänder und Retro-Après-Ski. Von 09:00 Uhr bis in die Nacht.", place: "Seilbahn Sulden · Stilfs", tags: ["Old School", "80er-Skianzüge"] },
-    "ski-carousel-vintage-party": { summary: "Zwei Tage zwischen Hütten, Vintage Village in La Villa, Rennen auf alten Skiern und Afterparty in Corvara.", place: "Alta Badia · La Villa, La Para und Corvara", tags: ["Vintage", "No carving", "Top-Tipp"] },
+    "ski-carousel-vintage-party": { summary: "Zwei Tage zwischen Hütten, Vintage Village in La Villa, Rennen auf alten Skiern und Afterparty in Corvara.", place: "Alta Badia · La Villa, La Para und Corvara", tags: ["Vintage", "No carving"] },
   },
   en: {
     "3-zinnen-schlager": { summary: "A week of Schlager, mountain-hut parties and themed nights: all in white, Tyrolean style and LED.", place: "Dobbiaco / Toblach · 3 Zinnen area", tags: ["Après-ski", "Dress code"] },
@@ -88,7 +88,7 @@ const eventTranslations = {
     "rock-meets-beats": { summary: "Guitars, hits and DJ sets at a free après-ski party beneath the Dolomites, from 4 pm to 11 pm.", place: "Str. Mëisules 145 · Selva di Val Gardena", tags: ["Live + DJ", "Free entry"] },
     "val-gardena-winter-finals": { summary: "An opening party, six mountain huts in six days and a big open-air finale at the Ciampinoi gondola.", place: "Selva di Val Gardena · mountain huts and village centre", tags: ["8 days", "Electronic"] },
     "oldschool-skiday-solda": { summary: "Classic skis, grandma’s wooden planks, neon headbands and retro après-ski. From 9 am until late.", place: "Solda cable car · Stelvio", tags: ["Old school", "80s ski suits"] },
-    "ski-carousel-vintage-party": { summary: "Two days of mountain huts, the Vintage Village in La Villa, a race on old skis and an afterparty in Corvara.", place: "Alta Badia · La Villa, La Para and Corvara", tags: ["Vintage", "No carving", "Top pick"] },
+    "ski-carousel-vintage-party": { summary: "Two days of mountain huts, the Vintage Village in La Villa, a race on old skis and an afterparty in Corvara.", place: "Alta Badia · La Villa, La Para and Corvara", tags: ["Vintage", "No carving"] },
   },
 };
 
@@ -163,7 +163,7 @@ const dateParts = (event) => {
 const renderEvent = (rawEvent) => {
   const event = localizedEvent(rawEvent);
   const formattedDate = dateParts(event);
-  const article = element("article", `event-card${event.featured ? " featured" : ""}`);
+  const article = element("article", "event-card");
   article.dataset.categories = event.categories.join(" ");
   article.dataset.valley = valleyKeyFor(rawEvent);
   article.style.setProperty("--accent", event.accent);
