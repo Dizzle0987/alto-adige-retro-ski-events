@@ -17,8 +17,7 @@ test("offline pipeline: publish, merge hours, reject impostors, hold conflicts, 
   const now = new Date();
   const timestamp = now.toISOString();
   const tomorrow = new Date(now.getTime() + 86400000).toISOString().slice(0, 10);
-  const month = Number(tomorrow.slice(5, 7));
-  const eventDate = month >= 11 || month <= 4 ? tomorrow : `${tomorrow.slice(0, 4)}-11-20`;
+  const eventDate = tomorrow;
   const source = { id: "official", name: "Fixture venue", url: "https://www.instagram.com/fixture.venue/", autoPublish: true, venue: "Fixture venue", venueAliases: ["Fixture"] };
   const rival = { ...source, id: "other", url: "https://www.instagram.com/fixture.other/", venue: "Other venue", venueAliases: ["Other venue"] };
   await save(path.join(root, "data/discovery-sources.json"), { web: [], instagram: [source, rival] });
