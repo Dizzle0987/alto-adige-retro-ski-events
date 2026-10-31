@@ -2,13 +2,17 @@ import { readFile, writeFile } from "node:fs/promises";
 import { fileURLToPath } from "node:url";
 import path from "node:path";
 import { fetchLocalizedTitles } from "./localized-titles.mjs";
+import { assessInstagramPost, sameSocialEvent, mergeSocialAnnouncement } from "./social-events.mjs";
+import { checkApifyFreeBudget } from "./apify-budget.mjs";
 
-const repositoryRoot = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
+const repositoryRoot = process.env.DISCOVERY_DATA_ROOT || path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const sourcesPath = path.join(repositoryRoot, "data", "discovery-sources.json");
 const candidatesPath = path.join(repositoryRoot, "data", "event-candidates.json");
 const eventsPath = path.join(repositoryRoot, "dist", "events.json");
 const offline = process.env.AUTO_UPDATE_OFFLINE === "1";
 const apifyToken = process.env.APIFY_TOKEN?.trim();
+const replayPath = process.env.SOCIAL_REPLAY_PATH;
+const replayLast = process.env.APIFY_REPLAY_LAST === "1";
 const monthLabels = ["GEN", "FEB", "MAR", "APR", "MAG", "GIU", "LUG", "AGO", "SET", "OTT", "NOV", "DIC"];
 
 const todayInRome = () => {
@@ -380,7 +384,7 @@ const conciseSummary = (candidate) => {
 const siteEventFromCandidate = (candidate, index) => {
   const classifications = classificationsForCandidate(candidate);
   return {
-    id: `auto-${candidate.start}-${slug(candidate.title)}`,
+    id: candidate.kind === "instagram" ? `auto-${candidate.sourceId}-${candidate.start}-${slug(candidate.title)}` : `auto-${candidate.start}-${slug(candidate.title)}`,
     title: candidate.title,
     ...(candidate.titles && Object.keys(candidate.titles).length ? { titles: candidate.titles } : {}),
     start: candidate.start,
@@ -391,7 +395,13 @@ const siteEventFromCandidate = (candidate, index) => {
     summary: conciseSummary(candidate),
     place: candidate.location,
     source: candidate.url,
-    social: socialForCandidate(candidate),
+    social: candidate.kind === "instagram" ? sources.instagram.find((source) => source.id === candidate.sourceId)?.url : socialForCandidate(candidate),
+    ...(candidate.kind === "instagram" ? {
+      socialSourceId: candidate.sourceId,
+      provenance: [candidate.evidence],
+      ...(candidate.hours ? { hours: candidate.hours } : {}),
+      ...(candidate.endsAtDate ? { endsAtDate: candidate.endsAtDate } : {}),
+    } : {}),
     map: `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(candidate.location)}`,
     accent: eventPalette[index % eventPalette.length],
     featured: false
@@ -399,18 +409,24 @@ const siteEventFromCandidate = (candidate, index) => {
 };
 
 const scanInstagram = async (sources, knownEvents) => {
+  const budget = await checkApifyFreeBudget(apifyToken);
+  if (!budget.allowed) return {
+    status: budget.reason,
+    reports: sources.map((source) => ({ id: source.id, name: source.name, kind: "instagram", url: source.url, status: budget.reason, found: 0 })),
+    candidates: [],
+  };
   const endpoint = new URL("https://api.apify.com/v2/actors/apify~instagram-scraper/run-sync-get-dataset-items");
-  endpoint.searchParams.set("token", apifyToken);
+  endpoint.searchParams.set("maxTotalChargeUsd", String(budget.maxRunUsd));
   endpoint.searchParams.set("timeout", "120");
   const response = await fetch(endpoint, {
     method: "POST",
-    headers: { "content-type": "application/json" },
+    headers: { "content-type": "application/json", authorization: `Bearer ${apifyToken}` },
     body: JSON.stringify({
       resultsType: "posts",
       directUrls: sources.map((source) => source.url),
       resultsLimit: 6,
       onlyPostsNewerThan: "21 days",
-      skipPinnedPosts: true
+      skipPinnedPosts: false
     }),
     signal: AbortSignal.timeout(130000)
   });
@@ -418,29 +434,20 @@ const scanInstagram = async (sources, knownEvents) => {
   const items = await response.json();
   if (!Array.isArray(items)) throw new Error("Apify response is not a dataset");
 
-  const sourceByUsername = new Map(sources.map((source) => [instagramUsername(source.url), source]));
+  return analyzeInstagramItems(items, sources);
+};
+
+const analyzeInstagramItems = (items, sources) => {
   const candidates = items
     .map((item) => {
-      const source = sourceByUsername.get(String(item.ownerUsername || "").toLowerCase())
-        || sourceByUsername.get(instagramUsername(item.inputUrl || ""));
-      const caption = typeof item.caption === "string" ? item.caption.replace(/\s+/g, " ").trim() : "";
-      if (!source || !caption || !isRelevant(caption)) return null;
-      const publishedAt = typeof item.timestamp === "string" ? item.timestamp : null;
-      const url = item.url || (item.shortCode ? `https://www.instagram.com/p/${item.shortCode}/` : source.url);
-      const title = caption.split(/[.!?\n]/)[0].slice(0, 120) || `${source.name} social candidate`;
-      if (knownEvents.some((event) => titleScore(event.title, title) >= 0.8)) return null;
+      const result = assessInstagramPost(item, sources);
+      if (["rejected", "ignored"].includes(result.status)) return null;
       return {
-        id: `${source.id}-${item.shortCode || slug(`${publishedAt}-${title}`)}`,
-        kind: "instagram",
-        title,
-        start: null,
-        end: null,
-        location: item.locationName || null,
-        publishedAt,
-        url,
-        sourceId: source.id,
-        sourceName: source.name,
-        excerpt: caption.slice(0, 500)
+        id: `${result.sourceId}-${item.shortCode || slug(result.url)}`,
+        title: result.title || "Annuncio da verificare",
+        publishedAt: item.timestamp || null,
+        excerpt: result.evidence.caption,
+        ...result,
       };
     })
     .filter(Boolean);
@@ -448,16 +455,34 @@ const scanInstagram = async (sources, knownEvents) => {
   const countBySource = new Map();
   candidates.forEach((candidate) => countBySource.set(candidate.sourceId, (countBySource.get(candidate.sourceId) || 0) + 1));
   return {
+    status: "checked",
     reports: sources.map((source) => ({
       id: source.id,
       name: source.name,
       kind: "instagram",
       url: source.url,
-      status: "checked",
-      found: countBySource.get(source.id) || 0
+      status: items.some((item) => String(item.ownerUsername || "").toLowerCase() === instagramUsername(source.url)) ? "checked" : "no-author-data",
+      found: countBySource.get(source.id) || 0,
+      received: items.filter((item) => String(item.ownerUsername || "").toLowerCase() === instagramUsername(source.url)).length,
     })),
     candidates
   };
+};
+
+const replayLastInstagramRun = async () => {
+  const get = async (resource) => {
+    const response = await fetch(`https://api.apify.com/v2/${resource}`, {
+      headers: { authorization: `Bearer ${apifyToken}` }, signal: AbortSignal.timeout(20000),
+    });
+    if (!response.ok) throw new Error(`Replay HTTP ${response.status}`);
+    return response.json();
+  };
+  const runs = await get("actors/apify~instagram-scraper/runs?desc=true&limit=1&status=SUCCEEDED");
+  const run = runs.data?.items?.[0];
+  if (!run?.defaultDatasetId || run.status !== "SUCCEEDED") throw new Error("No successful Instagram run to replay");
+  const items = await get(`datasets/${encodeURIComponent(run.defaultDatasetId)}/items?format=json&clean=true`);
+  if (!Array.isArray(items)) throw new Error("Replay dataset unavailable");
+  return items;
 };
 
 const sources = JSON.parse(await readFile(sourcesPath, "utf8"));
@@ -477,7 +502,7 @@ if (offline) {
 
 const reports = [];
 const candidates = [];
-const webResults = await Promise.all(sources.web.map(async (source) => {
+const webResults = replayPath || replayLast ? [] : await Promise.all(sources.web.map(async (source) => {
   try {
     return await scanWebSource(source, today, eventsData.events);
   } catch (error) {
@@ -491,9 +516,19 @@ webResults.forEach((result) => {
   reports.push(result.report);
   candidates.push(...result.candidates);
 });
+if (replayPath || replayLast) {
+  reports.push(...previous.sources.filter((source) => source.kind === "web").map((source) => ({ ...source, status: "not-checked-replay" })));
+  candidates.push(...previous.candidates.filter((candidate) => candidate.kind === "web"));
+}
 
 let instagramStatus = "awaiting-token";
-if (!apifyToken) {
+if (replayPath || replayLast) {
+  const items = replayPath ? JSON.parse(await readFile(replayPath, "utf8")) : await replayLastInstagramRun();
+  const replay = analyzeInstagramItems(items, sources.instagram);
+  instagramStatus = "replayed";
+  reports.push(...replay.reports);
+  candidates.push(...replay.candidates);
+} else if (!apifyToken) {
   sources.instagram.forEach((source) => reports.push({
     id: source.id,
     name: source.name,
@@ -505,7 +540,7 @@ if (!apifyToken) {
 } else {
   try {
     const instagram = await scanInstagram(sources.instagram, eventsData.events);
-    instagramStatus = "checked";
+    instagramStatus = instagram.status;
     reports.push(...instagram.reports);
     candidates.push(...instagram.candidates);
   } catch (error) {
@@ -522,35 +557,83 @@ if (!apifyToken) {
   }
 }
 
+// Keep evidence across runs. Legacy records lack author proof and must never auto-publish.
+for (const old of previous.candidates.filter((candidate) => candidate.kind === "instagram")) {
+  if (!candidates.some((candidate) => candidate.id === old.id)) {
+    candidates.push(old.evidence?.author
+      ? old
+      : { ...old, status: "review", reason: "legacy-author-unverified" });
+  }
+}
+
 const uniqueCandidates = [];
 for (const candidate of [...new Map(candidates.map((item) => [item.id, item])).values()]
   .sort((a, b) => (a.start || a.publishedAt || "9999").localeCompare(b.start || b.publishedAt || "9999"))) {
-  const duplicate = uniqueCandidates.some((item) => item.start && item.start === candidate.start && titleScore(item.title, candidate.title) >= 0.7);
+  const duplicate = candidate.kind !== "instagram" && uniqueCandidates.some((item) => item.kind !== "instagram" && item.start && item.start === candidate.start && titleScore(item.title, candidate.title) >= 0.7);
   if (!duplicate) uniqueCandidates.push(candidate);
 }
 
-const publishable = uniqueCandidates.filter((candidate) => candidate.kind === "web"
+const publishable = uniqueCandidates.filter((candidate) => (candidate.kind === "web" || (candidate.kind === "instagram" && candidate.status === "confirmed"))
   && candidate.title && candidate.start && candidate.end && candidate.location && candidate.url);
 const beforePrune = eventsData.events.length;
 eventsData.events = eventsData.events.filter((event) => !event.id.startsWith("auto-") || isSkiSeasonDate(event.start));
 const pruned = beforePrune - eventsData.events.length;
 const published = [];
+let updated = 0;
 for (const candidate of publishable) {
+  if (candidate.kind === "instagram") {
+    if (candidate.end < today || !isSkiSeasonDate(candidate.start)) continue;
+    const source = sources.instagram.find((entry) => entry.id === candidate.sourceId);
+    if (!source || !source.autoPublish || candidate.evidence?.author?.toLowerCase() !== instagramUsername(source.url)) continue;
+    const matches = eventsData.events.filter((event) => sameSocialEvent(event, candidate)
+      || event.provenance?.some((entry) => entry.url === candidate.url));
+    if (matches.length) {
+      const event = matches[0];
+      if (matches.length !== 1 || event.start !== candidate.start || event.end !== candidate.end
+        || (event.hours && candidate.hours && JSON.stringify(event.hours) !== JSON.stringify(candidate.hours))) {
+        candidate.status = "review";
+        candidate.reason = "existing-event-conflict";
+        continue;
+      }
+      const merged = mergeSocialAnnouncement(event, candidate);
+      if (JSON.stringify(merged) !== JSON.stringify(event)) {
+        eventsData.events[eventsData.events.indexOf(event)] = merged;
+        updated += 1;
+      }
+      candidate.eventId = event.id;
+      continue;
+    }
+    // Cross-channel matches need both a matching date/title and the verified venue.
+    const webMatches = eventsData.events.filter((event) => event.start === candidate.start
+      && source.venueAliases?.some((alias) => cleanText(event.place).includes(cleanText(alias)))
+      && [event.title, ...Object.values(event.titles || {})].some((title) => titleScore(title, candidate.title) >= 0.8));
+    if (webMatches.length) {
+      if (webMatches.length === 1) {
+        const event = webMatches[0];
+        eventsData.events[eventsData.events.indexOf(event)] = { ...mergeSocialAnnouncement(event, candidate), socialSourceId: candidate.sourceId };
+        candidate.eventId = event.id;
+        updated += 1;
+      } else { candidate.status = "review"; candidate.reason = "multiple-event-matches"; }
+      continue;
+    }
+  }
   const duplicate = eventsData.events.some((event) => event.start === candidate.start && titleScore(event.title, candidate.title) >= 0.65);
-  if (duplicate) continue;
+  if (duplicate && candidate.kind !== "instagram") continue;
   const siteEvent = siteEventFromCandidate(candidate, eventsData.events.length + published.length);
   eventsData.events.push(siteEvent);
+  candidate.eventId = siteEvent.id;
   published.push(siteEvent.id);
 }
-if (published.length || pruned) {
+if (published.length || pruned || updated) {
   eventsData.lastChecked = today;
   eventsData.events.sort((a, b) => a.start.localeCompare(b.start));
   await writeFile(eventsPath, `${JSON.stringify(eventsData, null, 2)}\n`);
 }
 
 uniqueCandidates.forEach((candidate) => {
-  candidate.published = published.includes(`auto-${candidate.start}-${slug(candidate.title)}`)
-    || eventsData.events.some((event) => event.start === candidate.start && titleScore(event.title, candidate.title) >= 0.65);
+  candidate.published = Boolean(candidate.eventId && eventsData.events.some((event) => event.id === candidate.eventId))
+    || (candidate.kind !== "instagram" && (published.includes(`auto-${candidate.start}-${slug(candidate.title)}`)
+    || eventsData.events.some((event) => event.start === candidate.start && titleScore(event.title, candidate.title) >= 0.65)));
 });
 const output = {
   lastChecked: today,
@@ -560,6 +643,7 @@ const output = {
     instagramStatus,
     candidates: uniqueCandidates.length,
     published: published.length,
+    updated,
     pruned
   },
   sources: reports,

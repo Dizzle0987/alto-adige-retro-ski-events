@@ -110,22 +110,34 @@
     {
       "id": "gassl-instagram",
       "name": "Gassl Olang",
-      "url": "https://www.instagram.com/gassl.olang/"
+      "url": "https://www.instagram.com/gassl.olang/",
+      "autoPublish": true,
+      "venue": "Gassl · Valdaora / Olang, Plan de Corones / Kronplatz",
+      "venueAliases": ["Gassl"]
     },
     {
       "id": "k1-instagram",
       "name": "K1 Kronplatz",
-      "url": "https://www.instagram.com/k1.kronplatz/"
+      "url": "https://www.instagram.com/k1.kronplatz/",
+      "autoPublish": true,
+      "venue": "K1 · Riscone / Reischach, Brunico / Bruneck",
+      "venueAliases": ["K1", "K-1", "K 1"]
     },
     {
       "id": "hexenkessel-instagram",
       "name": "Hexenkessel Klausberg",
-      "url": "https://www.instagram.com/hexenkessel_klausberg/"
+      "url": "https://www.instagram.com/hexenkessel_klausberg/",
+      "autoPublish": true,
+      "venue": "Hexenkessel · Klausberg, Valle Aurina / Ahrntal",
+      "venueAliases": ["Hexenkessel"]
     },
     {
       "id": "luislkeller-instagram",
       "name": "Luislkeller",
-      "url": "https://www.instagram.com/luislkeller/"
+      "url": "https://www.instagram.com/luislkeller/",
+      "autoPublish": true,
+      "venue": "Luislkeller · Selva di Val Gardena / Wolkenstein in Gröden",
+      "venueAliases": ["Luislkeller"]
     },
     {
       "id": "winklparade-instagram",

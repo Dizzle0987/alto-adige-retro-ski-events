@@ -5,6 +5,12 @@ on:
     - cron: "0 6 * * 1,3,4"
     - cron: "0 7 * * 1,3,4"
   workflow_dispatch:
+    inputs:
+      instagram_mode:
+        description: "Live scan within free credits, or replay the last stored dataset without starting an Actor"
+        type: choice
+        options: [live, replay]
+        default: live
 
 permissions:
   contents: write
@@ -33,14 +39,19 @@ jobs:
         with:
           fetch-depth: 0
 
-      - name: Refresh dates from official sources
+      - name: Verify social dates, source checks and free-credit guard
         if: steps.schedule.outputs.run == 'true'
+        run: node --test scripts/social-events.test.mjs scripts/social-pipeline.test.mjs
+
+      - name: Refresh dates from official sources
+        if: steps.schedule.outputs.run == 'true' && inputs.instagram_mode != 'replay'
         run: node scripts/update-events.mjs
 
       - name: Discover candidates from ski areas, huts and social sources
         if: steps.schedule.outputs.run == 'true'
         env:
           APIFY_TOKEN: ${{ secrets.APIFY_TOKEN || secrets.APIFY }}
+          APIFY_REPLAY_LAST: ${{ inputs.instagram_mode == 'replay' && '1' || '0' }}
         run: node scripts/discover-events.mjs
 
       - name: Detect changes

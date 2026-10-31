@@ -1,0 +1,54 @@
+import test from "node:test";
+import assert from "node:assert/strict";
+import { mkdtemp, mkdir, writeFile, readFile } from "node:fs/promises";
+import { tmpdir } from "node:os";
+import path from "node:path";
+import { execFile } from "node:child_process";
+import { promisify } from "node:util";
+import { calendarState } from "../dist/calendar.mjs";
+
+const exec = promisify(execFile);
+const script = new URL("./discover-events.mjs", import.meta.url).pathname;
+const save = (file, data) => writeFile(file, JSON.stringify(data));
+
+test("offline pipeline: publish, merge hours, reject impostors, hold conflicts, remain idempotent", async () => {
+  const root = await mkdtemp(path.join(tmpdir(), "retro-social-test-"));
+  await Promise.all([mkdir(path.join(root, "dist")), mkdir(path.join(root, "data"))]);
+  const now = new Date();
+  const timestamp = now.toISOString();
+  const tomorrow = new Date(now.getTime() + 86400000).toISOString().slice(0, 10);
+  const month = Number(tomorrow.slice(5, 7));
+  const eventDate = month >= 11 || month <= 4 ? tomorrow : `${tomorrow.slice(0, 4)}-11-20`;
+  const source = { id: "official", name: "Fixture venue", url: "https://www.instagram.com/fixture.venue/", autoPublish: true, venue: "Fixture venue", venueAliases: ["Fixture"] };
+  const rival = { ...source, id: "other", url: "https://www.instagram.com/fixture.other/", venue: "Other venue", venueAliases: ["Other venue"] };
+  await save(path.join(root, "data/discovery-sources.json"), { web: [], instagram: [source, rival] });
+  await save(path.join(root, "dist/events.json"), { lastChecked: calendarState().today, events: [] });
+  const post = { ownerUsername: "fixture.venue", ownerId: "123", inputUrl: source.url, shortCode: "First", url: "https://www.instagram.com/p/First/", caption: `Retro Party\n${eventDate}`, timestamp, locationName: "Fixture venue" };
+  const replay = path.join(root, "posts.json");
+  const run = async (items) => {
+    await save(replay, items);
+    await exec(process.execPath, [script], { env: { ...process.env, APIFY_TOKEN: "", AUTO_UPDATE_OFFLINE: "0", DISCOVERY_DATA_ROOT: root, SOCIAL_REPLAY_PATH: replay, APIFY_REPLAY_LAST: "0" } });
+    return JSON.parse(await readFile(path.join(root, "dist/events.json"), "utf8"));
+  };
+  let result = await run([post, { ...post, ownerUsername: "private.person", shortCode: "Impostor", url: "https://www.instagram.com/p/Impostor/" }]);
+  assert.equal(result.events.length, 1);
+  assert.equal(result.events[0].hours, undefined);
+  assert.equal(result.events[0].title, "Retro Party");
+  const second = { ...post, shortCode: "Second", url: "https://www.instagram.com/p/Second/", caption: `Retro Party\n${eventDate} ab 18:00 Uhr` };
+  result = await run([second]);
+  assert.equal(result.events.length, 1);
+  assert.equal(result.events[0].hours.start, "18:00");
+  assert.equal(result.events[0].provenance.length, 2);
+  const snapshot = JSON.stringify(result);
+  result = await run([second]);
+  assert.equal(JSON.stringify(result), snapshot);
+  const conflicting = { ...post, shortCode: "Third", url: "https://www.instagram.com/p/Third/", caption: `Retro Party\n${eventDate} ab 21:00 Uhr` };
+  result = await run([conflicting]);
+  assert.equal(result.events.length, 1);
+  assert.equal(result.events[0].hours.start, "18:00");
+  const report = JSON.parse(await readFile(path.join(root, "data/event-candidates.json"), "utf8"));
+  assert.equal(report.candidates.find((candidate) => candidate.url === conflicting.url).reason, "existing-event-conflict");
+  result = await run([{ ...post, ownerUsername: "fixture.other", inputUrl: rival.url, locationName: rival.venue, shortCode: "Other", url: "https://www.instagram.com/p/Other/" }]);
+  assert.equal(result.events.length, 2, "same title/day at different venues stays separate");
+  assert.equal(new Set(result.events.map((event) => event.id)).size, 2);
+});
