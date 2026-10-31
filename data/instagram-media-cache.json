@@ -1,1 +1,3449 @@
-{"version":1,"entries":{},"documents":{}}
+{
+  "version": 1,
+  "entries": {
+    "933124598d5b5125d4ff451f9e8f5d1856ed0d6c8fde0cb1af28b16b00286c41": {
+      "text": "<4\nHI\n\"i\nÈ\nen\nz se en |\nqu\n|\nA\ni\nI\nN\n\\\nN\nis\n#\n\\)",
+      "words": [
+        {
+          "text": "<4",
+          "confidence": 90.22876,
+          "line": "1-1-1-1"
+        },
+        {
+          "text": "HI",
+          "confidence": 52.395576,
+          "line": "1-2-1-1"
+        },
+        {
+          "text": "\"i",
+          "confidence": 24.313194,
+          "line": "1-3-1-1"
+        },
+        {
+          "text": "È",
+          "confidence": 86.787369,
+          "line": "1-4-1-1"
+        },
+        {
+          "text": "en",
+          "confidence": 41.374298,
+          "line": "1-5-1-1"
+        },
+        {
+          "text": "z",
+          "confidence": 49.67276,
+          "line": "1-6-1-1"
+        },
+        {
+          "text": "se",
+          "confidence": 14.907997,
+          "line": "1-6-1-1"
+        },
+        {
+          "text": "en",
+          "confidence": 41.092239,
+          "line": "1-6-1-1"
+        },
+        {
+          "text": "|",
+          "confidence": 86.51696,
+          "line": "1-6-1-1"
+        },
+        {
+          "text": "qu",
+          "confidence": 59.91851,
+          "line": "1-7-1-1"
+        },
+        {
+          "text": "|",
+          "confidence": 65.921066,
+          "line": "1-8-1-1"
+        },
+        {
+          "text": "A",
+          "confidence": 43.261505,
+          "line": "1-9-1-1"
+        },
+        {
+          "text": "i",
+          "confidence": 62.299194,
+          "line": "1-10-1-1"
+        },
+        {
+          "text": "I",
+          "confidence": 67.312546,
+          "line": "1-11-1-1"
+        },
+        {
+          "text": "N",
+          "confidence": 76.470695,
+          "line": "1-12-1-1"
+        },
+        {
+          "text": "\\",
+          "confidence": 72.78363,
+          "line": "1-13-1-1"
+        },
+        {
+          "text": "N",
+          "confidence": 77.632141,
+          "line": "1-14-1-1"
+        },
+        {
+          "text": "is",
+          "confidence": 13.329361,
+          "line": "1-15-1-1"
+        },
+        {
+          "text": "#",
+          "confidence": 84.743835,
+          "line": "1-16-1-1"
+        },
+        {
+          "text": "\\)",
+          "confidence": 43.482216,
+          "line": "1-17-1-1"
+        }
+      ],
+      "method": "instagram-image-ocr",
+      "checkedAt": "2026-10-31T22:03:32.709Z",
+      "sha256": "55171582090ddc5b6c79c7d085536da1f9b7e1557f048e80be73649a80ded4aa"
+    },
+    "b81f7607f278c85d80b87da206b9ae69503e8ac3082e6aae62897a302db1cb8b": {
+      "text": "WHAT\nPARTY\nY\nARE YOU?",
+      "words": [
+        {
+          "text": "WHAT",
+          "confidence": 96.552559,
+          "line": "1-1-1-1"
+        },
+        {
+          "text": "PARTY",
+          "confidence": 96.308662,
+          "line": "1-2-1-1"
+        },
+        {
+          "text": "Y",
+          "confidence": 92.904892,
+          "line": "1-3-1-1"
+        },
+        {
+          "text": "ARE",
+          "confidence": 96.863548,
+          "line": "1-4-1-1"
+        },
+        {
+          "text": "YOU?",
+          "confidence": 96.397018,
+          "line": "1-4-1-1"
+        }
+      ],
+      "method": "instagram-image-ocr",
+      "checkedAt": "2026-10-31T22:03:31.208Z",
+      "sha256": "66b09ee0785d3c3f4cc25e127511bb859ba44ef52d3d1f26e3b3550c820f7bee"
+    },
+    "7b61e8bd6f9a3709bfa1ddf84a61df31591689bc10e7ebebd6a83e4cde1a352b": {
+      "text": "CLUB FPRITZIN®\nDOMENICA. 2 7 SETTEMBRE | DALLE.14:00\n\\\ni\n|\nU\n4\noY\n-®]\n© SUMMERS\nst\nRIV.\n—\nre\nZZ\n=>\nSOB\nNa\nUn\n(Be\nAlt\nad\n€ |\nit\nHee 4\n20\ni\n=\n>\n4a\ncay see Ss CE\nSa;\nER\nEB\n23\nei &\n»\nNace\nDJ ANDREW\nN\nED iy Dacia\nPASQUA 'GALVANIN SMITH =<\nfo cotone SM cremona\nNTINERIA\n=\nMw",
+      "words": [
+        {
+          "text": "CLUB",
+          "confidence": 87.230705,
+          "line": "1-1-1-1"
+        },
+        {
+          "text": "FPRITZIN®",
+          "confidence": 32.379677,
+          "line": "1-1-1-1"
+        },
+        {
+          "text": "DOMENICA.",
+          "confidence": 81.146851,
+          "line": "1-2-1-1"
+        },
+        {
+          "text": "2",
+          "confidence": 89.539093,
+          "line": "1-2-1-1"
+        },
+        {
+          "text": "7",
+          "confidence": 90.825378,
+          "line": "1-2-1-1"
+        },
+        {
+          "text": "SETTEMBRE",
+          "confidence": 95.601082,
+          "line": "1-2-1-1"
+        },
+        {
+          "text": "|",
+          "confidence": 91.410637,
+          "line": "1-2-1-1"
+        },
+        {
+          "text": "DALLE.14:00",
+          "confidence": 80.119194,
+          "line": "1-2-1-1"
+        },
+        {
+          "text": "\\",
+          "confidence": 57.147026,
+          "line": "1-3-1-1"
+        },
+        {
+          "text": "i",
+          "confidence": 71.400635,
+          "line": "1-4-1-1"
+        },
+        {
+          "text": "|",
+          "confidence": 75.939857,
+          "line": "1-5-1-1"
+        },
+        {
+          "text": "U",
+          "confidence": 81.080719,
+          "line": "1-6-1-1"
+        },
+        {
+          "text": "4",
+          "confidence": 81.402763,
+          "line": "1-7-1-1"
+        },
+        {
+          "text": "oY",
+          "confidence": 75.128952,
+          "line": "1-8-1-1"
+        },
+        {
+          "text": "-®]",
+          "confidence": 26.394943,
+          "line": "1-9-1-1"
+        },
+        {
+          "text": "©",
+          "confidence": 51.987305,
+          "line": "1-10-1-1"
+        },
+        {
+          "text": "SUMMERS",
+          "confidence": 90.373642,
+          "line": "1-10-1-1"
+        },
+        {
+          "text": "st",
+          "confidence": 70.910942,
+          "line": "1-11-1-1"
+        },
+        {
+          "text": "RIV.",
+          "confidence": 74.239113,
+          "line": "1-12-1-1"
+        },
+        {
+          "text": "—",
+          "confidence": 68.025314,
+          "line": "1-13-1-1"
+        },
+        {
+          "text": "re",
+          "confidence": 30.224655,
+          "line": "1-14-1-1"
+        },
+        {
+          "text": "ZZ",
+          "confidence": 31.359062,
+          "line": "1-15-1-1"
+        },
+        {
+          "text": "=>",
+          "confidence": 28.780899,
+          "line": "1-16-1-1"
+        },
+        {
+          "text": "SOB",
+          "confidence": 22.415245,
+          "line": "1-17-1-1"
+        },
+        {
+          "text": "Na",
+          "confidence": 45.303406,
+          "line": "1-18-1-1"
+        },
+        {
+          "text": "Un",
+          "confidence": 68.744865,
+          "line": "1-19-1-1"
+        },
+        {
+          "text": "(Be",
+          "confidence": 36.880577,
+          "line": "1-20-1-1"
+        },
+        {
+          "text": "Alt",
+          "confidence": 34.777702,
+          "line": "1-21-1-1"
+        },
+        {
+          "text": "ad",
+          "confidence": 55.830303,
+          "line": "1-22-1-1"
+        },
+        {
+          "text": "€",
+          "confidence": 25.373428,
+          "line": "1-23-1-1"
+        },
+        {
+          "text": "|",
+          "confidence": 45.630375,
+          "line": "1-23-1-1"
+        },
+        {
+          "text": "it",
+          "confidence": 42.034187,
+          "line": "1-24-1-1"
+        },
+        {
+          "text": "Hee",
+          "confidence": 36.141304,
+          "line": "1-25-1-1"
+        },
+        {
+          "text": "4",
+          "confidence": 86.758743,
+          "line": "1-25-1-1"
+        },
+        {
+          "text": "20",
+          "confidence": 58.572403,
+          "line": "1-26-1-1"
+        },
+        {
+          "text": "i",
+          "confidence": 61.08337,
+          "line": "1-27-1-1"
+        },
+        {
+          "text": "=",
+          "confidence": 54.822556,
+          "line": "1-28-1-1"
+        },
+        {
+          "text": ">",
+          "confidence": 71.154175,
+          "line": "1-29-1-1"
+        },
+        {
+          "text": "4a",
+          "confidence": 77.136215,
+          "line": "1-30-1-1"
+        },
+        {
+          "text": "cay",
+          "confidence": 21.501587,
+          "line": "1-31-1-1"
+        },
+        {
+          "text": "see",
+          "confidence": 31.647827,
+          "line": "1-31-1-1"
+        },
+        {
+          "text": "Ss",
+          "confidence": 39.793926,
+          "line": "1-31-1-1"
+        },
+        {
+          "text": "CE",
+          "confidence": 54.310944,
+          "line": "1-31-1-1"
+        },
+        {
+          "text": "Sa;",
+          "confidence": 1.226242,
+          "line": "1-32-1-1"
+        },
+        {
+          "text": "ER",
+          "confidence": 41.948555,
+          "line": "1-33-1-1"
+        },
+        {
+          "text": "EB",
+          "confidence": 37.442581,
+          "line": "1-34-1-1"
+        },
+        {
+          "text": "23",
+          "confidence": 30.216118,
+          "line": "1-35-1-1"
+        },
+        {
+          "text": "ei",
+          "confidence": 17.759697,
+          "line": "1-36-1-1"
+        },
+        {
+          "text": "&",
+          "confidence": 3.917206,
+          "line": "1-36-1-1"
+        },
+        {
+          "text": "»",
+          "confidence": 66.679184,
+          "line": "1-37-1-1"
+        },
+        {
+          "text": "Nace",
+          "confidence": 51.686813,
+          "line": "1-38-1-1"
+        },
+        {
+          "text": "DJ",
+          "confidence": 94.660835,
+          "line": "1-39-1-1"
+        },
+        {
+          "text": "ANDREW",
+          "confidence": 96.175934,
+          "line": "1-39-1-1"
+        },
+        {
+          "text": "N",
+          "confidence": 81.720886,
+          "line": "1-40-1-1"
+        },
+        {
+          "text": "ED",
+          "confidence": 70.893799,
+          "line": "1-41-1-1"
+        },
+        {
+          "text": "iy",
+          "confidence": 67.481537,
+          "line": "1-41-1-1"
+        },
+        {
+          "text": "Dacia",
+          "confidence": 39.054512,
+          "line": "1-41-1-1"
+        },
+        {
+          "text": "PASQUA",
+          "confidence": 64.762421,
+          "line": "1-42-1-1"
+        },
+        {
+          "text": "'GALVANIN",
+          "confidence": 38.989758,
+          "line": "1-42-1-1"
+        },
+        {
+          "text": "SMITH",
+          "confidence": 92.687202,
+          "line": "1-42-1-1"
+        },
+        {
+          "text": "=<",
+          "confidence": 68.870422,
+          "line": "1-42-1-1"
+        },
+        {
+          "text": "fo",
+          "confidence": 35.794113,
+          "line": "1-43-1-1"
+        },
+        {
+          "text": "cotone",
+          "confidence": 4.486267,
+          "line": "1-43-1-1"
+        },
+        {
+          "text": "SM",
+          "confidence": 31.058289,
+          "line": "1-43-1-1"
+        },
+        {
+          "text": "cremona",
+          "confidence": 15.985428,
+          "line": "1-43-1-1"
+        },
+        {
+          "text": "NTINERIA",
+          "confidence": 75.322945,
+          "line": "1-44-1-1"
+        },
+        {
+          "text": "=",
+          "confidence": 43.442383,
+          "line": "1-45-1-1"
+        },
+        {
+          "text": "Mw",
+          "confidence": 37.601185,
+          "line": "1-46-1-1"
+        }
+      ],
+      "method": "instagram-image-ocr",
+      "checkedAt": "2026-10-31T22:03:29.744Z",
+      "sha256": "2d62450caf7018f9ed88527c71ddbea91d0290daba5bdb207d352352bc0313d7"
+    },
+    "a039cdf7681c40c1a0574031937df8e7d5b0ffacc18d3b8057305ce032d98af5": {
+      "text": "FEN\nDp\nFo\niy\nsa\nHy\nid\nA\n7\n4,\n\\\\\nTA\nN\ndi\nJ\nWEN\nif\nren\nCA)\n=\nPra\nVat\n9\nKERN\net\naha\nPa]\nWes\nDÌ li\nUè\nat\n=\nSAI\nNG Kal\ni\nNE\ngen\na\net\n>\nEIN\n~\nRL\nè)\ni\n)\nN\nDi En\ntail *\npe E\n¥ È\nZap\"\n—_— |\n4\nSI",
+      "words": [
+        {
+          "text": "FEN",
+          "confidence": 32.432594,
+          "line": "1-1-1-1"
+        },
+        {
+          "text": "Dp",
+          "confidence": 37.763962,
+          "line": "1-2-1-1"
+        },
+        {
+          "text": "Fo",
+          "confidence": 59.697227,
+          "line": "1-3-1-1"
+        },
+        {
+          "text": "iy",
+          "confidence": 14.998901,
+          "line": "1-4-1-1"
+        },
+        {
+          "text": "sa",
+          "confidence": 45.484451,
+          "line": "1-5-1-1"
+        },
+        {
+          "text": "Hy",
+          "confidence": 0,
+          "line": "1-6-1-1"
+        },
+        {
+          "text": "id",
+          "confidence": 50.665779,
+          "line": "1-7-1-1"
+        },
+        {
+          "text": "A",
+          "confidence": 72.552139,
+          "line": "1-8-1-1"
+        },
+        {
+          "text": "7",
+          "confidence": 80.213287,
+          "line": "1-9-1-1"
+        },
+        {
+          "text": "4,",
+          "confidence": 68.724121,
+          "line": "1-10-1-1"
+        },
+        {
+          "text": "\\\\",
+          "confidence": 61.679741,
+          "line": "1-11-1-1"
+        },
+        {
+          "text": "TA",
+          "confidence": 55.401913,
+          "line": "1-12-1-1"
+        },
+        {
+          "text": "N",
+          "confidence": 92.062798,
+          "line": "1-13-1-1"
+        },
+        {
+          "text": "di",
+          "confidence": 57.470509,
+          "line": "1-14-1-1"
+        },
+        {
+          "text": "J",
+          "confidence": 58.441673,
+          "line": "1-15-1-1"
+        },
+        {
+          "text": "WEN",
+          "confidence": 60.689598,
+          "line": "1-16-1-1"
+        },
+        {
+          "text": "if",
+          "confidence": 57.293037,
+          "line": "1-17-1-1"
+        },
+        {
+          "text": "ren",
+          "confidence": 35.763062,
+          "line": "1-18-1-1"
+        },
+        {
+          "text": "CA)",
+          "confidence": 38.571476,
+          "line": "1-19-1-1"
+        },
+        {
+          "text": "=",
+          "confidence": 56.583103,
+          "line": "1-20-1-1"
+        },
+        {
+          "text": "Pra",
+          "confidence": 25.329254,
+          "line": "1-21-1-1"
+        },
+        {
+          "text": "Vat",
+          "confidence": 54.900223,
+          "line": "1-22-1-1"
+        },
+        {
+          "text": "9",
+          "confidence": 79.568504,
+          "line": "1-23-1-1"
+        },
+        {
+          "text": "KERN",
+          "confidence": 40.856571,
+          "line": "1-24-1-1"
+        },
+        {
+          "text": "et",
+          "confidence": 21.600479,
+          "line": "1-25-1-1"
+        },
+        {
+          "text": "aha",
+          "confidence": 38.54686,
+          "line": "1-26-1-1"
+        },
+        {
+          "text": "Pa]",
+          "confidence": 44.679596,
+          "line": "1-27-1-1"
+        },
+        {
+          "text": "Wes",
+          "confidence": 60.914371,
+          "line": "1-28-1-1"
+        },
+        {
+          "text": "DÌ",
+          "confidence": 12.347191,
+          "line": "1-29-1-1"
+        },
+        {
+          "text": "li",
+          "confidence": 3.671524,
+          "line": "1-29-1-1"
+        },
+        {
+          "text": "Uè",
+          "confidence": 47.540237,
+          "line": "1-30-1-1"
+        },
+        {
+          "text": "at",
+          "confidence": 46.571053,
+          "line": "1-31-1-1"
+        },
+        {
+          "text": "=",
+          "confidence": 59.224133,
+          "line": "1-32-1-1"
+        },
+        {
+          "text": "SAI",
+          "confidence": 34.051758,
+          "line": "1-33-1-1"
+        },
+        {
+          "text": "NG",
+          "confidence": 38.969528,
+          "line": "1-34-1-1"
+        },
+        {
+          "text": "Kal",
+          "confidence": 44.082466,
+          "line": "1-34-1-1"
+        },
+        {
+          "text": "i",
+          "confidence": 29.106064,
+          "line": "1-35-1-1"
+        },
+        {
+          "text": "NE",
+          "confidence": 32.129318,
+          "line": "1-36-1-1"
+        },
+        {
+          "text": "gen",
+          "confidence": 43.526386,
+          "line": "1-37-1-1"
+        },
+        {
+          "text": "a",
+          "confidence": 63.502804,
+          "line": "1-38-1-1"
+        },
+        {
+          "text": "et",
+          "confidence": 45.800743,
+          "line": "1-39-1-1"
+        },
+        {
+          "text": ">",
+          "confidence": 56.684361,
+          "line": "1-40-1-1"
+        },
+        {
+          "text": "EIN",
+          "confidence": 0,
+          "line": "1-41-1-1"
+        },
+        {
+          "text": "~",
+          "confidence": 48.714035,
+          "line": "1-42-1-1"
+        },
+        {
+          "text": "RL",
+          "confidence": 23.875648,
+          "line": "1-43-1-1"
+        },
+        {
+          "text": "è)",
+          "confidence": 53.906136,
+          "line": "1-44-1-1"
+        },
+        {
+          "text": "i",
+          "confidence": 18.774872,
+          "line": "1-45-1-1"
+        },
+        {
+          "text": ")",
+          "confidence": 0,
+          "line": "1-46-1-1"
+        },
+        {
+          "text": "N",
+          "confidence": 74.249184,
+          "line": "1-47-1-1"
+        },
+        {
+          "text": "Di",
+          "confidence": 18.43364,
+          "line": "1-48-1-1"
+        },
+        {
+          "text": "En",
+          "confidence": 29.302536,
+          "line": "1-48-1-1"
+        },
+        {
+          "text": "tail",
+          "confidence": 34.419884,
+          "line": "1-49-1-1"
+        },
+        {
+          "text": "*",
+          "confidence": 82.428635,
+          "line": "1-49-1-1"
+        },
+        {
+          "text": "pe",
+          "confidence": 22.58799,
+          "line": "1-50-1-1"
+        },
+        {
+          "text": "E",
+          "confidence": 28.692703,
+          "line": "1-50-1-1"
+        },
+        {
+          "text": "¥",
+          "confidence": 89.897987,
+          "line": "1-51-1-1"
+        },
+        {
+          "text": "È",
+          "confidence": 39.317589,
+          "line": "1-51-1-1"
+        },
+        {
+          "text": "Zap\"",
+          "confidence": 13.784821,
+          "line": "1-52-1-1"
+        },
+        {
+          "text": "—_—",
+          "confidence": 35.275612,
+          "line": "1-53-1-1"
+        },
+        {
+          "text": "|",
+          "confidence": 80.944557,
+          "line": "1-53-1-1"
+        },
+        {
+          "text": "4",
+          "confidence": 85.184738,
+          "line": "1-54-1-1"
+        },
+        {
+          "text": "SI",
+          "confidence": 61.627468,
+          "line": "1-55-1-1"
+        }
+      ],
+      "method": "instagram-image-ocr",
+      "checkedAt": "2026-10-31T22:03:27.058Z",
+      "sha256": "86fc44cf986b7596076308e80ab4f71c1d11b0d06822d1e388edc9557dda0c2b"
+    },
+    "b5def9ee9c9ecc2c652c4f295fbf04f07d571b18f2a8f583ddbad1506ac8285c": {
+      "text": "af\nVi\nDI\nBp\niz\ndi\nDi\nAa\nes\nSS\noe\nae\nee\nDI\nES\net\n[2]\n=\nm.\nMi\nla\n=\nA\n=\nFan\nie:\nBa\nZu\ndet\nES\nAtt\nSN\noe\n4\ndi\na\na\ndr\nES\nRS\nda\nER\nEr\n2}\nej\nhs\nN,\nDAS\no,\n4\nae",
+      "words": [
+        {
+          "text": "af",
+          "confidence": 54.409107,
+          "line": "1-1-1-1"
+        },
+        {
+          "text": "Vi",
+          "confidence": 28.23806,
+          "line": "1-2-1-1"
+        },
+        {
+          "text": "DI",
+          "confidence": 37.186943,
+          "line": "1-3-1-1"
+        },
+        {
+          "text": "Bp",
+          "confidence": 10.331123,
+          "line": "1-4-1-1"
+        },
+        {
+          "text": "iz",
+          "confidence": 62.644463,
+          "line": "1-5-1-1"
+        },
+        {
+          "text": "di",
+          "confidence": 46.41256,
+          "line": "1-6-1-1"
+        },
+        {
+          "text": "Di",
+          "confidence": 42.622562,
+          "line": "1-7-1-1"
+        },
+        {
+          "text": "Aa",
+          "confidence": 54.278141,
+          "line": "1-8-1-1"
+        },
+        {
+          "text": "es",
+          "confidence": 38.25478,
+          "line": "1-9-1-1"
+        },
+        {
+          "text": "SS",
+          "confidence": 74.925591,
+          "line": "1-10-1-1"
+        },
+        {
+          "text": "oe",
+          "confidence": 42.93465,
+          "line": "1-11-1-1"
+        },
+        {
+          "text": "ae",
+          "confidence": 46.553177,
+          "line": "1-12-1-1"
+        },
+        {
+          "text": "ee",
+          "confidence": 52.558739,
+          "line": "1-13-1-1"
+        },
+        {
+          "text": "DI",
+          "confidence": 51.040386,
+          "line": "1-14-1-1"
+        },
+        {
+          "text": "ES",
+          "confidence": 73.281357,
+          "line": "1-15-1-1"
+        },
+        {
+          "text": "et",
+          "confidence": 26.751518,
+          "line": "1-16-1-1"
+        },
+        {
+          "text": "[2]",
+          "confidence": 46.653332,
+          "line": "1-17-1-1"
+        },
+        {
+          "text": "=",
+          "confidence": 49.04652,
+          "line": "1-18-1-1"
+        },
+        {
+          "text": "m.",
+          "confidence": 60.772221,
+          "line": "1-19-1-1"
+        },
+        {
+          "text": "Mi",
+          "confidence": 27.985489,
+          "line": "1-20-1-1"
+        },
+        {
+          "text": "la",
+          "confidence": 75.826279,
+          "line": "1-21-1-1"
+        },
+        {
+          "text": "=",
+          "confidence": 34.009392,
+          "line": "1-22-1-1"
+        },
+        {
+          "text": "A",
+          "confidence": 45.507278,
+          "line": "1-23-1-1"
+        },
+        {
+          "text": "=",
+          "confidence": 41.972893,
+          "line": "1-24-1-1"
+        },
+        {
+          "text": "Fan",
+          "confidence": 27.25666,
+          "line": "1-25-1-1"
+        },
+        {
+          "text": "ie:",
+          "confidence": 5.318649,
+          "line": "1-26-1-1"
+        },
+        {
+          "text": "Ba",
+          "confidence": 28.824356,
+          "line": "1-27-1-1"
+        },
+        {
+          "text": "Zu",
+          "confidence": 21.400993,
+          "line": "1-28-1-1"
+        },
+        {
+          "text": "det",
+          "confidence": 18.763123,
+          "line": "1-29-1-1"
+        },
+        {
+          "text": "ES",
+          "confidence": 13.458801,
+          "line": "1-30-1-1"
+        },
+        {
+          "text": "Att",
+          "confidence": 20.968239,
+          "line": "1-31-1-1"
+        },
+        {
+          "text": "SN",
+          "confidence": 53.158989,
+          "line": "1-32-1-1"
+        },
+        {
+          "text": "oe",
+          "confidence": 26.929543,
+          "line": "1-33-1-1"
+        },
+        {
+          "text": "4",
+          "confidence": 66.82431,
+          "line": "1-34-1-1"
+        },
+        {
+          "text": "di",
+          "confidence": 16.155518,
+          "line": "1-35-1-1"
+        },
+        {
+          "text": "a",
+          "confidence": 48.267139,
+          "line": "1-36-1-1"
+        },
+        {
+          "text": "a",
+          "confidence": 32.26226,
+          "line": "1-37-1-1"
+        },
+        {
+          "text": "dr",
+          "confidence": 28.772346,
+          "line": "1-38-1-1"
+        },
+        {
+          "text": "ES",
+          "confidence": 16.361862,
+          "line": "1-39-1-1"
+        },
+        {
+          "text": "RS",
+          "confidence": 37.066269,
+          "line": "1-40-1-1"
+        },
+        {
+          "text": "da",
+          "confidence": 38.604187,
+          "line": "1-41-1-1"
+        },
+        {
+          "text": "ER",
+          "confidence": 44.17601,
+          "line": "1-42-1-1"
+        },
+        {
+          "text": "Er",
+          "confidence": 36.685448,
+          "line": "1-43-1-1"
+        },
+        {
+          "text": "2}",
+          "confidence": 51.775276,
+          "line": "1-44-1-1"
+        },
+        {
+          "text": "ej",
+          "confidence": 2.984245,
+          "line": "1-45-1-1"
+        },
+        {
+          "text": "hs",
+          "confidence": 20.287781,
+          "line": "1-46-1-1"
+        },
+        {
+          "text": "N,",
+          "confidence": 41.94838,
+          "line": "1-47-1-1"
+        },
+        {
+          "text": "DAS",
+          "confidence": 47.09827,
+          "line": "1-48-1-1"
+        },
+        {
+          "text": "o,",
+          "confidence": 30.729713,
+          "line": "1-49-1-1"
+        },
+        {
+          "text": "4",
+          "confidence": 38.725967,
+          "line": "1-50-1-1"
+        },
+        {
+          "text": "ae",
+          "confidence": 39.212929,
+          "line": "1-51-1-1"
+        }
+      ],
+      "method": "instagram-image-ocr",
+      "checkedAt": "2026-10-31T22:03:25.701Z",
+      "sha256": "a16eacd9e16f08d124b3d9a9418620f171a2dcb174aee8f365aa4c99b50612dd"
+    },
+    "1fd91d5039079c2c7ec38e923a4dc394018eb6ca69cedcc23dda0beb5e27712f": {
+      "text": "as\na\nI“\ni\ndt\nBy\na:\n4,\nE\nÈ\nei\nN\ner\n#%,\n=\nfa\n«ui\nRs\n7\nN\nì\n=\n|\nr\nBi\n\\\nHN\nAg\n|\nI\nI)\nfl\n(f N\n>\nsl\n|\n\\\nve\nap\nJ\nOX\nu\nOM,\n/ one\n#",
+      "words": [
+        {
+          "text": "as",
+          "confidence": 56.014549,
+          "line": "1-1-1-1"
+        },
+        {
+          "text": "a",
+          "confidence": 62.5993,
+          "line": "1-2-1-1"
+        },
+        {
+          "text": "I“",
+          "confidence": 51.346222,
+          "line": "1-3-1-1"
+        },
+        {
+          "text": "i",
+          "confidence": 41.185074,
+          "line": "1-4-1-1"
+        },
+        {
+          "text": "dt",
+          "confidence": 16.68071,
+          "line": "1-5-1-1"
+        },
+        {
+          "text": "By",
+          "confidence": 33.175323,
+          "line": "1-6-1-1"
+        },
+        {
+          "text": "a:",
+          "confidence": 15.228409,
+          "line": "1-7-1-1"
+        },
+        {
+          "text": "4,",
+          "confidence": 55.939468,
+          "line": "1-8-1-1"
+        },
+        {
+          "text": "E",
+          "confidence": 44.245499,
+          "line": "1-9-1-1"
+        },
+        {
+          "text": "È",
+          "confidence": 81.070641,
+          "line": "1-10-1-1"
+        },
+        {
+          "text": "ei",
+          "confidence": 46.102123,
+          "line": "1-11-1-1"
+        },
+        {
+          "text": "N",
+          "confidence": 60.495636,
+          "line": "1-12-1-1"
+        },
+        {
+          "text": "er",
+          "confidence": 41.815346,
+          "line": "1-13-1-1"
+        },
+        {
+          "text": "#%,",
+          "confidence": 57.233448,
+          "line": "1-14-1-1"
+        },
+        {
+          "text": "=",
+          "confidence": 51.418823,
+          "line": "1-15-1-1"
+        },
+        {
+          "text": "fa",
+          "confidence": 63.77346,
+          "line": "1-16-1-1"
+        },
+        {
+          "text": "«ui",
+          "confidence": 60.7705,
+          "line": "1-17-1-1"
+        },
+        {
+          "text": "Rs",
+          "confidence": 33.789658,
+          "line": "1-18-1-1"
+        },
+        {
+          "text": "7",
+          "confidence": 87.032372,
+          "line": "1-19-1-1"
+        },
+        {
+          "text": "N",
+          "confidence": 81.930672,
+          "line": "1-20-1-1"
+        },
+        {
+          "text": "ì",
+          "confidence": 47.093094,
+          "line": "1-21-1-1"
+        },
+        {
+          "text": "=",
+          "confidence": 90.417351,
+          "line": "1-22-1-1"
+        },
+        {
+          "text": "|",
+          "confidence": 54.020111,
+          "line": "1-23-1-1"
+        },
+        {
+          "text": "r",
+          "confidence": 82.727783,
+          "line": "1-24-1-1"
+        },
+        {
+          "text": "Bi",
+          "confidence": 43.508118,
+          "line": "1-25-1-1"
+        },
+        {
+          "text": "\\",
+          "confidence": 89.158318,
+          "line": "1-26-1-1"
+        },
+        {
+          "text": "HN",
+          "confidence": 36.156277,
+          "line": "1-27-1-1"
+        },
+        {
+          "text": "Ag",
+          "confidence": 0,
+          "line": "1-28-1-1"
+        },
+        {
+          "text": "|",
+          "confidence": 89.897949,
+          "line": "1-29-1-1"
+        },
+        {
+          "text": "I",
+          "confidence": 36.558998,
+          "line": "1-30-1-1"
+        },
+        {
+          "text": "I)",
+          "confidence": 81.746147,
+          "line": "1-31-1-1"
+        },
+        {
+          "text": "fl",
+          "confidence": 52.170906,
+          "line": "1-32-1-1"
+        },
+        {
+          "text": "(f",
+          "confidence": 46.578812,
+          "line": "1-33-1-1"
+        },
+        {
+          "text": "N",
+          "confidence": 63.243118,
+          "line": "1-33-1-1"
+        },
+        {
+          "text": ">",
+          "confidence": 48.181572,
+          "line": "1-34-1-1"
+        },
+        {
+          "text": "sl",
+          "confidence": 83.173523,
+          "line": "1-35-1-1"
+        },
+        {
+          "text": "|",
+          "confidence": 94.126152,
+          "line": "1-36-1-1"
+        },
+        {
+          "text": "\\",
+          "confidence": 81.41468,
+          "line": "1-37-1-1"
+        },
+        {
+          "text": "ve",
+          "confidence": 46.278435,
+          "line": "1-38-1-1"
+        },
+        {
+          "text": "ap",
+          "confidence": 61.871078,
+          "line": "1-39-1-1"
+        },
+        {
+          "text": "J",
+          "confidence": 91.312042,
+          "line": "1-40-1-1"
+        },
+        {
+          "text": "OX",
+          "confidence": 39.40934,
+          "line": "1-41-1-1"
+        },
+        {
+          "text": "u",
+          "confidence": 42.455261,
+          "line": "1-42-1-1"
+        },
+        {
+          "text": "OM,",
+          "confidence": 63.957371,
+          "line": "1-43-1-1"
+        },
+        {
+          "text": "/",
+          "confidence": 74.267426,
+          "line": "1-44-1-1"
+        },
+        {
+          "text": "one",
+          "confidence": 40.755352,
+          "line": "1-44-1-1"
+        },
+        {
+          "text": "#",
+          "confidence": 46.708374,
+          "line": "1-45-1-1"
+        }
+      ],
+      "method": "instagram-image-ocr",
+      "checkedAt": "2026-10-31T22:03:23.860Z",
+      "sha256": "18c3bfe4cc8ec20349081815336fc5f305ce70103b0589a38124d24692698635"
+    },
+    "3d5220d2a57b6681644afe97cc55f03d7bac59c6016bf1b6615804b3b6ca8c51": {
+      "text": "nn\n) i\nI\ne °\ne [2\nA\\\nx\ndè\nDar\n=\n|\na *\n©\n6 @\n6.7,\n9.\nA\n. nun\n8%\nka PR\n09\neo\n<\n0 ®\nly\ni \\ wr ) Il\n—_\nNr\n|\n©\nPp\nRY\nHi\nML\n*\nA\ne PS\nN°\n>\n\\\nRA,\n>\n-—\n\\ AN\ngiggeralm\n96\nseit 1?\nON THE MIX:\nur SAMO TAG 01.10.2026\nRO\nDARIO\nFREE ENTRY | DOORS OPEN 20:00 | ENTRY 16+",
+      "words": [
+        {
+          "text": "nn",
+          "confidence": 40.107861,
+          "line": "1-1-1-1"
+        },
+        {
+          "text": ")",
+          "confidence": 75.454224,
+          "line": "1-2-1-1"
+        },
+        {
+          "text": "i",
+          "confidence": 35.770828,
+          "line": "1-2-1-1"
+        },
+        {
+          "text": "I",
+          "confidence": 79.29792,
+          "line": "1-3-1-1"
+        },
+        {
+          "text": "e",
+          "confidence": 77.396652,
+          "line": "1-4-1-1"
+        },
+        {
+          "text": "°",
+          "confidence": 74.914078,
+          "line": "1-4-1-1"
+        },
+        {
+          "text": "e",
+          "confidence": 79.996796,
+          "line": "1-5-1-1"
+        },
+        {
+          "text": "[2",
+          "confidence": 59.922264,
+          "line": "1-5-1-1"
+        },
+        {
+          "text": "A\\",
+          "confidence": 53.444672,
+          "line": "1-6-1-1"
+        },
+        {
+          "text": "x",
+          "confidence": 34.633163,
+          "line": "1-7-1-1"
+        },
+        {
+          "text": "dè",
+          "confidence": 68.646667,
+          "line": "1-8-1-1"
+        },
+        {
+          "text": "Dar",
+          "confidence": 48.367905,
+          "line": "1-9-1-1"
+        },
+        {
+          "text": "=",
+          "confidence": 47.1987,
+          "line": "1-10-1-1"
+        },
+        {
+          "text": "|",
+          "confidence": 56.067444,
+          "line": "1-11-1-1"
+        },
+        {
+          "text": "a",
+          "confidence": 87.140099,
+          "line": "1-12-1-1"
+        },
+        {
+          "text": "*",
+          "confidence": 46.185154,
+          "line": "1-12-1-1"
+        },
+        {
+          "text": "©",
+          "confidence": 25.445473,
+          "line": "1-13-1-1"
+        },
+        {
+          "text": "6",
+          "confidence": 30.358528,
+          "line": "1-14-1-1"
+        },
+        {
+          "text": "@",
+          "confidence": 46.208797,
+          "line": "1-14-1-1"
+        },
+        {
+          "text": "6.7,",
+          "confidence": 0,
+          "line": "1-15-1-1"
+        },
+        {
+          "text": "9.",
+          "confidence": 90.763779,
+          "line": "1-16-1-1"
+        },
+        {
+          "text": "A",
+          "confidence": 38.409378,
+          "line": "1-17-1-1"
+        },
+        {
+          "text": ".",
+          "confidence": 62.196102,
+          "line": "1-18-1-1"
+        },
+        {
+          "text": "nun",
+          "confidence": 43.302017,
+          "line": "1-18-1-1"
+        },
+        {
+          "text": "8%",
+          "confidence": 0,
+          "line": "1-19-1-1"
+        },
+        {
+          "text": "ka",
+          "confidence": 27.190903,
+          "line": "1-20-1-1"
+        },
+        {
+          "text": "PR",
+          "confidence": 3.347488,
+          "line": "1-20-1-1"
+        },
+        {
+          "text": "09",
+          "confidence": 58.018818,
+          "line": "1-21-1-1"
+        },
+        {
+          "text": "eo",
+          "confidence": 15.469353,
+          "line": "1-22-1-1"
+        },
+        {
+          "text": "<",
+          "confidence": 51.825737,
+          "line": "1-23-1-1"
+        },
+        {
+          "text": "0",
+          "confidence": 6.690071,
+          "line": "1-24-1-1"
+        },
+        {
+          "text": "®",
+          "confidence": 26.548042,
+          "line": "1-24-1-1"
+        },
+        {
+          "text": "ly",
+          "confidence": 27.246887,
+          "line": "1-25-1-1"
+        },
+        {
+          "text": "i",
+          "confidence": 72.727371,
+          "line": "1-26-1-1"
+        },
+        {
+          "text": "\\",
+          "confidence": 93.226669,
+          "line": "1-26-1-1"
+        },
+        {
+          "text": "wr",
+          "confidence": 73.316971,
+          "line": "1-26-1-1"
+        },
+        {
+          "text": ")",
+          "confidence": 57.496826,
+          "line": "1-26-1-1"
+        },
+        {
+          "text": "Il",
+          "confidence": 93.790398,
+          "line": "1-26-1-1"
+        },
+        {
+          "text": "—_",
+          "confidence": 49.002838,
+          "line": "1-27-1-1"
+        },
+        {
+          "text": "Nr",
+          "confidence": 84.08728,
+          "line": "1-28-1-1"
+        },
+        {
+          "text": "|",
+          "confidence": 61.701778,
+          "line": "1-29-1-1"
+        },
+        {
+          "text": "©",
+          "confidence": 83.219055,
+          "line": "1-30-1-1"
+        },
+        {
+          "text": "Pp",
+          "confidence": 29.19339,
+          "line": "1-31-1-1"
+        },
+        {
+          "text": "RY",
+          "confidence": 46.969162,
+          "line": "1-32-1-1"
+        },
+        {
+          "text": "Hi",
+          "confidence": 56.691269,
+          "line": "1-33-1-1"
+        },
+        {
+          "text": "ML",
+          "confidence": 38.891369,
+          "line": "1-34-1-1"
+        },
+        {
+          "text": "*",
+          "confidence": 63.296322,
+          "line": "1-35-1-1"
+        },
+        {
+          "text": "A",
+          "confidence": 22.462387,
+          "line": "1-36-1-1"
+        },
+        {
+          "text": "e",
+          "confidence": 22.958313,
+          "line": "1-37-1-1"
+        },
+        {
+          "text": "PS",
+          "confidence": 54.974327,
+          "line": "1-37-1-1"
+        },
+        {
+          "text": "N°",
+          "confidence": 56.500702,
+          "line": "1-38-1-1"
+        },
+        {
+          "text": ">",
+          "confidence": 70.536804,
+          "line": "1-39-1-1"
+        },
+        {
+          "text": "\\",
+          "confidence": 89.804199,
+          "line": "1-40-1-1"
+        },
+        {
+          "text": "RA,",
+          "confidence": 25.884239,
+          "line": "1-41-1-1"
+        },
+        {
+          "text": ">",
+          "confidence": 89.514671,
+          "line": "1-42-1-1"
+        },
+        {
+          "text": "-—",
+          "confidence": 58.437164,
+          "line": "1-43-1-1"
+        },
+        {
+          "text": "\\",
+          "confidence": 83.863319,
+          "line": "1-44-1-1"
+        },
+        {
+          "text": "AN",
+          "confidence": 73.942284,
+          "line": "1-44-1-1"
+        },
+        {
+          "text": "giggeralm",
+          "confidence": 91.81144,
+          "line": "1-45-1-1"
+        },
+        {
+          "text": "96",
+          "confidence": 92.514008,
+          "line": "1-46-1-1"
+        },
+        {
+          "text": "seit",
+          "confidence": 92.148636,
+          "line": "1-47-1-1"
+        },
+        {
+          "text": "1?",
+          "confidence": 47.50071,
+          "line": "1-47-1-1"
+        },
+        {
+          "text": "ON",
+          "confidence": 89.068192,
+          "line": "1-48-1-1"
+        },
+        {
+          "text": "THE",
+          "confidence": 96.808891,
+          "line": "1-48-1-1"
+        },
+        {
+          "text": "MIX:",
+          "confidence": 96.148033,
+          "line": "1-48-1-1"
+        },
+        {
+          "text": "ur",
+          "confidence": 0,
+          "line": "1-49-1-1"
+        },
+        {
+          "text": "SAMO",
+          "confidence": 2.928551,
+          "line": "1-49-1-1"
+        },
+        {
+          "text": "TAG",
+          "confidence": 2.928551,
+          "line": "1-49-1-1"
+        },
+        {
+          "text": "01.10.2026",
+          "confidence": 72.141022,
+          "line": "1-49-1-1"
+        },
+        {
+          "text": "RO",
+          "confidence": 95.069321,
+          "line": "1-50-1-1"
+        },
+        {
+          "text": "DARIO",
+          "confidence": 95.227356,
+          "line": "1-51-1-1"
+        },
+        {
+          "text": "FREE",
+          "confidence": 96.57943,
+          "line": "1-52-1-1"
+        },
+        {
+          "text": "ENTRY",
+          "confidence": 96.177376,
+          "line": "1-52-1-1"
+        },
+        {
+          "text": "|",
+          "confidence": 93.072067,
+          "line": "1-52-1-1"
+        },
+        {
+          "text": "DOORS",
+          "confidence": 96.108543,
+          "line": "1-52-1-1"
+        },
+        {
+          "text": "OPEN",
+          "confidence": 95.927429,
+          "line": "1-52-1-1"
+        },
+        {
+          "text": "20:00",
+          "confidence": 96.653259,
+          "line": "1-52-1-1"
+        },
+        {
+          "text": "|",
+          "confidence": 92.036461,
+          "line": "1-52-1-1"
+        },
+        {
+          "text": "ENTRY",
+          "confidence": 91.927246,
+          "line": "1-52-1-1"
+        },
+        {
+          "text": "16+",
+          "confidence": 96.365265,
+          "line": "1-52-1-1"
+        }
+      ],
+      "method": "instagram-image-ocr",
+      "checkedAt": "2026-10-31T22:03:22.881Z",
+      "sha256": "c9a799e995b90d3de27dea9da686294416b61df0d4f4343eefe3dfff720bd284"
+    }
+  },
+  "documents": {
+    "55171582090ddc5b6c79c7d085536da1f9b7e1557f048e80be73649a80ded4aa": {
+      "text": "<4\nHI\n\"i\nÈ\nen\nz se en |\nqu\n|\nA\ni\nI\nN\n\\\nN\nis\n#\n\\)",
+      "words": [
+        {
+          "text": "<4",
+          "confidence": 90.22876,
+          "line": "1-1-1-1"
+        },
+        {
+          "text": "HI",
+          "confidence": 52.395576,
+          "line": "1-2-1-1"
+        },
+        {
+          "text": "\"i",
+          "confidence": 24.313194,
+          "line": "1-3-1-1"
+        },
+        {
+          "text": "È",
+          "confidence": 86.787369,
+          "line": "1-4-1-1"
+        },
+        {
+          "text": "en",
+          "confidence": 41.374298,
+          "line": "1-5-1-1"
+        },
+        {
+          "text": "z",
+          "confidence": 49.67276,
+          "line": "1-6-1-1"
+        },
+        {
+          "text": "se",
+          "confidence": 14.907997,
+          "line": "1-6-1-1"
+        },
+        {
+          "text": "en",
+          "confidence": 41.092239,
+          "line": "1-6-1-1"
+        },
+        {
+          "text": "|",
+          "confidence": 86.51696,
+          "line": "1-6-1-1"
+        },
+        {
+          "text": "qu",
+          "confidence": 59.91851,
+          "line": "1-7-1-1"
+        },
+        {
+          "text": "|",
+          "confidence": 65.921066,
+          "line": "1-8-1-1"
+        },
+        {
+          "text": "A",
+          "confidence": 43.261505,
+          "line": "1-9-1-1"
+        },
+        {
+          "text": "i",
+          "confidence": 62.299194,
+          "line": "1-10-1-1"
+        },
+        {
+          "text": "I",
+          "confidence": 67.312546,
+          "line": "1-11-1-1"
+        },
+        {
+          "text": "N",
+          "confidence": 76.470695,
+          "line": "1-12-1-1"
+        },
+        {
+          "text": "\\",
+          "confidence": 72.78363,
+          "line": "1-13-1-1"
+        },
+        {
+          "text": "N",
+          "confidence": 77.632141,
+          "line": "1-14-1-1"
+        },
+        {
+          "text": "is",
+          "confidence": 13.329361,
+          "line": "1-15-1-1"
+        },
+        {
+          "text": "#",
+          "confidence": 84.743835,
+          "line": "1-16-1-1"
+        },
+        {
+          "text": "\\)",
+          "confidence": 43.482216,
+          "line": "1-17-1-1"
+        }
+      ],
+      "method": "instagram-image-ocr",
+      "checkedAt": "2026-10-31T22:03:32.709Z",
+      "sha256": "55171582090ddc5b6c79c7d085536da1f9b7e1557f048e80be73649a80ded4aa"
+    },
+    "66b09ee0785d3c3f4cc25e127511bb859ba44ef52d3d1f26e3b3550c820f7bee": {
+      "text": "WHAT\nPARTY\nY\nARE YOU?",
+      "words": [
+        {
+          "text": "WHAT",
+          "confidence": 96.552559,
+          "line": "1-1-1-1"
+        },
+        {
+          "text": "PARTY",
+          "confidence": 96.308662,
+          "line": "1-2-1-1"
+        },
+        {
+          "text": "Y",
+          "confidence": 92.904892,
+          "line": "1-3-1-1"
+        },
+        {
+          "text": "ARE",
+          "confidence": 96.863548,
+          "line": "1-4-1-1"
+        },
+        {
+          "text": "YOU?",
+          "confidence": 96.397018,
+          "line": "1-4-1-1"
+        }
+      ],
+      "method": "instagram-image-ocr",
+      "checkedAt": "2026-10-31T22:03:31.208Z",
+      "sha256": "66b09ee0785d3c3f4cc25e127511bb859ba44ef52d3d1f26e3b3550c820f7bee"
+    },
+    "2d62450caf7018f9ed88527c71ddbea91d0290daba5bdb207d352352bc0313d7": {
+      "text": "CLUB FPRITZIN®\nDOMENICA. 2 7 SETTEMBRE | DALLE.14:00\n\\\ni\n|\nU\n4\noY\n-®]\n© SUMMERS\nst\nRIV.\n—\nre\nZZ\n=>\nSOB\nNa\nUn\n(Be\nAlt\nad\n€ |\nit\nHee 4\n20\ni\n=\n>\n4a\ncay see Ss CE\nSa;\nER\nEB\n23\nei &\n»\nNace\nDJ ANDREW\nN\nED iy Dacia\nPASQUA 'GALVANIN SMITH =<\nfo cotone SM cremona\nNTINERIA\n=\nMw",
+      "words": [
+        {
+          "text": "CLUB",
+          "confidence": 87.230705,
+          "line": "1-1-1-1"
+        },
+        {
+          "text": "FPRITZIN®",
+          "confidence": 32.379677,
+          "line": "1-1-1-1"
+        },
+        {
+          "text": "DOMENICA.",
+          "confidence": 81.146851,
+          "line": "1-2-1-1"
+        },
+        {
+          "text": "2",
+          "confidence": 89.539093,
+          "line": "1-2-1-1"
+        },
+        {
+          "text": "7",
+          "confidence": 90.825378,
+          "line": "1-2-1-1"
+        },
+        {
+          "text": "SETTEMBRE",
+          "confidence": 95.601082,
+          "line": "1-2-1-1"
+        },
+        {
+          "text": "|",
+          "confidence": 91.410637,
+          "line": "1-2-1-1"
+        },
+        {
+          "text": "DALLE.14:00",
+          "confidence": 80.119194,
+          "line": "1-2-1-1"
+        },
+        {
+          "text": "\\",
+          "confidence": 57.147026,
+          "line": "1-3-1-1"
+        },
+        {
+          "text": "i",
+          "confidence": 71.400635,
+          "line": "1-4-1-1"
+        },
+        {
+          "text": "|",
+          "confidence": 75.939857,
+          "line": "1-5-1-1"
+        },
+        {
+          "text": "U",
+          "confidence": 81.080719,
+          "line": "1-6-1-1"
+        },
+        {
+          "text": "4",
+          "confidence": 81.402763,
+          "line": "1-7-1-1"
+        },
+        {
+          "text": "oY",
+          "confidence": 75.128952,
+          "line": "1-8-1-1"
+        },
+        {
+          "text": "-®]",
+          "confidence": 26.394943,
+          "line": "1-9-1-1"
+        },
+        {
+          "text": "©",
+          "confidence": 51.987305,
+          "line": "1-10-1-1"
+        },
+        {
+          "text": "SUMMERS",
+          "confidence": 90.373642,
+          "line": "1-10-1-1"
+        },
+        {
+          "text": "st",
+          "confidence": 70.910942,
+          "line": "1-11-1-1"
+        },
+        {
+          "text": "RIV.",
+          "confidence": 74.239113,
+          "line": "1-12-1-1"
+        },
+        {
+          "text": "—",
+          "confidence": 68.025314,
+          "line": "1-13-1-1"
+        },
+        {
+          "text": "re",
+          "confidence": 30.224655,
+          "line": "1-14-1-1"
+        },
+        {
+          "text": "ZZ",
+          "confidence": 31.359062,
+          "line": "1-15-1-1"
+        },
+        {
+          "text": "=>",
+          "confidence": 28.780899,
+          "line": "1-16-1-1"
+        },
+        {
+          "text": "SOB",
+          "confidence": 22.415245,
+          "line": "1-17-1-1"
+        },
+        {
+          "text": "Na",
+          "confidence": 45.303406,
+          "line": "1-18-1-1"
+        },
+        {
+          "text": "Un",
+          "confidence": 68.744865,
+          "line": "1-19-1-1"
+        },
+        {
+          "text": "(Be",
+          "confidence": 36.880577,
+          "line": "1-20-1-1"
+        },
+        {
+          "text": "Alt",
+          "confidence": 34.777702,
+          "line": "1-21-1-1"
+        },
+        {
+          "text": "ad",
+          "confidence": 55.830303,
+          "line": "1-22-1-1"
+        },
+        {
+          "text": "€",
+          "confidence": 25.373428,
+          "line": "1-23-1-1"
+        },
+        {
+          "text": "|",
+          "confidence": 45.630375,
+          "line": "1-23-1-1"
+        },
+        {
+          "text": "it",
+          "confidence": 42.034187,
+          "line": "1-24-1-1"
+        },
+        {
+          "text": "Hee",
+          "confidence": 36.141304,
+          "line": "1-25-1-1"
+        },
+        {
+          "text": "4",
+          "confidence": 86.758743,
+          "line": "1-25-1-1"
+        },
+        {
+          "text": "20",
+          "confidence": 58.572403,
+          "line": "1-26-1-1"
+        },
+        {
+          "text": "i",
+          "confidence": 61.08337,
+          "line": "1-27-1-1"
+        },
+        {
+          "text": "=",
+          "confidence": 54.822556,
+          "line": "1-28-1-1"
+        },
+        {
+          "text": ">",
+          "confidence": 71.154175,
+          "line": "1-29-1-1"
+        },
+        {
+          "text": "4a",
+          "confidence": 77.136215,
+          "line": "1-30-1-1"
+        },
+        {
+          "text": "cay",
+          "confidence": 21.501587,
+          "line": "1-31-1-1"
+        },
+        {
+          "text": "see",
+          "confidence": 31.647827,
+          "line": "1-31-1-1"
+        },
+        {
+          "text": "Ss",
+          "confidence": 39.793926,
+          "line": "1-31-1-1"
+        },
+        {
+          "text": "CE",
+          "confidence": 54.310944,
+          "line": "1-31-1-1"
+        },
+        {
+          "text": "Sa;",
+          "confidence": 1.226242,
+          "line": "1-32-1-1"
+        },
+        {
+          "text": "ER",
+          "confidence": 41.948555,
+          "line": "1-33-1-1"
+        },
+        {
+          "text": "EB",
+          "confidence": 37.442581,
+          "line": "1-34-1-1"
+        },
+        {
+          "text": "23",
+          "confidence": 30.216118,
+          "line": "1-35-1-1"
+        },
+        {
+          "text": "ei",
+          "confidence": 17.759697,
+          "line": "1-36-1-1"
+        },
+        {
+          "text": "&",
+          "confidence": 3.917206,
+          "line": "1-36-1-1"
+        },
+        {
+          "text": "»",
+          "confidence": 66.679184,
+          "line": "1-37-1-1"
+        },
+        {
+          "text": "Nace",
+          "confidence": 51.686813,
+          "line": "1-38-1-1"
+        },
+        {
+          "text": "DJ",
+          "confidence": 94.660835,
+          "line": "1-39-1-1"
+        },
+        {
+          "text": "ANDREW",
+          "confidence": 96.175934,
+          "line": "1-39-1-1"
+        },
+        {
+          "text": "N",
+          "confidence": 81.720886,
+          "line": "1-40-1-1"
+        },
+        {
+          "text": "ED",
+          "confidence": 70.893799,
+          "line": "1-41-1-1"
+        },
+        {
+          "text": "iy",
+          "confidence": 67.481537,
+          "line": "1-41-1-1"
+        },
+        {
+          "text": "Dacia",
+          "confidence": 39.054512,
+          "line": "1-41-1-1"
+        },
+        {
+          "text": "PASQUA",
+          "confidence": 64.762421,
+          "line": "1-42-1-1"
+        },
+        {
+          "text": "'GALVANIN",
+          "confidence": 38.989758,
+          "line": "1-42-1-1"
+        },
+        {
+          "text": "SMITH",
+          "confidence": 92.687202,
+          "line": "1-42-1-1"
+        },
+        {
+          "text": "=<",
+          "confidence": 68.870422,
+          "line": "1-42-1-1"
+        },
+        {
+          "text": "fo",
+          "confidence": 35.794113,
+          "line": "1-43-1-1"
+        },
+        {
+          "text": "cotone",
+          "confidence": 4.486267,
+          "line": "1-43-1-1"
+        },
+        {
+          "text": "SM",
+          "confidence": 31.058289,
+          "line": "1-43-1-1"
+        },
+        {
+          "text": "cremona",
+          "confidence": 15.985428,
+          "line": "1-43-1-1"
+        },
+        {
+          "text": "NTINERIA",
+          "confidence": 75.322945,
+          "line": "1-44-1-1"
+        },
+        {
+          "text": "=",
+          "confidence": 43.442383,
+          "line": "1-45-1-1"
+        },
+        {
+          "text": "Mw",
+          "confidence": 37.601185,
+          "line": "1-46-1-1"
+        }
+      ],
+      "method": "instagram-image-ocr",
+      "checkedAt": "2026-10-31T22:03:29.744Z",
+      "sha256": "2d62450caf7018f9ed88527c71ddbea91d0290daba5bdb207d352352bc0313d7"
+    },
+    "86fc44cf986b7596076308e80ab4f71c1d11b0d06822d1e388edc9557dda0c2b": {
+      "text": "FEN\nDp\nFo\niy\nsa\nHy\nid\nA\n7\n4,\n\\\\\nTA\nN\ndi\nJ\nWEN\nif\nren\nCA)\n=\nPra\nVat\n9\nKERN\net\naha\nPa]\nWes\nDÌ li\nUè\nat\n=\nSAI\nNG Kal\ni\nNE\ngen\na\net\n>\nEIN\n~\nRL\nè)\ni\n)\nN\nDi En\ntail *\npe E\n¥ È\nZap\"\n—_— |\n4\nSI",
+      "words": [
+        {
+          "text": "FEN",
+          "confidence": 32.432594,
+          "line": "1-1-1-1"
+        },
+        {
+          "text": "Dp",
+          "confidence": 37.763962,
+          "line": "1-2-1-1"
+        },
+        {
+          "text": "Fo",
+          "confidence": 59.697227,
+          "line": "1-3-1-1"
+        },
+        {
+          "text": "iy",
+          "confidence": 14.998901,
+          "line": "1-4-1-1"
+        },
+        {
+          "text": "sa",
+          "confidence": 45.484451,
+          "line": "1-5-1-1"
+        },
+        {
+          "text": "Hy",
+          "confidence": 0,
+          "line": "1-6-1-1"
+        },
+        {
+          "text": "id",
+          "confidence": 50.665779,
+          "line": "1-7-1-1"
+        },
+        {
+          "text": "A",
+          "confidence": 72.552139,
+          "line": "1-8-1-1"
+        },
+        {
+          "text": "7",
+          "confidence": 80.213287,
+          "line": "1-9-1-1"
+        },
+        {
+          "text": "4,",
+          "confidence": 68.724121,
+          "line": "1-10-1-1"
+        },
+        {
+          "text": "\\\\",
+          "confidence": 61.679741,
+          "line": "1-11-1-1"
+        },
+        {
+          "text": "TA",
+          "confidence": 55.401913,
+          "line": "1-12-1-1"
+        },
+        {
+          "text": "N",
+          "confidence": 92.062798,
+          "line": "1-13-1-1"
+        },
+        {
+          "text": "di",
+          "confidence": 57.470509,
+          "line": "1-14-1-1"
+        },
+        {
+          "text": "J",
+          "confidence": 58.441673,
+          "line": "1-15-1-1"
+        },
+        {
+          "text": "WEN",
+          "confidence": 60.689598,
+          "line": "1-16-1-1"
+        },
+        {
+          "text": "if",
+          "confidence": 57.293037,
+          "line": "1-17-1-1"
+        },
+        {
+          "text": "ren",
+          "confidence": 35.763062,
+          "line": "1-18-1-1"
+        },
+        {
+          "text": "CA)",
+          "confidence": 38.571476,
+          "line": "1-19-1-1"
+        },
+        {
+          "text": "=",
+          "confidence": 56.583103,
+          "line": "1-20-1-1"
+        },
+        {
+          "text": "Pra",
+          "confidence": 25.329254,
+          "line": "1-21-1-1"
+        },
+        {
+          "text": "Vat",
+          "confidence": 54.900223,
+          "line": "1-22-1-1"
+        },
+        {
+          "text": "9",
+          "confidence": 79.568504,
+          "line": "1-23-1-1"
+        },
+        {
+          "text": "KERN",
+          "confidence": 40.856571,
+          "line": "1-24-1-1"
+        },
+        {
+          "text": "et",
+          "confidence": 21.600479,
+          "line": "1-25-1-1"
+        },
+        {
+          "text": "aha",
+          "confidence": 38.54686,
+          "line": "1-26-1-1"
+        },
+        {
+          "text": "Pa]",
+          "confidence": 44.679596,
+          "line": "1-27-1-1"
+        },
+        {
+          "text": "Wes",
+          "confidence": 60.914371,
+          "line": "1-28-1-1"
+        },
+        {
+          "text": "DÌ",
+          "confidence": 12.347191,
+          "line": "1-29-1-1"
+        },
+        {
+          "text": "li",
+          "confidence": 3.671524,
+          "line": "1-29-1-1"
+        },
+        {
+          "text": "Uè",
+          "confidence": 47.540237,
+          "line": "1-30-1-1"
+        },
+        {
+          "text": "at",
+          "confidence": 46.571053,
+          "line": "1-31-1-1"
+        },
+        {
+          "text": "=",
+          "confidence": 59.224133,
+          "line": "1-32-1-1"
+        },
+        {
+          "text": "SAI",
+          "confidence": 34.051758,
+          "line": "1-33-1-1"
+        },
+        {
+          "text": "NG",
+          "confidence": 38.969528,
+          "line": "1-34-1-1"
+        },
+        {
+          "text": "Kal",
+          "confidence": 44.082466,
+          "line": "1-34-1-1"
+        },
+        {
+          "text": "i",
+          "confidence": 29.106064,
+          "line": "1-35-1-1"
+        },
+        {
+          "text": "NE",
+          "confidence": 32.129318,
+          "line": "1-36-1-1"
+        },
+        {
+          "text": "gen",
+          "confidence": 43.526386,
+          "line": "1-37-1-1"
+        },
+        {
+          "text": "a",
+          "confidence": 63.502804,
+          "line": "1-38-1-1"
+        },
+        {
+          "text": "et",
+          "confidence": 45.800743,
+          "line": "1-39-1-1"
+        },
+        {
+          "text": ">",
+          "confidence": 56.684361,
+          "line": "1-40-1-1"
+        },
+        {
+          "text": "EIN",
+          "confidence": 0,
+          "line": "1-41-1-1"
+        },
+        {
+          "text": "~",
+          "confidence": 48.714035,
+          "line": "1-42-1-1"
+        },
+        {
+          "text": "RL",
+          "confidence": 23.875648,
+          "line": "1-43-1-1"
+        },
+        {
+          "text": "è)",
+          "confidence": 53.906136,
+          "line": "1-44-1-1"
+        },
+        {
+          "text": "i",
+          "confidence": 18.774872,
+          "line": "1-45-1-1"
+        },
+        {
+          "text": ")",
+          "confidence": 0,
+          "line": "1-46-1-1"
+        },
+        {
+          "text": "N",
+          "confidence": 74.249184,
+          "line": "1-47-1-1"
+        },
+        {
+          "text": "Di",
+          "confidence": 18.43364,
+          "line": "1-48-1-1"
+        },
+        {
+          "text": "En",
+          "confidence": 29.302536,
+          "line": "1-48-1-1"
+        },
+        {
+          "text": "tail",
+          "confidence": 34.419884,
+          "line": "1-49-1-1"
+        },
+        {
+          "text": "*",
+          "confidence": 82.428635,
+          "line": "1-49-1-1"
+        },
+        {
+          "text": "pe",
+          "confidence": 22.58799,
+          "line": "1-50-1-1"
+        },
+        {
+          "text": "E",
+          "confidence": 28.692703,
+          "line": "1-50-1-1"
+        },
+        {
+          "text": "¥",
+          "confidence": 89.897987,
+          "line": "1-51-1-1"
+        },
+        {
+          "text": "È",
+          "confidence": 39.317589,
+          "line": "1-51-1-1"
+        },
+        {
+          "text": "Zap\"",
+          "confidence": 13.784821,
+          "line": "1-52-1-1"
+        },
+        {
+          "text": "—_—",
+          "confidence": 35.275612,
+          "line": "1-53-1-1"
+        },
+        {
+          "text": "|",
+          "confidence": 80.944557,
+          "line": "1-53-1-1"
+        },
+        {
+          "text": "4",
+          "confidence": 85.184738,
+          "line": "1-54-1-1"
+        },
+        {
+          "text": "SI",
+          "confidence": 61.627468,
+          "line": "1-55-1-1"
+        }
+      ],
+      "method": "instagram-image-ocr",
+      "checkedAt": "2026-10-31T22:03:27.058Z",
+      "sha256": "86fc44cf986b7596076308e80ab4f71c1d11b0d06822d1e388edc9557dda0c2b"
+    },
+    "a16eacd9e16f08d124b3d9a9418620f171a2dcb174aee8f365aa4c99b50612dd": {
+      "text": "af\nVi\nDI\nBp\niz\ndi\nDi\nAa\nes\nSS\noe\nae\nee\nDI\nES\net\n[2]\n=\nm.\nMi\nla\n=\nA\n=\nFan\nie:\nBa\nZu\ndet\nES\nAtt\nSN\noe\n4\ndi\na\na\ndr\nES\nRS\nda\nER\nEr\n2}\nej\nhs\nN,\nDAS\no,\n4\nae",
+      "words": [
+        {
+          "text": "af",
+          "confidence": 54.409107,
+          "line": "1-1-1-1"
+        },
+        {
+          "text": "Vi",
+          "confidence": 28.23806,
+          "line": "1-2-1-1"
+        },
+        {
+          "text": "DI",
+          "confidence": 37.186943,
+          "line": "1-3-1-1"
+        },
+        {
+          "text": "Bp",
+          "confidence": 10.331123,
+          "line": "1-4-1-1"
+        },
+        {
+          "text": "iz",
+          "confidence": 62.644463,
+          "line": "1-5-1-1"
+        },
+        {
+          "text": "di",
+          "confidence": 46.41256,
+          "line": "1-6-1-1"
+        },
+        {
+          "text": "Di",
+          "confidence": 42.622562,
+          "line": "1-7-1-1"
+        },
+        {
+          "text": "Aa",
+          "confidence": 54.278141,
+          "line": "1-8-1-1"
+        },
+        {
+          "text": "es",
+          "confidence": 38.25478,
+          "line": "1-9-1-1"
+        },
+        {
+          "text": "SS",
+          "confidence": 74.925591,
+          "line": "1-10-1-1"
+        },
+        {
+          "text": "oe",
+          "confidence": 42.93465,
+          "line": "1-11-1-1"
+        },
+        {
+          "text": "ae",
+          "confidence": 46.553177,
+          "line": "1-12-1-1"
+        },
+        {
+          "text": "ee",
+          "confidence": 52.558739,
+          "line": "1-13-1-1"
+        },
+        {
+          "text": "DI",
+          "confidence": 51.040386,
+          "line": "1-14-1-1"
+        },
+        {
+          "text": "ES",
+          "confidence": 73.281357,
+          "line": "1-15-1-1"
+        },
+        {
+          "text": "et",
+          "confidence": 26.751518,
+          "line": "1-16-1-1"
+        },
+        {
+          "text": "[2]",
+          "confidence": 46.653332,
+          "line": "1-17-1-1"
+        },
+        {
+          "text": "=",
+          "confidence": 49.04652,
+          "line": "1-18-1-1"
+        },
+        {
+          "text": "m.",
+          "confidence": 60.772221,
+          "line": "1-19-1-1"
+        },
+        {
+          "text": "Mi",
+          "confidence": 27.985489,
+          "line": "1-20-1-1"
+        },
+        {
+          "text": "la",
+          "confidence": 75.826279,
+          "line": "1-21-1-1"
+        },
+        {
+          "text": "=",
+          "confidence": 34.009392,
+          "line": "1-22-1-1"
+        },
+        {
+          "text": "A",
+          "confidence": 45.507278,
+          "line": "1-23-1-1"
+        },
+        {
+          "text": "=",
+          "confidence": 41.972893,
+          "line": "1-24-1-1"
+        },
+        {
+          "text": "Fan",
+          "confidence": 27.25666,
+          "line": "1-25-1-1"
+        },
+        {
+          "text": "ie:",
+          "confidence": 5.318649,
+          "line": "1-26-1-1"
+        },
+        {
+          "text": "Ba",
+          "confidence": 28.824356,
+          "line": "1-27-1-1"
+        },
+        {
+          "text": "Zu",
+          "confidence": 21.400993,
+          "line": "1-28-1-1"
+        },
+        {
+          "text": "det",
+          "confidence": 18.763123,
+          "line": "1-29-1-1"
+        },
+        {
+          "text": "ES",
+          "confidence": 13.458801,
+          "line": "1-30-1-1"
+        },
+        {
+          "text": "Att",
+          "confidence": 20.968239,
+          "line": "1-31-1-1"
+        },
+        {
+          "text": "SN",
+          "confidence": 53.158989,
+          "line": "1-32-1-1"
+        },
+        {
+          "text": "oe",
+          "confidence": 26.929543,
+          "line": "1-33-1-1"
+        },
+        {
+          "text": "4",
+          "confidence": 66.82431,
+          "line": "1-34-1-1"
+        },
+        {
+          "text": "di",
+          "confidence": 16.155518,
+          "line": "1-35-1-1"
+        },
+        {
+          "text": "a",
+          "confidence": 48.267139,
+          "line": "1-36-1-1"
+        },
+        {
+          "text": "a",
+          "confidence": 32.26226,
+          "line": "1-37-1-1"
+        },
+        {
+          "text": "dr",
+          "confidence": 28.772346,
+          "line": "1-38-1-1"
+        },
+        {
+          "text": "ES",
+          "confidence": 16.361862,
+          "line": "1-39-1-1"
+        },
+        {
+          "text": "RS",
+          "confidence": 37.066269,
+          "line": "1-40-1-1"
+        },
+        {
+          "text": "da",
+          "confidence": 38.604187,
+          "line": "1-41-1-1"
+        },
+        {
+          "text": "ER",
+          "confidence": 44.17601,
+          "line": "1-42-1-1"
+        },
+        {
+          "text": "Er",
+          "confidence": 36.685448,
+          "line": "1-43-1-1"
+        },
+        {
+          "text": "2}",
+          "confidence": 51.775276,
+          "line": "1-44-1-1"
+        },
+        {
+          "text": "ej",
+          "confidence": 2.984245,
+          "line": "1-45-1-1"
+        },
+        {
+          "text": "hs",
+          "confidence": 20.287781,
+          "line": "1-46-1-1"
+        },
+        {
+          "text": "N,",
+          "confidence": 41.94838,
+          "line": "1-47-1-1"
+        },
+        {
+          "text": "DAS",
+          "confidence": 47.09827,
+          "line": "1-48-1-1"
+        },
+        {
+          "text": "o,",
+          "confidence": 30.729713,
+          "line": "1-49-1-1"
+        },
+        {
+          "text": "4",
+          "confidence": 38.725967,
+          "line": "1-50-1-1"
+        },
+        {
+          "text": "ae",
+          "confidence": 39.212929,
+          "line": "1-51-1-1"
+        }
+      ],
+      "method": "instagram-image-ocr",
+      "checkedAt": "2026-10-31T22:03:25.701Z",
+      "sha256": "a16eacd9e16f08d124b3d9a9418620f171a2dcb174aee8f365aa4c99b50612dd"
+    },
+    "18c3bfe4cc8ec20349081815336fc5f305ce70103b0589a38124d24692698635": {
+      "text": "as\na\nI“\ni\ndt\nBy\na:\n4,\nE\nÈ\nei\nN\ner\n#%,\n=\nfa\n«ui\nRs\n7\nN\nì\n=\n|\nr\nBi\n\\\nHN\nAg\n|\nI\nI)\nfl\n(f N\n>\nsl\n|\n\\\nve\nap\nJ\nOX\nu\nOM,\n/ one\n#",
+      "words": [
+        {
+          "text": "as",
+          "confidence": 56.014549,
+          "line": "1-1-1-1"
+        },
+        {
+          "text": "a",
+          "confidence": 62.5993,
+          "line": "1-2-1-1"
+        },
+        {
+          "text": "I“",
+          "confidence": 51.346222,
+          "line": "1-3-1-1"
+        },
+        {
+          "text": "i",
+          "confidence": 41.185074,
+          "line": "1-4-1-1"
+        },
+        {
+          "text": "dt",
+          "confidence": 16.68071,
+          "line": "1-5-1-1"
+        },
+        {
+          "text": "By",
+          "confidence": 33.175323,
+          "line": "1-6-1-1"
+        },
+        {
+          "text": "a:",
+          "confidence": 15.228409,
+          "line": "1-7-1-1"
+        },
+        {
+          "text": "4,",
+          "confidence": 55.939468,
+          "line": "1-8-1-1"
+        },
+        {
+          "text": "E",
+          "confidence": 44.245499,
+          "line": "1-9-1-1"
+        },
+        {
+          "text": "È",
+          "confidence": 81.070641,
+          "line": "1-10-1-1"
+        },
+        {
+          "text": "ei",
+          "confidence": 46.102123,
+          "line": "1-11-1-1"
+        },
+        {
+          "text": "N",
+          "confidence": 60.495636,
+          "line": "1-12-1-1"
+        },
+        {
+          "text": "er",
+          "confidence": 41.815346,
+          "line": "1-13-1-1"
+        },
+        {
+          "text": "#%,",
+          "confidence": 57.233448,
+          "line": "1-14-1-1"
+        },
+        {
+          "text": "=",
+          "confidence": 51.418823,
+          "line": "1-15-1-1"
+        },
+        {
+          "text": "fa",
+          "confidence": 63.77346,
+          "line": "1-16-1-1"
+        },
+        {
+          "text": "«ui",
+          "confidence": 60.7705,
+          "line": "1-17-1-1"
+        },
+        {
+          "text": "Rs",
+          "confidence": 33.789658,
+          "line": "1-18-1-1"
+        },
+        {
+          "text": "7",
+          "confidence": 87.032372,
+          "line": "1-19-1-1"
+        },
+        {
+          "text": "N",
+          "confidence": 81.930672,
+          "line": "1-20-1-1"
+        },
+        {
+          "text": "ì",
+          "confidence": 47.093094,
+          "line": "1-21-1-1"
+        },
+        {
+          "text": "=",
+          "confidence": 90.417351,
+          "line": "1-22-1-1"
+        },
+        {
+          "text": "|",
+          "confidence": 54.020111,
+          "line": "1-23-1-1"
+        },
+        {
+          "text": "r",
+          "confidence": 82.727783,
+          "line": "1-24-1-1"
+        },
+        {
+          "text": "Bi",
+          "confidence": 43.508118,
+          "line": "1-25-1-1"
+        },
+        {
+          "text": "\\",
+          "confidence": 89.158318,
+          "line": "1-26-1-1"
+        },
+        {
+          "text": "HN",
+          "confidence": 36.156277,
+          "line": "1-27-1-1"
+        },
+        {
+          "text": "Ag",
+          "confidence": 0,
+          "line": "1-28-1-1"
+        },
+        {
+          "text": "|",
+          "confidence": 89.897949,
+          "line": "1-29-1-1"
+        },
+        {
+          "text": "I",
+          "confidence": 36.558998,
+          "line": "1-30-1-1"
+        },
+        {
+          "text": "I)",
+          "confidence": 81.746147,
+          "line": "1-31-1-1"
+        },
+        {
+          "text": "fl",
+          "confidence": 52.170906,
+          "line": "1-32-1-1"
+        },
+        {
+          "text": "(f",
+          "confidence": 46.578812,
+          "line": "1-33-1-1"
+        },
+        {
+          "text": "N",
+          "confidence": 63.243118,
+          "line": "1-33-1-1"
+        },
+        {
+          "text": ">",
+          "confidence": 48.181572,
+          "line": "1-34-1-1"
+        },
+        {
+          "text": "sl",
+          "confidence": 83.173523,
+          "line": "1-35-1-1"
+        },
+        {
+          "text": "|",
+          "confidence": 94.126152,
+          "line": "1-36-1-1"
+        },
+        {
+          "text": "\\",
+          "confidence": 81.41468,
+          "line": "1-37-1-1"
+        },
+        {
+          "text": "ve",
+          "confidence": 46.278435,
+          "line": "1-38-1-1"
+        },
+        {
+          "text": "ap",
+          "confidence": 61.871078,
+          "line": "1-39-1-1"
+        },
+        {
+          "text": "J",
+          "confidence": 91.312042,
+          "line": "1-40-1-1"
+        },
+        {
+          "text": "OX",
+          "confidence": 39.40934,
+          "line": "1-41-1-1"
+        },
+        {
+          "text": "u",
+          "confidence": 42.455261,
+          "line": "1-42-1-1"
+        },
+        {
+          "text": "OM,",
+          "confidence": 63.957371,
+          "line": "1-43-1-1"
+        },
+        {
+          "text": "/",
+          "confidence": 74.267426,
+          "line": "1-44-1-1"
+        },
+        {
+          "text": "one",
+          "confidence": 40.755352,
+          "line": "1-44-1-1"
+        },
+        {
+          "text": "#",
+          "confidence": 46.708374,
+          "line": "1-45-1-1"
+        }
+      ],
+      "method": "instagram-image-ocr",
+      "checkedAt": "2026-10-31T22:03:23.860Z",
+      "sha256": "18c3bfe4cc8ec20349081815336fc5f305ce70103b0589a38124d24692698635"
+    },
+    "c9a799e995b90d3de27dea9da686294416b61df0d4f4343eefe3dfff720bd284": {
+      "text": "nn\n) i\nI\ne °\ne [2\nA\\\nx\ndè\nDar\n=\n|\na *\n©\n6 @\n6.7,\n9.\nA\n. nun\n8%\nka PR\n09\neo\n<\n0 ®\nly\ni \\ wr ) Il\n—_\nNr\n|\n©\nPp\nRY\nHi\nML\n*\nA\ne PS\nN°\n>\n\\\nRA,\n>\n-—\n\\ AN\ngiggeralm\n96\nseit 1?\nON THE MIX:\nur SAMO TAG 01.10.2026\nRO\nDARIO\nFREE ENTRY | DOORS OPEN 20:00 | ENTRY 16+",
+      "words": [
+        {
+          "text": "nn",
+          "confidence": 40.107861,
+          "line": "1-1-1-1"
+        },
+        {
+          "text": ")",
+          "confidence": 75.454224,
+          "line": "1-2-1-1"
+        },
+        {
+          "text": "i",
+          "confidence": 35.770828,
+          "line": "1-2-1-1"
+        },
+        {
+          "text": "I",
+          "confidence": 79.29792,
+          "line": "1-3-1-1"
+        },
+        {
+          "text": "e",
+          "confidence": 77.396652,
+          "line": "1-4-1-1"
+        },
+        {
+          "text": "°",
+          "confidence": 74.914078,
+          "line": "1-4-1-1"
+        },
+        {
+          "text": "e",
+          "confidence": 79.996796,
+          "line": "1-5-1-1"
+        },
+        {
+          "text": "[2",
+          "confidence": 59.922264,
+          "line": "1-5-1-1"
+        },
+        {
+          "text": "A\\",
+          "confidence": 53.444672,
+          "line": "1-6-1-1"
+        },
+        {
+          "text": "x",
+          "confidence": 34.633163,
+          "line": "1-7-1-1"
+        },
+        {
+          "text": "dè",
+          "confidence": 68.646667,
+          "line": "1-8-1-1"
+        },
+        {
+          "text": "Dar",
+          "confidence": 48.367905,
+          "line": "1-9-1-1"
+        },
+        {
+          "text": "=",
+          "confidence": 47.1987,
+          "line": "1-10-1-1"
+        },
+        {
+          "text": "|",
+          "confidence": 56.067444,
+          "line": "1-11-1-1"
+        },
+        {
+          "text": "a",
+          "confidence": 87.140099,
+          "line": "1-12-1-1"
+        },
+        {
+          "text": "*",
+          "confidence": 46.185154,
+          "line": "1-12-1-1"
+        },
+        {
+          "text": "©",
+          "confidence": 25.445473,
+          "line": "1-13-1-1"
+        },
+        {
+          "text": "6",
+          "confidence": 30.358528,
+          "line": "1-14-1-1"
+        },
+        {
+          "text": "@",
+          "confidence": 46.208797,
+          "line": "1-14-1-1"
+        },
+        {
+          "text": "6.7,",
+          "confidence": 0,
+          "line": "1-15-1-1"
+        },
+        {
+          "text": "9.",
+          "confidence": 90.763779,
+          "line": "1-16-1-1"
+        },
+        {
+          "text": "A",
+          "confidence": 38.409378,
+          "line": "1-17-1-1"
+        },
+        {
+          "text": ".",
+          "confidence": 62.196102,
+          "line": "1-18-1-1"
+        },
+        {
+          "text": "nun",
+          "confidence": 43.302017,
+          "line": "1-18-1-1"
+        },
+        {
+          "text": "8%",
+          "confidence": 0,
+          "line": "1-19-1-1"
+        },
+        {
+          "text": "ka",
+          "confidence": 27.190903,
+          "line": "1-20-1-1"
+        },
+        {
+          "text": "PR",
+          "confidence": 3.347488,
+          "line": "1-20-1-1"
+        },
+        {
+          "text": "09",
+          "confidence": 58.018818,
+          "line": "1-21-1-1"
+        },
+        {
+          "text": "eo",
+          "confidence": 15.469353,
+          "line": "1-22-1-1"
+        },
+        {
+          "text": "<",
+          "confidence": 51.825737,
+          "line": "1-23-1-1"
+        },
+        {
+          "text": "0",
+          "confidence": 6.690071,
+          "line": "1-24-1-1"
+        },
+        {
+          "text": "®",
+          "confidence": 26.548042,
+          "line": "1-24-1-1"
+        },
+        {
+          "text": "ly",
+          "confidence": 27.246887,
+          "line": "1-25-1-1"
+        },
+        {
+          "text": "i",
+          "confidence": 72.727371,
+          "line": "1-26-1-1"
+        },
+        {
+          "text": "\\",
+          "confidence": 93.226669,
+          "line": "1-26-1-1"
+        },
+        {
+          "text": "wr",
+          "confidence": 73.316971,
+          "line": "1-26-1-1"
+        },
+        {
+          "text": ")",
+          "confidence": 57.496826,
+          "line": "1-26-1-1"
+        },
+        {
+          "text": "Il",
+          "confidence": 93.790398,
+          "line": "1-26-1-1"
+        },
+        {
+          "text": "—_",
+          "confidence": 49.002838,
+          "line": "1-27-1-1"
+        },
+        {
+          "text": "Nr",
+          "confidence": 84.08728,
+          "line": "1-28-1-1"
+        },
+        {
+          "text": "|",
+          "confidence": 61.701778,
+          "line": "1-29-1-1"
+        },
+        {
+          "text": "©",
+          "confidence": 83.219055,
+          "line": "1-30-1-1"
+        },
+        {
+          "text": "Pp",
+          "confidence": 29.19339,
+          "line": "1-31-1-1"
+        },
+        {
+          "text": "RY",
+          "confidence": 46.969162,
+          "line": "1-32-1-1"
+        },
+        {
+          "text": "Hi",
+          "confidence": 56.691269,
+          "line": "1-33-1-1"
+        },
+        {
+          "text": "ML",
+          "confidence": 38.891369,
+          "line": "1-34-1-1"
+        },
+        {
+          "text": "*",
+          "confidence": 63.296322,
+          "line": "1-35-1-1"
+        },
+        {
+          "text": "A",
+          "confidence": 22.462387,
+          "line": "1-36-1-1"
+        },
+        {
+          "text": "e",
+          "confidence": 22.958313,
+          "line": "1-37-1-1"
+        },
+        {
+          "text": "PS",
+          "confidence": 54.974327,
+          "line": "1-37-1-1"
+        },
+        {
+          "text": "N°",
+          "confidence": 56.500702,
+          "line": "1-38-1-1"
+        },
+        {
+          "text": ">",
+          "confidence": 70.536804,
+          "line": "1-39-1-1"
+        },
+        {
+          "text": "\\",
+          "confidence": 89.804199,
+          "line": "1-40-1-1"
+        },
+        {
+          "text": "RA,",
+          "confidence": 25.884239,
+          "line": "1-41-1-1"
+        },
+        {
+          "text": ">",
+          "confidence": 89.514671,
+          "line": "1-42-1-1"
+        },
+        {
+          "text": "-—",
+          "confidence": 58.437164,
+          "line": "1-43-1-1"
+        },
+        {
+          "text": "\\",
+          "confidence": 83.863319,
+          "line": "1-44-1-1"
+        },
+        {
+          "text": "AN",
+          "confidence": 73.942284,
+          "line": "1-44-1-1"
+        },
+        {
+          "text": "giggeralm",
+          "confidence": 91.81144,
+          "line": "1-45-1-1"
+        },
+        {
+          "text": "96",
+          "confidence": 92.514008,
+          "line": "1-46-1-1"
+        },
+        {
+          "text": "seit",
+          "confidence": 92.148636,
+          "line": "1-47-1-1"
+        },
+        {
+          "text": "1?",
+          "confidence": 47.50071,
+          "line": "1-47-1-1"
+        },
+        {
+          "text": "ON",
+          "confidence": 89.068192,
+          "line": "1-48-1-1"
+        },
+        {
+          "text": "THE",
+          "confidence": 96.808891,
+          "line": "1-48-1-1"
+        },
+        {
+          "text": "MIX:",
+          "confidence": 96.148033,
+          "line": "1-48-1-1"
+        },
+        {
+          "text": "ur",
+          "confidence": 0,
+          "line": "1-49-1-1"
+        },
+        {
+          "text": "SAMO",
+          "confidence": 2.928551,
+          "line": "1-49-1-1"
+        },
+        {
+          "text": "TAG",
+          "confidence": 2.928551,
+          "line": "1-49-1-1"
+        },
+        {
+          "text": "01.10.2026",
+          "confidence": 72.141022,
+          "line": "1-49-1-1"
+        },
+        {
+          "text": "RO",
+          "confidence": 95.069321,
+          "line": "1-50-1-1"
+        },
+        {
+          "text": "DARIO",
+          "confidence": 95.227356,
+          "line": "1-51-1-1"
+        },
+        {
+          "text": "FREE",
+          "confidence": 96.57943,
+          "line": "1-52-1-1"
+        },
+        {
+          "text": "ENTRY",
+          "confidence": 96.177376,
+          "line": "1-52-1-1"
+        },
+        {
+          "text": "|",
+          "confidence": 93.072067,
+          "line": "1-52-1-1"
+        },
+        {
+          "text": "DOORS",
+          "confidence": 96.108543,
+          "line": "1-52-1-1"
+        },
+        {
+          "text": "OPEN",
+          "confidence": 95.927429,
+          "line": "1-52-1-1"
+        },
+        {
+          "text": "20:00",
+          "confidence": 96.653259,
+          "line": "1-52-1-1"
+        },
+        {
+          "text": "|",
+          "confidence": 92.036461,
+          "line": "1-52-1-1"
+        },
+        {
+          "text": "ENTRY",
+          "confidence": 91.927246,
+          "line": "1-52-1-1"
+        },
+        {
+          "text": "16+",
+          "confidence": 96.365265,
+          "line": "1-52-1-1"
+        }
+      ],
+      "method": "instagram-image-ocr",
+      "checkedAt": "2026-10-31T22:03:22.881Z",
+      "sha256": "c9a799e995b90d3de27dea9da686294416b61df0d4f4343eefe3dfff720bd284"
+    }
+  }
+}

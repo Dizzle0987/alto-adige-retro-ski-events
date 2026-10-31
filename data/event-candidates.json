@@ -3,7 +3,7 @@
   "summary": {
     "webSources": 30,
     "instagramSources": 16,
-    "instagramStatus": "checked",
+    "instagramStatus": "replayed",
     "candidates": 27,
     "published": 0,
     "updated": 0,
@@ -15,7 +15,7 @@
       "name": "Südtirol / Alto Adige Events",
       "kind": "web",
       "url": "https://www.suedtirol.info/it/it/esperienze-eventi/plp-eventi/o/sagre",
-      "status": "checked",
+      "status": "not-checked-replay",
       "found": 0
     },
     {
@@ -23,7 +23,7 @@
       "name": "Südtirol Winter Events",
       "kind": "web",
       "url": "https://www.suedtirol.info/en/en/experiences-and-events/plp-events/o/winter-event",
-      "status": "checked",
+      "status": "not-checked-replay",
       "found": 0
     },
     {
@@ -31,7 +31,7 @@
       "name": "Alta Badia Events",
       "kind": "web",
       "url": "https://www.altabadia.org/en/alta-badia-events",
-      "status": "checked",
+      "status": "not-checked-replay",
       "found": 0,
       "coverage": "no-readable-events",
       "extraction": {
@@ -47,7 +47,7 @@
       "name": "Val Gardena Winter Events",
       "kind": "web",
       "url": "https://www.valgardena.it/en/winter-holidays-dolomites/events-highlights/",
-      "status": "checked",
+      "status": "not-checked-replay",
       "found": 0,
       "coverage": "no-readable-events",
       "extraction": {
@@ -63,7 +63,7 @@
       "name": "Spring Race Party Ortisei",
       "kind": "web",
       "url": "https://www.suedtirol.info/it/it/esperienze-eventi/eventi-alto-adige/pdp-evento.E8432689570C4CE79B96E32617DCC824.spring-race-party-ortisei.ortisei-urtijei",
-      "status": "checked",
+      "status": "not-checked-replay",
       "found": 0,
       "coverage": "readable-events",
       "extraction": {
@@ -79,7 +79,7 @@
       "name": "Watles Day of Nostalgia",
       "kind": "web",
       "url": "https://www.watles.net/it/sci-e-montagna-d-avventura-watles/info-servizio/eventi/rid-B6EF3B88C11646D3B97FE55653629FDF-e-gara-della-nostalgia.html",
-      "status": "checked",
+      "status": "not-checked-replay",
       "found": 0
     },
     {
@@ -87,7 +87,7 @@
       "name": "Kronplatz Events",
       "kind": "web",
       "url": "https://www.kronplatz.com/en/event-lp",
-      "status": "checked",
+      "status": "not-checked-replay",
       "found": 0,
       "coverage": "no-readable-events",
       "extraction": {
@@ -103,7 +103,7 @@
       "name": "Obereggen Experiences & Events",
       "kind": "web",
       "url": "https://obereggen.com/en/ropeways/summer/experiences_events",
-      "status": "checked",
+      "status": "not-checked-replay",
       "found": 0,
       "coverage": "no-readable-events",
       "extraction": {
@@ -119,7 +119,7 @@
       "name": "Ahrntal Events",
       "kind": "web",
       "url": "https://www.ahrntal.com/de/urlaub-im-ahrntal/veranstaltungen",
-      "status": "checked",
+      "status": "not-checked-replay",
       "found": 0,
       "coverage": "no-readable-events",
       "extraction": {
@@ -135,7 +135,7 @@
       "name": "Skiworld Ahrntal",
       "kind": "web",
       "url": "https://www.skiworldahrntal.it/en/winter/",
-      "status": "checked",
+      "status": "not-checked-replay",
       "found": 0,
       "coverage": "no-readable-events",
       "extraction": {
@@ -151,7 +151,7 @@
       "name": "Winklparade / myTix",
       "kind": "web",
       "url": "https://www.mytix.bz/winklparade",
-      "status": "checked",
+      "status": "not-checked-replay",
       "found": 0,
       "coverage": "readable-events",
       "extraction": {
@@ -167,7 +167,7 @@
       "name": "Ganischger Alm — The Mountain Party",
       "kind": "web",
       "url": "https://www.ganis.it/ganisworld/ganischgeralm-apresski-obereggen-suedtirol-dolomiten/",
-      "status": "checked",
+      "status": "not-checked-replay",
       "found": 0,
       "coverage": "no-readable-events",
       "extraction": {
@@ -187,7 +187,7 @@
       "name": "Club Moritzino Events",
       "kind": "web",
       "url": "https://clubmoritzino.it/en/events-in-alta-badia/",
-      "status": "checked",
+      "status": "not-checked-replay",
       "found": 0,
       "coverage": "readable-events",
       "extraction": {
@@ -203,7 +203,7 @@
       "name": "Gassl — Olang / Kronplatz",
       "kind": "web",
       "url": "https://www.gassl.bz/en/club/events",
-      "status": "checked",
+      "status": "not-checked-replay",
       "found": 0,
       "coverage": "no-readable-events",
       "extraction": {
@@ -219,7 +219,7 @@
       "name": "K1 — Reischach / Kronplatz",
       "kind": "web",
       "url": "https://k-1.bz/en/",
-      "status": "checked",
+      "status": "not-checked-replay",
       "found": 0,
       "coverage": "readable-events",
       "extraction": {
@@ -245,7 +245,7 @@
       "name": "Hexenkessel — Klausberg / Ahrntal",
       "kind": "web",
       "url": "https://www.hexenkessel.bz/",
-      "status": "checked",
+      "status": "not-checked-replay",
       "found": 0,
       "coverage": "no-readable-events",
       "extraction": {
@@ -344,7 +344,7 @@
       "name": "Comune Valle Aurina — Krampus & Hexenkessel",
       "kind": "web",
       "url": "https://www.comune.valleaurina.bz.it/it/Vivere_il_comune/Eventi/Sfilata_dei_Krampus",
-      "status": "checked",
+      "status": "not-checked-replay",
       "found": 0,
       "coverage": "readable-events",
       "extraction": {
@@ -360,7 +360,7 @@
       "name": "Luislkeller — Wolkenstein / Val Gardena",
       "kind": "web",
       "url": "https://www.luislkeller.com/de/",
-      "status": "checked",
+      "status": "not-checked-replay",
       "found": 0,
       "coverage": "no-readable-events",
       "extraction": {
@@ -380,7 +380,7 @@
       "name": "Buss’l — Kurzras / Schnalstal",
       "kind": "web",
       "url": "https://www.bussl.it/Default.aspx",
-      "status": "checked",
+      "status": "not-checked-replay",
       "found": 0,
       "coverage": "no-readable-events",
       "extraction": {
@@ -396,7 +396,7 @@
       "name": "LOOX — Obereggen",
       "kind": "web",
       "url": "https://www.loox.bz.it/",
-      "status": "checked",
+      "status": "not-checked-replay",
       "found": 0,
       "coverage": "no-readable-events",
       "extraction": {
@@ -412,7 +412,7 @@
       "name": "La Stua — Selva / Wolkenstein",
       "kind": "web",
       "url": "https://www.la-stua.com/apresski-alps/",
-      "status": "checked",
+      "status": "not-checked-replay",
       "found": 0,
       "coverage": "no-readable-events",
       "extraction": {
@@ -452,7 +452,7 @@
       "name": "Santner’s — Siusi / Seis",
       "kind": "web",
       "url": "https://www.santners.it/de/deejay-program/",
-      "status": "checked",
+      "status": "not-checked-replay",
       "found": 0,
       "coverage": "no-readable-events",
       "extraction": {
@@ -472,7 +472,7 @@
       "name": "Giggeralm — Riscone / Reischach",
       "kind": "web",
       "url": "https://www.giggeralm.com/",
-      "status": "checked",
+      "status": "not-checked-replay",
       "found": 0,
       "coverage": "no-readable-events",
       "extraction": {
@@ -492,7 +492,7 @@
       "name": "Corones Hütte — Kronplatz",
       "kind": "web",
       "url": "https://www.corones-kronplatz.com/",
-      "status": "checked",
+      "status": "not-checked-replay",
       "found": 0,
       "coverage": "no-readable-events",
       "extraction": {
@@ -532,7 +532,7 @@
       "name": "Max Alm — Versciaco / Vierschach",
       "kind": "web",
       "url": "https://www.andermax.it/en/culinary-delights/partner-establishments/max-alm-apres-ski.html",
-      "status": "checked",
+      "status": "not-checked-replay",
       "found": 0,
       "coverage": "no-readable-events",
       "extraction": {
@@ -548,7 +548,7 @@
       "name": "Bärenhöhle / Bärenstube — Reinswald",
       "kind": "web",
       "url": "https://youthappsuedtirol.com/2022/05/03/pubs-bozen-umgebung/",
-      "status": "reference-needs-verification",
+      "status": "not-checked-replay",
       "found": 0,
       "notes": "Locale di Reinswald confermato dall’utente; non associare l’omonimo di Solda. Profilo segnalato dalla directory, non ancora autenticato da un sito del gestore."
     },
@@ -557,7 +557,7 @@
       "name": "Sunnolm — Reinswald / Sarntal",
       "kind": "web",
       "url": "https://www.reinswald.it/de/restaurant-d.php",
-      "status": "checked",
+      "status": "not-checked-replay",
       "found": 0,
       "coverage": "no-readable-events",
       "extraction": {
@@ -573,7 +573,7 @@
       "name": "Pulverfass — Speikboden",
       "kind": "web",
       "url": "https://www.pulverfass.com/apres-ski-2/",
-      "status": "checked",
+      "status": "not-checked-replay",
       "found": 0,
       "coverage": "no-readable-events",
       "extraction": {
@@ -649,7 +649,7 @@
       "name": "Vallis Restaurant / Schirmpub — Speikboden",
       "kind": "web",
       "url": "https://www.ahrntal.com/de/alle-gastronoimebetriebe/rid-42F1C8F4E3CAD89691446C46B43937E8-g-vallis-restaurant-bar.html",
-      "status": "checked",
+      "status": "not-checked-replay",
       "found": 0,
       "coverage": "no-readable-events",
       "extraction": {
@@ -665,7 +665,7 @@
       "name": "Obereggen — Ganischger Alm, Platzl & LOOX",
       "kind": "web",
       "url": "https://obereggen.com/en/ropeways/winter/apres-ski_alpine-club",
-      "status": "checked",
+      "status": "not-checked-replay",
       "found": 0,
       "coverage": "no-readable-events",
       "extraction": {
@@ -998,7 +998,7 @@
       "url": "https://www.instagram.com/p/DdvaEOBOluK/",
       "kind": "instagram",
       "status": "review",
-      "reason": "unclear-event-title",
+      "reason": "flyer-uncertain-year",
       "date": {
         "status": "confirmed",
         "start": "2026-09-27",
@@ -1006,6 +1006,12 @@
         "evidence": "27 settembre",
         "inferredYear": true
       },
+      "media": [
+        {
+          "status": "review",
+          "reason": "flyer-uncertain-year"
+        }
+      ],
       "published": false
     },
     {
@@ -1025,11 +1031,17 @@
       "url": "https://www.instagram.com/p/DeZ-OMcRLN3/",
       "kind": "instagram",
       "status": "review",
-      "reason": "missing-date",
+      "reason": "flyer-uncertain-year",
       "dateEvidence": {
         "status": "review",
         "reason": "missing-date"
       },
+      "media": [
+        {
+          "status": "review",
+          "reason": "flyer-uncertain-year"
+        }
+      ],
       "published": false
     },
     {
@@ -1102,6 +1114,7 @@
         "status": "review",
         "reason": "missing-date"
       },
+      "media": [],
       "published": false
     },
     {
@@ -1121,11 +1134,21 @@
       "url": "https://www.instagram.com/p/DeylJ85ESGl/",
       "kind": "instagram",
       "status": "review",
-      "reason": "missing-date",
+      "reason": "flyer-missing-date",
       "dateEvidence": {
         "status": "review",
         "reason": "missing-date"
       },
+      "media": [
+        {
+          "status": "review",
+          "reason": "flyer-missing-date"
+        },
+        {
+          "status": "review",
+          "reason": "flyer-missing-date"
+        }
+      ],
       "published": false
     },
     {
@@ -1173,6 +1196,7 @@
         "status": "review",
         "reason": "missing-date"
       },
+      "media": [],
       "published": false
     },
     {
@@ -1256,11 +1280,21 @@
       "url": "https://www.instagram.com/p/De44POkDVvO/",
       "kind": "instagram",
       "status": "review",
-      "reason": "missing-date",
+      "reason": "flyer-missing-date",
       "dateEvidence": {
         "status": "review",
         "reason": "missing-date"
       },
+      "media": [
+        {
+          "status": "review",
+          "reason": "flyer-missing-date"
+        },
+        {
+          "status": "review",
+          "reason": "flyer-missing-date"
+        }
+      ],
       "published": false
     },
     {
@@ -1335,6 +1369,7 @@
         "evidence": "31.10",
         "inferredYear": true
       },
+      "media": [],
       "published": false
     },
     {
@@ -1382,6 +1417,7 @@
         "status": "review",
         "reason": "missing-date"
       },
+      "media": [],
       "published": false
     },
     {
@@ -1401,11 +1437,17 @@
       "url": "https://www.instagram.com/p/DfISumxtSKI/",
       "kind": "instagram",
       "status": "review",
-      "reason": "missing-date",
+      "reason": "flyer-missing-date",
       "dateEvidence": {
         "status": "review",
         "reason": "missing-date"
       },
+      "media": [
+        {
+          "status": "review",
+          "reason": "flyer-missing-date"
+        }
+      ],
       "published": false
     },
     {
