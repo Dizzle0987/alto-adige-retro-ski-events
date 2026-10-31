@@ -61,6 +61,8 @@ I domini media sono in lista chiusa: HTTPS senza credenziali, niente IP letteral
 
 Per controllare tutto questo senza usare Apify, il workflow manuale offre `instagram_mode: web`; `SKIP_APIFY=1` disattiva esplicitamente il token anche se presente nei secrets. I controlli programmati restano lunedì, mercoledì e giovedì alle 08:00 e mantengono il guardrail dei crediti gratuiti per l'eventuale scansione Apify.
 
+Dopo il push automatico a `gh-pages`, il workflow richiede esplicitamente la ricostruzione GitHub Pages: i soli push fatti con `GITHUB_TOKEN` non devono essere considerati prova dell'avvenuta pubblicazione del sito.
+
 ### Radar Instagram opzionale
 
 Il workflow è predisposto per leggere gli ultimi post pubblici delle fonti social tramite l'actor ufficiale `apify/instagram-scraper`. Per abilitarlo, crea un account Apify e salva il token nel repository GitHub come secret Actions chiamato `APIFY_TOKEN` (è accettato anche `APIFY`). Senza il secret, il controllo dei siti continua normalmente e la parte Instagram viene saltata in modo sicuro.
