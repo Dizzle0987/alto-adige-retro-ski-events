@@ -91,6 +91,11 @@
     },
     {
       "id": "k1-kronplatz",
+      "mediaEnabled": true,
+      "embeddedInstagram": "k1-instagram",
+      "curatorFeed": "1600be38-4e01-4c92-8ccf-c12bdc55aa60",
+      "mediaHosts": ["curator-assets.b-cdn.net"],
+      "facebookUrl": "https://www.facebook.com/K1.Reischach.Kronplatz",
       "socialUrl": "https://www.instagram.com/k1.kronplatz/",
       "htmlAdapter": "k1-announcements",
       "venueName": "K1",
@@ -100,6 +105,9 @@
     },
     {
       "id": "hexenkessel-klausberg",
+      "mediaEnabled": true,
+      "embeddedInstagram": "hexenkessel-instagram",
+      "facebookUrl": "https://www.facebook.com/hexenkessel.klausberg",
       "venueName": "Hexenkessel",
       "venue": "Hexenkessel · Cadipietra / Steinhaus, Valle Aurina / Ahrntal",
       "name": "Hexenkessel — Klausberg / Ahrntal",
@@ -119,6 +127,8 @@
     },
     {
       "id": "luislkeller-gardena",
+      "mediaEnabled": true,
+      "facebookUrl": "https://www.facebook.com/luislkeller/",
       "venueName": "Luislkeller",
       "venue": "Luislkeller · Selva di Val Gardena / Wolkenstein in Gröden",
       "name": "Luislkeller — Wolkenstein / Val Gardena",
@@ -139,12 +149,115 @@
       "url": "https://www.loox.bz.it/"
     },
     {
+      "id": "la-stua",
+      "name": "La Stua — Selva / Wolkenstein",
+      "url": "https://www.la-stua.com/apresski-alps/",
+      "venueName": "La Stua",
+      "venue": "La Stua · Selva di Val Gardena / Wolkenstein in Gröden",
+      "mediaEnabled": true,
+      "socialUrl": "https://www.instagram.com/barlastua/",
+      "facebookUrl": "https://www.facebook.com/BarLaStuaApresSki"
+    },
+    {
+      "id": "santners",
+      "name": "Santner’s — Siusi / Seis",
+      "url": "https://www.santners.it/de/deejay-program/",
+      "venueName": "Santner’s",
+      "venue": "Santner’s · Siusi / Seis, Alpe di Siusi / Seiser Alm",
+      "mediaEnabled": true,
+      "facebookUrl": "https://www.facebook.com/Santners.Seis/"
+    },
+    {
+      "id": "giggeralm",
+      "name": "Giggeralm — Riscone / Reischach",
+      "url": "https://www.giggeralm.com/",
+      "venueName": "Giggeralm",
+      "venue": "Giggeralm · Riscone / Reischach, Plan de Corones / Kronplatz",
+      "mediaEnabled": true,
+      "socialUrl": "https://www.instagram.com/giggeralm_official/",
+      "facebookUrl": "https://www.facebook.com/giggeralm/"
+    },
+    {
+      "id": "corones-huette",
+      "name": "Corones Hütte — Kronplatz",
+      "url": "https://www.corones-kronplatz.com/",
+      "venueName": "Corones Hütte",
+      "venue": "Corones Hütte · Plan de Corones / Kronplatz",
+      "mediaEnabled": true,
+      "socialUrl": "https://www.instagram.com/corones_huette/",
+      "facebookUrl": "https://www.facebook.com/rifugiocorones/"
+    },
+    {
+      "id": "max-alm",
+      "name": "Max Alm — Versciaco / Vierschach",
+      "url": "https://www.andermax.it/en/culinary-delights/partner-establishments/max-alm-apres-ski.html",
+      "venueName": "Max Alm",
+      "venue": "Max Alm · Versciaco / Vierschach, 3 Cime / 3 Zinnen",
+      "mediaEnabled": true
+    },
+    {
+      "id": "baerenhoehle-reinswald",
+      "name": "Bärenhöhle / Bärenstube — Reinswald",
+      "url": "https://youthappsuedtirol.com/2022/05/03/pubs-bozen-umgebung/",
+      "referenceOnly": true,
+      "venueName": "Bärenhöhle",
+      "venue": "Bärenhöhle · San Martino / Reinswald, Val Sarentino / Sarntal",
+      "profileToVerify": "https://www.facebook.com/baerenstubesarntal/",
+      "notes": "Locale di Reinswald confermato dall’utente; non associare l’omonimo di Solda. Profilo segnalato dalla directory, non ancora autenticato da un sito del gestore."
+    },
+    {
+      "id": "sunnolm",
+      "name": "Sunnolm — Reinswald / Sarntal",
+      "url": "https://www.reinswald.it/de/restaurant-d.php",
+      "venueName": "Sunnolm",
+      "venue": "Sunnolm · San Martino / Reinswald, Val Sarentino / Sarntal",
+      "mediaEnabled": true
+    },
+    {
+      "id": "pulverfass",
+      "name": "Pulverfass — Speikboden",
+      "url": "https://www.pulverfass.com/apres-ski-2/",
+      "venueName": "Pulverfass",
+      "venue": "Pulverfass · Speikboden, Valle Aurina / Ahrntal",
+      "mediaEnabled": true,
+      "socialUrl": "https://www.instagram.com/pulverfass_apresski/",
+      "facebookUrl": "https://www.facebook.com/pulverfass.apres/events"
+    },
+    {
+      "id": "vallis-speikboden",
+      "name": "Vallis Restaurant / Schirmpub — Speikboden",
+      "url": "https://www.ahrntal.com/de/alle-gastronoimebetriebe/rid-42F1C8F4E3CAD89691446C46B43937E8-g-vallis-restaurant-bar.html",
+      "venueName": "Vallis",
+      "venue": "Vallis · Speikboden, Campo Tures / Sand in Taufers, Valle Aurina / Ahrntal",
+      "mediaEnabled": true
+    },
+    {
       "id": "obereggen-apres-ski",
       "name": "Obereggen — Ganischger Alm, Platzl & LOOX",
       "url": "https://obereggen.com/en/ropeways/winter/apres-ski_alpine-club"
     }
   ],
   "instagram": [
+    {
+      "id": "la-stua-instagram", "name": "La Stua", "url": "https://www.instagram.com/barlastua/",
+      "autoPublish": true, "venue": "La Stua · Selva di Val Gardena / Wolkenstein in Gröden", "venueAliases": ["La Stua", "barlastua"]
+    },
+    {
+      "id": "giggeralm-instagram", "name": "Giggeralm", "url": "https://www.instagram.com/giggeralm_official/",
+      "autoPublish": true, "venue": "Giggeralm · Riscone / Reischach, Plan de Corones / Kronplatz", "venueAliases": ["Giggeralm", "Gigger Alm"]
+    },
+    {
+      "id": "corones-instagram", "name": "Corones Hütte", "url": "https://www.instagram.com/corones_huette/",
+      "autoPublish": true, "venue": "Corones Hütte · Plan de Corones / Kronplatz", "venueAliases": ["Corones Hütte", "Corones Huette", "Rifugio Corones"]
+    },
+    {
+      "id": "pulverfass-instagram", "name": "Pulverfass", "url": "https://www.instagram.com/pulverfass_apresski/",
+      "autoPublish": true, "venue": "Pulverfass · Speikboden, Valle Aurina / Ahrntal", "venueAliases": ["Pulverfass"]
+    },
+    {
+      "id": "moritzino-instagram", "name": "Club Moritzino", "url": "https://www.instagram.com/clubmoritzino/",
+      "autoPublish": true, "venue": "Club Moritzino · Piz La Ila, Alta Badia", "venueAliases": ["Moritzino"]
+    },
     {
       "id": "gassl-instagram",
       "name": "Gassl Olang",

@@ -9,7 +9,7 @@ on:
       instagram_mode:
         description: "Live scan within free credits, or replay the last stored dataset without starting an Actor"
         type: choice
-        options: [live, replay]
+        options: [live, replay, web]
         default: live
 
 permissions:
@@ -22,6 +22,7 @@ concurrency:
 jobs:
   refresh:
     runs-on: ubuntu-latest
+    timeout-minutes: 10
     steps:
       - name: Check local schedule
         id: schedule
@@ -39,8 +40,14 @@ jobs:
         with:
           fetch-depth: 0
 
+      - name: Install free local OCR and PDF readers
+        if: steps.schedule.outputs.run == 'true'
+        run: sudo apt-get update -qq && sudo apt-get install -y --no-install-recommends tesseract-ocr tesseract-ocr-deu tesseract-ocr-ita tesseract-ocr-eng poppler-utils
+
       - name: Verify social dates, source checks and free-credit guard
         if: steps.schedule.outputs.run == 'true'
+        env:
+          MEDIA_TOOLS_REQUIRED: '1'
         run: node --test scripts/*.test.mjs
 
       - name: Refresh dates from official sources
@@ -51,6 +58,7 @@ jobs:
         if: steps.schedule.outputs.run == 'true'
         env:
           APIFY_TOKEN: ${{ secrets.APIFY_TOKEN || secrets.APIFY }}
+          SKIP_APIFY: ${{ inputs.instagram_mode == 'web' && '1' || '0' }}
           APIFY_REPLAY_LAST: ${{ inputs.instagram_mode == 'replay' && '1' || '0' }}
         run: node scripts/discover-events.mjs
 
@@ -71,7 +79,7 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add dist/events.json data/event-candidates.json
+          git add dist/events.json data/event-candidates.json data/media-cache.json
           git commit -m "chore: refresh verified ski events"
           git push origin HEAD:main
 

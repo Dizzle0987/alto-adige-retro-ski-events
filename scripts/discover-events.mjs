@@ -6,13 +6,14 @@ import { assessInstagramPost, sameSocialEvent, mergeSocialAnnouncement } from ".
 import { checkApifyFreeBudget } from "./apify-budget.mjs";
 import { extractWebsiteEvents } from "./website-events.mjs";
 import { calendarState } from "../dist/calendar.mjs";
+import { createMediaScanner } from "./media-events.mjs";
 
 const repositoryRoot = process.env.DISCOVERY_DATA_ROOT || path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const sourcesPath = path.join(repositoryRoot, "data", "discovery-sources.json");
 const candidatesPath = path.join(repositoryRoot, "data", "event-candidates.json");
 const eventsPath = path.join(repositoryRoot, "dist", "events.json");
 const offline = process.env.AUTO_UPDATE_OFFLINE === "1";
-const apifyToken = process.env.APIFY_TOKEN?.trim();
+const apifyToken = process.env.SKIP_APIFY === "1" ? "" : process.env.APIFY_TOKEN?.trim();
 const replayPath = process.env.SOCIAL_REPLAY_PATH;
 const replayLast = process.env.APIFY_REPLAY_LAST === "1";
 const monthLabels = ["GEN", "FEB", "MAR", "APR", "MAG", "GIU", "LUG", "AGO", "SET", "OTT", "NOV", "DIC"];
@@ -204,11 +205,16 @@ const fetchHtml = async (url) => {
 };
 
 const scanWebSource = async (source, today, knownEvents) => {
+  if (source.referenceOnly) return { candidates: [], report: {
+    id: source.id, name: source.name, kind: "web", url: source.url,
+    status: "reference-needs-verification", found: 0, notes: source.notes,
+  } };
   if (source.type === "south-tyrol-listing") return scanSouthTyrolListing(source, today, knownEvents);
   if (source.type === "lts-event") return scanLtsEvent(source, today, knownEvents);
   const html = await fetchHtml(source.url);
   const structuredEvents = parseJsonLdEvents(html);
   const fallback = extractWebsiteEvents(html, source);
+  const media = source.mediaEnabled ? await mediaScanner.scan(html, source) : { candidates: [], review: [], reports: [] };
   const cutoff = source.importArchive ? calendarState().archiveCutoff : today;
   const titles = structuredEvents.length === 1
     ? await fetchLocalizedTitles({ html, pageUrl: source.url, fetchHtml })
@@ -246,8 +252,10 @@ const scanWebSource = async (source, today, knownEvents) => {
   return {
     report: { id: source.id, name: source.name, kind: "web", url: source.url, status: "checked", found: candidates.length,
       coverage: structuredEvents.length || fallback.events.length ? "readable-events" : "no-readable-events",
-      extraction: { structured: structuredEvents.length, html: fallback.events.length, review: fallback.review.length }, needsReview: fallback.review },
-    candidates
+      extraction: { structured: structuredEvents.length, html: fallback.events.length, review: fallback.review.length + media.review.length },
+      needsReview: [...fallback.review, ...media.review], media: media.reports,
+      ...(source.facebookUrl ? { facebook: { url: source.facebookUrl, status: "reference-only-no-scraping" } } : {}) },
+    candidates: [...candidates, ...media.candidates]
   };
 };
 
@@ -500,6 +508,10 @@ const replayLastInstagramRun = async () => {
 
 const sources = JSON.parse(await readFile(sourcesPath, "utf8"));
 const eventsData = JSON.parse(await readFile(eventsPath, "utf8"));
+const mediaCachePath = path.join(repositoryRoot, "data", "media-cache.json");
+let mediaCache = {};
+try { mediaCache = JSON.parse(await readFile(mediaCachePath, "utf8")); } catch { /* first media run */ }
+const mediaScanner = createMediaScanner({ cache: mediaCache, instagram: sources.instagram });
 const today = todayInRome();
 let previous = { sources: [], candidates: [] };
 try {
@@ -534,7 +546,7 @@ if (replayPath || replayLast) {
   candidates.push(...previous.candidates.filter((candidate) => candidate.kind === "web"));
 }
 
-let instagramStatus = "awaiting-token";
+let instagramStatus = process.env.SKIP_APIFY === "1" ? "disabled-web-mode" : "awaiting-token";
 if (replayPath || replayLast) {
   if (apifyToken && replayLast) {
     const budget = await checkApifyFreeBudget(apifyToken);
@@ -551,7 +563,7 @@ if (replayPath || replayLast) {
     name: source.name,
     kind: "instagram",
     url: source.url,
-    status: "awaiting-token"
+    status: instagramStatus
   }));
   candidates.push(...previous.candidates.filter((candidate) => candidate.kind === "instagram"));
 } else {
@@ -665,5 +677,6 @@ const output = {
 };
 
 await writeFile(candidatesPath, `${JSON.stringify(output, null, 2)}\n`);
+if (!replayPath && !replayLast) await writeFile(mediaCachePath, `${JSON.stringify(mediaScanner.snapshot(), null, 2)}\n`);
 const unavailable = reports.filter((source) => source.status === "unavailable").length;
 console.log(`Discovery checked: web=${sources.web.length}, instagram=${instagramStatus}, candidates=${uniqueCandidates.length}, published=${published.length}, unavailable=${unavailable}`);

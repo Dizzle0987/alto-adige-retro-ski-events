@@ -47,6 +47,20 @@ Per le fonti con `importArchive: true` vengono importati anche eventi verificati
 
 I titoli in italiano, tedesco e inglese vengono recuperati dai collegamenti alle versioni linguistiche delle pagine ufficiali, quando disponibili.
 
+### Flyer, PDF e feed incorporati — nessuna API OCR a pagamento
+
+Il workflow installa Tesseract (`deu+ita+eng`) e Poppler sui runner standard gratuiti del repository pubblico. Non vengono installati programmi sul computer dell'utente. Il test `MEDIA_TOOLS_REQUIRED=1` verifica davvero l'estrazione di un PDF e l'OCR di un flyer sintetico; localmente questo test viene saltato se non richiesto.
+
+`scripts/media-events.mjs` controlla soltanto fonti abilitate: massimo 3 documenti per fonte e 12 nuovi download per esecuzione, 5 MB per file, 3 pagine PDF. Prima si estrae il testo PDF, poi eventualmente si usa OCR. Cache settimanale per URL e impronta SHA-256 dei contenuti per evitare OCR duplicati; massimo 120 voci. File temporanei eliminati dopo la lettura; nel repository rimangono testo limitato, riferimenti e motivi di verifica, non le immagini originali. Processi limitati a 20 secondi ciascuno e, sui runner Linux, 1 GB di memoria e 20 secondi CPU. L'intero job scade dopo 10 minuti.
+
+I documenti OCR/PDF e i calendari non pubblicano automaticamente nuovi eventi: generano casi da verificare in `data/event-candidates.json` → `sources[].needsReview`. L'anno non viene inferito dal nome del file, dal copyright o dalla data di download. Ricorrenze ICS restano in verifica e non vengono espanse. Gli iframe sono seguiti solo se l'URL esatto è configurato in `calendarFrames` e il dominio è esplicitamente approvato; YouTube, mappe, login e tracker vengono ignorati. Nessun calendario iframe verificato è attualmente configurato.
+
+Il feed HTML di Hexenkessel viene letto con la sua data di pubblicazione originale: i post del 2024 non diventano eventi della stagione attuale. In mancanza di prova dell'autore restano in verifica. Per K1 si legge il feed pubblico Curator usato dal sito: solo autore, URL profilo e ID proprietario coerenti con l'account ufficiale possono passare ai normali controlli social su titolo, data e sede. Gli altri utenti, commenti, repost e video non vengono raccolti come fonti. Eventuali immagini del feed vengono considerate solo per post dell'autore approvato, nel percorso del feed ufficiale e sul CDN approvato; restano da verificare.
+
+I domini media sono in lista chiusa: HTTPS senza credenziali, niente IP letterali o indirizzi DNS privati e ogni redirect viene ricontrollato. Il registro ora comprende anche La Stua, Santner's, Giggeralm, Corones Hütte, Max Alm, Sunnolm, Pulverfass e Vallis. Per Bärenhöhle si intende esclusivamente Reinswald, non Solda: la sede è registrata ma il profilo segnalato dalla directory resta `reference-needs-verification`, senza pubblicazioni automatiche. Facebook è registrato come collegamento ufficiale dove verificato; non è attivato uno scraper Facebook. Nessun account Instagram viene inventato per i locali senza profilo verificato.
+
+Per controllare tutto questo senza usare Apify, il workflow manuale offre `instagram_mode: web`; `SKIP_APIFY=1` disattiva esplicitamente il token anche se presente nei secrets. I controlli programmati restano lunedì, mercoledì e giovedì alle 08:00 e mantengono il guardrail dei crediti gratuiti per l'eventuale scansione Apify.
+
 ### Radar Instagram opzionale
 
 Il workflow è predisposto per leggere gli ultimi post pubblici delle fonti social tramite l'actor ufficiale `apify/instagram-scraper`. Per abilitarlo, crea un account Apify e salva il token nel repository GitHub come secret Actions chiamato `APIFY_TOKEN` (è accettato anche `APIFY`). Senza il secret, il controllo dei siti continua normalmente e la parte Instagram viene saltata in modo sicuro.
