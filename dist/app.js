@@ -1,4 +1,4 @@
-import { calendarState, eventPeriod } from "./calendar.mjs";
+import { calendarState, eventPeriod } from "./calendar.mjs?v=2";
 
 const eventList = document.querySelector(".event-list");
 const socialList = document.querySelector(".social-links");
@@ -432,7 +432,7 @@ const translatePage = () => {
   document.querySelector('meta[name="description"]').content = dictionary.description;
   document.querySelectorAll("[data-i18n]").forEach((node) => {
     const value = dictionary[node.dataset.i18n];
-    if (value) node.textContent = value.replace("{season}", calendar.season).replace("{seasonStart}", calendar.seasonStart).replace("{seasonEnd}", calendar.seasonEnd);
+    if (value) node.textContent = value.replace("{season}", calendar.season).replace("{seasonStart}", calendar.seasonStart ?? calendar.seasonEnd - 1).replace("{seasonEnd}", calendar.seasonEnd);
   });
   document.querySelectorAll("[data-i18n-aria-label]").forEach((node) => {
     const value = dictionary[node.dataset.i18nAriaLabel];
