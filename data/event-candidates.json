@@ -528,8 +528,16 @@
       "name": "Max Alm — Versciaco / Vierschach",
       "kind": "web",
       "url": "https://www.andermax.it/en/culinary-delights/partner-establishments/max-alm-apres-ski.html",
-      "status": "unavailable",
-      "error": "The operation was aborted due to timeout"
+      "status": "checked",
+      "found": 0,
+      "coverage": "no-readable-events",
+      "extraction": {
+        "structured": 0,
+        "html": 0,
+        "review": 0
+      },
+      "needsReview": [],
+      "media": []
     },
     {
       "id": "baerenhoehle-reinswald",
@@ -620,13 +628,11 @@
         },
         {
           "kind": "image",
-          "status": "read-for-review",
-          "method": "image-ocr"
+          "status": "cached"
         },
         {
           "kind": "image",
-          "status": "read-for-review",
-          "method": "image-ocr"
+          "status": "cached"
         }
       ],
       "facebook": {
