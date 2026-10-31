@@ -11,7 +11,7 @@ export const freeBudgetDecision = (user, usage) => {
   }
   // Keep a reserve for storage/other usage. Never use more than $4 of free credits.
   const ceiling = Math.min(4, included - 0.5);
-  const maxRunUsd = 0.2;
+  const maxRunUsd = 0.3;
   return {
     allowed: used + maxRunUsd <= ceiling,
     reason: used + maxRunUsd <= ceiling ? "within-free-credit" : "free-credit-reserve",

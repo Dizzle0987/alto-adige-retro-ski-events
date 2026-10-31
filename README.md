@@ -67,7 +67,7 @@ Dopo il push automatico a `gh-pages`, il workflow richiede esplicitamente la ric
 
 Il workflow è predisposto per leggere gli ultimi post pubblici delle fonti social tramite l'actor ufficiale `apify/instagram-scraper`. Per abilitarlo, crea un account Apify e salva il token nel repository GitHub come secret Actions chiamato `APIFY_TOKEN` (è accettato anche `APIFY`). Senza il secret, il controllo dei siti continua normalmente e la parte Instagram viene saltata in modo sicuro.
 
-Prima di ogni nuova scansione il radar legge piano e consumo mensile tramite l’API Apify. Avvia lo scraper solo con piano Free a costo base zero e credito verificabile: massimo 4 USD di consumo mensile totale dell’account, una riserva di almeno 0,50 USD sul credito incluso e massimo 0,20 USD per esecuzione. Piano a pagamento, saldo sconosciuto o credito insufficiente fermano soltanto Instagram; i siti continuano. Nessun upgrade o acquisto viene eseguito.
+Prima di ogni nuova scansione il radar legge piano e consumo mensile tramite l’API Apify. Avvia lo scraper solo con piano Free a costo base zero e credito verificabile: massimo 4 USD di consumo mensile totale dell’account, una riserva di almeno 0,50 USD sul credito incluso e massimo 0,30 USD per esecuzione. Piano a pagamento, saldo sconosciuto o credito insufficiente fermano soltanto Instagram; i siti continuano. Nessun upgrade o acquisto viene eseguito.
 
 ### Eventi provenienti da Instagram
 

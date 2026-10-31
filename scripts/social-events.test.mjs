@@ -63,6 +63,13 @@ test("historical K1 captions: invalid date held, exact date extracted", async ()
 const free = { plan: { tier: "FREE", monthlyBasePriceUsd: 0, monthlyUsageCreditsUsd: 5 } };
 test("free credit allowed with reserve", () => assert.equal(freeBudgetDecision(free, { totalUsageCreditsUsdAfterVolumeDiscount: 2 }).allowed, true));
 test("credit reserve prevents new actor", () => assert.equal(freeBudgetDecision(free, { totalUsageCreditsUsdAfterVolumeDiscount: 3.9 }).allowed, false));
+test("complete profile scan has a 30 cent cap and cannot exceed the monthly ceiling", () => {
+  const decision = freeBudgetDecision(free, { totalUsageCreditsUsdAfterVolumeDiscount: 0.1 });
+  assert.equal(decision.maxRunUsd, 0.3);
+  assert.equal(decision.ceilingUsd, 4);
+  assert.equal(decision.allowed, true);
+  assert.equal(freeBudgetDecision(free, { totalUsageCreditsUsdAfterVolumeDiscount: 3.71 }).allowed, false);
+});
 test("unknown budget and paid plans fail closed", () => {
   assert.equal(freeBudgetDecision(free, {}).allowed, false);
   assert.equal(freeBudgetDecision({ plan: { tier: "STARTER", monthlyBasePriceUsd: 19 } }, {}).allowed, false);
