@@ -3,9 +3,10 @@
   "summary": {
     "webSources": 20,
     "instagramSources": 11,
-    "instagramStatus": "checked",
-    "candidates": 6,
+    "instagramStatus": "replayed",
+    "candidates": 11,
     "published": 0,
+    "updated": 0,
     "pruned": 0
   },
   "sources": [
@@ -14,7 +15,7 @@
       "name": "Südtirol / Alto Adige Events",
       "kind": "web",
       "url": "https://www.suedtirol.info/it/it/esperienze-eventi/plp-eventi/o/sagre",
-      "status": "checked",
+      "status": "not-checked-replay",
       "found": 0
     },
     {
@@ -22,7 +23,7 @@
       "name": "Südtirol Winter Events",
       "kind": "web",
       "url": "https://www.suedtirol.info/en/en/experiences-and-events/plp-events/o/winter-event",
-      "status": "checked",
+      "status": "not-checked-replay",
       "found": 0
     },
     {
@@ -30,7 +31,7 @@
       "name": "Alta Badia Events",
       "kind": "web",
       "url": "https://www.altabadia.org/en/alta-badia-events",
-      "status": "checked",
+      "status": "not-checked-replay",
       "found": 0
     },
     {
@@ -38,7 +39,7 @@
       "name": "Val Gardena Winter Events",
       "kind": "web",
       "url": "https://www.valgardena.it/en/winter-holidays-dolomites/events-highlights/",
-      "status": "checked",
+      "status": "not-checked-replay",
       "found": 0
     },
     {
@@ -46,7 +47,7 @@
       "name": "Spring Race Party Ortisei",
       "kind": "web",
       "url": "https://www.suedtirol.info/it/it/esperienze-eventi/eventi-alto-adige/pdp-evento.E8432689570C4CE79B96E32617DCC824.spring-race-party-ortisei.ortisei-urtijei",
-      "status": "checked",
+      "status": "not-checked-replay",
       "found": 0
     },
     {
@@ -54,7 +55,7 @@
       "name": "Watles Day of Nostalgia",
       "kind": "web",
       "url": "https://www.watles.net/it/sci-e-montagna-d-avventura-watles/info-servizio/eventi/rid-B6EF3B88C11646D3B97FE55653629FDF-e-gara-della-nostalgia.html",
-      "status": "checked",
+      "status": "not-checked-replay",
       "found": 0
     },
     {
@@ -62,7 +63,7 @@
       "name": "Kronplatz Events",
       "kind": "web",
       "url": "https://www.kronplatz.com/en/event-lp",
-      "status": "checked",
+      "status": "not-checked-replay",
       "found": 0
     },
     {
@@ -70,7 +71,7 @@
       "name": "Obereggen Experiences & Events",
       "kind": "web",
       "url": "https://obereggen.com/en/ropeways/summer/experiences_events",
-      "status": "checked",
+      "status": "not-checked-replay",
       "found": 0
     },
     {
@@ -78,7 +79,7 @@
       "name": "Ahrntal Events",
       "kind": "web",
       "url": "https://www.ahrntal.com/de/urlaub-im-ahrntal/veranstaltungen",
-      "status": "checked",
+      "status": "not-checked-replay",
       "found": 0
     },
     {
@@ -86,7 +87,7 @@
       "name": "Skiworld Ahrntal",
       "kind": "web",
       "url": "https://www.skiworldahrntal.it/en/winter/",
-      "status": "checked",
+      "status": "not-checked-replay",
       "found": 0
     },
     {
@@ -94,7 +95,7 @@
       "name": "Winklparade / myTix",
       "kind": "web",
       "url": "https://www.mytix.bz/winklparade",
-      "status": "checked",
+      "status": "not-checked-replay",
       "found": 0
     },
     {
@@ -102,7 +103,7 @@
       "name": "Ganischger Alm — The Mountain Party",
       "kind": "web",
       "url": "https://www.ganischger.com/ganischgeralm/alm/",
-      "status": "checked",
+      "status": "not-checked-replay",
       "found": 0
     },
     {
@@ -110,7 +111,7 @@
       "name": "Club Moritzino Events",
       "kind": "web",
       "url": "https://clubmoritzino.it/en/events-in-alta-badia/",
-      "status": "checked",
+      "status": "not-checked-replay",
       "found": 0
     },
     {
@@ -118,7 +119,7 @@
       "name": "Gassl — Olang / Kronplatz",
       "kind": "web",
       "url": "https://www.gassl.bz/en/club/events",
-      "status": "checked",
+      "status": "not-checked-replay",
       "found": 0
     },
     {
@@ -126,7 +127,7 @@
       "name": "K1 — Reischach / Kronplatz",
       "kind": "web",
       "url": "https://k-1.bz/en/",
-      "status": "checked",
+      "status": "not-checked-replay",
       "found": 0
     },
     {
@@ -134,7 +135,7 @@
       "name": "Hexenkessel — Klausberg / Ahrntal",
       "kind": "web",
       "url": "https://www.hexenkessel.bz/",
-      "status": "checked",
+      "status": "not-checked-replay",
       "found": 0
     },
     {
@@ -142,7 +143,7 @@
       "name": "Luislkeller — Wolkenstein / Val Gardena",
       "kind": "web",
       "url": "https://www.luislkeller.com/de/",
-      "status": "checked",
+      "status": "not-checked-replay",
       "found": 0
     },
     {
@@ -150,7 +151,7 @@
       "name": "Buss’l — Kurzras / Schnalstal",
       "kind": "web",
       "url": "https://www.bussl.it/Default.aspx",
-      "status": "checked",
+      "status": "not-checked-replay",
       "found": 0
     },
     {
@@ -158,7 +159,7 @@
       "name": "LOOX — Obereggen",
       "kind": "web",
       "url": "https://www.loox.bz.it/",
-      "status": "checked",
+      "status": "not-checked-replay",
       "found": 0
     },
     {
@@ -166,7 +167,7 @@
       "name": "Obereggen — Ganischger Alm, Platzl & LOOX",
       "kind": "web",
       "url": "https://obereggen.com/en/ropeways/winter/apres-ski_alpine-club",
-      "status": "checked",
+      "status": "not-checked-replay",
       "found": 0
     },
     {
@@ -174,8 +175,9 @@
       "name": "Gassl Olang",
       "kind": "instagram",
       "url": "https://www.instagram.com/gassl.olang/",
-      "status": "checked",
-      "found": 0
+      "status": "no-author-data",
+      "found": 0,
+      "received": 0
     },
     {
       "id": "k1-instagram",
@@ -183,39 +185,44 @@
       "kind": "instagram",
       "url": "https://www.instagram.com/k1.kronplatz/",
       "status": "checked",
-      "found": 6
+      "found": 6,
+      "received": 6
     },
     {
       "id": "hexenkessel-instagram",
       "name": "Hexenkessel Klausberg",
       "kind": "instagram",
       "url": "https://www.instagram.com/hexenkessel_klausberg/",
-      "status": "checked",
-      "found": 0
+      "status": "no-author-data",
+      "found": 0,
+      "received": 0
     },
     {
       "id": "luislkeller-instagram",
       "name": "Luislkeller",
       "kind": "instagram",
       "url": "https://www.instagram.com/luislkeller/",
-      "status": "checked",
-      "found": 0
+      "status": "no-author-data",
+      "found": 0,
+      "received": 0
     },
     {
       "id": "winklparade-instagram",
       "name": "Winklparade",
       "kind": "instagram",
       "url": "https://www.instagram.com/winklparade/",
-      "status": "checked",
-      "found": 0
+      "status": "no-author-data",
+      "found": 0,
+      "received": 0
     },
     {
       "id": "ganischger-instagram",
       "name": "Ganischger Obereggen",
       "kind": "instagram",
       "url": "https://www.instagram.com/ganischger.obereggen/",
-      "status": "checked",
-      "found": 0
+      "status": "no-author-data",
+      "found": 0,
+      "received": 0
     },
     {
       "id": "skiworld-ahrntal-instagram",
@@ -223,7 +230,8 @@
       "kind": "instagram",
       "url": "https://www.instagram.com/skiworldahrntal_official/",
       "status": "checked",
-      "found": 0
+      "found": 1,
+      "received": 5
     },
     {
       "id": "kronplatz-instagram",
@@ -231,7 +239,8 @@
       "kind": "instagram",
       "url": "https://www.instagram.com/kronplatz_group/",
       "status": "checked",
-      "found": 0
+      "found": 1,
+      "received": 2
     },
     {
       "id": "alta-badia-instagram",
@@ -239,7 +248,8 @@
       "kind": "instagram",
       "url": "https://www.instagram.com/alta_badia_official/",
       "status": "checked",
-      "found": 0
+      "found": 1,
+      "received": 6
     },
     {
       "id": "val-gardena-instagram",
@@ -247,7 +257,8 @@
       "kind": "instagram",
       "url": "https://www.instagram.com/dolomitesvalgardena/",
       "status": "checked",
-      "found": 0
+      "found": 1,
+      "received": 6
     },
     {
       "id": "three-zinnen-instagram",
@@ -255,92 +266,242 @@
       "kind": "instagram",
       "url": "https://www.instagram.com/3zinnendolomites/",
       "status": "checked",
-      "found": 0
+      "found": 1,
+      "received": 4
     }
   ],
   "candidates": [
     {
-      "id": "k1-instagram-Det2B15s1cA",
+      "id": "skiworld-ahrntal-instagram-DerpaiRPr47",
+      "title": "Annuncio da verificare",
+      "publishedAt": "2026-10-19T16:05:06.000Z",
+      "sourceId": "skiworld-ahrntal-instagram",
+      "sourceName": "Skiworld Ahrntal",
+      "evidence": "04/12/2026",
+      "url": "https://www.instagram.com/p/DerpaiRPr47/",
       "kind": "instagram",
-      "title": "If your person doesn’t dance with you to this song, they’re not your person",
-      "start": null,
-      "end": null,
-      "location": "K1 Reischach",
+      "status": "review",
+      "reason": "ambiguous-date",
+      "published": false
+    },
+    {
+      "id": "k1-instagram-Det2B15s1cA",
+      "title": "Annuncio da verificare",
       "publishedAt": "2026-10-20T12:35:45.000Z",
-      "url": "https://www.instagram.com/p/Det2B15s1cA/",
+      "excerpt": "If your person doesn’t dance with you to this song, they’re not your person. Just saying. 💁‍♀️☀️\n #k1reischach #yourperson #dayparty #apresski #kronplatz",
       "sourceId": "k1-instagram",
       "sourceName": "K1 Kronplatz",
-      "excerpt": "If your person doesn’t dance with you to this song, they’re not your person. Just saying. 💁‍♀️☀️ #k1reischach #yourperson #dayparty #apresski #kronplatz",
+      "evidence": {
+        "url": "https://www.instagram.com/p/Det2B15s1cA/",
+        "author": "k1.kronplatz",
+        "ownerId": "5849734189",
+        "publishedAt": "2026-10-20T12:35:45.000Z",
+        "caption": "If your person doesn’t dance with you to this song, they’re not your person. Just saying. 💁‍♀️☀️\n #k1reischach #yourperson #dayparty #apresski #kronplatz"
+      },
+      "url": "https://www.instagram.com/p/Det2B15s1cA/",
+      "kind": "instagram",
+      "status": "review",
+      "reason": "missing-date",
+      "published": false
+    },
+    {
+      "id": "three-zinnen-instagram-DeylJ85ESGl",
+      "title": "Annuncio da verificare",
+      "publishedAt": "2026-10-22T08:43:13.000Z",
+      "excerpt": "❄️Winter is making its first appearance at 3 Zinnen Dolomites! 🏔️🤍\nThe first snow has arrived, covering the mountains in a beautiful white blanket and bringing a little taste of winter. ✨\nCurious to see the current conditions for yourself? 👀\n📹 Check out the live webcams on our website and enjoy the view!\n.\n#winteriscoming #3zinnendolomites #freshsnow #dolomites #winter",
+      "sourceId": "three-zinnen-instagram",
+      "sourceName": "3 Zinnen Dolomites",
+      "evidence": {
+        "url": "https://www.instagram.com/p/DeylJ85ESGl/",
+        "author": "3zinnendolomites",
+        "ownerId": "3268204371",
+        "publishedAt": "2026-10-22T08:43:13.000Z",
+        "caption": "❄️Winter is making its first appearance at 3 Zinnen Dolomites! 🏔️🤍\nThe first snow has arrived, covering the mountains in a beautiful white blanket and bringing a little taste of winter. ✨\nCurious to see the current conditions for yourself? 👀\n📹 Check out the live webcams on our website and enjoy the view!\n.\n#winteriscoming #3zinnendolomites #freshsnow #dolomites #winter"
+      },
+      "url": "https://www.instagram.com/p/DeylJ85ESGl/",
+      "kind": "instagram",
+      "status": "review",
+      "reason": "missing-date",
       "published": false
     },
     {
       "id": "k1-instagram-Deyw3E_sSTW",
-      "kind": "instagram",
-      "title": "Sorry, can’t hear you, @nicjohnston is playing my song 🕺🤷‍♂️🤷‍♀️ #k1reischach #apresski #partytok #flirtfail #kronpla",
-      "start": null,
-      "end": null,
-      "location": "K1 Reischach",
+      "title": "Annuncio da verificare",
       "publishedAt": "2026-10-22T10:26:09.000Z",
-      "url": "https://www.instagram.com/p/Deyw3E_sSTW/",
+      "excerpt": "Sorry, can’t hear you, @nicjohnston is playing my song 🕺🤷‍♂️🤷‍♀️ \n#k1reischach #apresski #partytok #flirtfail #kronplatz",
       "sourceId": "k1-instagram",
       "sourceName": "K1 Kronplatz",
-      "excerpt": "Sorry, can’t hear you, @nicjohnston is playing my song 🕺🤷‍♂️🤷‍♀️ #k1reischach #apresski #partytok #flirtfail #kronplatz",
+      "evidence": {
+        "url": "https://www.instagram.com/p/Deyw3E_sSTW/",
+        "author": "k1.kronplatz",
+        "ownerId": "5849734189",
+        "publishedAt": "2026-10-22T10:26:09.000Z",
+        "caption": "Sorry, can’t hear you, @nicjohnston is playing my song 🕺🤷‍♂️🤷‍♀️ \n#k1reischach #apresski #partytok #flirtfail #kronplatz"
+      },
+      "url": "https://www.instagram.com/p/Deyw3E_sSTW/",
+      "kind": "instagram",
+      "status": "review",
+      "reason": "missing-date",
+      "published": false
+    },
+    {
+      "id": "val-gardena-instagram-DezWwJeNWK-",
+      "title": "Annuncio da verificare",
+      "publishedAt": "2026-10-22T15:57:53.000Z",
+      "excerpt": "the first snow of the season is here❄️✨\n\nwaking up to a view like this, mountains peaks covered in snow. 🤍\nWINTER OPENING: 04.12.2026 ⛷️\n\n#valgardena #dolomitesvalgardena #dolomites #valgardenagröden #dolomiti",
+      "sourceId": "val-gardena-instagram",
+      "sourceName": "Val Gardena",
+      "evidence": {
+        "url": "https://www.instagram.com/p/DezWwJeNWK-/",
+        "author": "dolomitesvalgardena",
+        "ownerId": "528064148",
+        "publishedAt": "2026-10-22T15:57:53.000Z",
+        "caption": "the first snow of the season is here❄️✨\n\nwaking up to a view like this, mountains peaks covered in snow. 🤍\nWINTER OPENING: 04.12.2026 ⛷️\n\n#valgardena #dolomitesvalgardena #dolomites #valgardenagröden #dolomiti"
+      },
+      "url": "https://www.instagram.com/p/DezWwJeNWK-/",
+      "kind": "instagram",
+      "status": "review",
+      "reason": "repost-or-collaboration",
       "published": false
     },
     {
       "id": "k1-instagram-De1Hx-Tsf12",
-      "kind": "instagram",
-      "title": "Winter plans",
-      "start": null,
-      "end": null,
-      "location": "K1 Reischach",
+      "title": "Annuncio da verificare",
       "publishedAt": "2026-10-23T08:26:31.000Z",
-      "url": "https://www.instagram.com/p/De1Hx-Tsf12/",
+      "excerpt": "Winter plans? Sorted. ❄️\n\nWe’re back at K1, all winter long! It all starts with our big Halloween Open Air on November 31st, then big Opening on November 20th and 21st, and after that, there’s something going on every single weekend. 🎉\n\nTag the friends you’re bringing along 👇\n\n#K1 #WinterSeason #OpenAir #Opening #Party WeekendVibes SouthTyrol",
       "sourceId": "k1-instagram",
       "sourceName": "K1 Kronplatz",
-      "excerpt": "Winter plans? Sorted. ❄️ We’re back at K1, all winter long! It all starts with our big Halloween Open Air on November 31st, then big Opening on November 20th and 21st, and after that, there’s something going on every single weekend. 🎉 Tag the friends you’re bringing along 👇 #K1 #WinterSeason #OpenAir #Opening #Party WeekendVibes SouthTyrol",
+      "evidence": {
+        "url": "https://www.instagram.com/p/De1Hx-Tsf12/",
+        "author": "k1.kronplatz",
+        "ownerId": "5849734189",
+        "publishedAt": "2026-10-23T08:26:31.000Z",
+        "caption": "Winter plans? Sorted. ❄️\n\nWe’re back at K1, all winter long! It all starts with our big Halloween Open Air on November 31st, then big Opening on November 20th and 21st, and after that, there’s something going on every single weekend. 🎉\n\nTag the friends you’re bringing along 👇\n\n#K1 #WinterSeason #OpenAir #Opening #Party WeekendVibes SouthTyrol"
+      },
+      "url": "https://www.instagram.com/p/De1Hx-Tsf12/",
+      "kind": "instagram",
+      "status": "review",
+      "reason": "repost-or-collaboration",
+      "published": false
+    },
+    {
+      "id": "kronplatz-instagram-De9lMvAzVTM",
+      "title": "Opening of Ando Fuchs' exhibition at LUMEN",
+      "publishedAt": "2026-10-26T15:15:17.000Z",
+      "excerpt": "🚡 OPEN DAY AT KRONPLATZ!\n\nAny plans for this Saturday? How about a trip to the mountains? 🏔️\nJoin us on Saturday, 31 October for our Open Day and enjoy:\n\n🚡 Free cable car rides up and down on Kronplatz 2000\n\n📸 Free entry to the LUMEN Museum of Mountain Photography\n\n🎨 Opening of Ando Fuchs' exhibition at LUMEN\nThe perfect opportunity to enjoy the autumn mountain scenery, discover mountain photography and spend a day at Kronplatz!\n\nSee you at the top! 💙\n\n#kronplatz #kronplatzgroup #openday #dolomites #southtyrol #lumenmuseum #andofuchs",
+      "sourceId": "kronplatz-instagram",
+      "sourceName": "Kronplatz",
+      "evidence": {
+        "url": "https://www.instagram.com/p/De9lMvAzVTM/",
+        "author": "kronplatz_group",
+        "ownerId": "72568919639",
+        "publishedAt": "2026-10-26T15:15:17.000Z",
+        "caption": "🚡 OPEN DAY AT KRONPLATZ!\n\nAny plans for this Saturday? How about a trip to the mountains? 🏔️\nJoin us on Saturday, 31 October for our Open Day and enjoy:\n\n🚡 Free cable car rides up and down on Kronplatz 2000\n\n📸 Free entry to the LUMEN Museum of Mountain Photography\n\n🎨 Opening of Ando Fuchs' exhibition at LUMEN\nThe perfect opportunity to enjoy the autumn mountain scenery, discover mountain photography and spend a day at Kronplatz!\n\nSee you at the top! 💙\n\n#kronplatz #kronplatzgroup #openday #dolomites #southtyrol #lumenmuseum #andofuchs"
+      },
+      "url": "https://www.instagram.com/p/De9lMvAzVTM/",
+      "kind": "instagram",
+      "status": "review",
+      "reason": "venue-not-verified",
+      "date": {
+        "status": "confirmed",
+        "start": "2026-10-31",
+        "end": "2026-10-31",
+        "evidence": "31 october",
+        "inferredYear": true
+      },
       "published": false
     },
     {
       "id": "k1-instagram-De_mIcpsLrA",
-      "kind": "instagram",
-      "title": "ℍ𝔸𝕃𝕃𝕆𝕎𝔼𝔼ℕ 𝕆ℙ𝔼ℕ 𝔸𝕀ℝ 👻🦇🔥 Noch 4 Tage bis zum Big K1 Halloween Open Air 😈 Hier nochmal alle wichtigsten Info",
-      "start": null,
-      "end": null,
-      "location": "K1 Reischach",
+      "title": "Annuncio da verificare",
       "publishedAt": "2026-10-27T10:03:43.000Z",
+      "excerpt": "ℍ𝔸𝕃𝕃𝕆𝕎𝔼𝔼ℕ 𝕆ℙ𝔼ℕ 𝔸𝕀ℝ 👻🦇🔥\n\nNoch 4 Tage bis zum Big K1 Halloween Open Air 😈 Hier nochmal alle wichtigsten Infos:\n\n🗓 𝐒𝐚𝐦𝐬𝐭𝐚𝐠, 𝟑𝟏.𝟏𝟎.𝟐𝟎𝟐𝟔\n☀️ 𝐎𝐔𝐓𝐃𝐎𝐎𝐑 von 18.00 bis 00.00 Uhr\n🕘 𝐈𝐍𝐃𝐎𝐎𝐑 von 18.00 bis 03.00 Uhr\n🎧 DJ Juli, DJ Double Dee, DJ Ivan Fillini & DJ Hufe\n\n Dresscode: je gruseliger, desto besser.... Markiert eure Horror-Crew und kommt rechtzeitig, wir sehen uns auf der dark side! 🖤🧟‍♂️🧛‍♀️\n\n🔞 18+ | Free Entrance | Party In- & Outdoor 🎉\n\n#k1 #k1_reischach #halloween #halloweenparty #halloween2026",
+      "sourceId": "k1-instagram",
+      "sourceName": "K1 Kronplatz",
+      "evidence": {
+        "url": "https://www.instagram.com/p/De_mIcpsLrA/",
+        "author": "k1.kronplatz",
+        "ownerId": "5849734189",
+        "publishedAt": "2026-10-27T10:03:43.000Z",
+        "caption": "ℍ𝔸𝕃𝕃𝕆𝕎𝔼𝔼ℕ 𝕆ℙ𝔼ℕ 𝔸𝕀ℝ 👻🦇🔥\n\nNoch 4 Tage bis zum Big K1 Halloween Open Air 😈 Hier nochmal alle wichtigsten Infos:\n\n🗓 𝐒𝐚𝐦𝐬𝐭𝐚𝐠, 𝟑𝟏.𝟏𝟎.𝟐𝟎𝟐𝟔\n☀️ 𝐎𝐔𝐓𝐃𝐎𝐎𝐑 von 18.00 bis 00.00 Uhr\n🕘 𝐈𝐍𝐃𝐎𝐎𝐑 von 18.00 bis 03.00 Uhr\n🎧 DJ Juli, DJ Double Dee, DJ Ivan Fillini & DJ Hufe\n\n Dresscode: je gruseliger, desto besser.... Markiert eure Horror-Crew und kommt rechtzeitig, wir sehen uns auf der dark side! 🖤🧟‍♂️🧛‍♀️\n\n🔞 18+ | Free Entrance | Party In- & Outdoor 🎉\n\n#k1 #k1_reischach #halloween #halloweenparty #halloween2026"
+      },
       "url": "https://www.instagram.com/p/De_mIcpsLrA/",
-      "sourceId": "k1-instagram",
-      "sourceName": "K1 Kronplatz",
-      "excerpt": "ℍ𝔸𝕃𝕃𝕆𝕎𝔼𝔼ℕ 𝕆ℙ𝔼ℕ 𝔸𝕀ℝ 👻🦇🔥 Noch 4 Tage bis zum Big K1 Halloween Open Air 😈 Hier nochmal alle wichtigsten Infos: 🗓 𝐒𝐚𝐦𝐬𝐭𝐚𝐠, 𝟑𝟏.𝟏𝟎.𝟐𝟎𝟐𝟔 ☀️ 𝐎𝐔𝐓𝐃𝐎𝐎𝐑 von 18.00 bis 00.00 Uhr 🕘 𝐈𝐍𝐃𝐎𝐎𝐑 von 18.00 bis 03.00 Uhr 🎧 DJ Juli, DJ Double Dee, DJ Ivan Fillini & DJ Hufe Dresscode: je gruseliger, desto besser.... Markiert eure Horror-Crew und kommt rechtzeitig, wir sehen uns auf der dark side! 🖤🧟‍♂️🧛‍♀️ 🔞 18+ | Free Entrance | Party In- & Outdoor 🎉 #k1 #k1_reischach ",
-      "published": false
-    },
-    {
-      "id": "k1-instagram-DfFFZnBMGoK",
       "kind": "instagram",
-      "title": "Wie viele Spinnweben sind zu viele",
-      "start": null,
-      "end": null,
-      "location": "K-1 Reischach",
-      "publishedAt": "2026-10-29T13:12:47.000Z",
-      "url": "https://www.instagram.com/p/DfFFZnBMGoK/",
-      "sourceId": "k1-instagram",
-      "sourceName": "K1 Kronplatz",
-      "excerpt": "Wie viele Spinnweben sind zu viele? Asking for a friend... 🕸️ -2 days until K1 Halloween Open Air! Die Deko ist schon ready und ziiemlich spooky… jetzt fehlt nur noch ihr und die richtige Mukke 👻 🗓 𝐒𝐚𝐦𝐬𝐭𝐚𝐠, 𝟑𝟏.𝟏𝟎. | ab 18.00 Uhr ☀️ Outdoor bis 00.00 Uhr | Indoor bis 03.00 Uhr 🎧 DJ Juli, DJ Double Dee, DJ Ivan Fillini & DJ Hufe 🔞18+ 👀 #k1 #k1_reischach #halloween #behindthescenes #bts",
+      "status": "review",
+      "reason": "repost-or-collaboration",
       "published": false
     },
     {
       "id": "k1-instagram-DfHIbwKsIM5",
-      "kind": "instagram",
-      "title": "-1 day 👻👻👻🎃 Well, he’s already here",
-      "start": null,
-      "end": null,
-      "location": "K-1 Reischach",
+      "title": "Annuncio da verificare",
       "publishedAt": "2026-10-30T08:17:48.000Z",
-      "url": "https://www.instagram.com/p/DfHIbwKsIM5/",
+      "excerpt": "-1 day 👻👻👻🎃\nWell, he’s already here. Has been for days. Nobody knows how he got in. 👻 Now he wants to DJ too… 🎧😳 Gotta admit though: the music’s actually pretty good 🤪😜😎😂\n\nSee ya tomoroooooow!! 🫠🫠🫠🥹\n\n#k1 #k1_reischach #halloween #k1halloween #dancing",
       "sourceId": "k1-instagram",
       "sourceName": "K1 Kronplatz",
-      "excerpt": "-1 day 👻👻👻🎃 Well, he’s already here. Has been for days. Nobody knows how he got in. 👻 Now he wants to DJ too… 🎧😳 Gotta admit though: the music’s actually pretty good 🤪😜😎😂 See ya tomoroooooow!! 🫠🫠🫠🥹 #k1 #k1_reischach #halloween #k1halloween #dancing",
+      "evidence": {
+        "url": "https://www.instagram.com/p/DfHIbwKsIM5/",
+        "author": "k1.kronplatz",
+        "ownerId": "5849734189",
+        "publishedAt": "2026-10-30T08:17:48.000Z",
+        "caption": "-1 day 👻👻👻🎃\nWell, he’s already here. Has been for days. Nobody knows how he got in. 👻 Now he wants to DJ too… 🎧😳 Gotta admit though: the music’s actually pretty good 🤪😜😎😂\n\nSee ya tomoroooooow!! 🫠🫠🫠🥹\n\n#k1 #k1_reischach #halloween #k1halloween #dancing"
+      },
+      "url": "https://www.instagram.com/p/DfHIbwKsIM5/",
+      "kind": "instagram",
+      "status": "review",
+      "reason": "missing-date",
+      "published": false
+    },
+    {
+      "id": "alta-badia-instagram-DfK3g8fiHI8",
+      "title": "Annuncio da verificare",
+      "publishedAt": "2026-10-30T20:25:40.000Z",
+      "excerpt": "Some traditions tell the story of a place better than words ever could… and one of these traditions is the Leonardi Ritt🐴🧡\n\nHeld in honour of St Leonard, the patron saint of horses and horsemen, this traditional horse parade in Badia began 26 years ago with just 14 horses🥹 Today, it brings together horses, traditional costumes, music and Ladin flavours, keeping alive the bond between people, animals and the rural roots of the valley👩🏼‍🌾🤝🏼🐴\n\nIt has become more than a parade, it is a day to come together, live Ladin traditions and honour the deep-rooted connection between the local community, its horses and the land 🥰☀️🥹⛰️\n\nThis year, the Leonardi Ritt takes place on November 7th and 8th in Badia. Come and be part of it!💪🏻💫\n\nRead the full article in the Stüa Magazine, link in bio 📚👓",
+      "sourceId": "alta-badia-instagram",
+      "sourceName": "Alta Badia",
+      "evidence": {
+        "url": "https://www.instagram.com/p/DfK3g8fiHI8/",
+        "author": "alta_badia_official",
+        "ownerId": "887739667",
+        "publishedAt": "2026-10-30T20:25:40.000Z",
+        "caption": "Some traditions tell the story of a place better than words ever could… and one of these traditions is the Leonardi Ritt🐴🧡\n\nHeld in honour of St Leonard, the patron saint of horses and horsemen, this traditional horse parade in Badia began 26 years ago with just 14 horses🥹 Today, it brings together horses, traditional costumes, music and Ladin flavours, keeping alive the bond between people, animals and the rural roots of the valley👩🏼‍🌾🤝🏼🐴\n\nIt has become more than a parade, it is a day to come together, live Ladin traditions and honour the deep-rooted connection between the local community, its horses and the land 🥰☀️🥹⛰️\n\nThis year, the Leonardi Ritt takes place on November 7th and 8th in Badia. Come and be part of it!💪🏻💫\n\nRead the full article in the Stüa Magazine, link in bio 📚👓"
+      },
+      "url": "https://www.instagram.com/p/DfK3g8fiHI8/",
+      "kind": "instagram",
+      "status": "review",
+      "reason": "repost-or-collaboration",
+      "published": false
+    },
+    {
+      "id": "k1-instagram-DfFFZnBMGoK",
+      "title": "DJ Juli, DJ Double Dee, DJ Ivan Fillini & DJ Hufe",
+      "publishedAt": "2026-10-29T13:12:47.000Z",
+      "excerpt": "Wie viele Spinnweben sind zu viele? Asking for a friend... 🕸️\n-2 days until K1 Halloween Open Air!\n\nDie Deko ist schon ready und ziiemlich spooky… jetzt fehlt nur noch ihr und die richtige Mukke 👻\n\n🗓 𝐒𝐚𝐦𝐬𝐭𝐚𝐠, 𝟑𝟏.𝟏𝟎. | ab 18.00 Uhr ☀️ Outdoor bis 00.00 Uhr | Indoor bis 03.00 Uhr\n🎧 DJ Juli, DJ Double Dee, DJ Ivan Fillini & DJ Hufe\n🔞18+ 👀\n\n#k1 #k1_reischach #halloween #behindthescenes #bts",
+      "sourceId": "k1-instagram",
+      "sourceName": "K1 Kronplatz",
+      "evidence": {
+        "url": "https://www.instagram.com/p/DfFFZnBMGoK/",
+        "author": "k1.kronplatz",
+        "ownerId": "5849734189",
+        "publishedAt": "2026-10-29T13:12:47.000Z",
+        "caption": "Wie viele Spinnweben sind zu viele? Asking for a friend... 🕸️\n-2 days until K1 Halloween Open Air!\n\nDie Deko ist schon ready und ziiemlich spooky… jetzt fehlt nur noch ihr und die richtige Mukke 👻\n\n🗓 𝐒𝐚𝐦𝐬𝐭𝐚𝐠, 𝟑𝟏.𝟏𝟎. | ab 18.00 Uhr ☀️ Outdoor bis 00.00 Uhr | Indoor bis 03.00 Uhr\n🎧 DJ Juli, DJ Double Dee, DJ Ivan Fillini & DJ Hufe\n🔞18+ 👀\n\n#k1 #k1_reischach #halloween #behindthescenes #bts"
+      },
+      "url": "https://www.instagram.com/p/DfFFZnBMGoK/",
+      "kind": "instagram",
+      "status": "confirmed",
+      "reason": "official-announcement",
+      "start": "2026-10-31",
+      "end": "2026-10-31",
+      "location": "K1 · Riscone / Reischach, Brunico / Bruneck",
+      "dateEvidence": {
+        "status": "confirmed",
+        "start": "2026-10-31",
+        "end": "2026-10-31",
+        "evidence": "31.10",
+        "inferredYear": true
+      },
+      "hours": {
+        "start": "18:00"
+      },
       "published": false
     }
   ]
