@@ -1,8 +1,8 @@
 {
   "lastChecked": "2026-10-31",
   "summary": {
-    "webSources": 13,
-    "instagramSources": 7,
+    "webSources": 20,
+    "instagramSources": 11,
     "instagramStatus": "awaiting-token",
     "candidates": 0,
     "published": 0,
@@ -112,6 +112,90 @@
       "url": "https://clubmoritzino.it/en/events-in-alta-badia/",
       "status": "checked",
       "found": 0
+    },
+    {
+      "id": "gassl-events",
+      "name": "Gassl — Olang / Kronplatz",
+      "kind": "web",
+      "url": "https://www.gassl.bz/en/club/events",
+      "status": "checked",
+      "found": 0
+    },
+    {
+      "id": "k1-kronplatz",
+      "name": "K1 — Reischach / Kronplatz",
+      "kind": "web",
+      "url": "https://k-1.bz/en/",
+      "status": "checked",
+      "found": 0
+    },
+    {
+      "id": "hexenkessel-klausberg",
+      "name": "Hexenkessel — Klausberg / Ahrntal",
+      "kind": "web",
+      "url": "https://www.hexenkessel.bz/",
+      "status": "checked",
+      "found": 0
+    },
+    {
+      "id": "luislkeller-gardena",
+      "name": "Luislkeller — Wolkenstein / Val Gardena",
+      "kind": "web",
+      "url": "https://www.luislkeller.com/de/",
+      "status": "checked",
+      "found": 0
+    },
+    {
+      "id": "bussl-schnalstal",
+      "name": "Buss’l — Kurzras / Schnalstal",
+      "kind": "web",
+      "url": "https://www.bussl.it/Default.aspx",
+      "status": "checked",
+      "found": 0
+    },
+    {
+      "id": "loox-obereggen",
+      "name": "LOOX — Obereggen",
+      "kind": "web",
+      "url": "https://www.loox.bz.it/",
+      "status": "checked",
+      "found": 0
+    },
+    {
+      "id": "obereggen-apres-ski",
+      "name": "Obereggen — Ganischger Alm, Platzl & LOOX",
+      "kind": "web",
+      "url": "https://obereggen.com/en/ropeways/winter/apres-ski_alpine-club",
+      "status": "checked",
+      "found": 0
+    },
+    {
+      "id": "gassl-instagram",
+      "name": "Gassl Olang",
+      "kind": "instagram",
+      "url": "https://www.instagram.com/gassl.olang/",
+      "status": "awaiting-token"
+    },
+    {
+      "id": "k1-instagram",
+      "name": "K1 Kronplatz",
+      "kind": "instagram",
+      "url": "https://www.instagram.com/k1.kronplatz/",
+      "status": "awaiting-token"
+    },
+    {
+      "id": "hexenkessel-instagram",
+      "name": "Hexenkessel Klausberg",
+      "kind": "instagram",
+      "url": "https://www.instagram.com/hexenkessel_klausberg/",
+      "status": "awaiting-token"
+    },
+    {
+      "id": "luislkeller-instagram",
+      "name": "Luislkeller",
+      "kind": "instagram",
+      "url": "https://www.instagram.com/luislkeller/",
+      "status": "awaiting-token"
     },
     {
       "id": "winklparade-instagram",

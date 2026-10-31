@@ -4,7 +4,7 @@ Radar in continuo aggiornamento per feste retro, vintage ski e après-ski in Alt
 
 ## Contenuti
 
-- 6 eventi con data, luogo e fonte ufficiale
+- eventi con data, luogo e fonte ufficiale, aggiornati automaticamente
 - radar social generato dinamicamente dagli eventi correnti
 - filtri per atmosfera: retro, après-ski e dress code
 - interfaccia in italiano, tedesco e inglese, con rilevamento della lingua del browser e scelta manuale persistente
@@ -30,6 +30,10 @@ Il sito è buildless. Il branch `gh-pages` contiene il contenuto pubblicabile di
 Un workflow GitHub Actions controlla le fonti ufficiali ogni lunedì, mercoledì e giovedì alle 08:00 (Europe/Rome). Quando trova cambiamenti verificabili, aggiorna l'agenda, pubblica `main` e rigenera il branch `gh-pages`. Le fonti non raggiungibili vengono conservate senza sovrascrivere dati già verificati.
 
 Oltre alle pagine dei singoli eventi, il radar controlla un registro di portali turistici, comprensori e Skihütten in `data/discovery-sources.json`. Tra le fonti ci sono Winklparade/myTix, Skiworld Ahrntal/Speikboden, Ganischger Alm, Obereggen, Kronplatz e Club Moritzino. Il portale ufficiale Alto Adige viene scandito su più pagine: un nuovo evento entra automaticamente nell'agenda solo quando titolo, data, luogo e pagina ufficiale sono tutti disponibili. Il rapporto completo resta in `data/event-candidates.json`.
+
+Il registro comprende anche Gassl (Olang), K1 (Reischach), Hexenkessel (Klausberg), Luislkeller (Wolkenstein), Buss’l (Kurzras) e LOOX (Obereggen). I profili Instagram collegati dai siti ufficiali di Gassl, K1, Hexenkessel e Luislkeller sono inclusi nel radar opzionale. Per Platzl/Tipi si controlla il canale attuale del comprensorio di Obereggen: i riferimenti storici al Tipi non attestano un programma attuale. Le pagine web vengono analizzate per eventi con metadati strutturati; flyer, calendari incorporati e programmi settimanali privi di date precise non vengono trasformati in appuntamenti.
+
+I titoli in italiano, tedesco e inglese vengono recuperati dai collegamenti alle versioni linguistiche delle pagine ufficiali, quando disponibili.
 
 ### Radar Instagram opzionale
 

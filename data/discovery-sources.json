@@ -69,9 +69,64 @@
       "id": "club-moritzino-events",
       "name": "Club Moritzino Events",
       "url": "https://clubmoritzino.it/en/events-in-alta-badia/"
+    },
+    {
+      "id": "gassl-events",
+      "name": "Gassl — Olang / Kronplatz",
+      "url": "https://www.gassl.bz/en/club/events"
+    },
+    {
+      "id": "k1-kronplatz",
+      "name": "K1 — Reischach / Kronplatz",
+      "url": "https://k-1.bz/en/"
+    },
+    {
+      "id": "hexenkessel-klausberg",
+      "name": "Hexenkessel — Klausberg / Ahrntal",
+      "url": "https://www.hexenkessel.bz/"
+    },
+    {
+      "id": "luislkeller-gardena",
+      "name": "Luislkeller — Wolkenstein / Val Gardena",
+      "url": "https://www.luislkeller.com/de/"
+    },
+    {
+      "id": "bussl-schnalstal",
+      "name": "Buss’l — Kurzras / Schnalstal",
+      "url": "https://www.bussl.it/Default.aspx"
+    },
+    {
+      "id": "loox-obereggen",
+      "name": "LOOX — Obereggen",
+      "url": "https://www.loox.bz.it/"
+    },
+    {
+      "id": "obereggen-apres-ski",
+      "name": "Obereggen — Ganischger Alm, Platzl & LOOX",
+      "url": "https://obereggen.com/en/ropeways/winter/apres-ski_alpine-club"
     }
   ],
   "instagram": [
+    {
+      "id": "gassl-instagram",
+      "name": "Gassl Olang",
+      "url": "https://www.instagram.com/gassl.olang/"
+    },
+    {
+      "id": "k1-instagram",
+      "name": "K1 Kronplatz",
+      "url": "https://www.instagram.com/k1.kronplatz/"
+    },
+    {
+      "id": "hexenkessel-instagram",
+      "name": "Hexenkessel Klausberg",
+      "url": "https://www.instagram.com/hexenkessel_klausberg/"
+    },
+    {
+      "id": "luislkeller-instagram",
+      "name": "Luislkeller",
+      "url": "https://www.instagram.com/luislkeller/"
+    },
     {
       "id": "winklparade-instagram",
       "name": "Winklparade",
