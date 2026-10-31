@@ -7,6 +7,7 @@ import { checkApifyFreeBudget } from "./apify-budget.mjs";
 import { extractWebsiteEvents } from "./website-events.mjs";
 import { calendarState } from "../dist/calendar.mjs";
 import { createMediaScanner } from "./media-events.mjs";
+import { createInstagramMediaScanner } from "./instagram-media.mjs";
 
 const repositoryRoot = process.env.DISCOVERY_DATA_ROOT || path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const sourcesPath = path.join(repositoryRoot, "data", "discovery-sources.json");
@@ -459,20 +460,21 @@ const scanInstagram = async (sources, knownEvents) => {
   return analyzeInstagramItems(items, sources);
 };
 
-const analyzeInstagramItems = (items, sources) => {
-  const candidates = items
-    .map((item) => {
-      const result = assessInstagramPost(item, sources);
-      if (["rejected", "ignored"].includes(result.status)) return null;
-      return {
+const analyzeInstagramItems = async (items, sources) => {
+  const candidates = [];
+  // Spend the bounded OCR budget on explicit announcements before generic posts.
+  const priority = (item) => /flyer|opening|retro|vintage|bad taste|ugly ski/i.test(item.caption || "") ? 1 : 0;
+  for (const item of [...items].sort((a, b) => priority(b) - priority(a))) {
+      const result = await instagramMediaScanner.scan(item, sources);
+      if (["rejected", "ignored"].includes(result.status)) continue;
+      candidates.push({
         id: `${result.sourceId}-${item.shortCode || slug(result.url)}`,
         title: result.title || "Annuncio da verificare",
         publishedAt: item.timestamp || null,
         excerpt: result.evidence.caption,
         ...result,
-      };
-    })
-    .filter(Boolean);
+      });
+  }
 
   const countBySource = new Map();
   candidates.forEach((candidate) => countBySource.set(candidate.sourceId, (countBySource.get(candidate.sourceId) || 0) + 1));
@@ -513,6 +515,10 @@ const mediaCachePath = path.join(repositoryRoot, "data", "media-cache.json");
 let mediaCache = {};
 try { mediaCache = JSON.parse(await readFile(mediaCachePath, "utf8")); } catch { /* first media run */ }
 const mediaScanner = createMediaScanner({ cache: mediaCache, instagram: sources.instagram });
+const instagramMediaCachePath = path.join(repositoryRoot, "data", "instagram-media-cache.json");
+let instagramMediaCache = {};
+try { instagramMediaCache = JSON.parse(await readFile(instagramMediaCachePath, "utf8")); } catch { /* first OCR run */ }
+const instagramMediaScanner = createInstagramMediaScanner({ cache: instagramMediaCache });
 const today = todayInRome();
 let previous = { sources: [], candidates: [] };
 try {
@@ -554,7 +560,7 @@ if (replayPath || replayLast) {
     console.log(`Apify free-credit check (read-only): ${budget.allowed ? "allowed" : "blocked"}, reason=${budget.reason}`);
   }
   const items = replayPath ? JSON.parse(await readFile(replayPath, "utf8")) : await replayLastInstagramRun();
-  const replay = analyzeInstagramItems(items, sources.instagram);
+  const replay = await analyzeInstagramItems(items, sources.instagram);
   instagramStatus = "replayed";
   reports.push(...replay.reports);
   candidates.push(...replay.candidates);
@@ -678,6 +684,7 @@ const output = {
 };
 
 await writeFile(candidatesPath, `${JSON.stringify(output, null, 2)}\n`);
+await writeFile(instagramMediaCachePath, `${JSON.stringify(instagramMediaScanner.snapshot(), null, 2)}\n`);
 if (!replayPath && !replayLast) await writeFile(mediaCachePath, `${JSON.stringify(mediaScanner.snapshot(), null, 2)}\n`);
 const unavailable = reports.filter((source) => source.status === "unavailable").length;
 console.log(`Discovery checked: web=${sources.web.length}, instagram=${instagramStatus}, candidates=${uniqueCandidates.length}, published=${published.length}, unavailable=${unavailable}`);

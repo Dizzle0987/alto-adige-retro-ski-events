@@ -103,5 +103,8 @@ test("real free tools: native PDF text and OCR of a rendered flyer", { skip: pro
     assert.equal(ocr.method, "image-ocr");
     assert.match(ocr.text, /RETRO PARTY/i);
     assert.match(ocr.text, /20[.\s]+11[.\s]+2027/);
+    const instagramOcr = await readDocument(await readFile(`${output}.png`), "instagram-image");
+    assert.match(instagramOcr.text, /RETRO PARTY/i);
+    assert.ok(instagramOcr.words.some((word) => word.text.includes("2027") && word.confidence >= 90));
   } finally { await rm(directory, { recursive: true, force: true }); }
 });

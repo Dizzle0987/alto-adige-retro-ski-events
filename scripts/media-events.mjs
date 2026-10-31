@@ -139,6 +139,15 @@ export const readDocument = async (bytes, kind, run = exec) => {
       for (const page of pages) texts.push((await boundedRun("tesseract", [path.join(directory, page), "stdout", "-l", "deu+ita+eng", "--psm", "11"])).stdout);
       return { text: texts.join("\n"), method: "pdf-ocr" };
     }
+    if (kind === "instagram-image") {
+      const { stdout } = await boundedRun("tesseract", [file, "stdout", "-l", "deu+ita+eng", "--psm", "11", "tsv"]);
+      const words = stdout.split("\n").slice(1).map((line) => line.split("\t"))
+        .filter((columns) => columns[0] === "5" && columns[11]?.trim())
+        .map((columns) => ({ text: columns.slice(11).join("\t").trim(), confidence: Number(columns[10]), line: columns.slice(1, 5).join("-") }));
+      const lines = new Map();
+      for (const word of words) lines.set(word.line, [...(lines.get(word.line) || []), word.text]);
+      return { text: [...lines.values()].map((line) => line.join(" ")).join("\n"), words, method: "instagram-image-ocr" };
+    }
     const { stdout } = await boundedRun("tesseract", [file, "stdout", "-l", "deu+ita+eng", "--psm", "11"]);
     return { text: stdout, method: "image-ocr" };
   } finally { await rm(directory, { recursive: true, force: true }); }
