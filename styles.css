@@ -88,7 +88,8 @@ h2 { max-width: 860px; font-family: "Archivo Black", sans-serif; font-size: clam
 .period-button.is-active { background: var(--ink); color: white; }
 .archive-note { font: 500 .8rem "DM Mono", monospace; margin-bottom: 1.5rem; }
 .event-group-heading { font: 400 1.3rem "Archivo Black", sans-serif; margin: 0; padding: 1.5rem 0; }
-.ongoing-events { background: var(--acid); padding: 0 1.5rem; border: var(--line); margin: 1rem 0 2rem; box-shadow: 5px 5px 0 var(--ink); }
+.ongoing-events { background: var(--paper); padding: 0 1.5rem; border: var(--line); border-top: 6px solid var(--pink); margin: 1rem 0 2rem; box-shadow: 5px 5px 0 var(--ink); }
+.ongoing-events .event-card:hover { background: transparent; }
 .ongoing-events .event-card:last-child { border-bottom: 0; }
 .tags .ongoing-badge { background: white; color: var(--ink); border: 1px solid var(--ink); }
 .event-card { display: grid; grid-template-columns: 155px 1fr minmax(180px, 250px); gap: 2rem; align-items: center; padding: 2rem 0; border-bottom: var(--line); transition: background-color .18s; }
