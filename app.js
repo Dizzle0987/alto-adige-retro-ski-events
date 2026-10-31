@@ -17,6 +17,7 @@ const copy = {
     description: "Radar aggiornato di feste retro, vintage ski e après-ski in Alto Adige, con date, luoghi e fonti ufficiali.",
     skipLink: "Vai agli eventi", mainNavLabel: "Navigazione principale", brandLabel: "Retro Ski, torna all'inizio",
     languageLabel: "Lingua", posterLabel: "Poster decorativo con sciatore stilizzato", season: "stagione {season}",
+    seasonPeriod: "Ottobre {seasonStart} – aprile {seasonEnd}", seasonNote: "Periodo di riferimento invernale · eventi anche fuori stagione.",
     periodLabel: "Periodo degli eventi", currentEvents: "In corso e prossimi", pastEvents: "Eventi passati",
     archiveNote: "Storico degli ultimi 12 mesi.", ongoingTitle: "Succede adesso", upcomingTitle: "I prossimi appuntamenti",
     ongoingBadge: "In corso", emptyPast: "Nessun evento passato negli ultimi 12 mesi con questi filtri.",
@@ -44,6 +45,7 @@ const copy = {
     description: "Laufend aktualisierter Radar für Retro-Ski- und Après-Ski-Partys in Südtirol – mit Daten, Orten und offiziellen Quellen.",
     skipLink: "Zu den Events", mainNavLabel: "Hauptnavigation", brandLabel: "Retro Ski, zurück zum Anfang",
     languageLabel: "Sprache", posterLabel: "Dekoratives Poster mit stilisiertem Skifahrer", season: "Saison {season}",
+    seasonPeriod: "Oktober {seasonStart} – April {seasonEnd}", seasonNote: "Winterlicher Bezugszeitraum · auch Events außerhalb der Saison.",
     periodLabel: "Event-Zeitraum", currentEvents: "Aktuell & demnächst", pastEvents: "Vergangene Events",
     archiveNote: "Rückblick auf die letzten 12 Monate.", ongoingTitle: "Jetzt los", upcomingTitle: "Die nächsten Termine",
     ongoingBadge: "Findet gerade statt", emptyPast: "Keine vergangenen Events der letzten 12 Monate für diese Filter.",
@@ -71,6 +73,7 @@ const copy = {
     description: "A continuously updated radar for retro ski and après-ski parties in South Tyrol, with dates, places and official sources.",
     skipLink: "Skip to events", mainNavLabel: "Main navigation", brandLabel: "Retro Ski, back to top",
     languageLabel: "Language", posterLabel: "Decorative poster with a stylised skier", season: "{season} season",
+    seasonPeriod: "October {seasonStart} – April {seasonEnd}", seasonNote: "Winter reference period · events outside the season included.",
     periodLabel: "Event period", currentEvents: "Now & upcoming", pastEvents: "Past events",
     archiveNote: "An archive of the last 12 months.", ongoingTitle: "Happening now", upcomingTitle: "Coming up next",
     ongoingBadge: "Happening now", emptyPast: "No past events in the last 12 months match these filters.",
@@ -97,6 +100,7 @@ const copy = {
 
 const eventTranslations = {
   it: {
+    "k1-halloween-open-air-2026": { summary: "Halloween con DJ Juli, Double Dee, Ivan Fillini e Hufe. Ingresso gratuito, dress code horror, 18+. Outdoor 18:00–00:00; indoor 18:00–03:00 del giorno successivo." },
     "auto-2026-12-11-bruning-krampus-the-after-show-party": { summary: "After-party della sfilata dei Krampus con DJ set, musica e scenografie a tema fino all’una." },
     "auto-2027-01-02-back-to-1976-giornata-di-sci-old-school-con-simon-mac-live": { summary: "Giornata sugli sci in stile 1976, con outfit vintage, alba in pista e musica live di Simon & Mac." },
     "auto-2027-01-09-dj-armino-live": { summary: "DJ set e musica live alla Malga Ausser Schwemmalm, con ingresso gratuito." },
@@ -110,6 +114,7 @@ const eventTranslations = {
     "auto-2027-03-29-schwemmalm-open-air": { summary: "Open air di fine stagione alla stazione a monte, con musica e festa per il cinquantenario." },
   },
   de: {
+    "k1-halloween-open-air-2026": { summary: "Halloween mit DJ Juli, Double Dee, Ivan Fillini und Hufe. Freier Eintritt, Horror-Dresscode, ab 18 Jahren. Outdoor 18:00–00:00 Uhr; indoor 18:00–03:00 Uhr am Folgetag.", place: "K1 · Reischach, Bruneck" },
     "auto-2026-12-11-bruning-krampus-the-after-show-party": { summary: "Afterparty des Krampusumzugs mit DJ-Set, Musik und passender Gruselkulisse bis 1 Uhr." },
     "auto-2027-01-02-back-to-1976-giornata-di-sci-old-school-con-simon-mac-live": { summary: "Skitag im Stil von 1976 mit Vintage-Outfits, Sonnenaufgang auf der Piste und Livemusik von Simon & Mac." },
     "auto-2027-01-09-dj-armino-live": { summary: "DJ-Set und Livemusik auf der Ausser-Schwemmalm – bei freiem Eintritt." },
@@ -129,6 +134,7 @@ const eventTranslations = {
     "ski-carousel-vintage-party": { summary: "Zwei Tage zwischen Hütten, Vintage Village in La Villa, Rennen auf alten Skiern und Afterparty in Corvara.", place: "Alta Badia · La Villa, La Para und Corvara", tags: ["Vintage", "No carving"] },
   },
   en: {
+    "k1-halloween-open-air-2026": { summary: "Halloween with DJ Juli, Double Dee, Ivan Fillini and Hufe. Free entry, horror dress code, ages 18+. Outdoor 18:00–00:00; indoor 18:00–03:00 the following morning.", place: "K1 · Reischach / Riscone, Bruneck / Brunico" },
     "auto-2026-12-11-bruning-krampus-the-after-show-party": { summary: "Krampus parade afterparty with DJ sets, music and spooky themed décor until 1 am." },
     "auto-2027-01-02-back-to-1976-giornata-di-sci-old-school-con-simon-mac-live": { summary: "A 1976-style ski day with vintage outfits, sunrise skiing and live music from Simon & Mac." },
     "auto-2027-01-09-dj-armino-live": { summary: "DJ sets and live music at the Ausser Schwemmalm hut, with free admission." },
@@ -426,7 +432,7 @@ const translatePage = () => {
   document.querySelector('meta[name="description"]').content = dictionary.description;
   document.querySelectorAll("[data-i18n]").forEach((node) => {
     const value = dictionary[node.dataset.i18n];
-    if (value) node.textContent = value.replace("{season}", calendar.season);
+    if (value) node.textContent = value.replace("{season}", calendar.season).replace("{seasonStart}", calendar.seasonStart).replace("{seasonEnd}", calendar.seasonEnd);
   });
   document.querySelectorAll("[data-i18n-aria-label]").forEach((node) => {
     const value = dictionary[node.dataset.i18nAriaLabel];

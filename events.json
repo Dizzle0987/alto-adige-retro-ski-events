@@ -2,6 +2,28 @@
   "lastChecked": "2026-10-31",
   "events": [
     {
+      "id": "k1-halloween-open-air-2026",
+      "title": "K1 Halloween Open Air",
+      "start": "2026-10-31",
+      "end": "2026-10-31",
+      "endsAtDate": "2026-11-01",
+      "dateLabel": "31",
+      "monthLabel": "OTT",
+      "year": "2026",
+      "categories": ["apres", "costume"],
+      "tags": ["Halloween", "DJ", "18+"],
+      "venue": "K1",
+      "summary": "Halloween con DJ Juli, Double Dee, Ivan Fillini e Hufe. Ingresso gratuito, dress code horror e accesso dai 18 anni. Outdoor 18:00–00:00; indoor 18:00–03:00 del giorno successivo.",
+      "place": "K1 · Riscone / Reischach, Brunico / Bruneck",
+      "source": "https://www.instagram.com/p/De_mIcpsLrA/",
+      "social": "https://www.instagram.com/k1.kronplatz/",
+      "socialSourceId": "k1-instagram",
+      "hours": { "start": "18:00", "end": "03:00", "overnight": true },
+      "map": "https://www.google.com/maps/search/?api=1&query=K1+Reischach+Kronplatz",
+      "accent": "#b0ef43",
+      "featured": false
+    },
+    {
       "id": "auto-2026-12-11-bruning-krampus-the-after-show-party",
       "venue": { "it": "Sala manifestazioni", "de": "Veranstaltungssaal", "en": "Event hall" },
       "title": "Bruning Krampus - the after-show Party",
