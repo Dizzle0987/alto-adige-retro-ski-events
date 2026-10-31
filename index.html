@@ -22,7 +22,7 @@
       href="https://fonts.googleapis.com/css2?family=Archivo+Black&amp;family=DM+Mono:wght@400;500&amp;family=Manrope:wght@400;600;700&amp;display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="styles.css?v=6" />
+    <link rel="stylesheet" href="styles.css?v=7" />
   </head>
   <body>
     <a class="skip-link" href="#eventi" data-i18n="skipLink">Vai agli eventi</a>
@@ -45,7 +45,7 @@
 
       <div class="hero-grid" id="top">
         <div class="hero-copy">
-          <p class="eyebrow"><span></span> <span data-i18n="season">stagione 2026/27</span></p>
+          <p class="eyebrow"><span></span> <span data-i18n="season">stagione sciistica</span></p>
           <h1><span data-i18n="heroLine1">BRUTTI SCI.</span><br /><em data-i18n="heroLine2">BELLE FESTE.</em></h1>
           <p class="lede" data-i18n="heroLede">Un radar in continuo aggiornamento per feste retro, vintage ski e après-ski in Alto Adige. Date, luoghi e fonti ufficiali, senza caccia al flyer.</p>
           <div class="hero-actions">
@@ -65,12 +65,12 @@
             <span class="ski ski-two"></span>
           </div>
           <span class="poster-stamp">NO CARVING<br />JUST VIBES</span>
-          <span class="poster-year">MMXXVII</span>
+          <span class="poster-year" data-season-year></span>
         </div>
       </div>
 
       <div class="ticker" aria-hidden="true">
-        <div>NEON • LEG SKIS • SCHLAGER • APRÈS-SKI • BAD TASTE ENERGY • NEON • LEG SKIS • SCHLAGER • APRÈS-SKI •</div>
+        <div class="ticker-track"><span class="ticker-copy">NEON • LEG SKIS • SCHLAGER • APRÈS-SKI • BAD TASTE ENERGY • NEON • LEG SKIS • SCHLAGER • APRÈS-SKI • BAD TASTE ENERGY • </span><span class="ticker-copy">NEON • LEG SKIS • SCHLAGER • APRÈS-SKI • BAD TASTE ENERGY • NEON • LEG SKIS • SCHLAGER • APRÈS-SKI • BAD TASTE ENERGY • </span></div>
       </div>
     </header>
 
@@ -79,7 +79,7 @@
         <div class="section-heading">
           <div>
             <p class="kicker" data-i18n="eventsKicker">Radar eventi live</p>
-            <h2 data-i18n="eventsTitle">Cosa succede sulla neve, adesso.</h2>
+            <h2 data-i18n="eventsTitle">La tua agenda retro ski &amp; après-ski.</h2>
           </div>
           <p class="updated">
             <span data-i18n="lastUpdated">Ultimo aggiornamento</span><br /><strong data-last-checked>30.10.2026</strong><br />
@@ -87,6 +87,11 @@
           </p>
         </div>
 
+        <div class="period-tabs" role="group" data-i18n-aria-label="periodLabel" aria-label="Periodo degli eventi">
+          <button type="button" class="period-button is-active" data-period="current" aria-pressed="true" data-i18n="currentEvents">In corso e prossimi</button>
+          <button type="button" class="period-button" data-period="past" aria-pressed="false" data-i18n="pastEvents">Eventi passati</button>
+        </div>
+        <p class="archive-note" data-i18n="archiveNote" hidden>Storico degli ultimi 12 mesi.</p>
         <div class="filter-bar">
           <div class="filters" role="group" aria-label="Filtra per atmosfera" data-i18n-aria-label="filterLabel">
             <button class="filter is-active" type="button" data-filter="all" aria-pressed="true"><span class="filter-label" data-i18n="filterAll">Tutto</span><span class="filter-count">–</span></button>
@@ -124,6 +129,6 @@
       <a href="#top"><span data-i18n="backToTop">Torna su</span> ↑</a>
     </footer>
 
-    <script src="app.js?v=15"></script>
+    <script type="module" src="app.js?v=16"></script>
   </body>
 </html>
