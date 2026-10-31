@@ -3,8 +3,8 @@
   "summary": {
     "webSources": 20,
     "instagramSources": 11,
-    "instagramStatus": "awaiting-token",
-    "candidates": 0,
+    "instagramStatus": "checked",
+    "candidates": 6,
     "published": 0,
     "pruned": 0
   },
@@ -174,78 +174,174 @@
       "name": "Gassl Olang",
       "kind": "instagram",
       "url": "https://www.instagram.com/gassl.olang/",
-      "status": "awaiting-token"
+      "status": "checked",
+      "found": 0
     },
     {
       "id": "k1-instagram",
       "name": "K1 Kronplatz",
       "kind": "instagram",
       "url": "https://www.instagram.com/k1.kronplatz/",
-      "status": "awaiting-token"
+      "status": "checked",
+      "found": 6
     },
     {
       "id": "hexenkessel-instagram",
       "name": "Hexenkessel Klausberg",
       "kind": "instagram",
       "url": "https://www.instagram.com/hexenkessel_klausberg/",
-      "status": "awaiting-token"
+      "status": "checked",
+      "found": 0
     },
     {
       "id": "luislkeller-instagram",
       "name": "Luislkeller",
       "kind": "instagram",
       "url": "https://www.instagram.com/luislkeller/",
-      "status": "awaiting-token"
+      "status": "checked",
+      "found": 0
     },
     {
       "id": "winklparade-instagram",
       "name": "Winklparade",
       "kind": "instagram",
       "url": "https://www.instagram.com/winklparade/",
-      "status": "awaiting-token"
+      "status": "checked",
+      "found": 0
     },
     {
       "id": "ganischger-instagram",
       "name": "Ganischger Obereggen",
       "kind": "instagram",
       "url": "https://www.instagram.com/ganischger.obereggen/",
-      "status": "awaiting-token"
+      "status": "checked",
+      "found": 0
     },
     {
       "id": "skiworld-ahrntal-instagram",
       "name": "Skiworld Ahrntal",
       "kind": "instagram",
       "url": "https://www.instagram.com/skiworldahrntal_official/",
-      "status": "awaiting-token"
+      "status": "checked",
+      "found": 0
     },
     {
       "id": "kronplatz-instagram",
       "name": "Kronplatz",
       "kind": "instagram",
       "url": "https://www.instagram.com/kronplatz_group/",
-      "status": "awaiting-token"
+      "status": "checked",
+      "found": 0
     },
     {
       "id": "alta-badia-instagram",
       "name": "Alta Badia",
       "kind": "instagram",
       "url": "https://www.instagram.com/alta_badia_official/",
-      "status": "awaiting-token"
+      "status": "checked",
+      "found": 0
     },
     {
       "id": "val-gardena-instagram",
       "name": "Val Gardena",
       "kind": "instagram",
       "url": "https://www.instagram.com/dolomitesvalgardena/",
-      "status": "awaiting-token"
+      "status": "checked",
+      "found": 0
     },
     {
       "id": "three-zinnen-instagram",
       "name": "3 Zinnen Dolomites",
       "kind": "instagram",
       "url": "https://www.instagram.com/3zinnendolomites/",
-      "status": "awaiting-token"
+      "status": "checked",
+      "found": 0
     }
   ],
-  "candidates": []
+  "candidates": [
+    {
+      "id": "k1-instagram-Det2B15s1cA",
+      "kind": "instagram",
+      "title": "If your person doesn’t dance with you to this song, they’re not your person",
+      "start": null,
+      "end": null,
+      "location": "K1 Reischach",
+      "publishedAt": "2026-10-20T12:35:45.000Z",
+      "url": "https://www.instagram.com/p/Det2B15s1cA/",
+      "sourceId": "k1-instagram",
+      "sourceName": "K1 Kronplatz",
+      "excerpt": "If your person doesn’t dance with you to this song, they’re not your person. Just saying. 💁‍♀️☀️ #k1reischach #yourperson #dayparty #apresski #kronplatz",
+      "published": false
+    },
+    {
+      "id": "k1-instagram-Deyw3E_sSTW",
+      "kind": "instagram",
+      "title": "Sorry, can’t hear you, @nicjohnston is playing my song 🕺🤷‍♂️🤷‍♀️ #k1reischach #apresski #partytok #flirtfail #kronpla",
+      "start": null,
+      "end": null,
+      "location": "K1 Reischach",
+      "publishedAt": "2026-10-22T10:26:09.000Z",
+      "url": "https://www.instagram.com/p/Deyw3E_sSTW/",
+      "sourceId": "k1-instagram",
+      "sourceName": "K1 Kronplatz",
+      "excerpt": "Sorry, can’t hear you, @nicjohnston is playing my song 🕺🤷‍♂️🤷‍♀️ #k1reischach #apresski #partytok #flirtfail #kronplatz",
+      "published": false
+    },
+    {
+      "id": "k1-instagram-De1Hx-Tsf12",
+      "kind": "instagram",
+      "title": "Winter plans",
+      "start": null,
+      "end": null,
+      "location": "K1 Reischach",
+      "publishedAt": "2026-10-23T08:26:31.000Z",
+      "url": "https://www.instagram.com/p/De1Hx-Tsf12/",
+      "sourceId": "k1-instagram",
+      "sourceName": "K1 Kronplatz",
+      "excerpt": "Winter plans? Sorted. ❄️ We’re back at K1, all winter long! It all starts with our big Halloween Open Air on November 31st, then big Opening on November 20th and 21st, and after that, there’s something going on every single weekend. 🎉 Tag the friends you’re bringing along 👇 #K1 #WinterSeason #OpenAir #Opening #Party WeekendVibes SouthTyrol",
+      "published": false
+    },
+    {
+      "id": "k1-instagram-De_mIcpsLrA",
+      "kind": "instagram",
+      "title": "ℍ𝔸𝕃𝕃𝕆𝕎𝔼𝔼ℕ 𝕆ℙ𝔼ℕ 𝔸𝕀ℝ 👻🦇🔥 Noch 4 Tage bis zum Big K1 Halloween Open Air 😈 Hier nochmal alle wichtigsten Info",
+      "start": null,
+      "end": null,
+      "location": "K1 Reischach",
+      "publishedAt": "2026-10-27T10:03:43.000Z",
+      "url": "https://www.instagram.com/p/De_mIcpsLrA/",
+      "sourceId": "k1-instagram",
+      "sourceName": "K1 Kronplatz",
+      "excerpt": "ℍ𝔸𝕃𝕃𝕆𝕎𝔼𝔼ℕ 𝕆ℙ𝔼ℕ 𝔸𝕀ℝ 👻🦇🔥 Noch 4 Tage bis zum Big K1 Halloween Open Air 😈 Hier nochmal alle wichtigsten Infos: 🗓 𝐒𝐚𝐦𝐬𝐭𝐚𝐠, 𝟑𝟏.𝟏𝟎.𝟐𝟎𝟐𝟔 ☀️ 𝐎𝐔𝐓𝐃𝐎𝐎𝐑 von 18.00 bis 00.00 Uhr 🕘 𝐈𝐍𝐃𝐎𝐎𝐑 von 18.00 bis 03.00 Uhr 🎧 DJ Juli, DJ Double Dee, DJ Ivan Fillini & DJ Hufe Dresscode: je gruseliger, desto besser.... Markiert eure Horror-Crew und kommt rechtzeitig, wir sehen uns auf der dark side! 🖤🧟‍♂️🧛‍♀️ 🔞 18+ | Free Entrance | Party In- & Outdoor 🎉 #k1 #k1_reischach ",
+      "published": false
+    },
+    {
+      "id": "k1-instagram-DfFFZnBMGoK",
+      "kind": "instagram",
+      "title": "Wie viele Spinnweben sind zu viele",
+      "start": null,
+      "end": null,
+      "location": "K-1 Reischach",
+      "publishedAt": "2026-10-29T13:12:47.000Z",
+      "url": "https://www.instagram.com/p/DfFFZnBMGoK/",
+      "sourceId": "k1-instagram",
+      "sourceName": "K1 Kronplatz",
+      "excerpt": "Wie viele Spinnweben sind zu viele? Asking for a friend... 🕸️ -2 days until K1 Halloween Open Air! Die Deko ist schon ready und ziiemlich spooky… jetzt fehlt nur noch ihr und die richtige Mukke 👻 🗓 𝐒𝐚𝐦𝐬𝐭𝐚𝐠, 𝟑𝟏.𝟏𝟎. | ab 18.00 Uhr ☀️ Outdoor bis 00.00 Uhr | Indoor bis 03.00 Uhr 🎧 DJ Juli, DJ Double Dee, DJ Ivan Fillini & DJ Hufe 🔞18+ 👀 #k1 #k1_reischach #halloween #behindthescenes #bts",
+      "published": false
+    },
+    {
+      "id": "k1-instagram-DfHIbwKsIM5",
+      "kind": "instagram",
+      "title": "-1 day 👻👻👻🎃 Well, he’s already here",
+      "start": null,
+      "end": null,
+      "location": "K-1 Reischach",
+      "publishedAt": "2026-10-30T08:17:48.000Z",
+      "url": "https://www.instagram.com/p/DfHIbwKsIM5/",
+      "sourceId": "k1-instagram",
+      "sourceName": "K1 Kronplatz",
+      "excerpt": "-1 day 👻👻👻🎃 Well, he’s already here. Has been for days. Nobody knows how he got in. 👻 Now he wants to DJ too… 🎧😳 Gotta admit though: the music’s actually pretty good 🤪😜😎😂 See ya tomoroooooow!! 🫠🫠🫠🥹 #k1 #k1_reischach #halloween #k1halloween #dancing",
+      "published": false
+    }
+  ]
 }
