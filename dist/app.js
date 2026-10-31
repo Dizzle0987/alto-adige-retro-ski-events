@@ -92,6 +92,53 @@ const eventTranslations = {
   },
 };
 
+const placeTranslations = {
+  de: {
+    "San Vigilio, Regione dolomitica Plan de Corones": "St. Vigil, Dolomitenregion Kronplatz",
+    "Ultimo, Merano e dintorni": "Ulten, Meran und Umgebung",
+    "Fiè allo Sciliar, Regione dolomitica Alpe di Siusi": "Völs am Schlern, Dolomitenregion Seiser Alm",
+    "Ortisei, Regione dolomitica Val Gardena": "St. Ulrich in Gröden, Dolomitenregion Gröden",
+    "Selva/Sëlva, Selva di Val Gardena, Regione dolomitica Val Gardena": "Wolkenstein in Gröden, Dolomitenregion Gröden",
+    "Ortisei · Str. Rezia 1": "St. Ulrich · Rezia-Straße 1",
+    "Area sciistica di Watles": "Skigebiet Watles",
+  },
+  en: {
+    "San Vigilio, Regione dolomitica Plan de Corones": "San Vigilio, Kronplatz Dolomites Region",
+    "Ultimo, Merano e dintorni": "Ultimo, Merano and environs",
+    "Fiè allo Sciliar, Regione dolomitica Alpe di Siusi": "Fiè allo Sciliar, Alpe di Siusi Dolomites Region",
+    "Ortisei, Regione dolomitica Val Gardena": "Ortisei, Val Gardena Dolomites Region",
+    "Selva/Sëlva, Selva di Val Gardena, Regione dolomitica Val Gardena": "Selva di Val Gardena, Val Gardena Dolomites Region",
+    "Ortisei · Str. Rezia 1": "Ortisei · 1 Rezia Street",
+    "Area sciistica di Watles": "Watles ski area",
+  },
+};
+
+const placeReplacements = {
+  de: [
+    ["Regione dolomitica Plan de Corones", "Dolomitenregion Kronplatz"],
+    ["Regione dolomitica Val Gardena", "Dolomitenregion Gröden"],
+    ["Regione dolomitica Alpe di Siusi", "Dolomitenregion Seiser Alm"],
+    ["Regione dolomitica Alta Badia", "Dolomitenregion Alta Badia"],
+    ["Regione dolomitica 3 Cime", "Dolomitenregion 3 Zinnen"],
+    ["Merano e dintorni", "Meran und Umgebung"],
+    ["Selva di Val Gardena", "Wolkenstein in Gröden"],
+    ["Fiè allo Sciliar", "Völs am Schlern"],
+    ["San Vigilio", "St. Vigil"],
+    ["Ortisei", "St. Ulrich in Gröden"],
+    ["Ultimo", "Ulten"],
+    ["Area sciistica di", "Skigebiet"],
+  ],
+  en: [
+    ["Regione dolomitica Plan de Corones", "Kronplatz Dolomites Region"],
+    ["Regione dolomitica Val Gardena", "Val Gardena Dolomites Region"],
+    ["Regione dolomitica Alpe di Siusi", "Alpe di Siusi Dolomites Region"],
+    ["Regione dolomitica Alta Badia", "Alta Badia Dolomites Region"],
+    ["Regione dolomitica 3 Cime", "3 Zinnen Dolomites Region"],
+    ["Merano e dintorni", "Merano and environs"],
+    ["Area sciistica di", "ski area"],
+  ],
+};
+
 const valleyLabels = {
   kronplatz: { it: "Plan de Corones", de: "Kronplatz", en: "Kronplatz" },
   ultimo: { it: "Val d’Ultimo", de: "Ultental", en: "Ultimo Valley" },
@@ -125,13 +172,24 @@ const externalLink = (label, href) => {
   return link;
 };
 
+const localizedPlace = (place, language) => {
+  if (language === "it") return place;
+  const exactTranslation = placeTranslations[language]?.[place];
+  if (exactTranslation) return exactTranslation;
+  return (placeReplacements[language] || []).reduce(
+    (localized, [source, translated]) => localized.split(source).join(translated),
+    place,
+  );
+};
+
 const localizedEvent = (event) => {
-  const translation = eventTranslations[currentLanguage]?.[event.id];
-  if (translation) return { ...event, ...translation };
-  if (currentLanguage !== "it" && event.id.startsWith("auto-")) {
-    return { ...event, summary: copy[currentLanguage].autoEventSummary.replace("{place}", event.place) };
+  const translation = eventTranslations[currentLanguage]?.[event.id] || {};
+  const place = translation.place || localizedPlace(event.place, currentLanguage);
+  const localized = { ...event, ...translation, place };
+  if (currentLanguage !== "it" && event.id.startsWith("auto-") && !translation.summary) {
+    localized.summary = copy[currentLanguage].autoEventSummary.replace("{place}", place);
   }
-  return { ...event };
+  return localized;
 };
 
 const valleyKeyFor = (event) => {
