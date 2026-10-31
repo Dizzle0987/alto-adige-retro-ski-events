@@ -37,7 +37,7 @@ const copy = {
     autoSummaryCostume: "Evento sulla neve con dress code e atmosfera a tema. Il programma completo è nella fonte ufficiale.",
     autoSummaryGeneric: "Evento sulla neve con programma e dettagli nella fonte ufficiale.",
     footerNote: "Idee und Umsetzung von zwoa geile Typen", backToTop: "Torna su",
-    officialSource: "Fonte ufficiale", map: "Mappa", instagram: "Instagram",
+    officialSource: "Fonte ufficiale", map: "Mappa", instagram: "Instagram", timePending: "Orario da confermare", timeFrom: "Dalle", nextDay: "giorno successivo",
   },
   de: {
     pageTitle: "Retro Ski & Après — Südtirol",
@@ -64,7 +64,7 @@ const copy = {
     autoSummaryCostume: "Schnee-Event mit Dresscode und besonderem Motto. Das vollständige Programm findest du in der offiziellen Quelle.",
     autoSummaryGeneric: "Schnee-Event mit Programm und Details in der offiziellen Quelle.",
     footerNote: "Idee und Umsetzung von zwoa geile Typen", backToTop: "Nach oben",
-    officialSource: "Offizielle Quelle", map: "Karte", instagram: "Instagram",
+    officialSource: "Offizielle Quelle", map: "Karte", instagram: "Instagram", timePending: "Uhrzeit folgt", timeFrom: "Ab", nextDay: "Folgetag",
   },
   en: {
     pageTitle: "Retro Ski & Après — South Tyrol",
@@ -91,7 +91,7 @@ const copy = {
     autoSummaryCostume: "A themed snow event with a dress code. See the official source for the full programme.",
     autoSummaryGeneric: "A snow event with the full programme and details in the official source.",
     footerNote: "Idee und Umsetzung von zwoa geile Typen", backToTop: "Back to top",
-    officialSource: "Official source", map: "Map", instagram: "Instagram",
+    officialSource: "Official source", map: "Map", instagram: "Instagram", timePending: "Time to be confirmed", timeFrom: "From", nextDay: "next day",
   },
 };
 
@@ -256,6 +256,7 @@ const localizedEvent = (event) => {
   if (currentLanguage !== "it" && event.id.startsWith("auto-") && !translation.summary) {
     localized.summary = automaticSummary(event);
   }
+  if (event.socialSourceId && !translation.summary) localized.summary = automaticSummary(event);
   return localized;
 };
 
@@ -302,6 +303,14 @@ const renderEvent = (rawEvent) => {
   }
   event.tags.forEach((tag) => tags.append(element("span", "", tag)));
   main.append(tags, element("h3", "", event.title), element("p", "", event.summary), element("p", "place", event.place));
+  if (event.socialSourceId) {
+    const words = copy[currentLanguage];
+    const hours = event.hours;
+    const label = hours?.start
+      ? `${words.timeFrom} ${hours.start}${hours.end ? ` – ${hours.end}${hours.overnight ? ` (${words.nextDay})` : ""}` : ""}`
+      : words.timePending;
+    main.append(element("p", "event-time", label));
+  }
   const links = element("div", "event-links");
   links.append(externalLink(copy[currentLanguage].officialSource, event.source));
   if (event.social) links.append(externalLink(copy[currentLanguage].instagram, event.social));
