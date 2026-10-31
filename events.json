@@ -1,6 +1,171 @@
 {
-  "lastChecked": "2026-10-30",
+  "lastChecked": "2026-10-31",
   "events": [
+    {
+      "id": "auto-2026-12-11-bruning-krampus-the-after-show-party",
+      "title": "Bruning Krampus - the after-show Party",
+      "start": "2026-12-11",
+      "end": "2026-12-11",
+      "dateLabel": "11",
+      "monthLabel": "DIC",
+      "year": "2026",
+      "categories": [
+        "apres"
+      ],
+      "tags": [
+        "DJ",
+        "Après-ski"
+      ],
+      "summary": "Dopo la sfilata, la notte dei Krampus continua con il party presso la Sala Manifestazioni di San Vigilio! Fino all'una ci sarà da divertirsi con DJ set, musica e una location decorata per l'occasione! Unitevi all'atmosfera spaventosa e…",
+      "place": "San Vigilio, Regione dolomitica Plan de Corones",
+      "source": "https://www.suedtirol.info/it/it/esperienze-eventi/eventi-alto-adige/pdp-evento.00F6DC935E124721B16FBBC7E4F9259B.bruning-krampus---the-after-show-party.san-vigilio",
+      "social": "https://www.instagram.com/kronplatz_group/",
+      "map": "https://www.google.com/maps/search/?api=1&query=San%20Vigilio%2C%20Regione%20dolomitica%20Plan%20de%20Corones",
+      "accent": "#ff4fa3",
+      "featured": false
+    },
+    {
+      "id": "auto-2027-01-02-back-to-1976-giornata-di-sci-old-school-con-simon-mac-live",
+      "title": "Back to 1976 - Giornata di sci old school con Simon & Mac LIVE",
+      "start": "2027-01-02",
+      "end": "2027-01-02",
+      "dateLabel": "02",
+      "monthLabel": "GEN",
+      "year": "2027",
+      "categories": [
+        "retro",
+        "costume",
+        "apres"
+      ],
+      "tags": [
+        "Retro",
+        "Vintage",
+        "Live music"
+      ],
+      "summary": "BACK TO 1976 – Giornata di sci vintage sulla Schwemmalm! Si torna ai bei vecchi tempi! Preparate gli outfit vintage e preparatevi per una giornata di sci tutta nello stile del 1976! Si comincia con una splendida alba e piste…",
+      "place": "Ultimo, Merano e dintorni",
+      "source": "https://www.suedtirol.info/it/it/esperienze-eventi/eventi-alto-adige/pdp-evento.DF178894D2DF4A3B980571BE4929B049.back-to----simon---mac-live.ultimo",
+      "social": null,
+      "map": "https://www.google.com/maps/search/?api=1&query=Ultimo%2C%20Merano%20e%20dintorni",
+      "accent": "#ff7439",
+      "featured": false
+    },
+    {
+      "id": "auto-2027-01-09-dj-armino-live",
+      "title": "DJ Armino LIVE",
+      "start": "2027-01-09",
+      "end": "2027-01-09",
+      "dateLabel": "09",
+      "monthLabel": "GEN",
+      "year": "2027",
+      "categories": [
+        "apres"
+      ],
+      "tags": [
+        "DJ",
+        "Live music",
+        "Après-ski"
+      ],
+      "summary": "DJ Armino Live alla Malga Ausser Schwemmalm! Ingresso gratuito!",
+      "place": "Ultimo, Merano e dintorni",
+      "source": "https://www.suedtirol.info/it/it/esperienze-eventi/eventi-alto-adige/pdp-evento.A7108863F31B46589828B5014A11D89D.dj-armino-live.ultimo",
+      "social": null,
+      "map": "https://www.google.com/maps/search/?api=1&query=Ultimo%2C%20Merano%20e%20dintorni",
+      "accent": "#b0ef43",
+      "featured": false
+    },
+    {
+      "id": "auto-2027-02-24-kronplatz-ski-music-festival-dj-edition",
+      "title": "Kronplatz Ski & Music Festival DJ Edition",
+      "start": "2027-02-24",
+      "end": "2027-02-27",
+      "dateLabel": "24–27",
+      "monthLabel": "FEB",
+      "year": "2027",
+      "categories": [
+        "apres"
+      ],
+      "tags": [
+        "DJ",
+        "Après-ski"
+      ],
+      "summary": "Dal 24 al 27 febbraio 2027, il Plan de Corones diventerà il punto di riferimento per i suoni elettronici: alla Kronplatz Ski & Music Festival – DJ Edition, DJ di punta da tutta Europa faranno vibrare le montagne con i loro beat. Che sia…",
+      "place": "San Vigilio, Regione dolomitica Plan de Corones",
+      "source": "https://www.suedtirol.info/it/it/esperienze-eventi/eventi-alto-adige/pdp-evento.C783D34CDFFE4BE3B8042D8AB4A56869.kronplatz-ski---music.san-vigilio",
+      "social": "https://www.instagram.com/kronplatz_group/",
+      "map": "https://www.google.com/maps/search/?api=1&query=San%20Vigilio%2C%20Regione%20dolomitica%20Plan%20de%20Corones",
+      "accent": "#ff4fa3",
+      "featured": false
+    },
+    {
+      "id": "auto-2027-02-27-gare-di-sci-alla-vecchia-maniera",
+      "title": "Gare di sci alla vecchia maniera",
+      "start": "2027-02-27",
+      "end": "2027-02-27",
+      "dateLabel": "27",
+      "monthLabel": "FEB",
+      "year": "2027",
+      "categories": [
+        "retro",
+        "costume"
+      ],
+      "tags": [
+        "Retro"
+      ],
+      "summary": "Sci di legno, abbigliamento da sci d'epoca e divertimento a non finire! Con la nostra gara di sci leggendaria facciamo rivivere i tempi passati. Che siano curve spericolate o siparietti esilaranti, qui contano solo il divertimento e le…",
+      "place": "Ultimo, Merano e dintorni",
+      "source": "https://www.suedtirol.info/it/it/esperienze-eventi/eventi-alto-adige/pdp-evento.BDAF18228E9F49B0BB2CE00BD97C3F8B.gare-di-sci-alla-vecchia-maniera.ultimo",
+      "social": null,
+      "map": "https://www.google.com/maps/search/?api=1&query=Ultimo%2C%20Merano%20e%20dintorni",
+      "accent": "#ff7439",
+      "featured": false
+    },
+    {
+      "id": "auto-2027-03-06-invito-alla-gara-internazionale-all-insegna-di-divertimento-e-nostalgi",
+      "title": "Invito alla gara internazionale all’insegna di divertimento e nostalgia",
+      "start": "2027-03-06",
+      "end": "2027-03-06",
+      "dateLabel": "06",
+      "monthLabel": "MAR",
+      "year": "2027",
+      "categories": [
+        "retro",
+        "costume"
+      ],
+      "tags": [
+        "Retro",
+        "Nostalgia"
+      ],
+      "summary": "Evento sulla neve a Fiè allo Sciliar, Regione dolomitica Alpe di Siusi, con programma e dettagli nella fonte ufficiale.",
+      "place": "Fiè allo Sciliar, Regione dolomitica Alpe di Siusi",
+      "source": "https://www.suedtirol.info/it/it/esperienze-eventi/eventi-alto-adige/pdp-evento.B8BDF77308934CCA95C8EA9BFEB5C013.invito-alla-gara-internazionale-allinsegna-di-divertimento-e-nostalgia.fie-allo-sciliar",
+      "social": null,
+      "map": "https://www.google.com/maps/search/?api=1&query=Fi%C3%A8%20allo%20Sciliar%2C%20Regione%20dolomitica%20Alpe%20di%20Siusi",
+      "accent": "#b0ef43",
+      "featured": false
+    },
+    {
+      "id": "auto-2027-03-07-dolomites-dirndl-ski-day",
+      "title": "Dolomites Dirndl Ski Day",
+      "start": "2027-03-07",
+      "end": "2027-03-07",
+      "dateLabel": "07",
+      "monthLabel": "MAR",
+      "year": "2027",
+      "categories": [
+        "costume"
+      ],
+      "tags": [
+        "Dress code"
+      ],
+      "summary": "Il 7 marzo 2027, in occasione della giornata internazionale della donna, si terrà un evento ludico riservato alle sole donne. La Val Gardena ha deciso di celebrare la Festa della Donna con un divertente e coloratissimo evento sportivo:…",
+      "place": "Ortisei, Regione dolomitica Val Gardena",
+      "source": "https://www.suedtirol.info/it/it/esperienze-eventi/eventi-alto-adige/pdp-evento.7AAD994EFAF649BB9BA756A2EB352ECA.dolomites-dirndl-ski-day.ortisei",
+      "social": "https://www.instagram.com/dolomitesvalgardena/",
+      "map": "https://www.google.com/maps/search/?api=1&query=Ortisei%2C%20Regione%20dolomitica%20Val%20Gardena",
+      "accent": "#ff4fa3",
+      "featured": false
+    },
     {
       "id": "3-zinnen-schlager",
       "title": "3 Zinnen Schlager & Ski Partywoche",
@@ -26,6 +191,28 @@
       "featured": false
     },
     {
+      "id": "auto-2027-03-18-rock-the-dolomites-winter-music-festival",
+      "title": "Rock the Dolomites - Winter Music Festival",
+      "start": "2027-03-18",
+      "end": "2027-03-27",
+      "dateLabel": "18–27",
+      "monthLabel": "MAR",
+      "year": "2027",
+      "categories": [
+        "apres"
+      ],
+      "tags": [
+        "Après-ski"
+      ],
+      "summary": "Rock the Dolomites torna a Selva di Val Gardena dal 18 al 27 marzo 2027, facendo nuovamente vibrare le Dolomiti al ritmo della musica. L’esclusivo Winter Music Festival unisce musica dal vivo, sci e sole primaverile nello spettacolare…",
+      "place": "Selva/Sëlva, Selva di Val Gardena, Regione dolomitica Val Gardena",
+      "source": "https://www.suedtirol.info/it/it/esperienze-eventi/eventi-alto-adige/pdp-evento.9F95DB02F91341E196236FD3EB283CB9.rock-the-dolomites---winter-music-festival.selva-selva",
+      "social": "https://www.instagram.com/dolomitesvalgardena/",
+      "map": "https://www.google.com/maps/search/?api=1&query=Selva%2FS%C3%ABlva%2C%20Selva%20di%20Val%20Gardena%2C%20Regione%20dolomitica%20Val%20Gardena",
+      "accent": "#ff7439",
+      "featured": false
+    },
+    {
       "id": "lockenfest-funes",
       "title": "Lockenfest con Retro Party",
       "start": "2027-03-20",
@@ -48,6 +235,52 @@
       "social": null,
       "map": "https://www.google.com/maps/search/?api=1&query=Filler+Ski+Lift+St+Magdalena+Villnoss",
       "accent": "#ff4fa3",
+      "featured": false
+    },
+    {
+      "id": "auto-2027-03-20-spring-race-party-ortisei",
+      "title": "Spring Race Party Ortisei",
+      "start": "2027-03-20",
+      "end": "2027-03-20",
+      "dateLabel": "20",
+      "monthLabel": "MAR",
+      "year": "2027",
+      "categories": [
+        "apres"
+      ],
+      "tags": [
+        "Après-ski"
+      ],
+      "summary": "Chi dice che lo sci e lo snowboard sono divertenti solo in inverno? Ogni anno la Val Gardena invita gli appassionati di sport invernali al grande Spring Race Party, una competizione molto speciale per tutti coloro che anche in primavera…",
+      "place": "Ortisei · Str. Rezia 1",
+      "source": "https://www.suedtirol.info/it/it/esperienze-eventi/eventi-alto-adige/pdp-evento.E8432689570C4CE79B96E32617DCC824.spring-race-party-ortisei.ortisei-urtijei",
+      "social": "https://www.instagram.com/dolomitesvalgardena/",
+      "map": "https://www.google.com/maps/search/?api=1&query=Ortisei%20%C2%B7%20Str.%20Rezia%201",
+      "accent": "#00bfa6",
+      "featured": false
+    },
+    {
+      "id": "auto-2027-03-20-gara-della-nostalgia",
+      "title": "Gara della nostalgia",
+      "start": "2027-03-20",
+      "end": "2027-03-20",
+      "dateLabel": "20",
+      "monthLabel": "MAR",
+      "year": "2027",
+      "categories": [
+        "retro",
+        "costume"
+      ],
+      "tags": [
+        "Retro",
+        "Nostalgia"
+      ],
+      "summary": "Anche quest'anno l'area sciistica di Watles torna indietro nel tempo con un'atmosfera nostalgica in tutto il comprensorio. A marzo, quando ogni anno l'inverno viene cacciato a gran voce nell'Alta Val Venosta attenta alle tradizioni e…",
+      "place": "Area sciistica di Watles",
+      "source": "https://www.watles.net/it/sci-e-montagna-d-avventura-watles/info-servizio/eventi/rid-B6EF3B88C11646D3B97FE55653629FDF-e-gara-della-nostalgia.html",
+      "social": null,
+      "map": "https://www.google.com/maps/search/?api=1&query=Area%20sciistica%20di%20Watles",
+      "accent": "#f5ec35",
       "featured": false
     },
     {
@@ -93,6 +326,28 @@
       "source": "https://www.valgardena.it/it/dettaglio/base/events/val-gardena-winter-finals/A099778FF6984F6AB28456B49E0C6B16/",
       "social": "https://www.instagram.com/dolomitesvalgardena/",
       "map": "https://www.google.com/maps/search/?api=1&query=Ciampinoi+Selva+Val+Gardena",
+      "accent": "#b0ef43",
+      "featured": false
+    },
+    {
+      "id": "auto-2027-03-29-schwemmalm-open-air",
+      "title": "Schwemmalm Open Air",
+      "start": "2027-03-29",
+      "end": "2027-03-29",
+      "dateLabel": "29",
+      "monthLabel": "MAR",
+      "year": "2027",
+      "categories": [
+        "apres"
+      ],
+      "tags": [
+        "Après-ski"
+      ],
+      "summary": "Un ultimo Schwemmalm Open Air! Per chiudere in bellezza la nostra stagione del cinquantenario, vogliamo festeggiare alla grande un'ultima volta! Alla stazione a monte della funivia Schwemmalm celebreremo insieme l'ultimo giorno di una…",
+      "place": "Ultimo, Merano e dintorni",
+      "source": "https://www.suedtirol.info/it/it/esperienze-eventi/eventi-alto-adige/pdp-evento.5F5E54A5FE97434AA1A1C07E29EBD316.schwemmalm-open-air.ultimo",
+      "social": null,
+      "map": "https://www.google.com/maps/search/?api=1&query=Ultimo%2C%20Merano%20e%20dintorni",
       "accent": "#b0ef43",
       "featured": false
     },

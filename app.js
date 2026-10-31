@@ -25,6 +25,7 @@ const copy = {
     methodTitle: "Un radar vivo, con fonti chiare.",
     methodBody1: "Il radar controlla periodicamente portali turistici, comprensori sciistici, organizzatori e rifugi/Skihütten in italiano, tedesco e inglese. I profili social mostrati sono ricavati dagli eventi presenti in quel momento.",
     methodBody2: "Un evento entra nella lista quando data, luogo e fonte ufficiale sono disponibili. Se una pagina cambia o non risponde, l’ultimo dato verificato resta visibile fino al controllo successivo.",
+    autoEventSummary: "Evento rilevato automaticamente a {place}. Apri la fonte ufficiale per programma, orari e aggiornamenti.",
     methodFinePrint: "Programmi e orari possono cambiare: controlla sempre il link ufficiale prima di partire. Bevi responsabilmente e non sciare dopo aver bevuto.",
     footerNote: "CURATO NELLE DOLOMITI — AGGIORNAMENTO CONTINUO", backToTop: "Torna su",
     officialSource: "Fonte ufficiale", map: "Mappa", instagram: "Instagram",
@@ -48,6 +49,7 @@ const copy = {
     methodTitle: "Ein lebendiger Radar mit klaren Quellen.",
     methodBody1: "Der Radar prüft regelmäßig Tourismusportale, Skigebiete, Veranstalter und Skihütten auf Deutsch, Italienisch und Englisch. Die angezeigten Social-Profile stammen aus den jeweils aktuellen Events.",
     methodBody2: "Ein Event erscheint, sobald Datum, Ort und eine offizielle Quelle verfügbar sind. Ändert sich eine Seite oder ist sie nicht erreichbar, bleibt der zuletzt geprüfte Stand bis zur nächsten Kontrolle sichtbar.",
+    autoEventSummary: "Automatisch erkanntes Event in {place}. Programm, Uhrzeiten und aktuelle Hinweise findest du in der offiziellen Quelle.",
     methodFinePrint: "Programme und Uhrzeiten können sich ändern: Prüfe vor der Abfahrt immer den offiziellen Link. Trink verantwortungsvoll und fahre nicht Ski, wenn du Alkohol getrunken hast.",
     footerNote: "IN DEN DOLOMITEN KURATIERT — LAUFEND AKTUALISIERT", backToTop: "Nach oben",
     officialSource: "Offizielle Quelle", map: "Karte", instagram: "Instagram",
@@ -71,6 +73,7 @@ const copy = {
     methodTitle: "A live radar with clear sources.",
     methodBody1: "The radar regularly checks tourism portals, ski areas, organisers and ski huts in Italian, German and English. The social profiles shown come from the events currently listed.",
     methodBody2: "An event is listed when its date, place and official source are available. If a page changes or becomes unavailable, the latest verified information remains visible until the next check.",
+    autoEventSummary: "Automatically discovered event in {place}. Open the official source for the programme, times and latest updates.",
     methodFinePrint: "Programmes and times may change: always check the official link before setting off. Drink responsibly and never ski after drinking.",
     footerNote: "CURATED IN THE DOLOMITES — CONTINUOUSLY UPDATED", backToTop: "Back to top",
     officialSource: "Official source", map: "Map", instagram: "Instagram",
@@ -117,7 +120,14 @@ const externalLink = (label, href) => {
   return link;
 };
 
-const localizedEvent = (event) => ({ ...event, ...(eventTranslations[currentLanguage]?.[event.id] || {}) });
+const localizedEvent = (event) => {
+  const translation = eventTranslations[currentLanguage]?.[event.id];
+  if (translation) return { ...event, ...translation };
+  if (currentLanguage !== "it" && event.id.startsWith("auto-")) {
+    return { ...event, summary: copy[currentLanguage].autoEventSummary.replace("{place}", event.place) };
+  }
+  return { ...event };
+};
 
 const dateParts = (event) => {
   const start = new Date(`${event.start}T12:00:00`);
