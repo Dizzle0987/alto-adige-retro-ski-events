@@ -1,0 +1,91 @@
+{
+  "web": [
+    {
+      "id": "south-tyrol-events",
+      "name": "Südtirol / Alto Adige Events",
+      "url": "https://www.suedtirol.info/en/en/experiences-and-events/events-south-tyrol"
+    },
+    {
+      "id": "alta-badia-events",
+      "name": "Alta Badia Events",
+      "url": "https://www.altabadia.org/en/alta-badia-events"
+    },
+    {
+      "id": "val-gardena-winter-events",
+      "name": "Val Gardena Winter Events",
+      "url": "https://www.valgardena.it/en/winter-holidays-dolomites/events-highlights/"
+    },
+    {
+      "id": "kronplatz-events",
+      "name": "Kronplatz Events",
+      "url": "https://www.kronplatz.com/en/event-lp"
+    },
+    {
+      "id": "obereggen-events",
+      "name": "Obereggen Experiences & Events",
+      "url": "https://obereggen.com/en/ropeways/summer/experiences_events"
+    },
+    {
+      "id": "ahrntal-events",
+      "name": "Ahrntal Events",
+      "url": "https://www.ahrntal.com/de/urlaub-im-ahrntal/veranstaltungen"
+    },
+    {
+      "id": "skiworld-ahrntal",
+      "name": "Skiworld Ahrntal",
+      "url": "https://www.skiworldahrntal.it/en/winter/"
+    },
+    {
+      "id": "winklparade-mytix",
+      "name": "Winklparade / myTix",
+      "url": "https://www.mytix.bz/winklparade"
+    },
+    {
+      "id": "ganischger-alm",
+      "name": "Ganischger Alm — The Mountain Party",
+      "url": "https://www.ganischger.com/ganischgeralm/alm/"
+    },
+    {
+      "id": "club-moritzino-events",
+      "name": "Club Moritzino Events",
+      "url": "https://clubmoritzino.it/en/events-in-alta-badia/"
+    }
+  ],
+  "instagram": [
+    {
+      "id": "winklparade-instagram",
+      "name": "Winklparade",
+      "url": "https://www.instagram.com/winklparade/"
+    },
+    {
+      "id": "ganischger-instagram",
+      "name": "Ganischger Obereggen",
+      "url": "https://www.instagram.com/ganischger.obereggen/"
+    },
+    {
+      "id": "skiworld-ahrntal-instagram",
+      "name": "Skiworld Ahrntal",
+      "url": "https://www.instagram.com/skiworldahrntal_official/"
+    },
+    {
+      "id": "kronplatz-instagram",
+      "name": "Kronplatz",
+      "url": "https://www.instagram.com/kronplatz_group/"
+    },
+    {
+      "id": "alta-badia-instagram",
+      "name": "Alta Badia",
+      "url": "https://www.instagram.com/alta_badia_official/"
+    },
+    {
+      "id": "val-gardena-instagram",
+      "name": "Val Gardena",
+      "url": "https://www.instagram.com/dolomitesvalgardena/"
+    },
+    {
+      "id": "three-zinnen-instagram",
+      "name": "3 Zinnen Dolomites",
+      "url": "https://www.instagram.com/3zinnendolomites/"
+    }
+  ]
+}

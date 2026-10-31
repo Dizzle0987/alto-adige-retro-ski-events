@@ -1,0 +1,141 @@
+{
+  "lastChecked": "2026-10-31",
+  "summary": {
+    "webSources": 10,
+    "instagramSources": 7,
+    "instagramStatus": "awaiting-token",
+    "candidates": 0
+  },
+  "sources": [
+    {
+      "id": "south-tyrol-events",
+      "name": "Südtirol / Alto Adige Events",
+      "kind": "web",
+      "url": "https://www.suedtirol.info/en/en/experiences-and-events/events-south-tyrol",
+      "status": "checked",
+      "found": 0
+    },
+    {
+      "id": "alta-badia-events",
+      "name": "Alta Badia Events",
+      "kind": "web",
+      "url": "https://www.altabadia.org/en/alta-badia-events",
+      "status": "checked",
+      "found": 0
+    },
+    {
+      "id": "val-gardena-winter-events",
+      "name": "Val Gardena Winter Events",
+      "kind": "web",
+      "url": "https://www.valgardena.it/en/winter-holidays-dolomites/events-highlights/",
+      "status": "checked",
+      "found": 0
+    },
+    {
+      "id": "kronplatz-events",
+      "name": "Kronplatz Events",
+      "kind": "web",
+      "url": "https://www.kronplatz.com/en/event-lp",
+      "status": "checked",
+      "found": 0
+    },
+    {
+      "id": "obereggen-events",
+      "name": "Obereggen Experiences & Events",
+      "kind": "web",
+      "url": "https://obereggen.com/en/ropeways/summer/experiences_events",
+      "status": "checked",
+      "found": 0
+    },
+    {
+      "id": "ahrntal-events",
+      "name": "Ahrntal Events",
+      "kind": "web",
+      "url": "https://www.ahrntal.com/de/urlaub-im-ahrntal/veranstaltungen",
+      "status": "checked",
+      "found": 0
+    },
+    {
+      "id": "skiworld-ahrntal",
+      "name": "Skiworld Ahrntal",
+      "kind": "web",
+      "url": "https://www.skiworldahrntal.it/en/winter/",
+      "status": "checked",
+      "found": 0
+    },
+    {
+      "id": "winklparade-mytix",
+      "name": "Winklparade / myTix",
+      "kind": "web",
+      "url": "https://www.mytix.bz/winklparade",
+      "status": "checked",
+      "found": 0
+    },
+    {
+      "id": "ganischger-alm",
+      "name": "Ganischger Alm — The Mountain Party",
+      "kind": "web",
+      "url": "https://www.ganischger.com/ganischgeralm/alm/",
+      "status": "checked",
+      "found": 0
+    },
+    {
+      "id": "club-moritzino-events",
+      "name": "Club Moritzino Events",
+      "kind": "web",
+      "url": "https://clubmoritzino.it/en/events-in-alta-badia/",
+      "status": "checked",
+      "found": 0
+    },
+    {
+      "id": "winklparade-instagram",
+      "name": "Winklparade",
+      "kind": "instagram",
+      "url": "https://www.instagram.com/winklparade/",
+      "status": "awaiting-token"
+    },
+    {
+      "id": "ganischger-instagram",
+      "name": "Ganischger Obereggen",
+      "kind": "instagram",
+      "url": "https://www.instagram.com/ganischger.obereggen/",
+      "status": "awaiting-token"
+    },
+    {
+      "id": "skiworld-ahrntal-instagram",
+      "name": "Skiworld Ahrntal",
+      "kind": "instagram",
+      "url": "https://www.instagram.com/skiworldahrntal_official/",
+      "status": "awaiting-token"
+    },
+    {
+      "id": "kronplatz-instagram",
+      "name": "Kronplatz",
+      "kind": "instagram",
+      "url": "https://www.instagram.com/kronplatz_group/",
+      "status": "awaiting-token"
+    },
+    {
+      "id": "alta-badia-instagram",
+      "name": "Alta Badia",
+      "kind": "instagram",
+      "url": "https://www.instagram.com/alta_badia_official/",
+      "status": "awaiting-token"
+    },
+    {
+      "id": "val-gardena-instagram",
+      "name": "Val Gardena",
+      "kind": "instagram",
+      "url": "https://www.instagram.com/dolomitesvalgardena/",
+      "status": "awaiting-token"
+    },
+    {
+      "id": "three-zinnen-instagram",
+      "name": "3 Zinnen Dolomites",
+      "kind": "instagram",
+      "url": "https://www.instagram.com/3zinnendolomites/",
+      "status": "awaiting-token"
+    }
+  ],
+  "candidates": []
+}

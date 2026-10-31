@@ -37,6 +37,12 @@ jobs:
         if: steps.schedule.outputs.run == 'true'
         run: node scripts/update-events.mjs
 
+      - name: Discover candidates from ski areas, huts and social sources
+        if: steps.schedule.outputs.run == 'true'
+        env:
+          APIFY_TOKEN: ${{ secrets.APIFY_TOKEN }}
+        run: node scripts/discover-events.mjs
+
       - name: Detect changes
         if: steps.schedule.outputs.run == 'true'
         id: changes
@@ -54,7 +60,7 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add dist/events.json
+          git add dist/events.json data/event-candidates.json
           git commit -m "chore: refresh verified ski events"
           git push origin HEAD:main
 
