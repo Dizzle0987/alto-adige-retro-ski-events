@@ -61,3 +61,24 @@ test("conflicting dates on two carousel flyers stay in review", async () => {
   const result = await scanner.scan({ ...item, type: "Sidecar", childPosts: [{ type: "Image", displayUrl: item.displayUrl }, { type: "Image", displayUrl: item.displayUrl.replace("flyer", "second") }] }, [source]);
   assert.equal(result.reason, "flyer-carousel-conflict");
 });
+
+test("full-image reading works when the lower crop contains no date", async () => {
+  const scanner = createInstagramMediaScanner({
+    fetcher: async () => ({ bytes: Buffer.from("middle-date"), contentType: "image/jpeg" }),
+    reader: async () => ({ ...parsed(), variants: [parsed(), parsed("Ganischgeralm\nWinter Opening Party\nNo date here")] }),
+  });
+  assert.equal((await scanner.scan(item, [source])).start, "2026-11-29");
+});
+test("a date in the lower region is independent of decorative numbers elsewhere", () => {
+  const region = parsed("Ganischgeralm\nWinter Opening Party\nSince 1996\nSUNDAY\n29.11.2026");
+  region.dateText = "SUNDAY\n29.11.2026";
+  region.dateWords = parsed(region.dateText).words;
+  assert.equal(assessInstagramFlyer(item, source, region).status, "confirmed");
+});
+test("disagreeing high-confidence OCR passes never select a date arbitrarily", async () => {
+  const scanner = createInstagramMediaScanner({
+    fetcher: async () => ({ bytes: Buffer.from("conflict"), contentType: "image/jpeg" }),
+    reader: async () => ({ ...parsed(), variants: [parsed(), parsed("Ganischgeralm\nWinter Opening Party\n06.12.2026")] }),
+  });
+  assert.equal((await scanner.scan(item, [source])).reason, "flyer-ocr-pass-conflict");
+});

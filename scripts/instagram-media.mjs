@@ -31,7 +31,8 @@ export const assessInstagramFlyer = (item, source, parsed) => {
   const text = String(parsed.text || "").slice(0, 12000);
   const dateText = String(parsed.dateText || text);
   const date = parseSocialDates(dateText, item.timestamp);
-  const hold = (reason) => ({ ...original, status: "review", reason });
+  const hold = (reason) => ({ ...original, status: "review", reason,
+    evidence: { ...original.evidence, flyer: { method: parsed.method, text, dateText, dateEvidence: date } } });
   if (date.status !== "confirmed") return hold(`flyer-${date.reason}`);
   const captionDate = parseSocialDates(item.caption || "", item.timestamp);
   if (captionDate.status === "confirmed" && (captionDate.start !== date.start || captionDate.end !== date.end)) return hold("flyer-caption-date-conflict");
@@ -98,7 +99,8 @@ export const createInstagramMediaScanner = ({ cache = {}, maxNew = 8, fetcher = 
       const variants = (parsed.variants || [parsed]).map((variant) => assessInstagramFlyer(item, source, variant));
       const accepted = variants.filter((variant) => variant.status === "confirmed");
       const variantDates = new Set(accepted.map((variant) => `${variant.start}/${variant.end}`));
-      const assessment = variantDates.size > 1 ? { ...original, reason: "flyer-ocr-pass-conflict" } : accepted[0] || variants[0];
+      const review = variants.find((variant) => variant.evidence?.flyer?.dateEvidence?.status === "confirmed") || variants[0];
+      const assessment = variantDates.size > 1 ? { ...original, reason: "flyer-ocr-pass-conflict" } : accepted[0] || review;
       if (assessment.evidence?.flyer) assessment.evidence.flyer.sha256 = parsed.sha256;
       results.push(assessment);
       media.push({ status: assessment.status, reason: assessment.reason });
