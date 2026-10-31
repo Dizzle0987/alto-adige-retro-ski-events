@@ -367,7 +367,7 @@ const socialForCandidate = (candidate) => {
   if (value.includes("alta badia") || value.includes("corvara") || value.includes("la villa")) return "https://www.instagram.com/alta_badia_official/";
   if (value.includes("3 zinnen") || value.includes("3 cime") || value.includes("dobbiaco") || value.includes("sesto")) return "https://www.instagram.com/3zinnendolomites/";
   if (value.includes("ahrntal") || value.includes("speikboden") || value.includes("klausberg")) return "https://www.instagram.com/skiworldahrntal_official/";
-  if (value.includes("obereggen") || value.includes("ganischger")) return "https://www.instagram.com/ganis_resort_dolomites/";
+  if (value.includes("obereggen") || value.includes("ganischger")) return "https://www.instagram.com/ganischgeralm_voliera/";
   return null;
 };
 

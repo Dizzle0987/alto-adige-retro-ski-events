@@ -71,7 +71,7 @@
       "venue": "Ganischger Alm · Obereggen, Val d’Ega / Eggental",
       "name": "Ganischger Alm — The Mountain Party",
       "url": "https://www.ganis.it/ganisworld/ganischgeralm-apresski-obereggen-suedtirol-dolomiten/",
-      "socialUrl": "https://www.instagram.com/ganis_resort_dolomites/",
+      "socialUrl": "https://www.instagram.com/ganischgeralm_voliera/",
       "facebookUrl": "https://www.facebook.com/GanisResortDolomites"
     },
     {
@@ -301,11 +301,12 @@
     },
     {
       "id": "ganischger-instagram",
-      "name": "Ganis Resort / Ganischgeralm",
-      "url": "https://www.instagram.com/ganis_resort_dolomites/",
-      "autoPublish": false,
-      "verifiedFrom": "https://www.ganis.it/ganisworld/ganischgeralm-apresski-obereggen-suedtirol-dolomiten/",
-      "notes": "Canale del gruppo collegato dal sito ufficiale Ganischgeralm. Sostituisce ganischger.obereggen, non disponibile; verificare la pertinenza alla malga prima della pubblicazione."
+      "name": "Ganischgeralm / Voliera",
+      "url": "https://www.instagram.com/ganischgeralm_voliera/",
+      "autoPublish": true,
+      "venue": "Ganischgeralm · Obereggen, Val d’Ega / Eggental",
+      "venueAliases": ["Ganischgeralm", "Ganischger Alm", "Voliera"],
+      "notes": "Profilo dedicato indicato dall’utente e verificato pubblicamente il 31 ottobre 2026: Ganischgeralm | Obereggen | Pampeago, parte di Ganis World. Non usare il vecchio ganischger.obereggen né il canale generico del resort."
     },
     {
       "id": "skiworld-ahrntal-instagram",
