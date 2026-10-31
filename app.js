@@ -312,7 +312,6 @@ const renderEvent = (rawEvent) => {
   const article = element("article", "event-card");
   article.dataset.categories = event.categories.join(" ");
   article.dataset.valley = valleyKeyFor(rawEvent);
-  article.style.setProperty("--accent", event.accent);
   const date = element("div", "date-block");
   date.append(element("span", "", formattedDate.days), element("strong", "", formattedDate.months), element("small", "", formattedDate.year));
   const main = element("div", "event-main");
@@ -430,6 +429,10 @@ const renderEvents = () => {
     if ((ongoing.length || today.length) && upcoming.length) eventList.append(element("h3", "event-group-heading", copy[currentLanguage].upcomingTitle));
     eventList.append(...upcoming.map(renderEvent));
   }
+  const visiblePalette = ["#ff4fa3", "#5b5df0", "#ff7439", "#00bfa6", "#b0ef43", "#f5ec35"];
+  eventList.querySelectorAll(".event-card").forEach((card, index) => {
+    card.style.setProperty("--accent", visiblePalette[index % visiblePalette.length]);
+  });
   periodButtons.forEach((button) => {
     const active = button.dataset.period === currentPeriod;
     button.classList.toggle("is-active", active);
