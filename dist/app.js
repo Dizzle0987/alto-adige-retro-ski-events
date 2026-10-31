@@ -24,7 +24,10 @@ const copy = {
     socialTitle: "I canali che stanno parlando della neve.",
     socialBody: "Questa lista nasce dagli eventi attualmente visibili e cambia con loro. Apri i profili per lineup, variazioni e aggiornamenti dell’ultimo minuto.",
     noSocial: "Nessun canale social collegato agli eventi attuali.",
-    autoEventSummary: "Evento a {place}. Apri la fonte ufficiale per programma, orari e aggiornamenti.",
+    autoSummaryApres: "Musica e atmosfera après-ski sulla neve. Il programma completo è nella fonte ufficiale.",
+    autoSummaryRetro: "Sci d’epoca, look vintage e atmosfera nostalgica. Il programma completo è nella fonte ufficiale.",
+    autoSummaryCostume: "Evento sulla neve con dress code e atmosfera a tema. Il programma completo è nella fonte ufficiale.",
+    autoSummaryGeneric: "Evento sulla neve con programma e dettagli nella fonte ufficiale.",
     footerNote: "CURATO NELLE DOLOMITI — AGGIORNAMENTO CONTINUO", backToTop: "Torna su",
     officialSource: "Fonte ufficiale", map: "Mappa", instagram: "Instagram",
   },
@@ -45,7 +48,10 @@ const copy = {
     socialTitle: "Die Kanäle, die gerade vom Schnee erzählen.",
     socialBody: "Diese Liste entsteht aus den aktuell sichtbaren Events und ändert sich mit ihnen. In den Profilen findest du Line-ups, Änderungen und kurzfristige Updates.",
     noSocial: "Keine Social-Kanäle mit den aktuellen Events verknüpft.",
-    autoEventSummary: "Event in {place}. Programm, Uhrzeiten und aktuelle Hinweise findest du in der offiziellen Quelle.",
+    autoSummaryApres: "Musik und Après-Ski-Stimmung im Schnee. Das vollständige Programm findest du in der offiziellen Quelle.",
+    autoSummaryRetro: "Historische Ski, Vintage-Looks und nostalgische Stimmung. Das vollständige Programm findest du in der offiziellen Quelle.",
+    autoSummaryCostume: "Schnee-Event mit Dresscode und besonderem Motto. Das vollständige Programm findest du in der offiziellen Quelle.",
+    autoSummaryGeneric: "Schnee-Event mit Programm und Details in der offiziellen Quelle.",
     footerNote: "IN DEN DOLOMITEN KURATIERT — LAUFEND AKTUALISIERT", backToTop: "Nach oben",
     officialSource: "Offizielle Quelle", map: "Karte", instagram: "Instagram",
   },
@@ -66,15 +72,41 @@ const copy = {
     socialTitle: "The channels talking about the snow right now.",
     socialBody: "This list is generated from the events currently on display and changes with them. Open the profiles for line-ups, changes and last-minute updates.",
     noSocial: "No social channels are linked to the current events.",
-    autoEventSummary: "Event in {place}. Open the official source for the programme, times and latest updates.",
+    autoSummaryApres: "Music and après-ski atmosphere on the snow. See the official source for the full programme.",
+    autoSummaryRetro: "Vintage skis, retro looks and a nostalgic atmosphere. See the official source for the full programme.",
+    autoSummaryCostume: "A themed snow event with a dress code. See the official source for the full programme.",
+    autoSummaryGeneric: "A snow event with the full programme and details in the official source.",
     footerNote: "CURATED IN THE DOLOMITES — CONTINUOUSLY UPDATED", backToTop: "Back to top",
     officialSource: "Official source", map: "Map", instagram: "Instagram",
   },
 };
 
 const eventTranslations = {
-  it: {},
+  it: {
+    "auto-2026-12-11-bruning-krampus-the-after-show-party": { summary: "After-party della sfilata dei Krampus con DJ set, musica e scenografie a tema fino all’una." },
+    "auto-2027-01-02-back-to-1976-giornata-di-sci-old-school-con-simon-mac-live": { summary: "Giornata sugli sci in stile 1976, con outfit vintage, alba in pista e musica live di Simon & Mac." },
+    "auto-2027-01-09-dj-armino-live": { summary: "DJ set e musica live alla Malga Ausser Schwemmalm, con ingresso gratuito." },
+    "auto-2027-02-24-kronplatz-ski-music-festival-dj-edition": { summary: "Quattro giorni di musica elettronica sulle piste con DJ internazionali e après-ski in quota." },
+    "auto-2027-02-27-gare-di-sci-alla-vecchia-maniera": { summary: "Gara goliardica con sci di legno e abbigliamento d’epoca, tra curve improbabili e atmosfera rétro." },
+    "auto-2027-03-06-invito-alla-gara-internazionale-all-insegna-di-divertimento-e-nostalgi": { summary: "Gara internazionale sulla neve dedicata al divertimento, ai look vintage e alla nostalgia." },
+    "auto-2027-03-07-dolomites-dirndl-ski-day": { summary: "Giornata sugli sci riservata alle donne, con dirndl, colori e una sfida sportiva per la Festa della Donna." },
+    "auto-2027-03-18-rock-the-dolomites-winter-music-festival": { summary: "Dieci giorni di musica live, sci e sole primaverile nel Winter Music Festival delle Dolomiti." },
+    "auto-2027-03-20-spring-race-party-ortisei": { summary: "Competizione primaverile di sci e snowboard con festa finale nel centro di Ortisei." },
+    "auto-2027-03-20-gara-della-nostalgia": { summary: "Giornata rétro in tutto il comprensorio, con attrezzatura d’epoca e atmosfera nostalgica." },
+    "auto-2027-03-29-schwemmalm-open-air": { summary: "Open air di fine stagione alla stazione a monte, con musica e festa per il cinquantenario." },
+  },
   de: {
+    "auto-2026-12-11-bruning-krampus-the-after-show-party": { summary: "Afterparty des Krampusumzugs mit DJ-Set, Musik und passender Gruselkulisse bis 1 Uhr." },
+    "auto-2027-01-02-back-to-1976-giornata-di-sci-old-school-con-simon-mac-live": { title: "Back to 1976 – Oldschool-Skitag mit Simon & Mac LIVE", summary: "Skitag im Stil von 1976 mit Vintage-Outfits, Sonnenaufgang auf der Piste und Livemusik von Simon & Mac." },
+    "auto-2027-01-09-dj-armino-live": { summary: "DJ-Set und Livemusik auf der Ausser-Schwemmalm – bei freiem Eintritt." },
+    "auto-2027-02-24-kronplatz-ski-music-festival-dj-edition": { summary: "Vier Tage elektronische Musik auf den Pisten mit internationalen DJs und Après-Ski am Berg." },
+    "auto-2027-02-27-gare-di-sci-alla-vecchia-maniera": { title: "Skirennen wie früher", summary: "Gaudirennen mit Holzskiern und historischer Skikleidung – schräge Kurven und Retro-Stimmung inklusive." },
+    "auto-2027-03-06-invito-alla-gara-internazionale-all-insegna-di-divertimento-e-nostalgi": { title: "Internationales Spaß- und Nostalgierennen", summary: "Internationales Schneerennen mit Spaß, Vintage-Looks und einer guten Portion Nostalgie." },
+    "auto-2027-03-07-dolomites-dirndl-ski-day": { summary: "Skitag nur für Frauen mit Dirndl, viel Farbe und sportlicher Challenge zum Weltfrauentag." },
+    "auto-2027-03-18-rock-the-dolomites-winter-music-festival": { summary: "Zehn Tage Livemusik, Skifahren und Frühlingssonne beim Winter Music Festival in den Dolomiten." },
+    "auto-2027-03-20-spring-race-party-ortisei": { summary: "Frühlingsrennen für Ski und Snowboard mit Abschlussparty im Zentrum von St. Ulrich." },
+    "auto-2027-03-20-gara-della-nostalgia": { title: "Nostalgierennen", summary: "Retro-Tag im gesamten Skigebiet mit historischer Ausrüstung und nostalgischer Stimmung." },
+    "auto-2027-03-29-schwemmalm-open-air": { summary: "Open-Air-Saisonfinale an der Bergstation mit Musik und Jubiläumsparty zum 50-jährigen Bestehen." },
     "3-zinnen-schlager": { summary: "Eine Woche voller Schlager, Hüttenpartys und Themenabende: Ganz in Weiß, Tiroler Abend und LED-Party.", place: "Toblach · Gebiet 3 Zinnen", tags: ["Après-Ski", "Dresscode"] },
     "lockenfest-funes": { title: "Lockenfest mit Retro Party", summary: "Ski, Rodeln, Snowboards und Vintage-Looks auf dem Eis; danach Aftershow-Party in der Feuerwehrhalle.", place: "Skilift Filler · St. Magdalena, Villnöss", tags: ["Retro", "Alles, was rutscht"] },
     "rock-meets-beats": { summary: "Gitarren, Hits und DJ-Sets beim kostenlosen Après-Ski am Fuße der Dolomiten, von 16:00 bis 23:00 Uhr.", place: "Str. Mëisules 145 · Wolkenstein in Gröden", tags: ["Live + DJ", "Eintritt frei"] },
@@ -83,6 +115,17 @@ const eventTranslations = {
     "ski-carousel-vintage-party": { summary: "Zwei Tage zwischen Hütten, Vintage Village in La Villa, Rennen auf alten Skiern und Afterparty in Corvara.", place: "Alta Badia · La Villa, La Para und Corvara", tags: ["Vintage", "No carving"] },
   },
   en: {
+    "auto-2026-12-11-bruning-krampus-the-after-show-party": { summary: "Krampus parade afterparty with DJ sets, music and spooky themed décor until 1 am." },
+    "auto-2027-01-02-back-to-1976-giornata-di-sci-old-school-con-simon-mac-live": { title: "Back to 1976 – Old-school ski day with Simon & Mac LIVE", summary: "A 1976-style ski day with vintage outfits, sunrise skiing and live music from Simon & Mac." },
+    "auto-2027-01-09-dj-armino-live": { summary: "DJ sets and live music at the Ausser Schwemmalm hut, with free admission." },
+    "auto-2027-02-24-kronplatz-ski-music-festival-dj-edition": { summary: "Four days of electronic music on the slopes with international DJs and high-altitude après-ski." },
+    "auto-2027-02-27-gare-di-sci-alla-vecchia-maniera": { title: "Old-time ski race", summary: "A playful race on wooden skis with period outfits, wild turns and plenty of retro atmosphere." },
+    "auto-2027-03-06-invito-alla-gara-internazionale-all-insegna-di-divertimento-e-nostalgi": { title: "International fun and nostalgia race", summary: "An international snow race centred on fun, vintage looks and a generous dose of nostalgia." },
+    "auto-2027-03-07-dolomites-dirndl-ski-day": { summary: "A women-only ski day with dirndls, colour and a sporting challenge for International Women’s Day." },
+    "auto-2027-03-18-rock-the-dolomites-winter-music-festival": { summary: "Ten days of live music, skiing and spring sunshine at the Dolomites Winter Music Festival." },
+    "auto-2027-03-20-spring-race-party-ortisei": { summary: "A spring ski and snowboard competition followed by a party in the centre of Ortisei." },
+    "auto-2027-03-20-gara-della-nostalgia": { title: "Nostalgia race", summary: "A resort-wide retro day with vintage equipment and a nostalgic atmosphere." },
+    "auto-2027-03-29-schwemmalm-open-air": { summary: "End-of-season open-air party at the top station, with music and a 50th-anniversary celebration." },
     "3-zinnen-schlager": { summary: "A week of Schlager, mountain-hut parties and themed nights: all in white, Tyrolean style and LED.", place: "Dobbiaco / Toblach · 3 Zinnen area", tags: ["Après-ski", "Dress code"] },
     "lockenfest-funes": { title: "Locken Festival with Retro Party", summary: "Skis, sledges, snowboards and vintage looks on the ice, followed by an aftershow party at the fire station.", place: "Filler ski lift · Santa Maddalena, Funes", tags: ["Retro", "Anything that slides"] },
     "rock-meets-beats": { summary: "Guitars, hits and DJ sets at a free après-ski party beneath the Dolomites, from 4 pm to 11 pm.", place: "Str. Mëisules 145 · Selva di Val Gardena", tags: ["Live + DJ", "Free entry"] },
@@ -182,12 +225,20 @@ const localizedPlace = (place, language) => {
   );
 };
 
+const automaticSummary = (event) => {
+  const languageCopy = copy[currentLanguage];
+  if (event.categories.includes("retro")) return languageCopy.autoSummaryRetro;
+  if (event.categories.includes("costume")) return languageCopy.autoSummaryCostume;
+  if (event.categories.includes("apres")) return languageCopy.autoSummaryApres;
+  return languageCopy.autoSummaryGeneric;
+};
+
 const localizedEvent = (event) => {
   const translation = eventTranslations[currentLanguage]?.[event.id] || {};
   const place = translation.place || localizedPlace(event.place, currentLanguage);
   const localized = { ...event, ...translation, place };
   if (currentLanguage !== "it" && event.id.startsWith("auto-") && !translation.summary) {
-    localized.summary = copy[currentLanguage].autoEventSummary.replace("{place}", place);
+    localized.summary = automaticSummary(event);
   }
   return localized;
 };
