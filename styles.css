@@ -92,8 +92,6 @@ h2 { max-width: 860px; font-family: "Archivo Black", sans-serif; font-size: clam
 .event-links { display: flex; flex-direction: column; align-items: flex-start; gap: .6rem; }
 .event-links a { font: 500 .72rem "DM Mono", monospace; text-transform: uppercase; text-underline-offset: 4px; }
 .event-links a:hover { background: var(--accent); }
-.featured { position: relative; }
-.featured::after { content: "★"; position: absolute; right: 1rem; top: .75rem; font-size: 1.4rem; }
 .empty-state { padding: 3rem; text-align: center; font-family: "DM Mono", monospace; }
 .loading-state { width: 100%; margin: 0; padding: 3rem 0; text-align: center; font: 500 .8rem "DM Mono", monospace; text-transform: uppercase; }
 
