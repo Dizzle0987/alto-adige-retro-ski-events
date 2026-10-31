@@ -4,7 +4,7 @@
     "webSources": 30,
     "instagramSources": 16,
     "instagramStatus": "checked",
-    "candidates": 17,
+    "candidates": 27,
     "published": 0,
     "updated": 0,
     "pruned": 0
@@ -166,7 +166,7 @@
       "id": "ganischger-alm",
       "name": "Ganischger Alm — The Mountain Party",
       "kind": "web",
-      "url": "https://www.ganischger.com/ganischgeralm/alm/",
+      "url": "https://www.ganis.it/ganisworld/ganischgeralm-apresski-obereggen-suedtirol-dolomiten/",
       "status": "checked",
       "found": 0,
       "coverage": "no-readable-events",
@@ -176,7 +176,11 @@
         "review": 0
       },
       "needsReview": [],
-      "media": []
+      "media": [],
+      "facebook": {
+        "url": "https://www.facebook.com/GanisResortDolomites",
+        "status": "reference-only-no-scraping"
+      }
     },
     {
       "id": "club-moritzino-events",
@@ -695,9 +699,9 @@
       "name": "Corones Hütte",
       "kind": "instagram",
       "url": "https://www.instagram.com/corones_huette/",
-      "status": "no-author-data",
-      "found": 0,
-      "received": 0
+      "status": "checked",
+      "found": 2,
+      "received": 6
     },
     {
       "id": "pulverfass-instagram",
@@ -714,17 +718,17 @@
       "kind": "instagram",
       "url": "https://www.instagram.com/clubmoritzino/",
       "status": "checked",
-      "found": 0,
-      "received": 2
+      "found": 1,
+      "received": 6
     },
     {
       "id": "gassl-instagram",
       "name": "Gassl Olang",
       "kind": "instagram",
       "url": "https://www.instagram.com/gassl.olang/",
-      "status": "no-author-data",
-      "found": 0,
-      "received": 0
+      "status": "checked",
+      "found": 1,
+      "received": 1
     },
     {
       "id": "k1-instagram",
@@ -740,9 +744,9 @@
       "name": "Hexenkessel Klausberg",
       "kind": "instagram",
       "url": "https://www.instagram.com/hexenkessel_klausberg/",
-      "status": "no-author-data",
-      "found": 0,
-      "received": 0
+      "status": "checked",
+      "found": 3,
+      "received": 3
     },
     {
       "id": "luislkeller-instagram",
@@ -764,12 +768,12 @@
     },
     {
       "id": "ganischger-instagram",
-      "name": "Ganischger Obereggen",
+      "name": "Ganischgeralm / Voliera",
       "kind": "instagram",
-      "url": "https://www.instagram.com/ganischger.obereggen/",
-      "status": "no-author-data",
-      "found": 0,
-      "received": 0
+      "url": "https://www.instagram.com/ganischgeralm_voliera/",
+      "status": "checked",
+      "found": 2,
+      "received": 5
     },
     {
       "id": "skiworld-ahrntal-instagram",
@@ -778,7 +782,7 @@
       "url": "https://www.instagram.com/skiworldahrntal_official/",
       "status": "checked",
       "found": 1,
-      "received": 5
+      "received": 6
     },
     {
       "id": "kronplatz-instagram",
@@ -786,8 +790,8 @@
       "kind": "instagram",
       "url": "https://www.instagram.com/kronplatz_group/",
       "status": "checked",
-      "found": 1,
-      "received": 2
+      "found": 2,
+      "received": 5
     },
     {
       "id": "alta-badia-instagram",
@@ -818,6 +822,192 @@
     }
   ],
   "candidates": [
+    {
+      "id": "hexenkessel-instagram-DcJQzYhjEpR",
+      "title": "Annuncio da verificare",
+      "publishedAt": "2026-08-17T14:33:43.000Z",
+      "excerpt": "THIS SATURDAY 👉 HAPPY HOUR PARTY 🍻\nPAY 1 DRINK 2 🤙\n\n#hexenkessel #happyhour #saturdaynight",
+      "sourceId": "hexenkessel-instagram",
+      "sourceName": "Hexenkessel Klausberg",
+      "evidence": {
+        "url": "https://www.instagram.com/p/DcJQzYhjEpR/",
+        "author": "hexenkessel_klausberg",
+        "ownerId": "6443253535",
+        "publishedAt": "2026-08-17T14:33:43.000Z",
+        "caption": "THIS SATURDAY 👉 HAPPY HOUR PARTY 🍻\nPAY 1 DRINK 2 🤙\n\n#hexenkessel #happyhour #saturdaynight"
+      },
+      "url": "https://www.instagram.com/p/DcJQzYhjEpR/",
+      "kind": "instagram",
+      "status": "review",
+      "reason": "repost-or-collaboration",
+      "published": false
+    },
+    {
+      "id": "gassl-instagram-DcTbsrMMz7v",
+      "title": "Annuncio da verificare",
+      "publishedAt": "2026-08-21T13:28:45.000Z",
+      "excerpt": "Seit Ihr dabei?🤩 \n\nAFTERPARTY Olanger Standlschmaus Edition 3/3!! 🥳\n\n📆 26.08.26 ab 20:00 Uhr\n🚕 gratis Shuttle ab 22:00 Uhr\n🎙️ DJ Hufe @dj.hufe \n\nSee you there!!\n\nWir freuen uns auf Euch!\n\n#olang #gassl #summervıbes #party #kronplatz",
+      "sourceId": "gassl-instagram",
+      "sourceName": "Gassl Olang",
+      "evidence": {
+        "url": "https://www.instagram.com/p/DcTbsrMMz7v/",
+        "author": "gassl.olang",
+        "ownerId": "5590433788",
+        "publishedAt": "2026-08-21T13:28:45.000Z",
+        "caption": "Seit Ihr dabei?🤩 \n\nAFTERPARTY Olanger Standlschmaus Edition 3/3!! 🥳\n\n📆 26.08.26 ab 20:00 Uhr\n🚕 gratis Shuttle ab 22:00 Uhr\n🎙️ DJ Hufe @dj.hufe \n\nSee you there!!\n\nWir freuen uns auf Euch!\n\n#olang #gassl #summervıbes #party #kronplatz"
+      },
+      "url": "https://www.instagram.com/p/DcTbsrMMz7v/",
+      "kind": "instagram",
+      "status": "review",
+      "reason": "ambiguous-year",
+      "dateEvidence": {
+        "status": "review",
+        "reason": "ambiguous-year"
+      },
+      "published": false
+    },
+    {
+      "id": "hexenkessel-instagram-Dcjtw-bDPmz",
+      "title": "Annuncio da verificare",
+      "publishedAt": "2026-08-27T21:07:03.000Z",
+      "excerpt": "Wir genießen noch die letzten Sommer Wochen in vollen Zügen, bevor wir wieder an den Winter denken ☀️🍻🎊\n\nDIESEN SAMSTAG 👉 END OF SUMMER PARTY 🤙\n\n#hexenkessel #endofsummer #party #klausberg",
+      "sourceId": "hexenkessel-instagram",
+      "sourceName": "Hexenkessel Klausberg",
+      "evidence": {
+        "url": "https://www.instagram.com/p/Dcjtw-bDPmz/",
+        "author": "hexenkessel_klausberg",
+        "ownerId": "6443253535",
+        "publishedAt": "2026-08-27T21:07:03.000Z",
+        "caption": "Wir genießen noch die letzten Sommer Wochen in vollen Zügen, bevor wir wieder an den Winter denken ☀️🍻🎊\n\nDIESEN SAMSTAG 👉 END OF SUMMER PARTY 🤙\n\n#hexenkessel #endofsummer #party #klausberg"
+      },
+      "url": "https://www.instagram.com/p/Dcjtw-bDPmz/",
+      "kind": "instagram",
+      "status": "review",
+      "reason": "repost-or-collaboration",
+      "published": false
+    },
+    {
+      "id": "corones-instagram-Dc7-WmulrHW",
+      "title": "Annuncio da verificare",
+      "publishedAt": "2026-09-06T07:13:47.000Z",
+      "excerpt": "!!! ACHTUNG _ ACHTUNG ACHTUNG!!!\nVEREINSTURNIER DES ASV OLANG - TENNIS\nHOB ES SCHUN OLLA KEART WOS IN 19. SEPTEMBER IN OALING ABGEAT???\nDER ABSULUTE OBERWAHNSINN – DO MUASS I HIN\nDer ASC OLANG SEKTION TENNIS & die CORONES HÜTTE Kronplatz präsentieren die\n1. CORONES TENNIS TROPHY 2026 am Samstag, den 19. SEPTEMBER 2026. \nAusgetragen wird das Turnier in der Sportzone Olang, auf dem Tennisplatz des Hotels Christoph im Gassl sowie auf dem Tennisplatz in Rasen.\nAlle Erwachsenen ab 18 Jahre, die gerne Tennis spielen und an Gauditurnieren Ihre Freude haben (aber keiner Mannschaft angehören) sind herzlich eingeladen, an diesem einmaligen Turnier teilzunehmen\nDie Vorrundenspiele finden ab ca. 08.00 Uhr am Tennis Court des Hotel Christoph im Gassl, am Tennis Court der Sportzone in Olang und am Tennis Court in Rasen statt, die Hauptrundenspiele finden ab 14. 00 Uhr am Tennis Court der Sportzone Olang statt.\n19.00 Uhr: Siegerehrung mit Wanderpokal und Tombola unter allen Mannschaften\nHauptpreis: 2 Tickets für die ATP Finals in Turin am Sonntag, den 22. November 2026\nAb 20.00 Uhr: Tolle Tennis Party mit der Gruppe Volxrock am Tennis Court in der Sportzone Olang \nNenngeld pro Mannschaft: 50 € (dass Nenngeld beinhaltet die Teilnahme am Turnier, ein leckeres Mittagessen sowie die Teilnahme an der Verlosung)\nAnmeldung & Infos: Annelies: 345 9755799\nDie Veranstaltung findet nur bei schöner Witterung statt. Sollte die Veranstaltung abgesagt werden, wird das Nenngeld an die Teilnehmer zurück überwiesen.\nIban für Nenngeld: ASC Olang Sektion Tennis: IT 80 L 08035 59040 000305012911 \nWICHTIG: Bitte geeignete Tennisturnschuhe für den Sandplatz (Gassl) mitbringen! \nSchnell anmelden, begrenzte Teilnehmerzahl!!!",
+      "sourceId": "corones-instagram",
+      "sourceName": "Corones Hütte",
+      "evidence": {
+        "url": "https://www.instagram.com/p/Dc7-WmulrHW/",
+        "author": "corones_huette",
+        "ownerId": "4527797348",
+        "publishedAt": "2026-09-06T07:13:47.000Z",
+        "caption": "!!! ACHTUNG _ ACHTUNG ACHTUNG!!!\nVEREINSTURNIER DES ASV OLANG - TENNIS\nHOB ES SCHUN OLLA KEART WOS IN 19. SEPTEMBER IN OALING ABGEAT???\nDER ABSULUTE OBERWAHNSINN – DO MUASS I HIN\nDer ASC OLANG SEKTION TENNIS & die CORONES HÜTTE Kronplatz präsentieren die\n1. CORONES TENNIS TROPHY 2026 am Samstag, den 19. SEPTEMBER 2026. \nAusgetragen wird das Turnier in der Sportzone Olang, auf dem Tennisplatz des Hotels Christoph im Gassl sowie auf dem Tennisplatz in Rasen.\nAlle Erwachsenen ab 18 Jahre, die gerne Tennis spielen und an Gauditurnieren Ihre Freude haben (aber keiner Mannschaft angehören) sind herzlich eingeladen, an diesem einmaligen Turnier teilzunehmen\nDie Vorrundenspiele finden ab ca. 08.00 Uhr am Tennis Court des Hotel Christoph im Gassl, am Tennis Court der Sportzone in Olang und am Tennis Court in Rasen statt, die Hauptrundenspiele finden ab 14. 00 Uhr am Tennis Court der Sportzone Olang statt.\n19.00 Uhr: Siegerehrung mit Wanderpokal und Tombola unter allen Mannschaften\nHauptpreis: 2 Tickets für die ATP Finals in Turin am Sonntag, den 22. November 2026\nAb 20.00 Uhr: Tolle Tennis Party mit der Gruppe Volxrock am Tennis Court in der Sportzone Olang \nNenngeld pro Mannschaft: 50 € (dass Nenngeld beinhaltet die Teilnahme am Turnier, ein leckeres Mittagessen sowie die Teilnahme an der Verlosung)\nAnmeldung & Infos: Annelies: 345 9755799\nDie Veranstaltung findet nur bei schöner Witterung statt. Sollte die Veranstaltung abgesagt werden, wird das Nenngeld an die Teilnehmer zurück überwiesen.\nIban für Nenngeld: ASC Olang Sektion Tennis: IT 80 L 08035 59040 000305012911 \nWICHTIG: Bitte geeignete Tennisturnschuhe für den Sandplatz (Gassl) mitbringen! \nSchnell anmelden, begrenzte Teilnehmerzahl!!!"
+      },
+      "url": "https://www.instagram.com/p/Dc7-WmulrHW/",
+      "kind": "instagram",
+      "status": "review",
+      "reason": "schedule-or-ticket-update",
+      "dateEvidence": {
+        "status": "review",
+        "reason": "schedule-or-ticket-update"
+      },
+      "published": false
+    },
+    {
+      "id": "corones-instagram-DdVzcbaGICy",
+      "title": "TENNIS 🎾PARTY 🥳 mit LIVE BAND",
+      "publishedAt": "2026-09-16T07:58:43.000Z",
+      "excerpt": "TENNIS 🎾PARTY 🥳 mit LIVE BAND\nMIT Live Band Volxrock\nWANN SA 19.09. ab 20:00 🕗 \nWO Tennis Court Olang",
+      "sourceId": "corones-instagram",
+      "sourceName": "Corones Hütte",
+      "evidence": {
+        "url": "https://www.instagram.com/p/DdVzcbaGICy/",
+        "author": "corones_huette",
+        "ownerId": "4527797348",
+        "publishedAt": "2026-09-16T07:58:43.000Z",
+        "caption": "TENNIS 🎾PARTY 🥳 mit LIVE BAND\nMIT Live Band Volxrock\nWANN SA 19.09. ab 20:00 🕗 \nWO Tennis Court Olang"
+      },
+      "url": "https://www.instagram.com/p/DdVzcbaGICy/",
+      "kind": "instagram",
+      "status": "review",
+      "reason": "missing-venue-evidence",
+      "date": {
+        "status": "confirmed",
+        "start": "2026-09-19",
+        "end": "2026-09-19",
+        "evidence": "19.09",
+        "inferredYear": true
+      },
+      "published": false
+    },
+    {
+      "id": "hexenkessel-instagram-DdV-bdhjHFo",
+      "title": "Annuncio da verificare",
+      "publishedAt": "2026-09-16T09:34:41.000Z",
+      "excerpt": "Diesen Samstag live 👉 TERPENTIN LIVE 🎸\nDie Böhse Onkelz Tribute Band!\n\nAb 21.30 Uhr gehts los! 🤘",
+      "sourceId": "hexenkessel-instagram",
+      "sourceName": "Hexenkessel Klausberg",
+      "evidence": {
+        "url": "https://www.instagram.com/p/DdV-bdhjHFo/",
+        "author": "hexenkessel_klausberg",
+        "ownerId": "6443253535",
+        "publishedAt": "2026-09-16T09:34:41.000Z",
+        "caption": "Diesen Samstag live 👉 TERPENTIN LIVE 🎸\nDie Böhse Onkelz Tribute Band!\n\nAb 21.30 Uhr gehts los! 🤘"
+      },
+      "url": "https://www.instagram.com/p/DdV-bdhjHFo/",
+      "kind": "instagram",
+      "status": "review",
+      "reason": "repost-or-collaboration",
+      "published": false
+    },
+    {
+      "id": "kronplatz-instagram-DdrHwPjiEQ4",
+      "title": "Annuncio da verificare",
+      "publishedAt": "2026-09-24T14:40:13.000Z",
+      "excerpt": "🥓⛰️ Speck Alto Adige Festival at Kronplatz!\n\nOn 26 & 27 September 2026, discover the world of Speck Alto Adige PGI ✨\n\n🥓 Local producers\n😋 Tastings\n🎶 Live music\n🏔️ South Tyrolean tradition at Kronplatz\n\n🕙 Festival starts on 26 September at 10:00 am\n🚡 Kronplatz 2000 & Olang 1+2 from 9:00 am\n🎟️ Ascent & descent: €18 per person\n\n#kronplatz #speckaltoadige #speckfestival #southtyrol #altoadige #pustertal",
+      "sourceId": "kronplatz-instagram",
+      "sourceName": "Kronplatz",
+      "evidence": {
+        "url": "https://www.instagram.com/p/DdrHwPjiEQ4/",
+        "author": "kronplatz_group",
+        "ownerId": "72568919639",
+        "publishedAt": "2026-09-24T14:40:13.000Z",
+        "caption": "🥓⛰️ Speck Alto Adige Festival at Kronplatz!\n\nOn 26 & 27 September 2026, discover the world of Speck Alto Adige PGI ✨\n\n🥓 Local producers\n😋 Tastings\n🎶 Live music\n🏔️ South Tyrolean tradition at Kronplatz\n\n🕙 Festival starts on 26 September at 10:00 am\n🚡 Kronplatz 2000 & Olang 1+2 from 9:00 am\n🎟️ Ascent & descent: €18 per person\n\n#kronplatz #speckaltoadige #speckfestival #southtyrol #altoadige #pustertal"
+      },
+      "url": "https://www.instagram.com/p/DdrHwPjiEQ4/",
+      "kind": "instagram",
+      "status": "review",
+      "reason": "multiple-dates",
+      "dateEvidence": {
+        "status": "review",
+        "reason": "multiple-dates"
+      },
+      "published": false
+    },
+    {
+      "id": "moritzino-instagram-DdvaEOBOluK",
+      "title": "Annuncio da verificare",
+      "publishedAt": "2026-09-26T06:38:15.000Z",
+      "excerpt": "Salutiamo l’estate come piace a noi: insieme, a 2100 metri ☀️\n\nDomenica 27 settembre, dalle 14:00, vi aspettiamo al Club Moritzino per il Closing Summer Season Party.\n\nIn console DJ @andrew.italy , per un ultimo pomeriggio di musica e brindisi nella cornice delle Dolomiti 🎶\n\nChiudiamo questa stagione in bellezza, prima di ritrovarci per un inverno davvero speciale: quello del nostro 60° anniversario 🩵",
+      "sourceId": "moritzino-instagram",
+      "sourceName": "Club Moritzino",
+      "evidence": {
+        "url": "https://www.instagram.com/p/DdvaEOBOluK/",
+        "author": "clubmoritzino",
+        "ownerId": "2860294204",
+        "publishedAt": "2026-09-26T06:38:15.000Z",
+        "caption": "Salutiamo l’estate come piace a noi: insieme, a 2100 metri ☀️\n\nDomenica 27 settembre, dalle 14:00, vi aspettiamo al Club Moritzino per il Closing Summer Season Party.\n\nIn console DJ @andrew.italy , per un ultimo pomeriggio di musica e brindisi nella cornice delle Dolomiti 🎶\n\nChiudiamo questa stagione in bellezza, prima di ritrovarci per un inverno davvero speciale: quello del nostro 60° anniversario 🩵"
+      },
+      "url": "https://www.instagram.com/p/DdvaEOBOluK/",
+      "kind": "instagram",
+      "status": "review",
+      "reason": "unclear-event-title",
+      "date": {
+        "status": "confirmed",
+        "start": "2026-09-27",
+        "end": "2026-09-27",
+        "evidence": "27 settembre",
+        "inferredYear": true
+      },
+      "published": false
+    },
     {
       "id": "giggeralm-instagram-DeZ-OMcRLN3",
       "title": "Annuncio da verificare",
@@ -1050,6 +1240,30 @@
       "published": false
     },
     {
+      "id": "ganischger-instagram-De44POkDVvO",
+      "title": "Annuncio da verificare",
+      "publishedAt": "2026-10-24T19:25:02.000Z",
+      "excerpt": "What is your favourite season to party? Team Winter or Summer? ❄️☀️\n\n#ganischgeralm #voliera #mountainparty #pampeago #latemardolomites \n\n📸 @live_style_agency",
+      "sourceId": "ganischger-instagram",
+      "sourceName": "Ganischgeralm / Voliera",
+      "evidence": {
+        "url": "https://www.instagram.com/p/De44POkDVvO/",
+        "author": "ganischgeralm_voliera",
+        "ownerId": "68123628214",
+        "publishedAt": "2026-10-24T19:25:02.000Z",
+        "caption": "What is your favourite season to party? Team Winter or Summer? ❄️☀️\n\n#ganischgeralm #voliera #mountainparty #pampeago #latemardolomites \n\n📸 @live_style_agency"
+      },
+      "url": "https://www.instagram.com/p/De44POkDVvO/",
+      "kind": "instagram",
+      "status": "review",
+      "reason": "missing-date",
+      "dateEvidence": {
+        "status": "review",
+        "reason": "missing-date"
+      },
+      "published": false
+    },
+    {
       "id": "kronplatz-instagram-De9lMvAzVTM",
       "title": "Opening of Ando Fuchs' exhibition at LUMEN",
       "publishedAt": "2026-10-26T15:15:17.000Z",
@@ -1161,6 +1375,30 @@
         "caption": "-1 day 👻👻👻🎃\nWell, he’s already here. Has been for days. Nobody knows how he got in. 👻 Now he wants to DJ too… 🎧😳 Gotta admit though: the music’s actually pretty good 🤪😜😎😂\n\nSee ya tomoroooooow!! 🫠🫠🫠🥹\n\n#k1 #k1_reischach #halloween #k1halloween #dancing"
       },
       "url": "https://www.instagram.com/p/DfHIbwKsIM5/",
+      "kind": "instagram",
+      "status": "review",
+      "reason": "missing-date",
+      "dateEvidence": {
+        "status": "review",
+        "reason": "missing-date"
+      },
+      "published": false
+    },
+    {
+      "id": "ganischger-instagram-DfISumxtSKI",
+      "title": "Annuncio da verificare",
+      "publishedAt": "2026-10-30T19:19:00.000Z",
+      "excerpt": "Bereit für die erste große Winter Party? 🎊⛷️Verschickt den Flyer an alle, die das Season Opening nicht verpassen dürfen! 🍻\n.\n.\nPronti per la prima grande festa d'inverno? 🎊⛷️Inviate il flyer a tutti quelli che non devono assolutamente perdersi il Season Opening!🍻\n\n#ganischgeralm #voliera #latemardolomites #pampeago #obereggen",
+      "sourceId": "ganischger-instagram",
+      "sourceName": "Ganischgeralm / Voliera",
+      "evidence": {
+        "url": "https://www.instagram.com/p/DfISumxtSKI/",
+        "author": "ganischgeralm_voliera",
+        "ownerId": "68123628214",
+        "publishedAt": "2026-10-30T19:19:00.000Z",
+        "caption": "Bereit für die erste große Winter Party? 🎊⛷️Verschickt den Flyer an alle, die das Season Opening nicht verpassen dürfen! 🍻\n.\n.\nPronti per la prima grande festa d'inverno? 🎊⛷️Inviate il flyer a tutti quelli che non devono assolutamente perdersi il Season Opening!🍻\n\n#ganischgeralm #voliera #latemardolomites #pampeago #obereggen"
+      },
+      "url": "https://www.instagram.com/p/DfISumxtSKI/",
       "kind": "instagram",
       "status": "review",
       "reason": "missing-date",
