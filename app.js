@@ -252,7 +252,8 @@ const localizedEvent = (event) => {
   const translation = eventTranslations[currentLanguage]?.[event.id] || {};
   const place = translation.place || localizedPlace(event.place, currentLanguage);
   const title = event.titles?.[currentLanguage] || translation.title || event.title;
-  const localized = { ...event, ...translation, title, place };
+  const venue = typeof event.venue === "object" ? event.venue[currentLanguage] || event.venue.de || event.venue.it : event.venue;
+  const localized = { ...event, ...translation, title, place, venue };
   if (currentLanguage !== "it" && event.id.startsWith("auto-") && !translation.summary) {
     localized.summary = automaticSummary(event);
   }
@@ -302,7 +303,9 @@ const renderEvent = (rawEvent) => {
     tags.append(element("span", "ongoing-badge", copy[currentLanguage].ongoingBadge));
   }
   event.tags.forEach((tag) => tags.append(element("span", "", tag)));
-  main.append(tags, element("h3", "", event.title), element("p", "", event.summary), element("p", "place", event.place));
+  main.append(tags);
+  if (event.venue) main.append(element("div", "venue-label", event.venue));
+  main.append(element("h3", "", event.title), element("p", "", event.summary), element("p", "place", event.place));
   if (event.socialSourceId) {
     const words = copy[currentLanguage];
     const hours = event.hours;
