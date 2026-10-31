@@ -34,6 +34,7 @@ test("offline pipeline: publish, merge hours, reject impostors, hold conflicts, 
   assert.equal(result.events.length, 1);
   assert.equal(result.events[0].hours, undefined);
   assert.equal(result.events[0].title, "Retro Party");
+  assert.equal(result.events[0].venue, "Fixture venue");
   const second = { ...post, shortCode: "Second", url: "https://www.instagram.com/p/Second/", caption: `Retro Party\n${eventDate} ab 18:00 Uhr` };
   result = await run([second]);
   assert.equal(result.events.length, 1);

@@ -394,6 +394,7 @@ const siteEventFromCandidate = (candidate, index) => {
     tags: classifications.tags,
     summary: conciseSummary(candidate),
     place: candidate.location,
+    ...(candidate.venue ? { venue: candidate.venue } : {}),
     source: candidate.url,
     social: candidate.kind === "instagram" ? sources.instagram.find((source) => source.id === candidate.sourceId)?.url : socialForCandidate(candidate),
     ...(candidate.kind === "instagram" ? {

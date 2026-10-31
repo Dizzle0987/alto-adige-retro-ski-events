@@ -199,7 +199,8 @@ export const assessInstagramPost = (item, sources) => {
   const hours = parseSocialTimes(caption);
   return {
     ...base, status: "confirmed", reason: "official-announcement", title,
-    start: date.start, end: date.end, location: source.venue, dateEvidence: date,
+    start: date.start, end: date.end, location: source.venue,
+    venue: source.venueName || source.venue.split(" · ")[0], dateEvidence: date,
     hours, ...(hours?.overnight ? { endsAtDate: addDays(date.end, 1) } : {}),
     excerpt: caption, publishedAt: item.timestamp,
   };
@@ -221,6 +222,7 @@ export const mergeSocialAnnouncement = (event, candidate) => {
   const newer = (Date.parse(candidate.publishedAt) || 0) >= previousDate;
   // Conflicting dates/times require review; adding missing times is safe.
   const updated = { ...event, provenance };
+  if (!event.venue && candidate.venue) updated.venue = candidate.venue;
   if (newer && !event.hours && candidate.hours) {
     updated.hours = candidate.hours;
     if (candidate.endsAtDate) updated.endsAtDate = candidate.endsAtDate;
