@@ -1525,8 +1525,14 @@
       "dateLabel": "31",
       "monthLabel": "OTT",
       "year": "2026",
-      "categories": ["apres", "costume"],
-      "tags": ["Halloween", "16+"],
+      "categories": [
+        "apres",
+        "costume"
+      ],
+      "tags": [
+        "Halloween",
+        "16+"
+      ],
       "venue": "Giggeralm",
       "summary": "Opening di Halloween alla Giggeralm: ingresso gratuito, accesso dai 16 anni e apertura alle 20:00.",
       "summaries": {
@@ -1535,20 +1541,24 @@
         "en": "Halloween opening at Giggeralm: free entry, ages 16+, with doors opening at 20:00."
       },
       "place": "Giggeralm · Riscone / Reischach, Brunico / Bruneck",
-      "hours": { "start": "20:00" },
+      "hours": {
+        "start": "20:00"
+      },
       "source": "https://www.instagram.com/giggeralm_official/p/DeZ-OMcRLN3/",
       "social": "https://www.instagram.com/giggeralm_official/",
       "map": "https://www.google.com/maps/search/?api=1&query=Giggeralm+Reischach+Kronplatz",
       "accent": "#ff7439",
       "featured": false,
-      "provenance": [{
-        "method": "manual-public-flyer",
-        "url": "https://www.instagram.com/giggeralm_official/p/DeZ-OMcRLN3/",
-        "author": "giggeralm_official",
-        "checkedAt": "2026-10-31",
-        "dateEvidence": "SAMSTAG 31.10.2026",
-        "detailsEvidence": "FREE ENTRY | DOORS OPEN 20:00 | ENTRY 16+"
-      }]
+      "provenance": [
+        {
+          "method": "manual-public-flyer",
+          "url": "https://www.instagram.com/giggeralm_official/p/DeZ-OMcRLN3/",
+          "author": "giggeralm_official",
+          "checkedAt": "2026-10-31",
+          "dateEvidence": "SAMSTAG 31.10.2026",
+          "detailsEvidence": "FREE ENTRY | DOORS OPEN 20:00 | ENTRY 16+"
+        }
+      ]
     },
     {
       "id": "k1-halloween-open-air-2026",
@@ -1600,8 +1610,13 @@
       "dateLabel": "13–14",
       "monthLabel": "NOV",
       "year": "2026",
-      "categories": ["apres"],
-      "tags": ["Opening", "Après-ski"],
+      "categories": [
+        "apres"
+      ],
+      "tags": [
+        "Opening",
+        "Après-ski"
+      ],
       "venue": "Hexenkessel",
       "summary": "Due serate per il soft opening dell’Hexenkessel prima dell’avvio della stagione invernale. Programma e orari da annunciare.",
       "summaries": {
@@ -1615,17 +1630,19 @@
       "map": "https://www.google.com/maps/search/?api=1&query=Hexenkessel+Klausberg+Steinhaus",
       "accent": "#5b5df0",
       "featured": false,
-      "provenance": [{
-        "method": "manual-public-bio",
-        "url": "https://www.instagram.com/hexenkessel_klausberg/",
-        "author": "hexenkessel_klausberg",
-        "checkedAt": "2026-10-31",
-        "dateEvidence": "Soft Opening 👉 13.-14. November",
-        "inferredYear": true,
-        "year": 2026,
-        "yearApprovedByUser": true,
-        "notes": "L’anno non compare nella bio. Il 2026 è stato confermato dall’utente per questo specifico annuncio."
-      }]
+      "provenance": [
+        {
+          "method": "manual-public-bio",
+          "url": "https://www.instagram.com/hexenkessel_klausberg/",
+          "author": "hexenkessel_klausberg",
+          "checkedAt": "2026-10-31",
+          "dateEvidence": "Soft Opening 👉 13.-14. November",
+          "inferredYear": true,
+          "year": 2026,
+          "yearApprovedByUser": true,
+          "notes": "L’anno non compare nella bio. Il 2026 è stato confermato dall’utente per questo specifico annuncio."
+        }
+      ]
     },
     {
       "id": "auto-2026-11-20-k1-season-opening",
@@ -1701,8 +1718,13 @@
       "dateLabel": "04–05",
       "monthLabel": "DIC",
       "year": "2026",
-      "categories": ["apres"],
-      "tags": ["Opening", "Live + DJ"],
+      "categories": [
+        "apres"
+      ],
+      "tags": [
+        "Opening",
+        "Live + DJ"
+      ],
       "venue": "Hexenkessel",
       "summary": "Opening invernale con BRENNHOLZ, PAZOO e DJ Willy. Inizio venerdì 4 dicembre alle 20:00, conclusione domenica 6 alle 02:00.",
       "summaries": {
@@ -1711,20 +1733,24 @@
         "en": "Winter opening with BRENNHOLZ, PAZOO and DJ Willy. Starts Friday 4 December at 20:00 and ends Sunday 6 December at 02:00."
       },
       "place": "Hexenkessel · Cadipietra / Steinhaus, Valle Aurina / Ahrntal",
-      "hours": { "start": "20:00" },
+      "hours": {
+        "start": "20:00"
+      },
       "source": "https://www.facebook.com/events/2505506236527436/",
       "social": "https://www.instagram.com/hexenkessel_klausberg/",
       "map": "https://www.google.com/maps/search/?api=1&query=Hexenkessel+Klausberg+Steinhaus",
       "accent": "#00bfa6",
       "featured": false,
-      "provenance": [{
-        "method": "manual-public-facebook-event",
-        "url": "https://www.facebook.com/events/2505506236527436/",
-        "author": "Hexenkessel Klausberg",
-        "checkedAt": "2026-10-31",
-        "dateEvidence": "KLAUSBERG WINTER OPENING 2026/27 — 4 dic alle ore 20:00 - 6 dic alle ore 02:00 CET",
-        "notes": "Serate del 4 e 5 dicembre, con conclusione nella notte del 6. Nessun orario quotidiano o continuità della festa presunti."
-      }]
+      "provenance": [
+        {
+          "method": "manual-public-facebook-event",
+          "url": "https://www.facebook.com/events/2505506236527436/",
+          "author": "Hexenkessel Klausberg",
+          "checkedAt": "2026-10-31",
+          "dateEvidence": "KLAUSBERG WINTER OPENING 2026/27 — 4 dic alle ore 20:00 - 6 dic alle ore 02:00 CET",
+          "notes": "Serate del 4 e 5 dicembre, con conclusione nella notte del 6. Nessun orario quotidiano o continuità della festa presunti."
+        }
+      ]
     },
     {
       "id": "auto-2026-12-11-bruning-krampus-the-after-show-party",
@@ -2220,7 +2246,10 @@
       "social": "https://www.instagram.com/alta_badia_official/",
       "map": "https://www.google.com/maps/search/?api=1&query=La+Villa+Alta+Badia",
       "accent": "#f5ec35",
-      "featured": false
+      "featured": false,
+      "titles": {
+        "en": "The Ski Carousel Vintage Party"
+      }
     }
   ]
 }
