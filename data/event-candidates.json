@@ -3,8 +3,8 @@
   "summary": {
     "webSources": 30,
     "instagramSources": 16,
-    "instagramStatus": "disabled-web-mode",
-    "candidates": 16,
+    "instagramStatus": "checked",
+    "candidates": 17,
     "published": 0,
     "updated": 0,
     "pruned": 0
@@ -677,115 +677,171 @@
       "name": "La Stua",
       "kind": "instagram",
       "url": "https://www.instagram.com/barlastua/",
-      "status": "disabled-web-mode"
+      "status": "no-author-data",
+      "found": 0,
+      "received": 0
     },
     {
       "id": "giggeralm-instagram",
       "name": "Giggeralm",
       "kind": "instagram",
       "url": "https://www.instagram.com/giggeralm_official/",
-      "status": "disabled-web-mode"
+      "status": "checked",
+      "found": 1,
+      "received": 1
     },
     {
       "id": "corones-instagram",
       "name": "Corones Hütte",
       "kind": "instagram",
       "url": "https://www.instagram.com/corones_huette/",
-      "status": "disabled-web-mode"
+      "status": "no-author-data",
+      "found": 0,
+      "received": 0
     },
     {
       "id": "pulverfass-instagram",
       "name": "Pulverfass",
       "kind": "instagram",
       "url": "https://www.instagram.com/pulverfass_apresski/",
-      "status": "disabled-web-mode"
+      "status": "no-author-data",
+      "found": 0,
+      "received": 0
     },
     {
       "id": "moritzino-instagram",
       "name": "Club Moritzino",
       "kind": "instagram",
       "url": "https://www.instagram.com/clubmoritzino/",
-      "status": "disabled-web-mode"
+      "status": "checked",
+      "found": 0,
+      "received": 2
     },
     {
       "id": "gassl-instagram",
       "name": "Gassl Olang",
       "kind": "instagram",
       "url": "https://www.instagram.com/gassl.olang/",
-      "status": "disabled-web-mode"
+      "status": "no-author-data",
+      "found": 0,
+      "received": 0
     },
     {
       "id": "k1-instagram",
       "name": "K1 Kronplatz",
       "kind": "instagram",
       "url": "https://www.instagram.com/k1.kronplatz/",
-      "status": "disabled-web-mode"
+      "status": "checked",
+      "found": 6,
+      "received": 6
     },
     {
       "id": "hexenkessel-instagram",
       "name": "Hexenkessel Klausberg",
       "kind": "instagram",
       "url": "https://www.instagram.com/hexenkessel_klausberg/",
-      "status": "disabled-web-mode"
+      "status": "no-author-data",
+      "found": 0,
+      "received": 0
     },
     {
       "id": "luislkeller-instagram",
       "name": "Luislkeller",
       "kind": "instagram",
       "url": "https://www.instagram.com/luislkeller/",
-      "status": "disabled-web-mode"
+      "status": "no-author-data",
+      "found": 0,
+      "received": 0
     },
     {
       "id": "winklparade-instagram",
       "name": "Winklparade",
       "kind": "instagram",
       "url": "https://www.instagram.com/winklparade/",
-      "status": "disabled-web-mode"
+      "status": "no-author-data",
+      "found": 0,
+      "received": 0
     },
     {
       "id": "ganischger-instagram",
       "name": "Ganischger Obereggen",
       "kind": "instagram",
       "url": "https://www.instagram.com/ganischger.obereggen/",
-      "status": "disabled-web-mode"
+      "status": "no-author-data",
+      "found": 0,
+      "received": 0
     },
     {
       "id": "skiworld-ahrntal-instagram",
       "name": "Skiworld Ahrntal",
       "kind": "instagram",
       "url": "https://www.instagram.com/skiworldahrntal_official/",
-      "status": "disabled-web-mode"
+      "status": "checked",
+      "found": 1,
+      "received": 5
     },
     {
       "id": "kronplatz-instagram",
       "name": "Kronplatz",
       "kind": "instagram",
       "url": "https://www.instagram.com/kronplatz_group/",
-      "status": "disabled-web-mode"
+      "status": "checked",
+      "found": 1,
+      "received": 2
     },
     {
       "id": "alta-badia-instagram",
       "name": "Alta Badia",
       "kind": "instagram",
       "url": "https://www.instagram.com/alta_badia_official/",
-      "status": "disabled-web-mode"
+      "status": "checked",
+      "found": 1,
+      "received": 6
     },
     {
       "id": "val-gardena-instagram",
       "name": "Val Gardena",
       "kind": "instagram",
       "url": "https://www.instagram.com/dolomitesvalgardena/",
-      "status": "disabled-web-mode"
+      "status": "checked",
+      "found": 1,
+      "received": 6
     },
     {
       "id": "three-zinnen-instagram",
       "name": "3 Zinnen Dolomites",
       "kind": "instagram",
       "url": "https://www.instagram.com/3zinnendolomites/",
-      "status": "disabled-web-mode"
+      "status": "checked",
+      "found": 1,
+      "received": 4
     }
   ],
   "candidates": [
+    {
+      "id": "giggeralm-instagram-DeZ-OMcRLN3",
+      "title": "Annuncio da verificare",
+      "publishedAt": "2026-10-12T19:25:37.000Z",
+      "excerpt": "🎃 HALLOWEEN OPENING🎃\n\nDie Nacht der Nächte steht bevor - düster, laut und gnadenlos wild! 🔥💀\n\n🕗 Start: 20:00 Uhr\n📍 Giggeralm Reischach\n🎟️ Eintritt frei\n🔞 Eintritt ab 16 Jahren\n\n🎧on the turns: Zufällig & Dj Rodario\n\n🧛‍♂️ Verkleidung erwünscht!\nEgal ob Zombie, Hexe oder komplett verrückt – an Halloween darf’s ruhig ein bisschen mehr sein!\n\n🖤 See you on Halloween!",
+      "sourceId": "giggeralm-instagram",
+      "sourceName": "Giggeralm",
+      "evidence": {
+        "url": "https://www.instagram.com/p/DeZ-OMcRLN3/",
+        "author": "giggeralm_official",
+        "ownerId": "9152184548",
+        "publishedAt": "2026-10-12T19:25:37.000Z",
+        "caption": "🎃 HALLOWEEN OPENING🎃\n\nDie Nacht der Nächte steht bevor - düster, laut und gnadenlos wild! 🔥💀\n\n🕗 Start: 20:00 Uhr\n📍 Giggeralm Reischach\n🎟️ Eintritt frei\n🔞 Eintritt ab 16 Jahren\n\n🎧on the turns: Zufällig & Dj Rodario\n\n🧛‍♂️ Verkleidung erwünscht!\nEgal ob Zombie, Hexe oder komplett verrückt – an Halloween darf’s ruhig ein bisschen mehr sein!\n\n🖤 See you on Halloween!"
+      },
+      "url": "https://www.instagram.com/p/DeZ-OMcRLN3/",
+      "kind": "instagram",
+      "status": "review",
+      "reason": "missing-date",
+      "dateEvidence": {
+        "status": "review",
+        "reason": "missing-date"
+      },
+      "published": false
+    },
     {
       "id": "skiworld-ahrntal-instagram-DerpaiRPr47",
       "title": "Annuncio da verificare",
