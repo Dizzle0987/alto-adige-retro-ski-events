@@ -40,7 +40,7 @@ jobs:
       - name: Discover candidates from ski areas, huts and social sources
         if: steps.schedule.outputs.run == 'true'
         env:
-          APIFY_TOKEN: ${{ secrets.APIFY_TOKEN }}
+          APIFY_TOKEN: ${{ secrets.APIFY_TOKEN || secrets.APIFY }}
         run: node scripts/discover-events.mjs
 
       - name: Detect changes
