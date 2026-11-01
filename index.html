@@ -22,7 +22,7 @@
       href="https://fonts.googleapis.com/css2?family=Archivo+Black&amp;family=DM+Mono:wght@400;500&amp;family=Manrope:wght@400;600;700&amp;display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="styles.css?v=10" />
+    <link rel="stylesheet" href="styles.css?v=11" />
   </head>
   <body>
     <a class="skip-link" href="#eventi" data-i18n="skipLink">Vai agli eventi</a>
@@ -100,10 +100,16 @@
             <button class="filter" type="button" data-filter="apres" aria-pressed="false"><span class="filter-label" data-i18n="filterApres">Après-ski</span><span class="filter-count">–</span></button>
             <button class="filter" type="button" data-filter="costume" aria-pressed="false"><span class="filter-label" data-i18n="filterCostume">Dress code</span><span class="filter-count">–</span></button>
           </div>
-          <label class="valley-filter" for="valley-select">
+          <div class="place-filters">
+          <label class="place-filter" for="valley-select">
             <span data-i18n="valleyLabel">Valle</span>
             <select id="valley-select" data-i18n-aria-label="valleyFilterLabel" aria-label="Filtra per valle"></select>
           </label>
+          <label class="place-filter" for="location-select">
+            <span data-i18n="locationLabel">Location</span>
+            <select id="location-select" data-i18n-aria-label="locationFilterLabel" aria-label="Filtra per location"></select>
+          </label>
+          </div>
         </div>
 
         <div class="event-list" aria-live="polite">
@@ -130,6 +136,6 @@
       <a href="#top"><span data-i18n="backToTop">Torna su</span> ↑</a>
     </footer>
 
-    <script type="module" src="app.js?v=29"></script>
+    <script type="module" src="app.js?v=30"></script>
   </body>
 </html>
