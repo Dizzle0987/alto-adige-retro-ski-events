@@ -1,10 +1,12 @@
 import { calendarState, eventPeriod } from "./calendar.mjs?v=4";
 import { officialEventTitle } from "./event-titles.mjs";
+import { locationKeyFor, locationOptions } from "./locations.mjs";
 
 const eventList = document.querySelector(".event-list");
 const socialList = document.querySelector(".social-links");
 const filters = [...document.querySelectorAll(".filter")];
 const valleySelect = document.querySelector("#valley-select");
+const locationSelect = document.querySelector("#location-select");
 const languageButtons = [...document.querySelectorAll(".language-button")];
 const emptyState = document.querySelector(".empty-state");
 const supportedLanguages = ["it", "de", "en"];
@@ -30,6 +32,7 @@ const copy = {
     autoUpdateBadge: "Automatico · lun, mer, gio · 08:00", filterLabel: "Filtra per atmosfera",
     filterAll: "Tutto", filterRetro: "Retro", filterApres: "Après-ski", filterCostume: "Dress code",
     valleyLabel: "Valle", valleyFilterLabel: "Filtra per valle", allValleys: "Tutte le valli",
+    locationLabel: "Location", locationFilterLabel: "Filtra per location", allLocations: "Tutte le location",
     loadingEvents: "Aggiorno il radar eventi…", emptyEvents: "Nessun evento in questa categoria.",
     loadError: "Radar temporaneamente non disponibile. Riprova tra poco.", socialKicker: "Radar social dinamico",
     socialTitle: "I canali che stanno parlando della neve.",
@@ -59,6 +62,7 @@ const copy = {
     autoUpdateBadge: "Automatisch · Mo, Mi, Do · 08:00", filterLabel: "Nach Stimmung filtern",
     filterAll: "Alle", filterRetro: "Retro", filterApres: "Après-Ski", filterCostume: "Dresscode",
     valleyLabel: "Tal", valleyFilterLabel: "Nach Tal filtern", allValleys: "Alle Täler",
+    locationLabel: "Location", locationFilterLabel: "Nach Location filtern", allLocations: "Alle Locations",
     loadingEvents: "Event-Radar wird aktualisiert…", emptyEvents: "Keine Events in dieser Kategorie.",
     loadError: "Der Radar ist vorübergehend nicht verfügbar. Bitte später erneut versuchen.", socialKicker: "Dynamischer Social-Radar",
     socialTitle: "Die Kanäle, die gerade vom Schnee erzählen.",
@@ -88,6 +92,7 @@ const copy = {
     autoUpdateBadge: "Automatic · Mon, Wed, Thu · 08:00", filterLabel: "Filter by mood",
     filterAll: "All", filterRetro: "Retro", filterApres: "Après-ski", filterCostume: "Dress code",
     valleyLabel: "Valley", valleyFilterLabel: "Filter by valley", allValleys: "All valleys",
+    locationLabel: "Location", locationFilterLabel: "Filter by location", allLocations: "All locations",
     loadingEvents: "Updating the event radar…", emptyEvents: "No events in this category.",
     loadError: "The radar is temporarily unavailable. Please try again shortly.", socialKicker: "Dynamic social radar",
     socialTitle: "The channels talking about the snow right now.",
@@ -235,6 +240,7 @@ const valleyLabels = {
 let currentLanguage = "it";
 let currentFilter = "all";
 let currentValley = "all";
+let currentLocation = "all";
 let cachedEvents = [];
 let eventsLoaded = false;
 let lastChecked = "";
@@ -371,7 +377,9 @@ const renderSocialRadar = (events) => {
 const updateCounts = () => {
   filters.forEach((button) => {
     const category = button.dataset.filter;
-    const eventsInValley = periodEvents().filter((event) => currentValley === "all" || valleyKeyFor(event) === currentValley);
+    const eventsInValley = periodEvents().filter((event) =>
+      (currentValley === "all" || valleyKeyFor(event) === currentValley) &&
+      (currentLocation === "all" || locationKeyFor(event) === currentLocation));
     const count = category === "all" ? eventsInValley.length : eventsInValley.filter((event) => event.categories.includes(category)).length;
     button.querySelector(".filter-count").textContent = count;
   });
@@ -403,6 +411,23 @@ const applyFilter = (selected) => {
   renderEvents();
 };
 
+const renderLocationOptions = () => {
+  const events = periodEvents().filter((event) => currentValley === "all" || valleyKeyFor(event) === currentValley);
+  const locations = locationOptions(events, currentLanguage, localizedPlace);
+  const allOption = element("option", "", copy[currentLanguage].allLocations);
+  allOption.value = "all";
+  const options = locations.map(({ key, label, count }) => {
+    const option = element("option", "", `${label} · ${count}`);
+    option.value = key;
+    return option;
+  });
+  if (!locations.some(({ key }) => key === currentLocation)) currentLocation = "all";
+  locationSelect.replaceChildren(allOption, ...options);
+  locationSelect.value = currentLocation;
+  valleySelect.classList.toggle("has-selection", currentValley !== "all");
+  locationSelect.classList.toggle("has-selection", currentLocation !== "all");
+};
+
 const periodEvents = () => cachedEvents.filter((event) => currentPeriod === "past"
   ? eventPeriod(event, calendar) === "past" && (event.endsAtDate || event.end) >= calendar.archiveCutoff
   : eventPeriod(event, calendar) !== "past");
@@ -415,10 +440,12 @@ const formatCheckedDate = (isoDate) => {
 
 const renderEvents = () => {
   renderValleyOptions();
+  renderLocationOptions();
   updateCounts();
   const events = periodEvents().filter((event) =>
     (currentFilter === "all" || event.categories.includes(currentFilter)) &&
-    (currentValley === "all" || valleyKeyFor(event) === currentValley));
+    (currentValley === "all" || valleyKeyFor(event) === currentValley) &&
+    (currentLocation === "all" || locationKeyFor(event) === currentLocation));
   eventList.replaceChildren();
   if (currentPeriod === "past") {
     eventList.append(...events.sort((a, b) => b.end.localeCompare(a.end)).map(renderEvent));
@@ -508,8 +535,11 @@ const loadEvents = async () => {
 filters.forEach((button) => button.addEventListener("click", () => applyFilter(button.dataset.filter)));
 valleySelect.addEventListener("change", () => {
   currentValley = valleySelect.value;
-  updateCounts();
   applyFilter(currentFilter);
+});
+locationSelect.addEventListener("change", () => {
+  currentLocation = locationSelect.value;
+  renderEvents();
 });
 periodButtons.forEach((button) => button.addEventListener("click", () => {
   currentPeriod = button.dataset.period;
