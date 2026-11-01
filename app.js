@@ -1,6 +1,6 @@
 import { calendarState, eventPeriod } from "./calendar.mjs?v=4";
 import { officialEventTitle } from "./event-titles.mjs";
-import { locationKeyFor, locationOptions } from "./locations.mjs";
+import { locationKeyFor, locationOptions } from "./locations.mjs?v=2";
 
 const eventList = document.querySelector(".event-list");
 const socialList = document.querySelector(".social-links");
