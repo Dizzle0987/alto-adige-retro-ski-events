@@ -12,11 +12,28 @@ test("location identity stays stable across languages and repeated events", () =
   assert.equal(locationKeyFor({ venue: " K1  " }), locationKeyFor({ venue: "k1" }));
 });
 
-test("location options aggregate venues, count events and translate fallback places", () => {
-  const events = [{ venue: "K1" }, { venue: "K1" }, { venue: "Hexenkessel" }, { place: "Ortisei" }];
-  const options = locationOptions(events, "de", (place) => place === "Ortisei" ? "St. Ulrich" : place);
-  assert.deepEqual(options.map(({ label, count }) => [label, count]), [["Hexenkessel", 1], ["K1", 2], ["St. Ulrich", 1]]);
-  assert.equal(locationKeyFor({ place: "Ortisei" }), options[2].key);
+test("location options aggregate named venues and translate named ski facilities", () => {
+  const events = [{ venue: "K1" }, { venue: "K1" }, { venue: "Hexenkessel" }, { place: "Area sciistica di Watles" }];
+  const options = locationOptions(events, "de", (place) => place === "Area sciistica di Watles" ? "Skigebiet Watles" : place);
+  assert.deepEqual(options.map(({ label, count }) => [label, count]), [["Hexenkessel", 1], ["K1", 2], ["Skigebiet Watles", 1]]);
+  assert.equal(locationKeyFor(events[3]), options[2].key);
+});
+
+test("geography, addresses and generic venues are never location options", () => {
+  const events = [
+    { place: "Ortisei" }, { place: "Selva di Val Gardena · rifugi e centro paese" },
+    { place: "Str. Mëisules 145 · Selva di Val Gardena" }, { place: "Ortisei · Str. Rezia 1" },
+    { place: "Dobbiaco / Toblach · area 3 Cime" }, {},
+    { venue: { de: "Veranstaltungssaal", it: "Sala manifestazioni", en: "Event hall" }, place: "San Vigilio" },
+    { venue: "Str. Rezia 1" }, { venue: "Hütten und Dorfzentrum" },
+  ];
+  const original = structuredClone(events);
+  assert.deepEqual(locationOptions(events, "de"), []);
+  for (const event of events) {
+    assert.equal(locationKeyFor(event), null);
+    assert.equal(locationLabelFor(event, "de"), "");
+  }
+  assert.deepEqual(events, original);
 });
 
 test("filtering the valley limits locations without altering the source records", () => {
