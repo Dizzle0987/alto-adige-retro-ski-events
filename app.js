@@ -339,7 +339,11 @@ const renderEvent = (rawEvent) => {
   event.tags.forEach((tag) => tags.append(element("span", "", tag)));
   main.append(tags);
   if (event.venue) main.append(element("div", "venue-label", event.venue));
-  main.append(element("h3", "", event.title), element("p", "", event.summary), element("p", "place", event.place));
+  const heading = element("h3", "");
+  const eventLink = externalLink(event.title, event.source);
+  eventLink.classList.add("event-card-link");
+  heading.append(eventLink);
+  main.append(heading, element("p", "", event.summary), element("p", "place", event.place));
   if (event.socialSourceId || event.hours) {
     const words = copy[currentLanguage];
     const hours = event.hours;
