@@ -29,3 +29,23 @@ test("event edits update modification date; replay never claims a fresh web chec
   assert.equal(result.lastModified, "2026-11-02");
   assert.equal(result.lastWebCheckAt, baseline.lastWebCheckAt);
 });
+
+test("rolling archive expiry does not count as an event modification", () => {
+  const current = { id: "k1", title: "Opening", end: "2026-11-20" };
+  const expired = { id: "winklparade", end: "2025-10-31" };
+  const baseline = { lastChecked: "2026-10-31", lastModified: "2026-10-30", events: [expired, current] };
+  const now = new Date("2026-11-02T09:00:00Z");
+  const result = finalizeUpdate({ events: [current] }, baseline, { now });
+  assert.equal(result.lastModified, "2026-10-30");
+  assert.equal(result.lastChecked, "2026-11-02");
+  assert.equal(result.events.length, 1);
+  assert.equal(finalizeUpdate({ events: [{ ...current, title: "Changed" }] }, baseline, { now }).lastModified, "2026-11-02");
+  assert.equal(finalizeUpdate({ events: [current, { id: "new", end: "2026-12-01" }] }, baseline, { now }).lastModified, "2026-11-02");
+});
+
+test("removal within the archive, including the cutoff boundary, still counts", () => {
+  for (const end of ["2025-11-02", "2026-11-20"]) {
+    const baseline = { lastModified: "2026-10-31", events: [{ id: "removed", end }] };
+    assert.equal(finalizeUpdate({ events: [] }, baseline, { now: new Date("2026-11-02T09:00:00Z") }).lastModified, "2026-11-02");
+  }
+});

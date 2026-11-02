@@ -1,5 +1,6 @@
 import { readFile, writeFile } from "node:fs/promises";
 import { pathToFileURL } from "node:url";
+import { calendarState } from "../dist/calendar.mjs";
 
 export const romeClock = (now = new Date()) => {
   const parts = Object.fromEntries(new Intl.DateTimeFormat("en-CA", {
@@ -20,7 +21,13 @@ const eventContent = (events) => JSON.stringify([...events].sort((a, b) => a.id.
 
 export const finalizeUpdate = (data, baseline, { now = new Date(), scheduled = false, mode = "web" } = {}) => {
   const date = romeClock(now).date;
-  const changed = eventContent(data.events) !== eventContent(baseline.events);
+  const { archiveCutoff } = calendarState(now);
+  const remainingIds = new Set(data.events.map((event) => event.id));
+  // Ignore only automatic expiry of absent archive entries, not edits to retained
+  // records or removal of an event still inside the archive window.
+  const comparableBaseline = baseline.events.filter((event) => remainingIds.has(event.id)
+    || !event.end || event.end >= archiveCutoff);
+  const changed = eventContent(data.events) !== eventContent(comparableBaseline);
   return { ...data, lastChecked: date,
     lastWebCheckAt: mode === "replay" ? baseline.lastWebCheckAt : now.toISOString(),
     lastModified: changed ? date : baseline.lastModified || baseline.lastChecked,
