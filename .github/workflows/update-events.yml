@@ -2,8 +2,8 @@ name: Update verified ski events
 
 on:
   schedule:
-    - cron: "0 6 * * 1,3,4"
-    - cron: "0 7 * * 1,3,4"
+    - cron: "17 6 * * 1,3,4"
+    - cron: "17 7 * * 1,3,4"
   workflow_dispatch:
     inputs:
       instagram_mode:
@@ -25,21 +25,20 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 10
     steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
       - name: Check local schedule
         id: schedule
         shell: bash
         run: |
-          if [[ "$GITHUB_EVENT_NAME" == "workflow_dispatch" || "$(TZ=Europe/Rome date +%H)" == "08" ]]; then
-            echo "run=true" >> "$GITHUB_OUTPUT"
-          else
-            echo "run=false" >> "$GITHUB_OUTPUT"
-          fi
+          node scripts/update-status.mjs gate >> "$GITHUB_OUTPUT"
 
-      - name: Check out repository
+      - name: Preserve event baseline
         if: steps.schedule.outputs.run == 'true'
-        uses: actions/checkout@v4
-        with:
-          fetch-depth: 0
+        run: cp dist/events.json "$RUNNER_TEMP/events-before.json"
 
       - name: Install free local OCR and PDF readers
         if: steps.schedule.outputs.run == 'true'
@@ -62,6 +61,13 @@ jobs:
           SKIP_APIFY: ${{ inputs.instagram_mode == 'web' && '1' || '0' }}
           APIFY_REPLAY_LAST: ${{ inputs.instagram_mode == 'replay' && '1' || '0' }}
         run: node scripts/discover-events.mjs
+
+      - name: Record completed check and event changes
+        if: steps.schedule.outputs.run == 'true'
+        env:
+          UPDATE_BASELINE_PATH: ${{ runner.temp }}/events-before.json
+          UPDATE_MODE: ${{ inputs.instagram_mode || 'live' }}
+        run: node scripts/update-status.mjs finalize
 
       - name: Detect changes
         if: steps.schedule.outputs.run == 'true'

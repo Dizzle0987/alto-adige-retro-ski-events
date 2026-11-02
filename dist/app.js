@@ -28,8 +28,8 @@ const copy = {
     heroLine1: "BRUTTI SCI.", heroLine2: "BELLE FESTE.",
     heroLede: "Un radar in continuo aggiornamento per feste retro, vintage ski e après-ski in Alto Adige. Date, luoghi e fonti ufficiali, senza caccia al flyer.",
     eventsCta: "Vedi gli eventi", socialCta: "Radar social", eventsKicker: "Radar eventi live",
-    eventsTitle: "La tua agenda retro ski & après-ski.", lastUpdated: "Ultimo aggiornamento",
-    autoUpdateBadge: "Automatico · lun, mer, gio · 08:00", filterLabel: "Filtra per atmosfera",
+    eventsTitle: "La tua agenda retro ski & après-ski.", lastUpdated: "Ultimo controllo web", lastModified: "Eventi modificati",
+    autoUpdateBadge: "Automatico · lun, mer, gio · dalle 08:17", filterLabel: "Filtra per atmosfera",
     filterAll: "Tutto", filterRetro: "Retro", filterApres: "Après-ski", filterCostume: "Dress code",
     valleyLabel: "Valle", valleyFilterLabel: "Filtra per valle", allValleys: "Tutte le valli",
     locationLabel: "Location", locationFilterLabel: "Filtra per location", allLocations: "Tutte le location",
@@ -58,8 +58,8 @@ const copy = {
     heroLine1: "SCHRÄGE SKI.", heroLine2: "GUTE PARTYS.",
     heroLede: "Ein laufend aktualisierter Radar für Retro-Ski-, Vintage- und Après-Ski-Partys in Südtirol. Daten, Orte und offizielle Quellen – ohne Flyer-Suche.",
     eventsCta: "Events ansehen", socialCta: "Social-Radar", eventsKicker: "Live-Event-Radar",
-    eventsTitle: "Dein Kalender für Retro-Ski & Après-Ski.", lastUpdated: "Zuletzt aktualisiert",
-    autoUpdateBadge: "Automatisch · Mo, Mi, Do · 08:00", filterLabel: "Nach Stimmung filtern",
+    eventsTitle: "Dein Kalender für Retro-Ski & Après-Ski.", lastUpdated: "Letzte Website-Prüfung", lastModified: "Events geändert",
+    autoUpdateBadge: "Automatisch · Mo, Mi, Do · ab 08:17", filterLabel: "Nach Stimmung filtern",
     filterAll: "Alle", filterRetro: "Retro", filterApres: "Après-Ski", filterCostume: "Dresscode",
     valleyLabel: "Tal", valleyFilterLabel: "Nach Tal filtern", allValleys: "Alle Täler",
     locationLabel: "Location", locationFilterLabel: "Nach Location filtern", allLocations: "Alle Locations",
@@ -88,8 +88,8 @@ const copy = {
     heroLine1: "BAD SKIS.", heroLine2: "GREAT PARTIES.",
     heroLede: "A continuously updated radar for retro ski, vintage and après-ski parties in South Tyrol. Dates, places and official sources — no flyer hunting required.",
     eventsCta: "See the events", socialCta: "Social radar", eventsKicker: "Live event radar",
-    eventsTitle: "Your retro ski & après-ski calendar.", lastUpdated: "Last updated",
-    autoUpdateBadge: "Automatic · Mon, Wed, Thu · 08:00", filterLabel: "Filter by mood",
+    eventsTitle: "Your retro ski & après-ski calendar.", lastUpdated: "Last website check", lastModified: "Events changed",
+    autoUpdateBadge: "Automatic · Mon, Wed, Thu · from 08:17", filterLabel: "Filter by mood",
     filterAll: "All", filterRetro: "Retro", filterApres: "Après-ski", filterCostume: "Dress code",
     valleyLabel: "Valley", valleyFilterLabel: "Filter by valley", allValleys: "All valleys",
     locationLabel: "Location", locationFilterLabel: "Filter by location", allLocations: "All locations",
@@ -244,6 +244,7 @@ let currentLocation = "all";
 let cachedEvents = [];
 let eventsLoaded = false;
 let lastChecked = "";
+let lastModified = "";
 
 const element = (tag, className, text) => {
   const node = document.createElement(tag);
@@ -439,7 +440,10 @@ const periodEvents = () => cachedEvents.filter((event) => currentPeriod === "pas
 const formatCheckedDate = (isoDate) => {
   if (!isoDate) return "—";
   const locale = currentLanguage === "de" ? "de-DE" : currentLanguage === "en" ? "en-GB" : "it-IT";
-  return new Intl.DateTimeFormat(locale, { day: "2-digit", month: "2-digit", year: "numeric" }).format(new Date(`${isoDate}T12:00:00`));
+  const timestamp = isoDate.includes("T");
+  return new Intl.DateTimeFormat(locale, { timeZone: "Europe/Rome", day: "2-digit", month: "2-digit", year: "numeric",
+    ...(timestamp ? { hour: "2-digit", minute: "2-digit" } : {}),
+  }).format(new Date(timestamp ? isoDate : `${isoDate}T12:00:00`));
 };
 
 const renderEvents = () => {
@@ -503,6 +507,7 @@ const translatePage = () => {
     button.setAttribute("aria-pressed", String(active));
   });
   document.querySelector("[data-last-checked]").textContent = formatCheckedDate(lastChecked);
+  document.querySelector("[data-last-modified]").textContent = formatCheckedDate(lastModified);
   document.querySelector("[data-season-year]").textContent = calendar.seasonEnd;
 };
 
@@ -527,7 +532,8 @@ const loadEvents = async () => {
     const data = await response.json();
     cachedEvents = [...data.events].sort((a, b) => a.start.localeCompare(b.start));
     eventsLoaded = true;
-    lastChecked = data.lastChecked;
+    lastChecked = data.lastWebCheckAt || data.lastChecked;
+    lastModified = data.lastModified || "";
     translatePage();
     renderEvents();
   } catch (error) {

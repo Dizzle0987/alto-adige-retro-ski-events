@@ -33,7 +33,9 @@ Il sito è buildless. Il branch `gh-pages` contiene il contenuto pubblicabile di
 
 ## Aggiornamenti automatici
 
-Un workflow GitHub Actions controlla le fonti ufficiali ogni lunedì, mercoledì e giovedì alle 08:00 (Europe/Rome). Quando trova cambiamenti verificabili, aggiorna l'agenda, pubblica `main` e rigenera il branch `gh-pages`. Le fonti non raggiungibili vengono conservate senza sovrascrivere dati già verificati.
+Un workflow GitHub Actions controlla le fonti ufficiali ogni lunedì, mercoledì e giovedì dalle 08:17 (Europe/Rome), con possibili ritardi di GitHub. Due trigger UTC coprono ora solare/legale: il controllo ignora gli avvii anticipati, accetta quelli in ritardo e registra una sola scansione automatica riuscita per giorno. La concorrenza serializzata evita duplicati. Non garantisce il recupero se entrambi i trigger vengono persi da GitHub. I controlli manuali restano disponibili. Quando trova cambiamenti verificabili, aggiorna l'agenda, pubblica `main` e rigenera il branch `gh-pages`. Le fonti non raggiungibili vengono conservate senza sovrascrivere dati già verificati.
+
+La pagina distingue `lastWebCheckAt` (controllo web completato, con ora di Roma) da `lastModified` (ultima modifica dei dati evento). La finalizzazione avviene solo dopo la conclusione degli script; una ripetizione OCR in modalità `replay` non aggiorna il controllo web. Il controllo web può avere fonti non raggiungibili: non certifica la copertura completa e non indica una nuova scansione Instagram. `lastScheduledCheckDate` impedisce la seconda scansione automatica della stessa giornata, comprese le chiamate Apify; i limiti gratuiti Apify restano invariati.
 
 Gli eventi terminati vengono conservati per 12 mesi e non vengono più aggiornati dalle pagine degli organizzatori, che potrebbero già descrivere l’edizione successiva. Il passaggio tra evento futuro, in corso e passato avviene ogni giorno secondo il calendario di Roma, inclusa l’intera data finale. La pagina aperta ricontrolla la data ogni minuto. Lo storico si popola con gli eventi conservati da questo aggiornamento in poi.
 
