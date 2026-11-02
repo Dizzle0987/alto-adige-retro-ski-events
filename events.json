@@ -1,38 +1,6 @@
 {
-  "lastChecked": "2026-10-31",
+  "lastChecked": "2026-11-02",
   "events": [
-    {
-      "id": "auto-2025-10-31-winklparade-madness-2025",
-      "title": "Winklparade Madness 2025",
-      "websiteExtraction": "winklparade-announcement",
-      "start": "2025-10-31",
-      "end": "2025-10-31",
-      "dateLabel": "31",
-      "monthLabel": "OTT",
-      "year": "2025",
-      "categories": [
-        "apres"
-      ],
-      "tags": [
-        "Après-ski"
-      ],
-      "summary": "Evento sulla neve a Musikpavillon · Campo Tures / Sand in Taufers, Valle Aurina / Ahrntal, con programma e dettagli nella fonte ufficiale.",
-      "summaries": {
-        "it": "Festival con musica dal vivo e party al padiglione musicale di Campo Tures.",
-        "de": "Festival mit Livemusik und Party am Musikpavillon in Sand in Taufers.",
-        "en": "Live music and party at the music pavilion in Sand in Taufers."
-      },
-      "place": "Musikpavillon · Campo Tures / Sand in Taufers, Valle Aurina / Ahrntal",
-      "venue": "Musikpavillon",
-      "hours": {
-        "start": "18:00"
-      },
-      "source": "https://www.mytix.bz/winklparade",
-      "social": "https://www.instagram.com/winklparade/",
-      "map": "https://www.google.com/maps/search/?api=1&query=Musikpavillon%20%C2%B7%20Campo%20Tures%20%2F%20Sand%20in%20Taufers%2C%20Valle%20Aurina%20%2F%20Ahrntal",
-      "accent": "#b0ef43",
-      "featured": false
-    },
     {
       "id": "auto-2025-12-04-season-opening",
       "title": "SEASON OPENING",
@@ -1717,8 +1685,13 @@
       "dateLabel": "29",
       "monthLabel": "NOV",
       "year": "2026",
-      "categories": ["apres"],
-      "tags": ["Opening", "Après-ski"],
+      "categories": [
+        "apres"
+      ],
+      "tags": [
+        "Opening",
+        "Après-ski"
+      ],
       "venue": "Ganischgeralm",
       "summary": "La prima grande festa d’inverno alla Ganischgeralm per inaugurare la stagione après-ski. Orario da confermare.",
       "summaries": {
@@ -1733,19 +1706,21 @@
       "map": "https://www.google.com/maps/search/?api=1&query=Ganischgeralm+Obereggen",
       "accent": "#ff7439",
       "featured": false,
-      "provenance": [{
-        "method": "manual-public-flyer",
-        "url": "https://www.instagram.com/p/DfISumxtSKI/",
-        "author": "ganischgeralm_voliera",
-        "ownerId": "68123628214",
-        "publishedAt": "2026-10-30T19:19:00.000Z",
-        "checkedAt": "2026-10-31",
-        "dateEvidence": "SUNDAY 29.11",
-        "year": 2026,
-        "inferredYear": true,
-        "manuallyVerified": true,
-        "notes": "Data letta manualmente sul flyer e confermata dall’utente; domenica 29 novembre 2026. Orario non indicato."
-      }]
+      "provenance": [
+        {
+          "method": "manual-public-flyer",
+          "url": "https://www.instagram.com/p/DfISumxtSKI/",
+          "author": "ganischgeralm_voliera",
+          "ownerId": "68123628214",
+          "publishedAt": "2026-10-30T19:19:00.000Z",
+          "checkedAt": "2026-10-31",
+          "dateEvidence": "SUNDAY 29.11",
+          "year": 2026,
+          "inferredYear": true,
+          "manuallyVerified": true,
+          "notes": "Data letta manualmente sul flyer e confermata dall’utente; domenica 29 novembre 2026. Orario non indicato."
+        }
+      ]
     },
     {
       "id": "hexenkessel-klausberg-winter-opening-2026",
@@ -2289,5 +2264,7 @@
         "en": "The Ski Carousel Vintage Party"
       }
     }
-  ]
+  ],
+  "lastWebCheckAt": "2026-11-02T07:42:51.380Z",
+  "lastModified": "2026-11-02"
 }
