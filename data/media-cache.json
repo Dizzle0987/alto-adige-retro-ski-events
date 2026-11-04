@@ -1,6 +1,23 @@
 {
   "version": 1,
   "entries": {
+    "29703a0513a20076705c295916f314597e943cc7b69103c63a5fa302426b5652": {
+      "checkedAt": "2026-11-04T14:39:00.044Z",
+      "assessment": {
+        "title": "HALLOWEEN PARTY LAST",
+        "status": "review",
+        "reason": "missing-date",
+        "venue": "K1",
+        "location": "K1 · Riscone / Reischach, Brunico / Bruneck",
+        "evidence": {
+          "url": "https://curator-assets.b-cdn.net/1600be38-4e01-4c92-8ccf-c12bdc55aa60/395951481.jpg?width=1024",
+          "page": "https://k-1.bz/en/",
+          "sha256": "c4fd20daf6190fab8d3782fb3b8f8973d22cfb6bfebabccbc783bfd8c5960769",
+          "method": "image-ocr"
+        },
+        "excerpt": "N\n\nLA\n\nN)\n\nÈ\n\nEX\n\nST\n\nShag >\n\nFRIENDSSGG\n\n1,\n\nFOR THIS ABSOLUTE CRAZY\n\nHALLOWEEN PARTY LAST\n\n/ Brenn XOXO\n"
+      }
+    },
     "e86ffb30ceabd59f46740562fba32ff8f149cca03be9aba8ecc736190ecd9fda": {
       "checkedAt": "2026-10-31T21:08:44.187Z",
       "assessment": {
@@ -156,6 +173,11 @@
     }
   },
   "documents": {
+    "c4fd20daf6190fab8d3782fb3b8f8973d22cfb6bfebabccbc783bfd8c5960769": {
+      "text": "N\n\nLA\n\nN)\n\nÈ\n\nEX\n\nST\n\nShag >\n\nFRIENDSSGG\n\n1,\n\nFOR THIS ABSOLUTE CRAZY\n\nHALLOWEEN PARTY LAST\n\n/ Brenn XOXO\n",
+      "method": "image-ocr",
+      "checkedAt": "2026-11-04T14:39:00.044Z"
+    },
     "0b08d3494c2cef1aa21996ab1eb0b2f38077d6d2a78a31d9bac2fc947e49c168": {
       "text": "ri.\n\nann\n\nIIILizi,\n\n(SESSI\n\ntà\n\n~ >\n\nsa\n\nN\n\nes\n\nDh\n\nLf\n\nAI\n\nAr\n\n\\\n\nWS\n\nime\n\nè\n\na\n\nte\n\npi È\n\nEr |\n",
       "method": "image-ocr",

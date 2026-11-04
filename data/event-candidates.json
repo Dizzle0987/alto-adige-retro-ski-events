@@ -1,11 +1,11 @@
 {
-  "lastChecked": "2026-11-02",
+  "lastChecked": "2026-11-04",
   "summary": {
     "webSources": 30,
     "instagramSources": 16,
-    "instagramStatus": "disabled-web-mode",
-    "candidates": 27,
-    "published": 0,
+    "instagramStatus": "checked",
+    "candidates": 58,
+    "published": 26,
     "updated": 0,
     "pruned": 0
   },
@@ -16,7 +16,7 @@
       "kind": "web",
       "url": "https://www.suedtirol.info/it/it/esperienze-eventi/plp-eventi/o/sagre",
       "status": "checked",
-      "found": 0
+      "found": 1
     },
     {
       "id": "south-tyrol-winter-events",
@@ -188,11 +188,11 @@
       "kind": "web",
       "url": "https://clubmoritzino.it/en/events-in-alta-badia/",
       "status": "checked",
-      "found": 0,
+      "found": 25,
       "coverage": "readable-events",
       "extraction": {
         "structured": 0,
-        "html": 56,
+        "html": 81,
         "review": 0
       },
       "needsReview": [],
@@ -224,15 +224,35 @@
       "coverage": "readable-events",
       "extraction": {
         "structured": 0,
-        "html": 2,
-        "review": 0
+        "html": 1,
+        "review": 1
       },
-      "needsReview": [],
+      "needsReview": [
+        {
+          "title": "HALLOWEEN PARTY LAST",
+          "status": "review",
+          "reason": "missing-date",
+          "venue": "K1",
+          "location": "K1 · Riscone / Reischach, Brunico / Bruneck",
+          "evidence": {
+            "url": "https://curator-assets.b-cdn.net/1600be38-4e01-4c92-8ccf-c12bdc55aa60/395951481.jpg?width=1024",
+            "page": "https://k-1.bz/en/",
+            "sha256": "c4fd20daf6190fab8d3782fb3b8f8973d22cfb6bfebabccbc783bfd8c5960769",
+            "method": "image-ocr"
+          },
+          "excerpt": "N\n\nLA\n\nN)\n\nÈ\n\nEX\n\nST\n\nShag >\n\nFRIENDSSGG\n\n1,\n\nFOR THIS ABSOLUTE CRAZY\n\nHALLOWEEN PARTY LAST\n\n/ Brenn XOXO\n"
+        }
+      ],
       "media": [
         {
           "kind": "curator",
           "status": "checked",
           "received": 6
+        },
+        {
+          "kind": "image",
+          "status": "read-for-review",
+          "method": "image-ocr"
         }
       ],
       "facebook": {
@@ -681,115 +701,647 @@
       "name": "La Stua",
       "kind": "instagram",
       "url": "https://www.instagram.com/barlastua/",
-      "status": "disabled-web-mode"
+      "status": "no-author-data",
+      "found": 0,
+      "received": 0
     },
     {
       "id": "giggeralm-instagram",
       "name": "Giggeralm",
       "kind": "instagram",
       "url": "https://www.instagram.com/giggeralm_official/",
-      "status": "disabled-web-mode"
+      "status": "checked",
+      "found": 1,
+      "received": 1
     },
     {
       "id": "corones-instagram",
       "name": "Corones Hütte",
       "kind": "instagram",
       "url": "https://www.instagram.com/corones_huette/",
-      "status": "disabled-web-mode"
+      "status": "checked",
+      "found": 2,
+      "received": 6
     },
     {
       "id": "pulverfass-instagram",
       "name": "Pulverfass",
       "kind": "instagram",
       "url": "https://www.instagram.com/pulverfass_apresski/",
-      "status": "disabled-web-mode"
+      "status": "no-author-data",
+      "found": 0,
+      "received": 0
     },
     {
       "id": "moritzino-instagram",
       "name": "Club Moritzino",
       "kind": "instagram",
       "url": "https://www.instagram.com/clubmoritzino/",
-      "status": "disabled-web-mode"
+      "status": "checked",
+      "found": 1,
+      "received": 6
     },
     {
       "id": "gassl-instagram",
       "name": "Gassl Olang",
       "kind": "instagram",
       "url": "https://www.instagram.com/gassl.olang/",
-      "status": "disabled-web-mode"
+      "status": "checked",
+      "found": 1,
+      "received": 1
     },
     {
       "id": "k1-instagram",
       "name": "K1 Kronplatz",
       "kind": "instagram",
       "url": "https://www.instagram.com/k1.kronplatz/",
-      "status": "disabled-web-mode"
+      "status": "checked",
+      "found": 6,
+      "received": 6
     },
     {
       "id": "hexenkessel-instagram",
       "name": "Hexenkessel Klausberg",
       "kind": "instagram",
       "url": "https://www.instagram.com/hexenkessel_klausberg/",
-      "status": "disabled-web-mode"
+      "status": "checked",
+      "found": 3,
+      "received": 3
     },
     {
       "id": "luislkeller-instagram",
       "name": "Luislkeller",
       "kind": "instagram",
       "url": "https://www.instagram.com/luislkeller/",
-      "status": "disabled-web-mode"
+      "status": "no-author-data",
+      "found": 0,
+      "received": 0
     },
     {
       "id": "winklparade-instagram",
       "name": "Winklparade",
       "kind": "instagram",
       "url": "https://www.instagram.com/winklparade/",
-      "status": "disabled-web-mode"
+      "status": "no-author-data",
+      "found": 0,
+      "received": 0
     },
     {
       "id": "ganischger-instagram",
       "name": "Ganischgeralm / Voliera",
       "kind": "instagram",
       "url": "https://www.instagram.com/ganischgeralm_voliera/",
-      "status": "disabled-web-mode"
+      "status": "checked",
+      "found": 2,
+      "received": 5
     },
     {
       "id": "skiworld-ahrntal-instagram",
       "name": "Skiworld Ahrntal",
       "kind": "instagram",
       "url": "https://www.instagram.com/skiworldahrntal_official/",
-      "status": "disabled-web-mode"
+      "status": "checked",
+      "found": 1,
+      "received": 5
     },
     {
       "id": "kronplatz-instagram",
       "name": "Kronplatz",
       "kind": "instagram",
       "url": "https://www.instagram.com/kronplatz_group/",
-      "status": "disabled-web-mode"
+      "status": "checked",
+      "found": 2,
+      "received": 5
     },
     {
       "id": "alta-badia-instagram",
       "name": "Alta Badia",
       "kind": "instagram",
       "url": "https://www.instagram.com/alta_badia_official/",
-      "status": "disabled-web-mode"
+      "status": "checked",
+      "found": 1,
+      "received": 6
     },
     {
       "id": "val-gardena-instagram",
       "name": "Val Gardena",
       "kind": "instagram",
       "url": "https://www.instagram.com/dolomitesvalgardena/",
-      "status": "disabled-web-mode"
+      "status": "checked",
+      "found": 2,
+      "received": 6
     },
     {
       "id": "three-zinnen-instagram",
       "name": "3 Zinnen Dolomites",
       "kind": "instagram",
       "url": "https://www.instagram.com/3zinnendolomites/",
-      "status": "disabled-web-mode"
+      "status": "checked",
+      "found": 0,
+      "received": 4
     }
   ],
   "candidates": [
+    {
+      "title": "Après Ski @ Club Moritzino",
+      "start": "2026-01-11",
+      "end": "2026-01-11",
+      "url": "https://clubmoritzino.it/en/event/apres-ski-club-moritzino-11/",
+      "summaries": {
+        "it": "Appuntamento musicale e après-ski al Club Moritzino, in quota al Piz La Ila.",
+        "de": "Musik und Après-Ski im Club Moritzino am Piz La Ila.",
+        "en": "Music and après-ski at Club Moritzino on Piz La Ila."
+      },
+      "venue": "Club Moritzino",
+      "location": "Club Moritzino · Piz La Ila, Alta Badia",
+      "extraction": "moritzino-calendar",
+      "id": "club-moritzino-events-2026-01-11-apres-ski-club-moritzino",
+      "kind": "web",
+      "sourceId": "club-moritzino-events",
+      "sourceName": "Club Moritzino Events",
+      "eventId": "auto-2026-01-11-apres-ski-club-moritzino",
+      "published": true
+    },
+    {
+      "title": "Après Ski @ Club Moritzino",
+      "start": "2026-01-12",
+      "end": "2026-01-12",
+      "url": "https://clubmoritzino.it/en/event/apres-ski-club-moritzino-11/",
+      "summaries": {
+        "it": "Appuntamento musicale e après-ski al Club Moritzino, in quota al Piz La Ila.",
+        "de": "Musik und Après-Ski im Club Moritzino am Piz La Ila.",
+        "en": "Music and après-ski at Club Moritzino on Piz La Ila."
+      },
+      "venue": "Club Moritzino",
+      "location": "Club Moritzino · Piz La Ila, Alta Badia",
+      "extraction": "moritzino-calendar",
+      "id": "club-moritzino-events-2026-01-12-apres-ski-club-moritzino",
+      "kind": "web",
+      "sourceId": "club-moritzino-events",
+      "sourceName": "Club Moritzino Events",
+      "eventId": "auto-2026-01-12-apres-ski-club-moritzino",
+      "published": true
+    },
+    {
+      "title": "Après Ski @ Club Moritzino",
+      "start": "2026-01-13",
+      "end": "2026-01-13",
+      "url": "https://clubmoritzino.it/en/event/apres-ski-club-moritzino-11/",
+      "summaries": {
+        "it": "Appuntamento musicale e après-ski al Club Moritzino, in quota al Piz La Ila.",
+        "de": "Musik und Après-Ski im Club Moritzino am Piz La Ila.",
+        "en": "Music and après-ski at Club Moritzino on Piz La Ila."
+      },
+      "venue": "Club Moritzino",
+      "location": "Club Moritzino · Piz La Ila, Alta Badia",
+      "extraction": "moritzino-calendar",
+      "id": "club-moritzino-events-2026-01-13-apres-ski-club-moritzino",
+      "kind": "web",
+      "sourceId": "club-moritzino-events",
+      "sourceName": "Club Moritzino Events",
+      "eventId": "auto-2026-01-13-apres-ski-club-moritzino",
+      "published": true
+    },
+    {
+      "title": "Après Ski @ Club Moritzino",
+      "start": "2026-01-14",
+      "end": "2026-01-14",
+      "url": "https://clubmoritzino.it/en/event/apres-ski-club-moritzino-11/",
+      "summaries": {
+        "it": "Appuntamento musicale e après-ski al Club Moritzino, in quota al Piz La Ila.",
+        "de": "Musik und Après-Ski im Club Moritzino am Piz La Ila.",
+        "en": "Music and après-ski at Club Moritzino on Piz La Ila."
+      },
+      "venue": "Club Moritzino",
+      "location": "Club Moritzino · Piz La Ila, Alta Badia",
+      "extraction": "moritzino-calendar",
+      "id": "club-moritzino-events-2026-01-14-apres-ski-club-moritzino",
+      "kind": "web",
+      "sourceId": "club-moritzino-events",
+      "sourceName": "Club Moritzino Events",
+      "eventId": "auto-2026-01-14-apres-ski-club-moritzino",
+      "published": true
+    },
+    {
+      "title": "Après Ski @ Club Moritzino",
+      "start": "2026-01-15",
+      "end": "2026-01-15",
+      "url": "https://clubmoritzino.it/en/event/apres-ski-club-moritzino-11/",
+      "summaries": {
+        "it": "Appuntamento musicale e après-ski al Club Moritzino, in quota al Piz La Ila.",
+        "de": "Musik und Après-Ski im Club Moritzino am Piz La Ila.",
+        "en": "Music and après-ski at Club Moritzino on Piz La Ila."
+      },
+      "venue": "Club Moritzino",
+      "location": "Club Moritzino · Piz La Ila, Alta Badia",
+      "extraction": "moritzino-calendar",
+      "id": "club-moritzino-events-2026-01-15-apres-ski-club-moritzino",
+      "kind": "web",
+      "sourceId": "club-moritzino-events",
+      "sourceName": "Club Moritzino Events",
+      "eventId": "auto-2026-01-15-apres-ski-club-moritzino",
+      "published": true
+    },
+    {
+      "title": "Après Ski @ Club Moritzino",
+      "start": "2026-01-16",
+      "end": "2026-01-16",
+      "url": "https://clubmoritzino.it/en/event/apres-ski-club-moritzino-11/",
+      "summaries": {
+        "it": "Appuntamento musicale e après-ski al Club Moritzino, in quota al Piz La Ila.",
+        "de": "Musik und Après-Ski im Club Moritzino am Piz La Ila.",
+        "en": "Music and après-ski at Club Moritzino on Piz La Ila."
+      },
+      "venue": "Club Moritzino",
+      "location": "Club Moritzino · Piz La Ila, Alta Badia",
+      "extraction": "moritzino-calendar",
+      "id": "club-moritzino-events-2026-01-16-apres-ski-club-moritzino",
+      "kind": "web",
+      "sourceId": "club-moritzino-events",
+      "sourceName": "Club Moritzino Events",
+      "eventId": "auto-2026-01-16-apres-ski-club-moritzino",
+      "published": true
+    },
+    {
+      "title": "Après Ski @ Club Moritzino",
+      "start": "2026-01-17",
+      "end": "2026-01-17",
+      "url": "https://clubmoritzino.it/en/event/apres-ski-club-moritzino-11/",
+      "summaries": {
+        "it": "Appuntamento musicale e après-ski al Club Moritzino, in quota al Piz La Ila.",
+        "de": "Musik und Après-Ski im Club Moritzino am Piz La Ila.",
+        "en": "Music and après-ski at Club Moritzino on Piz La Ila."
+      },
+      "venue": "Club Moritzino",
+      "location": "Club Moritzino · Piz La Ila, Alta Badia",
+      "extraction": "moritzino-calendar",
+      "id": "club-moritzino-events-2026-01-17-apres-ski-club-moritzino",
+      "kind": "web",
+      "sourceId": "club-moritzino-events",
+      "sourceName": "Club Moritzino Events",
+      "eventId": "auto-2026-01-17-apres-ski-club-moritzino",
+      "published": true
+    },
+    {
+      "title": "Après Ski @ Club Moritzino",
+      "start": "2026-01-18",
+      "end": "2026-01-18",
+      "url": "https://clubmoritzino.it/en/event/apres-ski-club-moritzino-11/",
+      "summaries": {
+        "it": "Appuntamento musicale e après-ski al Club Moritzino, in quota al Piz La Ila.",
+        "de": "Musik und Après-Ski im Club Moritzino am Piz La Ila.",
+        "en": "Music and après-ski at Club Moritzino on Piz La Ila."
+      },
+      "venue": "Club Moritzino",
+      "location": "Club Moritzino · Piz La Ila, Alta Badia",
+      "extraction": "moritzino-calendar",
+      "id": "club-moritzino-events-2026-01-18-apres-ski-club-moritzino",
+      "kind": "web",
+      "sourceId": "club-moritzino-events",
+      "sourceName": "Club Moritzino Events",
+      "eventId": "auto-2026-01-18-apres-ski-club-moritzino",
+      "published": true
+    },
+    {
+      "title": "Après Ski @ Club Moritzino",
+      "start": "2026-01-19",
+      "end": "2026-01-19",
+      "url": "https://clubmoritzino.it/en/event/apres-ski-club-moritzino-11/",
+      "summaries": {
+        "it": "Appuntamento musicale e après-ski al Club Moritzino, in quota al Piz La Ila.",
+        "de": "Musik und Après-Ski im Club Moritzino am Piz La Ila.",
+        "en": "Music and après-ski at Club Moritzino on Piz La Ila."
+      },
+      "venue": "Club Moritzino",
+      "location": "Club Moritzino · Piz La Ila, Alta Badia",
+      "extraction": "moritzino-calendar",
+      "id": "club-moritzino-events-2026-01-19-apres-ski-club-moritzino",
+      "kind": "web",
+      "sourceId": "club-moritzino-events",
+      "sourceName": "Club Moritzino Events",
+      "eventId": "auto-2026-01-19-apres-ski-club-moritzino",
+      "published": true
+    },
+    {
+      "title": "Après Ski @ Club Moritzino",
+      "start": "2026-01-20",
+      "end": "2026-01-20",
+      "url": "https://clubmoritzino.it/en/event/apres-ski-club-moritzino-11/",
+      "summaries": {
+        "it": "Appuntamento musicale e après-ski al Club Moritzino, in quota al Piz La Ila.",
+        "de": "Musik und Après-Ski im Club Moritzino am Piz La Ila.",
+        "en": "Music and après-ski at Club Moritzino on Piz La Ila."
+      },
+      "venue": "Club Moritzino",
+      "location": "Club Moritzino · Piz La Ila, Alta Badia",
+      "extraction": "moritzino-calendar",
+      "id": "club-moritzino-events-2026-01-20-apres-ski-club-moritzino",
+      "kind": "web",
+      "sourceId": "club-moritzino-events",
+      "sourceName": "Club Moritzino Events",
+      "eventId": "auto-2026-01-20-apres-ski-club-moritzino",
+      "published": true
+    },
+    {
+      "title": "Après Ski @ Club Moritzino",
+      "start": "2026-01-21",
+      "end": "2026-01-21",
+      "url": "https://clubmoritzino.it/en/event/apres-ski-club-moritzino-11/",
+      "summaries": {
+        "it": "Appuntamento musicale e après-ski al Club Moritzino, in quota al Piz La Ila.",
+        "de": "Musik und Après-Ski im Club Moritzino am Piz La Ila.",
+        "en": "Music and après-ski at Club Moritzino on Piz La Ila."
+      },
+      "venue": "Club Moritzino",
+      "location": "Club Moritzino · Piz La Ila, Alta Badia",
+      "extraction": "moritzino-calendar",
+      "id": "club-moritzino-events-2026-01-21-apres-ski-club-moritzino",
+      "kind": "web",
+      "sourceId": "club-moritzino-events",
+      "sourceName": "Club Moritzino Events",
+      "eventId": "auto-2026-01-21-apres-ski-club-moritzino",
+      "published": true
+    },
+    {
+      "title": "Après Ski @ Club Moritzino",
+      "start": "2026-01-22",
+      "end": "2026-01-22",
+      "url": "https://clubmoritzino.it/en/event/apres-ski-club-moritzino-11/",
+      "summaries": {
+        "it": "Appuntamento musicale e après-ski al Club Moritzino, in quota al Piz La Ila.",
+        "de": "Musik und Après-Ski im Club Moritzino am Piz La Ila.",
+        "en": "Music and après-ski at Club Moritzino on Piz La Ila."
+      },
+      "venue": "Club Moritzino",
+      "location": "Club Moritzino · Piz La Ila, Alta Badia",
+      "extraction": "moritzino-calendar",
+      "id": "club-moritzino-events-2026-01-22-apres-ski-club-moritzino",
+      "kind": "web",
+      "sourceId": "club-moritzino-events",
+      "sourceName": "Club Moritzino Events",
+      "eventId": "auto-2026-01-22-apres-ski-club-moritzino",
+      "published": true
+    },
+    {
+      "title": "Après Ski @ Club Moritzino",
+      "start": "2026-01-23",
+      "end": "2026-01-23",
+      "url": "https://clubmoritzino.it/en/event/apres-ski-club-moritzino-11/",
+      "summaries": {
+        "it": "Appuntamento musicale e après-ski al Club Moritzino, in quota al Piz La Ila.",
+        "de": "Musik und Après-Ski im Club Moritzino am Piz La Ila.",
+        "en": "Music and après-ski at Club Moritzino on Piz La Ila."
+      },
+      "venue": "Club Moritzino",
+      "location": "Club Moritzino · Piz La Ila, Alta Badia",
+      "extraction": "moritzino-calendar",
+      "id": "club-moritzino-events-2026-01-23-apres-ski-club-moritzino",
+      "kind": "web",
+      "sourceId": "club-moritzino-events",
+      "sourceName": "Club Moritzino Events",
+      "eventId": "auto-2026-01-23-apres-ski-club-moritzino",
+      "published": true
+    },
+    {
+      "title": "Après Ski @ Club Moritzino",
+      "start": "2026-01-24",
+      "end": "2026-01-24",
+      "url": "https://clubmoritzino.it/en/event/apres-ski-club-moritzino-11/",
+      "summaries": {
+        "it": "Appuntamento musicale e après-ski al Club Moritzino, in quota al Piz La Ila.",
+        "de": "Musik und Après-Ski im Club Moritzino am Piz La Ila.",
+        "en": "Music and après-ski at Club Moritzino on Piz La Ila."
+      },
+      "venue": "Club Moritzino",
+      "location": "Club Moritzino · Piz La Ila, Alta Badia",
+      "extraction": "moritzino-calendar",
+      "id": "club-moritzino-events-2026-01-24-apres-ski-club-moritzino",
+      "kind": "web",
+      "sourceId": "club-moritzino-events",
+      "sourceName": "Club Moritzino Events",
+      "eventId": "auto-2026-01-24-apres-ski-club-moritzino",
+      "published": true
+    },
+    {
+      "title": "Après Ski @ Club Moritzino",
+      "start": "2026-01-25",
+      "end": "2026-01-25",
+      "url": "https://clubmoritzino.it/en/event/apres-ski-club-moritzino-11/",
+      "summaries": {
+        "it": "Appuntamento musicale e après-ski al Club Moritzino, in quota al Piz La Ila.",
+        "de": "Musik und Après-Ski im Club Moritzino am Piz La Ila.",
+        "en": "Music and après-ski at Club Moritzino on Piz La Ila."
+      },
+      "venue": "Club Moritzino",
+      "location": "Club Moritzino · Piz La Ila, Alta Badia",
+      "extraction": "moritzino-calendar",
+      "id": "club-moritzino-events-2026-01-25-apres-ski-club-moritzino",
+      "kind": "web",
+      "sourceId": "club-moritzino-events",
+      "sourceName": "Club Moritzino Events",
+      "eventId": "auto-2026-01-25-apres-ski-club-moritzino",
+      "published": true
+    },
+    {
+      "title": "Après Ski @ Club Moritzino",
+      "start": "2026-01-26",
+      "end": "2026-01-26",
+      "url": "https://clubmoritzino.it/en/event/apres-ski-club-moritzino-11/",
+      "summaries": {
+        "it": "Appuntamento musicale e après-ski al Club Moritzino, in quota al Piz La Ila.",
+        "de": "Musik und Après-Ski im Club Moritzino am Piz La Ila.",
+        "en": "Music and après-ski at Club Moritzino on Piz La Ila."
+      },
+      "venue": "Club Moritzino",
+      "location": "Club Moritzino · Piz La Ila, Alta Badia",
+      "extraction": "moritzino-calendar",
+      "id": "club-moritzino-events-2026-01-26-apres-ski-club-moritzino",
+      "kind": "web",
+      "sourceId": "club-moritzino-events",
+      "sourceName": "Club Moritzino Events",
+      "eventId": "auto-2026-01-26-apres-ski-club-moritzino",
+      "published": true
+    },
+    {
+      "title": "Après Ski @ Club Moritzino",
+      "start": "2026-01-27",
+      "end": "2026-01-27",
+      "url": "https://clubmoritzino.it/en/event/apres-ski-club-moritzino-11/",
+      "summaries": {
+        "it": "Appuntamento musicale e après-ski al Club Moritzino, in quota al Piz La Ila.",
+        "de": "Musik und Après-Ski im Club Moritzino am Piz La Ila.",
+        "en": "Music and après-ski at Club Moritzino on Piz La Ila."
+      },
+      "venue": "Club Moritzino",
+      "location": "Club Moritzino · Piz La Ila, Alta Badia",
+      "extraction": "moritzino-calendar",
+      "id": "club-moritzino-events-2026-01-27-apres-ski-club-moritzino",
+      "kind": "web",
+      "sourceId": "club-moritzino-events",
+      "sourceName": "Club Moritzino Events",
+      "eventId": "auto-2026-01-27-apres-ski-club-moritzino",
+      "published": true
+    },
+    {
+      "title": "Après Ski @ Club Moritzino",
+      "start": "2026-01-28",
+      "end": "2026-01-28",
+      "url": "https://clubmoritzino.it/en/event/apres-ski-club-moritzino-11/",
+      "summaries": {
+        "it": "Appuntamento musicale e après-ski al Club Moritzino, in quota al Piz La Ila.",
+        "de": "Musik und Après-Ski im Club Moritzino am Piz La Ila.",
+        "en": "Music and après-ski at Club Moritzino on Piz La Ila."
+      },
+      "venue": "Club Moritzino",
+      "location": "Club Moritzino · Piz La Ila, Alta Badia",
+      "extraction": "moritzino-calendar",
+      "id": "club-moritzino-events-2026-01-28-apres-ski-club-moritzino",
+      "kind": "web",
+      "sourceId": "club-moritzino-events",
+      "sourceName": "Club Moritzino Events",
+      "eventId": "auto-2026-01-28-apres-ski-club-moritzino",
+      "published": true
+    },
+    {
+      "title": "Après Ski @ Club Moritzino",
+      "start": "2026-01-29",
+      "end": "2026-01-29",
+      "url": "https://clubmoritzino.it/en/event/apres-ski-club-moritzino-11/",
+      "summaries": {
+        "it": "Appuntamento musicale e après-ski al Club Moritzino, in quota al Piz La Ila.",
+        "de": "Musik und Après-Ski im Club Moritzino am Piz La Ila.",
+        "en": "Music and après-ski at Club Moritzino on Piz La Ila."
+      },
+      "venue": "Club Moritzino",
+      "location": "Club Moritzino · Piz La Ila, Alta Badia",
+      "extraction": "moritzino-calendar",
+      "id": "club-moritzino-events-2026-01-29-apres-ski-club-moritzino",
+      "kind": "web",
+      "sourceId": "club-moritzino-events",
+      "sourceName": "Club Moritzino Events",
+      "eventId": "auto-2026-01-29-apres-ski-club-moritzino",
+      "published": true
+    },
+    {
+      "title": "Après Ski @ Club Moritzino",
+      "start": "2026-01-30",
+      "end": "2026-01-30",
+      "url": "https://clubmoritzino.it/en/event/apres-ski-club-moritzino-11/",
+      "summaries": {
+        "it": "Appuntamento musicale e après-ski al Club Moritzino, in quota al Piz La Ila.",
+        "de": "Musik und Après-Ski im Club Moritzino am Piz La Ila.",
+        "en": "Music and après-ski at Club Moritzino on Piz La Ila."
+      },
+      "venue": "Club Moritzino",
+      "location": "Club Moritzino · Piz La Ila, Alta Badia",
+      "extraction": "moritzino-calendar",
+      "id": "club-moritzino-events-2026-01-30-apres-ski-club-moritzino",
+      "kind": "web",
+      "sourceId": "club-moritzino-events",
+      "sourceName": "Club Moritzino Events",
+      "eventId": "auto-2026-01-30-apres-ski-club-moritzino",
+      "published": true
+    },
+    {
+      "title": "Après Ski @ Club Moritzino",
+      "start": "2026-02-20",
+      "end": "2026-02-20",
+      "url": "https://clubmoritzino.it/en/event/apres-ski-club-moritzino-31/",
+      "summaries": {
+        "it": "Appuntamento musicale e après-ski al Club Moritzino, in quota al Piz La Ila.",
+        "de": "Musik und Après-Ski im Club Moritzino am Piz La Ila.",
+        "en": "Music and après-ski at Club Moritzino on Piz La Ila."
+      },
+      "venue": "Club Moritzino",
+      "location": "Club Moritzino · Piz La Ila, Alta Badia",
+      "extraction": "moritzino-calendar",
+      "id": "club-moritzino-events-2026-02-20-apres-ski-club-moritzino",
+      "kind": "web",
+      "sourceId": "club-moritzino-events",
+      "sourceName": "Club Moritzino Events",
+      "eventId": "auto-2026-02-20-apres-ski-club-moritzino",
+      "published": true
+    },
+    {
+      "title": "Après Ski @ Club Moritzino",
+      "start": "2026-02-21",
+      "end": "2026-02-21",
+      "url": "https://clubmoritzino.it/en/event/apres-ski-club-moritzino-31/",
+      "summaries": {
+        "it": "Appuntamento musicale e après-ski al Club Moritzino, in quota al Piz La Ila.",
+        "de": "Musik und Après-Ski im Club Moritzino am Piz La Ila.",
+        "en": "Music and après-ski at Club Moritzino on Piz La Ila."
+      },
+      "venue": "Club Moritzino",
+      "location": "Club Moritzino · Piz La Ila, Alta Badia",
+      "extraction": "moritzino-calendar",
+      "id": "club-moritzino-events-2026-02-21-apres-ski-club-moritzino",
+      "kind": "web",
+      "sourceId": "club-moritzino-events",
+      "sourceName": "Club Moritzino Events",
+      "eventId": "auto-2026-02-21-apres-ski-club-moritzino",
+      "published": true
+    },
+    {
+      "title": "Après Ski @ Club Moritzino",
+      "start": "2026-02-22",
+      "end": "2026-02-22",
+      "url": "https://clubmoritzino.it/en/event/apres-ski-club-moritzino-31/",
+      "summaries": {
+        "it": "Appuntamento musicale e après-ski al Club Moritzino, in quota al Piz La Ila.",
+        "de": "Musik und Après-Ski im Club Moritzino am Piz La Ila.",
+        "en": "Music and après-ski at Club Moritzino on Piz La Ila."
+      },
+      "venue": "Club Moritzino",
+      "location": "Club Moritzino · Piz La Ila, Alta Badia",
+      "extraction": "moritzino-calendar",
+      "id": "club-moritzino-events-2026-02-22-apres-ski-club-moritzino",
+      "kind": "web",
+      "sourceId": "club-moritzino-events",
+      "sourceName": "Club Moritzino Events",
+      "eventId": "auto-2026-02-22-apres-ski-club-moritzino",
+      "published": true
+    },
+    {
+      "title": "Après Ski @ Club Moritzino",
+      "start": "2026-02-23",
+      "end": "2026-02-23",
+      "url": "https://clubmoritzino.it/en/event/apres-ski-club-moritzino-31/",
+      "summaries": {
+        "it": "Appuntamento musicale e après-ski al Club Moritzino, in quota al Piz La Ila.",
+        "de": "Musik und Après-Ski im Club Moritzino am Piz La Ila.",
+        "en": "Music and après-ski at Club Moritzino on Piz La Ila."
+      },
+      "venue": "Club Moritzino",
+      "location": "Club Moritzino · Piz La Ila, Alta Badia",
+      "extraction": "moritzino-calendar",
+      "id": "club-moritzino-events-2026-02-23-apres-ski-club-moritzino",
+      "kind": "web",
+      "sourceId": "club-moritzino-events",
+      "sourceName": "Club Moritzino Events",
+      "eventId": "auto-2026-02-23-apres-ski-club-moritzino",
+      "published": true
+    },
+    {
+      "title": "Après Ski @ Club Moritzino",
+      "start": "2026-02-24",
+      "end": "2026-02-24",
+      "url": "https://clubmoritzino.it/en/event/apres-ski-club-moritzino-31/",
+      "summaries": {
+        "it": "Appuntamento musicale e après-ski al Club Moritzino, in quota al Piz La Ila.",
+        "de": "Musik und Après-Ski im Club Moritzino am Piz La Ila.",
+        "en": "Music and après-ski at Club Moritzino on Piz La Ila."
+      },
+      "venue": "Club Moritzino",
+      "location": "Club Moritzino · Piz La Ila, Alta Badia",
+      "extraction": "moritzino-calendar",
+      "id": "club-moritzino-events-2026-02-24-apres-ski-club-moritzino",
+      "kind": "web",
+      "sourceId": "club-moritzino-events",
+      "sourceName": "Club Moritzino Events",
+      "eventId": "auto-2026-02-24-apres-ski-club-moritzino",
+      "published": true
+    },
     {
       "id": "hexenkessel-instagram-DcJQzYhjEpR",
       "title": "Annuncio da verificare",
@@ -1359,6 +1911,32 @@
       "published": false
     },
     {
+      "sourceId": "k1-instagram",
+      "sourceName": "K1 Kronplatz",
+      "evidence": {
+        "url": "https://www.instagram.com/reel/DfFFZnBMGoK/",
+        "author": "k1.kronplatz",
+        "ownerId": "5849734189",
+        "publishedAt": "2026-10-29T13:12:47.000000Z",
+        "caption": "Wie viele Spinnweben sind zu viele? Asking for a friend... 🕸️\n-2 days until K1 Halloween Open Air!\n\nDie Deko ist schon ready und ziiemlich spooky… jetzt fehlt nur noch ihr und die richtige Mukke 👻\n\n🗓 𝐒𝐚𝐦𝐬𝐭𝐚𝐠, 𝟑𝟏.𝟏𝟎. | ab 18.00 Uhr ☀️ Outdoor bis 00.00 Uhr | Indoor bis 03.00 Uhr\n🎧 DJ Juli, DJ Double Dee, DJ Ivan Fillini & DJ Hufe\n🔞18+ 👀\n\n#k1 #k1_reischach #halloween #behindthescenes #bts"
+      },
+      "url": "https://www.instagram.com/reel/DfFFZnBMGoK/",
+      "kind": "instagram",
+      "status": "review",
+      "reason": "unclear-event-title",
+      "date": {
+        "status": "confirmed",
+        "start": "2026-10-31",
+        "end": "2026-10-31",
+        "evidence": "31.10",
+        "inferredYear": true
+      },
+      "id": "k1-instagram-widget-395769727",
+      "publishedAt": "2026-10-29T13:12:47.000000Z",
+      "excerpt": "Wie viele Spinnweben sind zu viele? Asking for a friend... 🕸️\n-2 days until K1 Halloween Open Air!\n\nDie Deko ist schon ready und ziiemlich spooky… jetzt fehlt nur noch ihr und die richtige Mukke 👻\n\n🗓 𝐒𝐚𝐦𝐬𝐭𝐚𝐠, 𝟑𝟏.𝟏𝟎. | ab 18.00 Uhr ☀️ Outdoor bis 00.00 Uhr | Indoor bis 03.00 Uhr\n🎧 DJ Juli, DJ Double Dee, DJ Ivan Fillini & DJ Hufe\n🔞18+ 👀\n\n#k1 #k1_reischach #halloween #behindthescenes #bts",
+      "published": false
+    },
+    {
       "id": "k1-instagram-DfFFZnBMGoK",
       "title": "Annuncio da verificare",
       "publishedAt": "2026-10-29T13:12:47.000Z",
@@ -1524,7 +2102,149 @@
       "excerpt": "ℍ𝔸𝕃𝕃𝕆𝕎𝔼𝔼ℕ 𝕆ℙ𝔼ℕ 𝔸𝕀ℝ 👻🦇🔥\n\nNoch 4 Tage bis zum Big K1 Halloween Open Air 😈 Hier nochmal alle wichtigsten Infos:\n\n🗓 𝐒𝐚𝐦𝐬𝐭𝐚𝐠, 𝟑𝟏.𝟏𝟎.𝟐𝟎𝟐𝟔\n☀️ 𝐎𝐔𝐓𝐃𝐎𝐎𝐑 von 18.00 bis 00.00 Uhr\n🕘 𝐈𝐍𝐃𝐎𝐎𝐑 von 18.00 bis 03.00 Uhr\n🎧 DJ Juli, DJ Double Dee, DJ Ivan Fillini & DJ Hufe\n\n Dresscode: je gruseliger, desto besser.... Markiert eure Horror-Crew und kommt rechtzeitig, wir sehen uns auf der dark side! 🖤🧟‍♂️🧛‍♀️\n\n🔞 18+ | Free Entrance | Party In- & Outdoor 🎉\n\n#k1 #k1_reischach #halloween #halloweenparty #halloween2026",
       "publishedAt": "2026-10-27T10:03:43.000000Z",
       "id": "k1-instagram-widget-395694192",
-      "eventId": "k1-halloween-open-air-2026",
+      "published": false
+    },
+    {
+      "id": "val-gardena-instagram-DfPloSNjX4i",
+      "title": "skiseason opening: ⛷️🎿",
+      "publishedAt": "2026-11-02T15:05:20.000Z",
+      "excerpt": "Autumn morning on Sacun! ✨🍁🤎\n\nGood Morning November! 🔥\nIn just about a month, ski season will be back, but for now, we’re still soaking up the beautiful colors and magic of autumn. 🍁 The temperatures have definitely dropped, bringing a little taste of winter into the air. ❄️\n\nskiseason opening: 4. December 2026⛷️🎿\n\n#valgardena #dolomitesvalgardena #dolomites #dolomiti #gröden",
+      "sourceId": "val-gardena-instagram",
+      "sourceName": "Val Gardena",
+      "evidence": {
+        "url": "https://www.instagram.com/p/DfPloSNjX4i/",
+        "author": "dolomitesvalgardena",
+        "ownerId": "528064148",
+        "publishedAt": "2026-11-02T15:05:20.000Z",
+        "caption": "Autumn morning on Sacun! ✨🍁🤎\n\nGood Morning November! 🔥\nIn just about a month, ski season will be back, but for now, we’re still soaking up the beautiful colors and magic of autumn. 🍁 The temperatures have definitely dropped, bringing a little taste of winter into the air. ❄️\n\nskiseason opening: 4. December 2026⛷️🎿\n\n#valgardena #dolomitesvalgardena #dolomites #dolomiti #gröden"
+      },
+      "url": "https://www.instagram.com/p/DfPloSNjX4i/",
+      "kind": "instagram",
+      "status": "review",
+      "reason": "venue-not-verified",
+      "date": {
+        "status": "confirmed",
+        "start": "2026-12-04",
+        "end": "2026-12-04",
+        "evidence": "4. december 2026",
+        "inferredYear": false
+      },
+      "published": false
+    },
+    {
+      "sourceId": "k1-instagram",
+      "sourceName": "K1 Kronplatz",
+      "evidence": {
+        "url": "https://www.instagram.com/p/DfRuRGoDGtR/",
+        "author": "k1.kronplatz",
+        "ownerId": "5849734189",
+        "publishedAt": "2026-11-03T10:59:17.000000Z",
+        "caption": "Glitter glasses, icy wigs & sooo cool costumes!! 🕶️✨👻\nYou guys absolutely nailed it! Thank you to everyone who came, to our DJs and to the whole K1 crew for making this night so special. 🖤🎃\n\nNext stop: 𝐊𝟏 𝐒𝐄𝐀𝐒𝐎𝐍 𝐎𝐏𝐄𝐍𝐈𝐍𝐆 on 𝟐𝟎. & 𝟐𝟏.𝟏𝟏. 🎿❄️ Can’t wait to see you again! 😍\n\n#k1 #k1_reischach #halloweenrecap #k1halloween #thankyou"
+      },
+      "url": "https://www.instagram.com/p/DfRuRGoDGtR/",
+      "kind": "instagram",
+      "status": "review",
+      "reason": "unclear-event-title",
+      "date": {
+        "status": "confirmed",
+        "start": "2026-11-21",
+        "end": "2026-11-21",
+        "evidence": "21.11",
+        "inferredYear": true
+      },
+      "id": "k1-instagram-widget-395951481",
+      "publishedAt": "2026-11-03T10:59:17.000000Z",
+      "excerpt": "Glitter glasses, icy wigs & sooo cool costumes!! 🕶️✨👻\nYou guys absolutely nailed it! Thank you to everyone who came, to our DJs and to the whole K1 crew for making this night so special. 🖤🎃\n\nNext stop: 𝐊𝟏 𝐒𝐄𝐀𝐒𝐎𝐍 𝐎𝐏𝐄𝐍𝐈𝐍𝐆 on 𝟐𝟎. & 𝟐𝟏.𝟏𝟏. 🎿❄️ Can’t wait to see you again! 😍\n\n#k1 #k1_reischach #halloweenrecap #k1halloween #thankyou",
+      "published": false
+    },
+    {
+      "id": "k1-instagram-DfRuRGoDGtR",
+      "title": "Annuncio da verificare",
+      "publishedAt": "2026-11-03T10:59:17.000Z",
+      "excerpt": "Glitter glasses, icy wigs & sooo cool costumes!! 🕶️✨👻\nYou guys absolutely nailed it! Thank you to everyone who came, to our DJs and to the whole K1 crew for making this night so special. 🖤🎃\n\nNext stop: 𝐊𝟏 𝐒𝐄𝐀𝐒𝐎𝐍 𝐎𝐏𝐄𝐍𝐈𝐍𝐆 on 𝟐𝟎. & 𝟐𝟏.𝟏𝟏. 🎿❄️ Can’t wait to see you again! 😍\n\n#k1 #k1_reischach #halloweenrecap #k1halloween #thankyou",
+      "sourceId": "k1-instagram",
+      "sourceName": "K1 Kronplatz",
+      "evidence": {
+        "url": "https://www.instagram.com/p/DfRuRGoDGtR/",
+        "author": "k1.kronplatz",
+        "ownerId": "5849734189",
+        "publishedAt": "2026-11-03T10:59:17.000Z",
+        "caption": "Glitter glasses, icy wigs & sooo cool costumes!! 🕶️✨👻\nYou guys absolutely nailed it! Thank you to everyone who came, to our DJs and to the whole K1 crew for making this night so special. 🖤🎃\n\nNext stop: 𝐊𝟏 𝐒𝐄𝐀𝐒𝐎𝐍 𝐎𝐏𝐄𝐍𝐈𝐍𝐆 on 𝟐𝟎. & 𝟐𝟏.𝟏𝟏. 🎿❄️ Can’t wait to see you again! 😍\n\n#k1 #k1_reischach #halloweenrecap #k1halloween #thankyou",
+        "flyer": {
+          "method": "instagram-image-ocr",
+          "text": "AQ\n>)\nD\nÈ,\na\na\nhae»\nN\nPRIONDISSS\nTu,\n‘FOR THIS ABSOLUTE CRAZY\n\\\nHALLOWEEN PARTY LAST\n/ Brenn XOXO",
+          "dateText": "AQ\n>)\nD\nÈ,\na\na\nhae»\nN\nPRIONDISSS\nTu,\n‘FOR THIS ABSOLUTE CRAZY\n\\\nHALLOWEEN PARTY LAST\n/ Brenn XOXO",
+          "dateEvidence": {
+            "status": "review",
+            "reason": "missing-date"
+          },
+          "sha256": "cfeb9c669775100964d61d36c27f6862b8a2a5b68e6579c95df6fcffc7aac3e3"
+        }
+      },
+      "url": "https://www.instagram.com/p/DfRuRGoDGtR/",
+      "kind": "instagram",
+      "status": "review",
+      "reason": "flyer-missing-date",
+      "date": {
+        "status": "confirmed",
+        "start": "2026-11-21",
+        "end": "2026-11-21",
+        "evidence": "21.11",
+        "inferredYear": true
+      },
+      "media": [
+        {
+          "status": "review",
+          "reason": "flyer-missing-date"
+        },
+        {
+          "status": "review",
+          "reason": "flyer-missing-date"
+        }
+      ],
+      "published": false
+    },
+    {
+      "id": "k1-instagram-DfUd8lUszeQ",
+      "title": "Annuncio da verificare",
+      "publishedAt": "2026-11-04T12:35:09.000Z",
+      "excerpt": "𝕎𝔼’ℝ𝔼 𝔹𝔸ℂ𝕂!! ❄️🔥🪩\nThe wait is over – the new season is here and we are sooo ready! 😮‍🔥 \n\nOn 𝟐𝟎. 𝐚𝐧𝐝 𝟐𝟏.𝟏𝟏. we’re celebrating the big K1 𝐒𝐄𝐀𝐒𝐎𝐍 𝐎𝐏𝐄𝐍𝐈𝐍𝐆 and kicking off winter the way it deserves. 🎿🥳\n\n🎧 On 𝐅𝐫𝐢𝐝𝐚𝐲 (20.11.) we start indoors with DJ Juli from 7 p.m. – warm-up mode: ON! \n☀️ On 𝐒𝐚𝐭𝐮𝐫𝐝𝐚𝐲 (21.11.) things really get going: outdoor & indoor with DJ Juli, DJ Double Dee and DJ Hufe! 💥\n\nNew season – best vibes. Bring your friendssss – we’ve missed you! ❤️\n🔞 18+ | Free Entrance | Party In- & Outdoor 🎉\n\n#k1 #k1_reischach #seasonopening #opening #apresski",
+      "sourceId": "k1-instagram",
+      "sourceName": "K1 Kronplatz",
+      "evidence": {
+        "url": "https://www.instagram.com/p/DfUd8lUszeQ/",
+        "author": "k1.kronplatz",
+        "ownerId": "5849734189",
+        "publishedAt": "2026-11-04T12:35:09.000Z",
+        "caption": "𝕎𝔼’ℝ𝔼 𝔹𝔸ℂ𝕂!! ❄️🔥🪩\nThe wait is over – the new season is here and we are sooo ready! 😮‍🔥 \n\nOn 𝟐𝟎. 𝐚𝐧𝐝 𝟐𝟏.𝟏𝟏. we’re celebrating the big K1 𝐒𝐄𝐀𝐒𝐎𝐍 𝐎𝐏𝐄𝐍𝐈𝐍𝐆 and kicking off winter the way it deserves. 🎿🥳\n\n🎧 On 𝐅𝐫𝐢𝐝𝐚𝐲 (20.11.) we start indoors with DJ Juli from 7 p.m. – warm-up mode: ON! \n☀️ On 𝐒𝐚𝐭𝐮𝐫𝐝𝐚𝐲 (21.11.) things really get going: outdoor & indoor with DJ Juli, DJ Double Dee and DJ Hufe! 💥\n\nNew season – best vibes. Bring your friendssss – we’ve missed you! ❤️\n🔞 18+ | Free Entrance | Party In- & Outdoor 🎉\n\n#k1 #k1_reischach #seasonopening #opening #apresski"
+      },
+      "url": "https://www.instagram.com/p/DfUd8lUszeQ/",
+      "kind": "instagram",
+      "status": "review",
+      "reason": "multiple-dates",
+      "dateEvidence": {
+        "status": "review",
+        "reason": "multiple-dates"
+      },
+      "published": false
+    },
+    {
+      "id": "south-tyrol-events-2026-11-07-festa-tirolese-in-dirndl-e-lederhosen",
+      "kind": "web",
+      "title": "Festa tirolese in \"Dirndl e Lederhosen\"",
+      "start": "2026-11-07",
+      "end": "2026-11-07",
+      "location": "Gais",
+      "url": "https://www.suedtirol.info/it/it/esperienze-eventi/eventi-alto-adige/pdp-evento.1B5C5203240349A8A6DD61867644D492.festa-tirolese.gais",
+      "sourceId": "south-tyrol-events",
+      "sourceName": "Südtirol / Alto Adige Events",
+      "titles": {
+        "it": "Festa tirolese in \"Dirndl e Lederhosen\"",
+        "de": "Dirndl und Lederhosenfest",
+        "en": "Tyrolean \"Dirndl and Lederhosen\" Festival"
+      },
+      "excerpt": "Il gruppo \"Die Glorreichen\" invita alla festa tirolese in \"Dirndl e Lederhosen\" che si terrà presso la Casa della Comunità a Villa Ottone! Dalle ore 19:00 alle 20:00 Happy Hour Intrattenimento musicale con i \"Woazgruiba\" Dalle ore 23:00 Disco Music Non mancheranno buon cibo e bevande!",
+      "eventId": "auto-2026-11-07-festa-tirolese-in-dirndl-e-lederhosen",
       "published": true
     }
   ]
