@@ -1,5 +1,5 @@
 {
-  "lastChecked": "2026-11-04",
+  "lastChecked": "2026-11-05",
   "events": [
     {
       "id": "auto-2025-12-04-season-opening",
@@ -2547,9 +2547,9 @@
       "accent": "#ff4fa3",
       "featured": false,
       "titles": {
-        "it": "Bruning Krampus - the after-show Party",
-        "de": "Bruning Krampus - the after-show Party",
-        "en": "Bruning Krampus - the after-show Party"
+        "it": "Burning Krampus - the after-show Party",
+        "de": "Burning Krampus - the after-show Party",
+        "en": "Burning Krampus - the after-show Party"
       }
     },
     {
@@ -3019,7 +3019,7 @@
       }
     }
   ],
-  "lastWebCheckAt": "2026-11-04T14:40:23.367Z",
-  "lastModified": "2026-11-04",
-  "lastScheduledCheckDate": "2026-11-04"
+  "lastWebCheckAt": "2026-11-05T14:44:42.352Z",
+  "lastModified": "2026-11-05",
+  "lastScheduledCheckDate": "2026-11-05"
 }
