@@ -1,25 +1,8 @@
 {
   "version": 1,
   "entries": {
-    "29703a0513a20076705c295916f314597e943cc7b69103c63a5fa302426b5652": {
-      "checkedAt": "2026-11-04T14:39:00.044Z",
-      "assessment": {
-        "title": "HALLOWEEN PARTY LAST",
-        "status": "review",
-        "reason": "missing-date",
-        "venue": "K1",
-        "location": "K1 · Riscone / Reischach, Brunico / Bruneck",
-        "evidence": {
-          "url": "https://curator-assets.b-cdn.net/1600be38-4e01-4c92-8ccf-c12bdc55aa60/395951481.jpg?width=1024",
-          "page": "https://k-1.bz/en/",
-          "sha256": "c4fd20daf6190fab8d3782fb3b8f8973d22cfb6bfebabccbc783bfd8c5960769",
-          "method": "image-ocr"
-        },
-        "excerpt": "N\n\nLA\n\nN)\n\nÈ\n\nEX\n\nST\n\nShag >\n\nFRIENDSSGG\n\n1,\n\nFOR THIS ABSOLUTE CRAZY\n\nHALLOWEEN PARTY LAST\n\n/ Brenn XOXO\n"
-      }
-    },
     "e86ffb30ceabd59f46740562fba32ff8f149cca03be9aba8ecc736190ecd9fda": {
-      "checkedAt": "2026-10-31T21:08:44.187Z",
+      "checkedAt": "2026-11-09T16:29:32.810Z",
       "assessment": {
         "title": "Annuncio da verificare",
         "status": "review",
@@ -36,7 +19,7 @@
       }
     },
     "b7e87dd937879afba4bf92a7eda51f101bd1bafea3163538dfe26c1e3875c736": {
-      "checkedAt": "2026-10-31T21:08:42.097Z",
+      "checkedAt": "2026-11-09T16:29:31.691Z",
       "assessment": {
         "title": "Annuncio da verificare",
         "status": "review",
@@ -53,7 +36,7 @@
       }
     },
     "f4dcab5eff8667172ae321849725e38a30ecce398734623bc78c87a7c626534f": {
-      "checkedAt": "2026-10-31T15:09:37.124Z",
+      "checkedAt": "2026-11-09T16:29:30.830Z",
       "assessment": {
         "title": "Annuncio da verificare",
         "status": "review",
@@ -67,6 +50,57 @@
           "method": "image-ocr"
         },
         "excerpt": "\\¢\n\nsa |\n\n»\n\n=\n\nu\n\n“ai\n\n(d\n\nVE)\n\nÈ\n\nN\n\nLD\n\nED. è.\n\nLg\n\ne\n\nif\n\nXY\n\neee\n"
+      }
+    },
+    "eee7d347d12a90ee88c028baff071513968b6bb48f5a09bc1368b6889389b8b8": {
+      "checkedAt": "2026-11-09T16:29:30.086Z",
+      "assessment": {
+        "title": "Annuncio da verificare",
+        "status": "review",
+        "reason": "unclear-event-title",
+        "venue": "Corones Hütte",
+        "location": "Corones Hütte · Plan de Corones / Kronplatz",
+        "evidence": {
+          "url": "https://www.corones-kronplatz.com/wp-content/uploads/roland-trettl-coroneshuette.jpg",
+          "page": "https://www.corones-kronplatz.com/",
+          "sha256": "4cd2b421c25c6c59c1635ed2a51e3343c5b85496a706570e069fad199ad00829",
+          "method": "image-ocr"
+        },
+        "excerpt": "we\n\nVv Rian\n\nL\n"
+      }
+    },
+    "7cdace1e1c01047e868895a03c199066d10fe0bf5558502939c6526b7d011da9": {
+      "checkedAt": "2026-11-09T16:29:30.031Z",
+      "assessment": {
+        "title": "DJ SIMON",
+        "status": "review",
+        "reason": "missing-date",
+        "venue": "La Stua",
+        "location": "La Stua · Selva di Val Gardena / Wolkenstein in Gröden",
+        "evidence": {
+          "url": "https://www.la-stua.com/images/Events-La-Stua-March-2019.jpg",
+          "page": "https://www.la-stua.com/apresski-alps/",
+          "sha256": "237e85a1db01b64e023c1fb9539cdabbcb69559f4fa43df0e0d26dc4faf13d80",
+          "method": "image-ocr"
+        },
+        "excerpt": "WEDNESDAY, 6\"\n\nFRIDAY, 8\"\n\nDJ SIMON\n\nDJ SIMON\n\nLIVE EVENTS\n\nNew and classic charts\n\nNew and classic charts\n\nIN MARGH\n\nat4pm\n\nat4pm\n\nSUNDAY, 10\"\n\n& MONDAY, 11\"\n\nDJ MIKE\n\nSET at4pm\n\nSUNDAY, 17\"\n\nTUESDAY, 19\"\n\n& MONDAY, 18\"\n\nDJ MIKE at4 pm\n\nDJ MIKE\n\nVOLLGAS\n\nSETat4pm\n\nat9 pm\n\nSATURDAY, 23%\n\nSUNDAY, 24\"\n\n& MONDAY, 25\"\n\nDJ mine at 4 pm\n\nDOI\n\nMAS QUE NADA\n\nDJ MIKE\n\nIND\n\nIGGE!\n\nat9 pm\n\nSET at 4pm\n"
+      }
+    },
+    "29703a0513a20076705c295916f314597e943cc7b69103c63a5fa302426b5652": {
+      "checkedAt": "2026-11-04T14:39:00.044Z",
+      "assessment": {
+        "title": "HALLOWEEN PARTY LAST",
+        "status": "review",
+        "reason": "missing-date",
+        "venue": "K1",
+        "location": "K1 · Riscone / Reischach, Brunico / Bruneck",
+        "evidence": {
+          "url": "https://curator-assets.b-cdn.net/1600be38-4e01-4c92-8ccf-c12bdc55aa60/395951481.jpg?width=1024",
+          "page": "https://k-1.bz/en/",
+          "sha256": "c4fd20daf6190fab8d3782fb3b8f8973d22cfb6bfebabccbc783bfd8c5960769",
+          "method": "image-ocr"
+        },
+        "excerpt": "N\n\nLA\n\nN)\n\nÈ\n\nEX\n\nST\n\nShag >\n\nFRIENDSSGG\n\n1,\n\nFOR THIS ABSOLUTE CRAZY\n\nHALLOWEEN PARTY LAST\n\n/ Brenn XOXO\n"
       }
     },
     "a203fdfc395506e0da28d100f6a1d89ddef6d3981b5ec65b46e6c40eae410a41": {
@@ -135,40 +169,6 @@
           "method": "image-ocr"
         },
         "excerpt": "nn\n\nye lu)\n"
-      }
-    },
-    "7cdace1e1c01047e868895a03c199066d10fe0bf5558502939c6526b7d011da9": {
-      "checkedAt": "2026-10-31T15:09:32.156Z",
-      "assessment": {
-        "title": "DJ SIMON",
-        "status": "review",
-        "reason": "missing-date",
-        "venue": "La Stua",
-        "location": "La Stua · Selva di Val Gardena / Wolkenstein in Gröden",
-        "evidence": {
-          "url": "https://www.la-stua.com/images/Events-La-Stua-March-2019.jpg",
-          "page": "https://www.la-stua.com/apresski-alps/",
-          "sha256": "237e85a1db01b64e023c1fb9539cdabbcb69559f4fa43df0e0d26dc4faf13d80",
-          "method": "image-ocr"
-        },
-        "excerpt": "WEDNESDAY, 6\"\n\nFRIDAY, 8\"\n\nDJ SIMON\n\nDJ SIMON\n\nLIVE EVENTS\n\nNew and classic charts\n\nNew and classic charts\n\nIN MARGH\n\nat4pm\n\nat4pm\n\nSUNDAY, 10\"\n\n& MONDAY, 11\"\n\nDJ MIKE\n\nSET at4pm\n\nSUNDAY, 17\"\n\nTUESDAY, 19\"\n\n& MONDAY, 18\"\n\nDJ MIKE at4 pm\n\nDJ MIKE\n\nVOLLGAS\n\nSETat4pm\n\nat9 pm\n\nSATURDAY, 23%\n\nSUNDAY, 24\"\n\n& MONDAY, 25\"\n\nDJ mine at 4 pm\n\nDOI\n\nMAS QUE NADA\n\nDJ MIKE\n\nIND\n\nIGGE!\n\nat9 pm\n\nSET at 4pm\n"
-      }
-    },
-    "eee7d347d12a90ee88c028baff071513968b6bb48f5a09bc1368b6889389b8b8": {
-      "checkedAt": "2026-10-31T15:09:31.444Z",
-      "assessment": {
-        "title": "Annuncio da verificare",
-        "status": "review",
-        "reason": "unclear-event-title",
-        "venue": "Corones Hütte",
-        "location": "Corones Hütte · Plan de Corones / Kronplatz",
-        "evidence": {
-          "url": "https://www.corones-kronplatz.com/wp-content/uploads/roland-trettl-coroneshuette.jpg",
-          "page": "https://www.corones-kronplatz.com/",
-          "sha256": "4cd2b421c25c6c59c1635ed2a51e3343c5b85496a706570e069fad199ad00829",
-          "method": "image-ocr"
-        },
-        "excerpt": "we\n\nVv Rian\n\nL\n"
       }
     }
   },

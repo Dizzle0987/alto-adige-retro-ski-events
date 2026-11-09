@@ -1,10 +1,10 @@
 {
-  "lastChecked": "2026-11-05",
+  "lastChecked": "2026-11-09",
   "summary": {
     "webSources": 30,
     "instagramSources": 16,
     "instagramStatus": "checked",
-    "candidates": 32,
+    "candidates": 34,
     "published": 0,
     "updated": 0,
     "pruned": 0
@@ -458,7 +458,8 @@
       "media": [
         {
           "kind": "image",
-          "status": "cached"
+          "status": "read-for-review",
+          "method": "image-ocr"
         }
       ],
       "facebook": {
@@ -538,7 +539,8 @@
       "media": [
         {
           "kind": "image",
-          "status": "cached"
+          "status": "read-for-review",
+          "method": "image-ocr"
         }
       ],
       "facebook": {
@@ -647,15 +649,18 @@
       "media": [
         {
           "kind": "image",
-          "status": "cached"
+          "status": "read-for-review",
+          "method": "image-ocr"
         },
         {
           "kind": "image",
-          "status": "cached"
+          "status": "read-for-review",
+          "method": "image-ocr"
         },
         {
           "kind": "image",
-          "status": "cached"
+          "status": "read-for-review",
+          "method": "image-ocr"
         }
       ],
       "facebook": {
@@ -727,9 +732,9 @@
       "name": "Pulverfass",
       "kind": "instagram",
       "url": "https://www.instagram.com/pulverfass_apresski/",
-      "status": "no-author-data",
-      "found": 0,
-      "received": 0
+      "status": "checked",
+      "found": 1,
+      "received": 1
     },
     {
       "id": "moritzino-instagram",
@@ -764,8 +769,8 @@
       "kind": "instagram",
       "url": "https://www.instagram.com/hexenkessel_klausberg/",
       "status": "checked",
-      "found": 2,
-      "received": 2
+      "found": 3,
+      "received": 3
     },
     {
       "id": "luislkeller-instagram",
@@ -800,7 +805,7 @@
       "kind": "instagram",
       "url": "https://www.instagram.com/skiworldahrntal_official/",
       "status": "checked",
-      "found": 1,
+      "found": 0,
       "received": 5
     },
     {
@@ -809,7 +814,7 @@
       "kind": "instagram",
       "url": "https://www.instagram.com/kronplatz_group/",
       "status": "checked",
-      "found": 2,
+      "found": 1,
       "received": 5
     },
     {
@@ -827,7 +832,7 @@
       "kind": "instagram",
       "url": "https://www.instagram.com/dolomitesvalgardena/",
       "status": "checked",
-      "found": 2,
+      "found": 1,
       "received": 6
     },
     {
@@ -837,7 +842,7 @@
       "url": "https://www.instagram.com/3zinnendolomites/",
       "status": "checked",
       "found": 0,
-      "received": 4
+      "received": 5
     }
   ],
   "candidates": [
@@ -1668,22 +1673,12 @@
         "author": "k1.kronplatz",
         "ownerId": "5849734189",
         "publishedAt": "2026-11-03T10:59:17.000Z",
-        "caption": "Glitter glasses, icy wigs & sooo cool costumes!! 🕶️✨👻\nYou guys absolutely nailed it! Thank you to everyone who came, to our DJs and to the whole K1 crew for making this night so special. 🖤🎃\n\nNext stop: 𝐊𝟏 𝐒𝐄𝐀𝐒𝐎𝐍 𝐎𝐏𝐄𝐍𝐈𝐍𝐆 on 𝟐𝟎. & 𝟐𝟏.𝟏𝟏. 🎿❄️ Can’t wait to see you again! 😍\n\n#k1 #k1_reischach #halloweenrecap #k1halloween #thankyou",
-        "flyer": {
-          "method": "instagram-image-ocr",
-          "text": "AQ\n>)\nD\nÈ,\na\na\nhae»\nN\nPRIONDISSS\nTu,\n‘FOR THIS ABSOLUTE CRAZY\n\\\nHALLOWEEN PARTY LAST\n/ Brenn XOXO",
-          "dateText": "AQ\n>)\nD\nÈ,\na\na\nhae»\nN\nPRIONDISSS\nTu,\n‘FOR THIS ABSOLUTE CRAZY\n\\\nHALLOWEEN PARTY LAST\n/ Brenn XOXO",
-          "dateEvidence": {
-            "status": "review",
-            "reason": "missing-date"
-          },
-          "sha256": "cfeb9c669775100964d61d36c27f6862b8a2a5b68e6579c95df6fcffc7aac3e3"
-        }
+        "caption": "Glitter glasses, icy wigs & sooo cool costumes!! 🕶️✨👻\nYou guys absolutely nailed it! Thank you to everyone who came, to our DJs and to the whole K1 crew for making this night so special. 🖤🎃\n\nNext stop: 𝐊𝟏 𝐒𝐄𝐀𝐒𝐎𝐍 𝐎𝐏𝐄𝐍𝐈𝐍𝐆 on 𝟐𝟎. & 𝟐𝟏.𝟏𝟏. 🎿❄️ Can’t wait to see you again! 😍\n\n#k1 #k1_reischach #halloweenrecap #k1halloween #thankyou"
       },
       "url": "https://www.instagram.com/p/DfRuRGoDGtR/",
       "kind": "instagram",
       "status": "review",
-      "reason": "flyer-missing-date",
+      "reason": "unclear-event-title",
       "date": {
         "status": "confirmed",
         "start": "2026-11-21",
@@ -1693,12 +1688,12 @@
       },
       "media": [
         {
-          "status": "review",
-          "reason": "flyer-missing-date"
+          "status": "unavailable",
+          "reason": "non-public-address"
         },
         {
-          "status": "review",
-          "reason": "flyer-missing-date"
+          "status": "unavailable",
+          "reason": "non-public-address"
         }
       ],
       "published": false
@@ -1725,6 +1720,51 @@
         "status": "review",
         "reason": "multiple-dates"
       },
+      "published": false
+    },
+    {
+      "id": "pulverfass-instagram-DfZ7nU_ETMO",
+      "title": "Annuncio da verificare",
+      "publishedAt": "2026-11-06T15:30:47.000Z",
+      "excerpt": "Après Ski direkt an der Talstation Speikboden 💥 Ab Dezember jeden Tag DJ ab 15:00 Uhr, jeden Sonntag Welcome Party, dazu Pizza, Burger & more.\nDein Skitag endet im Pulverfass! \n\n#pulverfass #apresski #apresskivibes #party #speikboden",
+      "sourceId": "pulverfass-instagram",
+      "sourceName": "Pulverfass",
+      "evidence": {
+        "url": "https://www.instagram.com/p/DfZ7nU_ETMO/",
+        "author": "pulverfass_apresski",
+        "ownerId": "8786752239",
+        "publishedAt": "2026-11-06T15:30:47.000Z",
+        "caption": "Après Ski direkt an der Talstation Speikboden 💥 Ab Dezember jeden Tag DJ ab 15:00 Uhr, jeden Sonntag Welcome Party, dazu Pizza, Burger & more.\nDein Skitag endet im Pulverfass! \n\n#pulverfass #apresski #apresskivibes #party #speikboden"
+      },
+      "url": "https://www.instagram.com/p/DfZ7nU_ETMO/",
+      "kind": "instagram",
+      "status": "review",
+      "reason": "missing-date",
+      "dateEvidence": {
+        "status": "review",
+        "reason": "missing-date"
+      },
+      "media": [],
+      "published": false
+    },
+    {
+      "id": "hexenkessel-instagram-DfcRYMBMndj",
+      "title": "Annuncio da verificare",
+      "publishedAt": "2026-11-07T13:26:23.000Z",
+      "excerpt": "HEXENKESSEL SOFT OPENING 🍻\n\nWir freuen uns mega aufs Opening mit euch!\nAb Freitag, 13. November haben wir täglich ab 18.00 Uhr geöffnet! Ohne Ruhetag! 🫶❄️\n\n#hexenkessel #softopening #weekend",
+      "sourceId": "hexenkessel-instagram",
+      "sourceName": "Hexenkessel Klausberg",
+      "evidence": {
+        "url": "https://www.instagram.com/p/DfcRYMBMndj/",
+        "author": "hexenkessel_klausberg",
+        "ownerId": "6443253535",
+        "publishedAt": "2026-11-07T13:26:23.000Z",
+        "caption": "HEXENKESSEL SOFT OPENING 🍻\n\nWir freuen uns mega aufs Opening mit euch!\nAb Freitag, 13. November haben wir täglich ab 18.00 Uhr geöffnet! Ohne Ruhetag! 🫶❄️\n\n#hexenkessel #softopening #weekend"
+      },
+      "url": "https://www.instagram.com/p/DfcRYMBMndj/",
+      "kind": "instagram",
+      "status": "review",
+      "reason": "repost-or-collaboration",
       "published": false
     }
   ]
