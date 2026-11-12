@@ -1,11 +1,11 @@
 {
-  "lastChecked": "2026-11-09",
+  "lastChecked": "2026-11-12",
   "summary": {
     "webSources": 30,
     "instagramSources": 16,
-    "instagramStatus": "checked",
-    "candidates": 34,
-    "published": 0,
+    "instagramStatus": "budget-unverified",
+    "candidates": 35,
+    "published": 1,
     "updated": 0,
     "pruned": 0
   },
@@ -16,7 +16,7 @@
       "kind": "web",
       "url": "https://www.suedtirol.info/it/it/esperienze-eventi/plp-eventi/o/sagre",
       "status": "checked",
-      "found": 0
+      "found": 1
     },
     {
       "id": "south-tyrol-winter-events",
@@ -251,7 +251,8 @@
         },
         {
           "kind": "image",
-          "status": "cached"
+          "status": "read-for-review",
+          "method": "image-ocr"
         }
       ],
       "facebook": {
@@ -458,8 +459,7 @@
       "media": [
         {
           "kind": "image",
-          "status": "read-for-review",
-          "method": "image-ocr"
+          "status": "cached"
         }
       ],
       "facebook": {
@@ -539,8 +539,7 @@
       "media": [
         {
           "kind": "image",
-          "status": "read-for-review",
-          "method": "image-ocr"
+          "status": "cached"
         }
       ],
       "facebook": {
@@ -649,18 +648,15 @@
       "media": [
         {
           "kind": "image",
-          "status": "read-for-review",
-          "method": "image-ocr"
+          "status": "cached"
         },
         {
           "kind": "image",
-          "status": "read-for-review",
-          "method": "image-ocr"
+          "status": "cached"
         },
         {
           "kind": "image",
-          "status": "read-for-review",
-          "method": "image-ocr"
+          "status": "cached"
         }
       ],
       "facebook": {
@@ -705,144 +701,128 @@
       "name": "La Stua",
       "kind": "instagram",
       "url": "https://www.instagram.com/barlastua/",
-      "status": "no-author-data",
-      "found": 0,
-      "received": 0
+      "status": "budget-unverified",
+      "found": 0
     },
     {
       "id": "giggeralm-instagram",
       "name": "Giggeralm",
       "kind": "instagram",
       "url": "https://www.instagram.com/giggeralm_official/",
-      "status": "checked",
-      "found": 1,
-      "received": 1
+      "status": "budget-unverified",
+      "found": 0
     },
     {
       "id": "corones-instagram",
       "name": "Corones Hütte",
       "kind": "instagram",
       "url": "https://www.instagram.com/corones_huette/",
-      "status": "checked",
-      "found": 2,
-      "received": 6
+      "status": "budget-unverified",
+      "found": 0
     },
     {
       "id": "pulverfass-instagram",
       "name": "Pulverfass",
       "kind": "instagram",
       "url": "https://www.instagram.com/pulverfass_apresski/",
-      "status": "checked",
-      "found": 1,
-      "received": 1
+      "status": "budget-unverified",
+      "found": 0
     },
     {
       "id": "moritzino-instagram",
       "name": "Club Moritzino",
       "kind": "instagram",
       "url": "https://www.instagram.com/clubmoritzino/",
-      "status": "checked",
-      "found": 1,
-      "received": 6
+      "status": "budget-unverified",
+      "found": 0
     },
     {
       "id": "gassl-instagram",
       "name": "Gassl Olang",
       "kind": "instagram",
       "url": "https://www.instagram.com/gassl.olang/",
-      "status": "checked",
-      "found": 1,
-      "received": 1
+      "status": "budget-unverified",
+      "found": 0
     },
     {
       "id": "k1-instagram",
       "name": "K1 Kronplatz",
       "kind": "instagram",
       "url": "https://www.instagram.com/k1.kronplatz/",
-      "status": "checked",
-      "found": 6,
-      "received": 6
+      "status": "budget-unverified",
+      "found": 0
     },
     {
       "id": "hexenkessel-instagram",
       "name": "Hexenkessel Klausberg",
       "kind": "instagram",
       "url": "https://www.instagram.com/hexenkessel_klausberg/",
-      "status": "checked",
-      "found": 3,
-      "received": 3
+      "status": "budget-unverified",
+      "found": 0
     },
     {
       "id": "luislkeller-instagram",
       "name": "Luislkeller",
       "kind": "instagram",
       "url": "https://www.instagram.com/luislkeller/",
-      "status": "no-author-data",
-      "found": 0,
-      "received": 0
+      "status": "budget-unverified",
+      "found": 0
     },
     {
       "id": "winklparade-instagram",
       "name": "Winklparade",
       "kind": "instagram",
       "url": "https://www.instagram.com/winklparade/",
-      "status": "no-author-data",
-      "found": 0,
-      "received": 0
+      "status": "budget-unverified",
+      "found": 0
     },
     {
       "id": "ganischger-instagram",
       "name": "Ganischgeralm / Voliera",
       "kind": "instagram",
       "url": "https://www.instagram.com/ganischgeralm_voliera/",
-      "status": "checked",
-      "found": 2,
-      "received": 5
+      "status": "budget-unverified",
+      "found": 0
     },
     {
       "id": "skiworld-ahrntal-instagram",
       "name": "Skiworld Ahrntal",
       "kind": "instagram",
       "url": "https://www.instagram.com/skiworldahrntal_official/",
-      "status": "checked",
-      "found": 0,
-      "received": 5
+      "status": "budget-unverified",
+      "found": 0
     },
     {
       "id": "kronplatz-instagram",
       "name": "Kronplatz",
       "kind": "instagram",
       "url": "https://www.instagram.com/kronplatz_group/",
-      "status": "checked",
-      "found": 1,
-      "received": 5
+      "status": "budget-unverified",
+      "found": 0
     },
     {
       "id": "alta-badia-instagram",
       "name": "Alta Badia",
       "kind": "instagram",
       "url": "https://www.instagram.com/alta_badia_official/",
-      "status": "checked",
-      "found": 1,
-      "received": 6
+      "status": "budget-unverified",
+      "found": 0
     },
     {
       "id": "val-gardena-instagram",
       "name": "Val Gardena",
       "kind": "instagram",
       "url": "https://www.instagram.com/dolomitesvalgardena/",
-      "status": "checked",
-      "found": 1,
-      "received": 6
+      "status": "budget-unverified",
+      "found": 0
     },
     {
       "id": "three-zinnen-instagram",
       "name": "3 Zinnen Dolomites",
       "kind": "instagram",
       "url": "https://www.instagram.com/3zinnendolomites/",
-      "status": "checked",
-      "found": 0,
-      "received": 5
+      "status": "budget-unverified",
+      "found": 0
     }
   ],
   "candidates": [
@@ -1766,6 +1746,25 @@
       "status": "review",
       "reason": "repost-or-collaboration",
       "published": false
+    },
+    {
+      "id": "south-tyrol-events-2027-01-23-neumarktner-schlagernacht",
+      "kind": "web",
+      "title": "Neumarktner Schlagernacht",
+      "start": "2027-01-23",
+      "end": "2027-01-23",
+      "location": "Egna · Grieserweg 2/A",
+      "url": "https://www.suedtirol.info/it/it/esperienze-eventi/eventi-alto-adige/pdp-evento.E3203ED9A69E4BD68461FC82D40C0C99.neumarktner-schlagernacht.egna",
+      "sourceId": "south-tyrol-events",
+      "sourceName": "Südtirol / Alto Adige Events",
+      "titles": {
+        "it": "Neumarktner Schlagernacht",
+        "de": "Neumarktner Schlagernacht",
+        "en": "Neumarktner Schlagernacht"
+      },
+      "excerpt": "Bekannte Melodien, beliebte Ohrwürmer und die bekanntesten Schlagerstars! Das Haus Unterland wird wiederum zum Schlagertempel und Neumarkt zum Zentrum der Schlagerwelt! Musik- und Schlagerbegeisterte Neumarktner schlüpfen in besondere Rollen und werden zu Neumarkts ganz speziellen „Stars“. Lasst euch überraschen, lasst euch verzaubern!",
+      "eventId": "auto-2027-01-23-neumarktner-schlagernacht",
+      "published": true
     }
   ]
 }
