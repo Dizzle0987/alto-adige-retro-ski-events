@@ -1,5 +1,5 @@
 {
-  "lastChecked": "2026-11-09",
+  "lastChecked": "2026-11-12",
   "events": [
     {
       "id": "auto-2025-12-04-season-opening",
@@ -2619,6 +2619,33 @@
       }
     },
     {
+      "id": "auto-2027-01-23-neumarktner-schlagernacht",
+      "title": "Neumarktner Schlagernacht",
+      "titles": {
+        "it": "Neumarktner Schlagernacht",
+        "de": "Neumarktner Schlagernacht",
+        "en": "Neumarktner Schlagernacht"
+      },
+      "start": "2027-01-23",
+      "end": "2027-01-23",
+      "dateLabel": "23",
+      "monthLabel": "GEN",
+      "year": "2027",
+      "categories": [
+        "apres"
+      ],
+      "tags": [
+        "Après-ski"
+      ],
+      "summary": "Bekannte Melodien, beliebte Ohrwürmer und die bekanntesten Schlagerstars! Das Haus Unterland wird wiederum zum Schlagertempel und Neumarkt zum Zentrum der Schlagerwelt! Musik- und Schlagerbegeisterte Neumarktner schlüpfen in besondere…",
+      "place": "Egna · Grieserweg 2/A",
+      "source": "https://www.suedtirol.info/it/it/esperienze-eventi/eventi-alto-adige/pdp-evento.E3203ED9A69E4BD68461FC82D40C0C99.neumarktner-schlagernacht.egna",
+      "social": null,
+      "map": "https://www.google.com/maps/search/?api=1&query=Egna%20%C2%B7%20Grieserweg%202%2FA",
+      "accent": "#f5ec35",
+      "featured": false
+    },
+    {
       "id": "auto-2027-02-24-kronplatz-ski-music-festival-dj-edition",
       "title": "Kronplatz Ski & Music Festival DJ Edition",
       "start": "2027-02-24",
@@ -3019,7 +3046,7 @@
       }
     }
   ],
-  "lastWebCheckAt": "2026-11-09T16:30:05.690Z",
-  "lastModified": "2026-11-05",
-  "lastScheduledCheckDate": "2026-11-09"
+  "lastWebCheckAt": "2026-11-12T15:20:43.351Z",
+  "lastModified": "2026-11-12",
+  "lastScheduledCheckDate": "2026-11-12"
 }
