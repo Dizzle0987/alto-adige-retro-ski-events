@@ -1,11 +1,11 @@
 {
-  "lastChecked": "2026-11-12",
+  "lastChecked": "2026-11-16",
   "summary": {
     "webSources": 30,
     "instagramSources": 16,
     "instagramStatus": "budget-unverified",
-    "candidates": 35,
-    "published": 1,
+    "candidates": 37,
+    "published": 0,
     "updated": 0,
     "pruned": 0
   },
@@ -16,7 +16,7 @@
       "kind": "web",
       "url": "https://www.suedtirol.info/it/it/esperienze-eventi/plp-eventi/o/sagre",
       "status": "checked",
-      "found": 1
+      "found": 0
     },
     {
       "id": "south-tyrol-winter-events",
@@ -221,10 +221,10 @@
       "url": "https://k-1.bz/en/",
       "status": "checked",
       "found": 0,
-      "coverage": "readable-events",
+      "coverage": "no-readable-events",
       "extraction": {
         "structured": 0,
-        "html": 1,
+        "html": 0,
         "review": 1
       },
       "needsReview": [
@@ -251,8 +251,7 @@
         },
         {
           "kind": "image",
-          "status": "read-for-review",
-          "method": "image-ocr"
+          "status": "cached"
         }
       ],
       "facebook": {
@@ -1679,6 +1678,29 @@
       "published": false
     },
     {
+      "sourceId": "k1-instagram",
+      "sourceName": "K1 Kronplatz",
+      "evidence": {
+        "url": "https://www.instagram.com/reel/DfUd8lUszeQ/",
+        "author": "k1.kronplatz",
+        "ownerId": "5849734189",
+        "publishedAt": "2026-11-04T12:35:09.000000Z",
+        "caption": "𝕎𝔼’ℝ𝔼 𝔹𝔸ℂ𝕂!! ❄️🔥🪩\nThe wait is over – the new season is here and we are sooo ready! 😮‍🔥 \n\nOn 𝟐𝟎. 𝐚𝐧𝐝 𝟐𝟏.𝟏𝟏. we’re celebrating the big K1 𝐒𝐄𝐀𝐒𝐎𝐍 𝐎𝐏𝐄𝐍𝐈𝐍𝐆 and kicking off winter the way it deserves. 🎿🥳\n\n🎧 On 𝐅𝐫𝐢𝐝𝐚𝐲 (20.11.) we start indoors with DJ Juli from 7 p.m. – warm-up mode: ON! \n☀️ On 𝐒𝐚𝐭𝐮𝐫𝐝𝐚𝐲 (21.11.) things really get going: outdoor & indoor with DJ Juli, DJ Double Dee and DJ Hufe! 💥\n\nNew season – best vibes. Bring your friendssss – we’ve missed you! ❤️\n🔞 18+ | Free Entrance | Party In- & Outdoor 🎉\n\n#k1 #k1_reischach #seasonopening #opening #apresski"
+      },
+      "url": "https://www.instagram.com/reel/DfUd8lUszeQ/",
+      "kind": "instagram",
+      "status": "review",
+      "reason": "multiple-dates",
+      "dateEvidence": {
+        "status": "review",
+        "reason": "multiple-dates"
+      },
+      "id": "k1-instagram-widget-396367313",
+      "publishedAt": "2026-11-04T12:35:09.000000Z",
+      "excerpt": "𝕎𝔼’ℝ𝔼 𝔹𝔸ℂ𝕂!! ❄️🔥🪩\nThe wait is over – the new season is here and we are sooo ready! 😮‍🔥 \n\nOn 𝟐𝟎. 𝐚𝐧𝐝 𝟐𝟏.𝟏𝟏. we’re celebrating the big K1 𝐒𝐄𝐀𝐒𝐎𝐍 𝐎𝐏𝐄𝐍𝐈𝐍𝐆 and kicking off winter the way it deserves. 🎿🥳\n\n🎧 On 𝐅𝐫𝐢𝐝𝐚𝐲 (20.11.) we start indoors with DJ Juli from 7 p.m. – warm-up mode: ON! \n☀️ On 𝐒𝐚𝐭𝐮𝐫𝐝𝐚𝐲 (21.11.) things really get going: outdoor & indoor with DJ Juli, DJ Double Dee and DJ Hufe! 💥\n\nNew season – best vibes. Bring your friendssss – we’ve missed you! ❤️\n🔞 18+ | Free Entrance | Party In- & Outdoor 🎉\n\n#k1 #k1_reischach #seasonopening #opening #apresski",
+      "published": false
+    },
+    {
       "id": "k1-instagram-DfUd8lUszeQ",
       "title": "Annuncio da verificare",
       "publishedAt": "2026-11-04T12:35:09.000Z",
@@ -1748,23 +1770,50 @@
       "published": false
     },
     {
-      "id": "south-tyrol-events-2027-01-23-neumarktner-schlagernacht",
-      "kind": "web",
-      "title": "Neumarktner Schlagernacht",
-      "start": "2027-01-23",
-      "end": "2027-01-23",
-      "location": "Egna · Grieserweg 2/A",
-      "url": "https://www.suedtirol.info/it/it/esperienze-eventi/eventi-alto-adige/pdp-evento.E3203ED9A69E4BD68461FC82D40C0C99.neumarktner-schlagernacht.egna",
-      "sourceId": "south-tyrol-events",
-      "sourceName": "Südtirol / Alto Adige Events",
-      "titles": {
-        "it": "Neumarktner Schlagernacht",
-        "de": "Neumarktner Schlagernacht",
-        "en": "Neumarktner Schlagernacht"
+      "sourceId": "k1-instagram",
+      "sourceName": "K1 Kronplatz",
+      "evidence": {
+        "url": "https://www.instagram.com/reel/Dfop3pds5_x/",
+        "author": "k1.kronplatz",
+        "ownerId": "5849734189",
+        "publishedAt": "2026-11-12T08:43:57.000000Z",
+        "caption": "POV: me when I’m ‘in sick leave’\nDoctor said rest. Didn’t say anything about music 🤒🎧\n\n#k1reischach #pov #sickleave #djlife #apresski"
       },
-      "excerpt": "Bekannte Melodien, beliebte Ohrwürmer und die bekanntesten Schlagerstars! Das Haus Unterland wird wiederum zum Schlagertempel und Neumarkt zum Zentrum der Schlagerwelt! Musik- und Schlagerbegeisterte Neumarktner schlüpfen in besondere Rollen und werden zu Neumarkts ganz speziellen „Stars“. Lasst euch überraschen, lasst euch verzaubern!",
-      "eventId": "auto-2027-01-23-neumarktner-schlagernacht",
-      "published": true
+      "url": "https://www.instagram.com/reel/Dfop3pds5_x/",
+      "kind": "instagram",
+      "status": "review",
+      "reason": "missing-date",
+      "dateEvidence": {
+        "status": "review",
+        "reason": "missing-date"
+      },
+      "id": "k1-instagram-widget-396367311",
+      "publishedAt": "2026-11-12T08:43:57.000000Z",
+      "excerpt": "POV: me when I’m ‘in sick leave’\nDoctor said rest. Didn’t say anything about music 🤒🎧\n\n#k1reischach #pov #sickleave #djlife #apresski",
+      "published": false
+    },
+    {
+      "sourceId": "k1-instagram",
+      "sourceName": "K1 Kronplatz",
+      "evidence": {
+        "url": "https://www.instagram.com/reel/DfxKW6EkVDL/",
+        "author": "k1.kronplatz",
+        "ownerId": "5849734189",
+        "publishedAt": "2026-11-15T16:01:41.000000Z",
+        "caption": "-6 days until we’re finally partying together again… ❄️🔥\n\nFrom the first beats in the snow to the last song of the night: this is the best feeling, and it’s coming back. 🥹🎧\n\n𝐊𝟏 𝐒𝐄𝐀𝐒𝐎𝐍 𝐎𝐏𝐄𝐍𝐈𝐍𝐆 🎿🪩\n🗓 𝐅𝐫𝐢𝐝𝐚𝐲, 𝟐𝟎.𝟏𝟏. | Indoor 9 p.m. – 2 a.m.\n🗓 𝐒𝐚𝐭𝐮𝐫𝐝𝐚𝐲, 𝟐𝟏.𝟏𝟏. | Open Air 6 p.m. – midnight | Indoor 6 p.m. – 3 a.m.\n🎧 DJ Juli, DJ Double Dee & DJ Hufe\n\nWho’s ready? 🙋‍♀️🙋‍♂️\n\n#k1 #k1_reischach #seasonopening #countdown #bestfeeling"
+      },
+      "url": "https://www.instagram.com/reel/DfxKW6EkVDL/",
+      "kind": "instagram",
+      "status": "review",
+      "reason": "multiple-dates",
+      "dateEvidence": {
+        "status": "review",
+        "reason": "multiple-dates"
+      },
+      "id": "k1-instagram-widget-396508780",
+      "publishedAt": "2026-11-15T16:01:41.000000Z",
+      "excerpt": "-6 days until we’re finally partying together again… ❄️🔥\n\nFrom the first beats in the snow to the last song of the night: this is the best feeling, and it’s coming back. 🥹🎧\n\n𝐊𝟏 𝐒𝐄𝐀𝐒𝐎𝐍 𝐎𝐏𝐄𝐍𝐈𝐍𝐆 🎿🪩\n🗓 𝐅𝐫𝐢𝐝𝐚𝐲, 𝟐𝟎.𝟏𝟏. | Indoor 9 p.m. – 2 a.m.\n🗓 𝐒𝐚𝐭𝐮𝐫𝐝𝐚𝐲, 𝟐𝟏.𝟏𝟏. | Open Air 6 p.m. – midnight | Indoor 6 p.m. – 3 a.m.\n🎧 DJ Juli, DJ Double Dee & DJ Hufe\n\nWho’s ready? 🙋‍♀️🙋‍♂️\n\n#k1 #k1_reischach #seasonopening #countdown #bestfeeling",
+      "published": false
     }
   ]
 }
