@@ -1,5 +1,5 @@
 {
-  "lastChecked": "2026-11-16",
+  "lastChecked": "2026-11-18",
   "events": [
     {
       "id": "auto-2025-12-04-season-opening",
@@ -2520,6 +2520,35 @@
       ]
     },
     {
+      "id": "auto-2026-12-04-club-moritzino-season-opening-2026-2027",
+      "title": "CLUB MORITZINO – SEASON OPENING 2026/2027 🥂",
+      "websiteExtraction": "moritzino-calendar",
+      "start": "2026-12-04",
+      "end": "2026-12-04",
+      "dateLabel": "04",
+      "monthLabel": "DIC",
+      "year": "2026",
+      "categories": [
+        "apres"
+      ],
+      "tags": [
+        "Après-ski"
+      ],
+      "summary": "Evento sulla neve a Club Moritzino · Piz La Ila, Alta Badia, con programma e dettagli nella fonte ufficiale.",
+      "summaries": {
+        "it": "Appuntamento musicale e après-ski al Club Moritzino, in quota al Piz La Ila.",
+        "de": "Musik und Après-Ski im Club Moritzino am Piz La Ila.",
+        "en": "Music and après-ski at Club Moritzino on Piz La Ila."
+      },
+      "place": "Club Moritzino · Piz La Ila, Alta Badia",
+      "venue": "Club Moritzino",
+      "source": "https://clubmoritzino.it/en/event/season-opening-2026-2027-%f0%9f%a5%82/",
+      "social": "https://www.instagram.com/clubmoritzino/",
+      "map": "https://www.google.com/maps/search/?api=1&query=Club%20Moritzino%20%C2%B7%20Piz%20La%20Ila%2C%20Alta%20Badia",
+      "accent": "#ff4fa3",
+      "featured": false
+    },
+    {
       "id": "auto-2026-12-11-bruning-krampus-the-after-show-party",
       "venue": {
         "it": "Sala manifestazioni",
@@ -2551,6 +2580,33 @@
         "de": "Burning Krampus - the after-show Party",
         "en": "Burning Krampus - the after-show Party"
       }
+    },
+    {
+      "id": "auto-2027-01-01-party-di-capodanno-a-terento",
+      "title": "Party di capodanno a Terento",
+      "titles": {
+        "it": "Party di capodanno a Terento",
+        "de": "Neujahrsparty in Terenten",
+        "en": "New Years Party Terento"
+      },
+      "start": "2027-01-01",
+      "end": "2027-01-01",
+      "dateLabel": "01",
+      "monthLabel": "GEN",
+      "year": "2027",
+      "categories": [
+        "apres"
+      ],
+      "tags": [
+        "Après-ski"
+      ],
+      "summary": "Party di Capodanno presso il padiglione musicale nel centro di Terento. Dalle ore 19.00 musica dal vivo. Alle ore 20.30 sfilata della banda musicale di terento e alle ore 22.00 grande spettacolo pirotecnico. La manifestazione si terrá…",
+      "place": "Terento",
+      "source": "https://www.suedtirol.info/it/it/esperienze-eventi/eventi-alto-adige/pdp-evento.331B895034854B8A8FA42A9E55C80AC3.party-di-capodanno-a-terento.terento",
+      "social": null,
+      "map": "https://www.google.com/maps/search/?api=1&query=Terento",
+      "accent": "#ff7439",
+      "featured": false
     },
     {
       "id": "auto-2027-01-02-back-to-1976-giornata-di-sci-old-school-con-simon-mac-live",
@@ -2895,9 +2951,9 @@
       "accent": "#f5ec35",
       "featured": false,
       "titles": {
-        "it": "Gara della nostalgia",
-        "de": "Nostalgierennen am Watles",
-        "en": "Nostalgia race at Watles"
+        "it": "eventi al Watles",
+        "de": "events am watles",
+        "en": "events at Watles"
       }
     },
     {
@@ -3046,7 +3102,7 @@
       }
     }
   ],
-  "lastWebCheckAt": "2026-11-16T15:53:32.260Z",
-  "lastModified": "2026-11-12",
-  "lastScheduledCheckDate": "2026-11-16"
+  "lastWebCheckAt": "2026-11-18T15:45:13.450Z",
+  "lastModified": "2026-11-18",
+  "lastScheduledCheckDate": "2026-11-18"
 }
