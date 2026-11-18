@@ -1,11 +1,11 @@
 {
-  "lastChecked": "2026-11-16",
+  "lastChecked": "2026-11-18",
   "summary": {
     "webSources": 30,
     "instagramSources": 16,
     "instagramStatus": "budget-unverified",
-    "candidates": 37,
-    "published": 0,
+    "candidates": 39,
+    "published": 2,
     "updated": 0,
     "pruned": 0
   },
@@ -16,7 +16,7 @@
       "kind": "web",
       "url": "https://www.suedtirol.info/it/it/esperienze-eventi/plp-eventi/o/sagre",
       "status": "checked",
-      "found": 0
+      "found": 1
     },
     {
       "id": "south-tyrol-winter-events",
@@ -188,11 +188,11 @@
       "kind": "web",
       "url": "https://clubmoritzino.it/en/events-in-alta-badia/",
       "status": "checked",
-      "found": 0,
+      "found": 1,
       "coverage": "readable-events",
       "extraction": {
         "structured": 0,
-        "html": 81,
+        "html": 82,
         "review": 0
       },
       "needsReview": [],
@@ -458,7 +458,8 @@
       "media": [
         {
           "kind": "image",
-          "status": "cached"
+          "status": "read-for-review",
+          "method": "image-ocr"
         }
       ],
       "facebook": {
@@ -538,7 +539,8 @@
       "media": [
         {
           "kind": "image",
-          "status": "cached"
+          "status": "read-for-review",
+          "method": "image-ocr"
         }
       ],
       "facebook": {
@@ -647,15 +649,18 @@
       "media": [
         {
           "kind": "image",
-          "status": "cached"
+          "status": "read-for-review",
+          "method": "image-ocr"
         },
         {
           "kind": "image",
-          "status": "cached"
+          "status": "read-for-review",
+          "method": "image-ocr"
         },
         {
           "kind": "image",
-          "status": "cached"
+          "status": "read-for-review",
+          "method": "image-ocr"
         }
       ],
       "facebook": {
@@ -1814,6 +1819,45 @@
       "publishedAt": "2026-11-15T16:01:41.000000Z",
       "excerpt": "-6 days until we’re finally partying together again… ❄️🔥\n\nFrom the first beats in the snow to the last song of the night: this is the best feeling, and it’s coming back. 🥹🎧\n\n𝐊𝟏 𝐒𝐄𝐀𝐒𝐎𝐍 𝐎𝐏𝐄𝐍𝐈𝐍𝐆 🎿🪩\n🗓 𝐅𝐫𝐢𝐝𝐚𝐲, 𝟐𝟎.𝟏𝟏. | Indoor 9 p.m. – 2 a.m.\n🗓 𝐒𝐚𝐭𝐮𝐫𝐝𝐚𝐲, 𝟐𝟏.𝟏𝟏. | Open Air 6 p.m. – midnight | Indoor 6 p.m. – 3 a.m.\n🎧 DJ Juli, DJ Double Dee & DJ Hufe\n\nWho’s ready? 🙋‍♀️🙋‍♂️\n\n#k1 #k1_reischach #seasonopening #countdown #bestfeeling",
       "published": false
+    },
+    {
+      "title": "CLUB MORITZINO – SEASON OPENING 2026/2027 🥂",
+      "start": "2026-12-04",
+      "end": "2026-12-04",
+      "url": "https://clubmoritzino.it/en/event/season-opening-2026-2027-%f0%9f%a5%82/",
+      "summaries": {
+        "it": "Appuntamento musicale e après-ski al Club Moritzino, in quota al Piz La Ila.",
+        "de": "Musik und Après-Ski im Club Moritzino am Piz La Ila.",
+        "en": "Music and après-ski at Club Moritzino on Piz La Ila."
+      },
+      "venue": "Club Moritzino",
+      "location": "Club Moritzino · Piz La Ila, Alta Badia",
+      "extraction": "moritzino-calendar",
+      "id": "club-moritzino-events-2026-12-04-club-moritzino-season-opening-2026-2027",
+      "kind": "web",
+      "sourceId": "club-moritzino-events",
+      "sourceName": "Club Moritzino Events",
+      "eventId": "auto-2026-12-04-club-moritzino-season-opening-2026-2027",
+      "published": true
+    },
+    {
+      "id": "south-tyrol-events-2027-01-01-party-di-capodanno-a-terento",
+      "kind": "web",
+      "title": "Party di capodanno a Terento",
+      "start": "2027-01-01",
+      "end": "2027-01-01",
+      "location": "Terento",
+      "url": "https://www.suedtirol.info/it/it/esperienze-eventi/eventi-alto-adige/pdp-evento.331B895034854B8A8FA42A9E55C80AC3.party-di-capodanno-a-terento.terento",
+      "sourceId": "south-tyrol-events",
+      "sourceName": "Südtirol / Alto Adige Events",
+      "titles": {
+        "it": "Party di capodanno a Terento",
+        "de": "Neujahrsparty in Terenten",
+        "en": "New Years Party Terento"
+      },
+      "excerpt": "Party di Capodanno presso il padiglione musicale nel centro di Terento. Dalle ore 19.00 musica dal vivo. Alle ore 20.30 sfilata della banda musicale di terento e alle ore 22.00 grande spettacolo pirotecnico. La manifestazione si terrá con qualsiasi tempo.",
+      "eventId": "auto-2027-01-01-party-di-capodanno-a-terento",
+      "published": true
     }
   ]
 }
