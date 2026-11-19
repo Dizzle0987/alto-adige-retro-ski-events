@@ -1,11 +1,11 @@
 {
-  "lastChecked": "2026-11-18",
+  "lastChecked": "2026-11-19",
   "summary": {
     "webSources": 30,
     "instagramSources": 16,
     "instagramStatus": "budget-unverified",
-    "candidates": 39,
-    "published": 2,
+    "candidates": 38,
+    "published": 1,
     "updated": 0,
     "pruned": 0
   },
@@ -188,7 +188,7 @@
       "kind": "web",
       "url": "https://clubmoritzino.it/en/events-in-alta-badia/",
       "status": "checked",
-      "found": 1,
+      "found": 0,
       "coverage": "readable-events",
       "extraction": {
         "structured": 0,
@@ -251,7 +251,8 @@
         },
         {
           "kind": "image",
-          "status": "cached"
+          "status": "read-for-review",
+          "method": "image-ocr"
         }
       ],
       "facebook": {
@@ -458,8 +459,7 @@
       "media": [
         {
           "kind": "image",
-          "status": "read-for-review",
-          "method": "image-ocr"
+          "status": "cached"
         }
       ],
       "facebook": {
@@ -539,8 +539,7 @@
       "media": [
         {
           "kind": "image",
-          "status": "read-for-review",
-          "method": "image-ocr"
+          "status": "cached"
         }
       ],
       "facebook": {
@@ -649,18 +648,15 @@
       "media": [
         {
           "kind": "image",
-          "status": "read-for-review",
-          "method": "image-ocr"
+          "status": "cached"
         },
         {
           "kind": "image",
-          "status": "read-for-review",
-          "method": "image-ocr"
+          "status": "cached"
         },
         {
           "kind": "image",
-          "status": "read-for-review",
-          "method": "image-ocr"
+          "status": "cached"
         }
       ],
       "facebook": {
@@ -1821,42 +1817,22 @@
       "published": false
     },
     {
-      "title": "CLUB MORITZINO – SEASON OPENING 2026/2027 🥂",
-      "start": "2026-12-04",
-      "end": "2026-12-04",
-      "url": "https://clubmoritzino.it/en/event/season-opening-2026-2027-%f0%9f%a5%82/",
-      "summaries": {
-        "it": "Appuntamento musicale e après-ski al Club Moritzino, in quota al Piz La Ila.",
-        "de": "Musik und Après-Ski im Club Moritzino am Piz La Ila.",
-        "en": "Music and après-ski at Club Moritzino on Piz La Ila."
-      },
-      "venue": "Club Moritzino",
-      "location": "Club Moritzino · Piz La Ila, Alta Badia",
-      "extraction": "moritzino-calendar",
-      "id": "club-moritzino-events-2026-12-04-club-moritzino-season-opening-2026-2027",
+      "id": "south-tyrol-events-2026-11-28-grande-ski-opening-2026-con-dj-le-shuuk",
       "kind": "web",
-      "sourceId": "club-moritzino-events",
-      "sourceName": "Club Moritzino Events",
-      "eventId": "auto-2026-12-04-club-moritzino-season-opening-2026-2027",
-      "published": true
-    },
-    {
-      "id": "south-tyrol-events-2027-01-01-party-di-capodanno-a-terento",
-      "kind": "web",
-      "title": "Party di capodanno a Terento",
-      "start": "2027-01-01",
-      "end": "2027-01-01",
-      "location": "Terento",
-      "url": "https://www.suedtirol.info/it/it/esperienze-eventi/eventi-alto-adige/pdp-evento.331B895034854B8A8FA42A9E55C80AC3.party-di-capodanno-a-terento.terento",
+      "title": "Grande Ski Opening 2026 con DJ Le Shuuk",
+      "start": "2026-11-28",
+      "end": "2026-11-28",
+      "location": "Versciaco - San Candido · Via Ombrosa 2F · San Candido",
+      "url": "https://www.suedtirol.info/it/it/esperienze-eventi/eventi-alto-adige/pdp-evento.ACA9EFE6EA21402CBFD1BF86F3A28740.grande-ski-opening--con-dj-le-shuuk.san-candido",
       "sourceId": "south-tyrol-events",
       "sourceName": "Südtirol / Alto Adige Events",
       "titles": {
-        "it": "Party di capodanno a Terento",
-        "de": "Neujahrsparty in Terenten",
-        "en": "New Years Party Terento"
+        "it": "Grande Ski Opening 2026 con DJ Le Shuuk",
+        "de": "Großes Ski Opening 2026 mit DJ Le Shuuk",
+        "en": "Ski Opening 2026 with DJ Le Shuuk"
       },
-      "excerpt": "Party di Capodanno presso il padiglione musicale nel centro di Terento. Dalle ore 19.00 musica dal vivo. Alle ore 20.30 sfilata della banda musicale di terento e alle ore 22.00 grande spettacolo pirotecnico. La manifestazione si terrá con qualsiasi tempo.",
-      "eventId": "auto-2027-01-01-party-di-capodanno-a-terento",
+      "excerpt": "Il 28 novembre 2026 si festeggia l'inizio della nuova stagione invernale alla Proseccheria sul Monte Elmo! Il DJ Le Shuuk farà ballare tutti con i suoi beat travolgenti a 2.050 metri di altitudine, con una vista spettacolare sulle Dolomiti.",
+      "eventId": "auto-2026-11-28-grande-ski-opening-2026-con-dj-le-shuuk",
       "published": true
     }
   ]
