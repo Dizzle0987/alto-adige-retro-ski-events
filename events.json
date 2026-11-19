@@ -1,5 +1,5 @@
 {
-  "lastChecked": "2026-11-18",
+  "lastChecked": "2026-11-19",
   "events": [
     {
       "id": "auto-2025-12-04-season-opening",
@@ -2432,6 +2432,34 @@
       "featured": false
     },
     {
+      "id": "auto-2026-11-28-grande-ski-opening-2026-con-dj-le-shuuk",
+      "title": "Grande Ski Opening 2026 con DJ Le Shuuk",
+      "titles": {
+        "it": "Grande Ski Opening 2026 con DJ Le Shuuk",
+        "de": "Großes Ski Opening 2026 mit DJ Le Shuuk",
+        "en": "Ski Opening 2026 with DJ Le Shuuk"
+      },
+      "start": "2026-11-28",
+      "end": "2026-11-28",
+      "dateLabel": "28",
+      "monthLabel": "NOV",
+      "year": "2026",
+      "categories": [
+        "apres"
+      ],
+      "tags": [
+        "DJ",
+        "Après-ski"
+      ],
+      "summary": "Il 28 novembre 2026 si festeggia l'inizio della nuova stagione invernale alla Proseccheria sul Monte Elmo! Il DJ Le Shuuk farà ballare tutti con i suoi beat travolgenti a 2.050 metri di altitudine, con una vista spettacolare sulle Dolomiti.",
+      "place": "Versciaco - San Candido · Via Ombrosa 2F · San Candido",
+      "source": "https://www.suedtirol.info/it/it/esperienze-eventi/eventi-alto-adige/pdp-evento.ACA9EFE6EA21402CBFD1BF86F3A28740.grande-ski-opening--con-dj-le-shuuk.san-candido",
+      "social": null,
+      "map": "https://www.google.com/maps/search/?api=1&query=Versciaco%20-%20San%20Candido%20%C2%B7%20Via%20Ombrosa%202F%20%C2%B7%20San%20Candido",
+      "accent": "#ff7439",
+      "featured": false
+    },
+    {
       "id": "ganischgeralm-winter-opening-party-2026",
       "title": "Winter Opening Party",
       "start": "2026-11-29",
@@ -3102,7 +3130,7 @@
       }
     }
   ],
-  "lastWebCheckAt": "2026-11-18T15:45:13.450Z",
-  "lastModified": "2026-11-18",
-  "lastScheduledCheckDate": "2026-11-18"
+  "lastWebCheckAt": "2026-11-19T15:49:59.904Z",
+  "lastModified": "2026-11-19",
+  "lastScheduledCheckDate": "2026-11-19"
 }
