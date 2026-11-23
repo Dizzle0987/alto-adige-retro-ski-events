@@ -1,11 +1,11 @@
 {
-  "lastChecked": "2026-11-19",
+  "lastChecked": "2026-11-23",
   "summary": {
     "webSources": 30,
     "instagramSources": 16,
     "instagramStatus": "budget-unverified",
-    "candidates": 38,
-    "published": 1,
+    "candidates": 39,
+    "published": 0,
     "updated": 0,
     "pruned": 0
   },
@@ -16,7 +16,7 @@
       "kind": "web",
       "url": "https://www.suedtirol.info/it/it/esperienze-eventi/plp-eventi/o/sagre",
       "status": "checked",
-      "found": 1
+      "found": 0
     },
     {
       "id": "south-tyrol-winter-events",
@@ -251,8 +251,7 @@
         },
         {
           "kind": "image",
-          "status": "read-for-review",
-          "method": "image-ocr"
+          "status": "cached"
         }
       ],
       "facebook": {
@@ -265,115 +264,16 @@
       "name": "Hexenkessel — Klausberg / Ahrntal",
       "kind": "web",
       "url": "https://www.hexenkessel.bz/",
-      "status": "checked",
-      "found": 0,
-      "coverage": "no-readable-events",
-      "extraction": {
-        "structured": 0,
-        "html": 0,
-        "review": 6
-      },
-      "needsReview": [
-        {
-          "title": "Zugleich die nächsten zwei Eventhighlights:",
-          "status": "review",
-          "reason": "multiple-dates",
-          "venue": "Hexenkessel",
-          "location": "Hexenkessel · Cadipietra / Steinhaus, Valle Aurina / Ahrntal",
-          "evidence": {
-            "url": "https://www.instagram.com/p/DDConeDgfpH/",
-            "page": "https://www.hexenkessel.bz/",
-            "publishedAt": "2024-12-01T15:42:16.000Z"
-          },
-          "excerpt": "Noch gar nicht in die Saison gestartet und wieder ein mega Wochenende hinter uns 🤩\n\nAlle Fotos vom Wochenende sind online! 📸\n\nZugleich die nächsten zwei Eventhighlights:\n06.-07.12. 👉 Klausberg WINTER OPENING 🍾\n13.-14.12. 👉 25 Jahre Hexenkessel 🎂\n\nWir freuen uns auf viele bekannte Gesichter und ein paar heiße Partys 🍻"
-        },
-        {
-          "title": "Das war der Krampuslauf 2024 in Steinhaus 🤩",
-          "status": "review",
-          "reason": "past-at-publication",
-          "venue": "Hexenkessel",
-          "location": "Hexenkessel · Cadipietra / Steinhaus, Valle Aurina / Ahrntal",
-          "evidence": {
-            "url": "https://www.instagram.com/p/DC7VHfogiE1/",
-            "page": "https://www.hexenkessel.bz/",
-            "publishedAt": "2024-11-28T19:37:12.000Z"
-          },
-          "excerpt": "Das war der Krampuslauf 2024 in Steinhaus 🤩\n\nEin paar Tage sind vergangen… nun sind alle Fotos vom Krampuslauf online, auf den Facebook Seiten von @dieberglausa & @hexenkessel_klausberg 👹\n\nWas am 23. November alles passiert ist, kann man gar nicht in Worte oder Bilder fassen… deshalb wird in wenigen Monaten das Aftermovie veröffentlicht! Freut euch drauf! 🙈🍻\n\nDanke nochmal dafür die das möglich gemacht haben und für so eine mega Afterparty!!\n\nCheers, \ndie Berglausa und das Hexenkessel Team ✌️"
-        },
-        {
-          "title": "Freitag 👉 Game Night & Afterparty 🥳",
-          "status": "review",
-          "reason": "missing-date",
-          "venue": "Hexenkessel",
-          "location": "Hexenkessel · Cadipietra / Steinhaus, Valle Aurina / Ahrntal",
-          "evidence": {
-            "url": "https://www.instagram.com/p/DC4iQwKAd1i/",
-            "page": "https://www.hexenkessel.bz/",
-            "publishedAt": "2024-11-27T17:34:20.000Z"
-          },
-          "excerpt": "Ein mega Wochenende steht bevor… \n\nFreitag 👉 Game Night & Afterparty 🥳\nSamstag 👉 die ultimative 2€ Party 🍻\n\nUnser Shuttle fährt jeden Freitag & Samstag ab 20.00 Uhr ‼️\n\n#hexenkessel #gamenight #2€party #partytime"
-        },
-        {
-          "title": "Flashback 📸 #Krampuslauf #aftershowparty",
-          "status": "review",
-          "reason": "missing-date",
-          "venue": "Hexenkessel",
-          "location": "Hexenkessel · Cadipietra / Steinhaus, Valle Aurina / Ahrntal",
-          "evidence": {
-            "url": "https://www.instagram.com/reel/DC3b8k-Aj_a/",
-            "page": "https://www.hexenkessel.bz/",
-            "publishedAt": "2024-11-27T07:23:55.000Z"
-          },
-          "excerpt": "Flashback 📸 #Krampuslauf #aftershowparty\n\nWas für ein Lauf und eine Party 🤩 Danke an alle Krampusse, Helfer/innen und Mitwirkende!! Alles hat reibungslos geklappt und ging ohne Komplikationen über die Bühne! Wir freuen uns schon auf die Fotos! 😋\n\nAlle Fotos kommen die Tage auf den Seiten von @dieberglausa und @hexenkessel_klausberg online 🥳"
-        },
-        {
-          "title": "Die Berglausa und der Hexenkessel präsentieren das Krampus-Wochenende an der Talstation vom Klausberg 😈",
-          "status": "review",
-          "reason": "missing-date",
-          "venue": "Hexenkessel",
-          "location": "Hexenkessel · Cadipietra / Steinhaus, Valle Aurina / Ahrntal",
-          "evidence": {
-            "url": "https://www.instagram.com/p/DCkGnfDAO1a/",
-            "page": "https://www.hexenkessel.bz/",
-            "publishedAt": "2024-11-19T19:07:58.000Z"
-          },
-          "excerpt": "Die Berglausa und der Hexenkessel präsentieren das Krampus-Wochenende an der Talstation vom Klausberg 😈\n\nAm Freitag gehts los mit der Warm Up Party mit DJ Willy 🥳 und am Samstag das große Highlight: bereits am Nachmittag haben unsere 3 Glühweinstände sowie den Hexenkessel geöffnet!\n\nAb 20.00 Uhr ist SHOW START vom Krampuslauf! Knapp 20 Gruppen präsentieren einen spektakulären sowie traditionsträchtigen Krampuslauf ‼️\n\nAftershowparty im Hexenkessel bis spät mit DJ Zufällig und DJ Willy! Alle Bereiche sind geöffnet, dass auch jeder Platz hat zu feiern! 🍻\n\nAuch einen Foodtruck haben wir heuer wieder organisiert, damit niemand hungern muss! 😋\n\nWichtig 🏴‍☠️\nIm Hexenkessel ist krampusfreie Zone! Einlass ab 18 Jahren und nur ohne Masken oder Larfen!\n\nAb 19.00 Uhr fährt unser Shuttle und unser großer Bus für kleine und große Gruppen bis 05.00 Uhr morgens!"
-        },
-        {
-          "title": "Annuncio da verificare",
-          "status": "review",
-          "reason": "missing-date",
-          "venue": "Hexenkessel",
-          "location": "Hexenkessel · Cadipietra / Steinhaus, Valle Aurina / Ahrntal",
-          "evidence": {
-            "url": "https://www.instagram.com/p/DCakk7Bon_r/",
-            "page": "https://www.hexenkessel.bz/",
-            "publishedAt": "2024-11-16T02:17:21.000Z"
-          },
-          "excerpt": "Gratuliere an die Gewinner 🤩\n\nDanke an alle fürs mitspielen! Wir freuen uns schon aufs nexte Jahr ‼️"
-        }
-      ],
-      "media": [],
-      "facebook": {
-        "url": "https://www.facebook.com/hexenkessel.klausberg",
-        "status": "reference-only-no-scraping"
-      }
+      "status": "unavailable",
+      "error": "HTTP 403"
     },
     {
       "id": "ahrntal-krampus-afterparty",
       "name": "Comune Valle Aurina — Krampus & Hexenkessel",
       "kind": "web",
       "url": "https://www.comune.valleaurina.bz.it/it/Vivere_il_comune/Eventi/Sfilata_dei_Krampus",
-      "status": "checked",
-      "found": 0,
-      "coverage": "readable-events",
-      "extraction": {
-        "structured": 1,
-        "html": 0,
-        "review": 0
-      },
-      "needsReview": [],
-      "media": []
+      "status": "unavailable",
+      "error": "HTTP 500"
     },
     {
       "id": "luislkeller-gardena",
@@ -1797,6 +1697,29 @@
       "sourceId": "k1-instagram",
       "sourceName": "K1 Kronplatz",
       "evidence": {
+        "url": "https://www.instagram.com/reel/Dfq8AGriNLm/",
+        "author": "k1.kronplatz",
+        "ownerId": "5849734189",
+        "publishedAt": "2026-11-13T06:00:44.000000Z",
+        "caption": "-1 week to go!! ❄️🔥\n\n𝐊𝟏 𝐒𝐄𝐀𝐒𝐎𝐍 𝐎𝐏𝐄𝐍𝐈𝐍𝐆 🎿🪩\n\n🗓 𝐅𝐫𝐢𝐝𝐚𝐲, 𝟐𝟎.𝟏𝟏.\n🕘 Indoor from 9 p.m. to 2 a.m.\n🎧 DJ Juli\n\n🗓 𝐒𝐚𝐭𝐮𝐫𝐝𝐚𝐲, 𝟐𝟏.𝟏𝟏.\n☀️ Open Air from 6 p.m. to midnight\n🕕 Indoor from 6 p.m. to 3 a.m.\n🎧 DJ Juli, DJ Double Dee & DJ Hufe\n\n🚌 Nightliner until approx. 2 a.m.\n\nOne more week and we’re back! Who’s counting with us? 👀❤️\n🔞 18+ | Free Entrance | Party In- & Outdoor 🎉\n\n#k1 #k1_reischach #seasonopening #oneweektogo #apresski #season2627 #kronplatz #reischach #bruneck #südtirol #k1gibslaoans #theresonlyonek1"
+      },
+      "url": "https://www.instagram.com/reel/Dfq8AGriNLm/",
+      "kind": "instagram",
+      "status": "review",
+      "reason": "multiple-dates",
+      "dateEvidence": {
+        "status": "review",
+        "reason": "multiple-dates"
+      },
+      "id": "k1-instagram-widget-396418483",
+      "publishedAt": "2026-11-13T06:00:44.000000Z",
+      "excerpt": "-1 week to go!! ❄️🔥\n\n𝐊𝟏 𝐒𝐄𝐀𝐒𝐎𝐍 𝐎𝐏𝐄𝐍𝐈𝐍𝐆 🎿🪩\n\n🗓 𝐅𝐫𝐢𝐝𝐚𝐲, 𝟐𝟎.𝟏𝟏.\n🕘 Indoor from 9 p.m. to 2 a.m.\n🎧 DJ Juli\n\n🗓 𝐒𝐚𝐭𝐮𝐫𝐝𝐚𝐲, 𝟐𝟏.𝟏𝟏.\n☀️ Open Air from 6 p.m. to midnight\n🕕 Indoor from 6 p.m. to 3 a.m.\n🎧 DJ Juli, DJ Double Dee & DJ Hufe\n\n🚌 Nightliner until approx. 2 a.m.\n\nOne more week and we’re back! Who’s counting with us? 👀❤️\n🔞 18+ | Free Entrance | Party In- & Outdoor 🎉\n\n#k1 #k1_reischach #seasonopening #oneweektogo #apresski #season2627 #kronplatz #reischach #bruneck #südtirol #k1gibslaoans #theresonlyonek1",
+      "published": false
+    },
+    {
+      "sourceId": "k1-instagram",
+      "sourceName": "K1 Kronplatz",
+      "evidence": {
         "url": "https://www.instagram.com/reel/DfxKW6EkVDL/",
         "author": "k1.kronplatz",
         "ownerId": "5849734189",
@@ -1817,23 +1740,27 @@
       "published": false
     },
     {
-      "id": "south-tyrol-events-2026-11-28-grande-ski-opening-2026-con-dj-le-shuuk",
-      "kind": "web",
-      "title": "Grande Ski Opening 2026 con DJ Le Shuuk",
-      "start": "2026-11-28",
-      "end": "2026-11-28",
-      "location": "Versciaco - San Candido · Via Ombrosa 2F · San Candido",
-      "url": "https://www.suedtirol.info/it/it/esperienze-eventi/eventi-alto-adige/pdp-evento.ACA9EFE6EA21402CBFD1BF86F3A28740.grande-ski-opening--con-dj-le-shuuk.san-candido",
-      "sourceId": "south-tyrol-events",
-      "sourceName": "Südtirol / Alto Adige Events",
-      "titles": {
-        "it": "Grande Ski Opening 2026 con DJ Le Shuuk",
-        "de": "Großes Ski Opening 2026 mit DJ Le Shuuk",
-        "en": "Ski Opening 2026 with DJ Le Shuuk"
+      "sourceId": "k1-instagram",
+      "sourceName": "K1 Kronplatz",
+      "evidence": {
+        "url": "https://www.instagram.com/reel/Df68eMZsC0q/",
+        "author": "k1.kronplatz",
+        "ownerId": "5849734189",
+        "publishedAt": "2026-11-19T11:12:34.000000Z",
+        "caption": "-1 day friendssssss 🔥🔥🔥\n\n#k1 #k1gibslaoans #k1opening #seasonopening #apresski"
       },
-      "excerpt": "Il 28 novembre 2026 si festeggia l'inizio della nuova stagione invernale alla Proseccheria sul Monte Elmo! Il DJ Le Shuuk farà ballare tutti con i suoi beat travolgenti a 2.050 metri di altitudine, con una vista spettacolare sulle Dolomiti.",
-      "eventId": "auto-2026-11-28-grande-ski-opening-2026-con-dj-le-shuuk",
-      "published": true
+      "url": "https://www.instagram.com/reel/Df68eMZsC0q/",
+      "kind": "instagram",
+      "status": "review",
+      "reason": "missing-date",
+      "dateEvidence": {
+        "status": "review",
+        "reason": "missing-date"
+      },
+      "id": "k1-instagram-widget-396679918",
+      "publishedAt": "2026-11-19T11:12:34.000000Z",
+      "excerpt": "-1 day friendssssss 🔥🔥🔥\n\n#k1 #k1gibslaoans #k1opening #seasonopening #apresski",
+      "published": false
     }
   ]
 }
