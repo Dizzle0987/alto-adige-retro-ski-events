@@ -1,10 +1,10 @@
 {
-  "lastChecked": "2026-11-23",
+  "lastChecked": "2026-11-25",
   "summary": {
     "webSources": 30,
     "instagramSources": 16,
     "instagramStatus": "budget-unverified",
-    "candidates": 39,
+    "candidates": 40,
     "published": 0,
     "updated": 0,
     "pruned": 0
@@ -225,33 +225,14 @@
       "extraction": {
         "structured": 0,
         "html": 0,
-        "review": 1
+        "review": 0
       },
-      "needsReview": [
-        {
-          "title": "HALLOWEEN PARTY LAST",
-          "status": "review",
-          "reason": "missing-date",
-          "venue": "K1",
-          "location": "K1 · Riscone / Reischach, Brunico / Bruneck",
-          "evidence": {
-            "url": "https://curator-assets.b-cdn.net/1600be38-4e01-4c92-8ccf-c12bdc55aa60/395951481.jpg?width=1024",
-            "page": "https://k-1.bz/en/",
-            "sha256": "c4fd20daf6190fab8d3782fb3b8f8973d22cfb6bfebabccbc783bfd8c5960769",
-            "method": "image-ocr"
-          },
-          "excerpt": "N\n\nLA\n\nN)\n\nÈ\n\nEX\n\nST\n\nShag >\n\nFRIENDSSGG\n\n1,\n\nFOR THIS ABSOLUTE CRAZY\n\nHALLOWEEN PARTY LAST\n\n/ Brenn XOXO\n"
-        }
-      ],
+      "needsReview": [],
       "media": [
         {
           "kind": "curator",
           "status": "checked",
           "received": 6
-        },
-        {
-          "kind": "image",
-          "status": "cached"
         }
       ],
       "facebook": {
@@ -359,7 +340,8 @@
       "media": [
         {
           "kind": "image",
-          "status": "cached"
+          "status": "read-for-review",
+          "method": "image-ocr"
         }
       ],
       "facebook": {
@@ -439,7 +421,8 @@
       "media": [
         {
           "kind": "image",
-          "status": "cached"
+          "status": "read-for-review",
+          "method": "image-ocr"
         }
       ],
       "facebook": {
@@ -548,15 +531,18 @@
       "media": [
         {
           "kind": "image",
-          "status": "cached"
+          "status": "read-for-review",
+          "method": "image-ocr"
         },
         {
           "kind": "image",
-          "status": "cached"
+          "status": "read-for-review",
+          "method": "image-ocr"
         },
         {
           "kind": "image",
-          "status": "cached"
+          "status": "read-for-review",
+          "method": "image-ocr"
         }
       ],
       "facebook": {
@@ -1724,7 +1710,7 @@
         "author": "k1.kronplatz",
         "ownerId": "5849734189",
         "publishedAt": "2026-11-15T16:01:41.000000Z",
-        "caption": "-6 days until we’re finally partying together again… ❄️🔥\n\nFrom the first beats in the snow to the last song of the night: this is the best feeling, and it’s coming back. 🥹🎧\n\n𝐊𝟏 𝐒𝐄𝐀𝐒𝐎𝐍 𝐎𝐏𝐄𝐍𝐈𝐍𝐆 🎿🪩\n🗓 𝐅𝐫𝐢𝐝𝐚𝐲, 𝟐𝟎.𝟏𝟏. | Indoor 9 p.m. – 2 a.m.\n🗓 𝐒𝐚𝐭𝐮𝐫𝐝𝐚𝐲, 𝟐𝟏.𝟏𝟏. | Open Air 6 p.m. – midnight | Indoor 6 p.m. – 3 a.m.\n🎧 DJ Juli, DJ Double Dee & DJ Hufe\n\nWho’s ready? 🙋‍♀️🙋‍♂️\n\n#k1 #k1_reischach #seasonopening #countdown #bestfeeling"
+        "caption": "-6 days until we’re finally partying together again… ❄️🔥\n\nFrom the first beats in the snow to the last song of the night: this is the best feeling, and it’s coming back. 🥹🎧\n\n𝐊𝟏 𝐒𝐄𝐀𝐒𝐎𝐍 𝐎𝐏𝐄𝐍𝐈𝐍𝐆 🎿🪩\n🗓 𝐅𝐫𝐢𝐝𝐚𝐲, 𝟐𝟎.𝟏𝟏. | Indoor 9 p.m. – 2 a.m.\n🗓 𝐒𝐚𝐭𝐮𝐫𝐝𝐚𝐲, 𝟐𝟏.𝟏𝟏. | Open Air 4 p.m. – midnight | Indoor 4 p.m. – 2 a.m.\n🎧 DJ Juli, DJ Double Dee & DJ Hufe\n\nWho’s ready? 🙋‍♀️🙋‍♂️\n\n#k1 #k1_reischach #seasonopening #countdown #bestfeeling"
       },
       "url": "https://www.instagram.com/reel/DfxKW6EkVDL/",
       "kind": "instagram",
@@ -1736,7 +1722,7 @@
       },
       "id": "k1-instagram-widget-396508780",
       "publishedAt": "2026-11-15T16:01:41.000000Z",
-      "excerpt": "-6 days until we’re finally partying together again… ❄️🔥\n\nFrom the first beats in the snow to the last song of the night: this is the best feeling, and it’s coming back. 🥹🎧\n\n𝐊𝟏 𝐒𝐄𝐀𝐒𝐎𝐍 𝐎𝐏𝐄𝐍𝐈𝐍𝐆 🎿🪩\n🗓 𝐅𝐫𝐢𝐝𝐚𝐲, 𝟐𝟎.𝟏𝟏. | Indoor 9 p.m. – 2 a.m.\n🗓 𝐒𝐚𝐭𝐮𝐫𝐝𝐚𝐲, 𝟐𝟏.𝟏𝟏. | Open Air 6 p.m. – midnight | Indoor 6 p.m. – 3 a.m.\n🎧 DJ Juli, DJ Double Dee & DJ Hufe\n\nWho’s ready? 🙋‍♀️🙋‍♂️\n\n#k1 #k1_reischach #seasonopening #countdown #bestfeeling",
+      "excerpt": "-6 days until we’re finally partying together again… ❄️🔥\n\nFrom the first beats in the snow to the last song of the night: this is the best feeling, and it’s coming back. 🥹🎧\n\n𝐊𝟏 𝐒𝐄𝐀𝐒𝐎𝐍 𝐎𝐏𝐄𝐍𝐈𝐍𝐆 🎿🪩\n🗓 𝐅𝐫𝐢𝐝𝐚𝐲, 𝟐𝟎.𝟏𝟏. | Indoor 9 p.m. – 2 a.m.\n🗓 𝐒𝐚𝐭𝐮𝐫𝐝𝐚𝐲, 𝟐𝟏.𝟏𝟏. | Open Air 4 p.m. – midnight | Indoor 4 p.m. – 2 a.m.\n🎧 DJ Juli, DJ Double Dee & DJ Hufe\n\nWho’s ready? 🙋‍♀️🙋‍♂️\n\n#k1 #k1_reischach #seasonopening #countdown #bestfeeling",
       "published": false
     },
     {
@@ -1760,6 +1746,29 @@
       "id": "k1-instagram-widget-396679918",
       "publishedAt": "2026-11-19T11:12:34.000000Z",
       "excerpt": "-1 day friendssssss 🔥🔥🔥\n\n#k1 #k1gibslaoans #k1opening #seasonopening #apresski",
+      "published": false
+    },
+    {
+      "sourceId": "k1-instagram",
+      "sourceName": "K1 Kronplatz",
+      "evidence": {
+        "url": "https://www.instagram.com/reel/DgFm_8CMvgV/",
+        "author": "k1.kronplatz",
+        "ownerId": "5849734189",
+        "publishedAt": "2026-11-23T14:36:33.000000Z",
+        "caption": "looking forward to aprés ski season 🤩🔥🫶🏻🥳\n\n#k1_reischach #k1 #kronplatz #apresski #reischach"
+      },
+      "url": "https://www.instagram.com/reel/DgFm_8CMvgV/",
+      "kind": "instagram",
+      "status": "review",
+      "reason": "missing-date",
+      "dateEvidence": {
+        "status": "review",
+        "reason": "missing-date"
+      },
+      "id": "k1-instagram-widget-396808162",
+      "publishedAt": "2026-11-23T14:36:33.000000Z",
+      "excerpt": "looking forward to aprés ski season 🤩🔥🫶🏻🥳\n\n#k1_reischach #k1 #kronplatz #apresski #reischach",
       "published": false
     }
   ]
