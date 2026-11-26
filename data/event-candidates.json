@@ -1,5 +1,5 @@
 {
-  "lastChecked": "2026-11-25",
+  "lastChecked": "2026-11-26",
   "summary": {
     "webSources": 30,
     "instagramSources": 16,
@@ -340,8 +340,7 @@
       "media": [
         {
           "kind": "image",
-          "status": "read-for-review",
-          "method": "image-ocr"
+          "status": "cached"
         }
       ],
       "facebook": {
@@ -421,8 +420,7 @@
       "media": [
         {
           "kind": "image",
-          "status": "read-for-review",
-          "method": "image-ocr"
+          "status": "cached"
         }
       ],
       "facebook": {
@@ -531,18 +529,15 @@
       "media": [
         {
           "kind": "image",
-          "status": "read-for-review",
-          "method": "image-ocr"
+          "status": "cached"
         },
         {
           "kind": "image",
-          "status": "read-for-review",
-          "method": "image-ocr"
+          "status": "cached"
         },
         {
           "kind": "image",
-          "status": "read-for-review",
-          "method": "image-ocr"
+          "status": "cached"
         }
       ],
       "facebook": {
